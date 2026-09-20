@@ -8,9 +8,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="es"
-      className={`${fontSans.variable} ${fontMono.variable} ${fontHeading.variable} h-full antialiased`}
+      className={`${fontSans.variable} ${fontMono.variable} ${fontHeading.variable} antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="flex min-h-screen flex-col bg-paper p-2 md:p-4 lg:p-4">{children}</body>
     </html>
   );
 }

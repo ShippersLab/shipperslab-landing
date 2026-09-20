@@ -23,6 +23,8 @@ No other colors are introduced without updating this table first.
 | Body                           | Geist       | 400    | normal     | 16–18px                        | 1.6         | `font-sans text-base` / `text-lg` |
 | Labels / technical details     | Geist Mono  | 500    | `0.12em`, uppercase | 11px                | 1.4         | `font-mono uppercase tracking-label text-label` |
 
+A headline can pick up a subtle print-grain texture instead of a flat fill with the `text-grain` utility (`src/styles/globals.css`): it clips a noise pattern to the text using `background-clip: text`. Use it sparingly, on a single short headline at a time, never on body copy or the labels role — texture competes with the 11px size there.
+
 ## Layout
 
 - Content max-width: **1200px** — `max-w-content`.
@@ -42,6 +44,8 @@ No other colors are introduced without updating this table first.
 These apply to every agent working in this repo, not just UI work.
 
 - **Never leave comments in code.** No line comments, no block comments, no JSDoc, no commented-out code. If something feels like it needs a comment, rename it or extract it into a function whose name says the surprising part.
+- **Always import through the `@/*` alias.** Never write a relative import (`./`, `../`), not even for a sibling file. `@/*` resolves to `src/*` and is declared once in `tsconfig.json`.
+- **Everything lives in a folder that says what it is.** Landing sections go in `src/components/sections`, reusable primitives in `src/components/ui`, cross-cutting helpers in `src/lib`, copy in `src/i18n/messages`. Don't drop a component or helper loose in `src/app` or `src/components`.
 - **No file exceeds 300 lines.** Split into a folder of smaller files before it gets there.
 - **Agent configuration lives in subfolders, never loose in the project root.** This file, skills, and any future agent docs live under `.agents/` or `.claude/`. The root `AGENTS.md` is the one exception — Next.js's dev server owns and regenerates it in place, so it cannot be relocated.
 - **Commits are conventional, one line, no body:**
@@ -55,3 +59,7 @@ These apply to every agent working in this repo, not just UI work.
 ## Source of truth
 
 Tailwind tokens live in `src/styles/globals.css` under `@theme inline`, and font loading lives in `src/lib/fonts.ts`. Component-level styling uses these tokens through Tailwind utilities only — no inline styles, no ad hoc hex values, no arbitrary values (`w-[13px]`) when a token already covers the case.
+
+## Brand assets
+
+Logos, avatars, and social graphics are maintained in the separate `shipperslab-brand` repository, not here. When a brand asset is needed in the landing page, copy the exported file into `public/images` (content) or `public/icons` (icons, favicons) — never reference the sibling repo's path directly, since it won't exist in deployment.

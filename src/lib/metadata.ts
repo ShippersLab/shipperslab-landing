@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ShippersLab",
-  description:
-    "Landing page for ShippersLab. Built to show who we are, what we build and where we're heading.",
+  title: "ShippersLab | En construcción",
+  description: "ShippersLab está en construcción. Escribinos a hola@shipperslab.tech.",
 };
