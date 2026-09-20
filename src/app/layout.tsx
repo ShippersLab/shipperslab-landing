@@ -1,13 +1,8 @@
 import "@/styles/globals.css";
 
-import type { Metadata } from "next";
+import { fontHeading, fontMono, fontSans } from "@/lib/fonts";
 
-import { fontHeading, fontMono, fontSans } from "@/styles/fonts";
-
-export const metadata: Metadata = {
-  title: "ShippersLab",
-  description: "ShippersLab",
-};
+export { metadata } from "@/lib/metadata";
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (

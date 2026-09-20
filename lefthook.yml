@@ -1,0 +1,38 @@
+pre-commit:
+  parallel: true
+  exclude:
+    - ".agents/**"
+    - ".claude/**"
+  jobs:
+    - name: format
+      glob:
+        - "*.ts"
+        - "*.tsx"
+        - "*.js"
+        - "*.jsx"
+        - "*.mjs"
+        - "*.cjs"
+      run: npx oxfmt --write {staged_files}
+      stage_fixed: true
+    - name: lint
+      glob:
+        - "*.ts"
+        - "*.tsx"
+        - "*.js"
+        - "*.jsx"
+        - "*.mjs"
+        - "*.cjs"
+      run: npx oxlint --deny-warnings {staged_files}
+
+commit-msg:
+  jobs:
+    - name: commitlint
+      run: npx commitlint --edit {1}
+
+pre-push:
+  parallel: true
+  jobs:
+    - name: types
+      run: npx tsc --noEmit
+    - name: lint
+      run: npx oxlint --deny-warnings
