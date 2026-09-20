@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-accent: var(--accent);
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+
+  --font-sans: var(--font-geist-sans), sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+  --font-heading: var(--font-nunito), sans-serif;
+
+  --text-hero: clamp(3rem, 8vw, 6rem);
+  --text-hero--line-height: 0.95;
+  --text-label: 0.6875rem;
+  --text-label--line-height: 1.4;
+  --text-base--line-height: 1.6;
+  --text-lg--line-height: 1.6;
+
+  --tracking-hero: -0.04em;
+  --tracking-heading: -0.02em;
+  --tracking-label: 0.12em;
+
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 8px;
+  --radius-2xl: 8px;
+  --radius-3xl: 8px;
+  --radius-4xl: 8px;
+
+  --shadow-2xs: none;
+  --shadow-xs: none;
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --shadow-xl: none;
+  --shadow-2xl: none;
+
+  --container-content: 75rem;
+  --spacing-section: 140px;
+}
+
+:root {
+  --accent: #fe5634;
+  --ink: #0b0f1a;
+  --paper: #f2f3f5;
+  --muted: #6e7686;
+  --border: #e0e3e9;
+}
+
+@layer base {
+  body {
+    background-color: var(--paper);
+    color: var(--ink);
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: var(--tracking-heading);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
