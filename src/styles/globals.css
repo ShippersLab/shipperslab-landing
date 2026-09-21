@@ -39,7 +39,7 @@
   --shadow-xl: none;
   --shadow-2xl: none;
 
-  --container-content: 75rem;
+  --container-content: 90rem;
   --spacing-section: 140px;
 }
 
@@ -67,7 +67,7 @@
 
   ::selection {
     background-color: var(--accent);
-    color: var(--ink);
+    color: var(--paper);
   }
 }
 
@@ -78,6 +78,31 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+@utility font-pixel {
+  font-family: var(--font-geist-pixel), monospace;
+  font-variation-settings: "ELSH" 1;
+}
+
+@utility font-pixel-circle {
+  font-family: var(--font-geist-pixel), monospace;
+  font-variation-settings: "ELSH" 20;
+}
+
+@utility font-pixel-grid {
+  font-family: var(--font-geist-pixel), monospace;
+  font-variation-settings: "ELSH" 40;
+}
+
+@utility font-pixel-triangle {
+  font-family: var(--font-geist-pixel), monospace;
+  font-variation-settings: "ELSH" 60;
+}
+
+@utility font-pixel-line {
+  font-family: var(--font-geist-pixel), monospace;
+  font-variation-settings: "ELSH" 80;
 }
 
 @media (prefers-reduced-motion: reduce) {

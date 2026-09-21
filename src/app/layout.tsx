@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 
-import { fontHeading, fontMono, fontSans } from "@/lib/fonts";
+import { I18nProvider } from "@/i18n/provider";
+import { fontHeading, fontMono, fontPixel, fontSans } from "@/lib/fonts";
 
 export { metadata } from "@/lib/metadata";
 
@@ -8,9 +9,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="es"
-      className={`${fontSans.variable} ${fontMono.variable} ${fontHeading.variable} antialiased`}
+      className={`${fontSans.variable} ${fontMono.variable} ${fontPixel.variable} ${fontHeading.variable} antialiased`}
     >
-      <body className="flex min-h-screen flex-col bg-paper p-2 md:p-4 lg:p-4">{children}</body>
+      <body className="relative flex min-h-screen flex-col bg-paper pb-4 px-4">
+        <I18nProvider>{children}</I18nProvider>
+      </body>
     </html>
   );
 }

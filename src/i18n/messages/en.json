@@ -1,0 +1,18 @@
+{
+  "site": {
+    "name": "ShippersLab"
+  },
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "events": "Events",
+    "contact": "Get in touch"
+  },
+  "hero": {
+    "title": "We build software that simplifies.",
+    "description": "We automate processes and build custom digital products, no fluff.",
+    "primaryCta": "Let's talk",
+    "secondaryCta": "View services",
+    "imageAlt": "Illustration of the Buenos Aires Obelisk on a wide avenue, in orange tones"
+  }
+}

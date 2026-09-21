@@ -1,5 +1,18 @@
 {
   "site": {
     "name": "ShippersLab"
+  },
+  "nav": {
+    "services": "Servicios",
+    "about": "Nosotros",
+    "events": "Eventos",
+    "contact": "Contactanos"
+  },
+  "hero": {
+    "title": "Creamos software que simplifica.",
+    "description": "Automatizamos procesos y construimos productos digitales a medida, sin vueltas.",
+    "primaryCta": "Hablemos",
+    "secondaryCta": "Ver servicios",
+    "imageAlt": "Ilustración del Obelisco de Buenos Aires sobre una avenida amplia, en tonos naranja"
   }
 }

@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Nunito } from "next/font/google";
+import { Geist, Geist_Mono, Geist_Pixel, Nunito } from "next/font/google";
 
 export const fontSans = Geist({
   variable: "--font-geist-sans",
@@ -8,6 +8,13 @@ export const fontSans = Geist({
 export const fontMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+export const fontPixel = Geist_Pixel({
+  variable: "--font-geist-pixel",
+  subsets: ["latin"],
+  axes: ["ELSH"],
+  display: "swap",
 });
 
 export const fontHeading = Nunito({

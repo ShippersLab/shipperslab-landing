@@ -1,5 +1,11 @@
-import { ComingSoon } from "@/components/sections/coming-soon";
+import { Hero } from "@/components/sections/hero";
+import { Navbar } from "@/components/sections/navbar";
 
 export default function Home() {
-  return <ComingSoon />;
+  return (
+    <>
+      <Navbar />
+      <Hero />
+    </>
+  );
 }
