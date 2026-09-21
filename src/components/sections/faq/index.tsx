@@ -52,7 +52,7 @@ export function Faq() {
             className="relative aspect-square overflow-hidden rounded-lg border border-border"
           >
             <Image
-              src="/images/building-illustration.webp"
+              src="/images/bridge-illustration.webp"
               alt={messages.faq.imageAlt}
               fill
               sizes="(min-width: 1024px) 30vw, 100vw"
