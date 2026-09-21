@@ -153,10 +153,6 @@
       {
         "question": "¿Pueden trabajar con nuestros sistemas actuales?",
         "answer": "Sí. Integramos con lo que ya tenés (CRMs, ERPs, planillas, APIs) en vez de pedirte que empieces de cero."
-      },
-      {
-        "question": "¿Qué pasa después de terminar el proyecto?",
-        "answer": "Te dejamos el código, la documentación y el conocimiento para que tu equipo pueda seguir solo. Si preferís que sigamos nosotros, también podemos."
       }
     ]
   },

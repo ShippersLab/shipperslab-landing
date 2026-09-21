@@ -122,9 +122,7 @@ export function Services() {
                 >
                   <Reveal className="flex flex-col justify-between gap-8 pb-4 md:col-span-2">
                     <div>
-                      <h3 className="mb-3 font-mono text-label tracking-label text-muted uppercase">
-                        {item.title}
-                      </h3>
+                      <h3 className="mb-3 text-sm text-muted">{item.title}</h3>
                       <p className="text-lg text-ink">
                         {item.lead} {item.description}
                       </p>
@@ -156,8 +154,8 @@ export function Services() {
           </div>
         </div>
 
-        <Reveal className="mt-16 flex flex-col items-start gap-5 border-t border-border pt-10 sm:flex-row sm:items-center sm:justify-between lg:mt-24">
-          <p className="max-w-md text-lg text-ink">{messages.services.ctaTitle}</p>
+        <Reveal className="mt-16 flex flex-col items-start gap-6 rounded-lg bg-ink p-8 text-paper sm:flex-row sm:items-center sm:justify-between sm:p-10 lg:mt-24">
+          <p className="max-w-md text-lg">{messages.services.ctaTitle}</p>
           <TextureButton asChild variant="primary" size="pill" className="w-auto shrink-0">
             <a href="mailto:hola@shipperslab.tech">{messages.services.ctaButton}</a>
           </TextureButton>

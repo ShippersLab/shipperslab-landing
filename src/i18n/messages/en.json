@@ -149,10 +149,6 @@
       {
         "question": "Can you work with our current systems?",
         "answer": "Yes. We integrate with what you already have (CRMs, ERPs, spreadsheets, APIs) instead of asking you to start from zero."
-      },
-      {
-        "question": "What happens after the project is finished?",
-        "answer": "We hand over the code, the documentation and the knowledge so your team can carry on alone. If you'd rather we keep going, we can do that too."
       }
     ]
   },

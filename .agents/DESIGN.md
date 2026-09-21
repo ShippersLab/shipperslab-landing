@@ -23,7 +23,7 @@ No other colors are introduced without updating this table first.
 | Body                           | Geist       | 400    | normal     | 16–18px                        | 1.6         | `font-sans text-base` / `text-lg` |
 | Labels / technical details     | Geist Mono  | 500    | `0.12em`, uppercase | 11px                | 1.4         | `font-mono uppercase tracking-label text-label` |
 
-Nunito is not used anywhere on the landing. Geist Pixel is the only display face: section titles use the plain `font-pixel` axis (`ELSH 1`, most legible at heading sizes) through the shared `font-heading` token, and the hero keeps its heavier `font-pixel-circle` axis (`ELSH 20`) as its one dedicated display treatment. Don't reach for the heavier pixel axes (`font-pixel-grid`, `font-pixel-triangle`, `font-pixel-line`) outside of the hero — they read as decoration at smaller sizes.
+Nunito is not used anywhere on the landing. Geist Pixel is the only display face, and every heading — hero down to section titles — renders on its rounder `font-pixel-circle` axis (`ELSH 20`) through the shared `font-heading` token, applied by default to `h1`/`h2`/`h3`. Don't reach for the heavier pixel axes (`font-pixel-grid`, `font-pixel-triangle`, `font-pixel-line`) outside of the hero, and never render a heading in full uppercase with wide tracking — it reads as a label, not a title.
 
 A headline can pick up a subtle print-grain texture instead of a flat fill with the `text-grain` utility (`src/styles/globals.css`): it clips a noise pattern to the text using `background-clip: text`. Use it sparingly, on a single short headline at a time, never on body copy or the labels role — texture competes with the 11px size there.
 
