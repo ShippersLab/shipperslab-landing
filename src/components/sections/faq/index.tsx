@@ -46,17 +46,19 @@ export function Faq() {
   return (
     <Section bordered>
       <div className="grid gap-10 lg:grid-cols-[2fr_3fr] lg:gap-16">
-        <div
-          ref={imageRef}
-          className="relative aspect-square overflow-hidden rounded-lg border border-border lg:sticky lg:top-24 lg:self-start"
-        >
-          <Image
-            src="/images/building-illustration.webp"
-            alt={messages.faq.imageAlt}
-            fill
-            sizes="(min-width: 1024px) 30vw, 100vw"
-            className="object-cover"
-          />
+        <div className="lg:sticky lg:top-24 lg:self-start">
+          <div
+            ref={imageRef}
+            className="relative aspect-square overflow-hidden rounded-lg border border-border"
+          >
+            <Image
+              src="/images/building-illustration.webp"
+              alt={messages.faq.imageAlt}
+              fill
+              sizes="(min-width: 1024px) 30vw, 100vw"
+              className="object-cover"
+            />
+          </div>
         </div>
 
         <div>
