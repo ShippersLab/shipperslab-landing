@@ -31,6 +31,12 @@
       "skillPath": "skills/gsap-core/SKILL.md",
       "computedHash": "c4a01101d9e1aafbf4b49f75d74f9349790d8741981ba0237c990093863035a6"
     },
+    "hugeicons": {
+      "source": "hugeicons/hugeicons",
+      "sourceType": "github",
+      "skillPath": "skills/hugeicons/SKILL.md",
+      "computedHash": "f473259801e2c3083b1e9345c1dc7a378accd254ae3307be8dda4696127d2e8b"
+    },
     "impeccable": {
       "source": "pbakaus/impeccable",
       "sourceType": "github",

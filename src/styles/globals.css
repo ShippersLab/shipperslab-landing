@@ -9,7 +9,7 @@
 
   --font-sans: var(--font-geist-sans), sans-serif;
   --font-mono: var(--font-geist-mono), monospace;
-  --font-heading: var(--font-nunito), sans-serif;
+  --font-heading: var(--font-geist-pixel), monospace;
 
   --text-hero: clamp(3rem, 8vw, 6rem);
   --text-hero--line-height: 0.95;
@@ -39,7 +39,7 @@
   --shadow-xl: none;
   --shadow-2xl: none;
 
-  --container-content: 90rem;
+  --container-content: 75rem;
   --spacing-section: 140px;
 }
 

@@ -7,9 +7,9 @@ import Link from "next/link";
 import { TextureButton } from "@/components/ui/texture-button";
 
 const LINKS = [
-  { key: "services", href: "#servicios" },
-  { key: "about", href: "#nosotros" },
-  { key: "events", href: "#eventos" },
+  { key: "services", href: "/#servicios" },
+  { key: "about", href: "/#nosotros" },
+  { key: "events", href: "/eventos" },
 ] as const;
 
 export function Navbar() {
@@ -30,18 +30,18 @@ export function Navbar() {
 
       <nav className="hidden items-center gap-8 md:flex">
         {LINKS.map((link) => (
-          <a
+          <Link
             key={link.key}
             href={link.href}
             className="text-sm text-ink/70 transition-colors duration-200 hover:text-ink"
           >
             {messages.nav[link.key]}
-          </a>
+          </Link>
         ))}
       </nav>
 
       <TextureButton asChild variant="primary" size="lg" className="w-auto">
-        <a href="#contacto">{messages.nav.contact}</a>
+        <Link href="/#contacto">{messages.nav.contact}</Link>
       </TextureButton>
     </header>
   );
