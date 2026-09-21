@@ -163,6 +163,8 @@
       "error": "No se pudo enviar. Escribinos directo a hola@shipperslab.tech.",
       "whatsapp": "Escribinos por WhatsApp",
       "whatsappMessage": "Hola, quiero contarles un problema o una idea.",
+      "whatsappGreeting": "Hola, soy {name}.",
+      "whatsappGreetingWithCompany": "Hola, soy {name}, de {company}.",
       "alternative": "O escribinos directo a"
     }
   },

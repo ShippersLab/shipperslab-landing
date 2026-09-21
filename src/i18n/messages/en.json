@@ -159,6 +159,8 @@
       "error": "Couldn't send. Write to us directly at hola@shipperslab.tech.",
       "whatsapp": "Message us on WhatsApp",
       "whatsappMessage": "Hi, I'd like to tell you about a problem or an idea.",
+      "whatsappGreeting": "Hi, I'm {name}.",
+      "whatsappGreetingWithCompany": "Hi, I'm {name}, from {company}.",
       "alternative": "Or write to us directly at"
     }
   },

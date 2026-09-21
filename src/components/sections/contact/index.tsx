@@ -78,7 +78,7 @@ export function Contact() {
               />
             </label>
 
-            <FormActions status={status} />
+            <FormActions status={status} form={form} />
           </form>
         </Reveal>
       </div>
