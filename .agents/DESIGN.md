@@ -6,7 +6,7 @@ Design system and agent rules for the ShippersLab landing page. This is the sing
 
 | Token    | Value     | Tailwind utility (examples)         | Usage                                    |
 | -------- | --------- | ------------------------------------ | ----------------------------------------- |
-| `accent` | `#FE5634` | `bg-accent`, `text-accent`, `border-accent` | CTAs and a small number of accents. **Restricted: must not appear more than 4 times on the page.** |
+| `accent` | `#FE5634` | `bg-accent`, `text-accent`, `border-accent` | CTAs and a small number of accents. **Restricted: must not appear more than 5 times on the page.** |
 | `ink`    | `#0B0F1A` | `bg-ink`, `text-ink`                 | Primary text.                             |
 | `paper`  | `#F2F3F5` | `bg-paper`, `text-paper`             | Page background.                          |
 | `muted`  | `#6E7686` | `text-muted`                         | Secondary text.                           |
@@ -18,7 +18,7 @@ No other colors are introduced without updating this table first.
 
 | Role                         | Font        | Weight | Tracking   | Size                          | Line height | Tailwind utility        |
 | ----------------------------- | ----------- | ------ | ---------- | ------------------------------ | ----------- | ------------------------ |
-| Section titles                | Geist Pixel | 700    | `-0.02em`  | —                               | —           | `font-heading tracking-heading` (applied by default to `h1`/`h2`/`h3`) |
+| Section titles                | Geist Pixel | 500    | `-0.01em`  | —                               | —           | `font-heading tracking-heading` (applied by default to `h1`/`h2`/`h3`) |
 | Hero                           | Geist Pixel | 500    | `-0.04em`  | `clamp(48px, 8vw, 96px)`       | 0.95        | `font-pixel-circle tracking-hero text-hero` |
 | Body                           | Geist       | 400    | normal     | 16–18px                        | 1.6         | `font-sans text-base` / `text-lg` |
 | Labels / technical details     | Geist Mono  | 500    | `0.12em`, uppercase | 11px                | 1.4         | `font-mono uppercase tracking-label text-label` |
@@ -33,11 +33,12 @@ A headline can pick up a subtle print-grain texture instead of a flat fill with 
 - Vertical section padding: **140px on desktop** — `py-section`.
 - Borders are **1px**, and boxes are **never** shadowed. `shadow-*` utilities resolve to `none`; if a shape needs separation, give it a `border-border` instead.
 - Border radius tops out at **8px**. The `rounded-*` scale (`xs` through `4xl`) is clamped so nothing in the app can round past 8px.
-- `accent` is a spotlight color, not a brand wash: budget its four uses deliberately (typically the primary CTA, plus up to three smaller accents — an active state, an icon, a highlighted stat).
+- `accent` is a spotlight color, not a brand wash: budget its five uses deliberately across the page (the primary CTAs in the nav, hero and contact form, plus the two mid-page "talk to us" prompts that shorten the path to an email).
 
 ## Motion
 
 - GSAP is the animation library. Scroll-triggered reveals go through `ScrollTrigger` (or a plain `IntersectionObserver` for the simplest cases) — never a scroll listener that runs on every frame. An element starts hidden/offset and animates to its resting state once, when it crosses the viewport threshold.
+- Photographic/illustrated images resolve from a soft blur into focus (fade + `filter: blur()` to `0`) instead of scaling or sliding in. Abstract UI illustrations (the kind built from divs, not images) build themselves in with a small stagger instead.
 - Hovers transition over **200ms** (`duration-200`) with a standard ease.
 - Every animation and transition respects `prefers-reduced-motion`. `globals.css` collapses all animation/transition durations to near-zero for users who request reduced motion, and any GSAP timeline must check `window.matchMedia("(prefers-reduced-motion: reduce)")` (or `gsap.matchMedia()`) and skip straight to the end state instead of bypassing it.
 

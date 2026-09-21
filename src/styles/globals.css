@@ -19,7 +19,7 @@
   --text-lg--line-height: 1.6;
 
   --tracking-hero: -0.04em;
-  --tracking-heading: -0.02em;
+  --tracking-heading: -0.01em;
   --tracking-label: 0.12em;
 
   --radius-xs: 2px;
@@ -52,6 +52,10 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     background-color: var(--paper);
     color: var(--ink);
@@ -61,7 +65,7 @@
   h2,
   h3 {
     font-family: var(--font-heading);
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: var(--tracking-heading);
   }
 

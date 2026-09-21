@@ -23,8 +23,8 @@ export function Hero() {
           .timeline({ defaults: { ease: "power3.out" } })
           .fromTo(
             ".hero-image",
-            { autoAlpha: 0, scale: 1.04 },
-            { autoAlpha: 1, scale: 1, duration: 1.1 },
+            { autoAlpha: 0, filter: "blur(24px)" },
+            { autoAlpha: 1, filter: "blur(0px)", duration: 1.2 },
           )
           .fromTo(
             ".hero-title",

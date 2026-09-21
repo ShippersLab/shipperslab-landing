@@ -45,7 +45,9 @@
       "Few projects at a time, so we can be present in each one.",
       "Real progress every week, not a report at the end.",
       "Scope in writing from day one."
-    ]
+    ],
+    "ctaTitle": "No middlemen: write to us directly.",
+    "ctaButton": "Send us an email"
   },
   "problems": {
     "title": "Does any of this sound familiar?",
@@ -61,7 +63,9 @@
   },
   "services": {
     "title": "What we can build.",
-    "description": "From an internal system to a full digital product. We build new products from scratch and improve the ones that already exist.",
+    "description": "Websites, products, automation or AI: we build it to fit, from scratch or on top of what you already have. If you need something, let's talk it through.",
+    "ctaTitle": "Need something that's not on this list? Tell us anyway.",
+    "ctaButton": "Get in touch",
     "items": [
       {
         "id": "software",
@@ -128,6 +132,7 @@
   },
   "faq": {
     "title": "Frequently asked questions.",
+    "imageAlt": "Illustration of construction cranes in orange tones on a pink background",
     "items": [
       {
         "question": "I don't know what solution I need, can we still talk?",

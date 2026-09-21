@@ -7,6 +7,7 @@ import { useI18n } from "@/i18n/provider";
 import type { Messages } from "@/i18n/get-messages";
 import { cn } from "@/lib/utils";
 import { Reveal } from "@/components/ui/reveal";
+import { TextureButton } from "@/components/ui/texture-button";
 import {
   ChatIcon,
   DashboardIcon,
@@ -121,13 +122,15 @@ export function Services() {
                 >
                   <Reveal className="flex flex-col justify-between gap-8 pb-4 md:col-span-2">
                     <div>
-                      <h3 className="mb-3 text-sm text-muted">{item.title}</h3>
+                      <h3 className="mb-3 font-mono text-label tracking-label text-muted uppercase">
+                        {item.title}
+                      </h3>
                       <p className="text-lg text-ink">
-                        <span className="font-medium">{item.lead}</span> {item.description}
+                        {item.lead} {item.description}
                       </p>
                     </div>
 
-                    <ul className="flex flex-col divide-y divide-border text-muted">
+                    <ul className="flex flex-col divide-y divide-border text-base text-muted">
                       {item.highlights.map((highlight, index) => {
                         const Icon = icons[index];
 
@@ -152,6 +155,13 @@ export function Services() {
             })}
           </div>
         </div>
+
+        <Reveal className="mt-16 flex flex-col items-start gap-5 border-t border-border pt-10 sm:flex-row sm:items-center sm:justify-between lg:mt-24">
+          <p className="max-w-md text-lg text-ink">{messages.services.ctaTitle}</p>
+          <TextureButton asChild variant="primary" size="pill" className="w-auto shrink-0">
+            <a href="mailto:hola@shipperslab.tech">{messages.services.ctaButton}</a>
+          </TextureButton>
+        </Reveal>
       </div>
     </section>
   );

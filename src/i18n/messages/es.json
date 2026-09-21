@@ -45,7 +45,9 @@
       "Pocos proyectos a la vez, para estar presentes en cada uno.",
       "Avance real cada semana, no un reporte al final.",
       "Alcance por escrito desde el día uno."
-    ]
+    ],
+    "ctaTitle": "Sin vueltas: escribinos directo a nosotros.",
+    "ctaButton": "Mandanos un mail"
   },
   "problems": {
     "title": "¿Te suena alguno de estos?",
@@ -61,7 +63,9 @@
   },
   "services": {
     "title": "Qué podemos construir.",
-    "description": "De un sistema interno a un producto digital completo. Construimos productos nuevos desde cero y mejoramos los que ya existen.",
+    "description": "Sitios, productos, automatizaciones o IA: lo construimos a medida, desde cero o sobre lo que ya tenés. Si tenés una necesidad, la vemos juntos.",
+    "ctaTitle": "¿Necesitás algo que no está en esta lista? Contanos igual.",
+    "ctaButton": "Escribinos",
     "items": [
       {
         "id": "software",
@@ -132,6 +136,7 @@
   },
   "faq": {
     "title": "Preguntas frecuentes.",
+    "imageAlt": "Ilustración de grúas de construcción en tonos naranja sobre fondo rosado",
     "items": [
       {
         "question": "No sé qué solución necesito, ¿igual podemos hablar?",

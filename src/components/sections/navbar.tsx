@@ -25,8 +25,8 @@ export function Navbar() {
       mm.add("(prefers-reduced-motion: no-preference)", () => {
         gsap.fromTo(
           ref.current,
-          { autoAlpha: 0, y: -12 },
-          { autoAlpha: 1, y: 0, duration: 0.7, delay: 0.2, ease: "power3.out" },
+          { autoAlpha: 0 },
+          { autoAlpha: 1, duration: 0.6, delay: 0.3, ease: "power1.out" },
         );
       });
 
