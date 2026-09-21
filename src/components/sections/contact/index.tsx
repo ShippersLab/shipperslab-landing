@@ -1,43 +1,18 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
-
+import { FormActions } from "@/components/sections/contact/form-actions";
+import { useContactForm } from "@/components/sections/contact/use-contact-form";
 import { Reveal } from "@/components/ui/reveal";
 import { Section } from "@/components/ui/section";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { TextureButton } from "@/components/ui/texture-button";
 import { useI18n } from "@/i18n/provider";
-import { site } from "@/lib/site";
 
 const FIELD_CLASS =
   "w-full rounded-lg border border-border bg-paper px-4 py-3 text-base text-ink placeholder:text-muted focus:border-ink focus:outline-none transition-colors duration-200";
 
 export function Contact() {
   const { messages } = useI18n();
-  const [form, setForm] = useState({ name: "", company: "", contactMethod: "", message: "" });
-
-  function handleChange(field: keyof typeof form) {
-    return (event: FormEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-      setForm((prev) => ({ ...prev, [field]: event.currentTarget.value }));
-    };
-  }
-
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-
-    const body = [
-      `${messages.contact.form.name}: ${form.name}`,
-      `${messages.contact.form.company}: ${form.company}`,
-      `${messages.contact.form.contactMethod}: ${form.contactMethod}`,
-      "",
-      form.message,
-    ].join("\n");
-
-    const subject = `${messages.contact.form.company}: ${form.company || form.name}`.trim();
-    const mailto = `mailto:${site.emails.contact}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-    window.location.href = mailto;
-  }
+  const { form, status, handleChange, handleSubmit } = useContactForm();
 
   return (
     <Section id="contacto" bordered>
@@ -103,9 +78,7 @@ export function Contact() {
               />
             </label>
 
-            <TextureButton type="submit" variant="primary" size="pill" className="w-auto">
-              {messages.contact.form.submit}
-            </TextureButton>
+            <FormActions status={status} />
           </form>
         </Reveal>
       </div>
