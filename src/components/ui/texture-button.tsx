@@ -6,7 +6,7 @@ import { cva } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
 
-const buttonVariantsOuter = cva("", {
+const buttonVariantsOuter = cva("active:scale-95", {
   variants: {
     variant: {
       primary: "w-full bg-accent p-[1px] transition duration-300 ease-in-out",

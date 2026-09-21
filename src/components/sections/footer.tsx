@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { useI18n } from "@/i18n/provider";
+import { Reveal } from "@/components/ui/reveal";
 
 const YEAR = new Date().getFullYear();
 
@@ -14,7 +15,7 @@ export function Footer() {
     <footer className="border-t border-border pt-16">
       <div className="mx-auto max-w-content px-4 md:px-8">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="flex flex-col gap-3 lg:col-span-2">
+          <Reveal className="flex flex-col gap-3 lg:col-span-2">
             <Link href="/" aria-label={messages.site.name} className="w-fit">
               <Image
                 src="/logo/black.svg"
@@ -26,9 +27,9 @@ export function Footer() {
               />
             </Link>
             <p className="max-w-xs text-sm text-muted">{messages.footer.tagline}</p>
-          </div>
+          </Reveal>
 
-          <div className="flex flex-col gap-3">
+          <Reveal delay={80} className="flex flex-col gap-3">
             <span className="font-mono text-label tracking-label text-muted uppercase">
               {messages.footer.servicesTitle}
             </span>
@@ -44,9 +45,9 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </Reveal>
 
-          <div className="flex flex-col gap-3">
+          <Reveal delay={160} className="flex flex-col gap-3">
             <span className="font-mono text-label tracking-label text-muted uppercase">
               {messages.footer.contactTitle}
             </span>
@@ -89,13 +90,16 @@ export function Footer() {
               </li>
               <li className="pt-1 text-muted">{messages.footer.location}</li>
             </ul>
-          </div>
+          </Reveal>
         </div>
 
-        <div className="mt-12 flex flex-col gap-2 border-t border-border py-6 text-sm text-muted sm:flex-row sm:items-center sm:justify-between">
+        <Reveal
+          delay={240}
+          className="mt-12 flex flex-col gap-2 border-t border-border py-6 text-sm text-muted sm:flex-row sm:items-center sm:justify-between"
+        >
           <span>© {YEAR} ShippersLab</span>
           <span>{messages.footer.legal}</span>
-        </div>
+        </Reveal>
       </div>
     </footer>
   );

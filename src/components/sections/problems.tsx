@@ -1,18 +1,29 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 import { useI18n } from "@/i18n/provider";
 import { cn } from "@/lib/utils";
 import { Reveal } from "@/components/ui/reveal";
 import { CheckIcon } from "@/components/ui/icons";
+import { gsap } from "@/lib/gsap";
 
 export function Problems() {
   const { messages } = useI18n();
   const [checked, setChecked] = useState<Record<number, boolean>>({});
+  const checkRefs = useRef<Record<number, HTMLSpanElement | null>>({});
 
   function toggle(index: number) {
-    setChecked((prev) => ({ ...prev, [index]: !prev[index] }));
+    setChecked((prev) => {
+      const next = { ...prev, [index]: !prev[index] };
+      const node = checkRefs.current[index];
+
+      if (next[index] && node && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        gsap.fromTo(node, { scale: 0.5 }, { scale: 1, duration: 0.4, ease: "back.out(2.5)" });
+      }
+
+      return next;
+    });
   }
 
   return (
@@ -35,11 +46,14 @@ export function Problems() {
                   aria-checked={isChecked}
                   onClick={() => toggle(index)}
                   className={cn(
-                    "flex w-full items-center gap-4 rounded-lg border p-4 text-left transition-colors duration-200",
+                    "flex w-full items-center gap-4 rounded-lg border p-4 text-left transition duration-200 active:scale-95",
                     isChecked ? "border-ink" : "border-border hover:border-ink/30",
                   )}
                 >
                   <span
+                    ref={(node) => {
+                      checkRefs.current[index] = node;
+                    }}
                     className={cn(
                       "flex size-5 shrink-0 items-center justify-center rounded-sm border transition-colors duration-200",
                       isChecked ? "border-ink bg-ink text-paper" : "border-border text-transparent",

@@ -94,7 +94,7 @@ export function Services() {
                 type="button"
                 onClick={() => scrollToService(item.id)}
                 className={cn(
-                  "border-l-2 px-4 py-2 text-left text-sm transition-colors duration-200",
+                  "border-l-2 px-4 py-2 text-left text-sm transition duration-200 active:scale-95",
                   activeId === item.id
                     ? "border-ink text-ink"
                     : "border-transparent text-muted hover:text-ink",
@@ -119,7 +119,7 @@ export function Services() {
                   }}
                   className="grid scroll-mt-32 gap-6 sm:grid-cols-2 md:grid-cols-5 lg:gap-12"
                 >
-                  <div className="flex flex-col justify-between gap-8 pb-4 md:col-span-2">
+                  <Reveal className="flex flex-col justify-between gap-8 pb-4 md:col-span-2">
                     <div>
                       <h3 className="mb-3 text-sm text-muted">{item.title}</h3>
                       <p className="text-lg text-ink">
@@ -139,11 +139,14 @@ export function Services() {
                         );
                       })}
                     </ul>
-                  </div>
+                  </Reveal>
 
-                  <div className="relative flex aspect-square rounded-lg border border-border bg-ink/2 p-3 md:col-span-3">
+                  <Reveal
+                    delay={100}
+                    className="relative flex aspect-square rounded-lg border border-border bg-ink/2 p-3 md:col-span-3"
+                  >
                     <Illustration />
-                  </div>
+                  </Reveal>
                 </div>
               );
             })}

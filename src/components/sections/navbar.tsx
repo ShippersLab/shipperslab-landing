@@ -3,8 +3,10 @@
 import Image from "next/image";
 import { useI18n } from "@/i18n/provider";
 import Link from "next/link";
+import { useRef } from "react";
 
 import { TextureButton } from "@/components/ui/texture-button";
+import { gsap, useGSAP } from "@/lib/gsap";
 
 const LINKS = [
   { key: "services", href: "/#servicios" },
@@ -14,9 +16,30 @@ const LINKS = [
 
 export function Navbar() {
   const { messages } = useI18n();
+  const ref = useRef<HTMLElement>(null);
+
+  useGSAP(
+    () => {
+      const mm = gsap.matchMedia();
+
+      mm.add("(prefers-reduced-motion: no-preference)", () => {
+        gsap.fromTo(
+          ref.current,
+          { autoAlpha: 0, y: -12 },
+          { autoAlpha: 1, y: 0, duration: 0.7, delay: 0.2, ease: "power3.out" },
+        );
+      });
+
+      return () => mm.revert();
+    },
+    { scope: ref },
+  );
 
   return (
-    <header className="absolute inset-x-0 top-0 z-20 mx-auto flex w-full max-w-content items-center justify-between gap-6 px-4 py-4 md:px-8">
+    <header
+      ref={ref}
+      className="absolute inset-x-0 top-0 z-20 mx-auto flex w-full max-w-content items-center justify-between gap-6 px-4 py-4 md:px-8"
+    >
       <Link href="/" aria-label={messages.site.name}>
         <Image
           src="/logo/accent.svg"
