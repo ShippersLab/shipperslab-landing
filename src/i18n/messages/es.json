@@ -6,65 +6,67 @@
     "services": "Servicios",
     "about": "Nosotros",
     "events": "Eventos",
-    "contact": "Contactanos"
+    "contact": "Escribinos"
   },
   "hero": {
-    "title": "Creamos software que simplifica.",
-    "description": "Automatizamos procesos y construimos productos digitales a medida, sin vueltas.",
-    "primaryCta": "Hablemos",
-    "secondaryCta": "Ver servicios",
+    "title": "Ingeniería para el problema que tenés hoy.",
+    "description": "Herramientas internas, automatizaciones, IA y productos digitales. Desde cero o sobre lo que ya tenés, con alcance por escrito y avance cada semana.",
+    "primaryCta": "Contanos tu problema",
+    "secondaryCta": "Qué construimos",
     "imageAlt": "Ilustración del Obelisco de Buenos Aires sobre una avenida amplia, en tonos naranja"
   },
   "trust": {
     "title": "Hablás con quienes construyen.",
-    "description": "Somos un grupo de ingenieros con experiencia en producto, infraestructura, backend, frontend e inteligencia artificial. Trabajamos con clientes de Argentina y del exterior, en español y en inglés.",
-    "companiesTitle": "Equipos donde trabajamos",
-    "ctaTitle": "Sin vueltas: escribinos directo a nosotros.",
-    "ctaButton": "Mandanos un mail"
+    "description": "Somos un equipo chico de ingenieros. Venimos de empresas grandes y de productos para clientes del exterior, y trabajamos en español y en inglés con clientes de Argentina y de afuera.",
+    "companiesTitle": "Antes trabajamos en",
+    "ctaTitle": "Sin intermediarios. Te contesta alguien del equipo que construye.",
+    "ctaButton": "Escribinos a hola@shipperslab.tech"
   },
   "problems": {
     "title": "¿Te suena alguno de estos?",
-    "description": "Si marcaste alguno, arranquemos por ahí.",
+    "description": "Marcá los que te pasan.",
     "items": [
       "Procesos que todavía se hacen a mano.",
       "Información repartida entre Excel, mails y WhatsApp.",
       "Sistemas que no se hablan entre sí.",
       "Tareas repetitivas que te comen el día.",
-      "Necesitás una herramienta interna y no sabés por dónde empezar.",
-      "Tenés una idea de producto que todavía no se convirtió en software."
-    ]
+      "Necesitás una herramienta interna y nadie del equipo tiene tiempo de hacerla.",
+      "Tenés un producto a medias que no termina de salir."
+    ],
+    "ctaTitle": "¿Marcaste alguno? Contanos cuál y arrancamos por ahí.",
+    "ctaLink": "Contanos cuál"
   },
   "services": {
-    "title": "Qué podemos construir.",
-    "description": "Construimos lo que tu negocio necesita para andar mejor: sistemas a medida, automatizaciones, productos digitales e IA. Desde cero o sobre lo que ya tenés.",
+    "title": "Qué construimos.",
+    "description": "Cuatro cosas, según el problema que tengas hoy. Solas o combinadas.",
     "items": [
       {
         "id": "software",
-        "title": "Software a medida",
+        "title": "Herramientas internas",
         "lead": "Sistemas que se adaptan a vos.",
         "description": "Dashboards, portales y plataformas diseñados para cómo ya trabaja tu equipo, no al revés.",
         "highlights": [
           "Dashboards y portales internos",
           "Se integra con tus datos y sistemas actuales",
-          "Roles y permisos por equipo"
+          "Cada uno ve lo que le toca"
         ]
       },
       {
         "id": "automation",
         "title": "Automatizaciones",
         "lead": "Una vez, no todos los días.",
-        "description": "Conectamos las herramientas que ya usás y sacamos de encima las tareas repetitivas.",
+        "description": "Conectamos las herramientas que ya usás y te sacamos de encima lo que hoy hacés a mano.",
         "highlights": [
           "Integraciones entre tus herramientas",
-          "Carga y orden de datos",
+          "Carga y limpieza de datos",
           "Tareas repetitivas resueltas una sola vez"
         ]
       },
       {
         "id": "ai",
         "title": "Inteligencia artificial",
-        "lead": "IA que resuelve, no que impresiona.",
-        "description": "Agentes y asistentes que hacen un trabajo concreto todos los días, sin humo.",
+        "lead": "IA que trabaja, no que demuestra.",
+        "description": "Agentes y asistentes con una tarea concreta: leer documentos, responder, cargar, clasificar.",
         "highlights": [
           "Agentes para tareas internas",
           "Procesamiento de documentos",
@@ -73,9 +75,9 @@
       },
       {
         "id": "products",
-        "title": "Productos digitales",
+        "title": "Productos y sitios",
         "lead": "De la idea al link.",
-        "description": "Sitios, aplicaciones y MVPs listos para mostrar, usar y vender.",
+        "description": "Sitios, apps y MVPs que salen al aire. Las ideas son baratas. Las cosas terminadas, no.",
         "highlights": [
           "Sitios y ecommerce",
           "Aplicaciones web y mobile",
@@ -85,76 +87,94 @@
     ]
   },
   "process": {
-    "title": "Cómo trabajamos.",
+    "title": "Qué pasa cuando nos escribís.",
     "steps": [
       {
-        "title": "Entendemos",
-        "description": "Conocemos tu negocio y el problema antes de proponer nada."
+        "title": "Primera charla",
+        "description": "Nos contás el problema o la idea. Hablás con quien lo va a construir."
       },
       {
-        "title": "Proponemos",
-        "description": "Definimos la solución más simple que tenga sentido."
+        "title": "Propuesta por escrito",
+        "description": "Qué entra, qué no, cuánto cuesta y cuánto tarda. Todo claro antes de arrancar."
       },
       {
-        "title": "Construimos",
-        "description": "Diseñamos, desarrollamos e integramos."
+        "title": "Avance cada semana",
+        "description": "Ves algo funcionando cada semana, no un informe al final."
       },
       {
-        "title": "Mejoramos",
-        "description": "Medimos resultados e iteramos."
+        "title": "Lanzamos",
+        "description": "Sale al aire y lo usás. Después lo mejoramos con uso real."
       }
     ]
   },
   "faq": {
-    "title": "Preguntas frecuentes.",
+    "title": "Lo que nos preguntan antes de escribir.",
     "imageAlt": "Ilustración de grúas de construcción en tonos naranja sobre fondo rosado",
     "items": [
       {
-        "question": "No sé qué solución necesito, ¿igual podemos hablar?",
+        "question": "No sé qué necesito, ¿igual podemos hablar?",
         "answer": "Sí. La mayoría de los proyectos arrancan así. Nos contás el problema y juntos vemos qué tiene sentido construir."
       },
       {
-        "question": "¿Trabajan con proyectos chicos?",
-        "answer": "Sí, siempre que el alcance esté claro. Preferimos empezar chico y crecer con resultados reales antes que sumar cosas que no vas a usar."
+        "question": "¿Qué pasa después de que escribo?",
+        "answer": "Te contesta alguien del equipo. Coordinamos una charla corta para entender el problema. Si tiene sentido, te mandamos alcance, precio y fechas por escrito."
       },
       {
         "question": "¿Cuánto puede costar un desarrollo?",
-        "answer": "Depende del alcance. Por eso la primera conversación es gratis: entendemos el problema y te damos un número antes de arrancar, por escrito."
+        "answer": "Depende del alcance. En la primera charla entendemos el problema y te damos un número por escrito antes de arrancar."
+      },
+      {
+        "question": "¿Cuánto tarda?",
+        "answer": "Depende del alcance, y va en la propuesta junto con el precio. Lo que sí es fijo: ves avance cada semana, no un informe al final."
+      },
+      {
+        "question": "¿Trabajan con proyectos chicos?",
+        "answer": "Sí. Preferimos arrancar con algo chico que salga al aire y sumar después, antes que construir cosas que no vas a usar."
       },
       {
         "question": "¿Pueden trabajar con nuestros sistemas actuales?",
         "answer": "Sí. Integramos con lo que ya tenés (CRMs, ERPs, planillas, APIs) en vez de pedirte que empieces de cero."
       },
       {
-        "question": "¿Trabajan con clientes de otros países?",
-        "answer": "Sí. Trabajamos en español y en inglés con clientes de Argentina y del exterior, y coordinamos las reuniones de forma remota."
+        "question": "Ya tengo un equipo técnico, ¿pueden sumarse?",
+        "answer": "Sí. Podemos tomar una parte del producto o sumar manos a tu equipo por un tiempo definido, con el alcance por escrito igual que en cualquier proyecto."
+      },
+      {
+        "question": "¿Trabajan con clientes fuera de Argentina?",
+        "answer": "Sí. Trabajamos en español y en inglés, y todo pasa por videollamada, en tu horario."
       }
     ]
   },
   "contact": {
     "title": "Empecemos por el problema.",
-    "description": "Contanos qué querés mejorar, automatizar o construir. Te respondemos con una propuesta clara y un número antes de arrancar.",
+    "description": "Contanos qué querés mejorar, automatizar o construir. Lo lee uno de los ingenieros y te responde para coordinar una charla. Alcance y precio por escrito antes de arrancar.",
     "form": {
       "name": "Nombre",
       "namePlaceholder": "Tu nombre",
-      "company": "Empresa",
+      "company": "Empresa (opcional)",
       "companyPlaceholder": "Nombre de tu empresa",
       "contactMethod": "Email o WhatsApp",
-      "contactMethodPlaceholder": "vos@empresa.com",
+      "contactMethodPlaceholder": "vos@empresa.com o +54 9 ...",
       "message": "¿Qué querés mejorar o construir?",
-      "messagePlaceholder": "Contanos un poco de tu problema o tu idea.",
-      "submit": "Contanos qué querés resolver"
+      "messagePlaceholder": "Ej: cargamos los pedidos a mano desde WhatsApp a una planilla y se nos pierden.",
+      "submit": "Enviar",
+      "sending": "Enviando...",
+      "success": "Listo. Te contesta alguien del equipo para coordinar una charla.",
+      "error": "No se pudo enviar. Escribinos directo a hola@shipperslab.tech.",
+      "whatsapp": "Escribinos por WhatsApp",
+      "whatsappMessage": "Hola, quiero contarles un problema o una idea.",
+      "alternative": "O escribinos directo a"
     }
   },
   "footer": {
     "tagline": "Un lab que lanza.",
     "servicesTitle": "Servicios",
     "contactTitle": "Contacto",
-    "location": "Santa Fe, Argentina",
+    "location": "Se hace acá. Santa Fe, Argentina.",
     "legal": "Hecho en Argentina."
   },
   "events": {
-    "title": "Estamos construyendo los primeros eventos.",
+    "title": "Todavía construyendo.",
     "description": "Estamos armando las primeras build nights, meetups y hackathons para gente que construye, arrancando en Santa Fe y creciendo por Argentina. Nada confirmado todavía, pero se viene.",
     "formats": ["Build nights", "Meetups", "Hackathons"],
     "sponsorTitle": "¿Querés ser sponsor o ayudarnos a organizar?",

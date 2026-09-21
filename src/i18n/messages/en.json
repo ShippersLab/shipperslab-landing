@@ -6,54 +6,56 @@
     "services": "Services",
     "about": "About",
     "events": "Events",
-    "contact": "Get in touch"
+    "contact": "Write to us"
   },
   "hero": {
-    "title": "We build software that simplifies.",
-    "description": "We automate processes and build custom digital products, no fluff.",
-    "primaryCta": "Let's talk",
-    "secondaryCta": "View services",
+    "title": "Engineering for the problem you have today.",
+    "description": "Internal tools, automation, AI and digital products. From scratch or on top of what you already have, with scope in writing and progress every week.",
+    "primaryCta": "Tell us your problem",
+    "secondaryCta": "What we build",
     "imageAlt": "Illustration of the Buenos Aires Obelisk on a wide avenue, in orange tones"
   },
   "trust": {
     "title": "You talk to the people building it.",
-    "description": "We're a group of engineers with experience in product, infrastructure, backend, frontend and AI. We work with clients in Argentina and abroad, in Spanish and English.",
-    "companiesTitle": "Teams we've worked with",
-    "ctaTitle": "No middlemen: write to us directly.",
-    "ctaButton": "Send us an email"
+    "description": "We're a small team of engineers. We come from large companies and from products built for clients abroad, and we work in Spanish and English with clients in Argentina and elsewhere.",
+    "companiesTitle": "Where we've worked before",
+    "ctaTitle": "No middlemen. Whoever answers is someone who builds.",
+    "ctaButton": "Write to hola@shipperslab.tech"
   },
   "problems": {
     "title": "Does any of this sound familiar?",
-    "description": "If you checked one, let's start there.",
+    "description": "Check the ones that sound like you.",
     "items": [
       "Processes that are still done by hand.",
       "Data scattered across spreadsheets, email and WhatsApp.",
       "Systems that don't talk to each other.",
       "Repetitive tasks eating up your week.",
-      "You need an internal tool and don't know where to start.",
-      "A product idea that hasn't become software yet."
-    ]
+      "You need an internal tool and nobody on your team has time to build it.",
+      "You have a half-built product that never quite ships."
+    ],
+    "ctaTitle": "Checked one? Tell us which and we'll start there.",
+    "ctaLink": "Tell us which"
   },
   "services": {
-    "title": "What we can build.",
-    "description": "We build what your business needs to run better: custom systems, automation, digital products and AI. From scratch or on top of what you already have.",
+    "title": "What we build.",
+    "description": "Four things, depending on the problem you have today. On their own or combined.",
     "items": [
       {
         "id": "software",
-        "title": "Custom software",
+        "title": "Internal tools",
         "lead": "Systems that adapt to you.",
         "description": "Dashboards, portals and platforms built for how your team already works, not the other way around.",
         "highlights": [
           "Internal dashboards and portals",
           "Connects to your existing data and systems",
-          "Roles and permissions per team"
+          "Everyone sees only what they need"
         ]
       },
       {
         "id": "automation",
         "title": "Automation",
         "lead": "Once, not every day.",
-        "description": "We connect the tools you already use and take repetitive tasks off your plate.",
+        "description": "We connect the tools you already use and take the manual work off your plate.",
         "highlights": [
           "Integrations between your tools",
           "Data loading and cleanup",
@@ -63,8 +65,8 @@
       {
         "id": "ai",
         "title": "Artificial intelligence",
-        "lead": "AI that solves, not impresses.",
-        "description": "Agents and assistants that do concrete work every day, no hype.",
+        "lead": "AI that does the work, not the demo.",
+        "description": "Agents and assistants with one concrete job: read documents, answer, load, sort.",
         "highlights": [
           "Agents for internal tasks",
           "Document processing",
@@ -73,84 +75,102 @@
       },
       {
         "id": "products",
-        "title": "Digital products",
+        "title": "Products and websites",
         "lead": "From idea to link.",
-        "description": "Websites, apps and MVPs ready to show, use and sell.",
+        "description": "Websites, apps and MVPs that go live. Ideas are cheap. Finished things are not.",
         "highlights": ["Websites and ecommerce", "Web and mobile apps", "MVPs, from idea to launch"]
       }
     ]
   },
   "process": {
-    "title": "How we work.",
+    "title": "What happens after you write.",
     "steps": [
       {
-        "title": "Understand",
-        "description": "We learn your business and the problem before proposing anything."
+        "title": "First call",
+        "description": "You tell us the problem or the idea. You talk to the people who will build it."
       },
       {
-        "title": "Propose",
-        "description": "We define the simplest solution that makes sense."
+        "title": "Written proposal",
+        "description": "What's in, what's out, what it costs and how long it takes. All clear before we start."
       },
       {
-        "title": "Build",
-        "description": "We design, develop and integrate."
+        "title": "Progress every week",
+        "description": "You see something working every week, not a report at the end."
       },
       {
-        "title": "Improve",
-        "description": "We measure results and iterate."
+        "title": "We ship",
+        "description": "It goes live and you use it. Then we improve it with real usage."
       }
     ]
   },
   "faq": {
-    "title": "Frequently asked questions.",
+    "title": "What people ask before writing to us.",
     "imageAlt": "Illustration of construction cranes in orange tones on a pink background",
     "items": [
       {
-        "question": "I don't know what solution I need, can we still talk?",
+        "question": "I don't know what I need, can we still talk?",
         "answer": "Yes. Most projects start exactly like this. Tell us the problem and we'll figure out together what's worth building."
       },
       {
-        "question": "Do you work with small projects?",
-        "answer": "Yes, as long as the scope is clear. We'd rather start small and grow with real results than add things you won't use."
+        "question": "What happens after I write?",
+        "answer": "Someone on the team writes back. We set up a short call to understand the problem. If it makes sense, we send you scope, price and dates in writing."
       },
       {
-        "question": "How much can a project cost?",
-        "answer": "It depends on the scope. That's why the first conversation is free: we understand the problem and give you a number before starting, in writing."
+        "question": "What does a project cost?",
+        "answer": "It depends on the scope. On the first call we understand the problem and give you a number in writing before anything starts."
+      },
+      {
+        "question": "How long does it take?",
+        "answer": "It depends on the scope, and it goes in the proposal along with the price. What never changes: you see progress every week, not a report at the end."
+      },
+      {
+        "question": "Do you work with small projects?",
+        "answer": "Yes. We'd rather start with something small that goes live and add to it later than build things you won't use."
       },
       {
         "question": "Can you work with our current systems?",
         "answer": "Yes. We integrate with what you already have (CRMs, ERPs, spreadsheets, APIs) instead of asking you to start from zero."
       },
       {
-        "question": "Do you work with clients from other countries?",
-        "answer": "Yes. We work in Spanish and English with clients in Argentina and abroad, and we run meetings remotely."
+        "question": "I already have a tech team, can you join it?",
+        "answer": "Yes. We can take on part of the product or add hands to your team for a defined period, with the scope in writing like any other project."
+      },
+      {
+        "question": "Do you work with clients outside Argentina?",
+        "answer": "Yes. We work in Spanish and English, and everything happens over video calls, on your schedule."
       }
     ]
   },
   "contact": {
     "title": "Let's start with the problem.",
-    "description": "Tell us what you want to improve, automate or build. We'll reply with a clear proposal and a number before you commit.",
+    "description": "Tell us what you want to improve, automate or build. One of the engineers reads it and replies to set up a call. Scope and price in writing before we start.",
     "form": {
       "name": "Name",
       "namePlaceholder": "Your name",
-      "company": "Company",
+      "company": "Company (optional)",
       "companyPlaceholder": "Your company's name",
       "contactMethod": "Email or WhatsApp",
-      "contactMethodPlaceholder": "you@company.com",
+      "contactMethodPlaceholder": "you@company.com or +1 ...",
       "message": "What do you want to improve or build?",
-      "messagePlaceholder": "Tell us a bit about your problem or your idea.",
-      "submit": "Tell us what you want to solve"
+      "messagePlaceholder": "E.g. we copy orders by hand from WhatsApp into a spreadsheet and lose some.",
+      "submit": "Send",
+      "sending": "Sending...",
+      "success": "Done. Someone on the team will write back to set up a call.",
+      "error": "Couldn't send. Write to us directly at hola@shipperslab.tech.",
+      "whatsapp": "Message us on WhatsApp",
+      "whatsappMessage": "Hi, I'd like to tell you about a problem or an idea.",
+      "alternative": "Or write to us directly at"
     }
   },
   "footer": {
     "tagline": "A lab that ships.",
     "servicesTitle": "Services",
     "contactTitle": "Contact",
-    "location": "Santa Fe, Argentina",
+    "location": "Built here. Santa Fe, Argentina.",
     "legal": "Made in Argentina."
   },
   "events": {
-    "title": "We're building the first events.",
+    "title": "Still building.",
     "description": "We're putting together the first build nights, meetups and hackathons for people who build, starting in Santa Fe and growing across Argentina. Nothing confirmed yet, but it's coming.",
     "formats": ["Build nights", "Meetups", "Hackathons"],
     "sponsorTitle": "Want to sponsor or help us organize?",

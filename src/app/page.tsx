@@ -12,8 +12,8 @@ export default function Home() {
       <Hero />
       <Problems />
       <Services />
-      <Process />
       <Trust />
+      <Process />
       <Faq />
       <Contact />
     </>

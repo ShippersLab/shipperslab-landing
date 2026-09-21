@@ -38,9 +38,9 @@ export function Footer() {
             </span>
             <ul className="flex flex-col gap-2">
               {messages.services.items.map((item) => (
-                <li key={item.title}>
+                <li key={item.id}>
                   <a
-                    href="#servicios"
+                    href={`/#${item.id}`}
                     className="text-sm text-ink/70 transition-colors duration-200 hover:text-ink"
                   >
                     {item.title}
