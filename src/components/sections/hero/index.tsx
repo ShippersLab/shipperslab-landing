@@ -3,8 +3,9 @@
 import Image from "next/image";
 import { useRef } from "react";
 
-import { useI18n } from "@/i18n/provider";
+import { Container } from "@/components/ui/container";
 import { TextureButton } from "@/components/ui/texture-button";
+import { useI18n } from "@/i18n/provider";
 import { gsap, useGSAP } from "@/lib/gsap";
 
 const HERO_BLUR_DATA_URL =
@@ -66,13 +67,13 @@ export function Hero() {
         sizes="100vw"
       />
 
-      <div className="mx-auto grid w-full max-w-content gap-10 px-4 pt-8 pb-16 md:px-8 lg:grid-cols-[2fr_1fr] lg:items-start">
+      <Container className="grid gap-10 pt-8 pb-16 lg:grid-cols-[2fr_1fr] lg:items-start">
         <h1 className="hero-title max-w-xl font-pixel-circle font-medium tracking-tighter text-7xl">
           {messages.hero.title}
         </h1>
 
-        <div className="flex max-w-fit flex-col gap-6 w-full pt-1">
-          <p className="hero-description font-sans text-lg text-muted font-light tracking-tight w-full">
+        <div className="flex w-full max-w-fit flex-col gap-6 pt-1">
+          <p className="hero-description w-full font-sans text-lg font-light tracking-tight text-muted">
             {messages.hero.description}
           </p>
 
@@ -85,7 +86,7 @@ export function Hero() {
             </TextureButton>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

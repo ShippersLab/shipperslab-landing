@@ -1,12 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { useI18n } from "@/i18n/provider";
 import Link from "next/link";
 import { useRef } from "react";
 
+import { LocaleToggle } from "@/components/layout/locale-toggle";
 import { TextureButton } from "@/components/ui/texture-button";
+import { useI18n } from "@/i18n/provider";
 import { gsap, useGSAP } from "@/lib/gsap";
+import { site } from "@/lib/site";
 
 const LINKS = [
   { key: "services", href: "/#servicios" },
@@ -40,10 +42,10 @@ export function Navbar() {
       ref={ref}
       className="absolute inset-x-0 top-0 z-20 mx-auto flex w-full max-w-content items-center justify-between gap-6 px-4 py-4 md:px-8"
     >
-      <Link href="/" aria-label={messages.site.name}>
+      <Link href="/" aria-label={site.name}>
         <Image
           src="/logo/accent.svg"
-          alt="ShippersLab accent logo color"
+          alt="ShippersLab"
           width={44}
           height={24}
           unoptimized
@@ -63,9 +65,12 @@ export function Navbar() {
         ))}
       </nav>
 
-      <TextureButton asChild variant="primary" size="lg" className="w-auto">
-        <Link href="/#contacto">{messages.nav.contact}</Link>
-      </TextureButton>
+      <div className="flex items-center gap-3">
+        <LocaleToggle />
+        <TextureButton asChild variant="primary" size="lg" className="w-auto">
+          <Link href="/#contacto">{messages.nav.contact}</Link>
+        </TextureButton>
+      </div>
     </header>
   );
 }

@@ -49,7 +49,7 @@ What a neighboring agency can't truthfully copy: no middlemen (clients talk dire
 
 ## Brand Commitments
 
-- **Team**: four working engineers. Franco (Full Stack Engineer, studies Artificial Intelligence Engineering at UNL), Bruno (Staff Engineer with experience at large tech companies), and two more engineers who work for European companies. Combined experience covers infrastructure, AWS, backend, frontend and AI, earned at large companies and on products built for clients abroad. Specific past employers are not confirmed for public copy and must not be invented.
+- **Team**: a small group of working engineers. Public copy never names or profiles individuals and never presents the studio as an employer; it only states collective experience. The approved employer names for the experience strip are Mercado Libre, Coderhouse, PUMA and NFTYDoor. Do not add any other employer without explicit approval. Combined experience covers infrastructure, AWS, backend, frontend and AI, earned at large companies and on products built for clients abroad.
 - **Voice**: confident, plain, direct. An established studio operating in the present tense, not a manifesto. Short sentences, active voice, plain concrete words. Say what the reader gets before saying who we are. No corporate filler ("empowering", "cutting-edge", "innovative solutions", "leverage", "synergy"), no manifestos, no superlatives that can't be backed up, no em dash.
 - **Language**: Spanish first (rioplatense, "vos"), English second and written as native English, not a literal translation. Code and technical docs stay in English.
 - **Phrase bank** (reusable lines): "Un lab que lanza." / "A lab that ships." · "Diseñamos y construimos productos digitales." / "We design and build digital products." · "Traé eso que tenés a medias." / "Bring the unfinished thing." · "Se hace acá." / "Built here." · "Todavía construyendo." / "Still building." · "Las ideas son baratas. Las cosas terminadas, no." / "Ideas are cheap. Finished things are not." · "Nadie se acuerda de la app que nunca se lanzó." / "Nobody remembers the app that never launched." · "Todo lo grande fue el proyecto de fin de semana de alguien." / "Every big thing was somebody's weekend project." · "Hecho en Argentina." / "Made in Argentina."
@@ -59,8 +59,8 @@ What a neighboring agency can't truthfully copy: no middlemen (clients talk dire
 ## Evidence on Hand
 
 - No client logos, testimonials, case studies, or event attendance numbers exist. Do not fabricate any.
-- Team bios are real but limited to the roles above; no verified list of named past employers for public display.
-- Brand assets (logos, avatars, social graphics) live in the separate `shipperslab-brand` repo and get copied into `public/images` or `public/icons` when needed, never referenced cross-repo.
+- The only approved employer names are Mercado Libre, Coderhouse, PUMA and NFTYDoor, shown as a neutral experience strip. No individual names, roles or bios.
+- Brand assets (logos, avatars, social graphics) live in the separate `shipperslab-brand` repo and get copied into `public/images` or `public/icons` when needed, never referenced cross-repo. Employer logos, if used, go in `public/logos`.
 
 ## Product Principles
 

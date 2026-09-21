@@ -3,8 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { useI18n } from "@/i18n/provider";
+import { Wordmark } from "@/components/layout/wordmark";
+import { Container } from "@/components/ui/container";
 import { Reveal } from "@/components/ui/reveal";
+import { useI18n } from "@/i18n/provider";
+import { site } from "@/lib/site";
 
 const YEAR = new Date().getFullYear();
 
@@ -13,10 +16,10 @@ export function Footer() {
 
   return (
     <footer className="border-t border-border pt-16">
-      <div className="mx-auto max-w-content px-4 md:px-8">
+      <Container>
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <Reveal className="flex flex-col gap-3 lg:col-span-2">
-            <Link href="/" aria-label={messages.site.name} className="w-fit">
+            <Link href="/" aria-label={site.name} className="w-fit">
               <Image
                 src="/logo/black.svg"
                 alt="ShippersLab logo"
@@ -54,33 +57,33 @@ export function Footer() {
             <ul className="flex flex-col gap-2 text-sm text-ink/70">
               <li>
                 <a
-                  href="mailto:hola@shipperslab.tech"
+                  href={`mailto:${site.emails.contact}`}
                   className="transition-colors duration-200 hover:text-ink"
                 >
-                  hola@shipperslab.tech
+                  {site.emails.contact}
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:eventos@shipperslab.tech"
+                  href={`mailto:${site.emails.events}`}
                   className="transition-colors duration-200 hover:text-ink"
                 >
-                  eventos@shipperslab.tech
+                  {site.emails.events}
                 </a>
               </li>
               <li>
                 <a
-                  href="https://x.com/theshipperslab"
+                  href={site.social.x}
                   target="_blank"
                   rel="noreferrer"
                   className="transition-colors duration-200 hover:text-ink"
                 >
-                  @theshipperslab
+                  {site.social.xHandle}
                 </a>
               </li>
               <li>
                 <a
-                  href="https://github.com/ShippersLab"
+                  href={site.social.github}
                   target="_blank"
                   rel="noreferrer"
                   className="transition-colors duration-200 hover:text-ink"
@@ -100,7 +103,9 @@ export function Footer() {
           <span>© {YEAR} ShippersLab</span>
           <span>{messages.footer.legal}</span>
         </Reveal>
-      </div>
+      </Container>
+
+      <Wordmark />
     </footer>
   );
 }

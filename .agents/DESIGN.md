@@ -33,7 +33,9 @@ A headline can pick up a subtle print-grain texture instead of a flat fill with 
 - Vertical section padding: **140px on desktop** — `py-section`.
 - Borders are **1px**, and boxes are **never** shadowed. `shadow-*` utilities resolve to `none`; if a shape needs separation, give it a `border-border` instead.
 - Border radius tops out at **8px**. The `rounded-*` scale (`xs` through `4xl`) is clamped so nothing in the app can round past 8px.
-- `accent` is a spotlight color, not a brand wash: budget its five uses deliberately across the page (the primary CTAs in the nav, hero and contact form, plus the two mid-page "talk to us" prompts that shorten the path to an email).
+- `accent` is a spotlight color, not a brand wash: budget its five uses deliberately across the page (the primary CTAs in the nav, hero and contact form, plus the two mid-page "talk to us" prompts that shorten the path to an email). Brand illustrations drawn in `accent` (the hero art) are decorative and do not count against that budget.
+- The navbar and footer are persistent chrome: they live in `src/components/layout` and are rendered once by the root layout, never by a page. A page only renders its own sections.
+- The page closes with a full-bleed, near-transparent `ShippersLab` wordmark (`text-wordmark`, Geist Pixel, `text-ink/5`), clipped at the bottom so roughly three quarters of it stay visible and the rest falls off the page. It is `aria-hidden`, non-selectable and non-interactive.
 
 ## Motion
 
@@ -48,7 +50,7 @@ These apply to every agent working in this repo, not just UI work.
 
 - **Never leave comments in code.** No line comments, no block comments, no JSDoc, no commented-out code. If something feels like it needs a comment, rename it or extract it into a function whose name says the surprising part.
 - **Always import through the `@/*` alias.** Never write a relative import (`./`, `../`), not even for a sibling file. `@/*` resolves to `src/*` and is declared once in `tsconfig.json`.
-- **Everything lives in a folder that says what it is.** Landing sections go in `src/components/sections`, reusable primitives in `src/components/ui`, cross-cutting helpers in `src/lib`, copy in `src/i18n/messages`. Don't drop a component or helper loose in `src/app` or `src/components`.
+- **Everything lives in a folder that says what it is.** Each landing section is a folder in `src/components/sections` (for example `sections/hero/index.tsx`, with its own subparts next to it), reusable primitives go in `src/components/ui`, persistent chrome shared by every route (navbar, footer, wordmark) goes in `src/components/layout`, cross-cutting helpers in `src/lib`, copy in `src/i18n/messages`. Don't drop a component or helper loose in `src/app` or `src/components`.
 - **No file exceeds 300 lines.** Split into a folder of smaller files before it gets there.
 - **Agent configuration lives in subfolders, never loose in the project root.** This file, skills, and any future agent docs live under `.agents/` or `.claude/`. The root `AGENTS.md` is the one exception — Next.js's dev server owns and regenerates it in place, so it cannot be relocated.
 - **Commits are conventional, one line, no body:**

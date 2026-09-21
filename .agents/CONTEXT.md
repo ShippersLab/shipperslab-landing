@@ -41,6 +41,8 @@ Four people, all working engineers:
 - Two more engineers who work for European companies.
 Combined experience covers infrastructure, AWS, backend, frontend and AI, earned at large companies and on products built for clients abroad.
 
+Public copy never names individuals, roles or bios. It states collective experience and may show the approved employer strip: Mercado Libre, Coderhouse, PUMA and NFTYDoor. No other employer without explicit approval.
+
 ## Current stage
 
 ShippersLab is new. Keep this in mind in every piece of copy and UI:

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, type ReactNode } from "react";
+import { useRef, type ReactNode, type RefCallback } from "react";
 
 import { gsap, useGSAP } from "@/lib/gsap";
 
@@ -12,7 +12,7 @@ type RevealProps = {
 };
 
 export function Reveal({ children, className, delay = 0, as = "div" }: RevealProps) {
-  const ref = useRef<HTMLDivElement | HTMLLIElement>(null);
+  const ref = useRef<HTMLElement>(null);
 
   useGSAP(
     () => {
@@ -46,11 +46,21 @@ export function Reveal({ children, className, delay = 0, as = "div" }: RevealPro
     { scope: ref, dependencies: [delay] },
   );
 
-  const Tag = as;
+  const setRef: RefCallback<HTMLDivElement | HTMLLIElement> = (node) => {
+    ref.current = node;
+  };
+
+  if (as === "li") {
+    return (
+      <li ref={setRef} className={className}>
+        {children}
+      </li>
+    );
+  }
 
   return (
-    <Tag ref={ref as never} className={className}>
+    <div ref={setRef} className={className}>
       {children}
-    </Tag>
+    </div>
   );
 }

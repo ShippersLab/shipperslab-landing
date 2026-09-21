@@ -17,35 +17,8 @@
   },
   "trust": {
     "title": "Hablás con quienes construyen.",
-    "description": "Somos cuatro ingenieros full time. Combinamos experiencia en infraestructura, AWS, backend, frontend e inteligencia artificial, ganada en grandes empresas y en productos para clientes del exterior.",
-    "team": [
-      {
-        "name": "Franco",
-        "role": "Full Stack Engineer",
-        "detail": "Estudia Ingeniería en Inteligencia Artificial en la UNL."
-      },
-      {
-        "name": "Bruno",
-        "role": "Staff Engineer",
-        "detail": "Experiencia en grandes empresas de tecnología."
-      },
-      {
-        "name": "Ingeniero",
-        "role": "Backend & Cloud",
-        "detail": "Trabaja para una empresa europea de tecnología."
-      },
-      {
-        "name": "Ingeniero",
-        "role": "Product & Frontend",
-        "detail": "Trabaja para una empresa europea de tecnología."
-      }
-    ],
-    "principles": [
-      "Hablás directo con quienes construyen, sin intermediarios.",
-      "Pocos proyectos a la vez, para estar presentes en cada uno.",
-      "Avance real cada semana, no un reporte al final.",
-      "Alcance por escrito desde el día uno."
-    ],
+    "description": "Somos un grupo de ingenieros con experiencia en producto, infraestructura, backend, frontend e inteligencia artificial. Trabajamos con clientes de Argentina y del exterior, en español y en inglés.",
+    "companiesTitle": "Equipos donde trabajamos",
     "ctaTitle": "Sin vueltas: escribinos directo a nosotros.",
     "ctaButton": "Mandanos un mail"
   },
@@ -63,9 +36,7 @@
   },
   "services": {
     "title": "Qué podemos construir.",
-    "description": "Sitios, productos, automatizaciones o IA: lo construimos a medida, desde cero o sobre lo que ya tenés. Si tenés una necesidad, la vemos juntos.",
-    "ctaTitle": "¿Necesitás algo que no está en esta lista? Contanos igual.",
-    "ctaButton": "Escribinos",
+    "description": "Construimos lo que tu negocio necesita para andar mejor: sistemas a medida, automatizaciones, productos digitales e IA. Desde cero o sobre lo que ya tenés.",
     "items": [
       {
         "id": "software",
@@ -153,13 +124,16 @@
       {
         "question": "¿Pueden trabajar con nuestros sistemas actuales?",
         "answer": "Sí. Integramos con lo que ya tenés (CRMs, ERPs, planillas, APIs) en vez de pedirte que empieces de cero."
+      },
+      {
+        "question": "¿Trabajan con clientes de otros países?",
+        "answer": "Sí. Trabajamos en español y en inglés con clientes de Argentina y del exterior, y coordinamos las reuniones de forma remota."
       }
     ]
   },
   "contact": {
     "title": "Empecemos por el problema.",
-    "description": "Contanos qué querés mejorar, automatizar o construir. Vemos juntos qué alternativas tienen sentido.",
-    "support": "Te respondemos nosotros, no un formulario automático.",
+    "description": "Contanos qué querés mejorar, automatizar o construir. Te respondemos con una propuesta clara y un número antes de arrancar.",
     "form": {
       "name": "Nombre",
       "namePlaceholder": "Tu nombre",
@@ -180,7 +154,7 @@
     "legal": "Hecho en Argentina."
   },
   "events": {
-    "title": "Todavía construyendo los primeros eventos.",
+    "title": "Estamos construyendo los primeros eventos.",
     "description": "Estamos armando las primeras build nights, meetups y hackathons para gente que construye, arrancando en Santa Fe y creciendo por Argentina. Nada confirmado todavía, pero se viene.",
     "formats": ["Build nights", "Meetups", "Hackathons"],
     "sponsorTitle": "¿Querés ser sponsor o ayudarnos a organizar?",

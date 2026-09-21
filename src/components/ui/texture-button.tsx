@@ -16,9 +16,9 @@ const buttonVariantsOuter = cva("active:scale-95", {
         "w-full border-[1px] border-border bg-white p-[1px] transition duration-300 ease-in-out",
     },
     size: {
-      sm: "rounded-[6px]",
-      default: "rounded-[12px]",
-      lg: "rounded-[12px]",
+      sm: "rounded-sm",
+      default: "rounded-lg",
+      lg: "rounded-lg",
       pill: "rounded-xl",
     },
   },
@@ -28,7 +28,7 @@ const buttonVariantsOuter = cva("active:scale-95", {
   },
 });
 
-const innerDivVariants = cva("w-full h-full flex items-center justify-center", {
+const innerDivVariants = cva("w-full h-full flex items-center justify-center whitespace-nowrap", {
   variants: {
     variant: {
       primary:
@@ -39,10 +39,10 @@ const innerDivVariants = cva("w-full h-full flex items-center justify-center", {
         "gap-2 bg-white text-sm text-ink transition duration-300 ease-in-out hover:opacity-80",
     },
     size: {
-      sm: "text-xs rounded-[4px] px-4 py-1",
-      default: "text-sm rounded-[10px] px-4 py-2",
-      lg: "text-sm rounded-[10px] px-4 py-2",
-      pill: "text-md rounded-xl px-5 py-2.5",
+      sm: "text-xs rounded-sm px-4 py-1",
+      default: "text-sm rounded-md px-4 py-2",
+      lg: "text-sm rounded-md px-4 py-2",
+      pill: "text-md rounded-lg px-5 py-2.5",
     },
   },
   defaultVariants: {

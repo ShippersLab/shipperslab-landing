@@ -4,7 +4,6 @@ import { createContext, useContext, useEffect, useMemo, useState, type ReactNode
 
 import { defaultLocale, type Locale } from "@/i18n/config";
 import { getMessages, type Messages } from "@/i18n/get-messages";
-import { ScrollTrigger } from "@/lib/gsap";
 
 type I18nValue = {
   locale: Locale;
@@ -23,7 +22,16 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   );
 
   useEffect(() => {
-    const id = requestAnimationFrame(() => ScrollTrigger.refresh());
+    document.documentElement.lang = locale;
+  }, [locale]);
+
+  useEffect(() => {
+    const id = requestAnimationFrame(() => {
+      void import("@/lib/gsap").then(({ ScrollTrigger }) => {
+        ScrollTrigger.refresh();
+      });
+    });
+
     return () => cancelAnimationFrame(id);
   }, [locale]);
 

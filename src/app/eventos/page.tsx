@@ -1,21 +1,33 @@
 import type { Metadata } from "next";
 
-import { Navbar } from "@/components/sections/navbar";
 import { Events } from "@/components/sections/events";
-import { Footer } from "@/components/sections/footer";
+import { site } from "@/lib/site";
+
+const TITLE = "ShippersLab | Eventos";
+const DESCRIPTION =
+  "Estamos armando las primeras build nights, meetups y hackathons para gente que construye en Argentina. Escribinos a eventos@shipperslab.tech.";
 
 export const metadata: Metadata = {
-  title: "ShippersLab | Eventos",
-  description:
-    "Estamos armando las primeras build nights, meetups y hackathons para gente que construye en Argentina. Escribinos a eventos@shipperslab.tech.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: {
+    canonical: "/eventos",
+  },
+  openGraph: {
+    type: "website",
+    url: `${site.url}/eventos`,
+    siteName: site.name,
+    locale: "es_AR",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
+  twitter: {
+    card: "summary",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 export default function EventosPage() {
-  return (
-    <>
-      <Navbar />
-      <Events />
-      <Footer />
-    </>
-  );
+  return <Events />;
 }

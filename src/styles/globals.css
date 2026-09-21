@@ -13,6 +13,8 @@
 
   --text-hero: clamp(3rem, 8vw, 6rem);
   --text-hero--line-height: 0.95;
+  --text-wordmark: clamp(3rem, 13vw, 16rem);
+  --text-wordmark--line-height: 1;
   --text-label: 0.6875rem;
   --text-label--line-height: 1.4;
   --text-base--line-height: 1.6;
