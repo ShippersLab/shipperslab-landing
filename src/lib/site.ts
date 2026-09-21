@@ -10,6 +10,7 @@ export const site = {
     contact: "hola@shipperslab.tech",
     events: "eventos@shipperslab.tech",
   },
+  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER,
   social: {
     x: "https://x.com/theshipperslab",
     xHandle: "@theshipperslab",
@@ -19,6 +20,6 @@ export const site = {
 
 export const companies: Company[] = [
   { name: "Mercado Libre", logo: "/logos/mercado-libre.svg" },
-  { name: "PUMA", logo: "logos/puma.svg" },
-  { name: "NFTYDoor", logo: "logos/nftydoor.svg" },
+  { name: "PUMA", logo: "/logos/puma.svg" },
+  { name: "NFTYDoor", logo: "/logos/nftydoor.svg" },
 ];

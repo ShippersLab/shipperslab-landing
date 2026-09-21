@@ -79,6 +79,16 @@ export function Problems() {
           );
         })}
       </ul>
+
+      <Reveal className="mt-12 flex flex-wrap items-baseline gap-x-2 gap-y-1">
+        <p className="text-lg text-ink">{messages.problems.ctaTitle}</p>
+        <a
+          href="#contacto"
+          className="text-lg text-accent underline decoration-accent/40 underline-offset-4 transition-colors duration-200 hover:decoration-accent"
+        >
+          {messages.problems.ctaLink}
+        </a>
+      </Reveal>
     </Section>
   );
 }

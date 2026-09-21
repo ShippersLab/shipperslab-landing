@@ -91,10 +91,9 @@ export function Services() {
               >
                 <Reveal className="flex flex-col justify-between gap-8 pb-4 md:col-span-2">
                   <div>
-                    <h3 className="mb-3 text-sm text-muted">{item.title}</h3>
-                    <p className="text-lg text-ink">
-                      {item.lead} {item.description}
-                    </p>
+                    <span className="mb-3 block text-sm text-muted">{item.title}</span>
+                    <h3 className="text-2xl">{item.lead}</h3>
+                    <p className="mt-3 text-lg text-ink">{item.description}</p>
                   </div>
 
                   <ul className="flex flex-col divide-y divide-border text-base text-muted">
