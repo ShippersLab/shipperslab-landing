@@ -50,6 +50,13 @@ export function Navbar() {
       </nav>
 
       <div className="flex items-center gap-3">
+        <Link
+          href="/eventos"
+          className="text-sm text-ink/70 transition-colors duration-200 hover:text-ink md:hidden"
+        >
+          {messages.nav.events}
+        </Link>
+
         <TextureButton asChild variant="primary" size="lg" className="w-auto rounded-full">
           <Link href="/#contacto">{messages.nav.contact}</Link>
         </TextureButton>

@@ -18,7 +18,7 @@
   "trust": {
     "title": "Hablás con quienes construyen.",
     "description": "Somos un equipo chico de ingenieros. Venimos de empresas grandes y de productos para clientes del exterior. Trabajamos en español y en inglés.",
-    "companiesTitle": "Antes trabajamos en",
+    "companiesTitle": "Nuestro equipo trabajó en",
     "ctaTitle": "Sin intermediarios. Te contesta alguien del equipo que construye.",
     "ctaButton": "Escribinos a hola@shipperslab.tech"
   },
@@ -44,10 +44,10 @@
         "id": "software",
         "title": "Herramientas internas",
         "lead": "Sistemas que se adaptan a vos.",
-        "description": "Dashboards, portales y plataformas diseñados para cómo ya trabaja tu equipo, no al revés.",
+        "description": "Dashboards, portales y plataformas para cómo ya trabaja tu equipo.",
         "highlights": [
-          "Dashboards y portales internos",
-          "Se integra con tus datos y sistemas actuales",
+          "Dashboards y portales",
+          "Se integra con tus sistemas",
           "Cada uno ve lo que le toca"
         ]
       },
@@ -55,22 +55,22 @@
         "id": "automation",
         "title": "Automatizaciones",
         "lead": "Una vez, no todos los días.",
-        "description": "Conectamos las herramientas que ya usás y te sacamos de encima lo que hoy hacés a mano.",
+        "description": "Conectamos las herramientas que ya usás y te sacamos de encima lo manual.",
         "highlights": [
-          "Integraciones entre tus herramientas",
+          "Conecta tus herramientas",
           "Carga y limpieza de datos",
-          "Tareas repetitivas resueltas una sola vez"
+          "Tareas repetitivas, una sola vez"
         ]
       },
       {
         "id": "ai",
         "title": "Inteligencia artificial",
         "lead": "IA que trabaja, no que demuestra.",
-        "description": "Agentes y asistentes con una tarea concreta: leer documentos, responder, cargar, clasificar.",
+        "description": "Agentes y asistentes con una tarea concreta: leer, responder, cargar, clasificar.",
         "highlights": [
           "Agentes para tareas internas",
-          "Procesamiento de documentos",
-          "Asistentes para tu equipo o tus clientes"
+          "Lectura de documentos",
+          "Asistentes para tu equipo"
         ]
       },
       {
@@ -78,11 +78,7 @@
         "title": "Productos y sitios",
         "lead": "De la idea al link.",
         "description": "Sitios, apps y MVPs que salen al aire. Las ideas son baratas. Las cosas terminadas, no.",
-        "highlights": [
-          "Sitios y ecommerce",
-          "Aplicaciones web y mobile",
-          "MVPs, de la idea al lanzamiento"
-        ]
+        "highlights": ["Sitios y ecommerce", "Apps web y mobile", "MVPs que salen al aire"]
       }
     ]
   },
@@ -116,24 +112,8 @@
         "answer": "Sí. La mayoría de los proyectos arrancan así. Nos contás el problema y juntos vemos qué tiene sentido construir."
       },
       {
-        "question": "¿Qué pasa después de que escribo?",
-        "answer": "Te contesta alguien del equipo. Coordinamos una charla corta para entender el problema. Si tiene sentido, te mandamos alcance, precio y fechas por escrito."
-      },
-      {
-        "question": "¿Cuánto puede costar un desarrollo?",
-        "answer": "Depende del alcance. En la primera charla entendemos el problema y te damos un número por escrito antes de arrancar."
-      },
-      {
-        "question": "¿Cuánto tarda?",
-        "answer": "Depende del alcance, y va en la propuesta junto con el precio. Lo que sí es fijo: ves avance cada semana, no un informe al final."
-      },
-      {
-        "question": "¿Trabajan con proyectos chicos?",
-        "answer": "Sí. Preferimos arrancar con algo chico que salga al aire y sumar después, antes que construir cosas que no vas a usar."
-      },
-      {
-        "question": "¿Pueden trabajar con nuestros sistemas actuales?",
-        "answer": "Sí. Integramos con lo que ya tenés (CRMs, ERPs, planillas, APIs) en vez de pedirte que empieces de cero."
+        "question": "¿Cuánto cuesta y cuánto tarda un desarrollo?",
+        "answer": "Depende del alcance. En la primera charla lo vemos juntos y te mandamos precio y fecha por escrito antes de arrancar. Después ves avance cada semana, no un informe al final."
       },
       {
         "question": "Ya tengo un equipo técnico, ¿pueden sumarse?",
@@ -159,28 +139,62 @@
       "messagePlaceholder": "Ej: cargamos los pedidos a mano desde WhatsApp a una planilla y se nos pierden.",
       "submit": "Enviar",
       "sending": "Enviando...",
+      "sent": "¡Enviado!",
+      "retry": "Reintentar",
       "success": "Listo. Te contesta alguien del equipo para coordinar una charla.",
       "error": "No se pudo enviar. Escribinos directo a hola@shipperslab.tech.",
-      "whatsapp": "Escribinos por WhatsApp",
       "whatsappMessage": "Hola, quiero contarles un problema o una idea.",
       "whatsappGreeting": "Hola, soy {name}.",
       "whatsappGreetingWithCompany": "Hola, soy {name}, de {company}.",
+      "bookCall": "Reservar una llamada",
       "alternative": "O escribinos directo a"
     }
   },
   "footer": {
-    "tagline": "Un lab que lanza.",
-    "servicesTitle": "Servicios",
-    "contactTitle": "Contacto",
-    "location": "Se hace acá. Santa Fe, Argentina.",
+    "tagline": "Diseñamos y construimos productos digitales. Ofrecemos servicios para convertir tu idea en un producto real.",
     "legal": "Hecho en Argentina."
   },
   "events": {
     "title": "Todavía construyendo.",
-    "description": "Estamos armando las primeras build nights, meetups y hackathons para gente que construye, arrancando en Santa Fe y creciendo por Argentina. Nada confirmado todavía, pero se viene.",
-    "formats": ["Build nights", "Meetups", "Hackathons"],
+    "description": "Estamos construyendo nuestros primeros eventos: build nights, meetups, hackathons, charlas y lo que se nos ocurra armar. Arrancamos en Santa Fe y después vamos por el resto del país.",
+    "formats": ["Build nights", "Meetups", "Hackathons", "Charlas", "Café"],
     "sponsorTitle": "¿Querés ser sponsor o ayudarnos a organizar?",
-    "sponsorDescription": "Buscamos empresas que quieran estar cerca de la gente que construye, ya sea para contratar, mostrar sus herramientas o sumarse a la comunidad.",
-    "cta": "Escribir a eventos@shipperslab.tech"
+    "sponsorDescription": "Nos sirve una mano de cualquier lado: empresas, herramientas para developers, tokens, o ayuda armando el evento. No hace falta ser una marca grande, cualquier aporte nos acerca un poco más a hacerlo realidad. Si te copa sumarte, escribinos.",
+    "cta": "Enviar un mensaje",
+    "gallery": {
+      "title": "Así se va a ver.",
+      "description": "Un primer vistazo a la identidad que vamos a llevar a los eventos.",
+      "items": [
+        {
+          "image": "/mockups/coffee.webp",
+          "imageAlt": "Vaso de café con la identidad de ShippersLab",
+          "caption": "Café",
+          "label": "Mockup"
+        },
+        {
+          "image": "/mockups/totebag.webp",
+          "imageAlt": "Tote bag con la identidad de ShippersLab",
+          "caption": "Tote bag",
+          "label": "Mockup"
+        },
+        {
+          "image": "/mockups/sticker.webp",
+          "imageAlt": "Stickers con la identidad de ShippersLab",
+          "caption": "Stickers",
+          "label": "Mockup"
+        },
+        {
+          "image": "/mockups/poster.webp",
+          "imageAlt": "Afiche de ShippersLab pegado en la calle",
+          "caption": "Afiche",
+          "label": "Mockup"
+        }
+      ]
+    }
+  },
+  "notFound": {
+    "title": "404",
+    "description": "Esta página no existe. A lo mejor esto se shippeó y no te enteraste.",
+    "cta": "Volver al inicio"
   }
 }

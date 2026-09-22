@@ -18,7 +18,7 @@
   "trust": {
     "title": "You talk to the people building it.",
     "description": "We're a small team of engineers. We come from large companies and from products built for clients abroad. We work in Spanish and English.",
-    "companiesTitle": "Where we've worked before",
+    "companiesTitle": "Our team worked at",
     "ctaTitle": "No middlemen. Whoever answers is someone who builds.",
     "ctaButton": "Write to hola@shipperslab.tech"
   },
@@ -44,10 +44,10 @@
         "id": "software",
         "title": "Internal tools",
         "lead": "Systems that adapt to you.",
-        "description": "Dashboards, portals and platforms built for how your team already works, not the other way around.",
+        "description": "Dashboards, portals and platforms built for how your team already works.",
         "highlights": [
-          "Internal dashboards and portals",
-          "Connects to your existing data and systems",
+          "Dashboards and portals",
+          "Connects to your systems",
           "Everyone sees only what they need"
         ]
       },
@@ -57,7 +57,7 @@
         "lead": "Once, not every day.",
         "description": "We connect the tools you already use and take the manual work off your plate.",
         "highlights": [
-          "Integrations between your tools",
+          "Connects your tools",
           "Data loading and cleanup",
           "Repetitive tasks solved once"
         ]
@@ -70,7 +70,7 @@
         "highlights": [
           "Agents for internal tasks",
           "Document processing",
-          "Assistants for your team or your customers"
+          "Assistants for your team"
         ]
       },
       {
@@ -112,24 +112,8 @@
         "answer": "Yes. Most projects start exactly like this. Tell us the problem and we'll figure out together what's worth building."
       },
       {
-        "question": "What happens after I write?",
-        "answer": "Someone on the team writes back. We set up a short call to understand the problem. If it makes sense, we send you scope, price and dates in writing."
-      },
-      {
-        "question": "What does a project cost?",
-        "answer": "It depends on the scope. On the first call we understand the problem and give you a number in writing before anything starts."
-      },
-      {
-        "question": "How long does it take?",
-        "answer": "It depends on the scope, and it goes in the proposal along with the price. What never changes: you see progress every week, not a report at the end."
-      },
-      {
-        "question": "Do you work with small projects?",
-        "answer": "Yes. We'd rather start with something small that goes live and add to it later than build things you won't use."
-      },
-      {
-        "question": "Can you work with our current systems?",
-        "answer": "Yes. We integrate with what you already have (CRMs, ERPs, spreadsheets, APIs) instead of asking you to start from zero."
+        "question": "How much does it cost and how long does it take?",
+        "answer": "It depends on the scope. On the first call we look at it together and send you a price and a timeline in writing before anything starts. After that, you see progress every week, not a report at the end."
       },
       {
         "question": "I already have a tech team, can you join it?",
@@ -155,28 +139,62 @@
       "messagePlaceholder": "E.g. we copy orders by hand from WhatsApp into a spreadsheet and lose some.",
       "submit": "Send",
       "sending": "Sending...",
+      "sent": "Sent!",
+      "retry": "Try again",
       "success": "Done. Someone on the team will write back to set up a call.",
       "error": "Couldn't send. Write to us directly at hola@shipperslab.tech.",
-      "whatsapp": "Message us on WhatsApp",
       "whatsappMessage": "Hi, I'd like to tell you about a problem or an idea.",
       "whatsappGreeting": "Hi, I'm {name}.",
       "whatsappGreetingWithCompany": "Hi, I'm {name}, from {company}.",
+      "bookCall": "Book a call",
       "alternative": "Or write to us directly at"
     }
   },
   "footer": {
-    "tagline": "A lab that ships.",
-    "servicesTitle": "Services",
-    "contactTitle": "Contact",
-    "location": "Built here. Santa Fe, Argentina.",
+    "tagline": "We design and build digital products, and offer the services to turn your idea into a real product.",
     "legal": "Made in Argentina."
   },
   "events": {
     "title": "Still building.",
-    "description": "We're putting together the first build nights, meetups and hackathons for people who build, starting in Santa Fe and growing across Argentina. Nothing confirmed yet, but it's coming.",
-    "formats": ["Build nights", "Meetups", "Hackathons"],
+    "description": "We're building our first events: build nights, meetups, hackathons, talks and whatever else we come up with. We're starting in Santa Fe, then taking it across the country.",
+    "formats": ["Build nights", "Meetups", "Hackathons", "Talks", "Coffee"],
     "sponsorTitle": "Want to sponsor or help us organize?",
-    "sponsorDescription": "We're looking for companies that want to be close to people who build, whether to hire, showcase their tools or join the community.",
-    "cta": "Email eventos@shipperslab.tech"
+    "sponsorDescription": "Any kind of help counts: companies, developer tools, credits, or a hand putting the event together. You don't need to be a big brand, every bit gets us closer to making it happen. If you're into it, write to us.",
+    "cta": "Send a message",
+    "gallery": {
+      "title": "How it'll look.",
+      "description": "A first look at the identity we'll bring to the events.",
+      "items": [
+        {
+          "image": "/mockups/coffee.webp",
+          "imageAlt": "Coffee cup with the ShippersLab identity",
+          "caption": "Coffee",
+          "label": "Mockup"
+        },
+        {
+          "image": "/mockups/totebag.webp",
+          "imageAlt": "Tote bag with the ShippersLab identity",
+          "caption": "Tote bag",
+          "label": "Mockup"
+        },
+        {
+          "image": "/mockups/sticker.webp",
+          "imageAlt": "Stickers with the ShippersLab identity",
+          "caption": "Stickers",
+          "label": "Mockup"
+        },
+        {
+          "image": "/mockups/poster.webp",
+          "imageAlt": "ShippersLab poster on the street",
+          "caption": "Poster",
+          "label": "Mockup"
+        }
+      ]
+    }
+  },
+  "notFound": {
+    "title": "404",
+    "description": "This page doesn't exist. Maybe it shipped and you missed it.",
+    "cta": "Back to home"
   }
 }
