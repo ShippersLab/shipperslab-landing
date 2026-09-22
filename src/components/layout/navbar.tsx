@@ -28,8 +28,12 @@ export function Navbar() {
         gsap.fromTo(
           ref.current,
           { autoAlpha: 0 },
-          { autoAlpha: 1, duration: 0.6, delay: 0.3, ease: "power1.out" },
+          { autoAlpha: 1, duration: 0.4, ease: "power2.out" },
         );
+      });
+
+      mm.add("(prefers-reduced-motion: reduce)", () => {
+        gsap.set(ref.current, { autoAlpha: 1 });
       });
 
       return () => mm.revert();
@@ -40,7 +44,7 @@ export function Navbar() {
   return (
     <header
       ref={ref}
-      className="absolute inset-x-0 top-0 z-20 mx-auto flex w-full max-w-content items-center justify-between gap-6 px-4 py-4 md:px-8"
+      className="invisible absolute inset-x-0 top-0 z-20 mx-auto flex w-full max-w-content items-center justify-between gap-6 px-4 py-4 md:px-8"
     >
       <Link href="/" aria-label={site.name}>
         <Image
@@ -67,7 +71,7 @@ export function Navbar() {
 
       <div className="flex items-center gap-3">
         <LocaleToggle />
-        <TextureButton asChild variant="primary" size="lg" className="w-auto">
+        <TextureButton asChild variant="primary" size="lg" className="w-auto rounded-full">
           <Link href="/#contacto">{messages.nav.contact}</Link>
         </TextureButton>
       </div>

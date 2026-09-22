@@ -22,18 +22,21 @@ export function Hero() {
 
       mm.add("(prefers-reduced-motion: no-preference)", () => {
         gsap
-          .timeline({ defaults: { ease: "power3.out" } })
+          .timeline({ defaults: { ease: "power2.out" } })
           .fromTo(
             ".hero-image",
             { autoAlpha: 0, filter: "blur(24px)" },
-            { autoAlpha: 1, filter: "blur(0px)", duration: 1.2 },
+            { autoAlpha: 1, filter: "blur(0px)", duration: 0.9 },
           )
           .fromTo(
             ".hero-reveal",
-            { autoAlpha: 0, y: 20 },
-            { autoAlpha: 1, y: 0, duration: 0.6, stagger: 0.12 },
-            "-=0.5",
+            { autoAlpha: 0, y: 16 },
+            { autoAlpha: 1, y: 0, duration: 0.5, stagger: 0.1 },
           );
+      });
+
+      mm.add("(prefers-reduced-motion: reduce)", () => {
+        gsap.set(".hero-image, .hero-reveal", { autoAlpha: 1 });
       });
 
       return () => mm.revert();
@@ -52,21 +55,21 @@ export function Hero() {
         quality={90}
         placeholder="blur"
         blurDataURL={HERO_BLUR_DATA_URL}
-        className="hero-image aspect-8/3 w-full object-cover object-top select-none"
+        className="hero-image invisible aspect-8/3 w-full object-cover object-top select-none"
         sizes="100vw"
       />
 
       <Container className="grid justify-between pt-12 pb-16 lg:grid-cols-[1.8fr_1.2fr] lg:items-start">
-        <h1 className="hero-title hero-reveal max-w-full font-pixel tracking-tighter text-6xl text-ink">
+        <h1 className="hero-title hero-reveal invisible max-w-full font-pixel tracking-tighter text-6xl text-ink">
           {messages.hero.title}
         </h1>
 
         <div className="flex w-full max-w-fit flex-col gap-6 pt-1">
-          <p className="hero-description hero-reveal w-full font-sans text-base tracking-tight text-muted">
+          <p className="hero-description hero-reveal invisible w-full font-sans text-base tracking-tight text-muted">
             {messages.hero.description}
           </p>
 
-          <div className="hero-ctas hero-reveal flex flex-wrap items-center gap-3">
+          <div className="hero-ctas hero-reveal invisible flex flex-wrap items-center gap-3">
             <TextureButton asChild variant="primary" size="pill" className="w-auto rounded-full">
               <a href="#contacto" className="text-base">
                 {messages.hero.primaryCta}
