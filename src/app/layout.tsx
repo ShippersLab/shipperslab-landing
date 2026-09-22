@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import { SmoothScroll } from "@/components/layout/smooth-scroll";
 import { I18nProvider } from "@/i18n/provider";
 import {
   fontMono,
@@ -23,11 +24,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="es"
       className={`${fontSans.variable} ${fontMono.variable} ${pixelVariables} antialiased`}
     >
-      <body className="relative flex min-h-screen flex-col bg-paper px-4 pb-4">
+      <body className="bg-paper">
         <I18nProvider>
-          <Navbar />
-          <main className="flex flex-1 flex-col">{children}</main>
-          <Footer />
+          <SmoothScroll>
+            <Navbar />
+            <main className="flex flex-1 flex-col">{children}</main>
+            <Footer />
+          </SmoothScroll>
         </I18nProvider>
       </body>
     </html>

@@ -1,6 +1,14 @@
 "use client";
 
-import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type ReactNode,
+} from "react";
 
 import { defaultLocale, type Locale } from "@/i18n/config";
 import { getMessages, type Messages } from "@/i18n/get-messages";
@@ -25,7 +33,14 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     document.documentElement.lang = locale;
   }, [locale]);
 
+  const isFirstRender = useRef(true);
+
   useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+
     const id = requestAnimationFrame(() => {
       void import("@/lib/gsap").then(({ ScrollTrigger }) => {
         ScrollTrigger.refresh();
