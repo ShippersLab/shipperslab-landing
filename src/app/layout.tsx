@@ -1,5 +1,7 @@
 import "@/styles/globals.css";
 
+import { Analytics } from "@vercel/analytics/next";
+
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { SmoothScroll } from "@/components/layout/smooth-scroll";
@@ -25,6 +27,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${fontSans.variable} ${fontMono.variable} ${pixelVariables} antialiased`}
     >
       <body className="bg-paper">
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `if(location.hash){window.__initialHash=location.hash;history.replaceState(null,"",location.pathname+location.search)}`,
+          }}
+        />
         <I18nProvider>
           <SmoothScroll>
             <Navbar />
@@ -32,6 +39,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <Footer />
           </SmoothScroll>
         </I18nProvider>
+        <Analytics />
       </body>
     </html>
   );
