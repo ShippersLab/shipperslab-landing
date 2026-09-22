@@ -30,7 +30,7 @@ A headline can pick up a subtle print-grain texture instead of a flat fill with 
 ## Layout
 
 - Content max-width: **1200px** — `max-w-content`.
-- Vertical section padding: **140px on desktop** — `py-section`.
+- Vertical section padding: **180px on desktop** — `py-section`.
 - Borders are **1px**, and boxes are **never** shadowed. `shadow-*` utilities resolve to `none`; if a shape needs separation, give it a `border-border` instead.
 - Border radius tops out at **8px**. The `rounded-*` scale (`xs` through `4xl`) is clamped so nothing in the app can round past 8px.
 - `accent` is a spotlight color, not a brand wash: budget its five uses deliberately across the page (the primary CTAs in the nav, hero and contact form, plus the two mid-page "talk to us" prompts that shorten the path to an email). Brand illustrations drawn in `accent` (the hero art) are decorative and do not count against that budget.

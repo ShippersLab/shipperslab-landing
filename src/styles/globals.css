@@ -13,7 +13,7 @@
 
   --text-hero: clamp(3rem, 8vw, 6rem);
   --text-hero--line-height: 0.95;
-  --text-wordmark: clamp(3rem, 13vw, 16rem);
+  --text-wordmark: clamp(3rem, 13vw, 13rem);
   --text-wordmark--line-height: 1;
   --text-label: 0.6875rem;
   --text-label--line-height: 1.4;
@@ -42,7 +42,7 @@
   --shadow-2xl: none;
 
   --container-content: 75rem;
-  --spacing-section: 140px;
+  --spacing-section: 180px;
 }
 
 :root {
@@ -105,6 +105,19 @@
 
 @utility font-pixel-line {
   font-family: var(--font-geist-pixel-line), monospace;
+}
+
+@keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@utility animate-marquee-vertical {
+  animation: marquee-vertical 14s linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {

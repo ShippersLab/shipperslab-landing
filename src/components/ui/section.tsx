@@ -10,13 +10,13 @@ type SectionProps = {
   className?: string;
 };
 
-export function Section({ children, id, bordered = false, className }: SectionProps) {
+export function Section({ children, id, bordered = true, className }: SectionProps) {
   return (
     <section
       id={id}
       className={cn(
-        "py-16 sm:py-24 md:py-section",
-        bordered && "border-t border-border",
+        "mx-auto w-full max-w-content border-x border-border py-20 sm:py-28 md:py-section",
+        bordered && "border-t",
         className,
       )}
     >
