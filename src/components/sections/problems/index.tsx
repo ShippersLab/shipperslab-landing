@@ -13,10 +13,10 @@ import { site } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 const TITLE_DELAY = 0;
-const DESCRIPTION_DELAY = 0.55;
-const ITEMS_DELAY = 0.95;
-const ITEM_STAGGER = 0.045;
-const CTA_DELAY = 1.6;
+const DESCRIPTION_DELAY = 0.45;
+const ITEMS_DELAY = 0.85;
+const ITEM_STAGGER = 0.04;
+const CTA_DELAY = 1.4;
 
 export function Problems() {
   const { messages } = useI18n();

@@ -20,7 +20,7 @@ type WordRevealProps = {
 
 const word: Variants = {
   hidden: { opacity: 0, y: 8 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.26, ease: [0.16, 1, 0.3, 1] } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.22, ease: [0.16, 1, 0.3, 1] } },
 };
 
 export function WordReveal({ text, as = "p", className, delay = 0 }: WordRevealProps) {
@@ -39,7 +39,7 @@ export function WordReveal({ text, as = "p", className, delay = 0 }: WordRevealP
   const container = useMemo<Variants>(
     () => ({
       hidden: {},
-      visible: { transition: { staggerChildren: 0.022, delayChildren: delay } },
+      visible: { transition: { staggerChildren: 0.02, delayChildren: delay } },
     }),
     [delay],
   );
