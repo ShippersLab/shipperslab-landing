@@ -18,18 +18,18 @@ export function DashboardIllustration() {
     <div
       ref={ref}
       aria-hidden
-      className="absolute inset-8 z-1 m-auto flex h-fit max-w-xs flex-col gap-3 rounded-lg border border-border bg-paper p-4"
+      className="absolute inset-8 z-1 m-auto flex h-fit max-w-sm flex-col gap-3 rounded-lg border border-border bg-paper p-4"
     >
       <div className="flex items-center gap-1.5">
         {DOTS.map((dot) => (
-          <span key={dot} className="invisible build-dot size-2 rounded-full bg-border" />
+          <span key={dot} className="invisible build-dot size-2 rounded-full bg-accent/40" />
         ))}
       </div>
       <div className="flex flex-col gap-2.5 pt-1">
         {rows.map((width, index) => (
           <div key={index} className="flex items-center gap-2">
-            <span className="invisible build-pop size-4 shrink-0 rounded-sm border border-border" />
-            <span className={cn("invisible build-bar h-2 rounded-full bg-border", width)} />
+            <span className="invisible build-pop size-4 shrink-0 rounded-sm border border-accent/40" />
+            <span className={cn("invisible build-bar h-2 rounded-full bg-accent/20", width)} />
           </div>
         ))}
       </div>
@@ -45,13 +45,13 @@ export function FlowIllustration() {
     <div
       ref={ref}
       aria-hidden
-      className="absolute inset-8 z-1 m-auto flex h-fit max-w-xs items-center justify-between gap-2"
+      className="absolute inset-8 z-1 m-auto flex h-fit max-w-sm items-center justify-between gap-2"
     >
       <div className="invisible build-pop flex size-14 shrink-0 items-center justify-center rounded-lg border border-border bg-paper font-mono text-label text-muted uppercase">
         CRM
       </div>
       <span className="invisible build-bar h-px flex-1 bg-border" />
-      <div className="invisible build-pop flex size-14 shrink-0 items-center justify-center rounded-lg border border-ink bg-ink text-paper">
+      <div className="invisible build-pop flex size-14 shrink-0 items-center justify-center rounded-lg border border-accent bg-accent text-paper">
         <WorkflowIcon className="size-5" />
       </div>
       <span className="invisible build-bar h-px flex-1 bg-border" />
@@ -67,7 +67,7 @@ export function AiInputIllustration() {
   useBuildIn(ref);
 
   return (
-    <div ref={ref} aria-hidden className="absolute inset-8 z-1 m-auto h-fit max-w-xs">
+    <div ref={ref} aria-hidden className="absolute inset-8 z-1 m-auto h-fit max-w-sm">
       <div className="rounded-lg border border-border bg-paper p-3">
         <div className="invisible build-pop p-2 pb-3 text-sm text-muted">
           Necesito automatizar la carga de facturas…
@@ -81,7 +81,7 @@ export function AiInputIllustration() {
               <MicIcon className="size-4" />
             </span>
           </div>
-          <span className="invisible build-pop flex size-7 items-center justify-center rounded-full bg-ink text-paper">
+          <span className="invisible build-pop flex size-7 items-center justify-center rounded-full bg-accent text-paper">
             <SendIcon className="size-4" />
           </span>
         </div>
@@ -98,7 +98,7 @@ export function BrowserIllustration() {
     <div
       ref={ref}
       aria-hidden
-      className="absolute inset-8 z-1 m-auto flex h-fit max-w-xs flex-col overflow-hidden rounded-lg border border-border bg-paper"
+      className="absolute inset-8 z-1 m-auto flex h-fit max-w-sm flex-col overflow-hidden rounded-lg border border-border bg-paper"
     >
       <div className="flex items-center gap-1.5 border-b border-border px-3 py-2">
         {DOTS.map((dot) => (
@@ -106,10 +106,10 @@ export function BrowserIllustration() {
         ))}
       </div>
       <div className="flex flex-col gap-2 p-4">
-        <span className="invisible build-bar h-3 w-2/3 rounded-full bg-ink/10" />
-        <span className="invisible build-bar h-2 w-full rounded-full bg-border" />
-        <span className="invisible build-bar h-2 w-5/6 rounded-full bg-border" />
-        <span className="invisible build-pop mt-2 h-16 w-full rounded-md border border-border" />
+        <span className="invisible build-bar h-3 w-2/3 rounded-full bg-accent/30" />
+        <span className="invisible build-bar h-2 w-full rounded-full bg-accent/15" />
+        <span className="invisible build-bar h-2 w-5/6 rounded-full bg-accent/15" />
+        <span className="invisible build-pop mt-2 h-16 w-full rounded-md border border-accent/30" />
       </div>
     </div>
   );

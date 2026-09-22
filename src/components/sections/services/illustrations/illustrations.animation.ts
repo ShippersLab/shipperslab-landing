@@ -16,10 +16,10 @@ export function useBuildIn(scope: RefObject<HTMLElement | null>) {
         const pops = root.querySelectorAll<HTMLElement>(".build-pop");
 
         const scrollTrigger = { trigger: root, start: "top 85%", once: true };
-        const tl = gsap.timeline({ scrollTrigger, defaults: { ease: "power2.out" } });
+        const tl = gsap.timeline({ scrollTrigger, defaults: { ease: "power3.out" } });
 
         if (dots.length) {
-          tl.from(dots, { autoAlpha: 0, scale: 0.4, stagger: 0.08, duration: 0.4 });
+          tl.from(dots, { autoAlpha: 0, scale: 0.4, stagger: 0.06, duration: 0.35 });
         }
         if (bars.length) {
           tl.from(
@@ -28,8 +28,8 @@ export function useBuildIn(scope: RefObject<HTMLElement | null>) {
               autoAlpha: 0,
               scaleX: 0,
               transformOrigin: "left center",
-              stagger: 0.12,
-              duration: 0.5,
+              stagger: 0.1,
+              duration: 0.45,
             },
             tl.duration() ? "-=0.1" : undefined,
           );
@@ -37,7 +37,7 @@ export function useBuildIn(scope: RefObject<HTMLElement | null>) {
         if (pops.length) {
           tl.from(
             pops,
-            { autoAlpha: 0, scale: 0.7, stagger: 0.12, duration: 0.4 },
+            { autoAlpha: 0, scale: 0.7, stagger: 0.1, duration: 0.35 },
             tl.duration() ? "-=0.3" : undefined,
           );
         }
