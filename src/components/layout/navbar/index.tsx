@@ -9,10 +9,9 @@ import { TextureButton } from "@/components/ui/texture-button";
 import { useI18n } from "@/i18n/provider";
 import { site } from "@/lib/site";
 
-const LINKS = [
+const SECTION_LINKS = [
   { key: "services", href: "/#servicios" },
   { key: "about", href: "/#nosotros" },
-  { key: "events", href: "/eventos" },
 ] as const;
 
 export function Navbar() {
@@ -38,15 +37,22 @@ export function Navbar() {
       </Link>
 
       <nav className="hidden items-center gap-8 md:flex">
-        {LINKS.map((link) => (
-          <Link
+        {SECTION_LINKS.map((link) => (
+          <a
             key={link.key}
             href={link.href}
             className="text-sm text-ink/70 transition-colors duration-200 hover:text-ink"
           >
             {messages.nav[link.key]}
-          </Link>
+          </a>
         ))}
+
+        <Link
+          href="/eventos"
+          className="text-sm text-ink/70 transition-colors duration-200 hover:text-ink"
+        >
+          {messages.nav.events}
+        </Link>
       </nav>
 
       <div className="flex items-center gap-3">
@@ -58,7 +64,7 @@ export function Navbar() {
         </Link>
 
         <TextureButton asChild variant="primary" size="lg" className="w-auto rounded-full">
-          <Link href="/#contacto">{messages.nav.contact}</Link>
+          <a href="/#contacto">{messages.nav.contact}</a>
         </TextureButton>
       </div>
     </header>

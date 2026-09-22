@@ -1,89 +1,58 @@
 "use client";
 
-import { useRef, type ReactNode } from "react";
+import Lenis from "lenis";
+import { useEffect } from "react";
 
-import { gsap, ScrollSmoother, ScrollTrigger, useGSAP } from "@/lib/gsap";
+export function SmoothScroll() {
+  useEffect(() => {
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-declare global {
-  interface Window {
-    __initialHash?: string;
-  }
-}
-
-export function SmoothScroll({ children }: { children: ReactNode }) {
-  const wrapperRef = useRef<HTMLDivElement>(null);
-
-  useGSAP(() => {
-    if ("scrollRestoration" in window.history) {
-      window.history.scrollRestoration = "manual";
+    if (prefersReducedMotion) {
+      return;
     }
 
-    window.scrollTo(0, 0);
+    const lenis = new Lenis();
 
-    const mm = gsap.matchMedia();
+    let frame: number;
 
-    mm.add("(prefers-reduced-motion: no-preference)", () => {
-      ScrollSmoother.get()?.kill();
+    function raf(time: number) {
+      lenis.raf(time);
+      frame = requestAnimationFrame(raf);
+    }
 
-      const smoother = ScrollSmoother.create({
-        wrapper: wrapperRef.current,
-        content: "#smooth-content",
-        smooth: 1.1,
-        normalizeScroll: true,
-      });
+    frame = requestAnimationFrame(raf);
 
-      ScrollTrigger.refresh();
+    function scrollToHash(hash: string, immediate: boolean) {
+      const target = document.querySelector(hash);
+      if (!(target instanceof HTMLElement)) return;
 
-      const scrollToHash = () => {
-        const hash = window.__initialHash;
-        if (!hash) return;
+      lenis.scrollTo(target, { immediate });
+    }
 
-        const target = document.querySelector(hash);
-        if (!target) return;
+    if (window.location.hash) {
+      scrollToHash(window.location.hash, true);
+    }
 
-        ScrollTrigger.refresh();
-        smoother.scrollTo(target, false, "top top");
-        history.replaceState(null, "", hash);
-      };
+    function handleClick(event: MouseEvent) {
+      const anchor = (event.target as HTMLElement).closest("a");
+      if (!(anchor instanceof HTMLAnchorElement)) return;
 
-      if (document.readyState === "complete") {
-        scrollToHash();
-      } else {
-        window.addEventListener("load", scrollToHash, { once: true });
-      }
+      const url = new URL(anchor.href);
+      if (url.pathname !== window.location.pathname || !url.hash) return;
 
-      const handleAnchorClick = (event: MouseEvent) => {
-        const anchor = (event.target as HTMLElement).closest("a");
-        if (!(anchor instanceof HTMLAnchorElement)) return;
+      event.preventDefault();
+      scrollToHash(url.hash, false);
+      history.pushState(null, "", url.hash);
+    }
 
-        const url = new URL(anchor.href);
-        if (url.pathname !== window.location.pathname || !url.hash) return;
+    document.addEventListener("click", handleClick);
 
-        const target = document.querySelector(url.hash);
-        if (!target) return;
+    return () => {
+      cancelAnimationFrame(frame);
+      document.removeEventListener("click", handleClick);
+      lenis.destroy();
+    };
+  }, []);
 
-        event.preventDefault();
-        smoother.scrollTo(target, true, "top top");
-        history.pushState(null, "", url.hash);
-      };
-
-      document.addEventListener("click", handleAnchorClick);
-
-      return () => {
-        window.removeEventListener("load", scrollToHash);
-        document.removeEventListener("click", handleAnchorClick);
-        smoother.kill();
-      };
-    });
-
-    return () => mm.revert();
-  });
-
-  return (
-    <div ref={wrapperRef} id="smooth-wrapper">
-      <div id="smooth-content" className="relative flex min-h-screen flex-col bg-paper px-4 pt-4">
-        {children}
-      </div>
-    </div>
-  );
+  return null;
 }

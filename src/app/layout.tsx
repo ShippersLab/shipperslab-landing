@@ -27,17 +27,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${fontSans.variable} ${fontMono.variable} ${pixelVariables} antialiased`}
     >
       <body className="bg-paper">
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `if(location.hash){window.__initialHash=location.hash;history.replaceState(null,"",location.pathname+location.search)}`,
-          }}
-        />
+        <SmoothScroll />
         <I18nProvider>
-          <SmoothScroll>
+          <div className="relative flex min-h-screen flex-col px-4 pt-4">
             <Navbar />
             <main className="flex flex-1 flex-col">{children}</main>
             <Footer />
-          </SmoothScroll>
+          </div>
         </I18nProvider>
         <Analytics />
       </body>
