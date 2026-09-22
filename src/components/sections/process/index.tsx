@@ -5,18 +5,26 @@ import { Section } from "@/components/ui/section";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { useI18n } from "@/i18n/provider";
 
+const TITLE_DELAY = 0;
+const ITEMS_DELAY = 0.3;
+const ITEM_STAGGER = 0.08;
+
 export function Process() {
   const { messages } = useI18n();
 
   return (
     <Section>
-      <SectionHeading title={messages.process.title} />
+      <SectionHeading title={messages.process.title} titleDelay={TITLE_DELAY} />
 
       <div className="relative mt-16 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
         <div aria-hidden className="absolute inset-x-0 top-5 hidden h-px bg-border lg:block" />
 
         {messages.process.steps.map((step, index) => (
-          <Reveal key={step.title} delay={index * 100} className="flex flex-col gap-4">
+          <Reveal
+            key={step.title}
+            delay={(ITEMS_DELAY + index * ITEM_STAGGER) * 1000}
+            className="flex flex-col gap-4"
+          >
             <span className="relative z-10 flex size-10 items-center justify-center rounded-full border border-border bg-paper font-mono text-xs text-muted">
               0{index + 1}
             </span>
