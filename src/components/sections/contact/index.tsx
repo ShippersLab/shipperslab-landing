@@ -10,6 +10,11 @@ import { useI18n } from "@/i18n/provider";
 const FIELD_CLASS =
   "w-full rounded-lg border border-border bg-paper px-4 py-3 text-base text-ink placeholder:text-muted focus:border-ink focus:outline-none transition-colors duration-200";
 
+const TITLE_DELAY = 0;
+const DESCRIPTION_DELAY = 0.1;
+const FIELDS_DELAY = 0.2;
+const FIELD_STAGGER = 0.08;
+
 export function Contact() {
   const { messages } = useI18n();
   const { form, status, handleChange, handleSubmit } = useContactForm();
@@ -21,37 +26,39 @@ export function Contact() {
           title={messages.contact.title}
           description={messages.contact.description}
           className="max-w-sm"
+          titleDelay={TITLE_DELAY}
+          descriptionDelay={DESCRIPTION_DELAY}
         />
 
-        <Reveal delay={100}>
-          <form onSubmit={handleSubmit} className="flex flex-col gap-5">
-            <div className="grid gap-5 sm:grid-cols-2">
-              <label className="flex flex-col gap-2 text-sm text-ink">
-                {messages.contact.form.name}
-                <input
-                  required
-                  name="name"
-                  autoComplete="name"
-                  value={form.name}
-                  onChange={handleChange("name")}
-                  placeholder={messages.contact.form.namePlaceholder}
-                  className={FIELD_CLASS}
-                />
-              </label>
+        <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+          <Reveal delay={FIELDS_DELAY * 1000} className="grid gap-5 sm:grid-cols-2">
+            <label className="flex flex-col gap-2 text-sm text-ink">
+              {messages.contact.form.name}
+              <input
+                required
+                name="name"
+                autoComplete="name"
+                value={form.name}
+                onChange={handleChange("name")}
+                placeholder={messages.contact.form.namePlaceholder}
+                className={FIELD_CLASS}
+              />
+            </label>
 
-              <label className="flex flex-col gap-2 text-sm text-ink">
-                {messages.contact.form.company}
-                <input
-                  name="company"
-                  autoComplete="organization"
-                  value={form.company}
-                  onChange={handleChange("company")}
-                  placeholder={messages.contact.form.companyPlaceholder}
-                  className={FIELD_CLASS}
-                />
-              </label>
-            </div>
+            <label className="flex flex-col gap-2 text-sm text-ink">
+              {messages.contact.form.company}
+              <input
+                name="company"
+                autoComplete="organization"
+                value={form.company}
+                onChange={handleChange("company")}
+                placeholder={messages.contact.form.companyPlaceholder}
+                className={FIELD_CLASS}
+              />
+            </label>
+          </Reveal>
 
+          <Reveal delay={(FIELDS_DELAY + FIELD_STAGGER) * 1000}>
             <label className="flex flex-col gap-2 text-sm text-ink">
               {messages.contact.form.contactMethod}
               <input
@@ -64,7 +71,9 @@ export function Contact() {
                 className={FIELD_CLASS}
               />
             </label>
+          </Reveal>
 
+          <Reveal delay={(FIELDS_DELAY + FIELD_STAGGER * 2) * 1000}>
             <label className="flex flex-col gap-2 text-sm text-ink">
               {messages.contact.form.message}
               <textarea
@@ -77,10 +86,12 @@ export function Contact() {
                 className={`${FIELD_CLASS} resize-none`}
               />
             </label>
+          </Reveal>
 
-            <FormActions status={status} form={form} />
-          </form>
-        </Reveal>
+          <Reveal delay={(FIELDS_DELAY + FIELD_STAGGER * 3) * 1000}>
+            <FormActions status={status} />
+          </Reveal>
+        </form>
       </div>
     </Section>
   );

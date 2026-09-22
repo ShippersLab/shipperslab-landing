@@ -1,6 +1,13 @@
 import { useState, type ChangeEvent, type SubmitEvent } from "react";
 
-import type { ContactMessage } from "@/lib/contact/message";
+import { useI18n } from "@/i18n/provider";
+import {
+  buildWhatsAppMessage,
+  buildWhatsAppUrl,
+  isEmailContact,
+  type ContactMessage,
+} from "@/lib/contact/message";
+import { site } from "@/lib/site";
 
 export type ContactStatus = "idle" | "sending" | "success" | "error";
 
@@ -12,6 +19,7 @@ const EMPTY_FORM: ContactMessage = {
 };
 
 export function useContactForm() {
+  const { messages } = useI18n();
   const [form, setForm] = useState<ContactMessage>(EMPTY_FORM);
   const [status, setStatus] = useState<ContactStatus>("idle");
 
@@ -24,6 +32,21 @@ export function useContactForm() {
 
   async function handleSubmit(event: SubmitEvent<HTMLFormElement>) {
     event.preventDefault();
+
+    if (!isEmailContact(form.contactMethod)) {
+      const whatsappUrl = buildWhatsAppUrl(
+        site.whatsappNumber,
+        buildWhatsAppMessage(form, messages.contact.form),
+      );
+
+      if (whatsappUrl) {
+        window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+        setForm(EMPTY_FORM);
+        setStatus("success");
+        return;
+      }
+    }
+
     setStatus("sending");
 
     try {

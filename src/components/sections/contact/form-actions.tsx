@@ -1,42 +1,33 @@
 "use client";
 
 import type { ContactStatus } from "@/components/sections/contact/use-contact-form";
-import { TextureButton } from "@/components/ui/texture-button";
+import { SubmitButton } from "@/components/sections/contact/submit-button";
+import { CalendarIcon } from "@/components/ui/icons";
 import { useI18n } from "@/i18n/provider";
-import { buildWhatsAppMessage, buildWhatsAppUrl, type ContactMessage } from "@/lib/contact/message";
 import { site } from "@/lib/site";
 
 type FormActionsProps = {
   status: ContactStatus;
-  form: ContactMessage;
 };
 
-export function FormActions({ status, form }: FormActionsProps) {
+export function FormActions({ status }: FormActionsProps) {
   const { messages } = useI18n();
   const copy = messages.contact.form;
-  const whatsappUrl = buildWhatsAppUrl(site.whatsappNumber, buildWhatsAppMessage(form, copy));
-  const sending = status === "sending";
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex flex-wrap items-center gap-3">
-        <TextureButton
-          type="submit"
-          variant="primary"
-          size="pill"
-          className="w-auto"
-          disabled={sending}
-        >
-          {sending ? copy.sending : copy.submit}
-        </TextureButton>
+      <div className="flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+        <SubmitButton status={status} />
 
-        {whatsappUrl ? (
-          <TextureButton asChild variant="secondary" size="pill" className="w-auto">
-            <a href={whatsappUrl} target="_blank" rel="noreferrer">
-              {copy.whatsapp}
-            </a>
-          </TextureButton>
-        ) : null}
+        <a
+          href={site.calUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="group flex items-center justify-center gap-2 px-4 py-2.5 text-sm text-muted transition-colors duration-200 hover:text-ink sm:justify-start sm:text-base"
+        >
+          <CalendarIcon size={16} />
+          {copy.bookCall}
+        </a>
       </div>
 
       <p role="status" aria-live="polite" className="text-sm text-muted">

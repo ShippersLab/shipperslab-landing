@@ -84,7 +84,7 @@ const TextureButton = React.forwardRef<HTMLButtonElement, TextureButtonProps>(
         ref={ref}
         {...props}
       >
-        <div className={cn(innerDivVariants({ variant, size }))}>{children}</div>
+        <div className={cn(innerDivVariants({ variant, size }), className)}>{children}</div>
       </button>
     );
   },

@@ -33,6 +33,10 @@ export function parseContactMessage(payload: unknown): ContactMessage | null {
   return parsed;
 }
 
+export function isEmailContact(value: string) {
+  return value.includes("@");
+}
+
 export function buildWhatsAppUrl(number: string | undefined, text: string) {
   if (!number) {
     return null;
