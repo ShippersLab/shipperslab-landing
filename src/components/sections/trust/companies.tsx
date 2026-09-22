@@ -1,37 +1,53 @@
 "use client";
 
-import Image from "next/image";
+import type { CSSProperties } from "react";
 
 import { Reveal } from "@/components/ui/animation/reveal";
 import { useI18n } from "@/i18n/provider";
 import { companies } from "@/lib/site";
 
-export function Companies() {
+const LOGO_STAGGER = 0.08;
+
+function logoMask(src: string): CSSProperties {
+  return {
+    maskImage: `url(${src})`,
+    maskRepeat: "no-repeat",
+    maskPosition: "center",
+    maskSize: "contain",
+    WebkitMaskImage: `url(${src})`,
+    WebkitMaskRepeat: "no-repeat",
+    WebkitMaskPosition: "center",
+    WebkitMaskSize: "contain",
+  };
+}
+
+export function Companies({ delay = 0 }: { delay?: number }) {
   const { messages } = useI18n();
 
   return (
-    <Reveal className="mt-10">
-      <p className="text-sm text-muted">{messages.trust.companiesTitle}</p>
+    <>
+      <Reveal delay={delay * 1000} className="mt-10">
+        <p className="text-base text-muted sm:text-lg">{messages.trust.companiesTitle}</p>
+      </Reveal>
 
       <ul className="mt-6 flex flex-wrap items-center gap-x-10 gap-y-6">
-        {companies.map((company) => (
-          <li key={company.name}>
+        {companies.map((company, index) => (
+          <Reveal key={company.name} as="li" delay={(delay + 0.15 + index * LOGO_STAGGER) * 1000}>
             {company.logo ? (
-              <Image
-                src={company.logo}
-                alt={company.name}
-                width={140}
-                height={36}
-                className="h-8 w-fit opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0"
+              <span
+                role="img"
+                aria-label={company.name}
+                style={logoMask(company.logo)}
+                className="block h-8 w-32 bg-ink/40 transition duration-300 ease-out hover:scale-105 hover:bg-accent"
               />
             ) : (
-              <span className="font-heading text-xl text-ink/40 transition-colors duration-200 hover:text-ink/70">
+              <span className="font-heading text-base text-ink/40 transition-colors duration-300 hover:text-accent sm:text-lg">
                 {company.name}
               </span>
             )}
-          </li>
+          </Reveal>
         ))}
       </ul>
-    </Reveal>
+    </>
   );
 }
