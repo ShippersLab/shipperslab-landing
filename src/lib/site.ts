@@ -15,7 +15,6 @@ export const site = {
   social: {
     x: "https://x.com/theshipperslab",
     xHandle: "@theshipperslab",
-    github: "https://github.com/ShippersLab",
   },
 } as const;
 
