@@ -22,7 +22,7 @@ export function Hero() {
     <section
       id="top"
       ref={sectionRef}
-      className="flex min-h-[calc(100svh-68px)] w-full flex-1 flex-col justify-center bg-[#EDEFF3] lg:min-h-svh lg:justify-start lg:bg-transparent pb-32"
+      className="flex min-h-[calc(100svh-68px)] w-full flex-1 flex-col bg-[#EDEFF3] lg:min-h-svh lg:bg-transparent"
     >
       <Image
         src="/images/hero-illustration.webp"
@@ -37,40 +37,42 @@ export function Hero() {
         sizes="100vw"
       />
 
-      <Container className="grid gap-8 py-10 lg:grid-cols-[1.8fr_1.2fr] lg:items-start lg:gap-0 lg:pt-12 lg:pb-16">
-        <h1 className="hero-title invisible max-w-full font-pixel text-4xl leading-[0.95] tracking-tighter text-ink sm:text-5xl lg:text-6xl lg:leading-none">
-          {messages.hero.title}
-        </h1>
+      <div className="mx-auto flex w-full max-w-content flex-1 flex-col justify-center border-x border-border lg:justify-start">
+        <Container className="grid gap-8 py-10 lg:grid-cols-[1.8fr_1.2fr] lg:items-start lg:gap-0 lg:pt-10   lg:pb-16">
+          <h1 className="hero-title invisible max-w-full font-pixel text-4xl leading-[0.95] tracking-tighter text-ink sm:text-5xl lg:text-6xl lg:leading-none">
+            {messages.hero.title}
+          </h1>
 
-        <div className="flex w-full max-w-fit flex-col gap-6 pt-1">
-          <p className="hero-description invisible w-full font-sans text-sm leading-relaxed tracking-tight text-muted sm:text-base">
-            {messages.hero.description}
-          </p>
+          <div className="flex w-full max-w-fit flex-col gap-6 pt-1">
+            <p className="hero-description invisible w-full font-sans text-sm leading-relaxed tracking-tight text-muted sm:text-base">
+              {messages.hero.description}
+            </p>
 
-          <div className="hero-ctas invisible flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-            <TextureButton
-              asChild
-              variant="primary"
-              size="pill"
-              className="w-full rounded-full sm:w-auto"
-            >
-              <a href="#contacto" className="text-sm sm:text-base">
-                {messages.hero.primaryCta}
+            <div className="hero-ctas invisible flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+              <TextureButton
+                asChild
+                variant="primary"
+                size="pill"
+                className="w-full rounded-full sm:w-auto"
+              >
+                <a href="#contacto" className="text-sm sm:text-base">
+                  {messages.hero.primaryCta}
+                </a>
+              </TextureButton>
+              <a
+                href="#servicios"
+                className="group flex items-center justify-center gap-1 px-4 py-2.5 text-sm text-muted transition-colors duration-200 hover:text-ink sm:justify-start sm:text-base"
+              >
+                {messages.hero.secondaryCta}
+                <ArrowRightIcon
+                  size={16}
+                  className="mt-px transition-transform duration-200 group-hover:translate-x-0.5"
+                />
               </a>
-            </TextureButton>
-            <a
-              href="#servicios"
-              className="group flex items-center justify-center gap-1 px-4 py-2.5 text-sm text-muted transition-colors duration-200 hover:text-ink sm:justify-start sm:text-base"
-            >
-              {messages.hero.secondaryCta}
-              <ArrowRightIcon
-                size={16}
-                className="mt-px transition-transform duration-200 group-hover:translate-x-0.5"
-              />
-            </a>
+            </div>
           </div>
-        </div>
-      </Container>
+        </Container>
+      </div>
     </section>
   );
 }
