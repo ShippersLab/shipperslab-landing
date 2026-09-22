@@ -4,12 +4,16 @@ import {
   ArrowRight01Icon,
   ArrowUp01Icon,
   Attachment01Icon,
+  Calendar01Icon,
   CloudUploadIcon,
   DashboardCircleIcon,
   Database01Icon,
   File01Icon,
+  GithubIcon as GithubIconSource,
   GlobeIcon as GlobeIconSource,
+  Mail01Icon,
   Mic01Icon,
+  NewTwitterIcon,
   PlusSignIcon,
   Refresh01Icon,
   Robot01Icon,
@@ -46,3 +50,7 @@ export const SendIcon = createIcon(ArrowUp01Icon);
 export const ArrowRightIcon = createIcon(ArrowRight01Icon);
 export const PlusIcon = createIcon(PlusSignIcon);
 export const CheckIcon = createIcon(Tick02Icon);
+export const CalendarIcon = createIcon(Calendar01Icon);
+export const GithubIcon = createIcon(GithubIconSource);
+export const MailIcon = createIcon(Mail01Icon);
+export const TwitterIcon = createIcon(NewTwitterIcon);
