@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import { site } from "@/lib/site";
 
-const TITLE = "ShippersLab | Ingeniería para el problema que tenés hoy";
+const TITLE = "ShippersLab";
 
 const DESCRIPTION =
   "Diseñamos y construimos software a medida, automatizaciones y productos digitales con IA. Trabajamos con clientes de Argentina y del exterior. Contanos qué querés resolver.";
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: TITLE,
     description: DESCRIPTION,
   },
