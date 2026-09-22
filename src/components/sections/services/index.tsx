@@ -32,6 +32,7 @@ export function Services() {
   const navRefs = useRef<Partial<Record<ServiceId, HTMLButtonElement | null>>>({});
   const gridRef = useRef<HTMLDivElement>(null);
   const sidebarRef = useRef<HTMLDivElement>(null);
+  const isFirstRender = useRef(true);
 
   function scrollToService(id: ServiceId) {
     panelRefs.current[id]?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -39,6 +40,11 @@ export function Services() {
   }
 
   useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+
     navRefs.current[activeId]?.scrollIntoView({
       behavior: "smooth",
       block: "nearest",
