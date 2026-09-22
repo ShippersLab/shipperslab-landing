@@ -1,7 +1,7 @@
 "use client";
 
 import { Companies } from "@/components/sections/trust/companies";
-import { Reveal } from "@/components/ui/reveal";
+import { Reveal } from "@/components/ui/animation/reveal";
 import { Section } from "@/components/ui/section";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { useI18n } from "@/i18n/provider";

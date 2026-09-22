@@ -24,14 +24,14 @@
   },
   "problems": {
     "title": "¿Te suena alguno de estos?",
-    "description": "Marcá los que te pasan.",
+    "description": "Marcá los que te pasan. Con uno que marques, ya sabemos por dónde arrancar.",
     "items": [
+      "Tenés una idea para desarrollar.",
       "Procesos que todavía se hacen a mano.",
-      "Información repartida entre Excel, mails y WhatsApp.",
+      "Necesitás una herramienta interna.",
       "Sistemas que no se hablan entre sí.",
       "Tareas repetitivas que te comen el día.",
-      "Necesitás una herramienta interna y nadie del equipo tiene tiempo de hacerla.",
-      "Tenés un producto a medias que no termina de salir."
+      "Tenés un producto a medias que no sale."
     ],
     "ctaTitle": "¿Marcaste alguno? Contanos cuál y arrancamos por ahí.",
     "ctaLink": "Contanos cuál"

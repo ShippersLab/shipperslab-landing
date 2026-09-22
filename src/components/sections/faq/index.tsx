@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useRef, useState } from "react";
 
 import { PlusIcon } from "@/components/ui/icons";
-import { Reveal } from "@/components/ui/reveal";
+import { Reveal } from "@/components/ui/animation/reveal";
 import { Section } from "@/components/ui/section";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { useI18n } from "@/i18n/provider";
@@ -49,7 +49,7 @@ export function Faq() {
         <div className="lg:sticky lg:top-24 lg:self-start">
           <div
             ref={imageRef}
-            className="relative aspect-square overflow-hidden rounded-lg border border-border"
+            className="invisible relative aspect-square overflow-hidden rounded-lg border border-border"
           >
             <Image
               src="/images/bridge-illustration.webp"

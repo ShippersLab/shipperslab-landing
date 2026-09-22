@@ -7,7 +7,7 @@ import {
   SERVICE_ILLUSTRATIONS,
   type ServiceId,
 } from "@/components/sections/services/data";
-import { Reveal } from "@/components/ui/reveal";
+import { Reveal } from "@/components/ui/animation/reveal";
 import { Section } from "@/components/ui/section";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { useI18n } from "@/i18n/provider";

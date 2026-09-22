@@ -1,7 +1,7 @@
 "use client";
 
 import { Container } from "@/components/ui/container";
-import { Reveal } from "@/components/ui/reveal";
+import { Reveal } from "@/components/ui/animation/reveal";
 import { TextureButton } from "@/components/ui/texture-button";
 import { useI18n } from "@/i18n/provider";
 import { site } from "@/lib/site";

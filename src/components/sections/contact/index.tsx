@@ -2,7 +2,7 @@
 
 import { FormActions } from "@/components/sections/contact/form-actions";
 import { useContactForm } from "@/components/sections/contact/use-contact-form";
-import { Reveal } from "@/components/ui/reveal";
+import { Reveal } from "@/components/ui/animation/reveal";
 import { Section } from "@/components/ui/section";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { useI18n } from "@/i18n/provider";

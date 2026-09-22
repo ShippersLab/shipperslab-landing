@@ -24,14 +24,14 @@
   },
   "problems": {
     "title": "Does any of this sound familiar?",
-    "description": "Check the ones that sound like you.",
+    "description": "Check the ones that sound like you. One is enough to get us started.",
     "items": [
+      "You have an idea you want to build.",
       "Processes that are still done by hand.",
-      "Data scattered across spreadsheets, email and WhatsApp.",
+      "You need an internal tool.",
       "Systems that don't talk to each other.",
-      "Repetitive tasks eating up your week.",
-      "You need an internal tool and nobody on your team has time to build it.",
-      "You have a half-built product that never quite ships."
+      "Repetitive tasks eating up your day.",
+      "You have a half-built product that won't ship."
     ],
     "ctaTitle": "Checked one? Tell us which and we'll start there.",
     "ctaLink": "Tell us which"

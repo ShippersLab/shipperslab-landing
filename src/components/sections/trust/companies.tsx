@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import { Reveal } from "@/components/ui/reveal";
+import { Reveal } from "@/components/ui/animation/reveal";
 import { useI18n } from "@/i18n/provider";
 import { companies } from "@/lib/site";
 
