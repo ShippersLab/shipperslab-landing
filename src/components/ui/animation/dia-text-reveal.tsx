@@ -114,7 +114,7 @@ export function DiaTextReveal({
   colors = ["#c679c4", "#fa3d1d", "#ffb005", "#e1e1fe", "#0358f7"],
   textColor = "currentColor",
   direction = "ltr",
-  duration = 0.9,
+  duration = 1.2,
   delay = 0,
   ease = DEFAULT_EASE,
   fadeEase = "easeInOut",
