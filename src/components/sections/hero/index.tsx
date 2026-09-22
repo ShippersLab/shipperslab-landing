@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useRef } from "react";
 
 import { Container } from "@/components/ui/container";
+import { ArrowRightIcon } from "@/components/ui/icons";
 import { TextureButton } from "@/components/ui/texture-button";
 import { useI18n } from "@/i18n/provider";
 import { gsap, useGSAP } from "@/lib/gsap";
@@ -28,21 +29,9 @@ export function Hero() {
             { autoAlpha: 1, filter: "blur(0px)", duration: 1.2 },
           )
           .fromTo(
-            ".hero-title",
-            { autoAlpha: 0, y: 24 },
-            { autoAlpha: 1, y: 0, duration: 0.8 },
-            "-=0.7",
-          )
-          .fromTo(
-            ".hero-description",
-            { autoAlpha: 0, y: 16 },
-            { autoAlpha: 1, y: 0, duration: 0.7 },
-            "-=0.5",
-          )
-          .fromTo(
-            ".hero-ctas",
-            { autoAlpha: 0, y: 16 },
-            { autoAlpha: 1, y: 0, duration: 0.7 },
+            ".hero-reveal",
+            { autoAlpha: 0, y: 20 },
+            { autoAlpha: 1, y: 0, duration: 0.6, stagger: 0.12 },
             "-=0.5",
           );
       });
@@ -67,23 +56,32 @@ export function Hero() {
         sizes="100vw"
       />
 
-      <Container className="grid gap-10 pt-8 pb-16 lg:grid-cols-[2fr_1fr] lg:items-start">
-        <h1 className="hero-title max-w-xl font-pixel-circle font-medium tracking-tighter text-7xl">
+      <Container className="grid justify-between pt-12 pb-16 lg:grid-cols-[1.8fr_1.2fr] lg:items-start">
+        <h1 className="hero-title hero-reveal max-w-full font-pixel tracking-tighter text-6xl text-ink">
           {messages.hero.title}
         </h1>
 
         <div className="flex w-full max-w-fit flex-col gap-6 pt-1">
-          <p className="hero-description w-full font-sans text-lg font-light tracking-tight text-muted">
+          <p className="hero-description hero-reveal w-full font-sans text-base tracking-tight text-muted">
             {messages.hero.description}
           </p>
 
-          <div className="hero-ctas flex flex-wrap items-center gap-3">
-            <TextureButton asChild variant="primary" size="pill" className="w-auto">
-              <a href="#contacto">{messages.hero.primaryCta}</a>
+          <div className="hero-ctas hero-reveal flex flex-wrap items-center gap-3">
+            <TextureButton asChild variant="primary" size="pill" className="w-auto rounded-full">
+              <a href="#contacto" className="text-base">
+                {messages.hero.primaryCta}
+              </a>
             </TextureButton>
-            <TextureButton asChild variant="secondary" size="pill" className="w-auto">
-              <a href="#servicios">{messages.hero.secondaryCta}</a>
-            </TextureButton>
+            <a
+              href="#servicios"
+              className="group flex items-center gap-1 px-4 py-2.5 text-base text-muted transition-colors duration-200 hover:text-ink"
+            >
+              {messages.hero.secondaryCta}
+              <ArrowRightIcon
+                size={16}
+                className="mt-px transition-transform duration-200 group-hover:translate-x-0.5"
+              />
+            </a>
           </div>
         </div>
       </Container>

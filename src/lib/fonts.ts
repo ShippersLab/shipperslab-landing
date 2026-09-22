@@ -1,4 +1,11 @@
-import { Geist, Geist_Mono, Geist_Pixel } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
+import {
+  GeistPixelCircle,
+  GeistPixelGrid,
+  GeistPixelLine,
+  GeistPixelSquare,
+  GeistPixelTriangle,
+} from "geist/font/pixel";
 
 export const fontSans = Geist({
   variable: "--font-geist-sans",
@@ -10,9 +17,8 @@ export const fontMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const fontPixel = Geist_Pixel({
-  variable: "--font-geist-pixel",
-  subsets: ["latin"],
-  axes: ["ELSH"],
-  display: "swap",
-});
+export const fontPixelSquare = GeistPixelSquare;
+export const fontPixelCircle = GeistPixelCircle;
+export const fontPixelGrid = GeistPixelGrid;
+export const fontPixelTriangle = GeistPixelTriangle;
+export const fontPixelLine = GeistPixelLine;

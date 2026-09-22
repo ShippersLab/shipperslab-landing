@@ -1,6 +1,7 @@
 import { HugeiconsIcon, type HugeiconsIconProps, type IconSvgElement } from "@hugeicons/react";
 import {
   AiChat01Icon,
+  ArrowRight01Icon,
   ArrowUp01Icon,
   Attachment01Icon,
   CloudUploadIcon,
@@ -42,5 +43,6 @@ export const RocketIcon = createIcon(Rocket01Icon);
 export const AttachmentIcon = createIcon(Attachment01Icon);
 export const MicIcon = createIcon(Mic01Icon);
 export const SendIcon = createIcon(ArrowUp01Icon);
+export const ArrowRightIcon = createIcon(ArrowRight01Icon);
 export const PlusIcon = createIcon(PlusSignIcon);
 export const CheckIcon = createIcon(Tick02Icon);
