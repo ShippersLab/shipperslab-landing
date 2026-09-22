@@ -1,7 +1,7 @@
 import type { RefObject } from "react";
 
+import { revealWords } from "@/components/sections/hero/text-reveal";
 import { gsap, useGSAP } from "@/lib/gsap";
-import { revealWords } from "@/lib/text-reveal";
 
 const IMAGE_DURATION = 0.6;
 
