@@ -150,6 +150,57 @@
       "alternative": "O escribinos directo a"
     }
   },
+  "onboarding": {
+    "title": "Empecemos.",
+    "description": "Tres pasos, menos de un minuto. El equipo te va a responder para coordinar una charla.",
+    "stepsLabel": "Pasos del formulario",
+    "steps": ["Vos", "Contacto", "Proyecto"],
+    "fields": {
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "company": "Empresa (opcional)",
+      "companyPlaceholder": "Nombre de tu empresa",
+      "email": "Email",
+      "emailPlaceholder": "vos@empresa.com",
+      "whatsapp": "WhatsApp (opcional)",
+      "whatsappPlaceholder": "+54 9 342 ...",
+      "needs": "¿Qué necesitás?",
+      "stage": "¿En qué punto estás?",
+      "message": "Contanos qué buscás",
+      "messagePlaceholder": "Ej: cargamos los pedidos a mano desde WhatsApp a una planilla y se nos pierden."
+    },
+    "needs": {
+      "software": "Herramienta interna",
+      "automation": "Automatización",
+      "ai": "Inteligencia artificial",
+      "products": "Producto o sitio",
+      "unsure": "No sé todavía"
+    },
+    "stages": {
+      "idea": "Es una idea",
+      "existing": "Ya existe y quiero mejorarlo"
+    },
+    "actions": {
+      "back": "Atrás",
+      "next": "Siguiente",
+      "submit": "Enviar",
+      "sending": "Enviando..."
+    },
+    "errors": {
+      "nameRequired": "Contanos cómo te llamás.",
+      "emailRequired": "Necesitamos un email para responderte.",
+      "emailInvalid": "Revisá el email, parece incompleto. Ej: vos@empresa.com.",
+      "whatsappInvalid": "Revisá el número. Incluí el código de área, ej: +54 9 342 555 1234.",
+      "messageRequired": "Contanos en una línea qué buscás."
+    },
+    "error": "No se pudo enviar. Probá de nuevo o escribinos a hola@shipperslab.tech.",
+    "alternative": "¿Preferís un mail? Escribinos a",
+    "success": {
+      "title": "Listo.",
+      "description": "Te escribe alguien del equipo que lo va a construir para coordinar una charla.",
+      "cta": "Volver al inicio"
+    }
+  },
   "footer": {
     "tagline": "Diseñamos y construimos productos digitales. Ofrecemos servicios para convertir tu idea en un producto real.",
     "legal": "Hecho en Argentina."

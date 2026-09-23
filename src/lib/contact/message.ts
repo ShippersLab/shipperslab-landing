@@ -1,3 +1,5 @@
+import { isRecord, readString } from "@/lib/payload";
+
 export type ContactMessage = {
   name: string;
   company: string;
@@ -8,22 +10,16 @@ export type ContactMessage = {
 const MAX_SHORT_FIELD = 200;
 const MAX_MESSAGE = 5000;
 
-function readField(source: Record<string, unknown>, key: string, max: number) {
-  const value = source[key];
-  return typeof value === "string" ? value.trim().slice(0, max) : "";
-}
-
 export function parseContactMessage(payload: unknown): ContactMessage | null {
-  if (!payload || typeof payload !== "object") {
+  if (!isRecord(payload)) {
     return null;
   }
 
-  const source = payload as Record<string, unknown>;
   const parsed: ContactMessage = {
-    name: readField(source, "name", MAX_SHORT_FIELD),
-    company: readField(source, "company", MAX_SHORT_FIELD),
-    contactMethod: readField(source, "contactMethod", MAX_SHORT_FIELD),
-    message: readField(source, "message", MAX_MESSAGE),
+    name: readString(payload, "name", MAX_SHORT_FIELD),
+    company: readString(payload, "company", MAX_SHORT_FIELD),
+    contactMethod: readString(payload, "contactMethod", MAX_SHORT_FIELD),
+    message: readString(payload, "message", MAX_MESSAGE),
   };
 
   if (!parsed.name || !parsed.contactMethod || !parsed.message) {

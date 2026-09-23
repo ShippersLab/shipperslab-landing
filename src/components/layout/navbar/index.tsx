@@ -64,7 +64,7 @@ export function Navbar() {
         </Link>
 
         <TextureButton asChild variant="primary" size="lg" className="w-auto rounded-full">
-          <a href="/#contacto">{messages.nav.contact}</a>
+          <Link href="/empecemos">{messages.nav.contact}</Link>
         </TextureButton>
       </div>
     </header>

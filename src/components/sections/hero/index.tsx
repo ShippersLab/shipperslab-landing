@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useRef } from "react";
 
 import { Container } from "@/components/ui/container";
@@ -55,9 +56,9 @@ export function Hero() {
                 size="pill"
                 className="w-full rounded-full sm:w-auto"
               >
-                <a href="#contacto" className="text-sm sm:text-base">
+                <Link href="/empecemos" className="text-sm sm:text-base">
                   {messages.hero.primaryCta}
-                </a>
+                </Link>
               </TextureButton>
               <a
                 href="#servicios"

@@ -150,6 +150,57 @@
       "alternative": "Or write to us directly at"
     }
   },
+  "onboarding": {
+    "title": "Let's start.",
+    "description": "Three steps, under a minute. The team will get back to you to set up a call.",
+    "stepsLabel": "Form steps",
+    "steps": ["You", "Contact", "Project"],
+    "fields": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "company": "Company (optional)",
+      "companyPlaceholder": "Your company name",
+      "email": "Email",
+      "emailPlaceholder": "you@company.com",
+      "whatsapp": "WhatsApp (optional)",
+      "whatsappPlaceholder": "+1 555 ...",
+      "needs": "What do you need?",
+      "stage": "Where are you at?",
+      "message": "Tell us what you're after",
+      "messagePlaceholder": "E.g. we copy orders from WhatsApp into a spreadsheet by hand and some get lost."
+    },
+    "needs": {
+      "software": "Internal tool",
+      "automation": "Automation",
+      "ai": "Artificial intelligence",
+      "products": "Product or website",
+      "unsure": "Not sure yet"
+    },
+    "stages": {
+      "idea": "It's an idea",
+      "existing": "It exists and I want to improve it"
+    },
+    "actions": {
+      "back": "Back",
+      "next": "Next",
+      "submit": "Send",
+      "sending": "Sending..."
+    },
+    "errors": {
+      "nameRequired": "Tell us your name.",
+      "emailRequired": "We need an email to reply to you.",
+      "emailInvalid": "Check the email, it looks incomplete. E.g. you@company.com.",
+      "whatsappInvalid": "Check the number. Include the area code, e.g. +1 555 123 4567.",
+      "messageRequired": "Tell us in one line what you're after."
+    },
+    "error": "Couldn't send it. Try again or email us at hola@shipperslab.tech.",
+    "alternative": "Rather send an email? Write to",
+    "success": {
+      "title": "Done.",
+      "description": "Someone from the team who will build it will reach out to set up a call.",
+      "cta": "Back to home"
+    }
+  },
   "footer": {
     "tagline": "We design and build digital products, and offer the services to turn your idea into a real product.",
     "legal": "Made in Argentina."
