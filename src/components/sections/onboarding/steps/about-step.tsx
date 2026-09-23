@@ -21,6 +21,7 @@ export function AboutStep({ data, errors, setField }: StepProps) {
         error={errors.name && errorCopy[errors.name]}
         onChange={(event) => setField("name", event.currentTarget.value)}
       />
+
       <TextField
         name="company"
         autoComplete="organization"

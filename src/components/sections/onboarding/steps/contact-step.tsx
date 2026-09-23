@@ -23,6 +23,7 @@ export function ContactStep({ data, errors, setField }: StepProps) {
         error={errors.email && errorCopy[errors.email]}
         onChange={(event) => setField("email", event.currentTarget.value)}
       />
+
       <TextField
         type="tel"
         name="whatsapp"
