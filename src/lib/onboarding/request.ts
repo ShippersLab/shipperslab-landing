@@ -1,3 +1,4 @@
+import { defaultLocale, isLocale, type Locale } from "@/i18n/config";
 import { findFirstInvalidStep } from "@/lib/onboarding/validation";
 import { isRecord, readString, readStringList } from "@/lib/payload";
 
@@ -36,6 +37,10 @@ function isNeed(value: string): value is OnboardingNeed {
 
 function isStage(value: string): value is OnboardingStage {
   return (ONBOARDING_STAGES as readonly string[]).includes(value);
+}
+
+export function parseOnboardingLocale(payload: unknown): Locale {
+  return isRecord(payload) && isLocale(payload.locale) ? payload.locale : defaultLocale;
 }
 
 export function parseOnboardingRequest(payload: unknown): OnboardingRequest | null {

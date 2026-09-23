@@ -27,7 +27,7 @@ export function ChoiceGroup<T extends string>({
         {options.map((option) => (
           <label
             key={option.value}
-            className="cursor-pointer rounded-full border border-border bg-paper px-4 py-2 text-sm text-muted transition-colors duration-200 select-none hover:border-ink hover:text-ink has-checked:border-accent has-checked:bg-accent has-checked:text-paper has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-ink"
+            className="cursor-pointer rounded-full border border-border bg-paper px-4 py-2 text-sm text-muted transition-colors duration-200 select-none hover:border-muted/60 hover:text-ink has-checked:border-accent has-checked:bg-accent has-checked:text-paper has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-muted/60"
           >
             <input
               type={type}

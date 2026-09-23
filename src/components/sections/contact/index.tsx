@@ -8,7 +8,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { useI18n } from "@/i18n/provider";
 
 const FIELD_CLASS =
-  "w-full rounded-lg border border-border bg-paper px-4 py-3 text-base text-ink placeholder:text-muted focus:border-ink focus:outline-none transition-colors duration-200";
+  "w-full rounded-lg border border-border bg-paper px-4 py-3 text-base text-ink placeholder:text-muted focus:border-muted/60 focus:outline-none transition-colors duration-200";
 
 const TITLE_DELAY = 0;
 const DESCRIPTION_DELAY = 0.1;

@@ -199,6 +199,13 @@
       "title": "Done.",
       "description": "Someone from the team who will build it will reach out to set up a call.",
       "cta": "Back to home"
+    },
+    "confirmation": {
+      "subject": "We got your message | ShippersLab",
+      "greeting": "Hi {name},",
+      "body": "Thanks for reaching out to ShippersLab. We got what you sent us and someone from the team will get back to you as soon as possible to set up a call.",
+      "followUp": "If you want to add anything, just reply to this email and it goes to the same team.",
+      "signature": "The ShippersLab team"
     }
   },
   "footer": {

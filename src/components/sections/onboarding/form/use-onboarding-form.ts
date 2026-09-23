@@ -1,10 +1,13 @@
 import { useState, type SubmitEvent } from "react";
 
+import { useI18n } from "@/i18n/provider";
+
 import {
   EMPTY_ONBOARDING_REQUEST,
   type OnboardingNeed,
   type OnboardingRequest,
 } from "@/lib/onboarding/request";
+
 import {
   findFirstInvalidStep,
   validateField,
@@ -34,6 +37,7 @@ function focusField(form: HTMLFormElement, field: string) {
 }
 
 export function useOnboardingForm(stepCount: number) {
+  const { locale } = useI18n();
   const [data, setData] = useState<OnboardingRequest>(EMPTY_ONBOARDING_REQUEST);
   const [errors, setErrors] = useState<OnboardingErrors>({});
   const [step, setStep] = useState(1);
@@ -97,7 +101,7 @@ export function useOnboardingForm(stepCount: number) {
       const response = await fetch("/api/onboarding", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify({ ...data, locale }),
       });
 
       if (!response.ok) {

@@ -102,7 +102,7 @@ export function StepperTrigger({ className, ...props }: ButtonHTMLAttributes<HTM
       aria-current={state === "active" ? "step" : undefined}
       onClick={() => onStepChange(step)}
       className={cn(
-        "inline-flex items-center gap-3 rounded-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink disabled:cursor-default",
+        "inline-flex items-center gap-3 rounded-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-muted/60 disabled:cursor-default",
         className,
       )}
       {...props}
@@ -118,7 +118,7 @@ export function StepperIndicator({ className }: { className?: string }) {
     <span
       className={cn(
         "relative flex size-7 shrink-0 items-center justify-center rounded-full border border-border bg-paper font-mono text-label text-muted transition-colors duration-200",
-        "group-data-[state=active]/step:border-ink group-data-[state=active]/step:text-ink",
+        "group-data-[state=active]/step:border-muted/60 group-data-[state=active]/step:text-ink",
         "group-data-[state=completed]/step:border-accent group-data-[state=completed]/step:bg-accent group-data-[state=completed]/step:text-paper",
         className,
       )}

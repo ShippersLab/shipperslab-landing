@@ -11,7 +11,7 @@ const ArcBandsBackground = forwardRef<HTMLDivElement, ArcBandsBackgroundProps>(
       <div
         ref={ref}
         data-slot="arc-bands-background"
-        className={cn("relative isolate overflow-hidden bg-paper", className)}
+        className={cn("relative isolate overflow-clip bg-paper", className)}
         {...props}
       >
         <div

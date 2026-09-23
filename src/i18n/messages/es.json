@@ -199,6 +199,13 @@
       "title": "Listo.",
       "description": "Te escribe alguien del equipo que lo va a construir para coordinar una charla.",
       "cta": "Volver al inicio"
+    },
+    "confirmation": {
+      "subject": "Recibimos tu mensaje | ShippersLab",
+      "greeting": "Hola {name},",
+      "body": "Gracias por escribirle a ShippersLab. Ya nos llegó lo que nos contaste y alguien del equipo te va a responder lo antes posible para coordinar una charla.",
+      "followUp": "Si querés sumar algo más, respondé este mail y le llega al mismo equipo.",
+      "signature": "El equipo de ShippersLab"
     }
   },
   "footer": {
