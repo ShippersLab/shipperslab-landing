@@ -18,7 +18,7 @@ No other colors are introduced without updating this table first.
 
 `accent` stays the brand fill, and these rules keep every pairing at AA or better:
 
-- Accent fills (pill CTAs, selected chips, completed steps) keep `paper` text as a brand decision. That pairing measures 2.87:1, below AA, and it is the one accepted exception on the page; if the team wants AA there, the fix is a darker fill token such as `#C2391D` (4.85:1 with `paper`), not grey or black text on the brand orange.
+- Accent fills (pill CTAs, selected chips, completed steps, text selection) keep `paper` text as a brand decision. That pairing measures 2.87:1, below AA, and it is the one accepted exception on the page; if the team wants AA there, the fix is a darker fill token such as `#C2391D` (4.85:1 with `paper`), not grey or black text on the brand orange.
 - `accent` is never a text color on `paper` (2.87:1). A link that wants emphasis is `text-ink` with a `decoration-accent` underline. Error messages are `text-ink`; the alert icon next to them may stay `text-accent`.
 - `muted` is the lightest text color allowed on `paper`.
 - Every interactive element shows a visible focus ring: a 2px `ink` outline with an offset (`focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink`). Never use `focus:outline-none` without a replacement.

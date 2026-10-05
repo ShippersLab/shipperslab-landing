@@ -72,7 +72,7 @@
 
   ::selection {
     background-color: var(--accent);
-    color: var(--ink);
+    color: var(--paper);
   }
 }
 
