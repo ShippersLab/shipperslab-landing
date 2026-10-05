@@ -11,7 +11,7 @@
   --font-mono: var(--font-geist-mono), monospace;
   --font-heading: var(--font-geist-pixel-square), monospace;
 
-  --text-hero: clamp(3rem, 8vw, 6rem);
+  --text-hero: clamp(2.25rem, 5.5vw, 4.5rem);
   --text-hero--line-height: 0.95;
   --text-wordmark: clamp(3rem, 13vw, 13rem);
   --text-wordmark--line-height: 1;
@@ -19,6 +19,8 @@
   --text-label--line-height: 1.4;
   --text-base--line-height: 1.6;
   --text-lg--line-height: 1.6;
+
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
 
   --tracking-hero: -0.04em;
   --tracking-heading: -0.01em;
@@ -49,19 +51,14 @@
   --accent: #fe5634;
   --ink: #0b0f1a;
   --paper: #f2f3f5;
-  --muted: #6e7686;
+  --muted: #5f6777;
   --border: #e0e3e9;
 }
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
-
   body {
     background-color: var(--paper);
     color: var(--ink);
-    scroll-behavior: smooth;
   }
 
   h1,
@@ -75,7 +72,7 @@
 
   ::selection {
     background-color: var(--accent);
-    color: var(--paper);
+    color: var(--ink);
   }
 }
 

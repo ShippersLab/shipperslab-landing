@@ -3,12 +3,10 @@
 import { FormActions } from "@/components/sections/contact/form-actions";
 import { useContactForm } from "@/components/sections/contact/use-contact-form";
 import { Reveal } from "@/components/ui/animation/reveal";
+import { TextAreaField, TextField } from "@/components/ui/form/text-field";
 import { Section } from "@/components/ui/section";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { useI18n } from "@/i18n/provider";
-
-const FIELD_CLASS =
-  "w-full rounded-lg border border-border bg-paper px-4 py-3 text-base text-ink placeholder:text-muted focus:border-muted/60 focus:outline-none transition-colors duration-200";
 
 const TITLE_DELAY = 0;
 const DESCRIPTION_DELAY = 0.1;
@@ -32,60 +30,48 @@ export function Contact() {
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-5">
           <Reveal delay={FIELDS_DELAY * 1000} className="grid gap-5 sm:grid-cols-2">
-            <label className="flex flex-col gap-2 text-sm text-ink">
-              {messages.contact.form.name}
-              <input
-                required
-                name="name"
-                autoComplete="name"
-                value={form.name}
-                onChange={handleChange("name")}
-                placeholder={messages.contact.form.namePlaceholder}
-                className={FIELD_CLASS}
-              />
-            </label>
+            <TextField
+              label={messages.contact.form.name}
+              required
+              name="name"
+              autoComplete="name"
+              value={form.name}
+              onChange={handleChange("name")}
+              placeholder={messages.contact.form.namePlaceholder}
+            />
 
-            <label className="flex flex-col gap-2 text-sm text-ink">
-              {messages.contact.form.company}
-              <input
-                name="company"
-                autoComplete="organization"
-                value={form.company}
-                onChange={handleChange("company")}
-                placeholder={messages.contact.form.companyPlaceholder}
-                className={FIELD_CLASS}
-              />
-            </label>
+            <TextField
+              label={messages.contact.form.company}
+              name="company"
+              autoComplete="organization"
+              value={form.company}
+              onChange={handleChange("company")}
+              placeholder={messages.contact.form.companyPlaceholder}
+            />
           </Reveal>
 
           <Reveal delay={(FIELDS_DELAY + FIELD_STAGGER) * 1000}>
-            <label className="flex flex-col gap-2 text-sm text-ink">
-              {messages.contact.form.contactMethod}
-              <input
-                required
-                name="contactMethod"
-                autoComplete="email"
-                value={form.contactMethod}
-                onChange={handleChange("contactMethod")}
-                placeholder={messages.contact.form.contactMethodPlaceholder}
-                className={FIELD_CLASS}
-              />
-            </label>
+            <TextField
+              label={messages.contact.form.contactMethod}
+              required
+              name="contactMethod"
+              autoComplete="email"
+              value={form.contactMethod}
+              onChange={handleChange("contactMethod")}
+              placeholder={messages.contact.form.contactMethodPlaceholder}
+            />
           </Reveal>
 
           <Reveal delay={(FIELDS_DELAY + FIELD_STAGGER * 2) * 1000}>
-            <label className="flex flex-col gap-2 text-sm text-ink">
-              {messages.contact.form.message}
-              <textarea
-                required
-                name="message"
-                rows={4}
-                value={form.message}
-                onChange={handleChange("message")}
-                placeholder={messages.contact.form.messagePlaceholder}
-                className={`${FIELD_CLASS} resize-none`}
-              />
-            </label>
+            <TextAreaField
+              label={messages.contact.form.message}
+              required
+              name="message"
+              rows={4}
+              value={form.message}
+              onChange={handleChange("message")}
+              placeholder={messages.contact.form.messagePlaceholder}
+            />
           </Reveal>
 
           <Reveal delay={(FIELDS_DELAY + FIELD_STAGGER * 3) * 1000}>

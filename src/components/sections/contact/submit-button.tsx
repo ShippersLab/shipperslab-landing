@@ -39,7 +39,7 @@ export function SubmitButton({ status }: SubmitButtonProps) {
       type="submit"
       variant="primary"
       size="pill"
-      className="w-full min-w-33 rounded-full sm:w-auto hover:opacity-80"
+      className="w-full min-w-33 rounded-full sm:w-auto"
       disabled={sending}
     >
       {reducedMotion ? (

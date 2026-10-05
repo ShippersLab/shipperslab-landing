@@ -21,10 +21,10 @@ export function SectionHeading({
 }: SectionHeadingProps) {
   return (
     <div className={className}>
-      <h2 className="text-3xl tracking-tighter sm:text-4xl">
+      <h2 className="text-3xl sm:text-4xl">
         <DiaTextReveal
           text={title}
-          colors={["var(--accent)"]}
+          colors={["var(--ink)"]}
           textColor="var(--ink)"
           delay={titleDelay}
         />
