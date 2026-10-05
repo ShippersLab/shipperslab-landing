@@ -28,13 +28,14 @@
   },
   "services": {
     "title": "Qué hacemos.",
-    "description": "Podés empezar por uno solo. Arrancamos por lo que más te urge.",
+    "description": "Cada sistema se arma para tu negocio, tus problemas y tus objetivos.",
     "items": [
       {
         "id": "systems",
         "title": "Sistemas de gestión a medida",
-        "description": "Stock, pedidos, caja o turnos en un solo sistema. EventOps, nuestro sistema para empresas de eventos, ya está en producción.",
-        "audience": "Para pymes con stock, pedidos o turnos"
+        "description": "Stock, pedidos, caja o turnos en un solo sistema, armado para cómo trabaja tu negocio.",
+        "audience": "Para pymes con stock, pedidos o turnos",
+        "link": "Ver EventOps, el sistema que armamos para empresas de eventos"
       },
       {
         "id": "presence",

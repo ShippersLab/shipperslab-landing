@@ -12,6 +12,7 @@ export const site = {
   },
   calUrl: "https://cal.com/shipperslab/hablemos",
   whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER,
+  eventopsUrl: "https://eventops.digital",
   social: {
     instagram: "https://www.instagram.com/shipperslab/",
     instagramHandle: "@shipperslab",

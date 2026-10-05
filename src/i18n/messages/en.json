@@ -28,13 +28,14 @@
   },
   "services": {
     "title": "What we do.",
-    "description": "You can start with just one. We begin with whatever is most urgent.",
+    "description": "Every system is built around your business, your problems and your goals.",
     "items": [
       {
         "id": "systems",
         "title": "Custom management systems",
-        "description": "Inventory, orders, sales or bookings in one system. EventOps, our system for event companies, is already live.",
-        "audience": "For small businesses with inventory, orders or bookings"
+        "description": "Inventory, orders, sales or bookings in one system, built around how your business works.",
+        "audience": "For small businesses with inventory, orders or bookings",
+        "link": "See EventOps, the system we built for event companies"
       },
       {
         "id": "presence",
