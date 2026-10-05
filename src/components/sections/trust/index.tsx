@@ -1,6 +1,7 @@
 "use client";
 
 import { Companies } from "@/components/sections/trust/companies";
+import { EventOpsCard } from "@/components/sections/trust/eventops-card";
 import { Reveal } from "@/components/ui/animation/reveal";
 import { WordReveal } from "@/components/ui/animation/word-reveal";
 import { ArcBandsBackground } from "@/components/ui/arc-bands-background";
@@ -11,8 +12,9 @@ import { site } from "@/lib/site";
 
 const TITLE_DELAY = 0;
 const DESCRIPTION_DELAY = 0.45;
-const COMPANIES_DELAY = 0.85;
-const CTA_DELAY = 1.6;
+const EVENTOPS_DELAY = 0.7;
+const COMPANIES_DELAY = 1.3;
+const CTA_DELAY = 2;
 
 export function Trust() {
   const { messages } = useI18n();
@@ -31,6 +33,8 @@ export function Trust() {
           titleDelay={TITLE_DELAY}
           descriptionDelay={DESCRIPTION_DELAY}
         />
+
+        <EventOpsCard delay={EVENTOPS_DELAY} />
 
         <Companies delay={COMPANIES_DELAY} />
 

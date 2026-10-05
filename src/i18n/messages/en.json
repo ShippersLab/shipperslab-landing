@@ -4,81 +4,91 @@
   },
   "nav": {
     "services": "Services",
-    "about": "About",
+    "about": "Work",
     "events": "Events",
-    "contact": "Write to us"
+    "contact": "Contact"
   },
   "hero": {
-    "title": "Engineering for your problem today.",
-    "description": "Internal tools, automation, AI and digital products. Scope in writing, progress every week.",
+    "title": "Your business, organized in one system.",
+    "description": "We build the system for your stock, orders, cash or bookings, and connect it to WhatsApp and the tools you already use. Scope in writing, progress every week.",
     "primaryCta": "Tell us your problem",
-    "secondaryCta": "What we build",
+    "secondaryCta": "See services",
     "imageAlt": "Illustration of the Buenos Aires Obelisk on a wide avenue, in orange tones"
   },
   "trust": {
-    "title": "You talk to the people building it.",
-    "description": "We're a small team of engineers. We come from large companies and from products built for clients abroad. We work in Spanish and English.",
-    "companiesTitle": "Our team worked at",
-    "ctaTitle": "No middlemen. Whoever answers is someone who builds.",
+    "title": "What's already running.",
+    "description": "We're a small team of engineers and designers from Argentina. Here's a product of ours that's live, and where the team worked before.",
+    "companiesTitle": "Before ShippersLab, the team worked at",
+    "eventops": {
+      "label": "Our own product, live",
+      "title": "EventOps",
+      "description": "Brings dates, staff and payments for event companies into one system. We designed and built it ourselves.",
+      "cta": "See EventOps"
+    },
+    "ctaTitle": "Dealing with something similar? Write to us and we'll look at it together.",
     "ctaButton": "Write to hola@shipperslab.tech"
   },
   "problems": {
     "title": "Does any of this sound familiar?",
-    "description": "Check the ones that sound like you. One is enough to get us started.",
+    "description": "Check the ones that apply. One is enough to know where to start.",
     "items": [
-      "You have an idea you want to build.",
-      "Processes that are still done by hand.",
-      "You need an internal tool.",
-      "Systems that don't talk to each other.",
-      "Repetitive tasks eating up your day.",
-      "You have a half-built product that won't ship."
+      "Stock, orders or cash are spread across several spreadsheets.",
+      "At the end of the month you can't tell if you made or lost money.",
+      "Scheduling dates, staff and payments takes hours of messages.",
+      "You retype the same data from one system into another.",
+      "You answer the same questions on WhatsApp all day.",
+      "Customers have nowhere to see your catalog or book a slot."
     ],
-    "ctaTitle": "Checked one? Tell us which and we'll start there.",
-    "ctaLink": "Tell us which"
+    "ctaTitle": "Checked one? Tell us which and we'll tell you where to start.",
+    "ctaLink": "Write to us"
   },
   "services": {
-    "title": "What we build.",
-    "description": "Four things, depending on the problem you have today. On their own or combined.",
+    "title": "What we do.",
+    "description": "Four services to get your business running smoothly. On their own or combined, depending on what you need today.",
     "items": [
       {
-        "id": "software",
-        "title": "Internal tools",
-        "lead": "Systems that adapt to you.",
-        "description": "Dashboards, portals and platforms built for how your team already works.",
+        "id": "systems",
+        "title": "Custom management systems",
+        "lead": "Your business in one place.",
+        "description": "Stock, orders, cash or bookings in a system built around how you work. EventOps, our system for event companies, is already live.",
+        "audience": "For shops with stock, orders or bookings",
         "highlights": [
-          "Dashboards and portals",
-          "Connects to your systems",
-          "Everyone sees only what they need"
+          "Stock, orders and cash",
+          "Bookings and staff",
+          "Monthly numbers at a glance"
         ]
       },
       {
-        "id": "automation",
-        "title": "Automation",
-        "lead": "Once, not every day.",
-        "description": "We connect the tools you already use and take the manual work off your plate.",
+        "id": "integrations",
+        "title": "Integrations",
+        "lead": "Get your tools talking.",
+        "description": "We connect WhatsApp, your spreadsheets, invoicing and the systems you already use. Enter something once and it shows up where it should.",
+        "audience": "For teams juggling several tools",
         "highlights": [
-          "Connects your tools",
-          "Data loading and cleanup",
-          "Repetitive tasks solved once"
+          "WhatsApp and spreadsheets",
+          "Invoicing and payments",
+          "Enter each record once"
         ]
       },
       {
-        "id": "ai",
-        "title": "Artificial intelligence",
-        "lead": "AI that does the work, not the demo.",
-        "description": "Agents and assistants with one concrete job: read documents, answer, load, sort.",
-        "highlights": [
-          "Agents for internal tasks",
-          "Document processing",
-          "Assistants for your team"
-        ]
+        "id": "bots",
+        "title": "WhatsApp bots and AI agents",
+        "lead": "Answers at any hour.",
+        "description": "A bot that answers questions, takes orders or books appointments on WhatsApp. When something needs a person, it hands it to you.",
+        "audience": "For businesses that sell on WhatsApp",
+        "highlights": ["Common questions", "Orders and bookings by chat", "Hands off to a person"]
       },
       {
-        "id": "products",
-        "title": "Products and websites",
-        "lead": "From idea to link.",
-        "description": "Websites, apps and MVPs that go live. Ideas are cheap. Finished things are not.",
-        "highlights": ["Websites and ecommerce", "Web and mobile apps", "MVPs, from idea to launch"]
+        "id": "presence",
+        "title": "Online presence",
+        "lead": "Get found, get orders.",
+        "description": "A website, a booking page or a catalog so customers can see what you offer, book a slot or message you.",
+        "audience": "For shops and small businesses",
+        "highlights": [
+          "A website for your business",
+          "Online booking",
+          "Catalog with WhatsApp orders"
+        ]
       }
     ]
   },
@@ -86,20 +96,20 @@
     "title": "What happens after you write.",
     "steps": [
       {
-        "title": "First call",
-        "description": "You tell us the problem or the idea. You talk to the people who will build it."
+        "title": "A talk about your business",
+        "description": "You tell us how things work today and where they get stuck. We figure out together what to fix first."
       },
       {
-        "title": "Written proposal",
-        "description": "What's in, what's out, what it costs and how long it takes. All clear before we start."
+        "title": "Scope in writing",
+        "description": "What's in, what's out, what it costs and when it's ready. All clear before we start."
       },
       {
         "title": "Progress every week",
-        "description": "You see something working every week, not a report at the end."
+        "description": "Every week you see something working and try it with your team."
       },
       {
-        "title": "We ship",
-        "description": "It goes live and you use it. Then we improve it with real usage."
+        "title": "Your team starts using it",
+        "description": "We roll it out with your team and adjust it based on real use."
       }
     ]
   },
@@ -108,42 +118,46 @@
     "imageAlt": "Illustration of construction cranes in orange tones on a pink background",
     "items": [
       {
-        "question": "I don't know what I need, can we still talk?",
-        "answer": "Yes. Most projects start exactly like this. Tell us the problem and we'll figure out together what's worth building."
+        "question": "How much does it cost?",
+        "answer": "It depends on what needs solving. After the first talk we send you a price in writing, before any work starts. If it makes sense, we start with a small piece and build from there."
       },
       {
-        "question": "How much does it cost and how long does it take?",
-        "answer": "It depends on the scope. On the first call we look at it together and send you a price and a timeline in writing before anything starts. After that, you see progress every week, not a report at the end."
+        "question": "How long does it take?",
+        "answer": "It depends on the scope. The delivery date goes in the written proposal, and in the meantime you see progress every week."
       },
       {
-        "question": "I already have a tech team, can you join it?",
-        "answer": "Yes. We can take on part of the product or add hands to your team for a defined period, with the scope in writing like any other project."
+        "question": "What happens to the tools we already use?",
+        "answer": "We start from them. If your spreadsheets, invoicing or WhatsApp work for you, we connect them instead of replacing them. If data has to move to a new system, that goes into the proposal."
       },
       {
-        "question": "Do you work with clients outside Argentina?",
-        "answer": "Yes. We work in Spanish and English, and everything happens over video calls, on your schedule."
+        "question": "Do we have to replace our whole system?",
+        "answer": "Not necessarily. Often it's enough to fix one part, like stock, bookings or a single integration. We look at it on the first talk."
+      },
+      {
+        "question": "I don't know what I need. Can we still talk?",
+        "answer": "Yes. Tell us what eats up your time or what keeps slipping, and we'll work out together where to start."
       }
     ]
   },
   "contact": {
-    "title": "Let's start with the problem.",
-    "description": "Tell us what you want to improve, automate or build. One of the engineers reads it and replies to set up a call. Scope and price in writing before we start.",
+    "title": "Let's start with your problem.",
+    "description": "Tell us what takes up your time or what you want to get in order. Someone on the team replies to set up a call. Scope and price in writing before we start.",
     "form": {
       "name": "Name",
       "namePlaceholder": "Your name",
-      "company": "Company (optional)",
-      "companyPlaceholder": "Your company's name",
+      "company": "Business or company (optional)",
+      "companyPlaceholder": "Your business name",
       "contactMethod": "Email or WhatsApp",
-      "contactMethodPlaceholder": "you@company.com or +1 ...",
-      "message": "What do you want to improve or build?",
-      "messagePlaceholder": "E.g. we copy orders by hand from WhatsApp into a spreadsheet and lose some.",
+      "contactMethodPlaceholder": "you@business.com or +1 ...",
+      "message": "What do you want to solve?",
+      "messagePlaceholder": "E.g. keep track of stock and cash, organize bookings, or set up a catalog to sell on WhatsApp.",
       "submit": "Send",
       "sending": "Sending...",
       "sent": "Sent!",
       "retry": "Try again",
       "success": "Done. Someone on the team will write back to set up a call.",
       "error": "Couldn't send. Write to us directly at hola@shipperslab.tech.",
-      "whatsappMessage": "Hi, I'd like to tell you about a problem or an idea.",
+      "whatsappMessage": "Hi, I'd like to tell you about a problem in my business.",
       "whatsappGreeting": "Hi, I'm {name}.",
       "whatsappGreetingWithCompany": "Hi, I'm {name}, from {company}.",
       "bookCall": "Book a call",
@@ -152,33 +166,33 @@
   },
   "onboarding": {
     "title": "Let's start.",
-    "description": "Three steps, under a minute. The team will get back to you to set up a call.",
+    "description": "Three steps, under a minute. We'll get back to you to set up a call.",
     "stepsLabel": "Form steps",
     "steps": ["You", "Contact", "Project"],
     "fields": {
       "name": "Name",
       "namePlaceholder": "Your name",
-      "company": "Company (optional)",
-      "companyPlaceholder": "Your company name",
+      "company": "Business or company (optional)",
+      "companyPlaceholder": "Your business name",
       "email": "Email",
-      "emailPlaceholder": "you@company.com",
+      "emailPlaceholder": "you@business.com",
       "whatsapp": "WhatsApp (optional)",
       "whatsappPlaceholder": "+1 555 ...",
       "needs": "What do you need?",
-      "stage": "Where are you at?",
-      "message": "Tell us what you're after",
-      "messagePlaceholder": "E.g. we copy orders from WhatsApp into a spreadsheet by hand and some get lost."
+      "stage": "How do you handle it today?",
+      "message": "Tell us what you want to solve",
+      "messagePlaceholder": "E.g. keep track of stock and cash, organize bookings, or set up a catalog to sell on WhatsApp."
     },
     "needs": {
-      "software": "Internal tool",
-      "automation": "Automation",
-      "ai": "Artificial intelligence",
-      "products": "Product or website",
+      "systems": "Management system",
+      "integrations": "Connect what I already use",
+      "bots": "WhatsApp bot or AI",
+      "presence": "Website, booking or catalog",
       "unsure": "Not sure yet"
     },
     "stages": {
-      "idea": "It's an idea",
-      "existing": "It exists and I want to improve it"
+      "idea": "We do it by hand today",
+      "existing": "We have a system and want to improve it"
     },
     "actions": {
       "back": "Back",
@@ -197,19 +211,19 @@
     "alternative": "Rather send an email? Write to",
     "success": {
       "title": "Done.",
-      "description": "Someone from the team who will build it will reach out to set up a call.",
+      "description": "Someone from the team will reach out to set up a call.",
       "cta": "Back to home"
     },
     "confirmation": {
       "subject": "We got your message | ShippersLab",
       "greeting": "Hi {name},",
-      "body": "Thanks for reaching out to ShippersLab. We got what you sent us and someone from the team will get back to you as soon as possible to set up a call.",
+      "body": "Thanks for reaching out to ShippersLab. We got what you told us about your business and someone from the team will get back to you to set up a call.",
       "followUp": "If you want to add anything, just reply to this email and it goes to the same team.",
       "signature": "The ShippersLab team"
     }
   },
   "footer": {
-    "tagline": "We design and build digital products, and offer the services to turn your idea into a real product.",
+    "tagline": "Management systems, integrations, WhatsApp bots and websites for small businesses and shops. A small team of engineers and designers from Argentina.",
     "legal": "Made in Argentina."
   },
   "events": {

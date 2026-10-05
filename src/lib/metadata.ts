@@ -5,7 +5,7 @@ import { site } from "@/lib/site";
 const TITLE = "ShippersLab";
 
 const DESCRIPTION =
-  "Diseñamos y construimos software a medida, automatizaciones y productos con IA para empresas de Argentina y del exterior.";
+  "Sistemas de gestión, integraciones, bots de WhatsApp y webs para pymes y comercios de Argentina. Alcance por escrito y avance cada semana.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),

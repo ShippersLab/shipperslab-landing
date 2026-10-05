@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Wordmark } from "@/components/layout/wordmark";
 import { Reveal } from "@/components/ui/animation/reveal";
 import { Container } from "@/components/ui/container";
-import { MailIcon, TwitterIcon } from "@/components/ui/icons";
+import { InstagramIcon, MailIcon, TwitterIcon } from "@/components/ui/icons";
 import { useI18n } from "@/i18n/provider";
 import { site } from "@/lib/site";
 
@@ -44,6 +44,15 @@ export function Footer() {
                 className="text-muted transition-colors duration-200 hover:text-ink"
               >
                 <MailIcon size={20} />
+              </a>
+              <a
+                href={site.social.instagram}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={site.social.instagramHandle}
+                className="text-muted transition-colors duration-200 hover:text-ink"
+              >
+                <InstagramIcon size={20} />
               </a>
               <a
                 href={site.social.x}

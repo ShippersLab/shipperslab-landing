@@ -173,6 +173,9 @@ export function Services() {
                       <span className="block text-sm text-muted">{item.title}</span>
                     </Reveal>
                     <Reveal delay={LEAD_DELAY * 1000}>
+                      <p className="mt-1 font-mono text-label tracking-label text-muted uppercase">
+                        {item.audience}
+                      </p>
                       <h3 className="mt-3 text-3xl">{item.lead}</h3>
                     </Reveal>
                     <WordReveal
