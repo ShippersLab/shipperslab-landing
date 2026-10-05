@@ -27,24 +27,30 @@ export function FormActions({ status }: FormActionsProps) {
         >
           <CalendarIcon size={16} />
           {copy.bookCall}
+          <span className="sr-only">({messages.common.opensNewTab})</span>
         </a>
       </div>
 
-      <p role="status" aria-live="polite" className="text-sm text-muted">
-        {status === "success" ? <span className="text-ink">{copy.success}</span> : null}
-        {status === "error" ? <span className="text-ink">{copy.error}</span> : null}
-        {status === "idle" || status === "sending" ? (
-          <>
-            {copy.alternative}{" "}
-            <a
-              href={`mailto:${site.emails.contact}`}
-              className="text-ink underline decoration-border underline-offset-4 transition-colors duration-200 hover:decoration-ink"
-            >
-              {site.emails.contact}
-            </a>
-          </>
-        ) : null}
-      </p>
+      <div>
+        <p role="alert" className="text-sm text-ink">
+          {status === "error" ? copy.error : null}
+        </p>
+
+        <p role="status" className="text-sm text-muted">
+          {status === "success" ? <span className="text-ink">{copy.success}</span> : null}
+          {status === "idle" || status === "sending" ? (
+            <>
+              {copy.alternative}{" "}
+              <a
+                href={`mailto:${site.emails.contact}`}
+                className="text-ink underline decoration-border underline-offset-4 transition-colors duration-200 hover:decoration-ink"
+              >
+                {site.emails.contact}
+              </a>
+            </>
+          ) : null}
+        </p>
+      </div>
     </div>
   );
 }

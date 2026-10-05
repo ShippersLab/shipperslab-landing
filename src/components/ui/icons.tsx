@@ -37,7 +37,7 @@ type IconProps = Omit<HugeiconsIconProps, "icon">;
 
 function createIcon(source: IconSvgElement) {
   return function Icon(props: IconProps) {
-    return <HugeiconsIcon icon={source} {...props} />;
+    return <HugeiconsIcon icon={source} aria-hidden="true" focusable="false" {...props} />;
   };
 }
 

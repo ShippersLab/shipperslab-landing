@@ -24,7 +24,7 @@ export function FormNavigation({ canGoBack, isLastStep, status, onBack }: FormNa
       : copy.actions.next;
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col">
       <div className="flex flex-col-reverse gap-3 sm:flex-row sm:items-center sm:justify-between">
         {canGoBack ? (
           <button
@@ -53,7 +53,7 @@ export function FormNavigation({ canGoBack, isLastStep, status, onBack }: FormNa
         </TextureButton>
       </div>
 
-      <p role="status" aria-live="polite" className="text-sm text-ink empty:hidden">
+      <p role="alert" className="mt-4 text-sm text-ink empty:mt-0">
         {status === "error" ? copy.error : null}
       </p>
     </div>

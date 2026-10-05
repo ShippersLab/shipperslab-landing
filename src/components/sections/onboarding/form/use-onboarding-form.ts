@@ -1,4 +1,4 @@
-import { useState, type SubmitEvent } from "react";
+import { useRef, useState, type FocusEvent, type SubmitEvent } from "react";
 
 import { useI18n } from "@/i18n/provider";
 
@@ -43,6 +43,7 @@ export function useOnboardingForm(stepCount: number) {
   const [step, setStep] = useState(1);
   const [direction, setDirection] = useState(0);
   const [status, setStatus] = useState<OnboardingStatus>("idle");
+  const pendingFocusField = useRef<string | null>(null);
 
   const isLastStep = step === stepCount;
 
@@ -71,11 +72,27 @@ export function useOnboardingForm(stepCount: number) {
 
   function showErrors(invalid: InvalidStep, form?: HTMLFormElement) {
     setErrors(invalid.errors);
+    const [firstInvalidField] = Object.keys(invalid.errors);
 
     if (invalid.step !== step) {
+      pendingFocusField.current = firstInvalidField;
       moveTo(invalid.step);
     } else if (form) {
-      focusField(form, Object.keys(invalid.errors)[0]);
+      focusField(form, firstInvalidField);
+    }
+  }
+
+  function redirectToInvalidField(event: FocusEvent<HTMLFormElement>) {
+    const field = pendingFocusField.current;
+
+    if (!field) {
+      return;
+    }
+
+    pendingFocusField.current = null;
+
+    if (event.target.getAttribute("name") !== field) {
+      focusField(event.currentTarget, field);
     }
   }
 
@@ -147,5 +164,6 @@ export function useOnboardingForm(stepCount: number) {
     toggleNeed,
     goTo,
     handleSubmit,
+    redirectToInvalidField,
   };
 }
