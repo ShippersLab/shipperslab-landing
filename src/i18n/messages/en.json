@@ -33,9 +33,8 @@
       {
         "id": "systems",
         "title": "Custom management systems",
-        "description": "Inventory, orders, sales or bookings in one system, built around how your business works.",
-        "audience": "For small businesses with inventory, orders or bookings",
-        "link": "See EventOps, the system we built for event companies"
+        "description": "Inventory, orders, sales or bookings in one system, built around how your business works. That is how we built {EventOps} for event companies.",
+        "audience": "For small businesses with inventory, orders or bookings"
       },
       {
         "id": "presence",

@@ -33,9 +33,8 @@
       {
         "id": "systems",
         "title": "Sistemas de gestión a medida",
-        "description": "Stock, pedidos, caja o turnos en un solo sistema, armado para cómo trabaja tu negocio.",
-        "audience": "Para pymes con stock, pedidos o turnos",
-        "link": "Ver EventOps, el sistema que armamos para empresas de eventos"
+        "description": "Stock, pedidos, caja o turnos en un solo sistema, armado para cómo trabaja tu negocio. Así hicimos {EventOps} para empresas de eventos.",
+        "audience": "Para pymes con stock, pedidos o turnos"
       },
       {
         "id": "presence",
