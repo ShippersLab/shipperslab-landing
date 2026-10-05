@@ -1,7 +1,7 @@
 import { gsap, SplitText } from "@/lib/gsap";
 
 export const TEXT_REVEAL_DURATION = 0.3;
-export const TEXT_REVEAL_STAGGER = 0.025;
+export const TEXT_REVEAL_STAGGER = 0.04;
 export const TEXT_REVEAL_Y = 14;
 
 type RevealWordsOptions = {

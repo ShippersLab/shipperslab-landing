@@ -9,6 +9,7 @@ import {
   useMotionValue,
   useReducedMotion,
   useTransform,
+  type UseInViewOptions,
 } from "motion/react";
 import {
   type ComponentType,
@@ -56,11 +57,7 @@ export interface DiaTextRevealProps {
   fadeEase?: EaseValue;
   fixedWidth?: boolean;
   holdDuration?: number;
-  inViewMargin?:
-    | `${number}px`
-    | `${number}px ${number}px`
-    | `${number}px ${number}px ${number}px`
-    | `${number}px ${number}px ${number}px ${number}px`;
+  inViewMargin?: UseInViewOptions["margin"];
   onComplete?: () => void;
   once?: boolean;
   ref?: Ref<DiaTextRevealHandle>;
@@ -114,7 +111,7 @@ export function DiaTextReveal({
   colors = ["#c679c4", "#fa3d1d", "#ffb005", "#e1e1fe", "#0358f7"],
   textColor = "currentColor",
   direction = "ltr",
-  duration = 1.2,
+  duration = 0.7,
   delay = 0,
   ease = DEFAULT_EASE,
   fadeEase = "easeInOut",
@@ -125,7 +122,7 @@ export function DiaTextReveal({
   fixedWidth = false,
   startOnView = true,
   once = true,
-  inViewMargin = "0px",
+  inViewMargin = "0px 0px -12% 0px",
   onComplete,
   as: Component = "span",
   className,
@@ -270,33 +267,18 @@ export function DiaTextReveal({
     <MotionComponent
       className={cn("inline-block bg-clip-text", className)}
       ref={elementRef}
-      style={
-        showReducedMotionStyle
-          ? {
-              color: resolvedColor,
-              WebkitTextFillColor: "transparent",
-              backgroundImage: buildGradient(colors, textColor, angle),
-              backgroundSize: "300% 100%",
-              backgroundPosition: "0% 50%",
-              opacity: 1,
-              ...(lockedWidth != null && {
-                width: lockedWidth,
-                whiteSpace: "nowrap",
-              }),
-            }
-          : {
-              color: resolvedColor,
-              WebkitTextFillColor: "transparent",
-              backgroundImage: buildGradient(colors, textColor, angle),
-              backgroundSize: "300% 100%",
-              backgroundPosition,
-              opacity: textOpacity,
-              ...(lockedWidth != null && {
-                width: lockedWidth,
-                whiteSpace: "nowrap",
-              }),
-            }
-      }
+      style={{
+        color: resolvedColor,
+        WebkitTextFillColor: "transparent",
+        backgroundImage: buildGradient(colors, textColor, angle),
+        backgroundSize: "300% 100%",
+        backgroundPosition: showReducedMotionStyle ? "0% 50%" : backgroundPosition,
+        opacity: showReducedMotionStyle ? 1 : textOpacity,
+        ...(lockedWidth != null && {
+          width: lockedWidth,
+          whiteSpace: "nowrap",
+        }),
+      }}
     >
       {prefersReducedMotion ? texts[0] : texts[activeIndex]}
     </MotionComponent>

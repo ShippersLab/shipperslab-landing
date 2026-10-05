@@ -11,11 +11,14 @@ type RevealProps = {
   as?: "div" | "li" | "p";
 };
 
+const HIDDEN = { opacity: 0, transform: "translateY(16px)" };
+const VISIBLE = { opacity: 1, transform: "translateY(0px)" };
+
 export function Reveal({
   children,
   className,
   delay = 0,
-  duration = 0.45,
+  duration = 0.4,
   as = "div",
 }: RevealProps) {
   const ref = useRef<HTMLElement>(null);
@@ -35,9 +38,9 @@ export function Reveal({
     <MotionTag
       ref={ref}
       className={className}
-      initial={{ opacity: 0, y: 16 }}
-      animate={reduced || isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
-      transition={{ duration, delay: delay / 1000, ease: [0.16, 1, 0.3, 1] }}
+      initial={HIDDEN}
+      animate={reduced || isInView ? VISIBLE : HIDDEN}
+      transition={{ duration, delay: delay / 1000, ease: [0.23, 1, 0.32, 1] }}
     >
       {children}
     </MotionTag>
