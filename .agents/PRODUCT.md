@@ -9,18 +9,20 @@ web
 ## Users
 
 - **Clients**: owners and operations managers of (a) traditional pymes of 5 to 50 employees running on Excel, WhatsApp, paper or old systems, (b) service companies that coordinate operations (events companies enter through EventOps), (c) shops and emprendedores without a good digital presence. The decision maker is the owner or operations lead, not an IT department.
-- **Community**: developers, designers, students and people starting something of their own, mainly in Santa Fe and growing across Argentina.
-- **Sponsors**: any company that wants to reach people who build, whether they make tools for them, are hiring, or want to be close to what is being made. Not limited to dev tool companies.
+- **Community** (secondary, planned): developers, designers, students and people starting something of their own, mainly in Santa Fe and growing across Argentina.
+- **Sponsors** (secondary, planned): any company that wants to reach people who build, whether they make tools for them, are hiring, or want to be close to what is being made. Not limited to dev tool companies.
 
 ## Product Purpose
 
-ShippersLab is a digital studio, lab and community: a small team of engineers and designers from Argentina. The name comes from "shippear" (dev slang for launching something) plus "Lab" (where you experiment). The core idea: ideas are cheap, finished things are not. This landing page exists to turn pyme inquiries into conversations (first by WhatsApp or the form), and to bring people into the community and its events.
+ShippersLab is a small team of engineers and designers from Argentina that today operates as a studio for pymes and shops. The name comes from "shippear" (dev slang for launching something) plus "Lab" (where you experiment). The core idea: ideas are cheap, finished things are not. This landing page exists to turn pyme and shop inquiries into conversations (first by WhatsApp or the form). The main CTA is about the client's business, never about ideas, products or founders.
 
-It works on three pillars that feed each other:
+It is built around three pillars that feed each other, but only one is active:
 
-1. **Studio**: client work, building management systems, integrations, bots and digital presence for small and mid-size businesses.
-2. **Lab**: own products and experiments, used to test ideas, learn and stay sharp.
-3. **Community**: build nights, meetups and hackathons for builders, starting in Santa Fe.
+1. **Studio** (active): client work, building management systems, integrations, bots and digital presence for small and mid-size businesses. It is the only thing the landing sells.
+2. **Lab** (early): own products and experiments. Today it exists only as EventOps, the one own product, in production.
+3. **Community** (planned): build nights, meetups and hackathons for builders, starting in Santa Fe. The events page exists, there are no dates yet.
+
+Public copy and the landing talk about the studio. Do not write copy that presents Lab or Community as active lines of work; mention them only as what we are building toward.
 
 ## Positioning
 
@@ -56,7 +58,7 @@ What a neighboring agency can't truthfully copy: few projects running at a time 
 - **Team**: a small team of engineers and designers from Argentina. Franco (engineering) and Juani (commercial and marketing) can be named and shown. The other members are never named or shown; in copy they are "ingenieros" inside "un equipo chico". No individual bios. The approved employer names for the experience strip are Mercado Libre, Coderhouse, PUMA and NFTYDoor, always former employers, never clients. Do not add any other employer without explicit approval. Combined experience covers infrastructure, AWS, backend, frontend and AI, earned at large companies and on products built for clients abroad.
 - **Voice**: confident, plain, direct. An established studio operating in the present tense, not a manifesto. Short sentences, active voice, plain concrete words. Say what the reader gets before saying who we are. No corporate filler ("empowering", "cutting-edge", "innovative solutions", "leverage", "synergy"), no manifestos, no superlatives that can't be backed up, no em dash, no AI-tell patterns ("no es X, es Y" reveals, "no X, no Y, no Z" lists, maxim-style closing lines).
 - **Language**: Spanish first (rioplatense, "vos"), English second and written as native English, not a literal translation. Code and technical docs stay in English.
-- **Phrase bank** (reusable lines): "Un lab que lanza." / "A lab that ships." · "Diseñamos y construimos productos digitales." / "We design and build digital products." · "Traé eso que tenés a medias." / "Bring the unfinished thing." · "Se hace acá." / "Built here." · "Todavía construyendo." / "Still building." · "Las ideas son baratas. Las cosas terminadas, no." / "Ideas are cheap. Finished things are not." · "Nadie se acuerda de la app que nunca se lanzó." / "Nobody remembers the app that never launched." · "Todo lo grande fue el proyecto de fin de semana de alguien." / "Every big thing was somebody's weekend project." · "Hecho en Argentina." / "Made in Argentina."
+- **Phrase bank** (reusable brand lines, not the framing of the main CTA, which talks about the client's business): "Un lab que lanza." / "A lab that ships." · "Diseñamos y construimos productos digitales." / "We design and build digital products." · "Traé eso que tenés a medias." / "Bring the unfinished thing." · "Se hace acá." / "Built here." · "Todavía construyendo." / "Still building." · "Las ideas son baratas. Las cosas terminadas, no." / "Ideas are cheap. Finished things are not." · "Nadie se acuerda de la app que nunca se lanzó." / "Nobody remembers the app that never launched." · "Todo lo grande fue el proyecto de fin de semana de alguien." / "Every big thing was somebody's weekend project." · "Hecho en Argentina." / "Made in Argentina."
 - **Presence**: domain shipperslab.tech · main contact hola@shipperslab.tech · events/sponsors eventos@shipperslab.tech · Instagram @shipperslab (https://www.instagram.com/shipperslab/, main channel for clients) · WhatsApp Business (where client messages land) · X @theshipperslab (paused for community until there is an event) · GitHub github.com/ShippersLab · event registrations via Luma.
 - **Repo conventions**: `shipperslab-` prefix for internal repos; lab products carry no prefix; topics tag `internal`/`lab`/`client`; no source file over ~300 lines; agent config lives under `.claude/`/`.agents/`, never the project root (except the Next.js-owned root `AGENTS.md`).
 
@@ -72,5 +74,5 @@ What a neighboring agency can't truthfully copy: few projects running at a time 
 1. Lead with the client's problem and moment, not with technology or hype, especially for AI.
 2. Never fabricate proof (clients, metrics, testimonials, event history); let the studio's real, current-stage story carry the page instead.
 3. Keep direct access to the people building it visible in how the page works (direct contact paths, no gatekeeping copy). It is no longer a headline, because it is obvious to a pyme owner.
-4. Community and events are a real pillar, not a footnote, and get their own space to invite sponsors and attendees honestly ("planned", not "past").
+4. The events page stays reachable and honest ("planned, not held"), but it is secondary to the studio and must not compete with the client path. Lab and Community are mentioned only as what we are building toward.
 5. Spanish (vos) is the primary voice; English is a first-class translation, not an afterthought.

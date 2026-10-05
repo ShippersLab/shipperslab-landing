@@ -10,11 +10,14 @@ ShippersLab is a digital studio, lab and community. It is a small team of engine
 
 The name comes from "shippear", dev slang for launching something, plus "Lab", the place where you experiment. The core idea: ideas are cheap, finished things are not. ShippersLab exists to take things from idea to launched.
 
-It works on three pillars that feed each other:
+Today ShippersLab operates as a studio for pymes and shops. It is built around three pillars that feed each other, but only one is active:
 
-1. **Studio**: client work. We build management systems, integrations, bots and digital presence for small and mid-size businesses.
-2. **Lab**: our own products and experiments. This is where we test ideas, learn and stay sharp.
-3. **Community**: build nights, meetups and hackathons for people who build, starting in Santa Fe and growing across Argentina.
+1. **Studio** (active): client work. We build management systems, integrations, bots and digital presence for small and mid-size businesses. It is the only thing the landing sells, and the main CTA is about starting a conversation about the client's business, never about ideas, products or founders.
+2. **Lab** (early): our own products and experiments. Today it exists only as EventOps, the one own product, in production. Where we want to go: test more ideas, learn and stay sharp.
+3. **Community** (planned): build nights, meetups and hackathons for people who build, starting in Santa Fe and growing across Argentina. The events page exists, there are no dates yet.
+
+Public copy and the landing talk about the studio. Do not write copy that presents Lab or Community as active lines of work; mention them only as what we are building toward. The events page and the "Eventos" nav link stay reachable as they are.
+
 ## Services
 
 Services are framed by the client's moment, not by technology. Each one answers "what does this solve for you".
@@ -66,6 +69,8 @@ ShippersLab is new. Keep this in mind in every piece of copy and UI:
 
 The pyme positioning is being validated in discovery talks during October to December 2026. The owner quotes and problem table in the internal positioning doc are hypotheses and must not be used as landing copy until they come up in real talks. The entry offer (free 30-minute call) is not confirmed. Do not promise it in public copy.
 
+Studio is the only active pillar. Public copy and the landing talk about the studio; Lab and Community appear only as what we are building toward, never as active lines of work. The main CTA is about the client's business, not about ideas, products or founders.
+
 ## Voice and tone
 
 Confident, plain and direct. An established studio operating in the present tense, not a manifesto.
@@ -88,7 +93,7 @@ Do not:
 - Code, commit messages, file names and technical docs are in English.
 ## Phrase bank
 
-Approved lines that can be reused in copy:
+Approved lines that can be reused in copy. They are brand lines, not the framing of the main CTA: the CTA talks about the client's business, not about ideas, products or founders.
 
 | Spanish | English |
 |---|---|
