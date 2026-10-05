@@ -14,22 +14,16 @@
   },
   "hero": {
     "title": "Software a medida para tu negocio.",
-    "description": "Sistemas de gestión, bots de WhatsApp, integraciones y webs para pymes y comercios. Lo armamos para cómo trabajás y lo conectamos con lo que ya usás.",
+    "description": "Sistemas de gestión, webs, bots de WhatsApp e integraciones para pymes y comercios. Lo armamos para cómo trabajás y lo conectamos con lo que ya usás.",
     "primaryCta": "Contanos tu problema",
     "secondaryCta": "Ver servicios",
     "imageAlt": "Ilustración del Obelisco de Buenos Aires sobre una avenida amplia, en tonos naranja"
   },
   "trust": {
-    "title": "Lo que ya está funcionando.",
-    "description": "Somos un equipo chico de ingenieros y diseñadores de Argentina. Acá podés ver un producto nuestro en producción y dónde trabajó el equipo antes.",
-    "companiesTitle": "Antes de ShippersLab, el equipo trabajó en",
-    "eventops": {
-      "label": "Producto propio, en producción",
-      "title": "EventOps",
-      "description": "Junta fechas, personal y cobros de empresas de eventos en un solo sistema. Lo diseñamos y lo construimos nosotros.",
-      "cta": "Conocé EventOps"
-    },
-    "ctaTitle": "¿Necesitás algo así para tu negocio? Escribinos y lo vemos.",
+    "title": "Ingenieros y diseñadores de Argentina.",
+    "description": "Somos un equipo chico. Venimos de empresas grandes y de productos para clientes del exterior, y trabajamos en español y en inglés.",
+    "companiesTitle": "Nuestro equipo trabajó en",
+    "ctaTitle": "¿Querés saber si esto tiene sentido para tu negocio? Escribinos y lo vemos.",
     "ctaButton": "Escribinos a hola@shipperslab.tech"
   },
   "services": {
@@ -40,41 +34,25 @@
         "id": "systems",
         "title": "Sistemas de gestión a medida",
         "description": "Stock, pedidos, caja o turnos en un solo sistema. EventOps, nuestro sistema para empresas de eventos, ya está en producción.",
-        "audience": "Para pymes con stock, pedidos o turnos",
-        "highlights": [
-          "Stock, pedidos y caja",
-          "Turnos y personal",
-          "Los números del mes a la vista"
-        ]
+        "audience": "Para pymes con stock, pedidos o turnos"
       },
       {
-        "id": "integrations",
-        "title": "Integraciones con lo que ya usás",
-        "description": "Conectamos WhatsApp, tus planillas y la facturación entre sí. Cargás algo una vez y aparece donde tiene que estar.",
-        "audience": "Para quien ya usa varias herramientas",
-        "highlights": ["WhatsApp y planillas", "Facturación y cobros", "Los sistemas que ya usás"]
+        "id": "presence",
+        "title": "Webs, turneros y catálogos",
+        "description": "Una web para tu negocio, un turnero online o un catálogo con pedido por WhatsApp. Tus clientes te encuentran, ven lo que ofrecés y te escriben.",
+        "audience": "Para comercios y emprendedores"
       },
       {
         "id": "bots",
         "title": "Bots de WhatsApp y agentes de IA",
         "description": "Un bot que trabaja en tu WhatsApp a toda hora: toma pedidos o agenda turnos. Cuando algo necesita a una persona, te lo pasa.",
-        "audience": "Para negocios que atienden por WhatsApp",
-        "highlights": [
-          "Responde consultas frecuentes",
-          "Pedidos y turnos por chat",
-          "Deriva a una persona"
-        ]
+        "audience": "Para negocios que atienden por WhatsApp"
       },
       {
-        "id": "presence",
-        "title": "Webs, turneros y catálogos",
-        "description": "Tus clientes te encuentran, ven lo que ofrecés, sacan turno o te escriben.",
-        "audience": "Para comercios y emprendedores",
-        "highlights": [
-          "Una web para tu negocio",
-          "Turnero online",
-          "Catálogo con pedido a WhatsApp"
-        ]
+        "id": "integrations",
+        "title": "Integraciones con lo que ya usás",
+        "description": "Conectamos WhatsApp, tus planillas y la facturación entre sí. Cargás algo una vez y aparece donde tiene que estar.",
+        "audience": "Para quien ya usa varias herramientas"
       }
     ]
   },
@@ -212,7 +190,7 @@
     "stepAnnouncement": "Paso {step} de {total}: {title}"
   },
   "footer": {
-    "tagline": "Sistemas de gestión, integraciones, bots de WhatsApp y webs para pymes y comercios. Un equipo chico de ingenieros y diseñadores de Argentina.",
+    "tagline": "Sistemas de gestión, webs, bots de WhatsApp e integraciones para pymes y comercios. Un equipo chico de ingenieros y diseñadores de Argentina.",
     "legal": "Hecho en Argentina.",
     "social": {
       "instagram": "Instagram de ShippersLab (abre en una pestaña nueva)",

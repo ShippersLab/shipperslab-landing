@@ -14,22 +14,16 @@
   },
   "hero": {
     "title": "Custom software for your business.",
-    "description": "Management systems, WhatsApp bots, integrations and websites for small businesses and shops. Built around how you work and connected to the tools you already use.",
+    "description": "Management systems, websites, WhatsApp bots and integrations for small businesses and shops. Built around how you work and connected to the tools you already use.",
     "primaryCta": "Tell us your problem",
     "secondaryCta": "See services",
     "imageAlt": "Illustration of the Buenos Aires Obelisk on a wide avenue, in orange tones"
   },
   "trust": {
-    "title": "What's already running.",
-    "description": "We're a small team of engineers and designers from Argentina. Here's a product of ours that's live, and where the team worked before.",
-    "companiesTitle": "Before ShippersLab, the team worked at",
-    "eventops": {
-      "label": "Our own product, live",
-      "title": "EventOps",
-      "description": "Brings dates, staff and payments for event companies into one system. We designed and built it ourselves.",
-      "cta": "See EventOps"
-    },
-    "ctaTitle": "Need something like this for your business? Write to us and we'll take a look.",
+    "title": "Engineers and designers from Argentina.",
+    "description": "We are a small team. We come from large companies and from products built for clients abroad, and we work in Spanish and English.",
+    "companiesTitle": "Our team has worked at",
+    "ctaTitle": "Want to know if this makes sense for your business? Write to us and we will take a look.",
     "ctaButton": "Write to hola@shipperslab.tech"
   },
   "services": {
@@ -40,45 +34,25 @@
         "id": "systems",
         "title": "Custom management systems",
         "description": "Inventory, orders, sales or bookings in one system. EventOps, our system for event companies, is already live.",
-        "audience": "For small businesses with inventory, orders or bookings",
-        "highlights": [
-          "Inventory, orders and sales",
-          "Bookings and staff",
-          "Monthly numbers at a glance"
-        ]
+        "audience": "For small businesses with inventory, orders or bookings"
       },
       {
-        "id": "integrations",
-        "title": "Integrations with your current tools",
-        "description": "We connect WhatsApp, your spreadsheets and invoicing to each other. Enter something once and it shows up where it should.",
-        "audience": "For teams juggling several tools",
-        "highlights": [
-          "WhatsApp and spreadsheets",
-          "Invoicing and payments",
-          "The systems you already use"
-        ]
+        "id": "presence",
+        "title": "Websites, booking and catalogs",
+        "description": "A website for your business, online booking or a catalog with WhatsApp ordering. Customers find you, see what you offer and get in touch.",
+        "audience": "For shops and small businesses"
       },
       {
         "id": "bots",
         "title": "WhatsApp bots and AI agents",
         "description": "A bot that works your WhatsApp around the clock: it takes orders or books appointments. When something needs a person, it hands it to you.",
-        "audience": "For businesses that handle customers on WhatsApp",
-        "highlights": [
-          "Answers common questions",
-          "Orders and bookings by chat",
-          "Hands off to a person"
-        ]
+        "audience": "For businesses that handle customers on WhatsApp"
       },
       {
-        "id": "presence",
-        "title": "Websites, booking and catalogs",
-        "description": "Customers find you, see what you offer, book an appointment or message you.",
-        "audience": "For shops and small businesses",
-        "highlights": [
-          "A website for your business",
-          "Online booking",
-          "Catalog with WhatsApp orders"
-        ]
+        "id": "integrations",
+        "title": "Integrations with your current tools",
+        "description": "We connect WhatsApp, your spreadsheets and invoicing to each other. Enter something once and it shows up where it should.",
+        "audience": "For teams juggling several tools"
       }
     ]
   },
@@ -216,7 +190,7 @@
     "stepAnnouncement": "Step {step} of {total}: {title}"
   },
   "footer": {
-    "tagline": "Management systems, integrations, WhatsApp bots and websites for small businesses and shops. A small team of engineers and designers from Argentina.",
+    "tagline": "Management systems, websites, WhatsApp bots and integrations for small businesses and shops. A small team of engineers and designers from Argentina.",
     "legal": "Made in Argentina.",
     "social": {
       "instagram": "ShippersLab on Instagram (opens in a new tab)",
