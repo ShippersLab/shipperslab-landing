@@ -23,7 +23,7 @@ export function Hero() {
     <section
       id="top"
       ref={sectionRef}
-      className="flex min-h-[calc(100svh-68px)] w-full flex-1 flex-col bg-[#EDEFF3] lg:min-h-svh lg:bg-transparent"
+      className="flex min-h-[calc(100svh-68px)] w-full flex-1 flex-col bg-paper lg:min-h-svh lg:bg-transparent"
     >
       <Image
         src="/images/hero-illustration.webp"
@@ -39,13 +39,13 @@ export function Hero() {
       />
 
       <div className="mx-auto flex w-full max-w-content flex-1 flex-col justify-center border-x border-border lg:justify-start">
-        <Container className="grid gap-8 py-10 lg:grid-cols-[1.8fr_1.2fr] lg:items-start lg:gap-0 lg:pt-10   lg:pb-16">
-          <h1 className="hero-title invisible max-w-full font-pixel text-4xl leading-[0.95] tracking-tighter text-ink sm:text-5xl lg:text-6xl lg:leading-none">
+        <Container className="grid gap-8 py-10 lg:grid-cols-[1.8fr_1.2fr] lg:items-start lg:gap-0 lg:pt-10 lg:pb-16">
+          <h1 className="hero-title invisible max-w-full font-pixel text-hero tracking-hero text-ink">
             {messages.hero.title}
           </h1>
 
           <div className="flex w-full max-w-fit flex-col gap-6 pt-1">
-            <p className="hero-description invisible w-full font-sans text-sm leading-relaxed tracking-tight text-muted sm:text-base">
+            <p className="hero-description invisible w-full font-sans text-base leading-relaxed text-muted sm:text-lg">
               {messages.hero.description}
             </p>
 

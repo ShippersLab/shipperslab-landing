@@ -23,7 +23,7 @@ export function Navbar() {
   return (
     <header
       ref={ref}
-      className="invisible relative z-20 mx-auto flex w-full max-w-content items-center justify-between gap-6 bg-[#EDEFF3] px-4 py-4 md:px-8 lg:absolute lg:inset-x-0 lg:top-0 lg:bg-transparent"
+      className="invisible relative z-20 mx-auto flex w-full max-w-content items-center justify-between gap-6 bg-paper px-4 py-4 md:px-8 lg:absolute lg:inset-x-0 lg:top-0 lg:bg-transparent"
     >
       <Link href="/" aria-label={site.name}>
         <Image

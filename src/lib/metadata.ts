@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 
 import { site } from "@/lib/site";
 
-const TITLE = "ShippersLab";
+const TITLE = "ShippersLab | Software a medida para pymes y comercios";
 
 const DESCRIPTION =
-  "Sistemas de gestión, integraciones, bots de WhatsApp y webs para pymes y comercios de Argentina. Alcance por escrito y avance cada semana.";
+  "Software a medida para pymes y comercios de Argentina: sistemas de gestión, integraciones, bots de WhatsApp y webs. Alcance y precio por escrito antes de arrancar.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),

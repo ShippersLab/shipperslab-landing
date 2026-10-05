@@ -1,16 +1,20 @@
 {
+  "common": {
+    "opensNewTab": "abre en una pestaña nueva"
+  },
   "site": {
     "name": "ShippersLab"
   },
   "nav": {
     "services": "Servicios",
-    "about": "Casos",
+    "about": "Nosotros",
     "events": "Eventos",
-    "contact": "Escribinos"
+    "contact": "Escribinos",
+    "skip": "Saltar al contenido"
   },
   "hero": {
-    "title": "Tu negocio, ordenado en un solo sistema.",
-    "description": "Armamos el sistema para tu stock, pedidos, caja o turnos, y lo conectamos con WhatsApp y con lo que ya usás. Alcance por escrito y avance cada semana.",
+    "title": "Software a medida para tu negocio.",
+    "description": "Sistemas de gestión, bots de WhatsApp, integraciones y webs para pymes y comercios. Lo armamos para cómo trabajás y lo conectamos con lo que ya usás.",
     "primaryCta": "Contanos tu problema",
     "secondaryCta": "Ver servicios",
     "imageAlt": "Ilustración del Obelisco de Buenos Aires sobre una avenida amplia, en tonos naranja"
@@ -25,32 +29,17 @@
       "description": "Junta fechas, personal y cobros de empresas de eventos en un solo sistema. Lo diseñamos y lo construimos nosotros.",
       "cta": "Conocé EventOps"
     },
-    "ctaTitle": "¿Tenés un problema parecido? Escribinos y lo vemos juntos.",
+    "ctaTitle": "¿Necesitás algo así para tu negocio? Escribinos y lo vemos.",
     "ctaButton": "Escribinos a hola@shipperslab.tech"
-  },
-  "problems": {
-    "title": "¿Te suena alguno de estos?",
-    "description": "Marcá los que te pasan. Con uno alcanza para saber por dónde empezar.",
-    "items": [
-      "El stock, los pedidos o la caja viven en varias planillas.",
-      "A fin de mes no sabés si ganaste o perdiste plata.",
-      "Coordinar fechas, personal y cobros te lleva horas de mensajes.",
-      "Pasás los mismos datos a mano de un sistema a otro.",
-      "Respondés las mismas consultas por WhatsApp todo el día.",
-      "Tus clientes no tienen dónde ver tu catálogo o sacar un turno."
-    ],
-    "ctaTitle": "¿Marcaste alguno? Escribinos cuál y te decimos por dónde empezar.",
-    "ctaLink": "Escribinos"
   },
   "services": {
     "title": "Qué hacemos.",
-    "description": "Cuatro servicios para ordenar cómo trabaja tu negocio. Solos o combinados, según lo que te haga falta hoy.",
+    "description": "Podés empezar por uno solo. Arrancamos por lo que más te urge.",
     "items": [
       {
         "id": "systems",
         "title": "Sistemas de gestión a medida",
-        "lead": "Tu negocio en un solo lugar.",
-        "description": "Stock, pedidos, caja o turnos en un sistema hecho para cómo trabajás. EventOps, nuestro sistema para empresas de eventos, ya está en producción.",
+        "description": "Stock, pedidos, caja o turnos en un solo sistema. EventOps, nuestro sistema para empresas de eventos, ya está en producción.",
         "audience": "Para pymes con stock, pedidos o turnos",
         "highlights": [
           "Stock, pedidos y caja",
@@ -60,25 +49,26 @@
       },
       {
         "id": "integrations",
-        "title": "Integraciones",
-        "lead": "Que tus sistemas se hablen.",
-        "description": "Conectamos WhatsApp, tus planillas, la facturación y los sistemas que ya usás. Cargás un dato una vez y aparece donde tiene que estar.",
+        "title": "Integraciones con lo que ya usás",
+        "description": "Conectamos WhatsApp, tus planillas y la facturación entre sí. Cargás algo una vez y aparece donde tiene que estar.",
         "audience": "Para quien ya usa varias herramientas",
-        "highlights": ["WhatsApp y planillas", "Facturación y cobros", "Cada dato se carga una vez"]
+        "highlights": ["WhatsApp y planillas", "Facturación y cobros", "Los sistemas que ya usás"]
       },
       {
         "id": "bots",
         "title": "Bots de WhatsApp y agentes de IA",
-        "lead": "Respuestas a cualquier hora.",
-        "description": "Un bot que responde consultas, toma pedidos o agenda turnos por WhatsApp. Cuando algo necesita a una persona, te lo pasa.",
+        "description": "Un bot que trabaja en tu WhatsApp a toda hora: toma pedidos o agenda turnos. Cuando algo necesita a una persona, te lo pasa.",
         "audience": "Para negocios que atienden por WhatsApp",
-        "highlights": ["Consultas frecuentes", "Pedidos y turnos por chat", "Deriva a una persona"]
+        "highlights": [
+          "Responde consultas frecuentes",
+          "Pedidos y turnos por chat",
+          "Deriva a una persona"
+        ]
       },
       {
         "id": "presence",
-        "title": "Presencia digital",
-        "lead": "Que te encuentren y te compren.",
-        "description": "Una web, un turnero o un catálogo para que tus clientes vean lo que ofrecés, saquen turno o te escriban.",
+        "title": "Webs, turneros y catálogos",
+        "description": "Tus clientes te encuentran, ven lo que ofrecés, sacan turno o te escriben.",
         "audience": "Para comercios y emprendedores",
         "highlights": [
           "Una web para tu negocio",
@@ -164,7 +154,7 @@
     "title": "Empecemos.",
     "description": "Tres pasos, menos de un minuto. Te respondemos para coordinar una charla.",
     "stepsLabel": "Pasos del formulario",
-    "steps": ["Vos", "Contacto", "Proyecto"],
+    "steps": ["Vos", "Contacto", "Tu problema"],
     "fields": {
       "name": "Nombre",
       "namePlaceholder": "Tu nombre",
@@ -216,18 +206,26 @@
       "body": "Gracias por escribirle a ShippersLab. Ya nos llegó lo que nos contaste sobre tu negocio y alguien del equipo te va a responder para coordinar una charla.",
       "followUp": "Si querés sumar algo más, respondé este mail y le llega al mismo equipo.",
       "signature": "El equipo de ShippersLab"
-    }
+    },
+    "stepCompleted": "Completado",
+    "stepLabel": "{title}, paso {step} de {total}",
+    "stepAnnouncement": "Paso {step} de {total}: {title}"
   },
   "footer": {
     "tagline": "Sistemas de gestión, integraciones, bots de WhatsApp y webs para pymes y comercios. Un equipo chico de ingenieros y diseñadores de Argentina.",
-    "legal": "Hecho en Argentina."
+    "legal": "Hecho en Argentina.",
+    "social": {
+      "instagram": "Instagram de ShippersLab (abre en una pestaña nueva)",
+      "x": "X de ShippersLab (abre en una pestaña nueva)",
+      "mail": "Escribinos a {email}"
+    }
   },
   "events": {
     "title": "Todavía construyendo.",
-    "description": "Estamos construyendo nuestros primeros eventos: build nights, meetups, hackathons, charlas y lo que se nos ocurra armar. Arrancamos en Santa Fe y después vamos por el resto del país.",
+    "description": "Estamos armando nuestros primeros eventos: build nights, meetups, hackathons y charlas. Arrancamos en Santa Fe y después vamos por el resto del país.",
     "formats": ["Build nights", "Meetups", "Hackathons", "Charlas", "Café"],
     "sponsorTitle": "¿Querés ser sponsor o ayudarnos a organizar?",
-    "sponsorDescription": "Nos sirve una mano de cualquier lado: empresas, herramientas para developers, tokens, o ayuda armando el evento. No hace falta ser una marca grande, cualquier aporte nos acerca un poco más a hacerlo realidad. Si te copa sumarte, escribinos.",
+    "sponsorDescription": "Nos sirve cualquier ayuda: empresas, herramientas para developers, créditos de API o una mano con la organización. No hace falta ser una marca grande. Si te interesa, escribinos.",
     "cta": "Enviar un mensaje",
     "gallery": {
       "title": "Así se va a ver.",

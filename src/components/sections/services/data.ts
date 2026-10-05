@@ -2,12 +2,6 @@ import type { HugeiconsIconProps } from "@hugeicons/react";
 import type { ReactNode } from "react";
 
 import {
-  BotsIllustration,
-  IntegrationsIllustration,
-  PresenceIllustration,
-  SystemsIllustration,
-} from "@/components/sections/services/illustrations";
-import {
   CalendarIcon,
   ChatIcon,
   DashboardIcon,
@@ -31,11 +25,4 @@ export const SERVICE_ICONS: Record<ServiceId, ServiceIcon[]> = {
   integrations: [WhatsAppIcon, InvoiceIcon, LinkIcon],
   bots: [ChatIcon, OrdersIcon, TeamIcon],
   presence: [GlobeIcon, CalendarIcon, StoreIcon],
-};
-
-export const SERVICE_ILLUSTRATIONS: Record<ServiceId, () => ReactNode> = {
-  systems: SystemsIllustration,
-  integrations: IntegrationsIllustration,
-  bots: BotsIllustration,
-  presence: PresenceIllustration,
 };
