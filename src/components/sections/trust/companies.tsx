@@ -36,10 +36,10 @@ export function Companies({ delay = 0 }: { delay?: number }) {
                 role="img"
                 aria-label={company.name}
                 style={logoMask(company.logo)}
-                className="block h-8 w-32 bg-ink/40 transition-colors duration-200 hover:bg-ink"
+                className="block h-8 w-32 bg-ink/40 transition-colors duration-200 hover:bg-accent"
               />
             ) : (
-              <span className="font-heading text-base text-ink/40 transition-colors duration-200 hover:text-ink sm:text-lg">
+              <span className="font-heading text-base text-ink/40 transition-colors duration-200 hover:text-accent sm:text-lg">
                 {company.name}
               </span>
             )}
