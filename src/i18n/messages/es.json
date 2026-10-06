@@ -13,7 +13,7 @@
     "skip": "Saltar al contenido"
   },
   "hero": {
-    "title": "Software a medida para tu negocio.",
+    "title": "Software a medida para pymes y comercios.",
     "description": "Sistemas de gestión, webs, bots con IA e integraciones para pymes y comercios. Armado para cómo trabajás y conectado con lo que ya usás.",
     "primaryCta": "Contanos tu problema",
     "secondaryCta": "Ver servicios",
@@ -133,7 +133,11 @@
     "title": "Empecemos.",
     "description": "Tres pasos, menos de un minuto. Te respondemos para coordinar una charla.",
     "stepsLabel": "Pasos del formulario",
-    "steps": ["Vos", "Contacto", "Tu problema"],
+    "steps": [
+      "Vos",
+      "Contacto",
+      "Tu problema"
+    ],
     "fields": {
       "name": "Nombre",
       "namePlaceholder": "Tu nombre",
@@ -202,7 +206,13 @@
   "events": {
     "title": "Todavía construyendo.",
     "description": "Estamos armando nuestros primeros eventos: build nights, meetups, hackathons y charlas. Arrancamos en Santa Fe y después vamos por el resto del país.",
-    "formats": ["Build nights", "Meetups", "Hackathons", "Charlas", "Café"],
+    "formats": [
+      "Build nights",
+      "Meetups",
+      "Hackathons",
+      "Charlas",
+      "Café"
+    ],
     "sponsorTitle": "¿Querés ser sponsor o ayudarnos a organizar?",
     "sponsorDescription": "Nos sirve cualquier ayuda: empresas, herramientas para developers, créditos de API o una mano con la organización. No hace falta ser una marca grande. Si te interesa, escribinos.",
     "cta": "Enviar un mensaje",

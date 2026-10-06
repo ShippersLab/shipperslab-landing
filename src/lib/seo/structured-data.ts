@@ -16,7 +16,7 @@ const organization: Organization = {
   logo: `${site.url}/logo/accent.svg`,
   image: `${site.url}/opengraph-image.jpg`,
   description: DESCRIPTION,
-  slogan: "Software a medida para tu negocio.",
+  slogan: "Software a medida para pymes y comercios.",
   email: site.emails.contact,
   areaServed: { "@type": "Country", name: "Argentina" },
   address: { "@type": "PostalAddress", addressCountry: "AR" },
