@@ -9,8 +9,9 @@ import { SectionHeading } from "@/components/ui/section/section-heading";
 import { useI18n } from "@/i18n/provider";
 
 const EASE = [0.23, 1, 0.32, 1] as const;
-const ROW_STAGGER = 0.18;
-const ROWS_DELAY = 0.1;
+const ROW_STAGGER = 0.08;
+const ROWS_DELAY = 0;
+const TITLE_DURATION = 0.6;
 
 const list: Variants = {
   hidden: {},
@@ -19,12 +20,12 @@ const list: Variants = {
 
 const row: Variants = {
   hidden: {},
-  visible: { transition: { staggerChildren: 0.07 } },
+  visible: { transition: { staggerChildren: 0.04 } },
 };
 
 const line: Variants = {
   hidden: { scaleX: 0 },
-  visible: { scaleX: 1, transition: { duration: 0.8, ease: EASE } },
+  visible: { scaleX: 1, transition: { duration: 0.5, ease: EASE } },
 };
 
 const item: Variants = {
@@ -32,7 +33,7 @@ const item: Variants = {
   visible: {
     opacity: 1,
     transform: "translateY(0px)",
-    transition: { duration: 0.5, ease: EASE },
+    transition: { duration: 0.35, ease: EASE },
   },
 };
 
@@ -52,7 +53,7 @@ export function Services() {
         variants={list}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.15 }}
+        viewport={{ once: true, amount: 0.1 }}
       >
         {messages.services.items.map((service, index) => (
           <motion.li
@@ -78,6 +79,8 @@ export function Services() {
                 colors={["var(--accent)"]}
                 textColor="var(--ink)"
                 delay={ROWS_DELAY + index * ROW_STAGGER}
+                duration={TITLE_DURATION}
+                inViewMargin="0px"
                 className="whitespace-pre-line"
               />
             </h3>
