@@ -10,7 +10,8 @@
     "about": "Nosotros",
     "events": "Eventos",
     "contact": "Escribinos",
-    "skip": "Saltar al contenido"
+    "skip": "Saltar al contenido",
+    "casos": "Casos"
   },
   "hero": {
     "title": "Software a medida para tu negocio.",
@@ -24,7 +25,8 @@
     "description": "Somos un equipo chico. Venimos de empresas grandes y de productos para clientes del exterior, y trabajamos en español y en inglés.",
     "companiesTitle": "Nuestro equipo trabajó en",
     "ctaTitle": "¿Querés saber si esto tiene sentido para tu negocio? Escribinos y lo vemos.",
-    "ctaButton": "Escribinos a hola@shipperslab.tech"
+    "ctaButton": "Escribinos a hola@shipperslab.tech",
+    "casosLink": "Ver experiencia"
   },
   "services": {
     "title": "Qué hacemos.",
@@ -133,11 +135,7 @@
     "title": "Empecemos.",
     "description": "Tres pasos, menos de un minuto. Te respondemos para coordinar una charla.",
     "stepsLabel": "Pasos del formulario",
-    "steps": [
-      "Vos",
-      "Contacto",
-      "Tu problema"
-    ],
+    "steps": ["Vos", "Contacto", "Tu problema"],
     "fields": {
       "name": "Nombre",
       "namePlaceholder": "Tu nombre",
@@ -208,6 +206,7 @@
       "webs-y-catalogos": "Webs y catálogos",
       "bots-con-ia": "Bots con IA",
       "integraciones": "Integraciones",
+      "casos": "Casos",
       "eventos": "Eventos",
       "empecemos": "Empecemos"
     }
@@ -215,13 +214,7 @@
   "events": {
     "title": "Todavía construyendo.",
     "description": "Estamos armando nuestros primeros eventos: build nights, meetups, hackathons y charlas. Arrancamos en Santa Fe y después vamos por el resto del país.",
-    "formats": [
-      "Build nights",
-      "Meetups",
-      "Hackathons",
-      "Charlas",
-      "Café"
-    ],
+    "formats": ["Build nights", "Meetups", "Hackathons", "Charlas", "Café"],
     "sponsorTitle": "¿Querés ser sponsor o ayudarnos a organizar?",
     "sponsorDescription": "Nos sirve cualquier ayuda: empresas, herramientas para developers, créditos de API o una mano con la organización. No hace falta ser una marca grande. Si te interesa, escribinos.",
     "cta": "Enviar un mensaje",
@@ -260,6 +253,23 @@
     "title": "404",
     "description": "Esta página no existe. A lo mejor esto se shippeó y no te enteraste.",
     "cta": "Volver al inicio"
+  },
+  "casos": {
+    "metaTitle": "Casos y experiencia",
+    "metaDescription": "EventOps, nuestro producto en producción para empresas de eventos, y la experiencia del equipo en Mercado Libre, PUMA, Coderhouse y NFTYDoor.",
+    "title": "Casos y experiencia.",
+    "description": "Todavía no publicamos casos de clientes con nombre. Lo que sí podemos mostrar: un producto propio en producción y de dónde viene la experiencia del equipo.",
+    "eventops": {
+      "eyebrow": "Producto propio",
+      "title": "EventOps",
+      "body": "Sistema de gestión para empresas de eventos, en producción. Ordena la operación del día a día: lo armamos nosotros y lo seguimos evolucionando. Es la prueba más concreta de cómo encaramos un sistema a medida.",
+      "linkLabel": "Ver EventOps"
+    },
+    "companiesHeading": "De dónde viene el equipo.",
+    "companiesDescription": "Ingenieros y diseñadores que trabajaron en empresas grandes y en productos para clientes del exterior. Estas marcas son empleadores previos del equipo, no clientes de ShippersLab.",
+    "ctaTitle": "¿Querés ver si esto aplica a tu negocio?",
+    "ctaDescription": "Contanos qué te lleva tiempo o qué querés ordenar. Te respondemos con alcance y precio por escrito.",
+    "ctaButton": "Contanos tu problema"
   },
   "servicePages": {
     "eyebrow": "Servicio",

@@ -57,6 +57,11 @@ export function Footer() {
                   </li>
                 ))}
                 <li>
+                  <Link href="/casos" className={FOOTER_LINK_CLASS}>
+                    {links.casos}
+                  </Link>
+                </li>
+                <li>
                   <Link href="/eventos" className={FOOTER_LINK_CLASS}>
                     {links.eventos}
                   </Link>
