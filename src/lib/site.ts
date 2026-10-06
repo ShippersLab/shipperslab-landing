@@ -5,7 +5,7 @@ export type Company = {
 
 export const site = {
   name: "ShippersLab",
-  url: "https://shipperslab.tech",
+  url: "https://www.shipperslab.tech",
   emails: {
     contact: "hola@shipperslab.tech",
     events: "eventos@shipperslab.tech",
