@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Events } from "@/components/sections/events";
 import { site } from "@/lib/site";
 
-const TITLE = "ShippersLab | Eventos";
+const TITLE = "Eventos: build nights, meetups y hackathons";
 const DESCRIPTION =
   "Estamos armando las primeras build nights, meetups y hackathons en Argentina. Escribinos a eventos@shipperslab.tech.";
 
@@ -20,13 +20,13 @@ export const metadata: Metadata = {
     url: `${site.url}/eventos`,
     siteName: site.name,
     locale: "es_AR",
-    title: TITLE,
+    title: `${site.name} | ${TITLE}`,
     description: DESCRIPTION,
     images: IMAGES,
   },
   twitter: {
     card: "summary_large_image",
-    title: TITLE,
+    title: `${site.name} | ${TITLE}`,
     description: DESCRIPTION,
     images: IMAGES,
   },

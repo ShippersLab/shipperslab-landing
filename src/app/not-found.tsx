@@ -5,9 +5,9 @@ import Link from "next/link";
 import { DiaTextReveal } from "@/components/ui/animation/dia-text-reveal";
 import { Reveal } from "@/components/ui/animation/reveal";
 import { WordReveal } from "@/components/ui/animation/word-reveal";
-import { ArcBandsBackground } from "@/components/ui/arc-bands-background";
-import { Container } from "@/components/ui/container";
-import { TextureButton } from "@/components/ui/texture-button";
+import { ArcBandsBackground } from "@/components/ui/background/arc-bands-background";
+import { Container } from "@/components/ui/section/container";
+import { TextureButton } from "@/components/ui/button/texture-button";
 import { useI18n } from "@/i18n/provider";
 
 const TITLE_DELAY = 0;

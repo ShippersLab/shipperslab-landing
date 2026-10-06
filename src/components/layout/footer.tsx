@@ -5,15 +5,19 @@ import Link from "next/link";
 
 import { Wordmark } from "@/components/layout/wordmark";
 import { Reveal } from "@/components/ui/animation/reveal";
-import { Container } from "@/components/ui/container";
-import { MailIcon, TwitterIcon } from "@/components/ui/icons";
+import { Container } from "@/components/ui/section/container";
+import { InstagramIcon, MailIcon, TwitterIcon } from "@/components/ui/icons";
 import { useI18n } from "@/i18n/provider";
 import { site } from "@/lib/site";
 
 const YEAR = new Date().getFullYear();
 
+const SOCIAL_LINK_CLASS =
+  "-m-3 rounded-md p-3 text-muted transition-colors duration-200 ease-out hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink";
+
 export function Footer() {
   const { messages } = useI18n();
+  const social = messages.footer.social;
 
   return (
     <footer className="border-t border-border">
@@ -37,20 +41,29 @@ export function Footer() {
               <p className="max-w-sm text-sm text-muted">{messages.footer.tagline}</p>
             </div>
 
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-6">
               <a
                 href={`mailto:${site.emails.contact}`}
-                aria-label={site.emails.contact}
-                className="text-muted transition-colors duration-200 hover:text-ink"
+                aria-label={social.mail.replace("{email}", site.emails.contact)}
+                className={SOCIAL_LINK_CLASS}
               >
                 <MailIcon size={20} />
+              </a>
+              <a
+                href={site.social.instagram}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={social.instagram}
+                className={SOCIAL_LINK_CLASS}
+              >
+                <InstagramIcon size={20} />
               </a>
               <a
                 href={site.social.x}
                 target="_blank"
                 rel="noreferrer"
-                aria-label={site.social.xHandle}
-                className="text-muted transition-colors duration-200 hover:text-ink"
+                aria-label={social.x}
+                className={SOCIAL_LINK_CLASS}
               >
                 <TwitterIcon size={20} />
               </a>

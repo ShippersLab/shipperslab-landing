@@ -20,9 +20,9 @@ export function FieldError({ id, message }: FieldErrorProps) {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -4 }}
           transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="flex items-center gap-1.5 text-sm text-accent"
+          className="flex items-center gap-1.5 text-sm text-ink"
         >
-          <AlertIcon size={14} aria-hidden="true" className="shrink-0" />
+          <AlertIcon size={14} aria-hidden="true" className="shrink-0 text-accent" />
           {message}
         </motion.p>
       ) : null}

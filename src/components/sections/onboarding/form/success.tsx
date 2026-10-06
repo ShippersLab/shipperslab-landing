@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 
 import { Reveal } from "@/components/ui/animation/reveal";
 import { CheckIcon } from "@/components/ui/icons";
-import { TextureButton } from "@/components/ui/texture-button";
+import { TextureButton } from "@/components/ui/button/texture-button";
 import { useI18n } from "@/i18n/provider";
 
 const ITEM_STAGGER = 80;

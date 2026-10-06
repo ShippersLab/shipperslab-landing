@@ -18,9 +18,17 @@ type WordRevealProps = {
   delay?: number;
 };
 
+const EASE = [0.23, 1, 0.32, 1] as const;
+const MAX_ANIMATED_WORDS = 12;
+
 const word: Variants = {
-  hidden: { opacity: 0, y: 8 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.22, ease: [0.16, 1, 0.3, 1] } },
+  hidden: { opacity: 0, transform: "translateY(16px)" },
+  visible: { opacity: 1, transform: "translateY(0px)", transition: { duration: 0.35, ease: EASE } },
+};
+
+const block: Variants = {
+  hidden: { opacity: 0, transform: "translateY(8px)" },
+  visible: { opacity: 1, transform: "translateY(0px)" },
 };
 
 export function WordReveal({ text, as = "p", className, delay = 0 }: WordRevealProps) {
@@ -35,7 +43,7 @@ export function WordReveal({ text, as = "p", className, delay = 0 }: WordRevealP
   }, []);
 
   const reduced = hydrated && prefersReducedMotion;
-  const words = useMemo(() => text.split(" "), [text]);
+  const words = useMemo(() => text.split(" ").filter(Boolean), [text]);
   const container = useMemo<Variants>(
     () => ({
       hidden: {},
@@ -57,6 +65,21 @@ export function WordReveal({ text, as = "p", className, delay = 0 }: WordRevealP
       <StaticTag ref={ref as never} className={className}>
         {text}
       </StaticTag>
+    );
+  }
+
+  if (words.length > MAX_ANIMATED_WORDS) {
+    return (
+      <MotionTag
+        ref={ref}
+        className={className}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        variants={block}
+        transition={{ duration: 0.35, delay, ease: EASE }}
+      >
+        {text}
+      </MotionTag>
     );
   }
 

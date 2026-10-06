@@ -5,8 +5,8 @@ import { PolaroidGallery } from "@/components/sections/events/polaroid-gallery";
 import { DiaTextReveal } from "@/components/ui/animation/dia-text-reveal";
 import { Reveal } from "@/components/ui/animation/reveal";
 import { WordReveal } from "@/components/ui/animation/word-reveal";
-import { Container } from "@/components/ui/container";
-import { TextureButton } from "@/components/ui/texture-button";
+import { Container } from "@/components/ui/section/container";
+import { TextureButton } from "@/components/ui/button/texture-button";
 import { useI18n } from "@/i18n/provider";
 import { site } from "@/lib/site";
 

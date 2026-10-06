@@ -1,4 +1,7 @@
 {
+  "common": {
+    "opensNewTab": "abre en una pestaña nueva"
+  },
   "site": {
     "name": "ShippersLab"
   },
@@ -6,79 +9,51 @@
     "services": "Servicios",
     "about": "Nosotros",
     "events": "Eventos",
-    "contact": "Escribinos"
+    "contact": "Escribinos",
+    "skip": "Saltar al contenido"
   },
   "hero": {
-    "title": "Ingeniería para tu problema de hoy.",
-    "description": "Herramientas internas, automatizaciones, IA y productos digitales. Con alcance por escrito y avance cada semana.",
+    "title": "Software a medida para tu negocio.",
+    "description": "Sistemas de gestión, webs, bots de WhatsApp e integraciones para pymes y comercios. Armado para cómo trabajás y conectado con lo que ya usás.",
     "primaryCta": "Contanos tu problema",
-    "secondaryCta": "Qué construimos",
+    "secondaryCta": "Ver servicios",
     "imageAlt": "Ilustración del Obelisco de Buenos Aires sobre una avenida amplia, en tonos naranja"
   },
   "trust": {
-    "title": "Hablás con quienes construyen.",
-    "description": "Somos un equipo chico de ingenieros. Venimos de empresas grandes y de productos para clientes del exterior. Trabajamos en español y en inglés.",
+    "title": "Ingenieros y diseñadores de Argentina.",
+    "description": "Somos un equipo chico. Venimos de empresas grandes y de productos para clientes del exterior, y trabajamos en español y en inglés.",
     "companiesTitle": "Nuestro equipo trabajó en",
-    "ctaTitle": "Sin intermediarios. Te contesta alguien del equipo que construye.",
+    "ctaTitle": "¿Querés saber si esto tiene sentido para tu negocio? Escribinos y lo vemos.",
     "ctaButton": "Escribinos a hola@shipperslab.tech"
   },
-  "problems": {
-    "title": "¿Te suena alguno de estos?",
-    "description": "Marcá los que te pasan. Con uno que marques, ya sabemos por dónde arrancar.",
-    "items": [
-      "Tenés una idea para desarrollar.",
-      "Procesos que todavía se hacen a mano.",
-      "Necesitás una herramienta interna.",
-      "Sistemas que no se hablan entre sí.",
-      "Tareas repetitivas que te comen el día.",
-      "Tenés un producto a medias que no sale."
-    ],
-    "ctaTitle": "¿Marcaste alguno? Contanos cuál y arrancamos por ahí.",
-    "ctaLink": "Contanos cuál"
-  },
   "services": {
-    "title": "Qué construimos.",
-    "description": "Cuatro cosas, según el problema que tengas hoy. Solas o combinadas.",
+    "title": "Qué hacemos.",
+    "description": "Cada sistema se arma para tu negocio, tus problemas y tus objetivos.",
+    "eventopsPreviewAlt": "Captura de la página de inicio de EventOps",
     "items": [
       {
-        "id": "software",
-        "title": "Herramientas internas",
-        "lead": "Sistemas que se adaptan a vos.",
-        "description": "Dashboards, portales y plataformas para cómo ya trabaja tu equipo.",
-        "highlights": [
-          "Dashboards y portales",
-          "Se integra con tus sistemas",
-          "Cada uno ve lo que le toca"
-        ]
+        "id": "systems",
+        "title": "Sistemas de gestión\na medida",
+        "description": "Stock, pedidos, caja o turnos en un solo sistema, armado para cómo trabaja tu negocio. Así hicimos {EventOps} para empresas de eventos.",
+        "audience": "Para pymes con stock, pedidos o turnos"
       },
       {
-        "id": "automation",
-        "title": "Automatizaciones",
-        "lead": "Una vez, no todos los días.",
-        "description": "Conectamos las herramientas que ya usás y te sacamos de encima lo manual.",
-        "highlights": [
-          "Conecta tus herramientas",
-          "Carga y limpieza de datos",
-          "Tareas repetitivas, una sola vez"
-        ]
+        "id": "presence",
+        "title": "Webs, turneros\ny catálogos",
+        "description": "Una web para tu negocio, un turnero online o un catálogo con pedido por WhatsApp. Tus clientes te encuentran, ven lo que ofrecés y te escriben.",
+        "audience": "Para comercios y emprendedores"
       },
       {
-        "id": "ai",
-        "title": "Inteligencia artificial",
-        "lead": "IA que trabaja, no que demuestra.",
-        "description": "Agentes y asistentes con una tarea concreta: leer, responder, cargar, clasificar.",
-        "highlights": [
-          "Agentes para tareas internas",
-          "Lectura de documentos",
-          "Asistentes para tu equipo"
-        ]
+        "id": "bots",
+        "title": "Bots de WhatsApp\ny agentes de IA",
+        "description": "Un bot que trabaja en tu WhatsApp a toda hora: toma pedidos o agenda turnos. Cuando algo necesita a una persona, te lo pasa.",
+        "audience": "Para negocios que atienden por WhatsApp"
       },
       {
-        "id": "products",
-        "title": "Productos y sitios",
-        "lead": "De la idea al link.",
-        "description": "Sitios, apps y MVPs que salen al aire. Las ideas son baratas. Las cosas terminadas, no.",
-        "highlights": ["Sitios y ecommerce", "Apps web y mobile", "MVPs que salen al aire"]
+        "id": "integrations",
+        "title": "Integraciones con\nlo que ya usás",
+        "description": "Conectamos WhatsApp, tus planillas y la facturación entre sí. Cargás algo una vez y aparece donde tiene que estar.",
+        "audience": "Para quien ya usa varias herramientas"
       }
     ]
   },
@@ -86,20 +61,20 @@
     "title": "Qué pasa cuando nos escribís.",
     "steps": [
       {
-        "title": "Primera charla",
-        "description": "Nos contás el problema o la idea. Hablás con quien lo va a construir."
+        "title": "Charla sobre tu negocio",
+        "description": "Nos contás cómo trabajan hoy y qué se traba. Vemos juntos qué conviene resolver primero."
       },
       {
-        "title": "Propuesta por escrito",
-        "description": "Qué entra, qué no, cuánto cuesta y cuánto tarda. Todo claro antes de arrancar."
+        "title": "Alcance por escrito",
+        "description": "Qué entra, qué no, cuánto cuesta y cuándo está. Todo claro antes de arrancar."
       },
       {
         "title": "Avance cada semana",
-        "description": "Ves algo funcionando cada semana, no un informe al final."
+        "description": "Cada semana ves algo funcionando y lo probás con tu equipo."
       },
       {
-        "title": "Lanzamos",
-        "description": "Sale al aire y lo usás. Después lo mejoramos con uso real."
+        "title": "Lo empiezan a usar",
+        "description": "Lo ponemos en marcha con tu equipo y lo ajustamos con el uso real."
       }
     ]
   },
@@ -108,42 +83,46 @@
     "imageAlt": "Ilustración de grúas de construcción en tonos naranja sobre fondo rosado",
     "items": [
       {
+        "question": "¿Cuánto cuesta?",
+        "answer": "Depende de qué haya que resolver. Después de la primera charla te mandamos el precio por escrito, antes de arrancar. Si conviene, empezamos por una parte chica y seguimos desde ahí."
+      },
+      {
+        "question": "¿Cuánto tarda?",
+        "answer": "Depende del alcance. La fecha de entrega va en la propuesta por escrito, y mientras tanto ves avance cada semana."
+      },
+      {
+        "question": "¿Qué pasa con lo que ya usamos?",
+        "answer": "Partimos de ahí. Si tus planillas, tu facturación o tu WhatsApp te sirven, los conectamos en lugar de reemplazarlos. Si hay que pasar datos a un sistema nuevo, queda planificado en la propuesta."
+      },
+      {
+        "question": "¿Hay que cambiar todo el sistema?",
+        "answer": "No necesariamente. Muchas veces alcanza con resolver una parte, como el stock, los turnos o una integración. Lo vemos en la primera charla."
+      },
+      {
         "question": "No sé qué necesito, ¿igual podemos hablar?",
-        "answer": "Sí. La mayoría de los proyectos arrancan así. Nos contás el problema y juntos vemos qué tiene sentido construir."
-      },
-      {
-        "question": "¿Cuánto cuesta y cuánto tarda un desarrollo?",
-        "answer": "Depende del alcance. En la primera charla lo vemos juntos y te mandamos precio y fecha por escrito antes de arrancar. Después ves avance cada semana, no un informe al final."
-      },
-      {
-        "question": "Ya tengo un equipo técnico, ¿pueden sumarse?",
-        "answer": "Sí. Podemos tomar una parte del producto o sumar manos a tu equipo por un tiempo definido, con el alcance por escrito igual que en cualquier proyecto."
-      },
-      {
-        "question": "¿Trabajan con clientes fuera de Argentina?",
-        "answer": "Sí. Trabajamos en español y en inglés, y todo pasa por videollamada, en tu horario."
+        "answer": "Sí. Contanos qué te lleva tiempo o qué se te escapa, y vemos juntos por dónde empezar."
       }
     ]
   },
   "contact": {
-    "title": "Empecemos por el problema.",
-    "description": "Contanos qué querés mejorar, automatizar o construir. Lo lee uno de los ingenieros y te responde para coordinar una charla. Alcance y precio por escrito antes de arrancar.",
+    "title": "Empecemos por tu problema.",
+    "description": "Contanos qué te lleva tiempo o qué querés ordenar en tu negocio. Te responde alguien del equipo para coordinar una charla. Alcance y precio por escrito antes de arrancar.",
     "form": {
       "name": "Nombre",
       "namePlaceholder": "Tu nombre",
-      "company": "Empresa (opcional)",
-      "companyPlaceholder": "Nombre de tu empresa",
+      "company": "Negocio o empresa (opcional)",
+      "companyPlaceholder": "Nombre de tu negocio",
       "contactMethod": "Email o WhatsApp",
-      "contactMethodPlaceholder": "vos@empresa.com o +54 9 ...",
-      "message": "¿Qué querés mejorar o construir?",
-      "messagePlaceholder": "Ej: cargamos los pedidos a mano desde WhatsApp a una planilla y se nos pierden.",
+      "contactMethodPlaceholder": "vos@negocio.com o +54 9 ...",
+      "message": "¿Qué querés resolver?",
+      "messagePlaceholder": "Ej: controlar el stock y la caja, ordenar los turnos o armar un catálogo para vender por WhatsApp.",
       "submit": "Enviar",
       "sending": "Enviando...",
       "sent": "¡Enviado!",
       "retry": "Reintentar",
-      "success": "Listo. Te contesta alguien del equipo para coordinar una charla.",
+      "success": "Listo. Te responde alguien del equipo para coordinar una charla.",
       "error": "No se pudo enviar. Escribinos directo a hola@shipperslab.tech.",
-      "whatsappMessage": "Hola, quiero contarles un problema o una idea.",
+      "whatsappMessage": "Hola, quiero contarles un problema de mi negocio.",
       "whatsappGreeting": "Hola, soy {name}.",
       "whatsappGreetingWithCompany": "Hola, soy {name}, de {company}.",
       "bookCall": "Reservar una llamada",
@@ -152,33 +131,33 @@
   },
   "onboarding": {
     "title": "Empecemos.",
-    "description": "Tres pasos, menos de un minuto. El equipo te va a responder para coordinar una charla.",
+    "description": "Tres pasos, menos de un minuto. Te respondemos para coordinar una charla.",
     "stepsLabel": "Pasos del formulario",
-    "steps": ["Vos", "Contacto", "Proyecto"],
+    "steps": ["Vos", "Contacto", "Tu problema"],
     "fields": {
       "name": "Nombre",
       "namePlaceholder": "Tu nombre",
-      "company": "Empresa (opcional)",
-      "companyPlaceholder": "Nombre de tu empresa",
+      "company": "Negocio o empresa (opcional)",
+      "companyPlaceholder": "Nombre de tu negocio",
       "email": "Email",
-      "emailPlaceholder": "vos@empresa.com",
+      "emailPlaceholder": "vos@negocio.com",
       "whatsapp": "WhatsApp (opcional)",
       "whatsappPlaceholder": "+54 9 342 ...",
       "needs": "¿Qué necesitás?",
-      "stage": "¿En qué punto estás?",
-      "message": "Contanos qué buscás",
-      "messagePlaceholder": "Ej: cargamos los pedidos a mano desde WhatsApp a una planilla y se nos pierden."
+      "stage": "¿Cómo lo resuelven hoy?",
+      "message": "Contanos qué querés resolver",
+      "messagePlaceholder": "Ej: controlar el stock y la caja, ordenar los turnos o armar un catálogo para vender por WhatsApp."
     },
     "needs": {
-      "software": "Herramienta interna",
-      "automation": "Automatización",
-      "ai": "Inteligencia artificial",
-      "products": "Producto o sitio",
+      "systems": "Sistema de gestión",
+      "integrations": "Conectar lo que ya uso",
+      "bots": "Bot de WhatsApp o IA",
+      "presence": "Web, turnero o catálogo",
       "unsure": "No sé todavía"
     },
     "stages": {
-      "idea": "Es una idea",
-      "existing": "Ya existe y quiero mejorarlo"
+      "idea": "Hoy lo hacemos a mano",
+      "existing": "Ya tenemos un sistema y queremos mejorarlo"
     },
     "actions": {
       "back": "Atrás",
@@ -197,27 +176,35 @@
     "alternative": "¿Preferís un mail? Escribinos a",
     "success": {
       "title": "Listo.",
-      "description": "Te escribe alguien del equipo que lo va a construir para coordinar una charla.",
+      "description": "Te escribe alguien del equipo para coordinar una charla.",
       "cta": "Volver al inicio"
     },
     "confirmation": {
       "subject": "Recibimos tu mensaje | ShippersLab",
       "greeting": "Hola {name},",
-      "body": "Gracias por escribirle a ShippersLab. Ya nos llegó lo que nos contaste y alguien del equipo te va a responder lo antes posible para coordinar una charla.",
+      "body": "Gracias por escribirle a ShippersLab. Ya nos llegó lo que nos contaste sobre tu negocio y alguien del equipo te va a responder para coordinar una charla.",
       "followUp": "Si querés sumar algo más, respondé este mail y le llega al mismo equipo.",
       "signature": "El equipo de ShippersLab"
-    }
+    },
+    "stepCompleted": "Completado",
+    "stepLabel": "{title}, paso {step} de {total}",
+    "stepAnnouncement": "Paso {step} de {total}: {title}"
   },
   "footer": {
-    "tagline": "Diseñamos y construimos productos digitales. Ofrecemos servicios para convertir tu idea en un producto real.",
-    "legal": "Hecho en Argentina."
+    "tagline": "Sistemas de gestión, webs, bots de WhatsApp e integraciones para pymes y comercios. Un equipo chico de ingenieros y diseñadores de Argentina.",
+    "legal": "Hecho en Argentina.",
+    "social": {
+      "instagram": "Instagram de ShippersLab (abre en una pestaña nueva)",
+      "x": "X de ShippersLab (abre en una pestaña nueva)",
+      "mail": "Escribinos a {email}"
+    }
   },
   "events": {
     "title": "Todavía construyendo.",
-    "description": "Estamos construyendo nuestros primeros eventos: build nights, meetups, hackathons, charlas y lo que se nos ocurra armar. Arrancamos en Santa Fe y después vamos por el resto del país.",
+    "description": "Estamos armando nuestros primeros eventos: build nights, meetups, hackathons y charlas. Arrancamos en Santa Fe y después vamos por el resto del país.",
     "formats": ["Build nights", "Meetups", "Hackathons", "Charlas", "Café"],
     "sponsorTitle": "¿Querés ser sponsor o ayudarnos a organizar?",
-    "sponsorDescription": "Nos sirve una mano de cualquier lado: empresas, herramientas para developers, tokens, o ayuda armando el evento. No hace falta ser una marca grande, cualquier aporte nos acerca un poco más a hacerlo realidad. Si te copa sumarte, escribinos.",
+    "sponsorDescription": "Nos sirve cualquier ayuda: empresas, herramientas para developers, créditos de API o una mano con la organización. No hace falta ser una marca grande. Si te interesa, escribinos.",
     "cta": "Enviar un mensaje",
     "gallery": {
       "title": "Así se va a ver.",

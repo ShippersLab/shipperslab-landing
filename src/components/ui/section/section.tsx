@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-import { Container } from "@/components/ui/container";
+import { Container } from "@/components/ui/section/container";
 import { cn } from "@/lib/utils";
 
 type SectionProps = {

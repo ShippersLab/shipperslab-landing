@@ -3,6 +3,8 @@
 import Lenis from "lenis";
 import { useEffect } from "react";
 
+import { gsap, ScrollTrigger } from "@/lib/gsap";
+
 export function SmoothScroll() {
   useEffect(() => {
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -11,45 +13,24 @@ export function SmoothScroll() {
       return;
     }
 
-    const lenis = new Lenis();
+    const lenis = new Lenis({ anchors: true });
 
-    let frame: number;
+    lenis.on("scroll", ScrollTrigger.update);
 
-    function raf(time: number) {
-      lenis.raf(time);
-      frame = requestAnimationFrame(raf);
+    function tick(time: number) {
+      lenis.raf(time * 1000);
     }
 
-    frame = requestAnimationFrame(raf);
+    gsap.ticker.add(tick);
+    gsap.ticker.lagSmoothing(0);
 
-    function scrollToHash(hash: string, immediate: boolean) {
-      const target = document.querySelector(hash);
-      if (!(target instanceof HTMLElement)) return;
-
-      lenis.scrollTo(target, { immediate });
+    const target = window.location.hash ? document.querySelector(window.location.hash) : null;
+    if (target instanceof HTMLElement) {
+      lenis.scrollTo(target, { immediate: true });
     }
-
-    if (window.location.hash) {
-      scrollToHash(window.location.hash, true);
-    }
-
-    function handleClick(event: MouseEvent) {
-      const anchor = (event.target as HTMLElement).closest("a");
-      if (!(anchor instanceof HTMLAnchorElement)) return;
-
-      const url = new URL(anchor.href);
-      if (url.pathname !== window.location.pathname || !url.hash) return;
-
-      event.preventDefault();
-      scrollToHash(url.hash, false);
-      history.pushState(null, "", url.hash);
-    }
-
-    document.addEventListener("click", handleClick);
 
     return () => {
-      cancelAnimationFrame(frame);
-      document.removeEventListener("click", handleClick);
+      gsap.ticker.remove(tick);
       lenis.destroy();
     };
   }, []);

@@ -22,7 +22,10 @@ export function BuildingIllustration({ items, className }: BuildingIllustrationP
         ))}
       </ul>
 
-      <div aria-hidden="true" className="animate-marquee-vertical flex flex-col gap-3 p-4">
+      <div
+        aria-hidden="true"
+        className="animate-marquee-vertical flex flex-col gap-3 p-4 hover:[animation-play-state:paused]"
+      >
         {loop.map((item, index) => (
           <div
             key={`${item}-${index}`}

@@ -4,7 +4,7 @@ import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 
 import type { ContactStatus } from "@/components/sections/contact/use-contact-form";
 import { CheckIcon, RefreshIcon } from "@/components/ui/icons";
-import { TextureButton } from "@/components/ui/texture-button";
+import { TextureButton } from "@/components/ui/button/texture-button";
 import { useI18n } from "@/i18n/provider";
 
 type SubmitButtonProps = {
@@ -39,7 +39,7 @@ export function SubmitButton({ status }: SubmitButtonProps) {
       type="submit"
       variant="primary"
       size="pill"
-      className="w-full min-w-33 rounded-full sm:w-auto hover:opacity-80"
+      className="w-full min-w-33 rounded-full sm:w-auto"
       disabled={sending}
     >
       {reducedMotion ? (

@@ -6,21 +6,30 @@ import {
   ArrowUp01Icon,
   Attachment01Icon,
   Calendar01Icon,
+  CashierIcon as CashierIconSource,
   CloudUploadIcon,
   DashboardCircleIcon,
   Database01Icon,
   File01Icon,
   GlobeIcon as GlobeIconSource,
+  InstagramIcon as InstagramIconSource,
+  Invoice01Icon,
+  Link01Icon,
   Mail01Icon,
   Mic01Icon,
   NewTwitterIcon,
+  Package01Icon,
   PlusSignIcon,
   Refresh01Icon,
   Robot01Icon,
   Rocket01Icon,
+  ShoppingCart01Icon,
   SmartPhone01Icon,
+  FileSpreadsheetIcon,
+  Store01Icon,
   Tick02Icon,
   UserGroupIcon,
+  WhatsappIcon,
   WorkflowCircle06Icon,
 } from "@hugeicons/core-free-icons";
 
@@ -28,7 +37,7 @@ type IconProps = Omit<HugeiconsIconProps, "icon">;
 
 function createIcon(source: IconSvgElement) {
   return function Icon(props: IconProps) {
-    return <HugeiconsIcon icon={source} {...props} />;
+    return <HugeiconsIcon icon={source} aria-hidden="true" focusable="false" {...props} />;
   };
 }
 
@@ -54,3 +63,12 @@ export const CalendarIcon = createIcon(Calendar01Icon);
 export const MailIcon = createIcon(Mail01Icon);
 export const AlertIcon = createIcon(AlertCircleIcon);
 export const TwitterIcon = createIcon(NewTwitterIcon);
+export const InstagramIcon = createIcon(InstagramIconSource);
+export const WhatsAppIcon = createIcon(WhatsappIcon);
+export const StockIcon = createIcon(Package01Icon);
+export const OrdersIcon = createIcon(ShoppingCart01Icon);
+export const CashierIcon = createIcon(CashierIconSource);
+export const SpreadsheetIcon = createIcon(FileSpreadsheetIcon);
+export const InvoiceIcon = createIcon(Invoice01Icon);
+export const LinkIcon = createIcon(Link01Icon);
+export const StoreIcon = createIcon(Store01Icon);

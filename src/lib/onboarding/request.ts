@@ -2,7 +2,7 @@ import { defaultLocale, isLocale, type Locale } from "@/i18n/config";
 import { findFirstInvalidStep } from "@/lib/onboarding/validation";
 import { isRecord, readString, readStringList } from "@/lib/payload";
 
-export const ONBOARDING_NEEDS = ["software", "automation", "ai", "products", "unsure"] as const;
+export const ONBOARDING_NEEDS = ["systems", "presence", "bots", "integrations", "unsure"] as const;
 export const ONBOARDING_STAGES = ["idea", "existing"] as const;
 
 export type OnboardingNeed = (typeof ONBOARDING_NEEDS)[number];

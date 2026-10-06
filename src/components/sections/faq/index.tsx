@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import { motion, useInView, useReducedMotion } from "motion/react";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 
 import { PlusIcon } from "@/components/ui/icons";
 import { Reveal } from "@/components/ui/animation/reveal";
-import { Section } from "@/components/ui/section";
-import { SectionHeading } from "@/components/ui/section-heading";
+import { Section } from "@/components/ui/section/section";
+import { SectionHeading } from "@/components/ui/section/section-heading";
 import { useI18n } from "@/i18n/provider";
 import { cn } from "@/lib/utils";
 
@@ -29,21 +29,22 @@ export function Faq() {
   }, []);
 
   const reduced = hydrated && prefersReducedMotion;
+  const idPrefix = useId();
 
   return (
     <Section bordered>
       <div className="grid gap-10 lg:grid-cols-[2fr_3fr] lg:gap-16">
-        <div className="lg:sticky lg:top-24 lg:self-start">
+        <div className="w-full lg:sticky lg:top-24 lg:self-start">
           <motion.div
             ref={imageRef}
-            initial={{ opacity: 0, filter: "blur(20px)" }}
+            initial={{ opacity: 0, filter: "blur(12px)" }}
             animate={
               reduced || isInView
                 ? { opacity: 1, filter: "blur(0px)" }
-                : { opacity: 0, filter: "blur(20px)" }
+                : { opacity: 0, filter: "blur(12px)" }
             }
-            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className="relative aspect-square overflow-hidden rounded-lg border border-border"
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            className="relative aspect-4/5 w-full overflow-hidden rounded-lg border border-border"
           >
             <div
               aria-hidden
@@ -57,7 +58,7 @@ export function Faq() {
               alt={messages.faq.imageAlt}
               fill
               sizes="(min-width: 1024px) 30vw, 100vw"
-              className="object-cover"
+              className="object-cover object-center"
               onLoad={() => setImageLoaded(true)}
             />
           </motion.div>
@@ -69,6 +70,8 @@ export function Faq() {
           <ul className="mt-8 divide-y divide-border border-t border-border">
             {messages.faq.items.map((item, index) => {
               const open = openIndex === index;
+              const buttonId = `${idPrefix}-question-${index}`;
+              const panelId = `${idPrefix}-answer-${index}`;
 
               return (
                 <Reveal
@@ -76,23 +79,31 @@ export function Faq() {
                   as="li"
                   delay={(ITEMS_DELAY + index * ITEM_STAGGER) * 1000}
                 >
-                  <button
-                    type="button"
-                    aria-expanded={open}
-                    onClick={() => setOpenIndex(open ? null : index)}
-                    className="flex w-full items-center justify-between gap-4 py-6 text-left"
-                  >
-                    <span className="text-lg text-ink">{item.question}</span>
-                    <PlusIcon
-                      className={cn(
-                        "size-4 shrink-0 text-muted transition-transform duration-200",
-                        open && "rotate-45",
-                      )}
-                    />
-                  </button>
+                  <h3 className="font-sans font-normal tracking-normal">
+                    <button
+                      id={buttonId}
+                      type="button"
+                      aria-expanded={open}
+                      aria-controls={panelId}
+                      onClick={() => setOpenIndex(open ? null : index)}
+                      className="flex w-full items-center justify-between gap-4 py-6 text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+                    >
+                      <span className="text-lg text-ink">{item.question}</span>
+                      <PlusIcon
+                        className={cn(
+                          "size-4 shrink-0 text-muted transition-transform duration-200 ease-out",
+                          open && "rotate-45",
+                        )}
+                      />
+                    </button>
+                  </h3>
                   <div
+                    id={panelId}
+                    role="region"
+                    aria-labelledby={buttonId}
+                    inert={!open}
                     className={cn(
-                      "grid transition-[grid-template-rows] duration-300 ease-out",
+                      "grid transition-[grid-template-rows] duration-200 ease-out",
                       open ? "grid-rows-[1fr]" : "grid-rows-[0fr]",
                     )}
                   >
