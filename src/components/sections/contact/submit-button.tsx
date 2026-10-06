@@ -4,7 +4,7 @@ import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 
 import type { ContactStatus } from "@/components/sections/contact/use-contact-form";
 import { CheckIcon, RefreshIcon } from "@/components/ui/icons";
-import { TextureButton } from "@/components/ui/texture-button";
+import { TextureButton } from "@/components/ui/button/texture-button";
 import { useI18n } from "@/i18n/provider";
 
 type SubmitButtonProps = {

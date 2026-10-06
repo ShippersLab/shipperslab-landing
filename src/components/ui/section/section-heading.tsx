@@ -24,7 +24,7 @@ export function SectionHeading({
       <h2 className="text-3xl sm:text-4xl">
         <DiaTextReveal
           text={title}
-          colors={["var(--ink)"]}
+          colors={["var(--accent)"]}
           textColor="var(--ink)"
           delay={titleDelay}
         />

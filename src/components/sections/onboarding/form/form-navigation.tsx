@@ -2,7 +2,7 @@
 
 import type { OnboardingStatus } from "@/components/sections/onboarding/form/use-onboarding-form";
 import { ArrowRightIcon, RefreshIcon } from "@/components/ui/icons";
-import { TextureButton } from "@/components/ui/texture-button";
+import { TextureButton } from "@/components/ui/button/texture-button";
 import { useI18n } from "@/i18n/provider";
 
 type FormNavigationProps = {

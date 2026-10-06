@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import { Wordmark } from "@/components/layout/wordmark";
 import { Reveal } from "@/components/ui/animation/reveal";
-import { Container } from "@/components/ui/container";
+import { Container } from "@/components/ui/section/container";
 import { InstagramIcon, MailIcon, TwitterIcon } from "@/components/ui/icons";
 import { useI18n } from "@/i18n/provider";
 import { site } from "@/lib/site";

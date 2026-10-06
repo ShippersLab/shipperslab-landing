@@ -23,7 +23,7 @@ export function FormActions({ status }: FormActionsProps) {
           href={site.calUrl}
           target="_blank"
           rel="noreferrer"
-          className="group flex items-center justify-center gap-2 px-4 py-2.5 text-sm text-muted transition-colors duration-200 hover:text-ink sm:justify-start sm:text-base"
+          className="flex items-center justify-center gap-2 rounded-full px-4 py-2.5 text-sm text-muted transition-colors duration-200 ease-out hover:text-ink sm:justify-start sm:text-base focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
         >
           <CalendarIcon size={16} />
           {copy.bookCall}
@@ -43,7 +43,7 @@ export function FormActions({ status }: FormActionsProps) {
               {copy.alternative}{" "}
               <a
                 href={`mailto:${site.emails.contact}`}
-                className="text-ink underline decoration-border underline-offset-4 transition-colors duration-200 hover:decoration-ink"
+                className="rounded-sm text-ink underline decoration-border underline-offset-4 transition-colors duration-200 ease-out hover:decoration-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
               >
                 {site.emails.contact}
               </a>

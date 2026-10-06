@@ -4,8 +4,8 @@ import { OnboardingForm } from "@/components/sections/onboarding/form";
 import { DiaTextReveal } from "@/components/ui/animation/dia-text-reveal";
 import { Reveal } from "@/components/ui/animation/reveal";
 import { WordReveal } from "@/components/ui/animation/word-reveal";
-import { ArcBandsBackground } from "@/components/ui/arc-bands-background";
-import { Container } from "@/components/ui/container";
+import { ArcBandsBackground } from "@/components/ui/background/arc-bands-background";
+import { Container } from "@/components/ui/section/container";
 import { useI18n } from "@/i18n/provider";
 import { site } from "@/lib/site";
 

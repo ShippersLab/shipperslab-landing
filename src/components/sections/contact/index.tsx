@@ -4,8 +4,8 @@ import { FormActions } from "@/components/sections/contact/form-actions";
 import { useContactForm } from "@/components/sections/contact/use-contact-form";
 import { Reveal } from "@/components/ui/animation/reveal";
 import { TextAreaField, TextField } from "@/components/ui/form/text-field";
-import { Section } from "@/components/ui/section";
-import { SectionHeading } from "@/components/ui/section-heading";
+import { Section } from "@/components/ui/section/section";
+import { SectionHeading } from "@/components/ui/section/section-heading";
 import { useI18n } from "@/i18n/provider";
 
 const TITLE_DELAY = 0;

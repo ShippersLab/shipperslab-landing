@@ -7,7 +7,7 @@ import {
   StepperSeparator,
   StepperTitle,
   StepperTrigger,
-} from "@/components/ui/stepper";
+} from "@/components/ui/form/stepper";
 import { useI18n } from "@/i18n/provider";
 
 type FormStepperProps = {

@@ -118,7 +118,7 @@ export function StepperIndicator({ className }: { className?: string }) {
     <span
       aria-hidden="true"
       className={cn(
-        "relative flex size-7 shrink-0 items-center justify-center rounded-full border border-border bg-paper font-mono text-label text-muted transition-colors duration-200",
+        "relative flex size-7 shrink-0 items-center justify-center rounded-full border border-border bg-paper font-mono text-xs text-muted transition-colors duration-200 ease-out",
         "group-data-[state=active]/step:border-muted/60 group-data-[state=active]/step:text-ink",
         "group-data-[state=completed]/step:border-accent group-data-[state=completed]/step:bg-accent group-data-[state=completed]/step:text-paper",
         className,
@@ -144,7 +144,7 @@ export function StepperTitle({ className, ...props }: HTMLAttributes<HTMLSpanEle
   return (
     <span
       className={cn(
-        "text-sm text-muted transition-colors duration-200 group-data-[state=active]/step:text-ink group-data-[state=completed]/step:text-ink",
+        "text-sm text-muted transition-colors duration-200 ease-out group-data-[state=active]/step:text-ink group-data-[state=completed]/step:text-ink",
         className,
       )}
       {...props}
