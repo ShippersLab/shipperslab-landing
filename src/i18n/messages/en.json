@@ -133,7 +133,11 @@
     "title": "Let's start.",
     "description": "Three steps, under a minute. We'll get back to you to set up a call.",
     "stepsLabel": "Form steps",
-    "steps": ["You", "Contact", "Your problem"],
+    "steps": [
+      "You",
+      "Contact",
+      "Your problem"
+    ],
     "fields": {
       "name": "Name",
       "namePlaceholder": "Your name",
@@ -197,12 +201,27 @@
       "instagram": "ShippersLab on Instagram (opens in a new tab)",
       "x": "ShippersLab on X (opens in a new tab)",
       "mail": "Email us at {email}"
+    },
+    "servicesTitle": "Services",
+    "links": {
+      "sistemas-de-gestion": "Management systems",
+      "webs-y-catalogos": "Websites and catalogs",
+      "bots-con-ia": "AI bots",
+      "integraciones": "Integrations",
+      "eventos": "Events",
+      "empecemos": "Get started"
     }
   },
   "events": {
     "title": "Still building.",
     "description": "We're putting together our first events: build nights, meetups, hackathons and talks. We're starting in Santa Fe, then the rest of the country.",
-    "formats": ["Build nights", "Meetups", "Hackathons", "Talks", "Coffee"],
+    "formats": [
+      "Build nights",
+      "Meetups",
+      "Hackathons",
+      "Talks",
+      "Coffee"
+    ],
     "sponsorTitle": "Want to sponsor or help us organize?",
     "sponsorDescription": "Any help counts: companies, developer tools, API credits or a hand with organizing. You don't need to be a big brand. If you're interested, write to us.",
     "cta": "Send a message",
@@ -241,5 +260,105 @@
     "title": "404",
     "description": "This page doesn't exist. Maybe it shipped and you missed it.",
     "cta": "Back to home"
+  },
+  "servicePages": {
+    "eyebrow": "Service",
+    "relatedTitle": "Other services.",
+    "sistemas-de-gestion": {
+      "navLabel": "Management systems",
+      "metaTitle": "Custom management systems for small businesses",
+      "metaDescription": "Inventory, orders, sales or bookings in one system built around how your business works. Scope and price in writing before we start.",
+      "h1": "Custom management systems.",
+      "lead": "Inventory, orders, sales or bookings in one place, built around how your business works. Stop fighting spreadsheets that no longer hold.",
+      "sections": [
+        {
+          "title": "What we solve.",
+          "body": "A system shaped around your operation: inventory control, orders, sales, bookings or whatever slips between chats and spreadsheets today. We build it for how your team works, not the other way around."
+        },
+        {
+          "title": "A real example: EventOps.",
+          "body": "That is how we built EventOps for event companies: our own product in production that keeps day-to-day operations in order. Every business is different, but the approach is the same: understand how you work and build around that."
+        },
+        {
+          "title": "Who it is for.",
+          "body": "For small businesses with inventory, orders or bookings that still run on Excel, WhatsApp or an old system. If the owner or ops lead feels they waste time entering the same data twice, we start there."
+        }
+      ],
+      "ctaTitle": "Has your operation outgrown a spreadsheet?",
+      "ctaDescription": "Tell us how you work today. We reply with scope and price in writing before we start.",
+      "ctaButton": "Tell us your problem"
+    },
+    "webs-y-catalogos": {
+      "navLabel": "Websites and catalogs",
+      "metaTitle": "Websites, booking and catalogs for shops",
+      "metaDescription": "A website for your business, online booking or a catalog with WhatsApp ordering. Customers find you and get in touch.",
+      "h1": "Websites, booking and catalogs.",
+      "lead": "A clear website for your business, online booking or a catalog with WhatsApp ordering. Customers find you, see what you offer and get in touch.",
+      "sections": [
+        {
+          "title": "What we solve.",
+          "body": "Concrete digital presence: a landing that explains what you do, a booking flow so people schedule themselves, or a catalog with WhatsApp ordering. No platforms that take your margin, no templates that do not look like your business."
+        },
+        {
+          "title": "How we build it.",
+          "body": "We start from how you want people to find you and reach out. The result is clear, fast and easy to maintain: a site that explains what you do, a booking tool that runs itself or a catalog ready for WhatsApp orders."
+        },
+        {
+          "title": "Who it is for.",
+          "body": "For shops and small businesses that need customers to find them online, book a slot or order on WhatsApp without jumping through hoops."
+        }
+      ],
+      "ctaTitle": "Can customers not find you online?",
+      "ctaDescription": "Tell us what you want to show or sell. We reply with scope and price in writing.",
+      "ctaButton": "Tell us your problem"
+    },
+    "bots-con-ia": {
+      "navLabel": "AI bots",
+      "metaTitle": "AI bots and agents for businesses",
+      "metaDescription": "A bot or agent that answers around the clock on WhatsApp or your site: it takes orders, books appointments or answers questions. When a person is needed, it hands it to you.",
+      "h1": "AI bots and agents.",
+      "lead": "A bot or agent that answers around the clock on WhatsApp, your website or wherever your customers are. It takes orders, books appointments or answers questions. When something needs a person, it hands it to you.",
+      "sections": [
+        {
+          "title": "What we solve.",
+          "body": "The repeated questions that eat your day: hours, prices, stock, open slots. The bot answers what it can and escalates what it cannot. AI where it pays off, not for show."
+        },
+        {
+          "title": "Where it lives.",
+          "body": "On WhatsApp, on your site or on the channel where people already write to you. It connects to what you already use: your calendar, catalog or spreadsheet. You do not need to replace everything to start."
+        },
+        {
+          "title": "Who it is for.",
+          "body": "For businesses that get a lot of questions and cannot reply on time. If your team spends hours on the same answers every day, a well-built bot takes that load off."
+        }
+      ],
+      "ctaTitle": "Do the same questions land all day?",
+      "ctaDescription": "Tell us which questions eat your time. We reply with scope and price in writing.",
+      "ctaButton": "Tell us your problem"
+    },
+    "integraciones": {
+      "navLabel": "Integrations",
+      "metaTitle": "Integrations between the tools you already use",
+      "metaDescription": "We connect WhatsApp, spreadsheets and invoicing. Enter something once and it shows up where it should. Scope in writing before we start.",
+      "h1": "Integrations with your current tools.",
+      "lead": "We connect WhatsApp, your spreadsheets and invoicing to each other. Enter something once and it shows up where it should. Without tearing down what already works.",
+      "sections": [
+        {
+          "title": "What we solve.",
+          "body": "Data that moves by hand from one place to another: a WhatsApp order you later type into a spreadsheet, a sale you invoice separately. We connect those pieces so the data is entered once."
+        },
+        {
+          "title": "How we approach it.",
+          "body": "We start from the tools you already use. If they work, we connect them. If something needs replacing, it is clear in the proposal. The goal is less friction, not a new system for its own sake."
+        },
+        {
+          "title": "Who it is for.",
+          "body": "For teams juggling several tools and losing time moving the same information around. Ideal if you do not want to change everything at once."
+        }
+      ],
+      "ctaTitle": "Entering the same data in three places?",
+      "ctaDescription": "Tell us which tools you use today. We reply with scope and price in writing.",
+      "ctaButton": "Tell us your problem"
+    }
   }
 }
