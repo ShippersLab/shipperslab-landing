@@ -1,5 +1,6 @@
 import es from "@/i18n/messages/es.json";
 import { plainText, singleLine } from "@/lib/seo/text";
+import { getServiceHref } from "@/lib/services";
 import { site } from "@/lib/site";
 
 const SUMMARY =
@@ -32,7 +33,11 @@ export function buildLlmsTxt() {
   );
   const faq = es.faq.items.map((item) => `- ${item.question} ${item.answer}`);
   const services = es.services.items.map((service) =>
-    link(singleLine(service.title), `${site.url}/#${service.id}`, plainText(service.description)),
+    link(
+      singleLine(service.title),
+      `${site.url}${getServiceHref(service.id) ?? `/#${service.id}`}`,
+      plainText(service.description),
+    ),
   );
 
   return [
