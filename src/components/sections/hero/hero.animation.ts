@@ -1,6 +1,5 @@
 import type { RefObject } from "react";
 
-import { revealWords } from "@/components/sections/hero/text-reveal";
 import { gsap, useGSAP } from "@/lib/gsap";
 
 const IMAGE_DURATION = 0.5;
@@ -12,8 +11,6 @@ export function useHeroAnimation(scope: RefObject<HTMLElement | null>) {
       const mm = gsap.matchMedia();
 
       mm.add("(prefers-reduced-motion: no-preference)", () => {
-        const title = scope.current?.querySelector<HTMLElement>(".hero-title");
-
         const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
 
         tl.fromTo(
@@ -21,10 +18,6 @@ export function useHeroAnimation(scope: RefObject<HTMLElement | null>) {
           { autoAlpha: 0, filter: "blur(10px)" },
           { autoAlpha: 1, filter: "blur(0px)", duration: IMAGE_DURATION },
         );
-
-        if (title) {
-          revealWords(title, { timeline: tl, position: 0.1 });
-        }
 
         tl.fromTo(
           ".hero-description",
@@ -44,7 +37,7 @@ export function useHeroAnimation(scope: RefObject<HTMLElement | null>) {
       });
 
       mm.add("(prefers-reduced-motion: reduce)", () => {
-        gsap.set(".hero-image, .hero-title, .hero-description, .hero-ctas", {
+        gsap.set(".hero-image, .hero-description, .hero-ctas", {
           autoAlpha: 1,
         });
       });
