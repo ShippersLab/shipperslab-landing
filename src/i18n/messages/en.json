@@ -14,7 +14,7 @@
   },
   "hero": {
     "title": "Custom software for your business.",
-    "description": "Management systems, websites, WhatsApp bots and integrations for small businesses and shops. Built around how you work, connected to the tools you use.",
+    "description": "Management systems, websites, AI bots and integrations for small businesses and shops. Built around how you work, connected to the tools you use.",
     "primaryCta": "Tell us your problem",
     "secondaryCta": "See services",
     "imageAlt": "Illustration of the Buenos Aires Obelisk on a wide avenue, in orange tones"
@@ -45,9 +45,9 @@
       },
       {
         "id": "bots",
-        "title": "WhatsApp bots\nand AI agents",
-        "description": "A bot that works your WhatsApp around the clock: it takes orders or books appointments. When something needs a person, it hands it to you.",
-        "audience": "For businesses that handle customers on WhatsApp"
+        "title": "AI bots\nand agents",
+        "description": "A bot or agent that answers around the clock on WhatsApp, your website or wherever your customers are: it takes orders, books appointments or answers questions. When something needs a person, it hands it to you.",
+        "audience": "For businesses that get a lot of questions"
       },
       {
         "id": "integrations",
@@ -151,7 +151,7 @@
     "needs": {
       "systems": "Management system",
       "integrations": "Connect what I already use",
-      "bots": "WhatsApp bot or AI",
+      "bots": "AI bot or agent",
       "presence": "Website, booking or catalog",
       "unsure": "Not sure yet"
     },
@@ -191,7 +191,7 @@
     "stepAnnouncement": "Step {step} of {total}: {title}"
   },
   "footer": {
-    "tagline": "Management systems, websites, WhatsApp bots and integrations for small businesses and shops. A small team of engineers and designers from Argentina.",
+    "tagline": "Management systems, websites, AI bots and integrations for small businesses and shops. A small team of engineers and designers from Argentina.",
     "legal": "Made in Argentina.",
     "social": {
       "instagram": "ShippersLab on Instagram (opens in a new tab)",

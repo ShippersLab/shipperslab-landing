@@ -5,7 +5,7 @@ import { site } from "@/lib/site";
 const TITLE = "ShippersLab | Software a medida para pymes y comercios";
 
 export const DESCRIPTION =
-  "Software a medida para pymes y comercios de Argentina: sistemas de gestión, integraciones, bots de WhatsApp y webs. Alcance y precio por escrito antes de arrancar.";
+  "Software a medida para pymes y comercios de Argentina: sistemas de gestión, integraciones, bots y agentes de IA y webs. Alcance y precio por escrito antes de arrancar.";
 
 const KEYWORDS = [
   "software a medida",
@@ -13,7 +13,7 @@ const KEYWORDS = [
   "sistema de gestión a medida",
   "sistema de stock",
   "sistema de turnos",
-  "bot de WhatsApp para negocios",
+  "bots con IA para negocios",
   "agentes de IA",
   "integraciones",
   "desarrollo web para comercios",

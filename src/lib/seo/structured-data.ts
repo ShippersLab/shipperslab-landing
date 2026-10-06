@@ -24,7 +24,7 @@ const organization: Organization = {
     "Software a medida",
     "Sistemas de gestión",
     "Integraciones",
-    "Bots de WhatsApp",
+    "Bots con IA",
     "Agentes de IA",
     "Desarrollo web",
   ],
