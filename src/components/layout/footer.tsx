@@ -8,6 +8,7 @@ import { Reveal } from "@/components/ui/animation/reveal";
 import { Container } from "@/components/ui/section/container";
 import { InstagramIcon, MailIcon, TwitterIcon } from "@/components/ui/icons";
 import { useI18n } from "@/i18n/provider";
+import { serviceRoutes } from "@/lib/services";
 import { site } from "@/lib/site";
 
 const YEAR = new Date().getFullYear();
@@ -15,9 +16,13 @@ const YEAR = new Date().getFullYear();
 const SOCIAL_LINK_CLASS =
   "-m-3 rounded-md p-3 text-muted transition-colors duration-200 ease-out hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink";
 
+const FOOTER_LINK_CLASS =
+  "rounded-sm text-sm text-muted transition-colors duration-200 ease-out hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink";
+
 export function Footer() {
   const { messages } = useI18n();
   const social = messages.footer.social;
+  const links = messages.footer.links;
 
   return (
     <footer className="border-t border-border">
@@ -25,7 +30,7 @@ export function Footer() {
         <Container>
           <Reveal
             duration={0.8}
-            className="flex flex-col gap-8 py-12 sm:flex-row sm:items-end sm:justify-between"
+            className="flex flex-col gap-10 py-12 sm:flex-row sm:items-start sm:justify-between"
           >
             <div className="flex flex-col gap-4">
               <Link href="/" aria-label={site.name} className="w-fit">
@@ -39,29 +44,37 @@ export function Footer() {
                 />
               </Link>
               <p className="max-w-sm text-sm text-muted">{messages.footer.tagline}</p>
-              <nav className="flex flex-wrap gap-x-5 gap-y-2">
-                <Link
-                  href="/casos"
-                  className="rounded-sm text-sm text-muted transition-colors duration-200 ease-out hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
-                >
-                  {messages.footer.casos}
-                </Link>
-                <Link
-                  href="/eventos"
-                  className="rounded-sm text-sm text-muted transition-colors duration-200 ease-out hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
-                >
-                  {messages.nav.events}
-                </Link>
-                <Link
-                  href="/empecemos"
-                  className="rounded-sm text-sm text-muted transition-colors duration-200 ease-out hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
-                >
-                  {messages.nav.contact}
-                </Link>
-              </nav>
             </div>
 
-            <div className="flex items-center gap-6">
+            <div className="flex flex-col gap-3">
+              <p className="text-sm text-ink">{messages.footer.servicesTitle}</p>
+              <ul className="flex flex-col gap-2">
+                {serviceRoutes.map((route) => (
+                  <li key={route.slug}>
+                    <Link href={`/${route.slug}`} className={FOOTER_LINK_CLASS}>
+                      {links[route.slug]}
+                    </Link>
+                  </li>
+                ))}
+                <li>
+                  <Link href="/casos" className={FOOTER_LINK_CLASS}>
+                    {links.casos}
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/eventos" className={FOOTER_LINK_CLASS}>
+                    {links.eventos}
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/empecemos" className={FOOTER_LINK_CLASS}>
+                    {links.empecemos}
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div className="flex items-center gap-6 sm:pt-1">
               <a
                 href={`mailto:${site.emails.contact}`}
                 aria-label={social.mail.replace("{email}", site.emails.contact)}

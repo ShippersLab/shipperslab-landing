@@ -135,11 +135,7 @@
     "title": "Empecemos.",
     "description": "Tres pasos, menos de un minuto. Te respondemos para coordinar una charla.",
     "stepsLabel": "Pasos del formulario",
-    "steps": [
-      "Vos",
-      "Contacto",
-      "Tu problema"
-    ],
+    "steps": ["Vos", "Contacto", "Tu problema"],
     "fields": {
       "name": "Nombre",
       "namePlaceholder": "Tu nombre",
@@ -204,18 +200,21 @@
       "x": "X de ShippersLab (abre en una pestaña nueva)",
       "mail": "Escribinos a {email}"
     },
-    "casos": "Casos"
+    "servicesTitle": "Servicios",
+    "links": {
+      "sistemas-de-gestion": "Sistemas de gestión",
+      "webs-y-catalogos": "Webs y catálogos",
+      "bots-con-ia": "Bots con IA",
+      "integraciones": "Integraciones",
+      "casos": "Casos",
+      "eventos": "Eventos",
+      "empecemos": "Empecemos"
+    }
   },
   "events": {
     "title": "Todavía construyendo.",
     "description": "Estamos armando nuestros primeros eventos: build nights, meetups, hackathons y charlas. Arrancamos en Santa Fe y después vamos por el resto del país.",
-    "formats": [
-      "Build nights",
-      "Meetups",
-      "Hackathons",
-      "Charlas",
-      "Café"
-    ],
+    "formats": ["Build nights", "Meetups", "Hackathons", "Charlas", "Café"],
     "sponsorTitle": "¿Querés ser sponsor o ayudarnos a organizar?",
     "sponsorDescription": "Nos sirve cualquier ayuda: empresas, herramientas para developers, créditos de API o una mano con la organización. No hace falta ser una marca grande. Si te interesa, escribinos.",
     "cta": "Enviar un mensaje",
@@ -271,5 +270,105 @@
     "ctaTitle": "¿Querés ver si esto aplica a tu negocio?",
     "ctaDescription": "Contanos qué te lleva tiempo o qué querés ordenar. Te respondemos con alcance y precio por escrito.",
     "ctaButton": "Contanos tu problema"
+  },
+  "servicePages": {
+    "eyebrow": "Servicio",
+    "relatedTitle": "Otros servicios.",
+    "sistemas-de-gestion": {
+      "navLabel": "Sistemas de gestión",
+      "metaTitle": "Sistemas de gestión a medida para pymes",
+      "metaDescription": "Stock, pedidos, caja o turnos en un solo sistema armado para cómo trabaja tu pyme. Alcance y precio por escrito antes de arrancar.",
+      "h1": "Sistemas de gestión a medida.",
+      "lead": "Stock, pedidos, caja o turnos en un solo lugar, armado para cómo trabaja tu negocio. Dejá de pelearte con planillas que ya no dan abasto.",
+      "sections": [
+        {
+          "title": "Qué resolvemos.",
+          "body": "Un sistema pensado para tu operación: control de stock, pedidos, caja, turnos o lo que hoy se te escapa entre chats y planillas. Lo armamos para cómo trabaja tu equipo, no al revés."
+        },
+        {
+          "title": "Un ejemplo real: EventOps.",
+          "body": "Así hicimos EventOps para empresas de eventos: un producto propio en producción que ordena la operación del día a día. Cada negocio es distinto, pero el enfoque es el mismo: entender cómo trabajan y construir alrededor de eso."
+        },
+        {
+          "title": "Para quién.",
+          "body": "Para pymes con stock, pedidos o turnos que hoy se manejan con Excel, WhatsApp o un sistema viejo. Si el dueño o quien opera el negocio siente que pierde tiempo cargando lo mismo dos veces, arrancamos por ahí."
+        }
+      ],
+      "ctaTitle": "¿Tu operación ya no entra en una planilla?",
+      "ctaDescription": "Contanos cómo trabajan hoy. Te respondemos con alcance y precio por escrito antes de arrancar.",
+      "ctaButton": "Contanos tu problema"
+    },
+    "webs-y-catalogos": {
+      "navLabel": "Webs y catálogos",
+      "metaTitle": "Webs, turneros y catálogos para comercios",
+      "metaDescription": "Una web para tu negocio, un turnero online o un catálogo con pedido por WhatsApp. Tus clientes te encuentran y te escriben.",
+      "h1": "Webs, turneros y catálogos.",
+      "lead": "Una web clara para tu negocio, un turnero online o un catálogo con pedido por WhatsApp. Tus clientes te encuentran, ven lo que ofrecés y te escriben.",
+      "sections": [
+        {
+          "title": "Qué resolvemos.",
+          "body": "Presencia digital concreta: una landing que explica qué hacés, un turnero para que agenden solos, o un catálogo con pedido por WhatsApp. Sin plataformas que se quedan con el margen ni plantillas que no se parecen a tu negocio."
+        },
+        {
+          "title": "Cómo lo armamos.",
+          "body": "Partimos de cómo querés que te encuentren y te contacten. El resultado es claro, rápido y fácil de mantener: una web que explica qué hacés, un turnero que agenda solo o un catálogo listo para pedir por WhatsApp."
+        },
+        {
+          "title": "Para quién.",
+          "body": "Para comercios y emprendedores que necesitan que los clientes los encuentren online, reserven un turno o pidan por WhatsApp sin dar mil vueltas."
+        }
+      ],
+      "ctaTitle": "¿Tus clientes no te encuentran online?",
+      "ctaDescription": "Contanos qué querés mostrar o vender. Te respondemos con alcance y precio por escrito.",
+      "ctaButton": "Contanos tu problema"
+    },
+    "bots-con-ia": {
+      "navLabel": "Bots con IA",
+      "metaTitle": "Bots y agentes de IA para negocios",
+      "metaDescription": "Un bot o agente que atiende a toda hora por WhatsApp o tu web: toma pedidos, agenda turnos o responde consultas. Cuando hace falta una persona, te lo pasa.",
+      "h1": "Bots y agentes de IA.",
+      "lead": "Un bot o agente que atiende a toda hora por WhatsApp, tu web o donde estén tus clientes. Toma pedidos, agenda turnos o responde consultas. Cuando algo necesita a una persona, te lo pasa.",
+      "sections": [
+        {
+          "title": "Qué resolvemos.",
+          "body": "Las consultas repetidas que te comen el día: horarios, precios, stock, turnos disponibles. El bot responde lo que puede y te escala lo que no. IA donde paga, no de adorno."
+        },
+        {
+          "title": "Dónde vive.",
+          "body": "En WhatsApp, en tu web o en el canal donde ya te escriben. Se conecta con lo que ya usás: tu agenda, tu catálogo o tu planilla. No hace falta cambiar todo para empezar."
+        },
+        {
+          "title": "Para quién.",
+          "body": "Para negocios que reciben muchas consultas y no llegan a contestar a tiempo. Si tu equipo pierde horas en lo mismo todos los días, un bot bien armado libera esa carga."
+        }
+      ],
+      "ctaTitle": "¿Te llegan las mismas preguntas todo el día?",
+      "ctaDescription": "Contanos qué consultas te comen tiempo. Te respondemos con alcance y precio por escrito.",
+      "ctaButton": "Contanos tu problema"
+    },
+    "integraciones": {
+      "navLabel": "Integraciones",
+      "metaTitle": "Integraciones entre las herramientas que ya usás",
+      "metaDescription": "Conectamos WhatsApp, planillas y facturación entre sí. Cargás algo una vez y aparece donde tiene que estar. Alcance por escrito antes de arrancar.",
+      "h1": "Integraciones con lo que ya usás.",
+      "lead": "Conectamos WhatsApp, tus planillas y la facturación entre sí. Cargás algo una vez y aparece donde tiene que estar. Sin tirar abajo lo que hoy te funciona.",
+      "sections": [
+        {
+          "title": "Qué resolvemos.",
+          "body": "Datos que viajan a mano de un lado a otro: un pedido en WhatsApp que después cargás en la planilla, una venta que después facturás aparte. Unimos esas piezas para que el dato entre una sola vez."
+        },
+        {
+          "title": "Cómo lo encaramos.",
+          "body": "Partimos de las herramientas que ya usás. Si te sirven, las conectamos. Si hace falta reemplazar alguna, queda claro en la propuesta. El objetivo es menos fricción, no un sistema nuevo por el gusto de tenerlo."
+        },
+        {
+          "title": "Para quién.",
+          "body": "Para quien ya usa varias herramientas y pierde tiempo pasando la misma información de un lado a otro. Ideal si no querés cambiar todo de golpe."
+        }
+      ],
+      "ctaTitle": "¿Cargás lo mismo en tres lugares?",
+      "ctaDescription": "Contanos qué herramientas usás hoy. Te respondemos con alcance y precio por escrito.",
+      "ctaButton": "Contanos tu problema"
+    }
   }
 }
