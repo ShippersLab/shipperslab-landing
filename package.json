@@ -43,6 +43,7 @@
     "lefthook": "^2.1.14",
     "oxfmt": "^0.68.0",
     "oxlint": "^1.83.0",
+    "schema-dts": "^2.1.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
