@@ -7,18 +7,24 @@ import {
   GeistPixelTriangle,
 } from "geist/font/pixel";
 
-export const fontSans = Geist({
+const fontSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-export const fontMono = Geist_Mono({
+const fontMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
-export const fontPixelSquare = GeistPixelSquare;
-export const fontPixelCircle = GeistPixelCircle;
-export const fontPixelGrid = GeistPixelGrid;
-export const fontPixelTriangle = GeistPixelTriangle;
-export const fontPixelLine = GeistPixelLine;
+export const fontVariables = [
+  fontSans,
+  fontMono,
+  GeistPixelSquare,
+  GeistPixelCircle,
+  GeistPixelGrid,
+  GeistPixelTriangle,
+  GeistPixelLine,
+]
+  .map((font) => font.variable)
+  .join(" ");
