@@ -14,7 +14,7 @@
   },
   "hero": {
     "title": "Custom software for your business.",
-    "description": "Management systems, websites, WhatsApp bots and integrations for small businesses and shops. Built around how you work and connected to the tools you already use.",
+    "description": "Management systems, websites, WhatsApp bots and integrations for small businesses and shops. Built around how you work, connected to the tools you use.",
     "primaryCta": "Tell us your problem",
     "secondaryCta": "See services",
     "imageAlt": "Illustration of the Buenos Aires Obelisk on a wide avenue, in orange tones"
@@ -29,28 +29,29 @@
   "services": {
     "title": "What we do.",
     "description": "Every system is built around your business, your problems and your goals.",
+    "eventopsPreviewAlt": "Screenshot of the EventOps homepage",
     "items": [
       {
         "id": "systems",
-        "title": "Custom management systems",
+        "title": "Custom management\nsystems",
         "description": "Inventory, orders, sales or bookings in one system, built around how your business works. That is how we built {EventOps} for event companies.",
         "audience": "For small businesses with inventory, orders or bookings"
       },
       {
         "id": "presence",
-        "title": "Websites, booking and catalogs",
+        "title": "Websites, booking\nand catalogs",
         "description": "A website for your business, online booking or a catalog with WhatsApp ordering. Customers find you, see what you offer and get in touch.",
         "audience": "For shops and small businesses"
       },
       {
         "id": "bots",
-        "title": "WhatsApp bots and AI agents",
+        "title": "WhatsApp bots\nand AI agents",
         "description": "A bot that works your WhatsApp around the clock: it takes orders or books appointments. When something needs a person, it hands it to you.",
         "audience": "For businesses that handle customers on WhatsApp"
       },
       {
         "id": "integrations",
-        "title": "Integrations with your current tools",
+        "title": "Integrations with\nyour current tools",
         "description": "We connect WhatsApp, your spreadsheets and invoicing to each other. Enter something once and it shows up where it should.",
         "audience": "For teams juggling several tools"
       }

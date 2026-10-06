@@ -14,7 +14,7 @@
   },
   "hero": {
     "title": "Software a medida para tu negocio.",
-    "description": "Sistemas de gestión, webs, bots de WhatsApp e integraciones para pymes y comercios. Lo armamos para cómo trabajás y lo conectamos con lo que ya usás.",
+    "description": "Sistemas de gestión, webs, bots de WhatsApp e integraciones para pymes y comercios. Armado para cómo trabajás y conectado con lo que ya usás.",
     "primaryCta": "Contanos tu problema",
     "secondaryCta": "Ver servicios",
     "imageAlt": "Ilustración del Obelisco de Buenos Aires sobre una avenida amplia, en tonos naranja"
@@ -29,28 +29,29 @@
   "services": {
     "title": "Qué hacemos.",
     "description": "Cada sistema se arma para tu negocio, tus problemas y tus objetivos.",
+    "eventopsPreviewAlt": "Captura de la página de inicio de EventOps",
     "items": [
       {
         "id": "systems",
-        "title": "Sistemas de gestión a medida",
+        "title": "Sistemas de gestión\na medida",
         "description": "Stock, pedidos, caja o turnos en un solo sistema, armado para cómo trabaja tu negocio. Así hicimos {EventOps} para empresas de eventos.",
         "audience": "Para pymes con stock, pedidos o turnos"
       },
       {
         "id": "presence",
-        "title": "Webs, turneros y catálogos",
+        "title": "Webs, turneros\ny catálogos",
         "description": "Una web para tu negocio, un turnero online o un catálogo con pedido por WhatsApp. Tus clientes te encuentran, ven lo que ofrecés y te escriben.",
         "audience": "Para comercios y emprendedores"
       },
       {
         "id": "bots",
-        "title": "Bots de WhatsApp y agentes de IA",
+        "title": "Bots de WhatsApp\ny agentes de IA",
         "description": "Un bot que trabaja en tu WhatsApp a toda hora: toma pedidos o agenda turnos. Cuando algo necesita a una persona, te lo pasa.",
         "audience": "Para negocios que atienden por WhatsApp"
       },
       {
         "id": "integrations",
-        "title": "Integraciones con lo que ya usás",
+        "title": "Integraciones con\nlo que ya usás",
         "description": "Conectamos WhatsApp, tus planillas y la facturación entre sí. Cargás algo una vez y aparece donde tiene que estar.",
         "audience": "Para quien ya usa varias herramientas"
       }
