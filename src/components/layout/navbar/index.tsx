@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRef } from "react";
 
 import { useNavbarAnimation } from "@/components/layout/navbar/navbar.animation";
-import { TextureButton } from "@/components/ui/texture-button";
+import { TextureButton } from "@/components/ui/button/texture-button";
 import { useI18n } from "@/i18n/provider";
 import { site } from "@/lib/site";
 
@@ -23,9 +23,13 @@ export function Navbar() {
   return (
     <header
       ref={ref}
-      className="invisible relative z-20 mx-auto flex w-full max-w-content items-center justify-between gap-6 bg-paper px-4 py-4 md:px-8 lg:absolute lg:inset-x-0 lg:top-0 lg:bg-transparent"
+      className="invisible relative z-20 mx-auto flex w-full max-w-content items-center justify-between gap-6 bg-paper px-4 py-6 md:px-8 lg:absolute lg:inset-x-0 lg:top-0 lg:bg-transparent"
     >
-      <Link href="/" aria-label={site.name}>
+      <Link
+        href="/"
+        aria-label={site.name}
+        className="-m-2 rounded-md p-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+      >
         <Image
           src="/logo/accent.svg"
           alt="ShippersLab"
@@ -41,7 +45,7 @@ export function Navbar() {
           <a
             key={link.key}
             href={link.href}
-            className="text-sm text-ink/70 transition-colors duration-200 hover:text-ink"
+            className="-my-2 rounded-sm py-2 text-sm text-ink/70 transition-colors duration-200 ease-out hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
           >
             {messages.nav[link.key]}
           </a>
@@ -49,7 +53,7 @@ export function Navbar() {
 
         <Link
           href="/eventos"
-          className="text-sm text-ink/70 transition-colors duration-200 hover:text-ink"
+          className="-my-2 rounded-sm py-2 text-sm text-ink/70 transition-colors duration-200 ease-out hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
         >
           {messages.nav.events}
         </Link>
@@ -58,7 +62,7 @@ export function Navbar() {
       <div className="flex items-center gap-3">
         <Link
           href="/eventos"
-          className="text-sm text-ink/70 transition-colors duration-200 hover:text-ink md:hidden"
+          className="-my-2 rounded-sm py-2 text-sm text-ink/70 transition-colors duration-200 ease-out hover:text-ink md:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
         >
           {messages.nav.events}
         </Link>

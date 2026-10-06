@@ -6,8 +6,8 @@ import { useEffect, useId, useRef, useState } from "react";
 
 import { PlusIcon } from "@/components/ui/icons";
 import { Reveal } from "@/components/ui/animation/reveal";
-import { Section } from "@/components/ui/section";
-import { SectionHeading } from "@/components/ui/section-heading";
+import { Section } from "@/components/ui/section/section";
+import { SectionHeading } from "@/components/ui/section/section-heading";
 import { useI18n } from "@/i18n/provider";
 import { cn } from "@/lib/utils";
 
@@ -34,7 +34,7 @@ export function Faq() {
   return (
     <Section bordered>
       <div className="grid gap-10 lg:grid-cols-[2fr_3fr] lg:gap-16">
-        <div className="lg:sticky lg:top-24 lg:self-start">
+        <div className="w-full lg:sticky lg:top-24 lg:self-start">
           <motion.div
             ref={imageRef}
             initial={{ opacity: 0, filter: "blur(12px)" }}
@@ -44,7 +44,7 @@ export function Faq() {
                 : { opacity: 0, filter: "blur(12px)" }
             }
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="relative aspect-square overflow-hidden rounded-lg border border-border"
+            className="relative aspect-4/5 w-full overflow-hidden rounded-lg border border-border"
           >
             <div
               aria-hidden
@@ -58,7 +58,7 @@ export function Faq() {
               alt={messages.faq.imageAlt}
               fill
               sizes="(min-width: 1024px) 30vw, 100vw"
-              className="object-cover"
+              className="object-cover object-center"
               onLoad={() => setImageLoaded(true)}
             />
           </motion.div>
