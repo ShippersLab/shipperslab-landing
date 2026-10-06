@@ -18,16 +18,26 @@ function logoMask(src: string): CSSProperties {
   };
 }
 
-export function Companies({ delay = 0 }: { delay?: number }) {
+export function Companies({
+  delay = 0,
+  showTitle = true,
+}: {
+  delay?: number;
+  showTitle?: boolean;
+}) {
   const { messages } = useI18n();
 
   return (
     <>
-      <Reveal delay={delay * 1000} className="mt-16 sm:mt-20">
-        <p className="text-sm text-muted sm:text-base">{messages.trust.companiesTitle}:</p>
-      </Reveal>
+      {showTitle ? (
+        <Reveal delay={delay * 1000} className="mt-16 sm:mt-20">
+          <p className="text-sm text-muted sm:text-base">{messages.trust.companiesTitle}:</p>
+        </Reveal>
+      ) : null}
 
-      <ul className="mt-6 grid grid-cols-2 items-center gap-x-6 gap-y-6 sm:flex sm:flex-wrap sm:gap-x-12">
+      <ul
+        className={`${showTitle ? "mt-6" : "mt-0"} grid grid-cols-2 items-center gap-x-6 gap-y-6 sm:flex sm:flex-wrap sm:gap-x-12`}
+      >
         {companies.map((company, index) => (
           <Reveal key={company.name} as="li" delay={(0.05 + index * 0.05) * 1000}>
             {company.logo ? (

@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { Companies } from "@/components/sections/trust/companies";
 import { Reveal } from "@/components/ui/animation/reveal";
 import { WordReveal } from "@/components/ui/animation/word-reveal";
@@ -34,6 +36,15 @@ export function Trust() {
         />
 
         <Companies delay={COMPANIES_DELAY} />
+
+        <Reveal delay={120} className="mt-6">
+          <Link
+            href="/casos"
+            className="rounded-sm text-sm text-muted underline decoration-border underline-offset-4 transition-colors duration-200 ease-out hover:text-ink hover:decoration-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink sm:text-base"
+          >
+            {messages.trust.casosLink}
+          </Link>
+        </Reveal>
 
         <div className="mt-16 flex flex-col items-start gap-x-2 gap-y-3 sm:mt-20 sm:flex-row sm:flex-wrap sm:items-baseline">
           <WordReveal

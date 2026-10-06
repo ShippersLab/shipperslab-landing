@@ -39,6 +39,26 @@ export function Footer() {
                 />
               </Link>
               <p className="max-w-sm text-sm text-muted">{messages.footer.tagline}</p>
+              <nav className="flex flex-wrap gap-x-5 gap-y-2">
+                <Link
+                  href="/casos"
+                  className="rounded-sm text-sm text-muted transition-colors duration-200 ease-out hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+                >
+                  {messages.footer.casos}
+                </Link>
+                <Link
+                  href="/eventos"
+                  className="rounded-sm text-sm text-muted transition-colors duration-200 ease-out hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+                >
+                  {messages.nav.events}
+                </Link>
+                <Link
+                  href="/empecemos"
+                  className="rounded-sm text-sm text-muted transition-colors duration-200 ease-out hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+                >
+                  {messages.nav.contact}
+                </Link>
+              </nav>
             </div>
 
             <div className="flex items-center gap-6">

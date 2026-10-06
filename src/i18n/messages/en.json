@@ -10,7 +10,8 @@
     "about": "About",
     "events": "Events",
     "contact": "Contact",
-    "skip": "Skip to content"
+    "skip": "Skip to content",
+    "casos": "Work"
   },
   "hero": {
     "title": "Custom software for your business.",
@@ -24,7 +25,8 @@
     "description": "We are a small team. We come from large companies and from products built for clients abroad, and we work in Spanish and English.",
     "companiesTitle": "Our team has worked at",
     "ctaTitle": "Want to know if this makes sense for your business? Write to us and we will take a look.",
-    "ctaButton": "Write to hola@shipperslab.tech"
+    "ctaButton": "Write to hola@shipperslab.tech",
+    "casosLink": "See experience"
   },
   "services": {
     "title": "What we do.",
@@ -133,7 +135,11 @@
     "title": "Let's start.",
     "description": "Three steps, under a minute. We'll get back to you to set up a call.",
     "stepsLabel": "Form steps",
-    "steps": ["You", "Contact", "Your problem"],
+    "steps": [
+      "You",
+      "Contact",
+      "Your problem"
+    ],
     "fields": {
       "name": "Name",
       "namePlaceholder": "Your name",
@@ -197,12 +203,19 @@
       "instagram": "ShippersLab on Instagram (opens in a new tab)",
       "x": "ShippersLab on X (opens in a new tab)",
       "mail": "Email us at {email}"
-    }
+    },
+    "casos": "Work"
   },
   "events": {
     "title": "Still building.",
     "description": "We're putting together our first events: build nights, meetups, hackathons and talks. We're starting in Santa Fe, then the rest of the country.",
-    "formats": ["Build nights", "Meetups", "Hackathons", "Talks", "Coffee"],
+    "formats": [
+      "Build nights",
+      "Meetups",
+      "Hackathons",
+      "Talks",
+      "Coffee"
+    ],
     "sponsorTitle": "Want to sponsor or help us organize?",
     "sponsorDescription": "Any help counts: companies, developer tools, API credits or a hand with organizing. You don't need to be a big brand. If you're interested, write to us.",
     "cta": "Send a message",
@@ -241,5 +254,22 @@
     "title": "404",
     "description": "This page doesn't exist. Maybe it shipped and you missed it.",
     "cta": "Back to home"
+  },
+  "casos": {
+    "metaTitle": "Work and experience",
+    "metaDescription": "EventOps, our product in production for event companies, and team experience at Mercado Libre, PUMA, Coderhouse and NFTYDoor.",
+    "title": "Work and experience.",
+    "description": "We do not publish named client case studies yet. What we can show: an own product in production and where the team's experience comes from.",
+    "eventops": {
+      "eyebrow": "Own product",
+      "title": "EventOps",
+      "body": "A management system for event companies, in production. It keeps day-to-day operations in order: we built it and keep evolving it. It is the clearest proof of how we approach custom software.",
+      "linkLabel": "See EventOps"
+    },
+    "companiesHeading": "Where the team comes from.",
+    "companiesDescription": "Engineers and designers who worked at large companies and on products for clients abroad. These brands are former employers of the team, not ShippersLab clients.",
+    "ctaTitle": "Want to see if this fits your business?",
+    "ctaDescription": "Tell us what takes your time or what you want to organize. We reply with scope and price in writing.",
+    "ctaButton": "Tell us your problem"
   }
 }
