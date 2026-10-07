@@ -212,7 +212,7 @@
     }
   },
   "events": {
-    "title": "Still building.",
+    "title": "Tech events in Argentina: build nights, meetups and hackathons",
     "description": "We're putting together our first events: build nights, meetups, hackathons and talks. We're starting in Santa Fe, then the rest of the country.",
     "formats": ["Build nights", "Meetups", "Hackathons", "Talks", "Coffee"],
     "sponsorTitle": "Want to sponsor or help us organize?",
@@ -255,7 +255,7 @@
     "cta": "Back to home"
   },
   "casos": {
-    "metaTitle": "Work and experience",
+    "metaTitle": "Custom software case studies: EventOps and more",
     "metaDescription": "EventOps, our product in production for event companies, and team experience at Mercado Libre, PUMA, Coderhouse and NFTYDoor.",
     "title": "Work and experience.",
     "description": "We do not publish named client case studies yet. What we can show: an own product in production and where the team's experience comes from.",
