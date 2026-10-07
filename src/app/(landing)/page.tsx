@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+
 import { JsonLd } from "@/components/seo/json-ld";
 import { Contact } from "@/components/sections/contact";
 import { Faq } from "@/components/sections/faq";
@@ -6,6 +8,12 @@ import { Process } from "@/components/sections/process";
 import { Services } from "@/components/sections/services";
 import { Trust } from "@/components/sections/trust";
 import { homeStructuredData } from "@/lib/seo/structured-data";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   return (

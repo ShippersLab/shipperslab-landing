@@ -212,7 +212,7 @@
     }
   },
   "events": {
-    "title": "Todavía construyendo.",
+    "title": "Eventos de tecnología en Argentina: build nights, meetups y hackathons",
     "description": "Estamos armando nuestros primeros eventos: build nights, meetups, hackathons y charlas. Arrancamos en Santa Fe y después vamos por el resto del país.",
     "formats": ["Build nights", "Meetups", "Hackathons", "Charlas", "Café"],
     "sponsorTitle": "¿Querés ser sponsor o ayudarnos a organizar?",
@@ -255,7 +255,7 @@
     "cta": "Volver al inicio"
   },
   "casos": {
-    "metaTitle": "Casos y experiencia",
+    "metaTitle": "Casos de software a medida: EventOps y más",
     "metaDescription": "EventOps, nuestro producto en producción para empresas de eventos, y la experiencia del equipo en Mercado Libre, PUMA, Coderhouse y NFTYDoor.",
     "title": "Casos y experiencia.",
     "description": "Todavía no publicamos casos de clientes con nombre. Lo que sí podemos mostrar: un producto propio en producción y de dónde viene la experiencia del equipo.",
