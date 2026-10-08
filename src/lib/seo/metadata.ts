@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
     default: TITLE,
-    template: `${site.name} | %s`,
+    template: `%s | ${site.name}`,
   },
   description: DESCRIPTION,
   applicationName: site.name,

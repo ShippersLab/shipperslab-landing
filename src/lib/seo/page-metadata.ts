@@ -11,7 +11,7 @@ type PageMetadataInput = {
 export function buildPageMetadata({ title, description, path }: PageMetadataInput): Metadata {
   const url = `${site.url}${path}`;
   const images = [{ url: `${site.url}/opengraph-image.jpg`, width: 1200, height: 630 }];
-  const fullTitle = `${site.name} | ${title}`;
+  const fullTitle = `${title} | ${site.name}`;
 
   return {
     title,
