@@ -8,13 +8,11 @@ import { DiaTextReveal } from "@/components/ui/animation/dia-text-reveal";
 import { Container } from "@/components/ui/section/container";
 import { ArrowRightIcon } from "@/components/ui/icons";
 import { TextureButton } from "@/components/ui/button/texture-button";
-import { useHeroAnimation } from "@/components/sections/hero/hero.animation";
+import { HERO_TITLE_DELAY, useHeroAnimation } from "@/components/sections/hero/hero.animation";
 import { useI18n } from "@/i18n/provider";
 
 const HERO_BLUR_DATA_URL =
   "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4pLSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUk//2wBDAQ4ODhMREyYVFSZPNS01T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0//wAARCAAHABADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDs4tURsedGyEdehzS3eqLF8sMbO3qcAUUVye1lY9H6vT5tj//Z";
-
-const HERO_TITLE_DELAY = 0.25;
 
 export function Hero() {
   const { messages } = useI18n();
@@ -33,11 +31,12 @@ export function Hero() {
         alt={messages.hero.imageAlt}
         width={1920}
         height={822}
-        priority
-        quality={90}
+        loading="eager"
+        fetchPriority="high"
+        quality={75}
         placeholder="blur"
         blurDataURL={HERO_BLUR_DATA_URL}
-        className="hero-image invisible mt-10 aspect-4/3 w-full object-cover object-center select-none sm:aspect-8/3 sm:object-top lg:mt-0 lg:max-h-[calc(100svh-15rem)]"
+        className="mt-10 aspect-4/3 w-full object-cover object-center select-none sm:aspect-8/3 sm:object-top lg:mt-0 lg:max-h-[calc(100svh-15rem)]"
         sizes="100vw"
       />
 
