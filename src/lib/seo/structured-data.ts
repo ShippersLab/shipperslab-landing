@@ -1,8 +1,10 @@
-import type { FAQPage, Graph, Organization, WebSite } from "schema-dts";
+import type { BreadcrumbList, FAQPage, Graph, Organization, Service, WebSite } from "schema-dts";
 
 import es from "@/i18n/messages/es.json";
 import { DESCRIPTION } from "@/lib/seo/metadata";
 import { plainText, singleLine } from "@/lib/seo/text";
+import type { ServiceSlug } from "@/lib/services";
+import { serviceRoutes } from "@/lib/services";
 import { site } from "@/lib/site";
 
 const ORGANIZATION_ID = `${site.url}/#organization`;
@@ -77,3 +79,36 @@ export const homeStructuredData: Graph = {
   "@context": "https://schema.org",
   "@graph": [organization, website, faqPage],
 };
+
+export function buildServiceStructuredData(slug: ServiceSlug): Graph {
+  const page = es.servicePages[slug];
+  const route = serviceRoutes.find((item) => item.slug === slug);
+  const item = es.services.items.find((service) => service.id === route?.id);
+  const url = `${site.url}/${slug}`;
+
+  const service: Service = {
+    "@type": "Service",
+    "@id": `${url}#service`,
+    name: item ? singleLine(item.title) : page.navLabel,
+    description: page.metaDescription,
+    serviceType: page.navLabel,
+    url,
+    areaServed: { "@type": "Country", name: "Argentina" },
+    ...(item && { audience: { "@type": "BusinessAudience", audienceType: item.audience } }),
+    provider: { "@type": "Organization", "@id": ORGANIZATION_ID, name: site.name, url: site.url },
+  };
+
+  const breadcrumb: BreadcrumbList = {
+    "@type": "BreadcrumbList",
+    "@id": `${url}#breadcrumb`,
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Inicio", item: site.url },
+      { "@type": "ListItem", position: 2, name: page.navLabel, item: url },
+    ],
+  };
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [service, breadcrumb],
+  };
+}

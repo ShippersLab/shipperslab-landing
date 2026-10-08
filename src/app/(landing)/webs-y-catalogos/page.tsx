@@ -1,6 +1,8 @@
+import { JsonLd } from "@/components/seo/json-ld";
 import { ServicePage } from "@/components/sections/service-page";
 import { getMessages } from "@/i18n/get-messages";
 import { buildPageMetadata } from "@/lib/seo/page-metadata";
+import { buildServiceStructuredData } from "@/lib/seo/structured-data";
 
 const SLUG = "webs-y-catalogos" as const;
 const messages = getMessages("es").servicePages[SLUG];
@@ -12,5 +14,10 @@ export const metadata = buildPageMetadata({
 });
 
 export default function WebsYCatalogosPage() {
-  return <ServicePage slug={SLUG} />;
+  return (
+    <>
+      <JsonLd data={buildServiceStructuredData(SLUG)} />
+      <ServicePage slug={SLUG} />
+    </>
+  );
 }

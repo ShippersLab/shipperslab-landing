@@ -15,7 +15,7 @@ export { metadata } from "@/lib/seo/metadata";
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="es" className={`${fontVariables} antialiased`}>
+    <html lang="es-AR" className={`${fontVariables} antialiased`}>
       <head>
         <noscript>
           <style>{".invisible{visibility:visible !important}"}</style>
