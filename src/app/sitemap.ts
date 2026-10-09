@@ -1,41 +1,29 @@
 import type { MetadataRoute } from "next";
 
-import { serviceRoutes } from "@/lib/services";
 import { site } from "@/lib/site";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+type SitemapRoute = {
+  path: string;
+  lastModified: string;
+  priority: number;
+};
 
-  return [
-    {
-      url: site.url,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 1,
-    },
-    {
-      url: `${site.url}/casos`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${site.url}/empecemos`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    ...serviceRoutes.map((route) => ({
-      url: `${site.url}/${route.slug}`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.85,
-    })),
-    {
-      url: `${site.url}/eventos`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-  ];
+const routes: SitemapRoute[] = [
+  { path: "", lastModified: "2026-10-07", priority: 1 },
+  { path: "/casos", lastModified: "2026-10-07", priority: 0.8 },
+  { path: "/empecemos", lastModified: "2026-10-07", priority: 0.9 },
+  { path: "/sistemas-de-gestion", lastModified: "2026-10-08", priority: 0.85 },
+  { path: "/webs-y-catalogos", lastModified: "2026-10-08", priority: 0.85 },
+  { path: "/bots-con-ia", lastModified: "2026-10-08", priority: 0.85 },
+  { path: "/integraciones", lastModified: "2026-10-08", priority: 0.85 },
+  { path: "/eventos", lastModified: "2026-10-07", priority: 0.8 },
+];
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  return routes.map((route) => ({
+    url: `${site.url}${route.path}`,
+    lastModified: route.lastModified,
+    changeFrequency: "monthly",
+    priority: route.priority,
+  }));
 }
