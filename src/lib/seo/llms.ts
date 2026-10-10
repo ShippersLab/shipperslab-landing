@@ -1,6 +1,6 @@
 import es from "@/i18n/messages/es.json";
 import { plainText, singleLine } from "@/lib/seo/text";
-import { getServiceHref } from "@/lib/services";
+import { getServiceHref, serviceRoutes } from "@/lib/services";
 import { site } from "@/lib/site";
 
 const SUMMARY =
@@ -49,6 +49,11 @@ export function buildLlmsTxt() {
     `Experiencia: ${EXPERIENCE}`,
     `Preguntas frecuentes:\n\n${faq.join("\n")}`,
     `## Servicios\n\n${services.join("\n")}`,
+    ...serviceRoutes.map((route) => {
+      const page = es.servicePages[route.slug];
+      const items = page.faq.items.map((item) => `- ${item.question} ${item.answer}`);
+      return `### ${page.navLabel}: preguntas frecuentes\n\n${items.join("\n")}`;
+    }),
     `## Contacto\n\n${[
       link("Contanos tu problema", `${site.url}/empecemos`, "formulario para empezar un proyecto"),
       link("Email", `mailto:${site.emails.contact}`, site.emails.contact),

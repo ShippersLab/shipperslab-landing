@@ -107,8 +107,20 @@ export function buildServiceStructuredData(slug: ServiceSlug): Graph {
     ],
   };
 
+  const faq: FAQPage = {
+    "@type": "FAQPage",
+    "@id": `${url}#faq`,
+    isPartOf: { "@id": WEBSITE_ID },
+    inLanguage: "es-AR",
+    mainEntity: page.faq.items.map((faqItem) => ({
+      "@type": "Question",
+      name: faqItem.question,
+      acceptedAnswer: { "@type": "Answer", text: faqItem.answer },
+    })),
+  };
+
   return {
     "@context": "https://schema.org",
-    "@graph": [service, breadcrumb],
+    "@graph": [service, breadcrumb, faq],
   };
 }

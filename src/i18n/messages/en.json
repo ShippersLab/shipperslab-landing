@@ -347,13 +347,67 @@
         },
         {
           "title": "A real example: EventOps.",
-          "body": "That is how we built EventOps for event companies: our own product in production that keeps day-to-day operations in order. Every business is different, but the approach is the same: understand how you work and build around that."
+          "body": "That is how we built EventOps for event companies, our own product in production. Each event is entered once, and the calendar, the quote, deposits and installments, expenses and who from the crew works each date all come from it. Every business is different, but the approach is the same: understand how you work and build around that.",
+          "link": {
+            "label": "See the EventOps case",
+            "href": "/casos/eventops"
+          }
         },
         {
           "title": "Who it is for.",
           "body": "For small businesses with inventory, orders or bookings that still run on Excel, WhatsApp or an old system. If the owner or ops lead feels they waste time entering the same data twice, we start there."
         }
       ],
+      "examples": {
+        "title": "What it looks like in different businesses.",
+        "items": [
+          {
+            "title": "Distributor or wholesaler",
+            "body": "Orders come in over WhatsApp, inventory lives in an Excel file and nobody is quite sure what is in the warehouse. An inventory and sales system can update stock when an order is confirmed and show you what to restock before you run out."
+          },
+          {
+            "title": "Appointment-based business",
+            "body": "In a clinic, a repair shop or a beauty salon, the schedule often lives in a notebook or on one person's phone. A booking system brings together the team's calendar, each client's history and the day's payments."
+          },
+          {
+            "title": "Event company",
+            "body": "Dates, crew and payments spread across chats and spreadsheets. That is what EventOps solves: a calendar with site visits, setup and teardown, clients with their history, crew assigned per date and each month's results."
+          }
+        ]
+      },
+      "process": {
+        "title": "How we work and how we quote.",
+        "paragraphs": [
+          "We start with a conversation to understand how you work today: what gets entered, who enters it and where things get stuck. Then we send you a written proposal with what is in, what is out, what it costs and when it will be ready.",
+          "If the system is large, we split it into stages and start with what hurts most, like inventory or orders. Every week you see a working piece and try it with your team. Then we roll it out with you and adjust it based on real use.",
+          "Price and timeline depend on how many parts the system has and what it needs to connect to. If you already pay for hosting or other services, we use them. If not, we handle them and charge their cost plus a management fee."
+        ]
+      },
+      "faq": {
+        "title": "Questions about management systems.",
+        "items": [
+          {
+            "question": "Should I get a custom system or an off-the-shelf one?",
+            "answer": "If an off-the-shelf system fits how you work, it may be enough. A custom system makes sense when your operation has its own steps that packaged software does not cover, or when you end up using three programs and a spreadsheet to fill the gaps. In the first conversation we tell you what we think fits your case."
+          },
+          {
+            "question": "I run everything on Excel today. What happens to that data?",
+            "answer": "We start from there. We move your product, client or order spreadsheets into the new system, and that is planned in the proposal. If a spreadsheet still works for you, we can keep it connected."
+          },
+          {
+            "question": "Will my team be able to use it?",
+            "answer": "We build it around how your team works, and they test it every week while it is being built. If you want, we add a training session so everyone can use it from day one."
+          },
+          {
+            "question": "Who owns the system, and what happens to my data?",
+            "answer": "Your data is confidential and we do not use it for anything else. Code ownership depends on the project: a system built for your business works differently from using one of our own products like EventOps. It is spelled out in the proposal before we start."
+          },
+          {
+            "question": "What happens after delivery?",
+            "answer": "If a bug turns up on our side, we fix it under warranty. You can also add maintenance for changes and improvements. It is optional, and the project costs less without it."
+          }
+        ]
+      },
       "ctaTitle": "Has your operation outgrown a spreadsheet?",
       "ctaDescription": "Tell us how you work today. We reply with scope and price in writing before we start.",
       "ctaButton": "Tell us your problem"
@@ -378,6 +432,56 @@
           "body": "For shops and small businesses that need customers to find them online, book a slot or order on WhatsApp without jumping through hoops."
         }
       ],
+      "examples": {
+        "title": "What we can build for each business.",
+        "items": [
+          {
+            "title": "Shop with products",
+            "body": "An online catalog with photos, prices and a button to order on WhatsApp. The order reaches you ready, with items and quantities, and you close the sale in the chat the way you already do."
+          },
+          {
+            "title": "Appointment-based business",
+            "body": "For a hair salon, a clinic or a repair shop, an online booking page lets clients see open slots and book on their own, any time. You see the day's schedule without coordinating by message."
+          },
+          {
+            "title": "Service business",
+            "body": "A website that explains what you do, shows your work and has a form or WhatsApp button to request a quote. It is what people find when they search for you on Google after someone recommended you."
+          }
+        ]
+      },
+      "process": {
+        "title": "How we work and what it costs.",
+        "paragraphs": [
+          "First we look at what you want people to do when they land: message you, book or order. From there we define which pages you need and send you a written proposal with price and delivery date.",
+          "If you need help with the copy, we write it with you. Photos work best when they are yours, since nobody knows your brand better. If you do not have any, they can be generated with AI. The site ships with the basics Google needs to understand it: a title and description on every page and fast loading on mobile.",
+          "Price and timeline depend on how many pages and features it needs. If you already have a domain and hosting, we use them. If not, we handle them and charge their cost plus a management fee."
+        ]
+      },
+      "faq": {
+        "title": "Questions about websites, booking pages and catalogs.",
+        "items": [
+          {
+            "question": "Can I update prices and products myself?",
+            "answer": "We can add a dashboard so you can edit prices, photos and products without depending on anyone. We define it in the proposal based on how often your catalog changes."
+          },
+          {
+            "question": "How is this different from opening a store on an e-commerce platform?",
+            "answer": "E-commerce platforms make sense if you want checkout with a cart and automated shipping. If your customers already buy from you on WhatsApp, a catalog with WhatsApp ordering is usually simpler: they pick, message you with the order ready, and you keep selling the way you always have. We help you figure out which one fits."
+          },
+          {
+            "question": "Can the booking page send reminders?",
+            "answer": "It can be included. Reminders, cancellations and rescheduling are defined in the proposal based on what your business needs."
+          },
+          {
+            "question": "Will the site show up on Google?",
+            "answer": "We build it so Google can read it properly: every page with its own title, description and content, and fast on mobile. Ranking high takes time and depends on how many people search for what you offer. We do not promise rankings."
+          },
+          {
+            "question": "I already have an old website. Do you rebuild it or fix it?",
+            "answer": "It depends on how it was built. We take a look, and if improving it makes more sense than starting over, we say so in the proposal."
+          }
+        ]
+      },
       "ctaTitle": "Can customers not find you online?",
       "ctaDescription": "Tell us what you want to show or sell. We reply with scope and price in writing.",
       "ctaButton": "Tell us your problem"
@@ -402,6 +506,56 @@
           "body": "For businesses that get a lot of questions and cannot reply on time. If your team spends hours on the same answers every day, a well-built bot takes that load off."
         }
       ],
+      "examples": {
+        "title": "What a bot can do for your business.",
+        "items": [
+          {
+            "title": "Shop that sells on WhatsApp",
+            "body": "People ask all day whether something is in stock, how much it costs and whether you ship. A bot can answer with your catalog and prices, take the order and pass it to you to close payment or arrange delivery."
+          },
+          {
+            "title": "Appointment-based business",
+            "body": "The bot shows open slots, books the appointment and confirms it on WhatsApp. If someone asks for something unusual, it lets you know so you can reply yourself."
+          },
+          {
+            "title": "Event company",
+            "body": "Inquiries about dates and quotes arrive after hours. The bot collects the basics, like date, venue, guest count and service, and leaves the inquiry ready for you to quote."
+          }
+        ]
+      },
+      "process": {
+        "title": "How we build it and how we quote.",
+        "paragraphs": [
+          "We start by looking at the messages you get today: which ones repeat, which ones a bot could answer and which ones still need a person. From there we define what the bot does, where it gets its information and when it hands off to you.",
+          "Before it talks to customers, you and your team test it and we adjust the answers. After launch we review real conversations and fix whatever needs fixing.",
+          "The proposal is in writing, with price and timeline based on scope. A bot runs on external services, like the WhatsApp API and an AI model. If you already have those accounts, we use them. If not, we handle them and charge their cost plus a management fee, which depends on how many messages the bot handles."
+        ]
+      },
+      "faq": {
+        "title": "Questions about bots and AI agents.",
+        "items": [
+          {
+            "question": "Does it work with my current WhatsApp number?",
+            "answer": "It depends on how you use that number today. We assess each case and walk you through the options before we start."
+          },
+          {
+            "question": "What if the bot says something wrong?",
+            "answer": "The bot answers with the information we give it: your prices, your hours, your catalog. If it does not know something, it says so and hands the conversation to you. You test it before your customers ever see it."
+          },
+          {
+            "question": "What is the difference between a bot and an AI agent?",
+            "answer": "A bot follows a set path, with menus, options and fixed answers. An AI agent understands what the customer writes in their own words and can take actions, like checking your stock or booking an appointment. We use AI where it helps resolve the request, and a simple bot when that is enough."
+          },
+          {
+            "question": "Can I see the conversations and reply myself?",
+            "answer": "It can be added depending on the project, for example an inbox to review what the bot said or a direct handoff to your WhatsApp. We define it in the proposal."
+          },
+          {
+            "question": "Does it replace my support team?",
+            "answer": "It takes care of the repetitive questions so your team can focus on what needs a person: a complaint, a large sale, a special case."
+          }
+        ]
+      },
       "ctaTitle": "Do the same questions land all day?",
       "ctaDescription": "Tell us which questions eat your time. We reply with scope and price in writing.",
       "ctaButton": "Tell us your problem"
@@ -426,6 +580,56 @@
           "body": "For teams juggling several tools and losing time moving the same information around. Ideal if you do not want to change everything at once."
         }
       ],
+      "examples": {
+        "title": "Integrations we see often.",
+        "items": [
+          {
+            "title": "Shop that takes Mercado Pago",
+            "body": "Every sale is logged by hand in a spreadsheet and invoiced separately later. We connect Mercado Pago to your spreadsheet and to ARCA electronic invoicing, so each sale is recorded and invoiced without entering it again."
+          },
+          {
+            "title": "Tiendanube store with a physical shop",
+            "body": "Online and in-store inventory do not match, and you sell products you do not have. We keep stock in sync between the two."
+          },
+          {
+            "title": "Service business with forms",
+            "body": "Requests come in through a form or by email, and someone copies them by hand into Google Sheets or the CRM. We make each request land where it belongs on its own and notify whoever handles it."
+          }
+        ]
+      },
+      "process": {
+        "title": "How we work and how we quote.",
+        "paragraphs": [
+          "First we map how data moves today: where it comes in, where it gets copied and where it gets lost. That shows us which connection saves you the most work, and we start there.",
+          "Often one or two integrations are enough to take the heaviest load off. If along the way we see that a management system makes sense, we tell you, but you do not need one to get started.",
+          "The proposal is in writing: what gets connected, what happens if something fails, what it costs and when it will be ready. Some tools charge for their own usage. If you already have the accounts, we use them. If not, we handle them and charge their cost plus a management fee."
+        ]
+      },
+      "faq": {
+        "title": "Questions about integrations.",
+        "items": [
+          {
+            "question": "Which tools can you connect?",
+            "answer": "WhatsApp, Google Sheets, Mercado Pago, Tiendanube, ARCA electronic invoicing and CRMs, among other tools that offer a way to connect from outside (an API). If yours does not, we look at it in our first conversation and tell you the alternatives."
+          },
+          {
+            "question": "Can you connect ARCA (formerly AFIP) electronic invoicing?",
+            "answer": "Yes. We connect your sales to ARCA so each invoice is issued without entering it by hand. In our first conversation we go over which account details are needed and help you set them up."
+          },
+          {
+            "question": "What happens if an integration breaks?",
+            "answer": "We build every integration to alert you when something fails. If the bug is ours, we fix it. If an external tool you chose changes how it connects, the adjustment is on you, unless you have a maintenance plan with us."
+          },
+          {
+            "question": "Should I do this or build a new system?",
+            "answer": "If what you use today works and the problem is moving data by hand, connecting is usually faster and cheaper. If your tools no longer give you what you need, a management system may make more sense. We tell you in the first conversation."
+          },
+          {
+            "question": "Can't I just do this myself with Zapier or Make?",
+            "answer": "For simple connections, yes, and sometimes that is what we recommend. When there are rules specific to your business, many steps or high volume, it pays to have something custom built that you can control."
+          }
+        ]
+      },
       "ctaTitle": "Entering the same data in three places?",
       "ctaDescription": "Tell us which tools you use today. We reply with scope and price in writing.",
       "ctaButton": "Tell us your problem"
