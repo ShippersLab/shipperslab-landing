@@ -269,21 +269,21 @@
       "summary": "Calendar, staff and finances for your events company.",
       "tags": ["Event management", "B2B"],
       "metaTitle": "EventOps: management system for event companies",
-      "metaDescription": "EventOps brings the calendar, staff and finances of an event company into one system. A ShippersLab own product, in production.",
+      "metaDescription": "EventOps brings the calendar, clients, staff and finances of an event company into a single system. A ShippersLab own product, in production.",
       "visitLabel": "Visit EventOps",
       "featuresTitle": "What it includes.",
       "features": [
         {
           "title": "Finances",
-          "body": "Income, expenses and the month's net with its chart, and every movement tied to its event. Export everything to CSV."
+          "body": "Income, expenses and the month's result in a single dashboard, with every movement tied to its event. Everything can be exported to CSV."
         },
         {
           "title": "Calendar",
-          "body": "The month, week or day's events in one view, with the site visit, setup, sound check and teardown of each one."
+          "body": "All events for the month, week or day in a single view, with the site visit, setup, sound check and teardown of each one."
         },
         {
           "title": "Clients",
-          "body": "Every client with their contact, where they came from and their next event. Couples, companies and venues in one place."
+          "body": "Each client with their contact details, their source and their next event. Individuals, companies and venues in a single record."
         }
       ],
       "galleryTitle": "Gallery",
@@ -296,12 +296,12 @@
         "EventOps finances dashboard"
       ],
       "eyebrow": "Own product",
-      "lead": "The calendar, staff and finances of an event company in one system. We built it, it is in production and we keep evolving it.",
+      "lead": "The calendar, clients, staff and finances of your event company in a single system. A ShippersLab own product, in production.",
       "backLabel": "All projects",
       "factsLabel": "Project details",
       "facts": [
         {
-          "label": "Type",
+          "label": "Project",
           "value": "Own product"
         },
         {
@@ -309,18 +309,18 @@
           "value": "In production"
         },
         {
-          "label": "For",
+          "label": "Built for",
           "value": "Sound, lighting and event companies"
         },
         {
           "label": "Service",
-          "value": "Custom management systems"
+          "value": "Custom management system"
         }
       ],
-      "overviewTitle": "What it solves.",
-      "overview": "An event company juggles dates, staff and money across loose spreadsheets. EventOps puts it in one place: which events are coming, who goes to each one and whether the business is making money.",
-      "approachTitle": "How we approached it.",
-      "approach": "We start from how the business works and build only what is needed. It is the clearest proof of how we approach custom software."
+      "overviewTitle": "The problem.",
+      "overview": "An event company handles dates, teams, clients and payments all at once. When that information is scattered across spreadsheets and messages, it is easy for two events to overlap, for staff to be missing, or for nobody to know exactly how much money came in and how much is still owed.",
+      "approachTitle": "How we solve it.",
+      "approach": "EventOps brings the whole operation into a single system. Each event has its client, its team and its money movements, and the calendar shows at a glance what needs to happen and when. We designed it around how an event company works, so everyone always sees the same information."
     },
     "soon": {
       "label": "Coming soon",

@@ -87,9 +87,14 @@ export function ProjectDetail() {
         <Reveal className="mt-16 sm:mt-20">
           <div className="grid gap-6 border-t border-border pt-10 lg:grid-cols-[1fr_2fr] lg:gap-16">
             <h2 className="text-2xl text-ink sm:text-3xl">{page.overviewTitle}</h2>
-            <p className="max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
-              {page.overview}
-            </p>
+            <p className="max-w-2xl text-base leading-relaxed text-muted">{page.overview}</p>
+          </div>
+        </Reveal>
+
+        <Reveal className="mt-16 sm:mt-20">
+          <div className="grid gap-6 border-t border-border pt-10 lg:grid-cols-[1fr_2fr] lg:gap-16">
+            <h2 className="text-2xl text-ink sm:text-3xl">{page.approachTitle}</h2>
+            <p className="max-w-2xl text-base leading-relaxed text-muted">{page.approach}</p>
           </div>
         </Reveal>
 
@@ -108,15 +113,6 @@ export function ProjectDetail() {
             ))}
           </ul>
         </div>
-
-        <Reveal className="mt-16 sm:mt-20">
-          <div className="grid gap-6 border-t border-border pt-10 lg:grid-cols-[1fr_2fr] lg:gap-16">
-            <h2 className="text-2xl text-ink sm:text-3xl">{page.approachTitle}</h2>
-            <p className="max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
-              {page.approach}
-            </p>
-          </div>
-        </Reveal>
       </Container>
 
       <div className="border-t border-border py-16 sm:py-24">

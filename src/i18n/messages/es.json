@@ -269,21 +269,21 @@
       "summary": "Calendario, personal y finanzas de tu empresa de eventos.",
       "tags": ["Gestión de eventos", "B2B"],
       "metaTitle": "EventOps: sistema de gestión para empresas de eventos",
-      "metaDescription": "EventOps junta el calendario, el personal y las finanzas de una empresa de eventos en un solo sistema. Producto propio de ShippersLab, en producción.",
+      "metaDescription": "EventOps reúne el calendario, los clientes, el personal y las finanzas de una empresa de eventos en un único sistema. Producto propio de ShippersLab, en producción.",
       "visitLabel": "Visitar EventOps",
       "featuresTitle": "Qué incluye.",
       "features": [
         {
           "title": "Finanzas",
-          "body": "Ingresos, egresos y neto del mes con su gráfico, y cada movimiento ligado a su evento. Exportás todo a CSV."
+          "body": "Ingresos, egresos y resultado del mes en un solo panel, con cada movimiento asociado a su evento. Toda la información se puede exportar a CSV."
         },
         {
           "title": "Calendario",
-          "body": "Los eventos del mes, la semana o el día en una sola vista, con la visita técnica, el montaje, la prueba de sonido y el desmontaje de cada uno."
+          "body": "Todos los eventos del mes, la semana o el día en una sola vista, con la visita técnica, el montaje, la prueba de sonido y el desmontaje de cada uno."
         },
         {
           "title": "Clientes",
-          "body": "Cada cliente con su contacto, de dónde llegó y su próximo evento. Parejas, empresas y salones en un solo lugar."
+          "body": "Cada cliente con sus datos de contacto, su origen y su próximo evento. Particulares, empresas y salones en un único registro."
         }
       ],
       "galleryTitle": "Galería",
@@ -296,12 +296,12 @@
         "Panel de finanzas de EventOps"
       ],
       "eyebrow": "Producto propio",
-      "lead": "Calendario, personal y finanzas de una empresa de eventos en un solo sistema. Lo armamos nosotros, está en producción y lo seguimos evolucionando.",
+      "lead": "Calendario, clientes, personal y finanzas de tu empresa de eventos en un único sistema. Un producto propio de ShippersLab, en producción.",
       "backLabel": "Todos los casos",
       "factsLabel": "Datos del proyecto",
       "facts": [
         {
-          "label": "Tipo",
+          "label": "Proyecto",
           "value": "Producto propio"
         },
         {
@@ -309,18 +309,18 @@
           "value": "En producción"
         },
         {
-          "label": "Para",
+          "label": "Pensado para",
           "value": "Empresas de sonido, iluminación y eventos"
         },
         {
           "label": "Servicio",
-          "value": "Sistemas de gestión a medida"
+          "value": "Sistema de gestión a medida"
         }
       ],
-      "overviewTitle": "Qué resuelve.",
-      "overview": "Una empresa de eventos coordina fechas, personal y plata en planillas sueltas. EventOps lo junta en un solo lugar: qué eventos hay, quién va a cada uno y si el negocio está ganando.",
-      "approachTitle": "Cómo lo encaramos.",
-      "approach": "Partimos de cómo trabaja el negocio y armamos solo lo que hace falta. Es la prueba más concreta de cómo encaramos un sistema a medida."
+      "overviewTitle": "El problema.",
+      "overview": "Una empresa de eventos maneja a la vez fechas, equipos, clientes y pagos. Cuando esa información está repartida en planillas y mensajes, es fácil que dos eventos se superpongan, que falte personal o que nadie sepa con certeza cuánto dinero ingresó y cuánto queda por cobrar.",
+      "approachTitle": "Cómo lo solucionamos.",
+      "approach": "EventOps reúne toda la operación en un único sistema. Cada evento tiene su cliente, su equipo y sus movimientos de dinero, y el calendario muestra de un vistazo qué hay que hacer y cuándo. Lo diseñamos a partir de cómo trabaja una empresa de eventos, para que todos vean siempre la misma información."
     },
     "soon": {
       "label": "Próximamente",
