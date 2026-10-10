@@ -23,7 +23,7 @@ const MAX_ANIMATED_WORDS = 12;
 
 const word: Variants = {
   hidden: { opacity: 0, transform: "translateY(16px)" },
-  visible: { opacity: 1, transform: "translateY(0px)", transition: { duration: 0.35, ease: EASE } },
+  visible: { opacity: 1, transform: "translateY(0px)", transition: { duration: 0.7, ease: EASE } },
 };
 
 const block: Variants = {
@@ -47,7 +47,7 @@ export function WordReveal({ text, as = "p", className, delay = 0 }: WordRevealP
   const container = useMemo<Variants>(
     () => ({
       hidden: {},
-      visible: { transition: { staggerChildren: 0.02, delayChildren: delay } },
+      visible: { transition: { staggerChildren: 0.04, delayChildren: delay } },
     }),
     [delay],
   );
@@ -76,7 +76,7 @@ export function WordReveal({ text, as = "p", className, delay = 0 }: WordRevealP
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={block}
-        transition={{ duration: 0.35, delay, ease: EASE }}
+        transition={{ duration: 0.7, delay, ease: EASE }}
       >
         {text}
       </MotionTag>

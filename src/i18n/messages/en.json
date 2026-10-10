@@ -193,7 +193,7 @@
     "stepAnnouncement": "Step {step} of {total}: {title}"
   },
   "footer": {
-    "tagline": "Management systems, websites, AI bots and integrations for small businesses and shops. A small team of engineers and designers from Argentina.",
+    "tagline": "Systems, websites, bots and integrations for small businesses and shops. A small team from Argentina.",
     "legal": "Made in Argentina.",
     "social": {
       "instagram": "ShippersLab on Instagram (opens in a new tab)",
@@ -201,6 +201,7 @@
       "mail": "Email us at {email}"
     },
     "servicesTitle": "Services",
+    "exploreTitle": "Explore",
     "links": {
       "sistemas-de-gestion": "Management systems",
       "webs-y-catalogos": "Websites and catalogs",

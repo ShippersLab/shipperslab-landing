@@ -13,7 +13,7 @@ import { useI18n } from "@/i18n/provider";
 const EASE = [0.23, 1, 0.32, 1] as const;
 const ROW_STAGGER = 0.08;
 const ROWS_DELAY = 0;
-const TITLE_DURATION = 0.6;
+const TITLE_DURATION = 1.2;
 
 const list: Variants = {
   hidden: {},

@@ -3,7 +3,7 @@ import type { RefObject } from "react";
 import { gsap, useGSAP } from "@/lib/gsap";
 
 export const HERO_TITLE_DELAY = 0.25;
-const DESCRIPTION_DURATION = 0.3;
+const DESCRIPTION_DURATION = 0.8;
 const DESCRIPTION_START = HERO_TITLE_DELAY + 0.05;
 
 export function useHeroAnimation(scope: RefObject<HTMLElement | null>) {

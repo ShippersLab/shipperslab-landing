@@ -1,130 +1,148 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-accent: var(--accent);
-  --color-ink: var(--ink);
-  --color-paper: var(--paper);
-  --color-muted: var(--muted);
-  --color-border: var(--border);
+    --color-accent: var(--accent);
+    --color-ink: var(--ink);
+    --color-paper: var(--paper);
+    --color-muted: var(--muted);
+    --color-border: var(--border);
 
-  --font-sans: var(--font-geist-sans), sans-serif;
-  --font-mono: var(--font-geist-mono), monospace;
-  --font-heading: var(--font-geist-pixel-square), monospace;
+    --font-sans: var(--font-geist-sans), sans-serif;
+    --font-mono: var(--font-geist-mono), monospace;
+    --font-heading: var(--font-geist-pixel-square), monospace;
 
-  --text-hero: clamp(2.25rem, 5.5vw, 4.5rem);
-  --text-hero--line-height: 0.95;
-  --text-wordmark: clamp(3rem, 13vw, 13rem);
-  --text-wordmark--line-height: 1;
-  --text-label: 0.6875rem;
-  --text-label--line-height: 1.4;
-  --text-base--line-height: 1.6;
-  --text-lg--line-height: 1.6;
+    --text-hero: clamp(2.125rem, 5.2vw, 4.25rem);
+    --text-hero--line-height: 0.95;
+    --text-wordmark: clamp(3rem, 13vw, 13rem);
+    --text-wordmark--line-height: 1;
+    --text-label: 0.6875rem;
+    --text-label--line-height: 1.4;
+    --text-base--line-height: 1.6;
+    --text-lg--line-height: 1.6;
 
-  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+    --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
 
-  --tracking-hero: -0.04em;
-  --tracking-heading: -0.01em;
-  --tracking-label: 0.12em;
+    --tracking-hero: -0.04em;
+    --tracking-heading: -0.01em;
+    --tracking-label: 0.12em;
 
-  --radius-xs: 2px;
-  --radius-sm: 4px;
-  --radius-md: 6px;
-  --radius-lg: 8px;
-  --radius-xl: 8px;
-  --radius-2xl: 8px;
-  --radius-3xl: 8px;
-  --radius-4xl: 8px;
+    --radius-xs: 2px;
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 8px;
+    --radius-2xl: 8px;
+    --radius-3xl: 8px;
+    --radius-4xl: 8px;
 
-  --shadow-2xs: none;
-  --shadow-xs: none;
-  --shadow-sm: none;
-  --shadow-md: none;
-  --shadow-lg: none;
-  --shadow-xl: none;
-  --shadow-2xl: none;
+    --shadow-2xs: none;
+    --shadow-xs: none;
+    --shadow-sm: none;
+    --shadow-md: none;
+    --shadow-lg: none;
+    --shadow-xl: none;
+    --shadow-2xl: none;
 
-  --container-content: 75rem;
-  --spacing-section: 180px;
+    --container-content: 75rem;
+    --spacing-section: 180px;
 }
 
 :root {
-  --accent: #fe5634;
-  --ink: #0b0f1a;
-  --paper: #f2f3f5;
-  --muted: #5f6777;
-  --border: #e0e3e9;
+    --accent: #fe5634;
+    --ink: #0b0f1a;
+    --paper: #f2f3f5;
+    --muted: #5f6777;
+    --border: #e0e3e9;
 }
 
 @layer base {
-  body {
-    background-color: var(--paper);
-    color: var(--ink);
-  }
+    body {
+        background-color: var(--paper);
+        color: var(--ink);
+    }
 
-  h1,
-  h2,
-  h3 {
-    font-family: var(--font-heading);
-    font-weight: 500;
-    letter-spacing: var(--tracking-heading);
-    font-variation-settings: "ELSH" 20;
-  }
+    h1,
+    h2,
+    h3 {
+        font-family: var(--font-heading);
+        font-weight: 500;
+        letter-spacing: var(--tracking-heading);
+        font-variation-settings: "ELSH" 20;
+    }
 
-  ::selection {
-    background-color: var(--accent);
-    color: var(--paper);
-  }
+    ::selection {
+        background-color: var(--accent);
+        color: var(--paper);
+    }
 }
 
 @utility text-grain {
-  background-color: var(--ink);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
-  background-blend-mode: multiply;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+    background-color: var(--ink);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+    background-blend-mode: multiply;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 @utility font-pixel {
-  font-family: var(--font-geist-pixel-square), monospace;
+    font-family: var(--font-geist-pixel-square), monospace;
 }
 
 @utility font-pixel-circle {
-  font-family: var(--font-geist-pixel-circle), monospace;
+    font-family: var(--font-geist-pixel-circle), monospace;
 }
 
 @utility font-pixel-grid {
-  font-family: var(--font-geist-pixel-grid), monospace;
+    font-family: var(--font-geist-pixel-grid), monospace;
 }
 
 @utility font-pixel-triangle {
-  font-family: var(--font-geist-pixel-triangle), monospace;
+    font-family: var(--font-geist-pixel-triangle), monospace;
 }
 
 @utility font-pixel-line {
-  font-family: var(--font-geist-pixel-line), monospace;
+    font-family: var(--font-geist-pixel-line), monospace;
 }
 
 @keyframes marquee-vertical {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-50%);
-  }
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-50%);
+    }
 }
 
 @utility animate-marquee-vertical {
-  animation: marquee-vertical 14s linear infinite;
+    animation: marquee-vertical 14s linear infinite;
+}
+
+@keyframes hero-veil {
+    from {
+        opacity: 1;
+        backdrop-filter: blur(32px);
+    }
+
+    to {
+        opacity: 0;
+        backdrop-filter: blur(0);
+    }
+}
+
+@utility animate-hero-veil {
+    animation: hero-veil 2s var(--ease-out) 0.15s both;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }

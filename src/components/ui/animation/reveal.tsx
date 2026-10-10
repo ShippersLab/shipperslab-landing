@@ -18,7 +18,7 @@ export function Reveal({
   children,
   className,
   delay = 0,
-  duration = 0.4,
+  duration = 0.8,
   as = "div",
 }: RevealProps) {
   const ref = useRef<HTMLElement>(null);
