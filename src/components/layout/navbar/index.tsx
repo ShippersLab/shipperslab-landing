@@ -52,6 +52,13 @@ export function Navbar() {
         ))}
 
         <Link
+          href="/casos"
+          className="-my-2 rounded-sm py-2 text-sm text-ink/70 transition-colors duration-200 ease-out hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+        >
+          {messages.nav.casos}
+        </Link>
+
+        <Link
           href="/eventos"
           className="-my-2 rounded-sm py-2 text-sm text-ink/70 transition-colors duration-200 ease-out hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
         >
@@ -60,6 +67,13 @@ export function Navbar() {
       </nav>
 
       <div className="flex items-center gap-3">
+        <Link
+          href="/casos"
+          className="-my-2 rounded-sm py-2 text-sm text-ink/70 transition-colors duration-200 ease-out hover:text-ink md:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+        >
+          {messages.nav.casos}
+        </Link>
+
         <Link
           href="/eventos"
           className="-my-2 rounded-sm py-2 text-sm text-ink/70 transition-colors duration-200 ease-out hover:text-ink md:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
