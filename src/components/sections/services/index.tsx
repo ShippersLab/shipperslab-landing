@@ -6,6 +6,8 @@ import { motion, type Variants } from "motion/react";
 import { DescriptionWithLink } from "@/components/sections/services/description-with-link";
 import { getServiceHref } from "@/lib/services";
 import { DiaTextReveal } from "@/components/ui/animation/dia-text-reveal";
+import { TextureButton } from "@/components/ui/button/texture-button";
+import { ArrowRightIcon } from "@/components/ui/icons";
 import { Section } from "@/components/ui/section/section";
 import { SectionHeading } from "@/components/ui/section/section-heading";
 import { useI18n } from "@/i18n/provider";
@@ -44,11 +46,19 @@ export function Services() {
 
   return (
     <Section id="servicios" bordered>
-      <SectionHeading
-        title={messages.services.title}
-        description={messages.services.description}
-        className="max-w-lg"
-      />
+      <div className="flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
+        <SectionHeading
+          title={messages.services.title}
+          description={messages.services.description}
+          className="max-w-lg"
+        />
+        <TextureButton asChild variant="secondary" size="pill" className="w-full sm:w-auto">
+          <Link href="/casos">
+            {messages.services.casesCta}
+            <ArrowRightIcon size={16} />
+          </Link>
+        </TextureButton>
+      </div>
 
       <motion.ol
         className="mt-16 flex flex-col sm:mt-20"

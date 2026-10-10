@@ -6,6 +6,7 @@ import { Companies } from "@/components/sections/trust/companies";
 import { Reveal } from "@/components/ui/animation/reveal";
 import { WordReveal } from "@/components/ui/animation/word-reveal";
 import { ArcBandsBackground } from "@/components/ui/background/arc-bands-background";
+import { ArrowRightIcon } from "@/components/ui/icons";
 import { Container } from "@/components/ui/section/container";
 import { SectionHeading } from "@/components/ui/section/section-heading";
 import { useI18n } from "@/i18n/provider";
@@ -40,9 +41,13 @@ export function Trust() {
         <Reveal delay={120} className="mt-6">
           <Link
             href="/casos"
-            className="rounded-sm text-sm text-muted underline decoration-border underline-offset-4 transition-colors duration-200 ease-out hover:text-ink hover:decoration-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink sm:text-base"
+            className="group inline-flex items-center gap-1.5 rounded-sm text-sm text-muted transition-colors duration-200 ease-out hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink sm:text-base"
           >
             {messages.trust.casosLink}
+            <ArrowRightIcon
+              size={16}
+              className="transition-transform duration-200 ease-out group-hover:translate-x-0.5"
+            />
           </Link>
         </Reveal>
 
