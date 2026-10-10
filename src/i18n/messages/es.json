@@ -347,13 +347,67 @@
         },
         {
           "title": "Un ejemplo real: EventOps.",
-          "body": "Así hicimos EventOps para empresas de eventos: un producto propio en producción que ordena la operación del día a día. Cada negocio es distinto, pero el enfoque es el mismo: entender cómo trabajan y construir alrededor de eso."
+          "body": "Así hicimos EventOps para empresas de eventos, un producto propio en producción. Cada evento se carga una vez y de ahí salen el calendario, el presupuesto, las señas y cuotas, los gastos y quién del equipo va a cada fecha. Cada negocio es distinto, pero el enfoque es el mismo: entender cómo trabajan y construir alrededor de eso.",
+          "link": {
+            "label": "Ver el caso de EventOps",
+            "href": "/casos/eventops"
+          }
         },
         {
           "title": "Para quién.",
           "body": "Para pymes con stock, pedidos o turnos que hoy se manejan con Excel, WhatsApp o un sistema viejo. Si el dueño o quien opera el negocio siente que pierde tiempo cargando lo mismo dos veces, arrancamos por ahí."
         }
       ],
+      "examples": {
+        "title": "Cómo se ve en distintos negocios.",
+        "items": [
+          {
+            "title": "Distribuidora o mayorista",
+            "body": "Los pedidos llegan por WhatsApp, el stock se lleva en un Excel y nadie sabe bien qué hay en el depósito. Un sistema de stock y ventas puede descontar el stock cuando se confirma un pedido y mostrarte qué reponer antes de quedarte sin mercadería."
+          },
+          {
+            "title": "Negocio con turnos",
+            "body": "En un consultorio, un taller o un centro de estética, la agenda suele estar en un cuaderno o en el teléfono de una persona. Un sistema de turnos junta la agenda del equipo, el historial de cada cliente y lo cobrado en el día."
+          },
+          {
+            "title": "Empresa de eventos",
+            "body": "Fechas, personal y cobros repartidos entre chats y planillas. Es lo que resuelve EventOps: calendario con visita técnica, montaje y desmontaje, clientes con su historial, personal asignado por fecha y el resultado de cada mes."
+          }
+        ]
+      },
+      "process": {
+        "title": "Cómo trabajamos y cómo se cotiza.",
+        "paragraphs": [
+          "Arrancamos con una charla para entender cómo trabajan hoy: qué se carga, quién lo carga y dónde se traba. Con eso te mandamos una propuesta por escrito con qué entra, qué no, cuánto cuesta y cuándo está.",
+          "Si el sistema es grande, lo partimos en etapas y empezamos por lo que más te duele, como el stock o los pedidos. Cada semana ves una parte funcionando y la probás con tu equipo. Después lo ponemos en marcha con ustedes y lo ajustamos con el uso real.",
+          "El precio y el plazo dependen de cuántas partes tenga el sistema y con qué hay que conectarlo. Si ya tenés hosting o servicios contratados, los usamos. Si no, nos encargamos nosotros y te cobramos su costo más la gestión."
+        ]
+      },
+      "faq": {
+        "title": "Preguntas sobre sistemas de gestión.",
+        "items": [
+          {
+            "question": "¿Conviene un sistema a medida o uno enlatado?",
+            "answer": "Si un sistema enlatado se adapta a cómo trabajás, puede alcanzar. El sistema a medida tiene sentido cuando tu operación tiene pasos propios que los enlatados no contemplan, o cuando terminás usando tres programas y un Excel para cubrir lo que falta. En la primera charla te decimos qué nos parece más conveniente para tu caso."
+          },
+          {
+            "question": "Hoy manejo todo en Excel. ¿Qué pasa con esos datos?",
+            "answer": "Partimos de ahí. Pasamos tus planillas de productos, clientes o pedidos al sistema nuevo, y eso queda planificado en la propuesta. Si alguna planilla te sigue sirviendo, la podemos dejar conectada."
+          },
+          {
+            "question": "¿Mi equipo lo va a poder usar?",
+            "answer": "Lo armamos alrededor de cómo trabaja tu equipo, y lo prueban cada semana mientras se construye. Si querés, sumamos una capacitación para que todos lo usen desde el primer día."
+          },
+          {
+            "question": "¿De quién es el sistema y qué pasa con mis datos?",
+            "answer": "Tus datos son confidenciales y no los usamos para otra cosa. Lo del código depende del proyecto: un sistema hecho a medida para tu negocio no funciona igual que usar un producto nuestro como EventOps. Queda claro en la propuesta antes de arrancar."
+          },
+          {
+            "question": "¿Qué pasa después de la entrega?",
+            "answer": "Si aparece un error de nuestro lado, lo arreglamos dentro de la garantía. Además podés sumar mantenimiento para cambios y mejoras. Es opcional, y sin él el proyecto sale más barato."
+          }
+        ]
+      },
       "ctaTitle": "¿Tu operación ya no entra en una planilla?",
       "ctaDescription": "Contanos cómo trabajan hoy. Te respondemos con alcance y precio por escrito antes de arrancar.",
       "ctaButton": "Contanos tu problema"
@@ -378,6 +432,56 @@
           "body": "Para comercios y emprendedores que necesitan que los clientes los encuentren online, reserven un turno o pidan por WhatsApp sin dar mil vueltas."
         }
       ],
+      "examples": {
+        "title": "Qué le podemos armar a cada negocio.",
+        "items": [
+          {
+            "title": "Comercio con productos",
+            "body": "Un catálogo online con fotos, precios y un botón para pedir por WhatsApp. El pedido te llega armado, con productos y cantidades, y cerrás la venta en el chat como ya lo hacés."
+          },
+          {
+            "title": "Negocio con turnos",
+            "body": "En una peluquería, un consultorio o un taller, un turnero online deja que el cliente vea los horarios libres y reserve solo, a cualquier hora. Vos ves la agenda del día sin coordinar por mensaje."
+          },
+          {
+            "title": "Pyme de servicios",
+            "body": "Una página web que explica qué hacés, muestra trabajos y tiene un formulario o WhatsApp para pedir presupuesto. Es lo que encuentra quien te busca en Google después de que te recomendaron."
+          }
+        ]
+      },
+      "process": {
+        "title": "Cómo trabajamos y cuánto cuesta.",
+        "paragraphs": [
+          "Primero vemos qué querés que pase cuando alguien entra: que te escriba, que reserve o que pida. Con eso definimos qué páginas hacen falta y te mandamos la propuesta por escrito, con precio y fecha de entrega.",
+          "Si necesitás ayuda con los textos, los escribimos con vos. Las fotos conviene que sean tuyas, porque nadie conoce tu marca mejor. Si no tenés, se pueden generar con IA. La web sale con lo básico para que Google la entienda: título y descripción en cada página y carga rápida en el celular.",
+          "El precio y el plazo dependen de cuántas páginas y funciones lleve. Si ya tenés dominio y hosting, los usamos. Si no, los gestionamos nosotros y te cobramos su costo más la gestión."
+        ]
+      },
+      "faq": {
+        "title": "Preguntas sobre webs, turneros y catálogos.",
+        "items": [
+          {
+            "question": "¿Puedo cambiar precios y productos yo solo?",
+            "answer": "Se puede sumar un panel para que edites precios, fotos y productos sin depender de nadie. Lo definimos en la propuesta según cuánto cambie tu catálogo."
+          },
+          {
+            "question": "¿Qué diferencia hay con armar una tienda en una plataforma?",
+            "answer": "Las plataformas de tienda online sirven si querés cobrar con carrito y envío automático. Si tus clientes ya te compran por WhatsApp, un catálogo con pedido por WhatsApp suele ser más simple: el cliente elige, te escribe con el pedido armado y vos seguís atendiendo como siempre. Te ayudamos a ver qué te conviene."
+          },
+          {
+            "question": "¿El turnero puede mandar recordatorios?",
+            "answer": "Se puede incluir. Recordatorios, cancelaciones y cambios de horario se definen en la propuesta según lo que necesite tu negocio."
+          },
+          {
+            "question": "¿La web va a aparecer en Google?",
+            "answer": "La armamos para que Google la pueda leer bien: cada página con su título, su descripción y contenido propio, y rápida en el celular. Aparecer arriba lleva tiempo y depende de cuánta gente busca lo que ofrecés. No prometemos posiciones."
+          },
+          {
+            "question": "Ya tengo una web vieja. ¿La rehacen o la arreglan?",
+            "answer": "Depende de cómo está hecha. La miramos, y si conviene mejorarla en lugar de arrancar de cero, te lo decimos en la propuesta."
+          }
+        ]
+      },
       "ctaTitle": "¿Tus clientes no te encuentran online?",
       "ctaDescription": "Contanos qué querés mostrar o vender. Te respondemos con alcance y precio por escrito.",
       "ctaButton": "Contanos tu problema"
@@ -402,6 +506,56 @@
           "body": "Para negocios que reciben muchas consultas y no llegan a contestar a tiempo. Si tu equipo pierde horas en lo mismo todos los días, un bot bien armado libera esa carga."
         }
       ],
+      "examples": {
+        "title": "Qué puede hacer un bot en tu negocio.",
+        "items": [
+          {
+            "title": "Comercio que vende por WhatsApp",
+            "body": "Te preguntan todo el día si hay stock, cuánto sale y si hacen envíos. Un bot puede responder con tu catálogo y tus precios, tomar el pedido y pasártelo para cerrar el pago o coordinar la entrega."
+          },
+          {
+            "title": "Negocio con turnos",
+            "body": "El bot muestra los horarios libres, agenda el turno y lo confirma por WhatsApp. Si alguien pide algo fuera de lo común, te avisa para que contestes vos."
+          },
+          {
+            "title": "Empresa de eventos",
+            "body": "Llegan consultas por fechas y presupuestos fuera de horario. El bot pide los datos básicos, como fecha, lugar, cantidad de invitados y servicio, y te deja la consulta lista para cotizar."
+          }
+        ]
+      },
+      "process": {
+        "title": "Cómo lo armamos y cómo se cotiza.",
+        "paragraphs": [
+          "Empezamos por mirar las consultas que te llegan hoy: cuáles se repiten, cuáles podría responder un bot y cuáles tienen que seguir pasando por una persona. Con eso definimos qué hace el bot, de dónde saca la información y cuándo te deriva.",
+          "Antes de que hable con clientes, lo probás vos con tu equipo y ajustamos las respuestas. Después de la puesta en marcha revisamos conversaciones reales para corregir lo que haga falta.",
+          "La propuesta va por escrito, con precio y plazo según el alcance. Un bot usa servicios externos, como la API de WhatsApp y un modelo de IA. Si ya tenés esas cuentas, las usamos. Si no, las gestionamos nosotros y te cobramos su costo más la gestión, que depende de cuántos mensajes maneje el bot."
+        ]
+      },
+      "faq": {
+        "title": "Preguntas sobre bots y agentes de IA.",
+        "items": [
+          {
+            "question": "¿Funciona con mi número de WhatsApp actual?",
+            "answer": "Depende de cómo usás hoy ese número. Lo evaluamos en cada caso y te contamos las opciones antes de arrancar."
+          },
+          {
+            "question": "¿Y si el bot responde cualquier cosa?",
+            "answer": "El bot responde con la información que le damos: tus precios, tus horarios, tu catálogo. Si no sabe algo, lo dice y te pasa la conversación. Lo probás antes de que lo vean tus clientes."
+          },
+          {
+            "question": "¿Qué diferencia hay entre un bot y un agente de IA?",
+            "answer": "Un bot sigue un camino armado, con menú, opciones y respuestas fijas. Un agente de IA entiende lo que escribe el cliente con sus palabras y puede hacer cosas, como consultar tu stock o agendar un turno. Usamos IA donde ayuda a resolver la consulta, y un bot simple cuando alcanza."
+          },
+          {
+            "question": "¿Puedo ver las conversaciones y responder yo?",
+            "answer": "Se puede sumar según el proyecto, por ejemplo una bandeja para ver lo que habló el bot o una derivación directa a tu WhatsApp. Lo definimos en la propuesta."
+          },
+          {
+            "question": "¿Reemplaza a mi equipo de atención?",
+            "answer": "Se ocupa de las preguntas repetidas para que tu equipo atienda lo que necesita a una persona: un reclamo, una venta grande, un caso especial."
+          }
+        ]
+      },
       "ctaTitle": "¿Te llegan las mismas preguntas todo el día?",
       "ctaDescription": "Contanos qué consultas te comen tiempo. Te respondemos con alcance y precio por escrito.",
       "ctaButton": "Contanos tu problema"
@@ -426,6 +580,56 @@
           "body": "Para quien ya usa varias herramientas y pierde tiempo pasando la misma información de un lado a otro. Ideal si no querés cambiar todo de golpe."
         }
       ],
+      "examples": {
+        "title": "Integraciones que se repiten.",
+        "items": [
+          {
+            "title": "Comercio que cobra con Mercado Pago",
+            "body": "Cada venta se anota a mano en la planilla y después se factura aparte. Conectamos Mercado Pago con tu planilla y con la facturación electrónica de ARCA, para que la venta quede registrada y facturada sin volver a cargarla."
+          },
+          {
+            "title": "Tienda en Tiendanube con local",
+            "body": "El stock de la tienda online y el del local no coinciden, y se venden productos que no hay. Sincronizamos el stock entre los dos."
+          },
+          {
+            "title": "Pyme de servicios con formularios",
+            "body": "Los pedidos entran por un formulario o por email y alguien los pasa a mano a Google Sheets o al CRM. Hacemos que cada pedido aparezca solo donde tiene que estar y le avise a quien lo atiende."
+          }
+        ]
+      },
+      "process": {
+        "title": "Cómo trabajamos y cómo se cotiza.",
+        "paragraphs": [
+          "Primero hacemos un mapa de por dónde viaja el dato hoy: dónde entra, dónde se copia y dónde se pierde. Eso nos muestra qué conexión te ahorra más trabajo, y por ahí arrancamos.",
+          "Muchas veces alcanza con una o dos integraciones para sacarte la carga más pesada. Si en el camino vemos que conviene un sistema de gestión, te lo decimos, pero no hace falta para empezar.",
+          "La propuesta va por escrito con qué se conecta, qué pasa si algo falla, cuánto cuesta y cuándo está. Algunas herramientas cobran su propio uso. Si ya tenés las cuentas, las usamos. Si no, las gestionamos nosotros y te cobramos su costo más la gestión."
+        ]
+      },
+      "faq": {
+        "title": "Preguntas sobre integraciones.",
+        "items": [
+          {
+            "question": "¿Con qué herramientas se pueden conectar?",
+            "answer": "WhatsApp, Google Sheets, Mercado Pago, Tiendanube, la facturación electrónica de ARCA y CRMs, entre otras herramientas que tengan una forma de conectarse desde afuera (una API). Si la tuya no la tiene, lo vemos en la charla y te decimos qué alternativas hay."
+          },
+          {
+            "question": "¿Pueden conectar la facturación electrónica de ARCA (ex AFIP)?",
+            "answer": "Sí. Conectamos tus ventas con ARCA para que cada factura salga sin cargarla a mano. En la charla vemos qué datos de tu cuenta hacen falta y te ayudamos a configurarlos."
+          },
+          {
+            "question": "¿Qué pasa si una integración falla?",
+            "answer": "Armamos cada integración para que avise cuando algo falla. Si el error es nuestro, lo arreglamos nosotros. Si una herramienta externa que elegiste cambia su forma de conectarse, el ajuste corre por tu cuenta, salvo que tengas contratado el mantenimiento."
+          },
+          {
+            "question": "¿Conviene esto o hacer un sistema nuevo?",
+            "answer": "Si lo que usás hoy te funciona y el problema es pasar datos a mano, conectar suele ser más rápido y más barato. Si las herramientas ya no te dan lo que necesitás, un sistema de gestión puede tener más sentido. Te lo decimos en la primera charla."
+          },
+          {
+            "question": "¿No lo puedo hacer yo con Zapier o Make?",
+            "answer": "Para conexiones simples, sí, y a veces es lo que te recomendamos. Cuando hay reglas propias de tu negocio, muchos pasos o mucho volumen, conviene algo armado a medida que puedas controlar."
+          }
+        ]
+      },
       "ctaTitle": "¿Cargás lo mismo en tres lugares?",
       "ctaDescription": "Contanos qué herramientas usás hoy. Te respondemos con alcance y precio por escrito.",
       "ctaButton": "Contanos tu problema"

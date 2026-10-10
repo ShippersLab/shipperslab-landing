@@ -2,10 +2,9 @@
 
 import Image from "next/image";
 import { motion, useInView, useReducedMotion } from "motion/react";
-import { useEffect, useId, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
-import { PlusIcon } from "@/components/ui/icons";
-import { Reveal } from "@/components/ui/animation/reveal";
+import { FaqAccordion } from "@/components/ui/faq-accordion";
 import { Section } from "@/components/ui/section/section";
 import { SectionHeading } from "@/components/ui/section/section-heading";
 import { useI18n } from "@/i18n/provider";
@@ -17,7 +16,6 @@ const ITEM_STAGGER = 0.08;
 
 export function Faq() {
   const { messages } = useI18n();
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
   const [imageLoaded, setImageLoaded] = useState(false);
   const imageRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(imageRef, { once: true, margin: "0px 0px -12% 0px" });
@@ -29,7 +27,6 @@ export function Faq() {
   }, []);
 
   const reduced = hydrated && prefersReducedMotion;
-  const idPrefix = useId();
 
   return (
     <Section bordered>
@@ -67,54 +64,12 @@ export function Faq() {
         <div>
           <SectionHeading title={messages.faq.title} titleDelay={TITLE_DELAY} />
 
-          <ul className="mt-8 divide-y divide-border border-t border-border">
-            {messages.faq.items.map((item, index) => {
-              const open = openIndex === index;
-              const buttonId = `${idPrefix}-question-${index}`;
-              const panelId = `${idPrefix}-answer-${index}`;
-
-              return (
-                <Reveal
-                  key={item.question}
-                  as="li"
-                  delay={(ITEMS_DELAY + index * ITEM_STAGGER) * 1000}
-                >
-                  <h3 className="font-sans font-normal tracking-normal">
-                    <button
-                      id={buttonId}
-                      type="button"
-                      aria-expanded={open}
-                      aria-controls={panelId}
-                      onClick={() => setOpenIndex(open ? null : index)}
-                      className="flex w-full items-center justify-between gap-4 py-6 text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
-                    >
-                      <span className="text-lg text-ink">{item.question}</span>
-                      <PlusIcon
-                        className={cn(
-                          "size-4 shrink-0 text-muted transition-transform duration-200 ease-out",
-                          open && "rotate-45",
-                        )}
-                      />
-                    </button>
-                  </h3>
-                  <div
-                    id={panelId}
-                    role="region"
-                    aria-labelledby={buttonId}
-                    inert={!open}
-                    className={cn(
-                      "grid transition-[grid-template-rows] duration-200 ease-out",
-                      open ? "grid-rows-[1fr]" : "grid-rows-[0fr]",
-                    )}
-                  >
-                    <div className="overflow-hidden">
-                      <p className="max-w-2xl pb-6 text-base text-muted">{item.answer}</p>
-                    </div>
-                  </div>
-                </Reveal>
-              );
-            })}
-          </ul>
+          <FaqAccordion
+            items={messages.faq.items}
+            delay={ITEMS_DELAY}
+            stagger={ITEM_STAGGER}
+            className="mt-8"
+          />
         </div>
       </div>
     </Section>
