@@ -28,7 +28,7 @@ No other colors are introduced without updating this table first.
 | Role                         | Font        | Weight | Tracking   | Size                          | Line height | Tailwind utility        |
 | ----------------------------- | ----------- | ------ | ---------- | ------------------------------ | ----------- | ------------------------ |
 | Section titles                | Geist Pixel | 500    | `-0.01em`  | n/a                             | n/a         | `font-heading tracking-heading` (applied by default to `h1`/`h2`/`h3`) |
-| Hero                           | Geist Pixel | 500    | `-0.04em`  | `clamp(36px, 5.5vw, 72px)`     | 0.95        | `font-pixel tracking-hero text-hero` |
+| Hero                           | Geist Pixel | 500    | `-0.04em`  | `clamp(34px, 5.2vw, 68px)`     | 0.95        | `font-pixel tracking-hero text-hero` |
 | Body                           | Geist       | 400    | normal     | 16–18px                        | 1.6         | `font-sans text-base` / `text-lg` |
 | Labels / technical details     | Geist Mono  | 500    | `0.12em`, uppercase | 11px                | 1.4         | `font-mono uppercase tracking-label text-label` |
 

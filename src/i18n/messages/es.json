@@ -193,7 +193,7 @@
     "stepAnnouncement": "Paso {step} de {total}: {title}"
   },
   "footer": {
-    "tagline": "Sistemas de gestión, webs, bots con IA e integraciones para pymes y comercios. Un equipo chico de ingenieros y diseñadores de Argentina.",
+    "tagline": "Sistemas, webs, bots e integraciones para pymes y comercios. Un equipo chico de Argentina.",
     "legal": "Hecho en Argentina.",
     "social": {
       "instagram": "Instagram de ShippersLab (abre en una pestaña nueva)",
@@ -201,6 +201,7 @@
       "mail": "Escribinos a {email}"
     },
     "servicesTitle": "Servicios",
+    "exploreTitle": "Explorar",
     "links": {
       "sistemas-de-gestion": "Sistemas de gestión",
       "webs-y-catalogos": "Webs y catálogos",

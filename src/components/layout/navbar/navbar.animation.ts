@@ -11,7 +11,7 @@ export function useNavbarAnimation(scope: RefObject<HTMLElement | null>) {
         gsap.fromTo(
           scope.current,
           { autoAlpha: 0 },
-          { autoAlpha: 1, duration: 0.2, ease: "power2.out" },
+          { autoAlpha: 1, duration: 1, ease: "power2.out" },
         );
       });
 

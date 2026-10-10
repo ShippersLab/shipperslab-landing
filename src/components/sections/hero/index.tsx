@@ -26,19 +26,25 @@ export function Hero() {
       ref={sectionRef}
       className="flex min-h-[calc(100svh-68px)] w-full flex-1 flex-col bg-paper lg:min-h-svh lg:bg-transparent"
     >
-      <Image
-        src="/images/hero-illustration.webp"
-        alt={messages.hero.imageAlt}
-        width={1920}
-        height={822}
-        loading="eager"
-        fetchPriority="high"
-        quality={75}
-        placeholder="blur"
-        blurDataURL={HERO_BLUR_DATA_URL}
-        className="mt-10 aspect-4/3 w-full object-cover object-center select-none sm:aspect-8/3 sm:object-top lg:mt-0 lg:max-h-[calc(100svh-15rem)]"
-        sizes="100vw"
-      />
+      <div className="relative mt-10 lg:mt-0">
+        <Image
+          src="/images/hero-illustration.webp"
+          alt={messages.hero.imageAlt}
+          width={1920}
+          height={822}
+          loading="eager"
+          fetchPriority="high"
+          quality={75}
+          placeholder="blur"
+          blurDataURL={HERO_BLUR_DATA_URL}
+          className="aspect-4/3 w-full object-cover object-center select-none sm:aspect-8/3 sm:object-top lg:max-h-[calc(100svh-15rem)]"
+          sizes="100vw"
+        />
+        <div
+          aria-hidden
+          className="animate-hero-veil pointer-events-none absolute inset-0 bg-paper"
+        />
+      </div>
 
       <div className="mx-auto flex w-full max-w-content flex-1 flex-col justify-center border-x border-border lg:justify-start">
         <Container className="grid gap-8 py-10 lg:grid-cols-[1.8fr_1.2fr] lg:items-start lg:gap-0 lg:pt-6 lg:pb-16">

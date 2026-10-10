@@ -19,6 +19,12 @@ const SOCIAL_LINK_CLASS =
 const FOOTER_LINK_CLASS =
   "rounded-sm text-sm text-muted transition-colors duration-200 ease-out hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink";
 
+const EXPLORE_LINKS = [
+  { key: "empecemos", href: "/empecemos" },
+  { key: "casos", href: "/casos" },
+  { key: "eventos", href: "/eventos" },
+] as const;
+
 export function Footer() {
   const { messages } = useI18n();
   const social = messages.footer.social;
@@ -29,7 +35,7 @@ export function Footer() {
       <div className="mx-auto w-full max-w-content border-x border-border">
         <Container>
           <Reveal
-            duration={0.8}
+            duration={1}
             className="flex flex-col gap-10 py-12 sm:flex-row sm:items-start sm:justify-between"
           >
             <div className="flex flex-col gap-4">
@@ -56,21 +62,19 @@ export function Footer() {
                     </Link>
                   </li>
                 ))}
-                <li>
-                  <Link href="/casos" className={FOOTER_LINK_CLASS}>
-                    {links.casos}
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/eventos" className={FOOTER_LINK_CLASS}>
-                    {links.eventos}
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/empecemos" className={FOOTER_LINK_CLASS}>
-                    {links.empecemos}
-                  </Link>
-                </li>
+              </ul>
+            </div>
+
+            <div className="flex flex-col gap-3">
+              <p className="text-sm text-ink">{messages.footer.exploreTitle}</p>
+              <ul className="flex flex-col gap-2">
+                {EXPLORE_LINKS.map((link) => (
+                  <li key={link.key}>
+                    <Link href={link.href} className={FOOTER_LINK_CLASS}>
+                      {links[link.key]}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -105,7 +109,7 @@ export function Footer() {
 
           <Reveal
             delay={200}
-            duration={0.8}
+            duration={1}
             className="flex flex-col gap-2 border-t border-border py-6 text-sm text-muted sm:flex-row sm:items-center sm:justify-between"
           >
             <span>© {YEAR} ShippersLab</span>
