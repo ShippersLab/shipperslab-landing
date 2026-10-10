@@ -119,6 +119,20 @@
     animation: marquee-vertical 14s linear infinite;
 }
 
+@keyframes marquee-horizontal {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@utility animate-marquee-horizontal {
+    animation: marquee-horizontal 70s linear infinite;
+}
+
 @keyframes hero-veil {
     from {
         opacity: 1;
@@ -145,4 +159,12 @@
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+
+body [data-rmiz-modal-overlay="visible"] {
+    background-color: var(--paper);
+}
+
+body [data-rmiz-modal-overlay="hidden"] {
+    background-color: transparent;
 }

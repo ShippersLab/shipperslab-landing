@@ -1,4 +1,4 @@
-import eventopsHero from "@/assets/images/eventops-hero.webp";
+import { eventopsImages } from "@/lib/projects/eventops";
 import { LinkPreview } from "@/components/ui/link-preview";
 import { site } from "@/lib/site";
 
@@ -22,10 +22,10 @@ export function DescriptionWithLink({ text, opensNewTab, previewAlt }: Descripti
       {before}
       <LinkPreview
         url={site.eventopsUrl}
-        imageSrc={eventopsHero}
+        imageSrc={eventopsImages.hero}
         alt={previewAlt}
         width={320}
-        height={200}
+        height={180}
         className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-[text-decoration-color] duration-200 ease-out hover:decoration-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
       >
         {label}

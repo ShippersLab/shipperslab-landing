@@ -2,19 +2,21 @@
 
 import Link from "next/link";
 
-import { Companies } from "@/components/sections/trust/companies";
+import { ProjectCard } from "@/components/sections/casos/project-card";
+import { SoonCard } from "@/components/sections/casos/soon-card";
 import { DiaTextReveal } from "@/components/ui/animation/dia-text-reveal";
 import { Reveal } from "@/components/ui/animation/reveal";
 import { WordReveal } from "@/components/ui/animation/word-reveal";
 import { TextureButton } from "@/components/ui/button/texture-button";
 import { Container } from "@/components/ui/section/container";
 import { useI18n } from "@/i18n/provider";
-import { site } from "@/lib/site";
+import { eventopsImages } from "@/lib/projects/eventops";
 
 const TITLE_DELAY = 0;
 const LEAD_DELAY = 0.25;
-const EVENTOPS_DELAY = 0.4;
-const CTA_DELAY = 0.55;
+const GRID_DELAY = 400;
+const SOON_DELAY = 520;
+const CTA_DELAY = 200;
 
 export function Casos() {
   const { messages } = useI18n();
@@ -23,7 +25,7 @@ export function Casos() {
   return (
     <div className="mx-auto w-full max-w-content border-x border-border">
       <Container className="w-full py-20 sm:py-28">
-        <div className="max-w-2xl">
+        <div className="mx-auto flex max-w-2xl flex-col items-center text-center">
           <h1 className="font-pixel text-4xl font-medium tracking-tighter text-ink sm:text-5xl">
             <DiaTextReveal
               text={page.title}
@@ -39,44 +41,32 @@ export function Casos() {
           />
         </div>
 
-        <Reveal
-          delay={EVENTOPS_DELAY * 1000}
-          className="mt-16 max-w-2xl rounded-lg border border-border p-8 sm:mt-20 sm:p-10"
-        >
-          <p className="text-sm text-muted">{page.eventops.eyebrow}</p>
-          <h2 className="mt-3 text-2xl text-ink sm:text-3xl">{page.eventops.title}</h2>
-          <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
-            {page.eventops.body}
-          </p>
-          <a
-            href={site.eventopsUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-6 inline-flex rounded-sm text-base text-ink underline decoration-accent underline-offset-4 transition-colors duration-200 ease-out hover:decoration-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
-          >
-            {page.eventops.linkLabel}
-            <span className="sr-only"> ({messages.common.opensNewTab})</span>
-          </a>
-        </Reveal>
-
-        <div className="mt-16 sm:mt-20">
-          <Reveal>
-            <h2 className="text-2xl text-ink sm:text-3xl">{page.companiesHeading}</h2>
-            <p className="mt-4 max-w-2xl text-base text-muted sm:text-lg">
-              {page.companiesDescription}
-            </p>
+        <div className="mt-16 grid gap-x-6 gap-y-12 sm:mt-20 md:grid-cols-2 md:items-stretch">
+          <Reveal delay={GRID_DELAY} className="h-full">
+            <ProjectCard
+              href="/casos/eventops"
+              image={eventopsImages.hero}
+              imageAlt={page.eventops.heroAlt}
+              title={page.eventops.title}
+              summary={page.eventops.summary}
+              tags={page.eventops.tags}
+            />
           </Reveal>
-          <div className="mt-6">
-            <Companies delay={0.1} showTitle={false} />
-          </div>
+          <Reveal delay={SOON_DELAY} className="h-full">
+            <SoonCard
+              label={page.soon.label}
+              title={page.soon.title}
+              description={page.soon.description}
+            />
+          </Reveal>
         </div>
 
         <Reveal
-          delay={CTA_DELAY * 1000}
-          className="mt-16 flex w-full max-w-2xl flex-col items-start gap-5 rounded-lg border border-border p-8 sm:mt-20 sm:p-10"
+          delay={CTA_DELAY}
+          className="mx-auto mt-16 flex w-full max-w-2xl flex-col items-center gap-5 text-center sm:mt-20"
         >
-          <h2 className="text-2xl text-ink">{page.ctaTitle}</h2>
-          <p className="text-base text-muted">{page.ctaDescription}</p>
+          <h2 className="text-2xl text-ink sm:text-3xl">{page.ctaTitle}</h2>
+          <p className="text-base text-muted sm:text-lg">{page.ctaDescription}</p>
           <TextureButton asChild variant="primary" size="pill" className="w-full sm:w-auto">
             <Link href="/empecemos">{page.ctaButton}</Link>
           </TextureButton>

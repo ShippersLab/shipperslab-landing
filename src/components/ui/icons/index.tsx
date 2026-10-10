@@ -3,6 +3,7 @@ import {
   AiChat01Icon,
   AlertCircleIcon,
   ArrowRight01Icon,
+  ArrowUpRight01Icon,
   ArrowUp01Icon,
   Attachment01Icon,
   Calendar01Icon,
@@ -57,6 +58,7 @@ export const AttachmentIcon = createIcon(Attachment01Icon);
 export const MicIcon = createIcon(Mic01Icon);
 export const SendIcon = createIcon(ArrowUp01Icon);
 export const ArrowRightIcon = createIcon(ArrowRight01Icon);
+export const ArrowUpRightIcon = createIcon(ArrowUpRight01Icon);
 export const PlusIcon = createIcon(PlusSignIcon);
 export const CheckIcon = createIcon(Tick02Icon);
 export const CalendarIcon = createIcon(Calendar01Icon);

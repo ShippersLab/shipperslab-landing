@@ -63,7 +63,7 @@ export function buildLlmsTxt() {
       link(
         "Casos y experiencia",
         `${site.url}/casos`,
-        "EventOps en producción y experiencia del equipo",
+        "proyectos publicados: EventOps en producción",
       ),
       link("Eventos", `${site.url}/eventos`, "build nights, meetups y hackathons que organizamos"),
       link("X", site.social.x),

@@ -1,6 +1,8 @@
 {
   "common": {
-    "opensNewTab": "opens in a new tab"
+    "opensNewTab": "opens in a new tab",
+    "zoomImage": "Zoom image",
+    "closeImage": "Close image"
   },
   "site": {
     "name": "ShippersLab"
@@ -57,7 +59,8 @@
         "description": "We connect WhatsApp, your spreadsheets and invoicing to each other. Enter something once and it shows up where it should.",
         "audience": "For teams juggling several tools"
       }
-    ]
+    ],
+    "casesCta": "See projects"
   },
   "process": {
     "title": "What happens after you write.",
@@ -256,18 +259,74 @@
     "cta": "Back to home"
   },
   "casos": {
-    "metaTitle": "Custom software case studies: EventOps and more",
-    "metaDescription": "EventOps, our product in production for event companies, and team experience at Mercado Libre, PUMA, Coderhouse and NFTYDoor.",
-    "title": "Work and experience.",
-    "description": "We do not publish named client case studies yet. What we can show: an own product in production and where the team's experience comes from.",
+    "metaTitle": "Custom software case studies: EventOps",
+    "metaDescription": "EventOps, our product in production for event companies. More projects coming soon.",
+    "title": "Latest projects.",
+    "description": "A selection of what we have built and have in production.",
     "eventops": {
-      "eyebrow": "Own product",
+      "heroAlt": "Screenshot of the EventOps home page",
       "title": "EventOps",
-      "body": "A management system for event companies, in production. It keeps day-to-day operations in order: we built it and keep evolving it. It is the clearest proof of how we approach custom software.",
-      "linkLabel": "See EventOps"
+      "summary": "Calendar, staff and finances for your events company.",
+      "tags": ["Event management", "B2B"],
+      "metaTitle": "EventOps: management system for event companies",
+      "metaDescription": "EventOps brings the calendar, staff and finances of an event company into one system. A ShippersLab own product, in production.",
+      "visitLabel": "Visit EventOps",
+      "featuresTitle": "What it includes.",
+      "features": [
+        {
+          "title": "Finances",
+          "body": "Income, expenses and the month's net with its chart, and every movement tied to its event. Export everything to CSV."
+        },
+        {
+          "title": "Calendar",
+          "body": "The month, week or day's events in one view, with the site visit, setup, sound check and teardown of each one."
+        },
+        {
+          "title": "Clients",
+          "body": "Every client with their contact, where they came from and their next event. Couples, companies and venues in one place."
+        }
+      ],
+      "galleryTitle": "Gallery",
+      "galleryAlts": [
+        "EventOps home page",
+        "EventOps calendar",
+        "EventOps events list",
+        "EventOps clients list",
+        "EventOps staff list",
+        "EventOps finances dashboard"
+      ],
+      "eyebrow": "Own product",
+      "lead": "The calendar, staff and finances of an event company in one system. We built it, it is in production and we keep evolving it.",
+      "backLabel": "All projects",
+      "factsLabel": "Project details",
+      "facts": [
+        {
+          "label": "Type",
+          "value": "Own product"
+        },
+        {
+          "label": "Status",
+          "value": "In production"
+        },
+        {
+          "label": "For",
+          "value": "Sound, lighting and event companies"
+        },
+        {
+          "label": "Service",
+          "value": "Custom management systems"
+        }
+      ],
+      "overviewTitle": "What it solves.",
+      "overview": "An event company juggles dates, staff and money across loose spreadsheets. EventOps puts it in one place: which events are coming, who goes to each one and whether the business is making money.",
+      "approachTitle": "How we approached it.",
+      "approach": "We start from how the business works and build only what is needed. It is the clearest proof of how we approach custom software."
     },
-    "companiesHeading": "Where the team comes from.",
-    "companiesDescription": "Engineers and designers who worked at large companies and on products for clients abroad. These brands are former employers of the team, not ShippersLab clients.",
+    "soon": {
+      "label": "Coming soon",
+      "title": "More coming soon.",
+      "description": "We are putting together the next projects to show here."
+    },
     "ctaTitle": "Want to see if this fits your business?",
     "ctaDescription": "Tell us what takes your time or what you want to organize. We reply with scope and price in writing.",
     "ctaButton": "Tell us your problem"
