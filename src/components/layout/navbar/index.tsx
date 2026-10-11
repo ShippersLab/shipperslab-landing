@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 
+import { LanguageDropdown } from "@/components/layout/language-dropdown";
 import { MobileMenu } from "@/components/layout/navbar/mobile-menu";
 import { NAV_LINKS } from "@/components/layout/navbar/nav-links";
 import { useNavbarAnimation } from "@/components/layout/navbar/navbar.animation";
@@ -59,7 +60,9 @@ export function Navbar() {
         )}
       </nav>
 
-      <div className="hidden md:flex">
+      <div className="hidden items-center gap-3 md:flex">
+        <LanguageDropdown />
+
         <TextureButton asChild variant="primary" size="lg" className="w-auto rounded-full">
           <Link href="/empecemos">{messages.nav.contact}</Link>
         </TextureButton>

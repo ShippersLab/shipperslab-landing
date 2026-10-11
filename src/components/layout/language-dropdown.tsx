@@ -59,12 +59,12 @@ export function LanguageDropdown() {
         {open ? (
           <motion.div
             role="listbox"
-            initial={{ opacity: 0, scale: 0.95, y: 4 }}
+            initial={{ opacity: 0, scale: 0.95, y: -4 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.95, y: 4 }}
+            exit={{ opacity: 0, scale: 0.95, y: -4 }}
             transition={{ duration: 0.18, ease: EASE }}
-            style={{ transformOrigin: "bottom left" }}
-            className="absolute bottom-full left-0 mb-2 w-36 overflow-hidden rounded-lg border border-border bg-paper"
+            style={{ transformOrigin: "top left" }}
+            className="absolute top-full left-0 z-30 mt-2 flex w-36 flex-col gap-1 rounded-full border border-border bg-paper p-1"
           >
             {otherLocales.map((value) => (
               <button
@@ -75,7 +75,7 @@ export function LanguageDropdown() {
                   setLocale(value);
                   setOpen(false);
                 }}
-                className="flex w-full items-center px-3.5 py-2.5 text-left text-sm text-ink transition-colors duration-200 ease-out hover:bg-border/40 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+                className="flex w-full items-center justify-center rounded-full px-3.5 py-2.5 text-center text-sm text-ink transition-colors duration-200 ease-out hover:bg-border/40 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
               >
                 {LANGUAGE_LABELS[value]}
               </button>

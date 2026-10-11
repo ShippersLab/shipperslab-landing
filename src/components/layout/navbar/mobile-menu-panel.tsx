@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "motion/react";
 
-import { LanguageDropdown } from "@/components/layout/navbar/language-dropdown";
+import { LanguageDropdown } from "@/components/layout/language-dropdown";
 import type { NavLink } from "@/components/layout/navbar/nav-links";
 import { TextureButton } from "@/components/ui/button/texture-button";
 import { useI18n } from "@/i18n/provider";
@@ -12,6 +12,7 @@ import { cn } from "@/lib/utils";
 const itemVariants = {
   hidden: { opacity: 0, y: -6 },
   visible: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -4 },
 };
 
 const linkClassName =
@@ -49,10 +50,10 @@ export function MobileMenuPanel({ links, onNavigate }: MobileMenuPanelProps) {
         )}
       </nav>
 
-      <motion.div variants={itemVariants} className="flex items-center justify-between gap-3 pt-3">
+      <motion.div variants={itemVariants} className="flex items-center gap-3 pt-3">
         <LanguageDropdown />
 
-        <TextureButton asChild variant="primary" size="lg" className="w-auto rounded-full py-3">
+        <TextureButton asChild variant="primary" size="lg" className="flex-1 rounded-full py-3">
           <Link href="/empecemos" onClick={onNavigate}>
             {messages.nav.contact}
           </Link>

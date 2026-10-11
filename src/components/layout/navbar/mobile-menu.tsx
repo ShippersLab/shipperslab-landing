@@ -20,9 +20,9 @@ const panelVariants = {
   },
   exit: {
     opacity: 0,
-    scale: 0.97,
-    y: -6,
-    transition: { duration: 0.18, ease: EASE },
+    scale: 0.96,
+    y: -10,
+    transition: { duration: 0.28, ease: EASE, staggerChildren: 0.03, staggerDirection: -1 },
   },
 };
 
@@ -58,8 +58,9 @@ export function MobileMenu() {
         aria-controls={panelId}
         aria-label={isOpen ? messages.nav.menuClose : messages.nav.menuOpen}
         onClick={() => setIsOpen((value) => !value)}
-        className="relative z-40 -m-2 flex items-center justify-center rounded-md p-2 text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+        className="relative z-40 flex items-center gap-2 rounded-full border border-border bg-border/50 px-4 py-2 text-sm text-ink transition-colors duration-200 ease-out hover:bg-border focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
       >
+        {messages.nav.menuLabel}
         <AnimatePresence mode="wait" initial={false}>
           <motion.span
             key={isOpen ? "close" : "menu"}
@@ -69,7 +70,7 @@ export function MobileMenu() {
             transition={{ duration: 0.2, ease: EASE }}
             className="flex"
           >
-            {isOpen ? <CloseIcon size={22} /> : <MenuIcon size={22} />}
+            {isOpen ? <CloseIcon size={18} /> : <MenuIcon size={18} />}
           </motion.span>
         </AnimatePresence>
       </button>
@@ -83,7 +84,7 @@ export function MobileMenu() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 0.2, ease: EASE }}
+              transition={{ duration: 0.25, ease: EASE }}
               onClick={() => setIsOpen(false)}
             />
             <motion.div
