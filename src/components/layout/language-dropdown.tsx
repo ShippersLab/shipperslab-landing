@@ -75,7 +75,7 @@ export function LanguageDropdown() {
                   setLocale(value);
                   setOpen(false);
                 }}
-                className="flex w-full items-center justify-center rounded-full px-3.5 py-2.5 text-center text-sm text-ink transition-colors duration-200 ease-out hover:bg-border/40 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+                className="flex w-full items-center justify-start rounded-full px-3.5 py-2.5 text-sm text-ink transition-colors duration-200 ease-out hover:bg-border/40 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
               >
                 {LANGUAGE_LABELS[value]}
               </button>

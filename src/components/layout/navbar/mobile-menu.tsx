@@ -58,7 +58,9 @@ export function MobileMenu() {
         aria-controls={panelId}
         aria-label={isOpen ? messages.nav.menuClose : messages.nav.menuOpen}
         onClick={() => setIsOpen((value) => !value)}
-        className="relative z-40 flex items-center gap-2 rounded-full border border-border bg-border/50 px-4 py-2 text-sm text-ink transition-colors duration-200 ease-out hover:bg-border focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+        className={`relative z-40 flex items-center gap-2 rounded-full px-4 py-2 text-sm text-ink transition-colors duration-200 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink ${
+          isOpen ? "border-none bg-paper" : "border border-border bg-border/50 hover:bg-border"
+        }`}
       >
         {messages.nav.menuLabel}
         <AnimatePresence mode="wait" initial={false}>
@@ -90,7 +92,7 @@ export function MobileMenu() {
             <motion.div
               key="panel"
               id={panelId}
-              className="absolute inset-x-4 top-full z-30 mt-3 rounded-lg border border-border bg-paper"
+              className="absolute inset-x-4 top-full z-30 mt-1 rounded-lg border border-border bg-paper"
               style={{ transformOrigin: "top" }}
               variants={panelVariants}
               initial="hidden"
