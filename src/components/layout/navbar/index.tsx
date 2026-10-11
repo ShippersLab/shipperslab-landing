@@ -21,12 +21,12 @@ export function Navbar() {
   return (
     <header
       ref={ref}
-      className="invisible relative z-20 mx-auto flex w-full max-w-content items-center justify-between gap-6 bg-paper px-4 py-6 md:px-8 lg:absolute lg:inset-x-0 lg:top-0 lg:bg-transparent"
+      className="invisible relative z-20 mx-auto grid w-full max-w-content grid-cols-[1fr_auto_1fr] items-center gap-6 bg-paper px-4 py-6 md:px-8 lg:absolute lg:inset-x-0 lg:top-0 lg:bg-transparent"
     >
       <Link
         href="/"
         aria-label={site.name}
-        className="-m-2 rounded-md p-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+        className="-m-2 justify-self-start rounded-md p-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
       >
         <Image
           src="/logo/accent.svg"
@@ -38,7 +38,7 @@ export function Navbar() {
         />
       </Link>
 
-      <nav className="hidden items-center gap-8 md:flex md:pl-8">
+      <nav className="hidden items-center justify-self-center gap-8 md:flex">
         {NAV_LINKS.map((link) =>
           link.kind === "anchor" ? (
             <a
@@ -60,15 +60,17 @@ export function Navbar() {
         )}
       </nav>
 
-      <div className="hidden items-center gap-3 md:flex">
-        <LanguageDropdown />
+      <div className="flex items-center justify-self-end gap-3">
+        <div className="hidden items-center gap-3 md:flex">
+          <LanguageDropdown />
 
-        <TextureButton asChild variant="primary" size="lg" className="w-auto rounded-full">
-          <Link href="/empecemos">{messages.nav.contact}</Link>
-        </TextureButton>
+          <TextureButton asChild variant="primary" size="lg" className="w-auto rounded-full">
+            <Link href="/empecemos">{messages.nav.contact}</Link>
+          </TextureButton>
+        </div>
+
+        <MobileMenu />
       </div>
-
-      <MobileMenu />
     </header>
   );
 }
