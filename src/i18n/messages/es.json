@@ -13,7 +13,11 @@
     "events": "Eventos",
     "contact": "Escribinos",
     "skip": "Saltar al contenido",
-    "casos": "Casos"
+    "casos": "Casos",
+    "menuOpen": "Abrir menú",
+    "menuClose": "Cerrar menú",
+    "menuLabel": "Menú",
+    "language": "Idioma"
   },
   "hero": {
     "title": "Software a medida para tu negocio.",

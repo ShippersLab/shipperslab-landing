@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { LanguageDropdown } from "@/components/layout/language-dropdown";
 import { Wordmark } from "@/components/layout/wordmark";
 import { Reveal } from "@/components/ui/animation/reveal";
 import { Container } from "@/components/ui/section/container";
@@ -110,10 +111,14 @@ export function Footer() {
           <Reveal
             delay={200}
             duration={1}
-            className="flex flex-col gap-2 border-t border-border py-6 text-sm text-muted sm:flex-row sm:items-center sm:justify-between"
+            className="flex flex-col gap-4 border-t border-border py-6 text-sm text-muted sm:flex-row sm:items-center sm:justify-between"
           >
-            <span>© {YEAR} ShippersLab</span>
-            <span>{messages.footer.legal}</span>
+            <div className="flex flex-wrap items-center gap-4">
+              <span>© {YEAR} ShippersLab</span>
+              <span>{messages.footer.legal}</span>
+            </div>
+
+            <LanguageDropdown />
           </Reveal>
         </Container>
 

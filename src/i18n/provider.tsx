@@ -10,8 +10,10 @@ import {
   type ReactNode,
 } from "react";
 
-import { defaultLocale, type Locale } from "@/i18n/config";
+import { defaultLocale, isLocale, type Locale } from "@/i18n/config";
 import { getMessages, type Messages } from "@/i18n/get-messages";
+
+const LOCALE_STORAGE_KEY = "shipperslab-locale";
 
 type I18nValue = {
   locale: Locale;
@@ -22,7 +24,20 @@ type I18nValue = {
 const I18nContext = createContext<I18nValue | null>(null);
 
 export function I18nProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocale] = useState<Locale>(defaultLocale);
+  const [locale, setLocaleState] = useState<Locale>(defaultLocale);
+
+  useEffect(() => {
+    const stored = window.localStorage.getItem(LOCALE_STORAGE_KEY);
+
+    if (isLocale(stored)) {
+      setLocaleState(stored);
+    }
+  }, []);
+
+  const setLocale = (next: Locale) => {
+    setLocaleState(next);
+    window.localStorage.setItem(LOCALE_STORAGE_KEY, next);
+  };
 
   const value = useMemo<I18nValue>(
     () => ({ locale, messages: getMessages(locale), setLocale }),

@@ -12,7 +12,7 @@
     --font-heading: var(--font-geist-pixel-square), monospace;
 
     --text-hero: clamp(2.125rem, 5.2vw, 4.25rem);
-    --text-hero--line-height: 0.95;
+    --text-hero--line-height: 1;
     --text-wordmark: clamp(3rem, 13vw, 13rem);
     --text-wordmark--line-height: 1;
     --text-label: 0.6875rem;
