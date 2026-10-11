@@ -10,6 +10,22 @@ import { useI18n } from "@/i18n/provider";
 
 const EASE = [0.23, 1, 0.32, 1] as const;
 
+const panelVariants = {
+  hidden: { opacity: 0, scale: 0.95, y: -8 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: { duration: 0.35, ease: EASE, staggerChildren: 0.04, delayChildren: 0.05 },
+  },
+  exit: {
+    opacity: 0,
+    scale: 0.97,
+    y: -6,
+    transition: { duration: 0.18, ease: EASE },
+  },
+};
+
 export function MobileMenu() {
   const { messages } = useI18n();
   const [isOpen, setIsOpen] = useState(false);
@@ -73,11 +89,12 @@ export function MobileMenu() {
             <motion.div
               key="panel"
               id={panelId}
-              className="absolute inset-x-0 top-full z-30 border-b border-border bg-paper"
-              initial={{ opacity: 0, y: -8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
-              transition={{ duration: 0.3, ease: EASE }}
+              className="absolute inset-x-4 top-full z-30 mt-3 rounded-lg border border-border bg-paper"
+              style={{ transformOrigin: "top" }}
+              variants={panelVariants}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
             >
               <MobileMenuPanel links={NAV_LINKS} onNavigate={() => setIsOpen(false)} />
             </motion.div>

@@ -2,6 +2,7 @@ import { HugeiconsIcon, type HugeiconsIconProps, type IconSvgElement } from "@hu
 import {
   AiChat01Icon,
   AlertCircleIcon,
+  ArrowDown01Icon,
   ArrowRight01Icon,
   ArrowUpRight01Icon,
   ArrowUp01Icon,
@@ -31,6 +32,7 @@ import {
   FileSpreadsheetIcon,
   Store01Icon,
   Tick02Icon,
+  TranslateIcon as TranslateIconSource,
   UserGroupIcon,
   WhatsappIcon,
   WorkflowCircle06Icon,
@@ -78,3 +80,5 @@ export const LinkIcon = createIcon(Link01Icon);
 export const StoreIcon = createIcon(Store01Icon);
 export const MenuIcon = createIcon(Menu01Icon);
 export const CloseIcon = createIcon(Cancel01Icon);
+export const ChevronDownIcon = createIcon(ArrowDown01Icon);
+export const LanguageIcon = createIcon(TranslateIconSource);
