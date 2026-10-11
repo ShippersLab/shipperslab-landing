@@ -38,7 +38,7 @@ export function Navbar() {
         />
       </Link>
 
-      <nav className="hidden items-center gap-8 md:flex">
+      <nav className="hidden items-center gap-8 md:flex md:pl-8">
         {NAV_LINKS.map((link) =>
           link.kind === "anchor" ? (
             <a
