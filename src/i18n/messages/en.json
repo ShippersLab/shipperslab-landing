@@ -13,7 +13,10 @@
     "events": "Events",
     "contact": "Contact",
     "skip": "Skip to content",
-    "casos": "Work"
+    "casos": "Work",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "language": "Language"
   },
   "hero": {
     "title": "Custom software for your business.",
