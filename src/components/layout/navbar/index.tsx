@@ -21,7 +21,7 @@ export function Navbar() {
   return (
     <header
       ref={ref}
-      className="invisible relative z-20 mx-auto grid w-full max-w-content grid-cols-[1fr_auto_1fr] items-center gap-6 bg-paper px-4 py-6 md:px-8 lg:absolute lg:inset-x-0 lg:top-0 lg:bg-transparent"
+      className="invisible relative z-20 mx-auto grid w-full max-w-content grid-cols-[1fr_auto] items-center gap-6 bg-paper px-4 py-6 md:grid-cols-[1fr_auto_1fr] md:px-8 lg:absolute lg:inset-x-0 lg:top-0 lg:bg-transparent"
     >
       <Link
         href="/"
