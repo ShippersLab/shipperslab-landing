@@ -98,11 +98,31 @@ export function ProjectDetail() {
           </div>
         </Reveal>
 
+        <Reveal className="mt-16 sm:mt-20">
+          <div className="grid gap-6 border-t border-border pt-10 lg:grid-cols-[1fr_2fr] lg:gap-16">
+            <div>
+              <h2 className="text-2xl text-ink sm:text-3xl">{page.flowTitle}</h2>
+              <p className="mt-4 text-base leading-relaxed text-muted">{page.flowDescription}</p>
+            </div>
+            <ol className="flex max-w-2xl flex-col gap-8">
+              {page.flow.map((step, index) => (
+                <li key={step.title} className="flex gap-5">
+                  <span className="font-pixel text-xl text-accent">{index + 1}</span>
+                  <div>
+                    <h3 className="text-xl text-ink">{step.title}</h3>
+                    <p className="mt-2 text-base leading-relaxed text-muted">{step.body}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </Reveal>
+
         <div className="mt-16 sm:mt-20">
           <Reveal>
             <h2 className="text-2xl text-ink sm:text-3xl">{page.featuresTitle}</h2>
           </Reveal>
-          <ul className="mt-8 grid gap-8 md:grid-cols-3">
+          <ul className="mt-8 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {page.features.map((feature, index) => (
               <Reveal key={feature.title} as="li" delay={index * 80}>
                 <div className="border-t border-border pt-6">

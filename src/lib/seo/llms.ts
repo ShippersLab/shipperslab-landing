@@ -19,6 +19,9 @@ const AUDIENCES = [
 const EXPERIENCE =
   "Ingenieros con experiencia en infraestructura, AWS, backend, frontend e IA, que trabajaron en empresas como Mercado Libre, Coderhouse, PUMA y NFTYDoor, y en productos para clientes del exterior. Hablás directamente con las personas que construyen tu proyecto.";
 
+const EVENTOPS_CASE =
+  "EventOps es un producto propio de ShippersLab, en producción, pensado para empresas de sonido, iluminación y eventos. Reemplaza las planillas: cada evento se carga una vez y de ahí salen el calendario, el presupuesto, los pagos y los gastos.";
+
 function bullets(lines: string[]) {
   return lines.map((line) => `- ${line}`).join("\n");
 }
@@ -48,6 +51,12 @@ export function buildLlmsTxt() {
     `Cómo trabajamos:\n\n${steps.join("\n")}`,
     `Experiencia: ${EXPERIENCE}`,
     `Preguntas frecuentes:\n\n${faq.join("\n")}`,
+    `## Caso: EventOps\n\n${EVENTOPS_CASE}\n\nMódulos:\n\n${bullets(
+      es.casos.eventops.features.map((feature) => `${feature.title}: ${feature.body}`),
+    )}\n\n${[
+      link("Caso EventOps", `${site.url}/casos/eventops`),
+      link("EventOps", site.eventopsUrl),
+    ].join("\n")}`,
     `## Servicios\n\n${services.join("\n")}`,
     ...serviceRoutes.map((route) => {
       const page = es.servicePages[route.slug];
