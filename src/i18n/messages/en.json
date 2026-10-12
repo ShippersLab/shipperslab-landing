@@ -361,8 +361,12 @@
     "ctaTitle": "Want to see if this fits your business?",
     "ctaDescription": "Tell us what takes your time or what you want to organize. We reply with scope and price in writing.",
     "ctaButton": "Tell us your problem",
-    "experienceTitle": "Who builds it.",
-    "experience": "We are a small team of engineers and designers with experience in infrastructure, AWS, backend, frontend and AI. We have worked at companies like Mercado Libre, Coderhouse, PUMA and NFTYDoor, and on products for clients abroad. Here we show the projects we can publish, starting with EventOps, our own product that we designed, built and run in production."
+    "experience": "We are a small team of engineers and designers who have worked at companies like Mercado Libre, Coderhouse, PUMA and NFTYDoor, and on products for clients abroad.",
+    "soon": {
+      "label": "Coming soon",
+      "title": "More coming soon.",
+      "description": "We are putting together the next projects to show here."
+    }
   },
   "servicePages": {
     "eyebrow": "Service",

@@ -361,8 +361,12 @@
     "ctaTitle": "¿Querés ver si esto aplica a tu negocio?",
     "ctaDescription": "Contanos qué te lleva tiempo o qué querés ordenar. Te respondemos con alcance y precio por escrito.",
     "ctaButton": "Contanos tu problema",
-    "experienceTitle": "Quiénes lo construyen.",
-    "experience": "Somos un equipo chico de ingenieros y diseñadores con experiencia en infraestructura, AWS, backend, frontend e IA. Trabajamos en empresas como Mercado Libre, Coderhouse, PUMA y NFTYDoor, y en productos para clientes del exterior. Acá mostramos los proyectos que podemos publicar, empezando por EventOps, un producto propio que diseñamos, construimos y operamos en producción."
+    "experience": "Somos un equipo chico de ingenieros y diseñadores que trabajó en empresas como Mercado Libre, Coderhouse, PUMA y NFTYDoor, y en productos para clientes del exterior.",
+    "soon": {
+      "label": "Próximamente",
+      "title": "Próximamente más.",
+      "description": "Estamos armando los próximos proyectos para mostrar acá."
+    }
   },
   "servicePages": {
     "eyebrow": "Servicio",

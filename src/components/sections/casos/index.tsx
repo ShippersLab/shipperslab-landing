@@ -3,6 +3,7 @@
 import Link from "next/link";
 
 import { ProjectCard } from "@/components/sections/casos/project-card";
+import { SoonCard } from "@/components/sections/casos/soon-card";
 import { DiaTextReveal } from "@/components/ui/animation/dia-text-reveal";
 import { Reveal } from "@/components/ui/animation/reveal";
 import { WordReveal } from "@/components/ui/animation/word-reveal";
@@ -13,8 +14,9 @@ import { eventopsImages } from "@/lib/projects/eventops";
 
 const TITLE_DELAY = 0;
 const LEAD_DELAY = 0.25;
+const EXPERIENCE_DELAY = 350;
 const GRID_DELAY = 400;
-const EXPERIENCE_DELAY = 520;
+const SOON_DELAY = 520;
 const CTA_DELAY = 200;
 
 export function Casos() {
@@ -38,6 +40,9 @@ export function Casos() {
             delay={LEAD_DELAY}
             className="mt-5 text-lg text-muted"
           />
+          <Reveal delay={EXPERIENCE_DELAY}>
+            <p className="mt-4 text-base text-muted">{page.experience}</p>
+          </Reveal>
         </div>
 
         <div className="mt-16 grid gap-x-6 gap-y-12 sm:mt-20 md:grid-cols-2 md:items-stretch">
@@ -51,11 +56,12 @@ export function Casos() {
               tags={page.eventops.tags}
             />
           </Reveal>
-          <Reveal delay={EXPERIENCE_DELAY} className="h-full">
-            <div className="flex h-full flex-col justify-end">
-              <h2 className="text-2xl text-ink sm:text-3xl">{page.experienceTitle}</h2>
-              <p className="mt-4 text-base leading-relaxed text-muted">{page.experience}</p>
-            </div>
+          <Reveal delay={SOON_DELAY} className="h-full">
+            <SoonCard
+              label={page.soon.label}
+              title={page.soon.title}
+              description={page.soon.description}
+            />
           </Reveal>
         </div>
 
