@@ -32,7 +32,19 @@
     "companiesTitle": "Nuestro equipo trabajó en",
     "ctaTitle": "¿Querés saber si esto tiene sentido para tu negocio? Escribinos y lo vemos.",
     "ctaButton": "Escribinos a hola@shipperslab.tech",
-    "casosLink": "Ver experiencia"
+    "casosLink": "Ver experiencia",
+    "teamTitle": "Quiénes están detrás",
+    "team": {
+      "juani": {
+        "role": "Cofundador · Producto",
+        "bio": "Soy ingeniero de software y vengo de la ingeniería industrial. Lideré un equipo de IA y hoy construyo la venta de pasajes de transporte en España."
+      },
+      "franco": {
+        "role": "Cofundador · Ingeniería",
+        "bio": "Soy ingeniero de software e IA. Trabajo con TypeScript, Go y AWS, y armo agentes de IA."
+      }
+    },
+    "socialLabel": "{network} de {name}"
   },
   "services": {
     "title": "Qué hacemos.",

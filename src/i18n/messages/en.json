@@ -32,7 +32,19 @@
     "companiesTitle": "Our team has worked at",
     "ctaTitle": "Want to know if this makes sense for your business? Write to us and we will take a look.",
     "ctaButton": "Write to hola@shipperslab.tech",
-    "casosLink": "See experience"
+    "casosLink": "See experience",
+    "teamTitle": "Who is behind it",
+    "team": {
+      "juani": {
+        "role": "Co-founder · Product",
+        "bio": "I am a software engineer with a background in industrial engineering. I led an AI team and now build public transport ticketing in Spain."
+      },
+      "franco": {
+        "role": "Co-founder · Engineering",
+        "bio": "I am a software and AI engineer. I work with TypeScript, Go and AWS, and build AI agents."
+      }
+    },
+    "socialLabel": "{name} on {network}"
   },
   "services": {
     "title": "What we do.",

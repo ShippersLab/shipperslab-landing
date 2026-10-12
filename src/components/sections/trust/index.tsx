@@ -3,6 +3,7 @@
 import Link from "next/link";
 
 import { Companies } from "@/components/sections/trust/companies";
+import { Team } from "@/components/sections/trust/team";
 import { Reveal } from "@/components/ui/animation/reveal";
 import { WordReveal } from "@/components/ui/animation/word-reveal";
 import { ArcBandsBackground } from "@/components/ui/background/arc-bands-background";
@@ -50,6 +51,8 @@ export function Trust() {
             />
           </Link>
         </Reveal>
+
+        <Team />
 
         <div className="mt-16 flex flex-col items-start gap-x-2 gap-y-3 sm:mt-20 sm:flex-row sm:flex-wrap sm:items-baseline">
           <WordReveal
