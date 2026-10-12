@@ -14,7 +14,6 @@ import { eventopsImages } from "@/lib/projects/eventops";
 
 const TITLE_DELAY = 0;
 const LEAD_DELAY = 0.25;
-const EXPERIENCE_DELAY = 350;
 const GRID_DELAY = 400;
 const SOON_DELAY = 520;
 const CTA_DELAY = 200;
@@ -40,9 +39,6 @@ export function Casos() {
             delay={LEAD_DELAY}
             className="mt-5 text-lg text-muted"
           />
-          <Reveal delay={EXPERIENCE_DELAY}>
-            <p className="mt-4 text-base text-muted">{page.experience}</p>
-          </Reveal>
         </div>
 
         <div className="mt-16 grid gap-x-6 gap-y-12 sm:mt-20 md:grid-cols-2 md:items-stretch">
