@@ -264,7 +264,7 @@
   },
   "casos": {
     "metaTitle": "Custom software case studies: EventOps",
-    "metaDescription": "EventOps, our product in production for event companies. More projects coming soon.",
+    "metaDescription": "ShippersLab custom software case studies: EventOps, our management system in production for sound, lighting and event companies.",
     "title": "Latest projects.",
     "description": "A selection of what we have built and have in production.",
     "eventops": {
@@ -278,16 +278,28 @@
       "featuresTitle": "What it includes.",
       "features": [
         {
-          "title": "Finances",
-          "body": "Income, expenses and the month's result in a single dashboard, with every movement tied to its event. Everything can be exported to CSV."
-        },
-        {
           "title": "Calendar",
           "body": "All events for the month, week or day in a single view, with the site visit, setup, sound check and teardown of each one."
         },
         {
+          "title": "Quotes",
+          "body": "Pick services from your list and the total adds up on its own. The quote is exported as a PDF with your logo, ready to send to the client."
+        },
+        {
+          "title": "Staff",
+          "body": "Add team members to each date with their role and see who is free before assigning them, so no event is left short-handed."
+        },
+        {
+          "title": "Finances",
+          "body": "Deposits and installments in pesos or dollars, per-event and general expenses, and a monthly summary of income and expenses. All the data can be exported to CSV."
+        },
+        {
           "title": "Clients",
-          "body": "Each client with their contact details, their source and their next event. Individuals, companies and venues in a single record."
+          "body": "Each client with contact details, source, history and next event. Individuals, companies and venues in a single record."
+        },
+        {
+          "title": "Team",
+          "body": "Everyone at the company signs in with their own user. Invitations are sent by email and each company only sees its own data."
         }
       ],
       "galleryTitle": "Gallery",
@@ -324,16 +336,33 @@
       "overviewTitle": "The problem.",
       "overview": "An event company handles dates, teams, clients and payments all at once. When that information is scattered across spreadsheets and messages, it is easy for two events to overlap, for staff to be missing, or for nobody to know exactly how much money came in and how much is still owed.",
       "approachTitle": "How we solve it.",
-      "approach": "EventOps brings the whole operation into a single system. Each event has its client, its team and its money movements, and the calendar shows at a glance what needs to happen and when. We designed it around how an event company works, so everyone always sees the same information."
-    },
-    "soon": {
-      "label": "Coming soon",
-      "title": "More coming soon.",
-      "description": "We are putting together the next projects to show here."
+      "approach": "EventOps brings the whole operation into a single system. Each event has its client, its team and its money movements, and the calendar shows at a glance what needs to happen and when. We designed it around how an event company works, so everyone always sees the same information.",
+      "flowTitle": "One event, end to end.",
+      "flowDescription": "Each event is entered once and everything else comes from it. Nothing has to be copied into another spreadsheet.",
+      "flow": [
+        {
+          "title": "Create the event",
+          "body": "The event is created with its client and related dates are added: site visit, setup, sound check and teardown. They all show up in the calendar and the system warns when two dates overlap."
+        },
+        {
+          "title": "Build the quote",
+          "body": "Services such as sound, lighting or an LED screen are picked from the list and the total is calculated automatically. The quote downloads as a PDF with the company logo."
+        },
+        {
+          "title": "Assign the staff",
+          "body": "For each date, the team members who will work are added with their role, showing who is free and how many are still missing."
+        },
+        {
+          "title": "Collect and track",
+          "body": "The deposit, installments and event expenses are recorded, in pesos or dollars. At month end, the summary shows what came in, what went out and what is still pending."
+        }
+      ]
     },
     "ctaTitle": "Want to see if this fits your business?",
     "ctaDescription": "Tell us what takes your time or what you want to organize. We reply with scope and price in writing.",
-    "ctaButton": "Tell us your problem"
+    "ctaButton": "Tell us your problem",
+    "experienceTitle": "Who builds it.",
+    "experience": "We are a small team of engineers and designers with experience in infrastructure, AWS, backend, frontend and AI. We have worked at companies like Mercado Libre, Coderhouse, PUMA and NFTYDoor, and on products for clients abroad. Here we show the projects we can publish, starting with EventOps, our own product that we designed, built and run in production."
   },
   "servicePages": {
     "eyebrow": "Service",

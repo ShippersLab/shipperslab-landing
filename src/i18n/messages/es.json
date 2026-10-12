@@ -264,7 +264,7 @@
   },
   "casos": {
     "metaTitle": "Casos de software a medida: EventOps",
-    "metaDescription": "EventOps, nuestro producto en producción para empresas de eventos. Más proyectos próximamente.",
+    "metaDescription": "Casos de software a medida de ShippersLab: EventOps, nuestro sistema de gestión en producción para empresas de sonido, iluminación y eventos.",
     "title": "Últimos proyectos.",
     "description": "Una selección de lo que construimos y tenemos en producción.",
     "eventops": {
@@ -278,16 +278,28 @@
       "featuresTitle": "Qué incluye.",
       "features": [
         {
-          "title": "Finanzas",
-          "body": "Ingresos, egresos y resultado del mes en un solo panel, con cada movimiento asociado a su evento. Toda la información se puede exportar a CSV."
-        },
-        {
           "title": "Calendario",
           "body": "Todos los eventos del mes, la semana o el día en una sola vista, con la visita técnica, el montaje, la prueba de sonido y el desmontaje de cada uno."
         },
         {
+          "title": "Presupuestos",
+          "body": "Elegís servicios de tu lista y el total se arma solo. El presupuesto sale en PDF con tu logo, listo para enviar al cliente."
+        },
+        {
+          "title": "Personal",
+          "body": "Sumás integrantes a cada fecha con su rol y ves quién está libre antes de asignarlo, para no dejar un evento sin gente."
+        },
+        {
+          "title": "Finanzas",
+          "body": "Seña y cuotas en pesos o dólares, gastos por evento y generales, y un resumen mensual de ingresos y egresos. Toda la información se puede exportar a CSV."
+        },
+        {
           "title": "Clientes",
-          "body": "Cada cliente con sus datos de contacto, su origen y su próximo evento. Particulares, empresas y salones en un único registro."
+          "body": "Cada cliente con sus datos de contacto, su origen, su historial y su próximo evento. Particulares, empresas y salones en un único registro."
+        },
+        {
+          "title": "Equipo",
+          "body": "Cada persona de la empresa entra con su propio usuario. Las invitaciones se envían por email y cada empresa ve solo sus datos."
         }
       ],
       "galleryTitle": "Galería",
@@ -324,16 +336,33 @@
       "overviewTitle": "El problema.",
       "overview": "Una empresa de eventos maneja a la vez fechas, equipos, clientes y pagos. Cuando esa información está repartida en planillas y mensajes, es fácil que dos eventos se superpongan, que falte personal o que nadie sepa con certeza cuánto dinero ingresó y cuánto queda por cobrar.",
       "approachTitle": "Cómo lo solucionamos.",
-      "approach": "EventOps reúne toda la operación en un único sistema. Cada evento tiene su cliente, su equipo y sus movimientos de dinero, y el calendario muestra de un vistazo qué hay que hacer y cuándo. Lo diseñamos a partir de cómo trabaja una empresa de eventos, para que todos vean siempre la misma información."
-    },
-    "soon": {
-      "label": "Próximamente",
-      "title": "Próximamente más.",
-      "description": "Estamos armando los próximos proyectos para mostrar acá."
+      "approach": "EventOps reúne toda la operación en un único sistema. Cada evento tiene su cliente, su equipo y sus movimientos de dinero, y el calendario muestra de un vistazo qué hay que hacer y cuándo. Lo diseñamos a partir de cómo trabaja una empresa de eventos, para que todos vean siempre la misma información.",
+      "flowTitle": "Un evento, de punta a punta.",
+      "flowDescription": "Cada evento se carga una sola vez y de ahí sale todo lo demás. No hay que copiar nada a otra planilla.",
+      "flow": [
+        {
+          "title": "Cargar el evento",
+          "body": "Se crea el evento con su cliente y se le agregan las fechas relacionadas: visita técnica, montaje, prueba de sonido y desmontaje. Todas aparecen en el calendario y el sistema avisa si dos fechas se pisan."
+        },
+        {
+          "title": "Armar el presupuesto",
+          "body": "Se eligen los servicios de la lista, como sonido, iluminación o pantalla LED, y el total se calcula solo. El presupuesto se descarga en PDF con el logo de la empresa."
+        },
+        {
+          "title": "Asignar al personal",
+          "body": "Para cada fecha se suman los integrantes que van a trabajar, con su rol, y se ve quién está libre y cuántos faltan asignar."
+        },
+        {
+          "title": "Cobrar y controlar",
+          "body": "Se registran la seña, las cuotas y los gastos del evento, en pesos o en dólares. Al cierre del mes, el resumen muestra cuánto ingresó, cuánto salió y cuánto queda por cobrar."
+        }
+      ]
     },
     "ctaTitle": "¿Querés ver si esto aplica a tu negocio?",
     "ctaDescription": "Contanos qué te lleva tiempo o qué querés ordenar. Te respondemos con alcance y precio por escrito.",
-    "ctaButton": "Contanos tu problema"
+    "ctaButton": "Contanos tu problema",
+    "experienceTitle": "Quiénes lo construyen.",
+    "experience": "Somos un equipo chico de ingenieros y diseñadores con experiencia en infraestructura, AWS, backend, frontend e IA. Trabajamos en empresas como Mercado Libre, Coderhouse, PUMA y NFTYDoor, y en productos para clientes del exterior. Acá mostramos los proyectos que podemos publicar, empezando por EventOps, un producto propio que diseñamos, construimos y operamos en producción."
   },
   "servicePages": {
     "eyebrow": "Servicio",

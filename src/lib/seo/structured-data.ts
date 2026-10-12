@@ -1,6 +1,16 @@
-import type { BreadcrumbList, FAQPage, Graph, Organization, Service, WebSite } from "schema-dts";
+import type {
+  BreadcrumbList,
+  CollectionPage,
+  FAQPage,
+  Graph,
+  Organization,
+  Service,
+  SoftwareApplication,
+  WebSite,
+} from "schema-dts";
 
 import es from "@/i18n/messages/es.json";
+import { eventopsImages } from "@/lib/projects/eventops";
 import { DESCRIPTION } from "@/lib/seo/metadata";
 import { plainText, singleLine } from "@/lib/seo/text";
 import type { ServiceSlug } from "@/lib/services";
@@ -122,5 +132,85 @@ export function buildServiceStructuredData(slug: ServiceSlug): Graph {
   return {
     "@context": "https://schema.org",
     "@graph": [service, breadcrumb, faq],
+  };
+}
+
+const CASOS_URL = `${site.url}/casos`;
+const EVENTOPS_CASE_URL = `${CASOS_URL}/eventops`;
+const EVENTOPS_APP_ID = `${EVENTOPS_CASE_URL}#software`;
+
+export function buildCasosStructuredData(): Graph {
+  const page = es.casos;
+
+  const collection: CollectionPage = {
+    "@type": "CollectionPage",
+    "@id": `${CASOS_URL}#webpage`,
+    url: CASOS_URL,
+    name: page.metaTitle,
+    description: page.metaDescription,
+    inLanguage: "es-AR",
+    isPartOf: { "@id": WEBSITE_ID },
+    about: { "@id": ORGANIZATION_ID },
+    breadcrumb: { "@id": `${CASOS_URL}#breadcrumb` },
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: page.eventops.title,
+          url: EVENTOPS_CASE_URL,
+        },
+      ],
+    },
+  };
+
+  const breadcrumb: BreadcrumbList = {
+    "@type": "BreadcrumbList",
+    "@id": `${CASOS_URL}#breadcrumb`,
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Inicio", item: site.url },
+      { "@type": "ListItem", position: 2, name: "Casos", item: CASOS_URL },
+    ],
+  };
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [collection, breadcrumb],
+  };
+}
+
+export function buildEventopsCaseStructuredData(): Graph {
+  const page = es.casos.eventops;
+
+  const app: SoftwareApplication = {
+    "@type": "SoftwareApplication",
+    "@id": EVENTOPS_APP_ID,
+    name: page.title,
+    description: page.metaDescription,
+    url: site.eventopsUrl,
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
+    inLanguage: "es-AR",
+    audience: { "@type": "BusinessAudience", audienceType: page.facts[2].value },
+    featureList: page.features.map((feature) => feature.title),
+    image: `${site.url}${eventopsImages.hero.src}`,
+    creator: { "@type": "Organization", "@id": ORGANIZATION_ID, name: site.name, url: site.url },
+    publisher: { "@id": ORGANIZATION_ID },
+  };
+
+  const breadcrumb: BreadcrumbList = {
+    "@type": "BreadcrumbList",
+    "@id": `${EVENTOPS_CASE_URL}#breadcrumb`,
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Inicio", item: site.url },
+      { "@type": "ListItem", position: 2, name: "Casos", item: CASOS_URL },
+      { "@type": "ListItem", position: 3, name: page.title, item: EVENTOPS_CASE_URL },
+    ],
+  };
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [app, breadcrumb],
   };
 }

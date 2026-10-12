@@ -1,6 +1,8 @@
+import { JsonLd } from "@/components/seo/json-ld";
 import { ProjectDetail } from "@/components/sections/casos/project-detail";
 import { getMessages } from "@/i18n/get-messages";
 import { buildPageMetadata } from "@/lib/seo/page-metadata";
+import { buildEventopsCaseStructuredData } from "@/lib/seo/structured-data";
 
 const messages = getMessages("es").casos.eventops;
 
@@ -11,5 +13,10 @@ export const metadata = buildPageMetadata({
 });
 
 export default function EventopsCasePage() {
-  return <ProjectDetail />;
+  return (
+    <>
+      <JsonLd data={buildEventopsCaseStructuredData()} />
+      <ProjectDetail />
+    </>
+  );
 }
