@@ -1,14 +1,32 @@
-import type { BreadcrumbList, FAQPage, Graph, Organization, Service, WebSite } from "schema-dts";
+import type {
+  BreadcrumbList,
+  FAQPage,
+  Graph,
+  Organization,
+  Person,
+  Service,
+  WebSite,
+} from "schema-dts";
 
 import es from "@/i18n/messages/es.json";
 import { DESCRIPTION } from "@/lib/seo/metadata";
 import { plainText, singleLine } from "@/lib/seo/text";
 import type { ServiceSlug } from "@/lib/services";
 import { serviceRoutes } from "@/lib/services";
-import { site } from "@/lib/site";
+import { site, team } from "@/lib/site";
 
 const ORGANIZATION_ID = `${site.url}/#organization`;
 const WEBSITE_ID = `${site.url}/#website`;
+
+const founders: Person[] = team.map((member) => ({
+  "@type": "Person",
+  "@id": `${site.url}/#${member.id}`,
+  name: member.name,
+  jobTitle: es.trust.team[member.id].role,
+  ...(member.avatar ? { image: `${site.url}${member.avatar}` } : {}),
+  worksFor: { "@id": ORGANIZATION_ID },
+  sameAs: member.links.map((link) => link.url),
+}));
 
 const organization: Organization = {
   "@type": "Organization",
@@ -37,6 +55,7 @@ const organization: Organization = {
     areaServed: "AR",
   },
   sameAs: [site.social.instagram, site.social.x],
+  founder: founders,
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Servicios",
