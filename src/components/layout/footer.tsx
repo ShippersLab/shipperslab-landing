@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { LanguageDropdown } from "@/components/layout/language-dropdown";
-import { Wordmark } from "@/components/layout/wordmark";
+import { FooterIllustration } from "@/components/layout/footer-illustration";
 import { Reveal } from "@/components/ui/animation/reveal";
 import { Container } from "@/components/ui/section/container";
 import { InstagramIcon, MailIcon, TwitterIcon } from "@/components/ui/icons";
@@ -121,9 +121,9 @@ export function Footer() {
             <LanguageDropdown />
           </Reveal>
         </Container>
-
-        <Wordmark />
       </div>
+
+      <FooterIllustration />
     </footer>
   );
 }

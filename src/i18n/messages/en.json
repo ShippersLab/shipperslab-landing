@@ -100,7 +100,6 @@
   },
   "faq": {
     "title": "What people ask before writing to us.",
-    "imageAlt": "Illustration of construction cranes in orange tones on a pink background",
     "items": [
       {
         "question": "How much does it cost?",
@@ -211,6 +210,7 @@
     "stepAnnouncement": "Step {step} of {total}: {title}"
   },
   "footer": {
+    "illustrationAlt": "Illustration of the Puente Colgante suspension bridge in Santa Fe, Argentina, in orange tones",
     "tagline": "Systems, websites, bots and integrations for small businesses and shops. A small team from Argentina.",
     "legal": "Made in Argentina.",
     "social": {

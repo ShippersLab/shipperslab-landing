@@ -100,7 +100,6 @@
   },
   "faq": {
     "title": "Lo que nos preguntan antes de escribir.",
-    "imageAlt": "Ilustración de grúas de construcción en tonos naranja sobre fondo rosado",
     "items": [
       {
         "question": "¿Cuánto cuesta?",
@@ -211,6 +210,7 @@
     "stepAnnouncement": "Paso {step} de {total}: {title}"
   },
   "footer": {
+    "illustrationAlt": "Ilustración del Puente Colgante de Santa Fe sobre la laguna Setúbal, en tonos naranja",
     "tagline": "Sistemas, webs, bots e integraciones para pymes y comercios. Un equipo chico de Argentina.",
     "legal": "Hecho en Argentina.",
     "social": {
