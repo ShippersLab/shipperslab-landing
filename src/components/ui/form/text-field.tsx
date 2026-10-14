@@ -6,9 +6,12 @@ import { FieldError } from "@/components/ui/form/field-error";
 import { cn } from "@/lib/utils";
 
 const FIELD_CLASS =
-  "w-full rounded-lg border border-border bg-paper px-4 py-3 text-base text-ink placeholder:text-muted focus:border-muted focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink transition-colors duration-200 ease-out aria-invalid:border-accent";
+  "w-full rounded-lg border border-border bg-paper/60 px-4 py-3 text-base text-ink ring-ink/10 outline-hidden transition-[background-color,border-color,box-shadow] duration-200 ease-out placeholder:text-muted hover:border-ink/20 hover:bg-paper focus:border-ink focus:bg-paper focus:ring-2 aria-invalid:border-accent";
 
-const LABEL_CLASS = "flex flex-col gap-2 text-sm text-ink";
+const LABEL_CLASS = "group flex flex-col gap-2 text-sm";
+
+const LABEL_TEXT_CLASS =
+  "text-muted transition-colors duration-200 ease-out group-focus-within:text-ink group-hover:text-ink";
 
 function useFieldError(error?: string) {
   const errorId = useId();
@@ -32,7 +35,7 @@ export function TextField({ label, error, className, ...props }: TextFieldProps)
 
   return (
     <label className={LABEL_CLASS}>
-      {label}
+      <span className={LABEL_TEXT_CLASS}>{label}</span>
       <input className={cn(FIELD_CLASS, className)} {...invalidProps} {...props} />
       <FieldError id={errorId} message={error} />
     </label>
@@ -49,7 +52,7 @@ export function TextAreaField({ label, error, className, ...props }: TextAreaFie
 
   return (
     <label className={LABEL_CLASS}>
-      {label}
+      <span className={LABEL_TEXT_CLASS}>{label}</span>
       <textarea
         className={cn(FIELD_CLASS, "resize-none", className)}
         {...invalidProps}
