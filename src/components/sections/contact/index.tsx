@@ -3,6 +3,7 @@
 import { FormActions } from "@/components/sections/contact/form-actions";
 import { useContactForm } from "@/components/sections/contact/use-contact-form";
 import { Reveal } from "@/components/ui/animation/reveal";
+import { GridGlowBackground } from "@/components/ui/background/grid-glow-background";
 import { TextAreaField, TextField } from "@/components/ui/form/text-field";
 import { Section } from "@/components/ui/section/section";
 import { SectionHeading } from "@/components/ui/section/section-heading";
@@ -18,7 +19,12 @@ export function Contact() {
   const { form, status, handleChange, handleSubmit } = useContactForm();
 
   return (
-    <Section id="contacto" bordered>
+    <Section id="contacto" bordered className="relative isolate overflow-clip">
+      <GridGlowBackground
+        aria-hidden
+        className="absolute inset-0 -z-10 saturate-150 hue-rotate-30"
+      />
+
       <div className="grid gap-12 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
         <SectionHeading
           title={messages.contact.title}
