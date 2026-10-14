@@ -47,6 +47,7 @@ export const team: TeamMember[] = [
     name: "Franco Galfré",
     initials: "FG",
     cover: "/images/team/cover-franco.webp",
+    avatar: "/images/team/franco-avatar.webp",
     profileUrl: "https://www.francogalfre.site",
     links: [
       { network: "Portfolio", url: "https://www.francogalfre.site" },

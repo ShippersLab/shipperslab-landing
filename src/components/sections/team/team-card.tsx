@@ -16,10 +16,11 @@ export function TeamCard({ member }: { member: TeamMember }) {
       <div className="relative aspect-3/1 bg-border">
         <Image
           src={member.cover}
-          alt=""
+          alt={`Foto de ${member.name}`}
           fill
           sizes="(min-width: 640px) 568px, 100vw"
           className="object-cover"
+          loading="eager"
         />
       </div>
 
@@ -31,6 +32,7 @@ export function TeamCard({ member }: { member: TeamMember }) {
               alt={member.name}
               fill
               sizes="112px"
+              quality={90}
               className="object-cover"
             />
           ) : (
