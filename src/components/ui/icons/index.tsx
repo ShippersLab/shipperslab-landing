@@ -17,6 +17,7 @@ import {
   Database01Icon,
   File01Icon,
   GlobeIcon as GlobeIconSource,
+  HelpCircleIcon,
   InstagramIcon as InstagramIconSource,
   Invoice01Icon,
   Link01Icon,
@@ -88,3 +89,4 @@ export const MenuIcon = createIcon(Menu01Icon);
 export const CloseIcon = createIcon(Cancel01Icon);
 export const ChevronDownIcon = createIcon(ArrowDown01Icon);
 export const LanguageIcon = createIcon(TranslateIconSource);
+export const HelpIcon = createIcon(HelpCircleIcon);

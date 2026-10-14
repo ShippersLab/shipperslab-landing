@@ -99,7 +99,14 @@
     ]
   },
   "faq": {
+    "label": "FAQ",
     "title": "What people ask before writing to us.",
+    "description": "Answers to what we get asked the most. Don't see yours? Write to us at",
+    "help": {
+      "title": "Still have a question?",
+      "description": "Write to us and someone from the team will reply.",
+      "cta": "Write to us"
+    },
     "items": [
       {
         "question": "How much does it cost?",
@@ -125,7 +132,7 @@
   },
   "contact": {
     "title": "Let's start with your problem.",
-    "description": "Tell us what takes up your time or what you want to get in order. Someone on the team replies to set up a call. Scope and price in writing before we start.",
+    "description": "Tell us what you want to fix and we'll get back to you to set up a call.",
     "form": {
       "name": "Name",
       "namePlaceholder": "Your name",

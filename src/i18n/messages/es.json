@@ -99,7 +99,14 @@
     ]
   },
   "faq": {
+    "label": "Preguntas frecuentes",
     "title": "Lo que nos preguntan antes de escribir.",
+    "description": "Respuestas a lo que más nos preguntan. ¿No está la tuya? Escribinos a",
+    "help": {
+      "title": "¿Te quedó alguna duda?",
+      "description": "Escribinos y te responde alguien del equipo.",
+      "cta": "Escribinos"
+    },
     "items": [
       {
         "question": "¿Cuánto cuesta?",
@@ -125,7 +132,7 @@
   },
   "contact": {
     "title": "Empecemos por tu problema.",
-    "description": "Contanos qué te lleva tiempo o qué querés ordenar en tu negocio. Te responde alguien del equipo para coordinar una charla. Alcance y precio por escrito antes de arrancar.",
+    "description": "Contanos qué querés resolver y te respondemos para coordinar una charla.",
     "form": {
       "name": "Nombre",
       "namePlaceholder": "Tu nombre",
