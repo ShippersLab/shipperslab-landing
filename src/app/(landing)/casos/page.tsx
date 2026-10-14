@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 
 import { Casos } from "@/components/sections/casos";
+import { JsonLd } from "@/components/seo/json-ld";
 import { site } from "@/lib/site";
 import { getMessages } from "@/i18n/get-messages";
+import { buildCasosStructuredData } from "@/lib/seo/structured-data";
 
 const messages = getMessages("es").casos;
 const TITLE = messages.metaTitle;
@@ -36,5 +38,10 @@ export const metadata: Metadata = {
 };
 
 export default function CasosPage() {
-  return <Casos />;
+  return (
+    <>
+      <JsonLd data={buildCasosStructuredData()} />
+      <Casos />
+    </>
+  );
 }
