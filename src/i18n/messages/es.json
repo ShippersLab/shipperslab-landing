@@ -26,25 +26,24 @@
     "secondaryCta": "Ver servicios",
     "imageAlt": "Ilustración del Obelisco de Buenos Aires sobre una avenida amplia, en tonos naranja"
   },
-  "trust": {
+  "team": {
     "title": "Ingenieros y diseñadores de Argentina.",
     "description": "Somos un equipo chico. Venimos de empresas grandes y de productos para clientes del exterior, y trabajamos en español y en inglés.",
-    "companiesTitle": "Nuestro equipo trabajó en",
-    "ctaTitle": "¿Querés saber si esto tiene sentido para tu negocio? Escribinos y lo vemos.",
-    "ctaButton": "Escribinos a hola@shipperslab.tech",
-    "casosLink": "Ver experiencia",
-    "teamTitle": "Quiénes están detrás",
-    "team": {
+    "foundersTitle": "Quiénes están detrás",
+    "members": {
       "juani": {
-        "role": "Cofundador · Producto",
-        "bio": "Soy ingeniero de software y vengo de la ingeniería industrial. Lideré un equipo de IA y hoy construyo la venta de pasajes de transporte en España."
+        "role": "Cofundador · Ingeniería y producto",
+        "bio": "Es con quien hablás primero. Ingeniero industrial y de software, entiende cómo opera tu negocio y también lo construye."
       },
       "franco": {
-        "role": "Cofundador · Ingeniería",
-        "bio": "Soy ingeniero de software e IA. Trabajo con TypeScript, Go y AWS, y armo agentes de IA."
+        "role": "Cofundador · Ingeniería y diseño",
+        "bio": "Diseña las pantallas y construye el sistema que hay detrás. Ingeniero de software e IA, con tiendas online, paneles de gestión y agentes de IA en su portfolio."
       }
     },
-    "socialLabel": "{network} de {name}"
+    "profileLink": "Ver perfil",
+    "profileLabel": "Ver perfil de {name}",
+    "ctaTitle": "¿Querés saber si esto tiene sentido para tu negocio? Escribinos y lo vemos.",
+    "ctaButton": "Escribinos a hola@shipperslab.tech"
   },
   "services": {
     "title": "Qué hacemos.",

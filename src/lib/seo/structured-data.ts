@@ -22,7 +22,7 @@ const founders: Person[] = team.map((member) => ({
   "@type": "Person",
   "@id": `${site.url}/#${member.id}`,
   name: member.name,
-  jobTitle: es.trust.team[member.id].role,
+  jobTitle: es.team.members[member.id].role,
   ...(member.avatar ? { image: `${site.url}${member.avatar}` } : {}),
   worksFor: { "@id": ORGANIZATION_ID },
   sameAs: member.links.map((link) => link.url),

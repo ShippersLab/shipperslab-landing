@@ -1,8 +1,3 @@
-export type Company = {
-  name: string;
-  logo?: string;
-};
-
 export const site = {
   name: "ShippersLab",
   url: "https://www.shipperslab.tech",
@@ -21,13 +16,6 @@ export const site = {
   },
 } as const;
 
-export const companies: Company[] = [
-  { name: "Mercado Libre", logo: "/logos/mercado-libre.svg" },
-  { name: "PUMA", logo: "/logos/puma.svg" },
-  { name: "Coderhouse", logo: "/logos/coderhouse.svg" },
-  { name: "NFTYDoor", logo: "/logos/nftydoor.svg" },
-];
-
 export type TeamMemberId = "juani" | "franco";
 
 export type TeamMember = {
@@ -36,6 +24,7 @@ export type TeamMember = {
   initials: string;
   cover: string;
   avatar?: string;
+  profileUrl: string;
   links: { network: "Portfolio" | "LinkedIn" | "X"; url: string }[];
 };
 
@@ -44,8 +33,9 @@ export const team: TeamMember[] = [
     id: "juani",
     name: "Juan Ignacio De los Santos",
     initials: "JD",
-    cover: "/images/team/cover-sky.webp",
-    avatar: "/images/team/juani.webp",
+    cover: "/images/team/cover-juani.webp",
+    avatar: "/images/team/juani-avatar.webp",
+    profileUrl: "https://juanidls.dev",
     links: [
       { network: "Portfolio", url: "https://juanidls.dev" },
       { network: "LinkedIn", url: "https://www.linkedin.com/in/juanidlsdev/" },
@@ -54,9 +44,10 @@ export const team: TeamMember[] = [
   },
   {
     id: "franco",
-    name: "Franco Galfre",
+    name: "Franco Galfré",
     initials: "FG",
-    cover: "/images/team/cover-orange.webp",
+    cover: "/images/team/cover-franco.webp",
+    profileUrl: "https://www.francogalfre.site",
     links: [
       { network: "Portfolio", url: "https://www.francogalfre.site" },
       { network: "LinkedIn", url: "https://www.linkedin.com/in/francogalfre/" },

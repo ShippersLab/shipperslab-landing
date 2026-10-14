@@ -2,19 +2,14 @@
 
 import Image from "next/image";
 
-import { LinkedInIcon, PortfolioIcon, TwitterIcon } from "@/components/ui/icons";
+import { ArrowUpRightIcon } from "@/components/ui/icons";
 import { useI18n } from "@/i18n/provider";
 import type { TeamMember } from "@/lib/site";
 
-const NETWORK_ICONS = {
-  Portfolio: PortfolioIcon,
-  LinkedIn: LinkedInIcon,
-  X: TwitterIcon,
-};
-
 export function TeamCard({ member }: { member: TeamMember }) {
   const { messages } = useI18n();
-  const copy = messages.trust.team[member.id];
+  const copy = messages.team.members[member.id];
+  const profileLabel = `${messages.team.profileLabel.replace("{name}", member.name)} (${messages.common.opensNewTab})`;
 
   return (
     <article className="flex h-full flex-col overflow-hidden rounded-lg border border-border bg-paper">
@@ -50,31 +45,24 @@ export function TeamCard({ member }: { member: TeamMember }) {
         </div>
 
         <h3 className="mt-4 text-xl text-ink sm:text-2xl">{member.name}</h3>
-        <p className="mt-2 font-mono text-label uppercase tracking-label text-muted">{copy.role}</p>
+        <p className="mt-2 text-sm text-muted">{copy.role}</p>
         <p className="mt-4 text-base text-muted">{copy.bio}</p>
 
-        <ul className="mt-auto flex items-center gap-6 pt-6">
-          {member.links.map((link) => {
-            const Icon = NETWORK_ICONS[link.network];
-            const label = messages.trust.socialLabel
-              .replace("{name}", member.name)
-              .replace("{network}", link.network);
-
-            return (
-              <li key={link.network}>
-                <a
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={label}
-                  className="-m-3 flex rounded-md p-3 text-muted transition-colors duration-200 ease-out hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
-                >
-                  <Icon size={20} />
-                </a>
-              </li>
-            );
-          })}
-        </ul>
+        <div className="mt-auto pt-6">
+          <a
+            href={member.profileUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={profileLabel}
+            className="group inline-flex items-center gap-1.5 rounded-sm text-sm text-muted transition-colors duration-200 ease-out hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+          >
+            {messages.team.profileLink}
+            <ArrowUpRightIcon
+              size={16}
+              className="transition-transform duration-200 ease-out group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+            />
+          </a>
+        </div>
       </div>
     </article>
   );

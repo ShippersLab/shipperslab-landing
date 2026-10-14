@@ -34,7 +34,7 @@ export function buildLlmsTxt() {
   const faq = es.faq.items.map((item) => `- ${item.question} ${item.answer}`);
   const founders = team.map((member) => {
     const links = member.links.map((link) => `[${link.network}](${link.url})`).join(", ");
-    return `- ${member.name}, ${es.trust.team[member.id].role}. ${es.trust.team[member.id].bio} ${links}`;
+    return `- ${member.name}, ${es.team.members[member.id].role}. ${es.team.members[member.id].bio} ${links}`;
   });
   const services = es.services.items.map((service) =>
     link(

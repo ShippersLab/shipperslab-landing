@@ -26,25 +26,24 @@
     "secondaryCta": "See services",
     "imageAlt": "Illustration of the Buenos Aires Obelisk on a wide avenue, in orange tones"
   },
-  "trust": {
+  "team": {
     "title": "Engineers and designers from Argentina.",
     "description": "We are a small team. We come from large companies and from products built for clients abroad, and we work in Spanish and English.",
-    "companiesTitle": "Our team has worked at",
-    "ctaTitle": "Want to know if this makes sense for your business? Write to us and we will take a look.",
-    "ctaButton": "Write to hola@shipperslab.tech",
-    "casosLink": "See experience",
-    "teamTitle": "Who is behind it",
-    "team": {
+    "foundersTitle": "Who is behind it",
+    "members": {
       "juani": {
-        "role": "Co-founder · Product",
-        "bio": "I am a software engineer with a background in industrial engineering. I led an AI team and now build public transport ticketing in Spain."
+        "role": "Co-founder · Engineering and product",
+        "bio": "He's the first person you talk to. An industrial and software engineer, he maps how your business runs and builds it too."
       },
       "franco": {
-        "role": "Co-founder · Engineering",
-        "bio": "I am a software and AI engineer. I work with TypeScript, Go and AWS, and build AI agents."
+        "role": "Co-founder · Engineering and design",
+        "bio": "He designs the screens and builds the system behind them. A software and AI engineer whose portfolio includes online stores, management dashboards and AI agents."
       }
     },
-    "socialLabel": "{name} on {network}"
+    "profileLink": "View profile",
+    "profileLabel": "View {name}'s profile",
+    "ctaTitle": "Want to know if this makes sense for your business? Write to us and we will take a look.",
+    "ctaButton": "Write to hola@shipperslab.tech"
   },
   "services": {
     "title": "What we do.",

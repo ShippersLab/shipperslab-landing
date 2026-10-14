@@ -7,7 +7,6 @@ import {
   ArrowUpRight01Icon,
   ArrowUp01Icon,
   Attachment01Icon,
-  Briefcase01Icon,
   Calendar01Icon,
   CashierIcon as CashierIconSource,
   CloudUploadIcon,
@@ -19,7 +18,6 @@ import {
   InstagramIcon as InstagramIconSource,
   Invoice01Icon,
   Link01Icon,
-  Linkedin01Icon,
   Mail01Icon,
   Menu01Icon,
   Mic01Icon,
@@ -70,9 +68,7 @@ export const CheckIcon = createIcon(Tick02Icon);
 export const CalendarIcon = createIcon(Calendar01Icon);
 export const MailIcon = createIcon(Mail01Icon);
 export const AlertIcon = createIcon(AlertCircleIcon);
-export const PortfolioIcon = createIcon(Briefcase01Icon);
 export const TwitterIcon = createIcon(NewTwitterIcon);
-export const LinkedInIcon = createIcon(Linkedin01Icon);
 export const InstagramIcon = createIcon(InstagramIconSource);
 export const WhatsAppIcon = createIcon(WhatsappIcon);
 export const StockIcon = createIcon(Package01Icon);
