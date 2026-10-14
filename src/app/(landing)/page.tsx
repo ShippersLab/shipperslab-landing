@@ -6,7 +6,7 @@ import { Faq } from "@/components/sections/faq";
 import { Hero } from "@/components/sections/hero";
 import { Process } from "@/components/sections/process";
 import { Services } from "@/components/sections/services";
-import { Trust } from "@/components/sections/trust";
+import { Team } from "@/components/sections/team";
 import { homeStructuredData } from "@/lib/seo/structured-data";
 
 export const metadata: Metadata = {
@@ -21,8 +21,8 @@ export default function Home() {
       <JsonLd data={homeStructuredData} />
       <Hero />
       <Services />
-      <Trust />
       <Process />
+      <Team />
       <Faq />
       <Contact />
     </>

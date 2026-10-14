@@ -1,7 +1,7 @@
 import es from "@/i18n/messages/es.json";
 import { plainText, singleLine } from "@/lib/seo/text";
 import { getServiceHref, serviceRoutes } from "@/lib/services";
-import { site } from "@/lib/site";
+import { site, team } from "@/lib/site";
 
 const SUMMARY =
   "ShippersLab es un estudio de desarrollo de software de Argentina. Un equipo chico de ingenieros y diseñadores que diseña y construye software a medida para pymes, empresas, comercios y emprendedores. Lo que necesiten, lo podemos desarrollar. Alcance y precio por escrito antes de arrancar.";
@@ -35,6 +35,10 @@ export function buildLlmsTxt() {
     (step, index) => `${index + 1}. ${step.title}: ${step.description}`,
   );
   const faq = es.faq.items.map((item) => `- ${item.question} ${item.answer}`);
+  const founders = team.map((member) => {
+    const links = member.links.map((link) => `[${link.network}](${link.url})`).join(", ");
+    return `- ${member.name}, ${es.team.members[member.id].role}. ${es.team.members[member.id].bio} ${links}`;
+  });
   const services = es.services.items.map((service) =>
     link(
       singleLine(service.title),
@@ -50,6 +54,7 @@ export function buildLlmsTxt() {
     `Para quién:\n\n${bullets(AUDIENCES)}`,
     `Cómo trabajamos:\n\n${steps.join("\n")}`,
     `Experiencia: ${EXPERIENCE}`,
+    `Fundadores:\n\n${founders.join("\n")}`,
     `Preguntas frecuentes:\n\n${faq.join("\n")}`,
     `## Caso: EventOps\n\n${EVENTOPS_CASE}\n\nMódulos:\n\n${bullets(
       es.casos.eventops.features.map((feature) => `${feature.title}: ${feature.body}`),

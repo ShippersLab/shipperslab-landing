@@ -34,7 +34,7 @@ export function Hero() {
           height={822}
           loading="eager"
           fetchPriority="high"
-          quality={75}
+          quality={90}
           placeholder="blur"
           blurDataURL={HERO_BLUR_DATA_URL}
           className="aspect-4/3 w-full object-cover object-center select-none sm:aspect-8/3 sm:object-top lg:max-h-[calc(100svh-15rem)]"
@@ -59,7 +59,7 @@ export function Hero() {
           </h1>
 
           <div className="flex w-full max-w-fit flex-col gap-4 pt-1">
-            <p className="hero-description invisible w-full font-sans text-base leading-relaxed text-muted sm:text-lg">
+            <p className="hero-description invisible w-full font-sans text-sm leading-relaxed text-muted sm:text-lg">
               {messages.hero.description}
             </p>
 

@@ -1,9 +1,0 @@
-export function Wordmark() {
-  return (
-    <div aria-hidden className="pointer-events-none mt-8 w-full select-none overflow-hidden">
-      <span className="block translate-y-1/4 text-center font-heading text-wordmark tracking-heading whitespace-nowrap text-ink/5">
-        ShippersLab
-      </span>
-    </div>
-  );
-}

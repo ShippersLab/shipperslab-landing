@@ -33,7 +33,7 @@ Services are framed by the client's moment, not by technology ("what does this s
 - **Bots de WhatsApp y agentes de IA**: AI only where it pays off, not hype.
 - **Presencia digital para comercios o emprendedores**: landings, appointment booking, catalogs.
 
-EventOps is not a service card. It is proof in the Trust section and the example inside the first service.
+EventOps is not a service card. It is proof behind the Services section's "Ver casos" link and the example inside the first service.
 
 What a neighboring agency can't truthfully copy: few projects running at a time so the team stays present in each one, real weekly progress instead of end-of-engagement reports, and scope committed to writing from day one, and direct contact with the people building it.
 
@@ -55,7 +55,7 @@ What a neighboring agency can't truthfully copy: few projects running at a time 
 
 ## Brand Commitments
 
-- **Team**: a small team of engineers and designers from Argentina. Franco (engineering) and Juani (commercial and marketing) can be named and shown. The other members are never named or shown; in copy they are "ingenieros" inside "un equipo chico". No individual bios. The approved employer names for the experience strip are Mercado Libre, Coderhouse, PUMA and NFTYDoor, always former employers, never clients. Do not add any other employer without explicit approval. Combined experience covers infrastructure, AWS, backend, frontend and AI, earned at large companies and on products built for clients abroad.
+- **Team**: a small team of engineers and designers from Argentina. Franco (engineering and design) and Juani (engineering and product) can be named and shown. The other members are never named or shown; in copy they are "ingenieros" inside "un equipo chico". Only Franco and Juani get a short bio on their founder card (two sentences at most, no metrics, no client names); the other members never get a bio, name or face. The approved employer names for copy are Mercado Libre, Coderhouse, PUMA and NFTYDoor, always former employers, never clients. Do not add any other employer without explicit approval. The landing does not currently show an employer strip; a future strip will show companies we worked for (clients), only once they are approved. Combined experience covers infrastructure, AWS, backend, frontend and AI, earned at large companies and on products built for clients abroad.
 - **Voice**: confident, plain, direct. An established studio operating in the present tense, not a manifesto. Short sentences, active voice, plain concrete words. Say what the reader gets before saying who we are. No corporate filler ("empowering", "cutting-edge", "innovative solutions", "leverage", "synergy"), no manifestos, no superlatives that can't be backed up, no em dash, no AI-tell patterns ("no es X, es Y" reveals, "no X, no Y, no Z" lists, maxim-style closing lines).
 - **Language**: Spanish first (rioplatense, "vos"), English second and written as native English, not a literal translation. Code and technical docs stay in English.
 - **Phrase bank** (reusable brand lines, not the framing of the main CTA, which talks about the client's business): "Un lab que lanza." / "A lab that ships." · "Diseñamos y construimos productos digitales." / "We design and build digital products." · "Traé eso que tenés a medias." / "Bring the unfinished thing." · "Se hace acá." / "Built here." · "Todavía construyendo." / "Still building." · "Las ideas son baratas. Las cosas terminadas, no." / "Ideas are cheap. Finished things are not." · "Nadie se acuerda de la app que nunca se lanzó." / "Nobody remembers the app that never launched." · "Todo lo grande fue el proyecto de fin de semana de alguien." / "Every big thing was somebody's weekend project." · "Hecho en Argentina." / "Made in Argentina."
@@ -66,8 +66,8 @@ What a neighboring agency can't truthfully copy: few projects running at a time 
 
 - No client logos, testimonials, case studies, or event attendance numbers exist. Do not fabricate any.
 - EventOps (https://eventops.digital) is the one own product in production that can be shown.
-- The only approved employer names are Mercado Libre, Coderhouse, PUMA and NFTYDoor, shown as a neutral experience strip of former employers. Only Franco and Juani may be named or shown; no bios.
-- Brand assets (logos, avatars, social graphics) live in the separate `shipperslab-brand` repo and get copied into `public/images` or `public/icons` when needed, never referenced cross-repo. Employer logos, if used, go in `public/logos`.
+- The only approved employer names are Mercado Libre, Coderhouse, PUMA and NFTYDoor, as former employers named in copy; the landing shows no employer strip today. Only Franco and Juani may be named or shown, and only they get a short bio on their founder card (two sentences at most, no metrics, no client names).
+- Brand assets (logos, avatars, social graphics) live in the separate `shipperslab-brand` repo and get copied into `public/images` or `public/icons` when needed, never referenced cross-repo. Client logos, once approved for a future strip, go in `public/logos`.
 
 ## Product Principles
 

@@ -6,7 +6,7 @@ For visual rules (colors, type, spacing, motion) the source of truth is `DESIGN.
 
 ## What ShippersLab is
 
-ShippersLab is a digital studio, lab and community. It is a small team of engineers and designers from Argentina. Publicly only two people are named and shown: Franco (engineering) and Juani (commercial and marketing). The other members are never named or shown; in copy they are "ingenieros" inside "un equipo chico".
+ShippersLab is a digital studio, lab and community. It is a small team of engineers and designers from Argentina. Publicly only two people are named and shown: Franco (engineering and design) and Juani (engineering and product). The other members are never named or shown; in copy they are "ingenieros" inside "un equipo chico".
 
 The name comes from "shippear", dev slang for launching something, plus "Lab", the place where you experiment. The core idea: ideas are cheap, finished things are not. ShippersLab exists to take things from idea to launched.
 
@@ -29,7 +29,7 @@ The four confirmed services, in this order:
 3. **Bots de WhatsApp y agentes de IA**: replaces "automatizaciones con IA". AI only where it pays off, no AI for hype.
 4. **Presencia digital para comercios o emprendedores**: landings, appointment booking, catalogs. Solves "people can't find or book me".
 
-EventOps is not a service card. It is proof in the Trust section and the example inside the first service.
+EventOps is not a service card. It is proof behind the Services section's "Ver casos" link and the example inside the first service.
 
 ## How we work
 
@@ -41,11 +41,11 @@ These four principles show up in copy and should shape product decisions:
 - **Scope in writing.** What's in, what's out and when, clear from day one.
 ## Team
 
-Publicly only two people are named and shown: Franco (engineering) and Juani (commercial and marketing). The other members are never named or shown. In copy they are "ingenieros" inside "un equipo chico". Team description in public: "un equipo chico de ingenieros y diseñadores de Argentina". No individual bios.
+Publicly only two people are named and shown: Franco (engineering and design) and Juani (engineering and product). The other members are never named or shown. In copy they are "ingenieros" inside "un equipo chico". Team description in public: "un equipo chico de ingenieros y diseñadores de Argentina". Only Franco and Juani get a short bio on their founder card (two sentences at most, no metrics, no client names); the other members never get a bio, name or face.
 
 Combined experience covers infrastructure, AWS, backend, frontend and AI, earned at large companies and on products built for clients abroad.
 
-The approved employer strip is Mercado Libre, Coderhouse, PUMA and NFTYDoor. They are former employers, never clients. No other employer without explicit approval.
+The approved employer names for copy are Mercado Libre, Coderhouse, PUMA and NFTYDoor. They are former employers, never clients. No other employer without explicit approval. The landing does not currently show an employer strip; a future strip will show companies we worked for (clients), only once they are approved.
 
 ## Current stage
 

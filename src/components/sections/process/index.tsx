@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 
 import { Reveal } from "@/components/ui/animation/reveal";
+import { ArcBandsBackground } from "@/components/ui/background/arc-bands-background";
 import { Section } from "@/components/ui/section/section";
 import { SectionHeading } from "@/components/ui/section/section-heading";
 import { useI18n } from "@/i18n/provider";
@@ -16,7 +17,12 @@ export function Process() {
   const { messages } = useI18n();
 
   return (
-    <Section>
+    <Section className="relative isolate overflow-clip">
+      <ArcBandsBackground
+        aria-hidden
+        className="absolute inset-0 -z-10 bg-transparent opacity-60 saturate-150 hue-rotate-30"
+      />
+
       <SectionHeading title={messages.process.title} titleDelay={TITLE_DELAY} />
 
       <div className="relative mt-16 grid grid-cols-1 gap-10 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">

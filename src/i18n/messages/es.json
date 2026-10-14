@@ -26,13 +26,24 @@
     "secondaryCta": "Ver servicios",
     "imageAlt": "Ilustración del Obelisco de Buenos Aires sobre una avenida amplia, en tonos naranja"
   },
-  "trust": {
+  "team": {
     "title": "Ingenieros y diseñadores de Argentina.",
     "description": "Somos un equipo chico. Venimos de empresas grandes y de productos para clientes del exterior, y trabajamos en español y en inglés.",
-    "companiesTitle": "Nuestro equipo trabajó en",
+    "foundersTitle": "Quiénes están detrás",
+    "members": {
+      "juani": {
+        "role": "Cofundador · Ingeniería y producto",
+        "bio": "Es con quien hablás primero. Ingeniero industrial y de software, entiende cómo opera tu negocio y también lo construye."
+      },
+      "franco": {
+        "role": "Cofundador · Ingeniería y diseño",
+        "bio": "Diseña las pantallas y construye el sistema que hay detrás. Ingeniero de software e IA, con tiendas online, paneles de gestión y agentes de IA en su portfolio."
+      }
+    },
+    "profileLink": "Ver perfil",
+    "profileLabel": "Ver perfil de {name}",
     "ctaTitle": "¿Querés saber si esto tiene sentido para tu negocio? Escribinos y lo vemos.",
-    "ctaButton": "Escribinos a hola@shipperslab.tech",
-    "casosLink": "Ver experiencia"
+    "ctaButton": "Escribinos a hola@shipperslab.tech"
   },
   "services": {
     "title": "Qué hacemos.",
@@ -88,8 +99,14 @@
     ]
   },
   "faq": {
+    "label": "Preguntas frecuentes",
     "title": "Lo que nos preguntan antes de escribir.",
-    "imageAlt": "Ilustración de grúas de construcción en tonos naranja sobre fondo rosado",
+    "description": "Respuestas a lo que más nos preguntan. ¿No está la tuya? Escribinos a",
+    "help": {
+      "title": "¿Te quedó alguna duda?",
+      "description": "Escribinos y te responde alguien del equipo.",
+      "cta": "Escribinos"
+    },
     "items": [
       {
         "question": "¿Cuánto cuesta?",
@@ -115,7 +132,7 @@
   },
   "contact": {
     "title": "Empecemos por tu problema.",
-    "description": "Contanos qué te lleva tiempo o qué querés ordenar en tu negocio. Te responde alguien del equipo para coordinar una charla. Alcance y precio por escrito antes de arrancar.",
+    "description": "Contanos qué querés resolver y te respondemos para coordinar una charla.",
     "form": {
       "name": "Nombre",
       "namePlaceholder": "Tu nombre",
@@ -200,6 +217,7 @@
     "stepAnnouncement": "Paso {step} de {total}: {title}"
   },
   "footer": {
+    "illustrationAlt": "Ilustración del Puente Colgante de Santa Fe sobre la laguna Setúbal, en tonos naranja",
     "tagline": "Sistemas, webs, bots e integraciones para pymes y comercios. Un equipo chico de Argentina.",
     "legal": "Hecho en Argentina.",
     "social": {
