@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Events } from "@/components/sections/events";
 import { site } from "@/lib/site";
 
-const TITLE = "Eventos de tecnología en Argentina: build nights, meetups y hackathons";
+const TITLE = "Eventos tech en Argentina: build nights y hackathons";
 const DESCRIPTION =
   "Estamos armando las primeras build nights, meetups y hackathons en Argentina. Escribinos a eventos@shipperslab.tech.";
 const FULL_TITLE = `${TITLE} | ${site.name}`;
