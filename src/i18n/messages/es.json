@@ -240,11 +240,17 @@
     }
   },
   "events": {
-    "title": "Eventos de tecnología en Argentina: build nights, meetups y hackathons",
-    "description": "Estamos armando nuestros primeros eventos: build nights, meetups, hackathons y charlas. Arrancamos en Santa Fe y después vamos por el resto del país.",
-    "formats": ["Build nights", "Meetups", "Hackathons", "Charlas", "Café"],
-    "sponsorTitle": "¿Querés ser sponsor o ayudarnos a organizar?",
-    "sponsorDescription": "Nos sirve cualquier ayuda: empresas, herramientas para developers, créditos de API o una mano con la organización. No hace falta ser una marca grande. Si te interesa, escribinos.",
+    "title": "Eventos para toda la comunidad",
+    "description": "Networking, demos de proyectos, charlas y hackathons abiertos a todos. Arrancamos en Santa Fe.",
+    "formats": ["Networking", "Demo nights", "Charlas", "Hackathons", "Café"],
+    "sponsorTitle": "Buscamos partners",
+    "sponsorDescription": "Queremos armar estos eventos junto a empresas y personas que quieran sumarse. No hace falta ser una marca grande: estas son algunas formas de ayudar, y si se te ocurre otra, también suma.",
+    "sponsorWays": [
+      { "title": "Un lugar", "description": "Una oficina, un cowork o cualquier espacio donde podamos juntarnos." },
+      { "title": "Créditos y herramientas", "description": "Créditos de API o acceso a tus herramientas para que la gente las pruebe." },
+      { "title": "Premios", "description": "Algo para reconocer a los mejores proyectos o sumar a un sorteo." },
+      { "title": "Una mano organizando", "description": "Difusión, logística o tiempo para que cada evento salga bien." }
+    ],
     "cta": "Enviar un mensaje",
     "gallery": {
       "title": "Así se va a ver.",

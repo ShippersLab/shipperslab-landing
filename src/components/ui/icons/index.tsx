@@ -8,6 +8,7 @@ import {
   ArrowRight01Icon,
   ArrowUpRight01Icon,
   ArrowUp01Icon,
+  Award01Icon,
   Attachment01Icon,
   Calendar01Icon,
   CashierIcon as CashierIconSource,
@@ -88,6 +89,7 @@ export const StoreIcon = createIcon(Store01Icon);
 export const BuildingIcon = createIcon(Building03Icon);
 export const ConversationIcon = createIcon(BubbleChatIcon);
 export const PlugIcon = createIcon(Plug01Icon);
+export const AwardIcon = createIcon(Award01Icon);
 export const PaymentIcon = createIcon(Payment01Icon);
 export const ContactsIcon = createIcon(ContactBookIcon);
 export const HeadsetIcon = createIcon(HeadsetIconSource);

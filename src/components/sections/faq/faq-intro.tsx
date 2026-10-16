@@ -17,7 +17,7 @@ export function FaqIntro({ label, title, description }: FaqIntroProps) {
   return (
     <div>
       <Reveal delay={LABEL_DELAY}>
-        <span className="inline-flex items-center gap-2 rounded-md border border-border px-3 py-1.5 font-mono text-label uppercase tracking-label text-muted">
+        <span className="inline-flex items-center gap-2 rounded-md border border-border px-3 py-1.5 font-mono text-label text-muted">
           <HelpIcon className="size-3.5 text-ink" />
           {label}
         </span>

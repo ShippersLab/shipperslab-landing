@@ -1,12 +1,14 @@
 "use client";
 
 import { BuildingIllustration } from "@/components/sections/events/building-illustration";
+import { PartnerWays } from "@/components/sections/events/partner-ways";
 import { PolaroidGallery } from "@/components/sections/events/polaroid-gallery";
 import { DiaTextReveal } from "@/components/ui/animation/dia-text-reveal";
 import { Reveal } from "@/components/ui/animation/reveal";
 import { WordReveal } from "@/components/ui/animation/word-reveal";
 import { Container } from "@/components/ui/section/container";
 import { TextureButton } from "@/components/ui/button/texture-button";
+import { MailIcon } from "@/components/ui/icons";
 import { useI18n } from "@/i18n/provider";
 import { site } from "@/lib/site";
 
@@ -16,6 +18,8 @@ const ILLUSTRATION_DELAY = 0.5;
 const GALLERY_TITLE_DELAY = 0.7;
 const GALLERY_DELAY = 0.9;
 const SPONSOR_DELAY = 0;
+const PARTNER_WAYS_DELAY = 0.2;
+const SPONSOR_CTA_DELAY = 0.8;
 
 export function Events() {
   const { messages } = useI18n();
@@ -69,14 +73,21 @@ export function Events() {
       </Container>
 
       <Container className="border-t border-border py-20 sm:py-28">
-        <Reveal
-          delay={SPONSOR_DELAY * 1000}
-          className="flex w-full flex-col items-start gap-5 rounded-lg border border-border p-8 sm:p-10"
-        >
-          <h2 className="text-2xl">{messages.events.sponsorTitle}</h2>
-          <p className="text-base text-muted">{messages.events.sponsorDescription}</p>
+        <Reveal delay={SPONSOR_DELAY * 1000} className="max-w-xl">
+          <h2 className="text-2xl sm:text-3xl">{messages.events.sponsorTitle}</h2>
+          <p className="mt-3 text-base text-muted">{messages.events.sponsorDescription}</p>
+        </Reveal>
+        <PartnerWays
+          items={messages.events.sponsorWays}
+          delay={PARTNER_WAYS_DELAY}
+          className="mt-12 w-full"
+        />
+        <Reveal delay={SPONSOR_CTA_DELAY * 1000} className="mt-12 flex">
           <TextureButton asChild variant="primary" size="pill" className="w-full sm:w-auto">
-            <a href={`mailto:${site.emails.events}`}>{messages.events.cta}</a>
+            <a href={`mailto:${site.emails.events}`}>
+              <MailIcon size={16} />
+              {messages.events.cta}
+            </a>
           </TextureButton>
         </Reveal>
       </Container>
