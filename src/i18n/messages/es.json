@@ -616,38 +616,58 @@
     },
     "integraciones": {
       "navLabel": "Integraciones",
-      "metaTitle": "Integraciones entre las herramientas que ya usás",
-      "metaDescription": "Conectamos WhatsApp, planillas y facturación entre sí. Cargás algo una vez y aparece donde tiene que estar. Alcance por escrito antes de arrancar.",
-      "h1": "Integraciones con lo que ya usás.",
-      "lead": "Conectamos WhatsApp, tus planillas y la facturación entre sí. Cargás algo una vez y aparece donde tiene que estar. Sin tirar abajo lo que hoy te funciona.",
+      "metaTitle": "Integraciones: Mercado Pago, Tiendanube, ARCA y WhatsApp",
+      "metaDescription": "Integraciones a medida con Mercado Pago, Tiendanube, facturación de ARCA, WhatsApp con IA y Google Sheets. Cargás el dato una vez. Alcance por escrito.",
+      "h1": "Integraciones a medida con lo que ya usás.",
+      "lead": "Conectamos Mercado Pago, Tiendanube, la facturación de ARCA, WhatsApp y tus planillas entre sí. Cargás algo una vez y aparece donde tiene que estar, sin tirar abajo lo que hoy te funciona.",
       "sections": [
         {
           "title": "Qué resolvemos.",
-          "body": "Datos que viajan a mano de un lado a otro: un pedido en WhatsApp que después cargás en la planilla, una venta que después facturás aparte. Unimos esas piezas para que el dato entre una sola vez."
+          "body": "Datos que viajan a mano de un lado a otro: un pedido que llega por WhatsApp y después cargás en la planilla, una venta que cobrás por un lado y facturás por otro. Unimos esas piezas para que el dato entre una sola vez y nadie tenga que copiarlo."
         },
         {
-          "title": "Cómo lo encaramos.",
-          "body": "Partimos de las herramientas que ya usás. Si te sirven, las conectamos. Si hace falta reemplazar alguna, queda claro en la propuesta. El objetivo es menos fricción, no un sistema nuevo por el gusto de tenerlo."
+          "title": "Mercado Pago: cobros y conciliación.",
+          "body": "Cada cobro que entra por Mercado Pago puede quedar registrado solo en tu planilla o sistema, con el pedido al que corresponde. Así la conciliación deja de ser revisar movimientos uno por uno a fin de mes, y ves enseguida qué está cobrado y qué falta."
         },
         {
-          "title": "Para quién.",
-          "body": "Para quien ya usa varias herramientas y pierde tiempo pasando la misma información de un lado a otro. Ideal si no querés cambiar todo de golpe."
+          "title": "Tiendanube: stock y pedidos.",
+          "body": "Si vendés online y en un local, el stock tiene que ser uno solo. Sincronizamos el inventario de Tiendanube con tu planilla o sistema y hacemos que cada pedido nuevo llegue a quien lo prepara, sin tener que entrar al panel a mirar."
+        },
+        {
+          "title": "Facturación electrónica de ARCA.",
+          "body": "Conectamos tus ventas con los servicios de facturación electrónica de ARCA (ex AFIP) para que la factura salga sola cuando se confirma un cobro o un pedido. Vos definís las reglas: qué tipo de comprobante, a quién y en qué momento."
+        },
+        {
+          "title": "Bot de WhatsApp con IA.",
+          "body": "Un asistente en WhatsApp que responde consultas frecuentes, toma pedidos o turnos y los deja cargados donde corresponde. Cuando la conversación necesita una persona, la deriva. Lo armamos con tus respuestas y tus reglas, no con textos genéricos."
+        },
+        {
+          "title": "Google Sheets y CRM.",
+          "body": "Si tu equipo trabaja en Google Sheets o en un CRM, lo usamos como centro: los pedidos, cobros y contactos de las otras herramientas llegan ahí ordenados, y los cambios que hacés ahí se reflejan donde haga falta."
+        },
+        {
+          "title": "Lo que ya construimos.",
+          "body": "Somos un equipo que recién arranca, así que preferimos mostrar antes que prometer. EventOps es el sistema que construimos para empresas de eventos y hoy está en producción. Ahí podés ver cómo trabajamos.",
+          "link": {
+            "label": "Ver el caso de EventOps",
+            "href": "/casos/eventops"
+          }
         }
       ],
       "examples": {
-        "title": "Integraciones que se repiten.",
+        "title": "Cómo funciona una integración.",
         "items": [
           {
-            "title": "Comercio que cobra con Mercado Pago",
-            "body": "Cada venta se anota a mano en la planilla y después se factura aparte. Conectamos Mercado Pago con tu planilla y con la facturación electrónica de ARCA, para que la venta quede registrada y facturada sin volver a cargarla."
+            "title": "1. Mapeamos el recorrido del dato",
+            "body": "Vemos dónde entra cada dato, dónde se copia a mano y dónde se pierde. Eso muestra qué conexión te ahorra más trabajo."
           },
           {
-            "title": "Tienda en Tiendanube con local",
-            "body": "El stock de la tienda online y el del local no coinciden, y se venden productos que no hay. Sincronizamos el stock entre los dos."
+            "title": "2. Conectamos por API",
+            "body": "Usamos las conexiones oficiales de cada herramienta (sus APIs) y definimos qué pasa en cada caso, incluido qué hacer si algo falla."
           },
           {
-            "title": "Pyme de servicios con formularios",
-            "body": "Los pedidos entran por un formulario o por email y alguien los pasa a mano a Google Sheets o al CRM. Hacemos que cada pedido aparezca solo donde tiene que estar y le avise a quien lo atiende."
+            "title": "3. Probamos con datos reales y avisamos si algo se corta",
+            "body": "Antes de dejarla andando la probamos con tus casos reales. Después, cada integración avisa cuando algo no salió como debía."
           }
         ]
       },

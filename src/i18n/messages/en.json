@@ -616,38 +616,58 @@
     },
     "integraciones": {
       "navLabel": "Integrations",
-      "metaTitle": "Integrations between the tools you already use",
-      "metaDescription": "We connect WhatsApp, spreadsheets and invoicing. Enter something once and it shows up where it should. Scope in writing before we start.",
-      "h1": "Integrations with your current tools.",
-      "lead": "We connect WhatsApp, your spreadsheets and invoicing to each other. Enter something once and it shows up where it should. Without tearing down what already works.",
+      "metaTitle": "Integrations: Mercado Pago, Tiendanube, ARCA and WhatsApp",
+      "metaDescription": "Custom integrations with Mercado Pago, Tiendanube, ARCA invoicing, AI WhatsApp bots and Google Sheets. Enter data once. Scope in writing.",
+      "h1": "Custom integrations with your current tools.",
+      "lead": "We connect Mercado Pago, Tiendanube, ARCA invoicing, WhatsApp and your spreadsheets to each other. Enter something once and it shows up where it should, without tearing down what already works.",
       "sections": [
         {
           "title": "What we solve.",
-          "body": "Data that moves by hand from one place to another: a WhatsApp order you later type into a spreadsheet, a sale you invoice separately. We connect those pieces so the data is entered once."
+          "body": "Data that moves by hand from one place to another: an order that comes in on WhatsApp and gets typed into a spreadsheet, a sale you collect in one place and invoice in another. We connect those pieces so the data is entered once and nobody has to copy it."
         },
         {
-          "title": "How we approach it.",
-          "body": "We start from the tools you already use. If they work, we connect them. If something needs replacing, it is clear in the proposal. The goal is less friction, not a new system for its own sake."
+          "title": "Mercado Pago: payments and reconciliation.",
+          "body": "Every payment that comes in through Mercado Pago can be recorded automatically in your spreadsheet or system, linked to its order. Reconciliation stops being a line-by-line review at the end of the month, and you see right away what is paid and what is pending."
         },
         {
-          "title": "Who it is for.",
-          "body": "For teams juggling several tools and losing time moving the same information around. Ideal if you do not want to change everything at once."
+          "title": "Tiendanube: stock and orders.",
+          "body": "If you sell online and in a physical shop, there should be a single stock. We sync Tiendanube inventory with your spreadsheet or system and make each new order reach whoever prepares it, without checking the dashboard."
+        },
+        {
+          "title": "ARCA electronic invoicing.",
+          "body": "We connect your sales to ARCA (formerly AFIP) electronic invoicing services so the invoice is issued automatically when a payment or order is confirmed. You set the rules: which receipt type, for whom and when."
+        },
+        {
+          "title": "AI WhatsApp bot.",
+          "body": "A WhatsApp assistant that answers common questions, takes orders or bookings and records them where they belong. When a conversation needs a person, it hands it over. We build it with your answers and your rules, not generic scripts."
+        },
+        {
+          "title": "Google Sheets and CRM.",
+          "body": "If your team works in Google Sheets or a CRM, we use it as the hub: orders, payments and contacts from other tools arrive there organized, and changes you make there are reflected wherever needed."
+        },
+        {
+          "title": "What we have built.",
+          "body": "We are a team that is just getting started, so we would rather show than promise. EventOps is the system we built for event companies, and it is in production today. It shows how we work.",
+          "link": {
+            "label": "See the EventOps case",
+            "href": "/casos/eventops"
+          }
         }
       ],
       "examples": {
-        "title": "Integrations we see often.",
+        "title": "How an integration works.",
         "items": [
           {
-            "title": "Shop that takes Mercado Pago",
-            "body": "Every sale is logged by hand in a spreadsheet and invoiced separately later. We connect Mercado Pago to your spreadsheet and to ARCA electronic invoicing, so each sale is recorded and invoiced without entering it again."
+            "title": "1. We map how data moves",
+            "body": "We look at where each piece of data comes in, where it is copied by hand and where it gets lost. That shows which connection saves you the most work."
           },
           {
-            "title": "Tiendanube store with a physical shop",
-            "body": "Online and in-store inventory do not match, and you sell products you do not have. We keep stock in sync between the two."
+            "title": "2. We connect through APIs",
+            "body": "We use each tool's official connections (its APIs) and define what happens in each case, including what to do if something fails."
           },
           {
-            "title": "Service business with forms",
-            "body": "Requests come in through a form or by email, and someone copies them by hand into Google Sheets or the CRM. We make each request land where it belongs on its own and notify whoever handles it."
+            "title": "3. We test with real data and alert on failures",
+            "body": "Before leaving it running we test it with your real cases. After that, every integration alerts you when something does not go as expected."
           }
         ]
       },
