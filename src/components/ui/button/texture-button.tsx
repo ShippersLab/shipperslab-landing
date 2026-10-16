@@ -7,7 +7,7 @@ import { cva } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariantsOuter = cva(
-  "transition-transform duration-200 ease-out active:scale-97 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink",
+  "transition-transform duration-300 ease-out active:scale-97 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink",
   {
     variants: {
       variant: {
@@ -29,7 +29,7 @@ const buttonVariantsOuter = cva(
 );
 
 const innerVariants = cva(
-  "w-full h-full flex items-center justify-center whitespace-nowrap transition-colors duration-200 ease-out",
+  "w-full h-full flex items-center justify-center whitespace-nowrap transition-colors duration-300 ease-out",
   {
     variants: {
       variant: {
