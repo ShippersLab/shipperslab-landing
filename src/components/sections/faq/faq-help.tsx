@@ -20,12 +20,12 @@ export function FaqHelp({ title, description, cta, delay = 0, className }: FaqHe
     <Reveal
       delay={delay}
       className={cn(
-        "flex flex-col gap-6 rounded-lg border border-dashed border-border p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8",
+        "flex flex-col gap-6 rounded-lg border border-dashed border-muted/40 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8",
         className,
       )}
     >
       <div className="flex items-start gap-4">
-        <span className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-ink text-paper">
+        <span className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-accent text-paper">
           <ConversationIcon className="size-5" />
         </span>
         <div>
