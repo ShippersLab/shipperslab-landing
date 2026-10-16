@@ -5,6 +5,7 @@ import { motion, type Variants } from "motion/react";
 
 import { DescriptionWithLink } from "@/components/sections/services/description-with-link";
 import { getServiceHref } from "@/lib/services";
+import { Reveal } from "@/components/ui/animation/reveal";
 import { DiaTextReveal } from "@/components/ui/animation/dia-text-reveal";
 import { TextureButton } from "@/components/ui/button/texture-button";
 import {
@@ -22,6 +23,10 @@ const EASE = [0.23, 1, 0.32, 1] as const;
 const ROW_STAGGER = 0.08;
 const ROWS_DELAY = 0;
 const TITLE_DURATION = 1.2;
+const ITEM_STAGGER = 0.15;
+const ITEMS_DELAY = 0.15;
+const ITEM_DURATION = 0.8;
+const CASES_CTA_DELAY = 300;
 
 const AUDIENCE_ICONS: Record<string, typeof BuildingIcon> = {
   systems: BuildingIcon,
@@ -37,7 +42,7 @@ const list: Variants = {
 
 const row: Variants = {
   hidden: {},
-  visible: { transition: { staggerChildren: 0.04 } },
+  visible: { transition: { staggerChildren: ITEM_STAGGER, delayChildren: ITEMS_DELAY } },
 };
 
 const line: Variants = {
@@ -50,7 +55,7 @@ const item: Variants = {
   visible: {
     opacity: 1,
     transform: "translateY(0px)",
-    transition: { duration: 0.35, ease: EASE },
+    transition: { duration: ITEM_DURATION, ease: EASE },
   },
 };
 
@@ -65,12 +70,14 @@ export function Services() {
           description={messages.services.description}
           className="max-w-lg"
         />
-        <TextureButton asChild variant="secondary" size="pill" className="w-full sm:w-auto">
-          <Link href="/casos">
-            {messages.services.casesCta}
-            <ArrowRightIcon size={16} />
-          </Link>
-        </TextureButton>
+        <Reveal delay={CASES_CTA_DELAY} className="w-full sm:w-auto">
+          <TextureButton asChild variant="secondary" size="pill" className="w-full sm:w-auto">
+            <Link href="/casos">
+              {messages.services.casesCta}
+              <ArrowRightIcon size={16} />
+            </Link>
+          </TextureButton>
+        </Reveal>
       </div>
 
       <motion.ol
@@ -88,6 +95,9 @@ export function Services() {
               key={service.id}
               id={service.id}
               variants={row}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
               className="group relative grid gap-4 py-10 md:grid-cols-[3rem_minmax(0,1.1fr)_minmax(0,1fr)] md:gap-10 md:py-14"
             >
               <motion.span
@@ -110,7 +120,7 @@ export function Services() {
                     text={service.title}
                     colors={["var(--accent)"]}
                     textColor="var(--ink)"
-                    delay={ROWS_DELAY + index * ROW_STAGGER}
+                    delay={ROWS_DELAY}
                     duration={TITLE_DURATION}
                     inViewMargin="0px"
                     className="whitespace-pre-line"
