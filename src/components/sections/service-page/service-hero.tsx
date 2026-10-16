@@ -4,10 +4,12 @@ import dynamic from "next/dynamic";
 
 import { cn } from "@/lib/utils";
 
+import { Reveal } from "@/components/ui/animation/reveal";
 import { DiaTextReveal } from "@/components/ui/animation/dia-text-reveal";
 import { WordReveal } from "@/components/ui/animation/word-reveal";
 import { Container } from "@/components/ui/section/container";
 
+const EYEBROW_DELAY = 0;
 const TITLE_DELAY = 0;
 const LEAD_DELAY = 0.25;
 
@@ -41,7 +43,13 @@ export function ServiceHero({ eyebrow, title, lead, ditherBelowNavbar = false }:
 
       <Container className="w-full py-24 sm:py-32 lg:py-40">
         <div className="max-w-2xl">
-          <p className="font-mono text-label text-muted">{eyebrow}</p>
+          <Reveal
+            as="p"
+            delay={EYEBROW_DELAY}
+            className="inline-flex rounded-md border border-border bg-paper px-3 py-1.5 font-mono text-sm tracking-tight text-muted"
+          >
+            {eyebrow}
+          </Reveal>
           <h1 className="mt-6 font-pixel text-4xl text-balance font-medium tracking-tighter text-ink sm:text-5xl lg:text-6xl">
             <DiaTextReveal
               text={title}

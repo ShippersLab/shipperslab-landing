@@ -20,10 +20,23 @@ export function FaqHelp({ title, description, cta, delay = 0, className }: FaqHe
     <Reveal
       delay={delay}
       className={cn(
-        "flex flex-col gap-6 rounded-lg border border-dashed border-muted/40 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8",
+        "relative flex flex-col gap-6 rounded-lg p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8",
         className,
       )}
     >
+      <svg
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 size-full overflow-visible"
+      >
+        <rect
+          width="100%"
+          height="100%"
+          rx="8"
+          className="fill-none stroke-muted/40"
+          strokeWidth="1"
+          strokeDasharray="8 8"
+        />
+      </svg>
       <div className="flex items-start gap-4">
         <span className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-accent text-paper">
           <ConversationIcon className="size-5" />
