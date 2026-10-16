@@ -60,6 +60,7 @@ A headline can pick up a subtle print-grain texture instead of a flat fill with 
 
 These apply to every agent working in this repo, not just UI work.
 
+- **Eyebrows and badges are never all caps.** Labels that sit above a title or act as a badge ("Proceso", "Preguntas frecuentes") render in sentence case as written in the messages, with normal tracking: `font-mono text-label text-muted`, without `uppercase` or `tracking-label`.
 - **Never leave comments in code.** No line comments, no block comments, no JSDoc, no commented-out code. If something feels like it needs a comment, rename it or extract it into a function whose name says the surprising part.
 - **Always import through the `@/*` alias.** Never write a relative import (`./`, `../`), not even for a sibling file. `@/*` resolves to `src/*` and is declared once in `tsconfig.json`.
 - **Everything lives in a folder that says what it is.** Each landing section is a folder in `src/components/sections` (for example `sections/hero/index.tsx`, with its own subparts next to it), reusable primitives go in `src/components/ui`, persistent chrome shared by every route (navbar, footer, wordmark) goes in `src/components/layout`, cross-cutting helpers in `src/lib`, copy in `src/i18n/messages`. Don't drop a component or helper loose in `src/app` or `src/components`.

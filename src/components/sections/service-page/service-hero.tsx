@@ -41,7 +41,7 @@ export function ServiceHero({ eyebrow, title, lead, ditherBelowNavbar = false }:
 
       <Container className="w-full py-24 sm:py-32 lg:py-40">
         <div className="max-w-2xl">
-          <p className="font-mono text-label uppercase tracking-label text-muted">{eyebrow}</p>
+          <p className="font-mono text-label text-muted">{eyebrow}</p>
           <h1 className="mt-6 font-pixel text-4xl text-balance font-medium tracking-tighter text-ink sm:text-5xl lg:text-6xl">
             <DiaTextReveal
               text={title}
