@@ -7,6 +7,7 @@ import { Reveal } from "@/components/ui/animation/reveal";
 import { ArcBandsBackground } from "@/components/ui/background/arc-bands-background";
 import { Section } from "@/components/ui/section/section";
 import { SectionHeading } from "@/components/ui/section/section-heading";
+import { StepNumber } from "@/components/ui/section/step-number";
 import { useI18n } from "@/i18n/provider";
 
 const TITLE_DELAY = 0;
@@ -42,9 +43,7 @@ export function Process() {
             delay={(ITEMS_DELAY + index * ITEM_STAGGER) * 1000}
             className="flex flex-col gap-4"
           >
-            <span className="relative z-10 flex size-10 items-center justify-center rounded-full border border-border bg-paper font-mono text-xs text-muted">
-              0{index + 1}
-            </span>
+            <StepNumber index={index} />
             <h3 className="text-xl">{step.title}</h3>
             <p className="max-w-xs text-base text-muted">{step.description}</p>
           </Reveal>
