@@ -241,14 +241,14 @@
   },
   "events": {
     "title": "Events for the whole community",
-    "description": "Meetups, talks, build nights and hackathons, open to everyone. Starting in Santa Fe.",
-    "formats": ["Build nights", "Meetups", "Hackathons", "Talks", "Coffee"],
+    "description": "Networking, project demos, talks and hackathons, open to everyone. Starting in Santa Fe.",
+    "formats": ["Networking", "Demo nights", "Talks", "Hackathons", "Coffee"],
     "sponsorTitle": "We're looking for partners",
     "sponsorDescription": "We want to run these events with companies and people who want to get involved. You don't need to be a big brand. Here are a few ways to help, and if you think of another one, it counts too.",
     "sponsorWays": [
-      { "title": "A venue", "description": "An office, a coworking space or any place where we can get together for a night." },
-      { "title": "Credits and tools", "description": "API credits or access to tools so people can build during the event." },
-      { "title": "Prizes", "description": "Something to recognize the best projects at a hackathon or build night." },
+      { "title": "A venue", "description": "An office, a coworking space or any place where we can get together." },
+      { "title": "Credits and tools", "description": "API credits or access to your tools so people can try them." },
+      { "title": "Prizes", "description": "Something to recognize the best projects or add to a raffle." },
       { "title": "Help organizing", "description": "Promotion, logistics or time to help each event go well." }
     ],
     "cta": "Send a message",
