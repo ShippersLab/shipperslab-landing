@@ -2,6 +2,8 @@
 
 import dynamic from "next/dynamic";
 
+import { cn } from "@/lib/utils";
+
 import { DiaTextReveal } from "@/components/ui/animation/dia-text-reveal";
 import { WordReveal } from "@/components/ui/animation/word-reveal";
 import { Container } from "@/components/ui/section/container";
@@ -21,14 +23,18 @@ type ServiceHeroProps = {
   eyebrow: string;
   title: string;
   lead: string;
+  ditherBelowNavbar?: boolean;
 };
 
-export function ServiceHero({ eyebrow, title, lead }: ServiceHeroProps) {
+export function ServiceHero({ eyebrow, title, lead, ditherBelowNavbar = false }: ServiceHeroProps) {
   return (
     <div className="relative isolate overflow-clip border-b border-border">
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 -z-10 mask-b-from-60% mask-b-to-100%"
+        className={cn(
+          "pointer-events-none absolute inset-0 -z-10 mask-b-from-60% mask-b-to-100%",
+          ditherBelowNavbar && "lg:top-22.5",
+        )}
       >
         <ServiceHeroDither />
       </div>

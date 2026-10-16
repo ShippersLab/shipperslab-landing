@@ -54,7 +54,7 @@ export function ComoTrabajamos() {
 
   return (
     <div className="mx-auto w-full max-w-content border-x border-border">
-      <ServiceHero eyebrow={page.eyebrow} title={page.h1} lead={page.lead} />
+      <ServiceHero eyebrow={page.eyebrow} title={page.h1} lead={page.lead} ditherBelowNavbar />
 
       <Container className="w-full py-16 sm:py-20">
         <ProcessOverview label={page.overviewLabel} steps={overview} />
