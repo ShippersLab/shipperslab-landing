@@ -666,9 +666,9 @@
       "process": {
         "title": "Cómo trabajamos y cómo se cotiza.",
         "paragraphs": [
-          "Primero hacemos un mapa de por dónde viaja el dato hoy: dónde entra, dónde se copia y dónde se pierde. Eso nos muestra qué conexión te ahorra más trabajo, y por ahí arrancamos.",
-          "Muchas veces alcanza con una o dos integraciones para sacarte la carga más pesada. Si en el camino vemos que conviene un sistema de gestión, te lo decimos, pero no hace falta para empezar.",
-          "La propuesta va por escrito con qué se conecta, qué pasa si algo falla, cuánto cuesta y cuándo está. Algunas herramientas cobran su propio uso. Si ya tenés las cuentas, las usamos. Si no, las gestionamos nosotros y te cobramos su costo más la gestión."
+          "Arrancamos con una charla gratis de 30 minutos para entender qué necesitás y ver por dónde viaja el dato hoy: dónde entra, dónde se copia a mano y dónde se pierde.",
+          "Antes de arrancar te pasamos un documento de alcance detallado: qué se conecta, qué pasa si algo falla y qué hace falta de tu lado. Después, cada semana te mostramos una entrega parcial que podés probar.",
+          "Cobramos un monto por la implementación según la complejidad de la integración y, una vez en marcha, una cuota de mantenimiento. Algunas herramientas cobran su propio uso: si ya tenés las cuentas, las usamos; si no, las gestionamos nosotros y te cobramos su costo."
         ]
       },
       "faq": {

@@ -666,9 +666,9 @@
       "process": {
         "title": "How we work and how we quote.",
         "paragraphs": [
-          "First we map how data moves today: where it comes in, where it gets copied and where it gets lost. That shows us which connection saves you the most work, and we start there.",
-          "Often one or two integrations are enough to take the heaviest load off. If along the way we see that a management system makes sense, we tell you, but you do not need one to get started.",
-          "The proposal is in writing: what gets connected, what happens if something fails, what it costs and when it will be ready. Some tools charge for their own usage. If you already have the accounts, we use them. If not, we handle them and charge their cost plus a management fee."
+          "We start with a free 30-minute call to understand what you need and see how data moves today: where it comes in, where it gets copied by hand and where it gets lost.",
+          "Before we start we send you a detailed scope document: what gets connected, what happens if something fails and what we need from you. Then, every week, we show you a partial delivery you can test.",
+          "We charge an implementation fee based on the complexity of the integration and, once it is running, a maintenance fee. Some tools charge for their own usage: if you already have the accounts, we use them; if not, we handle them and charge you their cost."
         ]
       },
       "faq": {
