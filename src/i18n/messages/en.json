@@ -698,7 +698,7 @@
     "metaDescription": "How we work at ShippersLab: a free 30-minute call, a written scope document, weekly deliveries and clear pricing for implementation and maintenance.",
     "eyebrow": "How we work",
     "h1": "How we work, step by step.",
-    "lead": "We are a team that is just getting started, and we want you to know from day one what working with us looks like. This is the process we follow on every project, no fine print.",
+    "lead": "This is the process we follow on every project, so you know from day one what working with us looks like, no fine print.",
     "steps": [
       {
         "title": "1. A free 30-minute call.",
@@ -717,14 +717,6 @@
         "body": "We charge an implementation fee that depends on the complexity of the system: a single integration does not cost the same as a full management system. That is why we do not publish a fixed rate and give you a number once we understand what you need. Once it is running, there is a maintenance fee so the system keeps working and can keep evolving."
       }
     ],
-    "why": {
-      "title": "Why we work this way.",
-      "body": "We are just getting started, so we do not have a long list of projects to show you. What we can offer is a clear process: listen before proposing, put everything in writing before charging and show you real progress every week. If you want to see something we have already built, take a look at the EventOps case.",
-      "link": {
-        "label": "See the EventOps case",
-        "href": "/casos/eventops"
-      }
-    },
     "faq": {
       "title": "Questions about how we work.",
       "items": [

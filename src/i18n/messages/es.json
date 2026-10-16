@@ -698,7 +698,7 @@
     "metaDescription": "Cómo trabajamos en ShippersLab: charla gratis de 30 minutos, alcance por escrito, entregas cada semana y precio claro de implementación y mantenimiento.",
     "eyebrow": "Cómo trabajamos",
     "h1": "Cómo trabajamos, paso a paso.",
-    "lead": "Somos un equipo que recién arranca y preferimos que sepas desde el principio cómo es trabajar con nosotros. Este es el proceso que seguimos en cada proyecto, sin letra chica.",
+    "lead": "Este es el proceso que seguimos en cada proyecto, para que sepas desde el principio cómo es trabajar con nosotros, sin letra chica.",
     "steps": [
       {
         "title": "1. Una charla gratis de 30 minutos.",
@@ -717,14 +717,6 @@
         "body": "Cobramos un monto por la implementación, que depende de la complejidad del sistema: no cuesta lo mismo una integración puntual que un sistema de gestión completo. Por eso no publicamos una tarifa fija y te pasamos el número después de entender qué necesitás. Una vez en marcha, hay una cuota de mantenimiento para que el sistema siga funcionando y se pueda ir ajustando."
       }
     ],
-    "why": {
-      "title": "Por qué trabajamos así.",
-      "body": "Recién estamos arrancando, así que no tenemos una larga lista de proyectos para mostrarte. Lo que sí podemos ofrecerte es un proceso claro: escuchar antes de proponer, poner todo por escrito antes de cobrar y mostrarte avances reales cada semana. Si querés ver algo que ya construimos, mirá el caso de EventOps.",
-      "link": {
-        "label": "Ver el caso de EventOps",
-        "href": "/casos/eventops"
-      }
-    },
     "faq": {
       "title": "Preguntas sobre cómo trabajamos.",
       "items": [

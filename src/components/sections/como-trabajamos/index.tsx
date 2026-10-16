@@ -16,9 +16,6 @@ const BODY_DELAY = 0.4;
 const CTA_DELAY = 0.55;
 const DETAIL_DELAY = 0.1;
 
-const LINK_CLASS =
-  "mt-4 inline-block text-base font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-[text-decoration-color] duration-200 ease-out hover:decoration-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink";
-
 export function ComoTrabajamos() {
   const { messages } = useI18n();
   const page = messages.comoTrabajamos;
@@ -48,18 +45,6 @@ export function ComoTrabajamos() {
               </div>
             </Reveal>
           ))}
-
-          <Reveal delay={DETAIL_DELAY * 1000}>
-            <div className="max-w-2xl border-t border-border pt-8">
-              <h2 className="text-2xl text-ink sm:text-3xl">{page.why.title}</h2>
-              <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
-                {page.why.body}
-              </p>
-              <Link href={page.why.link.href} className={LINK_CLASS}>
-                {page.why.link.label}
-              </Link>
-            </div>
-          </Reveal>
 
           <div className="max-w-2xl border-t border-border pt-8">
             <Reveal delay={DETAIL_DELAY * 1000}>
