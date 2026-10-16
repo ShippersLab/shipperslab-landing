@@ -226,3 +226,21 @@ export function buildEventopsCaseStructuredData(): Graph {
     "@graph": [app, breadcrumb],
   };
 }
+
+export function buildPageBreadcrumbStructuredData(path: string, name: string): Graph {
+  const url = `${site.url}${path}`;
+
+  const breadcrumb: BreadcrumbList = {
+    "@type": "BreadcrumbList",
+    "@id": `${url}#breadcrumb`,
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Inicio", item: site.url },
+      { "@type": "ListItem", position: 2, name, item: url },
+    ],
+  };
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [breadcrumb],
+  };
+}

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 
 import { Onboarding } from "@/components/sections/onboarding";
+import { JsonLd } from "@/components/seo/json-ld";
+import { buildPageBreadcrumbStructuredData } from "@/lib/seo/structured-data";
 import { site } from "@/lib/site";
 
 const TITLE = "Pedí presupuesto de software a medida";
@@ -34,5 +36,10 @@ export const metadata: Metadata = {
 };
 
 export default function EmpecemosPage() {
-  return <Onboarding />;
+  return (
+    <>
+      <JsonLd data={buildPageBreadcrumbStructuredData("/empecemos", "Empecemos")} />
+      <Onboarding />
+    </>
+  );
 }

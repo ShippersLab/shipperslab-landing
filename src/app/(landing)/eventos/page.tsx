@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 
 import { Events } from "@/components/sections/events";
+import { JsonLd } from "@/components/seo/json-ld";
+import { buildPageBreadcrumbStructuredData } from "@/lib/seo/structured-data";
 import { site } from "@/lib/site";
 
 const TITLE = "Eventos tech en Argentina: build nights y hackathons";
@@ -34,5 +36,10 @@ export const metadata: Metadata = {
 };
 
 export default function EventosPage() {
-  return <Events />;
+  return (
+    <>
+      <JsonLd data={buildPageBreadcrumbStructuredData("/eventos", "Eventos")} />
+      <Events />
+    </>
+  );
 }
