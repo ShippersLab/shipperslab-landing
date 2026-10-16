@@ -4,6 +4,8 @@ import type { Messages } from "@/i18n/get-messages";
 
 type Steps = Messages["comoTrabajamos"]["steps"];
 
+type Fee = { label: string; body: string; tag?: string };
+
 const ICON_SIZE = 14;
 
 export function CallDetails({ step }: { step: Steps["call"] }) {
@@ -59,7 +61,7 @@ export function WeeklyDetails({ step }: { step: Steps["weekly"] }) {
           {step.cycle.items.map((item) => (
             <li key={item.label} className="flex flex-col gap-2 p-5">
               <span className="text-lg text-ink">{item.label}</span>
-              <span className="text-sm leading-relaxed text-muted">{item.body}</span>
+              <span className="text-base leading-relaxed text-muted">{item.body}</span>
             </li>
           ))}
         </ol>
@@ -69,11 +71,13 @@ export function WeeklyDetails({ step }: { step: Steps["weekly"] }) {
 }
 
 export function PricingDetails({ step }: { step: Steps["pricing"] }) {
+  const fees: readonly Fee[] = step.fees;
+
   return (
     <>
       <StepParagraph>{step.body}</StepParagraph>
       <ul className="mt-8 grid gap-3 sm:grid-cols-2">
-        {step.fees.map((fee) => (
+        {fees.map((fee) => (
           <li key={fee.label} className="flex flex-col gap-3 rounded-lg border border-border p-5">
             <div className="flex items-center justify-between gap-3">
               <h3 className="text-lg text-ink">{fee.label}</h3>
@@ -83,7 +87,7 @@ export function PricingDetails({ step }: { step: Steps["pricing"] }) {
                 </span>
               ) : null}
             </div>
-            <p className="text-sm leading-relaxed text-muted">{fee.body}</p>
+            <p className="text-base leading-relaxed text-muted">{fee.body}</p>
           </li>
         ))}
       </ul>

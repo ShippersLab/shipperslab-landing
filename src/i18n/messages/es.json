@@ -957,7 +957,7 @@
         "short": "Charla gratis",
         "summary": "30 minutos, sin costo y sin compromiso.",
         "title": "Una charla gratis de 30 minutos.",
-        "body": "Arrancamos con una charla de media hora, sin costo y sin compromiso. Nuestro trabajo en esa charla es escuchar e identificar bien el problema, que no siempre es el que aparece primero.",
+        "body": "Arrancamos con una charla de media hora. Nuestro trabajo ahí es escuchar e identificar bien el problema, que no siempre es el que aparece primero.",
         "topics": {
           "label": "Nos contás",
           "items": ["Cómo trabajan hoy", "Qué te lleva tiempo", "Qué querés resolver"]
@@ -983,7 +983,7 @@
         "short": "Avance cada semana",
         "summary": "Una entrega parcial que probás con tu equipo.",
         "title": "Entregas parciales cada semana.",
-        "body": "No desaparecemos durante semanas para volver con algo terminado. Así ves cómo va tomando forma y no hay sorpresas al final.",
+        "body": "No desaparecemos durante semanas para volver con algo terminado. Ves cómo va tomando forma y no hay sorpresas al final.",
         "cycle": {
           "label": "Cada semana",
           "items": [
@@ -1010,7 +1010,6 @@
         "fees": [
           {
             "label": "Implementación",
-            "tag": "",
             "body": "Un monto que depende de la complejidad del sistema. No cuesta lo mismo una integración puntual que un sistema de gestión completo."
           },
           {

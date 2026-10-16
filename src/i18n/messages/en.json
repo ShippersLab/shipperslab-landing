@@ -957,7 +957,7 @@
         "short": "Free call",
         "summary": "30 minutes, free and with no commitment.",
         "title": "A free 30-minute call.",
-        "body": "We start with a half-hour call, free and with no commitment. Our job on that call is to listen and pin down the real problem, which is not always the first one that shows up.",
+        "body": "We start with a half-hour conversation. Our job there is to listen and pin down the real problem, which is not always the first one that shows up.",
         "topics": {
           "label": "You tell us",
           "items": ["How you work today", "What takes up your time", "What you want to solve"]
@@ -1010,7 +1010,6 @@
         "fees": [
           {
             "label": "Implementation",
-            "tag": "",
             "body": "A fee that depends on the complexity of the system. A single integration does not cost the same as a full management system."
           },
           {

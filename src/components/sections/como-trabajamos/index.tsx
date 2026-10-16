@@ -73,7 +73,7 @@ export function ComoTrabajamos() {
           ))}
 
           <ServiceSection id="faq" title={page.faq.title} delay={ROW_DELAY * 1000}>
-            <FaqAccordion items={page.faq.items} delay={ROW_DELAY} />
+            <FaqAccordion items={page.faq.items} delay={ROW_DELAY} className="-mt-6 border-t-0" />
           </ServiceSection>
         </div>
 

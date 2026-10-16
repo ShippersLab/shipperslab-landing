@@ -53,7 +53,9 @@ export function ProcessOverview({ label, steps }: ProcessOverviewProps) {
                 <span className="text-lg text-ink underline decoration-transparent underline-offset-4 transition-[text-decoration-color] duration-200 ease-out group-hover:decoration-ink/30">
                   {step.short}
                 </span>
-                <span className="max-w-xs text-base text-muted">{step.summary}</span>
+                <span className="hidden max-w-xs text-base text-muted sm:block">
+                  {step.summary}
+                </span>
               </span>
             </a>
           </Reveal>
