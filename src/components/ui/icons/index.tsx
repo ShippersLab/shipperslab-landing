@@ -13,10 +13,12 @@ import {
   CashierIcon as CashierIconSource,
   CloudUploadIcon,
   Cancel01Icon,
+  ContactBookIcon,
   DashboardCircleIcon,
   Database01Icon,
   File01Icon,
   GlobeIcon as GlobeIconSource,
+  HeadsetIcon as HeadsetIconSource,
   HelpCircleIcon,
   InstagramIcon as InstagramIconSource,
   Invoice01Icon,
@@ -26,6 +28,7 @@ import {
   Mic01Icon,
   NewTwitterIcon,
   Package01Icon,
+  Payment01Icon,
   Plug01Icon,
   PlusSignIcon,
   Refresh01Icon,
@@ -85,6 +88,9 @@ export const StoreIcon = createIcon(Store01Icon);
 export const BuildingIcon = createIcon(Building03Icon);
 export const ConversationIcon = createIcon(BubbleChatIcon);
 export const PlugIcon = createIcon(Plug01Icon);
+export const PaymentIcon = createIcon(Payment01Icon);
+export const ContactsIcon = createIcon(ContactBookIcon);
+export const HeadsetIcon = createIcon(HeadsetIconSource);
 export const MenuIcon = createIcon(Menu01Icon);
 export const CloseIcon = createIcon(Cancel01Icon);
 export const ChevronDownIcon = createIcon(ArrowDown01Icon);

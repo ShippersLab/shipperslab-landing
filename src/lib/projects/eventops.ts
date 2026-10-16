@@ -7,5 +7,6 @@ import personal from "@/assets/images/projects/eventops/personal.webp";
 
 export const eventopsImages = {
   hero,
+  calendar,
   gallery: [hero, calendar, events, clients, personal, finance],
 } as const;

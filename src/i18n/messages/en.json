@@ -395,31 +395,66 @@
       "metaTitle": "Custom management systems for small businesses",
       "metaDescription": "Inventory, orders, sales or bookings in one system built around how your business works. Scope and price in writing before we start.",
       "h1": "Custom management systems.",
-      "lead": "Inventory, orders, sales or bookings in one place, built around how your business works. Stop fighting spreadsheets that no longer hold.",
-      "sections": [
-        {
-          "title": "What we solve.",
-          "body": "A system shaped around your operation: inventory control, orders, sales, bookings or whatever slips between chats and spreadsheets today. We build it for how your team works, not the other way around."
-        },
-        {
-          "title": "A real example: EventOps.",
-          "body": "That is how we built EventOps for event companies, our own product in production. Each event is entered once, and the calendar, the quote, deposits and installments, expenses and who from the crew works each date all come from it. Every business is different, but the approach is the same: understand how you work and build around that.",
-          "link": {
-            "label": "See the EventOps case",
-            "href": "/casos/eventops"
+      "lead": "Inventory, orders, sales or bookings in one place, built around how your business works. Stop fighting spreadsheets that can't keep up.",
+      "covers": {
+        "title": "What we solve.",
+        "body": "A system shaped around your operation: inventory control, orders, sales, bookings or whatever slips between chats and spreadsheets today. We build it around how your team already works.",
+        "items": [
+          {
+            "id": "stock",
+            "label": "Inventory"
+          },
+          {
+            "id": "orders",
+            "label": "Orders"
+          },
+          {
+            "id": "cash",
+            "label": "Sales"
+          },
+          {
+            "id": "appointments",
+            "label": "Bookings"
           }
+        ]
+      },
+      "example": {
+        "title": "A real example: EventOps.",
+        "body": "We built EventOps, our own product now in production, for event companies. Each event is entered once, and the calendar, quote, deposits and installments, expenses and crew for each date all come from it.",
+        "link": {
+          "label": "See how we built EventOps",
+          "href": "/casos/eventops"
         },
-        {
-          "title": "Who it is for.",
-          "body": "For small businesses with inventory, orders or bookings that still run on Excel, WhatsApp or an old system. If the owner or ops lead feels they waste time entering the same data twice, we start there."
-        }
-      ],
+        "tabs": ["Calendar", "Quotes", "Crew"],
+        "alt": "EventOps calendar showing each event's site visit, setup and sound check"
+      },
+      "audience": {
+        "title": "Who it's for.",
+        "intro": "For small businesses with stock, orders or bookings run on Excel, WhatsApp or an old system. If you're losing time entering the same data twice, we start there.",
+        "items": [
+          {
+            "id": "distributor",
+            "title": "Distributors and wholesalers",
+            "body": "Orders come in over WhatsApp and inventory lives in a spreadsheet."
+          },
+          {
+            "id": "appointments",
+            "title": "Appointment-based businesses",
+            "body": "The schedule lives in a notebook or on one person's phone."
+          },
+          {
+            "id": "events",
+            "title": "Event companies",
+            "body": "Dates, crew and payments spread across chats and spreadsheets."
+          }
+        ]
+      },
       "examples": {
         "title": "What it looks like in different businesses.",
         "items": [
           {
             "title": "Distributor or wholesaler",
-            "body": "Orders come in over WhatsApp, inventory lives in an Excel file and nobody is quite sure what is in the warehouse. An inventory and sales system can update stock when an order is confirmed and show you what to restock before you run out."
+            "body": "Orders come in over WhatsApp, inventory lives in an Excel file and nobody's quite sure what's in the warehouse. An inventory and sales system can update stock when an order is confirmed and show you what to restock before you run out."
           },
           {
             "title": "Appointment-based business",
@@ -427,45 +462,73 @@
           },
           {
             "title": "Event company",
-            "body": "Dates, crew and payments spread across chats and spreadsheets. That is what EventOps solves: a calendar with site visits, setup and teardown, clients with their history, crew assigned per date and each month's results."
+            "body": "Dates, crew and payments spread across chats and spreadsheets. That's what EventOps solves: a calendar with site visits, setup and teardown, clients with their history, crew assigned per date and each month's results."
           }
-        ]
+        ],
+        "tabsLabel": "Examples by business type"
       },
       "process": {
         "title": "How we work and how we quote.",
-        "paragraphs": [
-          "We start with a conversation to understand how you work today: what gets entered, who enters it and where things get stuck. Then we send you a written proposal with what is in, what is out, what it costs and when it will be ready.",
-          "If the system is large, we split it into stages and start with what hurts most, like inventory or orders. Every week you see a working piece and try it with your team. Then we roll it out with you and adjust it based on real use.",
-          "Price and timeline depend on how many parts the system has and what it needs to connect to. If you already pay for hosting or other services, we use them. If not, we handle them and charge their cost plus a management fee."
-        ]
+        "steps": [
+          {
+            "title": "A 30-minute call",
+            "body": "What gets entered, who enters it and where things get stuck. That tells us where to start."
+          },
+          {
+            "title": "A scope document",
+            "body": "What's in, what's out, what it costs and when it'll be ready. All clear before we start."
+          },
+          {
+            "title": "Partial deliveries every week",
+            "body": "If the system is large, we split it up and start with what hurts most, like inventory or orders. Every week you see a working piece and try it with your team."
+          },
+          {
+            "title": "Rollout",
+            "body": "We roll it out with your team and adjust it based on real use."
+          }
+        ],
+        "pricing": {
+          "label": "Price and timeline",
+          "body": "They depend on how many parts the system has and what it needs to connect to. If you already pay for hosting or other services, we use them. If not, we handle them and charge their cost plus a management fee."
+        }
       },
+      "afterDelivery": [
+        {
+          "label": "Warranty",
+          "body": "If a bug turns up on our side, we fix it under warranty."
+        },
+        {
+          "label": "Maintenance",
+          "body": "Optional, for changes and improvements after launch. Without it, the project costs less."
+        },
+        {
+          "label": "Your data",
+          "body": "It's confidential and we only use it for your project."
+        }
+      ],
       "faq": {
         "title": "Questions about management systems.",
         "items": [
           {
             "question": "Should I get a custom system or an off-the-shelf one?",
-            "answer": "If an off-the-shelf system fits how you work, it may be enough. A custom system makes sense when your operation has its own steps that packaged software does not cover, or when you end up using three programs and a spreadsheet to fill the gaps. In the first conversation we tell you what we think fits your case."
+            "answer": "If an off-the-shelf system fits how you work, it may be enough. A custom system makes sense when your operation has its own steps that packaged software doesn't cover, or when you end up using three programs and a spreadsheet to fill the gaps. In the first conversation we tell you what we think fits your case."
           },
           {
             "question": "I run everything on Excel today. What happens to that data?",
-            "answer": "We start from there. We move your product, client or order spreadsheets into the new system, and that is planned in the proposal. If a spreadsheet still works for you, we can keep it connected."
+            "answer": "We start from there. We move your product, client or order spreadsheets into the new system, and that's planned in the proposal. If a spreadsheet still works for you, we can keep it connected."
           },
           {
             "question": "Will my team be able to use it?",
-            "answer": "We build it around how your team works, and they test it every week while it is being built. If you want, we add a training session so everyone can use it from day one."
+            "answer": "We build it around how your team works, and they test it every week while it's being built. If you want, we add a training session so everyone can use it from day one."
           },
           {
             "question": "Who owns the system, and what happens to my data?",
-            "answer": "Your data is confidential and we do not use it for anything else. Code ownership depends on the project: a system built for your business works differently from using one of our own products like EventOps. It is spelled out in the proposal before we start."
-          },
-          {
-            "question": "What happens after delivery?",
-            "answer": "If a bug turns up on our side, we fix it under warranty. You can also add maintenance for changes and improvements. It is optional, and the project costs less without it."
+            "answer": "Your data is confidential and we only use it for your project. Who owns the code depends on whether it's a custom build or one of our products like EventOps. We put it in writing in the proposal before we start."
           }
         ]
       },
       "ctaTitle": "Has your operation outgrown a spreadsheet?",
-      "ctaDescription": "Tell us how you work today. We reply with scope and price in writing before we start.",
+      "ctaDescription": "Tell us how you work today. We start with a free 30-minute call, then send scope and price in writing before we begin.",
       "ctaButton": "Tell us your problem"
     },
     "webs-y-catalogos": {
@@ -474,20 +537,49 @@
       "metaDescription": "A website for your business, online booking or a catalog with WhatsApp ordering. Customers find you and get in touch.",
       "h1": "Websites, booking and catalogs.",
       "lead": "A clear website for your business, online booking or a catalog with WhatsApp ordering. Customers find you, see what you offer and get in touch.",
-      "sections": [
-        {
-          "title": "What we solve.",
-          "body": "Concrete digital presence: a landing that explains what you do, a booking flow so people schedule themselves, or a catalog with WhatsApp ordering. No platforms that take your margin, no templates that do not look like your business."
-        },
-        {
-          "title": "How we build it.",
-          "body": "We start from how you want people to find you and reach out. The result is clear, fast and easy to maintain: a site that explains what you do, a booking tool that runs itself or a catalog ready for WhatsApp orders."
-        },
-        {
-          "title": "Who it is for.",
-          "body": "For shops and small businesses that need customers to find them online, book a slot or order on WhatsApp without jumping through hoops."
-        }
-      ],
+      "covers": {
+        "title": "What we solve.",
+        "body": "Concrete digital presence: a landing that explains what you do, a booking flow so people schedule themselves, or a catalog with WhatsApp ordering. No platforms that take your margin, no templates that do not look like your business.",
+        "items": [
+          {
+            "id": "web",
+            "label": "Website"
+          },
+          {
+            "id": "appointments",
+            "label": "Booking"
+          },
+          {
+            "id": "catalog",
+            "label": "Catalog"
+          },
+          {
+            "id": "whatsapp",
+            "label": "WhatsApp orders"
+          }
+        ]
+      },
+      "audience": {
+        "title": "Who it is for.",
+        "intro": "For shops and small businesses that need customers to find them online, book a slot or order on WhatsApp without jumping through hoops.",
+        "items": [
+          {
+            "id": "store",
+            "title": "Shops with products",
+            "body": "They want to show their catalog and get the order ready-made on WhatsApp."
+          },
+          {
+            "id": "appointments",
+            "title": "Appointment-based businesses",
+            "body": "Hair salons, clinics or repair shops that book by message."
+          },
+          {
+            "id": "services",
+            "title": "Service businesses",
+            "body": "People get a recommendation, search on Google and find nothing."
+          }
+        ]
+      },
       "examples": {
         "title": "What we can build for each business.",
         "items": [
@@ -503,16 +595,48 @@
             "title": "Service business",
             "body": "A website that explains what you do, shows your work and has a form or WhatsApp button to request a quote. It is what people find when they search for you on Google after someone recommended you."
           }
-        ]
+        ],
+        "tabsLabel": "Examples by business type"
       },
       "process": {
         "title": "How we work and what it costs.",
-        "paragraphs": [
-          "First we look at what you want people to do when they land: message you, book or order. From there we define which pages you need and send you a written proposal with price and delivery date.",
-          "If you need help with the copy, we write it with you. Photos work best when they are yours, since nobody knows your brand better. If you do not have any, they can be generated with AI. The site ships with the basics Google needs to understand it: a title and description on every page and fast loading on mobile.",
-          "Price and timeline depend on how many pages and features it needs. If you already have a domain and hosting, we use them. If not, we handle them and charge their cost plus a management fee."
-        ]
+        "steps": [
+          {
+            "title": "A 30-minute call",
+            "body": "We look at what you want people to do when they land: message you, book or order. From there we define which pages you need."
+          },
+          {
+            "title": "A scope document",
+            "body": "Which pages and features are in, what it costs and when it will be ready. All clear before we start."
+          },
+          {
+            "title": "Partial deliveries every week",
+            "body": "Every week you see another part of the site built. If you need help with the copy, we write it with you; photos work best when they are yours, and if you have none, they can be generated with AI."
+          },
+          {
+            "title": "Rollout",
+            "body": "We publish it on your domain with the basics Google needs: a title and description on every page and fast loading on mobile."
+          }
+        ],
+        "pricing": {
+          "label": "Price and timeline",
+          "body": "They depend on how many pages and features it needs. If you already have a domain and hosting, we use them. If not, we handle them and charge their cost plus a management fee."
+        }
       },
+      "afterDelivery": [
+        {
+          "label": "Warranty",
+          "body": "If a bug turns up on our side, we fix it under warranty."
+        },
+        {
+          "label": "Maintenance",
+          "body": "Optional, for changes and improvements after launch. Without it, the project costs less."
+        },
+        {
+          "label": "Your data",
+          "body": "It's confidential and we only use it for your project."
+        }
+      ],
       "faq": {
         "title": "Questions about websites, booking pages and catalogs.",
         "items": [
@@ -548,20 +672,55 @@
       "metaDescription": "A bot or agent that answers around the clock on WhatsApp or your site: it takes orders, books appointments or answers questions. When a person is needed, it hands it to you.",
       "h1": "AI bots and agents.",
       "lead": "A bot or agent that answers around the clock on WhatsApp, your website or wherever your customers are. It takes orders, books appointments or answers questions. When something needs a person, it hands it to you.",
+      "covers": {
+        "title": "What we solve.",
+        "body": "The repeated questions that eat your day: hours, prices, stock, open slots. The bot answers what it can and escalates what it cannot. AI where it pays off, not for show.",
+        "items": [
+          {
+            "id": "questions",
+            "label": "Questions"
+          },
+          {
+            "id": "orders",
+            "label": "Orders"
+          },
+          {
+            "id": "appointments",
+            "label": "Bookings"
+          },
+          {
+            "id": "handoff",
+            "label": "Handoff"
+          }
+        ]
+      },
       "sections": [
-        {
-          "title": "What we solve.",
-          "body": "The repeated questions that eat your day: hours, prices, stock, open slots. The bot answers what it can and escalates what it cannot. AI where it pays off, not for show."
-        },
         {
           "title": "Where it lives.",
           "body": "On WhatsApp, on your site or on the channel where people already write to you. It connects to what you already use: your calendar, catalog or spreadsheet. You do not need to replace everything to start."
-        },
-        {
-          "title": "Who it is for.",
-          "body": "For businesses that get a lot of questions and cannot reply on time. If your team spends hours on the same answers every day, a well-built bot takes that load off."
         }
       ],
+      "audience": {
+        "title": "Who it is for.",
+        "intro": "For businesses that get a lot of questions and cannot reply on time. If your team spends hours on the same answers every day, a well-built bot takes that load off.",
+        "items": [
+          {
+            "id": "store",
+            "title": "Shops that sell on WhatsApp",
+            "body": "The same stock, price and shipping questions, all day long."
+          },
+          {
+            "id": "appointments",
+            "title": "Appointment-based businesses",
+            "body": "Coordinating every booking by message eats the team's hours."
+          },
+          {
+            "id": "events",
+            "title": "Event companies",
+            "body": "Date and quote inquiries that arrive after hours."
+          }
+        ]
+      },
       "examples": {
         "title": "What a bot can do for your business.",
         "items": [
@@ -577,16 +736,48 @@
             "title": "Event company",
             "body": "Inquiries about dates and quotes arrive after hours. The bot collects the basics, like date, venue, guest count and service, and leaves the inquiry ready for you to quote."
           }
-        ]
+        ],
+        "tabsLabel": "Examples by business type"
       },
       "process": {
         "title": "How we build it and how we quote.",
-        "paragraphs": [
-          "We start by looking at the messages you get today: which ones repeat, which ones a bot could answer and which ones still need a person. From there we define what the bot does, where it gets its information and when it hands off to you.",
-          "Before it talks to customers, you and your team test it and we adjust the answers. After launch we review real conversations and fix whatever needs fixing.",
-          "The proposal is in writing, with price and timeline based on scope. A bot runs on external services, like the WhatsApp API and an AI model. If you already have those accounts, we use them. If not, we handle them and charge their cost plus a management fee, which depends on how many messages the bot handles."
-        ]
+        "steps": [
+          {
+            "title": "A 30-minute call",
+            "body": "We look at the messages you get today: which ones repeat, which ones a bot could answer and which ones still need a person."
+          },
+          {
+            "title": "A scope document",
+            "body": "What the bot does, where it gets its information and when it hands off to you. Price and timeline in writing before we start."
+          },
+          {
+            "title": "Partial deliveries every week",
+            "body": "Every week you test the bot with your team and we adjust the answers. It only talks to customers once you approve it."
+          },
+          {
+            "title": "Rollout",
+            "body": "We connect it to your WhatsApp or your site and review real conversations to fix whatever needs fixing."
+          }
+        ],
+        "pricing": {
+          "label": "Price and timeline",
+          "body": "They depend on scope. A bot runs on external services, like the WhatsApp API and an AI model. If you already have those accounts, we use them. If not, we handle them and charge their cost plus a management fee, which depends on how many messages the bot handles."
+        }
       },
+      "afterDelivery": [
+        {
+          "label": "Warranty",
+          "body": "If a bug turns up on our side, we fix it under warranty."
+        },
+        {
+          "label": "Maintenance",
+          "body": "Optional, for changes and improvements after launch. Without it, the project costs less."
+        },
+        {
+          "label": "Your data",
+          "body": "It's confidential and we only use it for your project."
+        }
+      ],
       "faq": {
         "title": "Questions about bots and AI agents.",
         "items": [
@@ -622,57 +813,105 @@
       "metaDescription": "Custom integrations with Mercado Pago, Tiendanube, ARCA invoicing, AI WhatsApp bots and Google Sheets. Enter data once. Scope in writing.",
       "h1": "Custom integrations with your current tools.",
       "lead": "We connect Mercado Pago, Tiendanube, ARCA invoicing, WhatsApp and your spreadsheets to each other. Enter something once and it shows up where it should, without tearing down what already works.",
-      "sections": [
-        {
-          "title": "What we solve.",
-          "body": "Data that moves by hand from one place to another: an order that comes in on WhatsApp and gets typed into a spreadsheet, a sale you collect in one place and invoice in another. We connect those pieces so the data is entered once and nobody has to copy it."
-        },
-        {
-          "title": "Mercado Pago: payments and reconciliation.",
-          "body": "Every payment that comes in through Mercado Pago can be recorded automatically in your spreadsheet or system, linked to its order. Reconciliation stops being a line-by-line review at the end of the month, and you see right away what is paid and what is pending."
-        },
-        {
-          "title": "Tiendanube: stock and orders.",
-          "body": "If you sell online and in a physical shop, there should be a single stock. We sync Tiendanube inventory with your spreadsheet or system and make each new order reach whoever prepares it, without checking the dashboard."
-        },
-        {
-          "title": "ARCA electronic invoicing.",
-          "body": "We connect your sales to ARCA (formerly AFIP) electronic invoicing services so the invoice is issued automatically when a payment or order is confirmed. You set the rules: which receipt type, for whom and when."
-        },
-        {
-          "title": "AI WhatsApp bot.",
-          "body": "A WhatsApp assistant that answers common questions, takes orders or bookings and records them where they belong. When a conversation needs a person, it hands it over. We build it with your answers and your rules, not generic scripts."
-        },
-        {
-          "title": "Google Sheets and CRM.",
-          "body": "If your team works in Google Sheets or a CRM, we use it as the hub: orders, payments and contacts from other tools arrive there organized, and changes you make there are reflected wherever needed."
-        }
-      ],
-      "examples": {
-        "title": "How an integration works.",
+      "covers": {
+        "title": "What we solve.",
+        "body": "Data that moves by hand from one place to another: an order that comes in on WhatsApp and gets typed into a spreadsheet, a sale you collect in one place and invoice in another. We connect those pieces so the data is entered once and nobody has to copy it.",
         "items": [
           {
-            "title": "1. We map how data moves",
-            "body": "We look at where each piece of data comes in, where it is copied by hand and where it gets lost. That shows which connection saves you the most work."
+            "id": "whatsapp",
+            "label": "WhatsApp"
           },
           {
-            "title": "2. We connect through APIs",
-            "body": "We use each tool's official connections (its APIs) and define what happens in each case, including what to do if something fails."
+            "id": "sheets",
+            "label": "Google Sheets"
           },
           {
-            "title": "3. We test with real data and alert on failures",
-            "body": "Before leaving it running we test it with your real cases. After that, every integration alerts you when something does not go as expected."
+            "id": "mercadopago",
+            "label": "Mercado Pago"
+          },
+          {
+            "id": "tiendanube",
+            "label": "Tiendanube"
+          },
+          {
+            "id": "arca",
+            "label": "ARCA invoicing"
+          },
+          {
+            "id": "crm",
+            "label": "CRM"
+          }
+        ]
+      },
+      "tools": {
+        "title": "What we connect.",
+        "items": [
+          {
+            "id": "mercadopago",
+            "title": "Mercado Pago: payments and reconciliation",
+            "body": "Every payment that comes in through Mercado Pago can be recorded automatically in your spreadsheet or system, linked to its order. Reconciliation stops being a line-by-line review at the end of the month, and you see right away what is paid and what is pending."
+          },
+          {
+            "id": "tiendanube",
+            "title": "Tiendanube: stock and orders",
+            "body": "If you sell online and in a physical shop, there should be a single stock. We sync Tiendanube inventory with your spreadsheet or system and make each new order reach whoever prepares it, without checking the dashboard."
+          },
+          {
+            "id": "arca",
+            "title": "ARCA electronic invoicing",
+            "body": "We connect your sales to ARCA (formerly AFIP) electronic invoicing services so the invoice is issued automatically when a payment or order is confirmed. You set the rules: which receipt type, for whom and when."
+          },
+          {
+            "id": "whatsapp",
+            "title": "AI WhatsApp bot",
+            "body": "A WhatsApp assistant that answers common questions, takes orders or bookings and records them where they belong. When a conversation needs a person, it hands it over. We build it with your answers and your rules, not generic scripts."
+          },
+          {
+            "id": "sheets",
+            "title": "Google Sheets and CRM",
+            "body": "If your team works in Google Sheets or a CRM, we use it as the hub: orders, payments and contacts from other tools arrive there organized, and changes you make there are reflected wherever needed."
           }
         ]
       },
       "process": {
         "title": "How we work and how we quote.",
-        "paragraphs": [
-          "We start with a free 30-minute call to understand what you need and see how data moves today: where it comes in, where it gets copied by hand and where it gets lost.",
-          "Before we start we send you a detailed scope document: what gets connected, what happens if something fails and what we need from you. Then, every week, we show you a partial delivery you can test.",
-          "We charge an implementation fee based on the complexity of the integration and, once it is running, a maintenance fee. Some tools charge for their own usage: if you already have the accounts, we use them; if not, we handle them and charge you their cost."
-        ]
+        "steps": [
+          {
+            "title": "A 30-minute call",
+            "body": "We look at how data moves today: where it comes in, where it gets copied by hand and where it gets lost. That shows which connection saves you the most work."
+          },
+          {
+            "title": "A scope document",
+            "body": "What gets connected, what happens if something fails and what we need from you. Price and timeline in writing before we start."
+          },
+          {
+            "title": "Partial deliveries every week",
+            "body": "We connect each tool through its official API, and every week you test a working piece with your real cases."
+          },
+          {
+            "title": "Rollout",
+            "body": "We leave it running with your team. Every integration alerts you when something does not go as expected."
+          }
+        ],
+        "pricing": {
+          "label": "Price and timeline",
+          "body": "We charge an implementation fee based on the complexity of the integration and, once it is running, a maintenance fee. Some tools charge for their own usage: if you already have the accounts, we use them; if not, we handle them and charge you their cost."
+        }
       },
+      "afterDelivery": [
+        {
+          "label": "Warranty",
+          "body": "If an integration fails because of a bug on our side, we fix it under warranty."
+        },
+        {
+          "label": "Maintenance",
+          "body": "Covers the adjustments when an external tool changes how it connects. Without it, that adjustment is on you."
+        },
+        {
+          "label": "Your data",
+          "body": "It's confidential and we only use it for your project."
+        }
+      ],
       "faq": {
         "title": "Questions about integrations.",
         "items": [

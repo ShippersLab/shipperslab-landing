@@ -48,14 +48,14 @@
 :root {
     --accent: #fe5634;
     --ink: #0b0f1a;
-    --paper: #f2f3f5;
+    --paper: #eeeef3;
     --muted: #5f6777;
     --border: #e0e3e9;
 }
 
 @layer base {
     body {
-        background-color: #EEEEF3;
+        background-color: var(--paper);
         color: var(--ink);
     }
 

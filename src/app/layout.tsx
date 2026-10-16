@@ -21,7 +21,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <style>{".invisible{visibility:visible !important}"}</style>
         </noscript>
       </head>
-      <body className="bg-[#EEEEF3]">
+      <body className="bg-paper">
         <SmoothScroll />
         <I18nProvider>
           <MotionProvider>

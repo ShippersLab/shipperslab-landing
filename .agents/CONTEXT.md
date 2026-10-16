@@ -67,7 +67,7 @@ ShippersLab is new. Keep this in mind in every piece of copy and UI:
 - **Sponsors**: any company that wants to reach people who build, whether they make tools for them, are hiring, or want to be close to what is being made. Not limited to dev tool companies.
 ## Positioning status
 
-The pyme positioning is being validated in discovery talks during October to December 2026. The owner quotes and problem table in the internal positioning doc are hypotheses and must not be used as landing copy until they come up in real talks. The entry offer (free 30-minute call) is not confirmed. Do not promise it in public copy.
+The pyme positioning is being validated in discovery talks during October to December 2026. The owner quotes and problem table in the internal positioning doc are hypotheses and must not be used as landing copy until they come up in real talks. The entry offer is a free 30-minute call, confirmed on 2026-10-16 and promised on /como-trabajamos; public copy may name it.
 
 Studio is the only active pillar. Public copy and the landing talk about the studio; Lab and Community appear only as what we are building toward, never as active lines of work. The main CTA is about the client's business, not about ideas, products or founders.
 
