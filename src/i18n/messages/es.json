@@ -644,14 +644,6 @@
         {
           "title": "Google Sheets y CRM.",
           "body": "Si tu equipo trabaja en Google Sheets o en un CRM, lo usamos como centro: los pedidos, cobros y contactos de las otras herramientas llegan ahí ordenados, y los cambios que hacés ahí se reflejan donde haga falta."
-        },
-        {
-          "title": "Lo que ya construimos.",
-          "body": "Somos un equipo que recién arranca, así que preferimos mostrar antes que prometer. EventOps es el sistema que construimos para empresas de eventos y hoy está en producción. Ahí podés ver cómo trabajamos.",
-          "link": {
-            "label": "Ver el caso de EventOps",
-            "href": "/casos/eventops"
-          }
         }
       ],
       "examples": {
