@@ -947,27 +947,80 @@
     "navLabel": "How we work",
     "metaTitle": "Custom software development process",
     "metaDescription": "How we work at ShippersLab: a free 30-minute call, a written scope document, weekly deliveries and clear pricing for implementation and maintenance.",
-    "eyebrow": "How we work",
+    "eyebrow": "Process",
     "h1": "How we work, step by step.",
     "lead": "This is the process we follow on every project, so you know from day one what working with us looks like, no fine print.",
-    "steps": [
-      {
-        "title": "1. A free 30-minute call.",
-        "body": "We start with a half-hour call, free and with no commitment. You tell us how you work today, what takes up your time and what you want to solve. Our job on that call is to listen and pin down the real problem, which is not always the first one that shows up."
+    "overviewLabel": "Process steps",
+    "stepLabel": "Step",
+    "steps": {
+      "call": {
+        "short": "Free call",
+        "summary": "30 minutes, free and with no commitment.",
+        "title": "A free 30-minute call.",
+        "body": "We start with a half-hour call, free and with no commitment. Our job on that call is to listen and pin down the real problem, which is not always the first one that shows up.",
+        "topics": {
+          "label": "You tell us",
+          "items": ["How you work today", "What takes up your time", "What you want to solve"]
+        }
       },
-      {
-        "title": "2. A scope document before we start.",
-        "body": "Before writing a line of code we send you a detailed document with everything the project involves: what gets built, what is left out, how it will be used and what we need from you. We review it together until it is clear. It prevents surprises halfway through and makes sure we share the same expectations. Scope and price are in writing."
+      "scope": {
+        "short": "Scope in writing",
+        "summary": "What's in, what's out and what it costs, before we start.",
+        "title": "A scope document before we start.",
+        "body": "Before writing a line of code we send you a detailed document with everything the project involves. We review it together until it is clear. It prevents surprises halfway through and makes sure we share the same expectations.",
+        "document": {
+          "label": "Scope document",
+          "items": [
+            "What gets built",
+            "What is left out",
+            "How it will be used",
+            "What we need from you",
+            "Scope and price, in writing"
+          ]
+        }
       },
-      {
-        "title": "3. Partial deliveries every week.",
-        "body": "We do not disappear for weeks and come back with something finished. Every week we show you progress you can test with your team. You see it take shape, tell us what to adjust while it is still easy to change, and there are no surprises at the end."
+      "weekly": {
+        "short": "Progress every week",
+        "summary": "A partial delivery you test with your team.",
+        "title": "Partial deliveries every week.",
+        "body": "We do not disappear for weeks and come back with something finished. You see it take shape, and there are no surprises at the end.",
+        "cycle": {
+          "label": "Every week",
+          "items": [
+            {
+              "label": "We show",
+              "body": "We show you progress you can try out."
+            },
+            {
+              "label": "You test",
+              "body": "You use it with your team in your daily work."
+            },
+            {
+              "label": "We adjust",
+              "body": "You tell us what to change while it is still easy."
+            }
+          ]
+        }
       },
-      {
-        "title": "4. How we charge.",
-        "body": "We charge an implementation fee that depends on the complexity of the system: a single integration does not cost the same as a full management system. That is why we do not publish a fixed rate and give you a number once we understand what you need. Once it is running, there is a maintenance fee so the system keeps working and can keep evolving."
+      "pricing": {
+        "short": "Clear pricing",
+        "summary": "Implementation and maintenance, each with its own number.",
+        "title": "How we charge.",
+        "body": "We do not publish a fixed rate: we give you a number once we understand what you need.",
+        "fees": [
+          {
+            "label": "Implementation",
+            "tag": "",
+            "body": "A fee that depends on the complexity of the system. A single integration does not cost the same as a full management system."
+          },
+          {
+            "label": "Maintenance",
+            "tag": "Optional",
+            "body": "Once it is running, a fee so the system keeps working and can keep evolving."
+          }
+        ]
       }
-    ],
+    },
     "faq": {
       "title": "Questions about how we work.",
       "items": [
@@ -995,6 +1048,7 @@
     },
     "ctaTitle": "Shall we start with the call?",
     "ctaDescription": "Tell us what takes up your time or what you want to organize. We set up the 30 minutes and reply with scope and price in writing.",
-    "ctaButton": "Tell us your problem"
+    "ctaButton": "Tell us your problem",
+    "servicesTitle": "What we build."
   }
 }
