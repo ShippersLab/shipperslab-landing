@@ -2,21 +2,16 @@
 
 import Link from "next/link";
 
-import { DiaTextReveal } from "@/components/ui/animation/dia-text-reveal";
+import { ServiceBody } from "@/components/sections/service-page/service-body";
+import { ServiceHero } from "@/components/sections/service-page/service-hero";
 import { Reveal } from "@/components/ui/animation/reveal";
-import { WordReveal } from "@/components/ui/animation/word-reveal";
 import { TextureButton } from "@/components/ui/button/texture-button";
-import { FaqAccordion } from "@/components/ui/faq-accordion";
 import { Container } from "@/components/ui/section/container";
 import { useI18n } from "@/i18n/provider";
 import type { ServiceSlug } from "@/lib/services";
 import { serviceRoutes } from "@/lib/services";
 
-const TITLE_DELAY = 0;
-const LEAD_DELAY = 0.25;
-const BODY_DELAY = 0.4;
-const CTA_DELAY = 0.55;
-const DETAIL_DELAY = 0.1;
+const CTA_DELAY = 0.2;
 
 type ServicePageProps = {
   slug: ServiceSlug;
@@ -29,89 +24,17 @@ export function ServicePage({ slug }: ServicePageProps) {
 
   return (
     <div className="mx-auto w-full max-w-content border-x border-border">
-      <Container className="w-full py-20 sm:py-28">
-        <div className="max-w-2xl">
-          <p className="text-sm text-muted">{messages.servicePages.eyebrow}</p>
-          <h1 className="mt-4 font-pixel text-4xl font-medium tracking-tighter text-ink sm:text-5xl">
-            <DiaTextReveal
-              text={page.h1}
-              colors={["var(--accent)"]}
-              textColor="var(--ink)"
-              delay={TITLE_DELAY}
-            />
-          </h1>
-          <WordReveal text={page.lead} delay={LEAD_DELAY} className="mt-5 text-lg text-muted" />
-        </div>
+      <ServiceHero eyebrow={messages.servicePages.eyebrow} title={page.h1} lead={page.lead} />
 
-        <div className="mt-16 grid gap-10 sm:mt-20 sm:gap-12">
-          {page.sections.map((section, index) => (
-            <Reveal key={section.title} delay={(BODY_DELAY + index * 0.08) * 1000}>
-              <div className="max-w-2xl border-t border-border pt-8">
-                <h2 className="text-2xl text-ink sm:text-3xl">{section.title}</h2>
-                <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
-                  {section.body}
-                </p>
-                {"link" in section && section.link ? (
-                  <Link
-                    href={section.link.href}
-                    className="mt-4 inline-block text-base font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-[text-decoration-color] duration-200 ease-out hover:decoration-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
-                  >
-                    {section.link.label}
-                  </Link>
-                ) : null}
-              </div>
-            </Reveal>
-          ))}
-
-          <Reveal delay={DETAIL_DELAY * 1000}>
-            <div className="max-w-2xl border-t border-border pt-8">
-              <h2 className="text-2xl text-ink sm:text-3xl">{page.examples.title}</h2>
-              <ul className="mt-6 grid gap-6">
-                {page.examples.items.map((example) => (
-                  <li key={example.title}>
-                    <h3 className="font-sans text-lg font-normal tracking-normal text-ink">
-                      {example.title}
-                    </h3>
-                    <p className="mt-2 text-base leading-relaxed text-muted sm:text-lg">
-                      {example.body}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </Reveal>
-
-          <Reveal delay={DETAIL_DELAY * 1000}>
-            <div className="max-w-2xl border-t border-border pt-8">
-              <h2 className="text-2xl text-ink sm:text-3xl">{page.process.title}</h2>
-              {page.process.paragraphs.map((paragraph) => (
-                <p key={paragraph} className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
-                  {paragraph}
-                </p>
-              ))}
-              <Link
-                href="/como-trabajamos"
-                className="mt-4 inline-block text-base font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-[text-decoration-color] duration-200 ease-out hover:decoration-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
-              >
-                {messages.servicePages.processLink}
-              </Link>
-            </div>
-          </Reveal>
-
-          <div className="max-w-2xl border-t border-border pt-8">
-            <Reveal delay={DETAIL_DELAY * 1000}>
-              <h2 className="text-2xl text-ink sm:text-3xl">{page.faq.title}</h2>
-            </Reveal>
-            <FaqAccordion items={page.faq.items} delay={DETAIL_DELAY} className="mt-6" />
-          </div>
-        </div>
+      <Container className="w-full py-16 sm:py-20">
+        <ServiceBody page={page} processLink={messages.servicePages.processLink} />
 
         <Reveal
           delay={CTA_DELAY * 1000}
-          className="mt-16 flex w-full max-w-2xl flex-col items-start gap-5 rounded-lg border border-border p-8 sm:mt-20 sm:p-10"
+          className="mt-16 flex w-full flex-col items-start gap-5 rounded-lg border border-border p-8 sm:mt-20 sm:p-10"
         >
           <h2 className="text-2xl text-ink">{page.ctaTitle}</h2>
-          <p className="text-base text-muted">{page.ctaDescription}</p>
+          <p className="max-w-2xl text-base text-muted">{page.ctaDescription}</p>
           <TextureButton asChild variant="primary" size="pill" className="w-full sm:w-auto">
             <Link href="/empecemos">{page.ctaButton}</Link>
           </TextureButton>
@@ -121,7 +44,7 @@ export function ServicePage({ slug }: ServicePageProps) {
       <Container className="border-t border-border py-16 sm:py-20">
         <Reveal>
           <h2 className="text-xl text-ink sm:text-2xl">{messages.servicePages.relatedTitle}</h2>
-          <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+          <ul className="mt-6 grid gap-3 sm:grid-cols-3">
             {related.map((route) => (
               <li key={route.slug}>
                 <Link

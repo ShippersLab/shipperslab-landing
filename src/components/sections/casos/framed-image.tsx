@@ -12,7 +12,10 @@ type FramedImageProps = {
 export function FramedImage({ tabs, children, className, frameClassName }: FramedImageProps) {
   return (
     <div className={cn("relative mt-10", className)}>
-      <ul className="absolute bottom-full left-1/2 flex -translate-x-1/2 translate-y-px gap-1">
+      <ul
+        aria-hidden="true"
+        className="absolute bottom-full left-1/2 flex -translate-x-1/2 translate-y-px gap-1"
+      >
         {tabs.map((tab) => (
           <li
             key={tab}
