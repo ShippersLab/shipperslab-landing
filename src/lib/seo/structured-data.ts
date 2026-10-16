@@ -227,18 +227,28 @@ export function buildEventopsCaseStructuredData(): Graph {
   };
 }
 
-export function buildComoTrabajamosStructuredData(): Graph {
-  const page = es.comoTrabajamos;
-  const url = `${site.url}/como-trabajamos`;
+export function buildPageBreadcrumbStructuredData(path: string, name: string): Graph {
+  const url = `${site.url}${path}`;
 
   const breadcrumb: BreadcrumbList = {
     "@type": "BreadcrumbList",
     "@id": `${url}#breadcrumb`,
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Inicio", item: site.url },
-      { "@type": "ListItem", position: 2, name: page.navLabel, item: url },
+      { "@type": "ListItem", position: 2, name, item: url },
     ],
   };
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [breadcrumb],
+  };
+}
+
+export function buildComoTrabajamosStructuredData(): Graph {
+  const page = es.comoTrabajamos;
+  const path = "/como-trabajamos";
+  const url = `${site.url}${path}`;
 
   const faq: FAQPage = {
     "@type": "FAQPage",
@@ -254,6 +264,6 @@ export function buildComoTrabajamosStructuredData(): Graph {
 
   return {
     "@context": "https://schema.org",
-    "@graph": [breadcrumb, faq],
+    "@graph": [...buildPageBreadcrumbStructuredData(path, page.navLabel)["@graph"], faq],
   };
 }
