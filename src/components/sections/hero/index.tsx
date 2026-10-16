@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 
@@ -10,6 +11,11 @@ import { TextureButton } from "@/components/ui/button/texture-button";
 import { HERO_TITLE_DELAY, useHeroAnimation } from "@/components/sections/hero/hero.animation";
 import { useI18n } from "@/i18n/provider";
 
+const HERO_BLUR_DATA_URL =
+  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4pLSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUk//2wBDAQ4ODhMREyYVFSZPNS01T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0//wAARCAAHABADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDs4tURsedGyEdehzS3eqLF8sMbO3qcAUUVye1lY9H6vT5tj//Z";
+const HERO_VIDEO_SRC = "/ascii-animation.mp4";
+const VIDEO_MEDIA = "(min-width: 640px) and (prefers-reduced-motion: no-preference)";
+
 export function Hero() {
   const { messages } = useI18n();
   const sectionRef = useRef<HTMLElement>(null);
@@ -19,9 +25,12 @@ export function Hero() {
   useHeroAnimation(sectionRef);
 
   useEffect(() => {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      videoRef.current?.pause();
+    const video = videoRef.current;
+    if (!video || !window.matchMedia(VIDEO_MEDIA).matches) {
+      return;
     }
+    video.src = HERO_VIDEO_SRC;
+    video.play().catch(() => {});
   }, []);
 
   return (
@@ -31,22 +40,32 @@ export function Hero() {
       className="flex min-h-[calc(100svh-68px)] w-full flex-1 flex-col bg-paper lg:min-h-svh lg:bg-transparent"
     >
       <div className="relative mt-10 lg:mt-0">
+        <Image
+          src="/images/hero-illustration.webp"
+          alt={messages.hero.imageAlt}
+          width={1920}
+          height={822}
+          loading="eager"
+          fetchPriority="high"
+          quality={90}
+          placeholder="blur"
+          blurDataURL={HERO_BLUR_DATA_URL}
+          className="aspect-4/3 w-full object-cover object-center select-none sm:aspect-8/3 sm:object-top lg:max-h-[calc(100svh-15rem)]"
+          sizes="100vw"
+        />
         <video
           ref={videoRef}
-          src="/ascii-animation.mp4"
           poster="/images/hero-illustration.webp"
-          aria-label={messages.hero.imageAlt}
-          role="img"
-          autoPlay
+          aria-hidden="true"
           muted
           loop
           playsInline
-          preload="auto"
+          preload="none"
           tabIndex={-1}
           disablePictureInPicture
           disableRemotePlayback
           controlsList="nodownload nofullscreen noremoteplayback"
-          className="pointer-events-none aspect-4/3 w-full object-cover object-center select-none sm:aspect-8/3 sm:object-top lg:max-h-[calc(100svh-15rem)]"
+          className="pointer-events-none absolute inset-0 hidden size-full object-cover object-top select-none sm:block"
         />
         <div
           aria-hidden
