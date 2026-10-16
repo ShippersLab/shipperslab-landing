@@ -96,7 +96,8 @@
         "title": "Lo empiezan a usar",
         "description": "Lo ponemos en marcha con tu equipo y lo ajustamos con el uso real."
       }
-    ]
+    ],
+    "link": "Ver cómo trabajamos"
   },
   "faq": {
     "label": "Preguntas frecuentes",
@@ -234,7 +235,8 @@
       "integraciones": "Integraciones",
       "casos": "Casos",
       "eventos": "Eventos",
-      "empecemos": "Empecemos"
+      "empecemos": "Empecemos",
+      "como-trabajamos": "Cómo trabajamos"
     }
   },
   "events": {
@@ -687,6 +689,69 @@
       "ctaTitle": "¿Cargás lo mismo en tres lugares?",
       "ctaDescription": "Contanos qué herramientas usás hoy. Te respondemos con alcance y precio por escrito.",
       "ctaButton": "Contanos tu problema"
-    }
+    },
+    "processLink": "Ver cómo trabajamos"
+  },
+  "comoTrabajamos": {
+    "navLabel": "Cómo trabajamos",
+    "metaTitle": "Proceso de desarrollo de software a medida",
+    "metaDescription": "Cómo trabajamos en ShippersLab: charla gratis de 30 minutos, alcance por escrito, entregas cada semana y precio claro de implementación y mantenimiento.",
+    "eyebrow": "Cómo trabajamos",
+    "h1": "Cómo trabajamos, paso a paso.",
+    "lead": "Somos un equipo que recién arranca y preferimos que sepas desde el principio cómo es trabajar con nosotros. Este es el proceso que seguimos en cada proyecto, sin letra chica.",
+    "steps": [
+      {
+        "title": "1. Una charla gratis de 30 minutos.",
+        "body": "Arrancamos con una charla de media hora, sin costo y sin compromiso. Nos contás cómo trabajan hoy, qué te lleva tiempo y qué querés resolver. Nuestro trabajo en esa charla es escuchar e identificar bien el problema, que no siempre es el que aparece primero."
+      },
+      {
+        "title": "2. Un documento de alcance antes de arrancar.",
+        "body": "Antes de escribir una línea de código te pasamos un documento detallado con todo lo que implica el proyecto: qué se construye, qué queda afuera, cómo se va a usar y qué hace falta de tu lado. Lo revisamos juntos hasta que esté claro. Sirve para evitar imprevistos a mitad de camino y para que los dos tengamos las mismas expectativas. El alcance y el precio quedan por escrito."
+      },
+      {
+        "title": "3. Entregas parciales cada semana.",
+        "body": "No desaparecemos durante semanas para volver con algo terminado. Cada semana te mostramos un avance que podés probar con tu equipo. Así ves cómo va tomando forma, nos decís qué ajustar mientras todavía es fácil cambiarlo y no hay sorpresas al final."
+      },
+      {
+        "title": "4. Cómo cobramos.",
+        "body": "Cobramos un monto por la implementación, que depende de la complejidad del sistema: no cuesta lo mismo una integración puntual que un sistema de gestión completo. Por eso no publicamos una tarifa fija y te pasamos el número después de entender qué necesitás. Una vez en marcha, hay una cuota de mantenimiento para que el sistema siga funcionando y se pueda ir ajustando."
+      }
+    ],
+    "why": {
+      "title": "Por qué trabajamos así.",
+      "body": "Recién estamos arrancando, así que no tenemos una larga lista de proyectos para mostrarte. Lo que sí podemos ofrecerte es un proceso claro: escuchar antes de proponer, poner todo por escrito antes de cobrar y mostrarte avances reales cada semana. Si querés ver algo que ya construimos, mirá el caso de EventOps.",
+      "link": {
+        "label": "Ver el caso de EventOps",
+        "href": "/casos/eventops"
+      }
+    },
+    "faq": {
+      "title": "Preguntas sobre cómo trabajamos.",
+      "items": [
+        {
+          "question": "¿La primera charla tiene costo?",
+          "answer": "No. Son 30 minutos gratis para entender tu necesidad e identificar el problema. No te comprometés a nada."
+        },
+        {
+          "question": "¿Qué incluye el documento de alcance?",
+          "answer": "Todo lo que implica el proyecto: qué se construye, qué no, qué hace falta de tu lado, cuánto cuesta la implementación y cuánto el mantenimiento. Queda por escrito antes de arrancar."
+        },
+        {
+          "question": "¿El mantenimiento es obligatorio?",
+          "answer": "No. El mantenimiento y la capacitación de tu equipo son opcionales. Si un error es nuestro, lo arreglamos nosotros igual."
+        },
+        {
+          "question": "¿Cada cuánto veo avances?",
+          "answer": "Cada semana. Te mostramos una entrega parcial que podés probar y nos decís qué ajustar."
+        },
+        {
+          "question": "¿Qué pasa con los datos de mi negocio?",
+          "answer": "Son confidenciales. Los usamos solo para construir y mantener tu sistema."
+        }
+      ]
+    },
+    "ctaTitle": "¿Arrancamos con la charla?",
+    "ctaDescription": "Contanos qué te lleva tiempo o qué querés ordenar. Coordinamos los 30 minutos y te respondemos con alcance y precio por escrito.",
+    "ctaButton": "Contanos tu problema"
   }
 }

@@ -89,6 +89,12 @@ export function ServicePage({ slug }: ServicePageProps) {
                   {paragraph}
                 </p>
               ))}
+              <Link
+                href="/como-trabajamos"
+                className="mt-4 inline-block text-base font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-[text-decoration-color] duration-200 ease-out hover:decoration-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+              >
+                {messages.servicePages.processLink}
+              </Link>
             </div>
           </Reveal>
 

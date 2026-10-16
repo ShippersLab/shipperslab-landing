@@ -226,3 +226,34 @@ export function buildEventopsCaseStructuredData(): Graph {
     "@graph": [app, breadcrumb],
   };
 }
+
+export function buildComoTrabajamosStructuredData(): Graph {
+  const page = es.comoTrabajamos;
+  const url = `${site.url}/como-trabajamos`;
+
+  const breadcrumb: BreadcrumbList = {
+    "@type": "BreadcrumbList",
+    "@id": `${url}#breadcrumb`,
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Inicio", item: site.url },
+      { "@type": "ListItem", position: 2, name: page.navLabel, item: url },
+    ],
+  };
+
+  const faq: FAQPage = {
+    "@type": "FAQPage",
+    "@id": `${url}#faq`,
+    isPartOf: { "@id": WEBSITE_ID },
+    inLanguage: "es-AR",
+    mainEntity: page.faq.items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  };
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [breadcrumb, faq],
+  };
+}
