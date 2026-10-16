@@ -53,6 +53,7 @@ export function buildLlmsTxt() {
     SCOPE,
     `Para quién:\n\n${bullets(AUDIENCES)}`,
     `Cómo trabajamos:\n\n${steps.join("\n")}`,
+    `Más detalle: ${link(es.comoTrabajamos.navLabel, `${site.url}/como-trabajamos`)}`,
     `Experiencia: ${EXPERIENCE}`,
     `Fundadores:\n\n${founders.join("\n")}`,
     `Preguntas frecuentes:\n\n${faq.join("\n")}`,
@@ -62,6 +63,11 @@ export function buildLlmsTxt() {
       link("Caso EventOps", `${site.url}/casos/eventops`),
       link("EventOps", site.eventopsUrl),
     ].join("\n")}`,
+    `## Cómo trabajamos\n\n${es.comoTrabajamos.steps
+      .map((step) => `- ${step.title} ${step.body}`)
+      .join("\n")}\n\nPreguntas frecuentes:\n\n${es.comoTrabajamos.faq.items
+      .map((item) => `- ${item.question} ${item.answer}`)
+      .join("\n")}\n\n${link(es.comoTrabajamos.navLabel, `${site.url}/como-trabajamos`)}`,
     `## Servicios\n\n${services.join("\n")}`,
     ...serviceRoutes.map((route) => {
       const page = es.servicePages[route.slug];

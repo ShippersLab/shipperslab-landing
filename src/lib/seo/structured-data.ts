@@ -244,3 +244,26 @@ export function buildPageBreadcrumbStructuredData(path: string, name: string): G
     "@graph": [breadcrumb],
   };
 }
+
+export function buildComoTrabajamosStructuredData(): Graph {
+  const page = es.comoTrabajamos;
+  const path = "/como-trabajamos";
+  const url = `${site.url}${path}`;
+
+  const faq: FAQPage = {
+    "@type": "FAQPage",
+    "@id": `${url}#faq`,
+    isPartOf: { "@id": WEBSITE_ID },
+    inLanguage: "es-AR",
+    mainEntity: page.faq.items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  };
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [...buildPageBreadcrumbStructuredData(path, page.navLabel)["@graph"], faq],
+  };
+}

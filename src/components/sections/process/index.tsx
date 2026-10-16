@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "motion/react";
 
 import { Reveal } from "@/components/ui/animation/reveal";
@@ -49,6 +50,15 @@ export function Process() {
           </Reveal>
         ))}
       </div>
+
+      <Reveal delay={ITEMS_DELAY * 1000} className="mt-12">
+        <Link
+          href="/como-trabajamos"
+          className="text-base font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-[text-decoration-color] duration-200 ease-out hover:decoration-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+        >
+          {messages.process.link}
+        </Link>
+      </Reveal>
     </Section>
   );
 }

@@ -9,6 +9,7 @@ const routes = [
   { path: "/casos", priority: 0.8 },
   ...projectRoutes.map((route) => ({ path: `/casos/${route.slug}`, priority: 0.7 })),
   { path: "/empecemos", priority: 0.9 },
+  { path: "/como-trabajamos", priority: 0.8 },
   ...serviceRoutes.map((route) => ({ path: `/${route.slug}`, priority: 0.85 })),
   { path: "/eventos", priority: 0.8 },
 ];

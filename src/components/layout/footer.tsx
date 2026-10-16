@@ -22,6 +22,7 @@ const FOOTER_LINK_CLASS =
 
 const EXPLORE_LINKS = [
   { key: "empecemos", href: "/empecemos" },
+  { key: "como-trabajamos", href: "/como-trabajamos" },
   { key: "casos", href: "/casos" },
   { key: "eventos", href: "/eventos" },
 ] as const;
