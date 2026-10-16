@@ -1,70 +1,90 @@
 "use client";
 
-import Link from "next/link";
+import type { ReactNode } from "react";
 
-import { DiaTextReveal } from "@/components/ui/animation/dia-text-reveal";
-import { Reveal } from "@/components/ui/animation/reveal";
-import { WordReveal } from "@/components/ui/animation/word-reveal";
-import { TextureButton } from "@/components/ui/button/texture-button";
+import { ProcessOverview } from "@/components/sections/como-trabajamos/process-overview";
+import {
+  CallDetails,
+  PricingDetails,
+  ScopeDetails,
+  WeeklyDetails,
+} from "@/components/sections/como-trabajamos/step-details";
+import { ServiceCta } from "@/components/sections/service-page/service-cta";
+import { ServiceHero } from "@/components/sections/service-page/service-hero";
+import { ServiceLinks } from "@/components/sections/service-page/service-links";
+import { ServiceSection } from "@/components/sections/service-page/service-section";
 import { FaqAccordion } from "@/components/ui/faq-accordion";
 import { Container } from "@/components/ui/section/container";
+import type { Messages } from "@/i18n/get-messages";
 import { useI18n } from "@/i18n/provider";
+import { serviceRoutes } from "@/lib/services";
 
-const TITLE_DELAY = 0;
-const LEAD_DELAY = 0.25;
-const BODY_DELAY = 0.4;
-const CTA_DELAY = 0.55;
-const DETAIL_DELAY = 0.1;
+const ROW_DELAY = 0.1;
+const STEP_ORDER = ["call", "scope", "weekly", "pricing"] as const;
+const SERVICE_SLUGS = serviceRoutes.map((route) => route.slug);
+
+type StepId = (typeof STEP_ORDER)[number];
+type Steps = Messages["comoTrabajamos"]["steps"];
+
+function stepDetails(id: StepId, steps: Steps): ReactNode {
+  switch (id) {
+    case "call":
+      return <CallDetails step={steps.call} />;
+    case "scope":
+      return <ScopeDetails step={steps.scope} />;
+    case "weekly":
+      return <WeeklyDetails step={steps.weekly} />;
+    case "pricing":
+      return <PricingDetails step={steps.pricing} />;
+  }
+}
+
+function stepLabel(prefix: string, index: number) {
+  return `${prefix} ${String(index + 1).padStart(2, "0")}`;
+}
 
 export function ComoTrabajamos() {
   const { messages } = useI18n();
   const page = messages.comoTrabajamos;
+  const overview = STEP_ORDER.map((id) => ({
+    id,
+    short: page.steps[id].short,
+    summary: page.steps[id].summary,
+  }));
 
   return (
     <div className="mx-auto w-full max-w-content border-x border-border">
-      <Container className="w-full py-20 sm:py-28">
-        <div className="max-w-2xl">
-          <p className="text-sm text-muted">{page.eyebrow}</p>
-          <h1 className="mt-4 font-pixel text-4xl font-medium tracking-tighter text-ink sm:text-5xl">
-            <DiaTextReveal
-              text={page.h1}
-              colors={["var(--accent)"]}
-              textColor="var(--ink)"
-              delay={TITLE_DELAY}
-            />
-          </h1>
-          <WordReveal text={page.lead} delay={LEAD_DELAY} className="mt-5 text-lg text-muted" />
-        </div>
+      <ServiceHero eyebrow={page.eyebrow} title={page.h1} lead={page.lead} />
 
-        <div className="mt-16 grid gap-10 sm:mt-20 sm:gap-12">
-          {page.steps.map((step, index) => (
-            <Reveal key={step.title} delay={(BODY_DELAY + index * 0.08) * 1000}>
-              <div className="max-w-2xl border-t border-border pt-8">
-                <h2 className="text-2xl text-ink sm:text-3xl">{step.title}</h2>
-                <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">{step.body}</p>
-              </div>
-            </Reveal>
+      <Container className="w-full py-16 sm:py-20">
+        <ProcessOverview label={page.overviewLabel} steps={overview} />
+
+        <div className="mt-16 grid gap-16 sm:mt-20 sm:gap-20">
+          {STEP_ORDER.map((id, index) => (
+            <ServiceSection
+              key={id}
+              id={id}
+              label={stepLabel(page.stepLabel, index)}
+              title={page.steps[id].title}
+              delay={ROW_DELAY * 1000}
+            >
+              {stepDetails(id, page.steps)}
+            </ServiceSection>
           ))}
 
-          <div className="max-w-2xl border-t border-border pt-8">
-            <Reveal delay={DETAIL_DELAY * 1000}>
-              <h2 className="text-2xl text-ink sm:text-3xl">{page.faq.title}</h2>
-            </Reveal>
-            <FaqAccordion items={page.faq.items} delay={DETAIL_DELAY} className="mt-6" />
-          </div>
+          <ServiceSection id="faq" title={page.faq.title} delay={ROW_DELAY * 1000}>
+            <FaqAccordion items={page.faq.items} delay={ROW_DELAY} className="-mt-6 border-t-0" />
+          </ServiceSection>
         </div>
 
-        <Reveal
-          delay={CTA_DELAY * 1000}
-          className="mt-16 flex w-full max-w-2xl flex-col items-start gap-5 rounded-lg border border-border p-8 sm:mt-20 sm:p-10"
-        >
-          <h2 className="text-2xl text-ink">{page.ctaTitle}</h2>
-          <p className="text-base text-muted">{page.ctaDescription}</p>
-          <TextureButton asChild variant="primary" size="pill" className="w-full sm:w-auto">
-            <Link href="/empecemos">{page.ctaButton}</Link>
-          </TextureButton>
-        </Reveal>
+        <ServiceCta
+          title={page.ctaTitle}
+          description={page.ctaDescription}
+          button={page.ctaButton}
+        />
       </Container>
+
+      <ServiceLinks title={page.servicesTitle} slugs={SERVICE_SLUGS} />
     </div>
   );
 }

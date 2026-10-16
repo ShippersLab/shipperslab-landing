@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import type { ReactNode } from "react";
 
 import { Reveal } from "@/components/ui/animation/reveal";
+import { StepNumber } from "@/components/ui/section/step-number";
 
 type Step = {
   title: string;
@@ -48,9 +49,7 @@ export function ServiceSteps({ steps, pricing, link }: ServiceStepsProps) {
                 className="absolute top-10 bottom-0 left-5 w-px origin-top bg-border"
               />
             ) : null}
-            <span className="relative z-10 flex size-10 shrink-0 items-center justify-center rounded-full border border-border bg-paper font-mono text-xs text-muted">
-              0{index + 1}
-            </span>
+            <StepNumber index={index} />
             <div className="pt-2">
               <h3 className="text-lg text-ink">{step.title}</h3>
               <p className="mt-2 text-base leading-relaxed text-muted">{step.body}</p>

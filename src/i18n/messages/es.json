@@ -947,27 +947,79 @@
     "navLabel": "Cómo trabajamos",
     "metaTitle": "Proceso de desarrollo de software a medida",
     "metaDescription": "Cómo trabajamos en ShippersLab: charla gratis de 30 minutos, alcance por escrito, entregas cada semana y precio claro de implementación y mantenimiento.",
-    "eyebrow": "Cómo trabajamos",
+    "eyebrow": "Proceso",
     "h1": "Cómo trabajamos, paso a paso.",
     "lead": "Este es el proceso que seguimos en cada proyecto, para que sepas desde el principio cómo es trabajar con nosotros, sin letra chica.",
-    "steps": [
-      {
-        "title": "1. Una charla gratis de 30 minutos.",
-        "body": "Arrancamos con una charla de media hora, sin costo y sin compromiso. Nos contás cómo trabajan hoy, qué te lleva tiempo y qué querés resolver. Nuestro trabajo en esa charla es escuchar e identificar bien el problema, que no siempre es el que aparece primero."
+    "overviewLabel": "Los pasos del proceso",
+    "stepLabel": "Paso",
+    "steps": {
+      "call": {
+        "short": "Charla gratis",
+        "summary": "30 minutos, sin costo y sin compromiso.",
+        "title": "Una charla gratis de 30 minutos.",
+        "body": "Arrancamos con una charla de media hora. Nuestro trabajo ahí es escuchar e identificar bien el problema, que no siempre es el que aparece primero.",
+        "topics": {
+          "label": "Nos contás",
+          "items": ["Cómo trabajan hoy", "Qué te lleva tiempo", "Qué querés resolver"]
+        }
       },
-      {
-        "title": "2. Un documento de alcance antes de arrancar.",
-        "body": "Antes de escribir una línea de código te pasamos un documento detallado con todo lo que implica el proyecto: qué se construye, qué queda afuera, cómo se va a usar y qué hace falta de tu lado. Lo revisamos juntos hasta que esté claro. Sirve para evitar imprevistos a mitad de camino y para que los dos tengamos las mismas expectativas. El alcance y el precio quedan por escrito."
+      "scope": {
+        "short": "Alcance por escrito",
+        "summary": "Qué entra, qué no y cuánto cuesta, antes de arrancar.",
+        "title": "Un documento de alcance antes de arrancar.",
+        "body": "Antes de escribir una línea de código te pasamos un documento detallado con todo lo que implica el proyecto. Lo revisamos juntos hasta que esté claro. Sirve para evitar imprevistos a mitad de camino y para que los dos tengamos las mismas expectativas.",
+        "document": {
+          "label": "Documento de alcance",
+          "items": [
+            "Qué se construye",
+            "Qué queda afuera",
+            "Cómo se va a usar",
+            "Qué hace falta de tu lado",
+            "El alcance y el precio, por escrito"
+          ]
+        }
       },
-      {
-        "title": "3. Entregas parciales cada semana.",
-        "body": "No desaparecemos durante semanas para volver con algo terminado. Cada semana te mostramos un avance que podés probar con tu equipo. Así ves cómo va tomando forma, nos decís qué ajustar mientras todavía es fácil cambiarlo y no hay sorpresas al final."
+      "weekly": {
+        "short": "Avance cada semana",
+        "summary": "Una entrega parcial que probás con tu equipo.",
+        "title": "Entregas parciales cada semana.",
+        "body": "No desaparecemos durante semanas para volver con algo terminado. Ves cómo va tomando forma y no hay sorpresas al final.",
+        "cycle": {
+          "label": "Cada semana",
+          "items": [
+            {
+              "label": "Mostramos",
+              "body": "Te mostramos un avance que podés probar."
+            },
+            {
+              "label": "Probás",
+              "body": "Lo usás con tu equipo en tu día a día."
+            },
+            {
+              "label": "Ajustamos",
+              "body": "Nos decís qué cambiar mientras todavía es fácil."
+            }
+          ]
+        }
       },
-      {
-        "title": "4. Cómo cobramos.",
-        "body": "Cobramos un monto por la implementación, que depende de la complejidad del sistema: no cuesta lo mismo una integración puntual que un sistema de gestión completo. Por eso no publicamos una tarifa fija y te pasamos el número después de entender qué necesitás. Una vez en marcha, hay una cuota de mantenimiento para que el sistema siga funcionando y se pueda ir ajustando."
+      "pricing": {
+        "short": "Precio claro",
+        "summary": "Implementación y mantenimiento, cada uno con su número.",
+        "title": "Cómo cobramos.",
+        "body": "No publicamos una tarifa fija: te pasamos el número después de entender qué necesitás.",
+        "fees": [
+          {
+            "label": "Implementación",
+            "body": "Un monto que depende de la complejidad del sistema. No cuesta lo mismo una integración puntual que un sistema de gestión completo."
+          },
+          {
+            "label": "Mantenimiento",
+            "tag": "Opcional",
+            "body": "Una vez en marcha, una cuota para que el sistema siga funcionando y se pueda ir ajustando."
+          }
+        ]
       }
-    ],
+    },
     "faq": {
       "title": "Preguntas sobre cómo trabajamos.",
       "items": [
@@ -995,6 +1047,7 @@
     },
     "ctaTitle": "¿Arrancamos con la charla?",
     "ctaDescription": "Contanos qué te lleva tiempo o qué querés ordenar. Coordinamos los 30 minutos y te respondemos con alcance y precio por escrito.",
-    "ctaButton": "Contanos tu problema"
+    "ctaButton": "Contanos tu problema",
+    "servicesTitle": "Lo que construimos."
   }
 }
