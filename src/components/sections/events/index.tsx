@@ -8,6 +8,7 @@ import { Reveal } from "@/components/ui/animation/reveal";
 import { WordReveal } from "@/components/ui/animation/word-reveal";
 import { Container } from "@/components/ui/section/container";
 import { TextureButton } from "@/components/ui/button/texture-button";
+import { MailIcon } from "@/components/ui/icons";
 import { useI18n } from "@/i18n/provider";
 import { site } from "@/lib/site";
 
@@ -83,7 +84,10 @@ export function Events() {
         />
         <Reveal delay={SPONSOR_CTA_DELAY * 1000} className="mt-12 flex">
           <TextureButton asChild variant="primary" size="pill" className="w-full sm:w-auto">
-            <a href={`mailto:${site.emails.events}`}>{messages.events.cta}</a>
+            <a href={`mailto:${site.emails.events}`}>
+              <MailIcon size={16} />
+              {messages.events.cta}
+            </a>
           </TextureButton>
         </Reveal>
       </Container>

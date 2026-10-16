@@ -25,8 +25,8 @@ export const PolaroidImageCard = forwardRef<HTMLDivElement, PolaroidImageCardPro
       >
         <div
           className={cn(
-            "rounded-xs border border-muted/25 bg-paper p-3 pb-8 transition-all duration-200 ease-out group-hover:-translate-y-1 group-hover:scale-102",
-            rotate && "-rotate-2",
+            "rounded-xs border border-muted/25 bg-paper p-3 pb-8 transition-all duration-300 ease-out",
+            rotate ? "-rotate-2 group-hover:rotate-0" : "group-hover:rotate-2",
           )}
         >
           <div className="relative aspect-square w-full overflow-hidden border border-muted/20 bg-border/30">
@@ -37,7 +37,7 @@ export const PolaroidImageCard = forwardRef<HTMLDivElement, PolaroidImageCardPro
                 fill
                 sizes="256px"
                 quality={90}
-                className="object-cover"
+                className="object-cover transition-all duration-300 ease-out group-hover:scale-105"
               />
             ) : null}
           </div>
