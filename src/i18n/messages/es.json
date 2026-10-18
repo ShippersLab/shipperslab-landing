@@ -236,7 +236,8 @@
       "casos": "Casos",
       "eventos": "Eventos",
       "empecemos": "Empecemos",
-      "como-trabajamos": "Cómo trabajamos"
+      "como-trabajamos": "Cómo trabajamos",
+      "blog": "Blog"
     }
   },
   "events": {
@@ -246,10 +247,22 @@
     "sponsorTitle": "Buscamos partners",
     "sponsorDescription": "Queremos armar estos eventos junto a empresas y personas que quieran sumarse. No hace falta ser una marca grande: estas son algunas formas de ayudar, y si se te ocurre otra, también suma.",
     "sponsorWays": [
-      { "title": "Un lugar", "description": "Una oficina, un cowork o cualquier espacio donde podamos juntarnos." },
-      { "title": "Créditos y herramientas", "description": "Créditos de API o acceso a tus herramientas para que la gente las pruebe." },
-      { "title": "Premios", "description": "Algo para reconocer a los mejores proyectos o sumar a un sorteo." },
-      { "title": "Una mano organizando", "description": "Difusión, logística o tiempo para que cada evento salga bien." }
+      {
+        "title": "Un lugar",
+        "description": "Una oficina, un cowork o cualquier espacio donde podamos juntarnos."
+      },
+      {
+        "title": "Créditos y herramientas",
+        "description": "Créditos de API o acceso a tus herramientas para que la gente las pruebe."
+      },
+      {
+        "title": "Premios",
+        "description": "Algo para reconocer a los mejores proyectos o sumar a un sorteo."
+      },
+      {
+        "title": "Una mano organizando",
+        "description": "Difusión, logística o tiempo para que cada evento salga bien."
+      }
     ],
     "cta": "Enviar un mensaje",
     "gallery": {
@@ -1055,5 +1068,136 @@
     "ctaDescription": "Contanos qué te lleva tiempo o qué querés ordenar. Coordinamos los 30 minutos y te respondemos con alcance y precio por escrito.",
     "ctaButton": "Contanos tu problema",
     "servicesTitle": "Lo que construimos."
+  },
+  "blog": {
+    "navLabel": "Blog",
+    "metaTitle": "Blog de software y webs para pymes en Argentina",
+    "metaDescription": "Guías prácticas para pymes y comercios de Argentina sobre páginas web, sistemas de gestión, integraciones y automatización.",
+    "eyebrow": "Blog",
+    "title": "Blog.",
+    "description": "Guías prácticas para pymes y comercios: webs, sistemas, integraciones y automatización.",
+    "readMore": "Leer artículo",
+    "publishedOn": "Publicado el",
+    "back": "Volver al blog",
+    "posts": {
+      "como-saber-si-tu-negocio-necesita-pagina-web": {
+        "title": "¿Tu negocio necesita una página web? Cómo saber si vale la pena",
+        "metaTitle": "¿Tu negocio necesita página web? Cómo saber si vale la pena",
+        "metaDescription": "Señales de que una web tiene sentido para tu pyme o comercio, cuándo todavía no y cómo medir si la que ya tenés funciona. Con checklist y preguntas.",
+        "excerpt": "Señales concretas para decidir si una web le suma a tu negocio, cuándo conviene esperar y cómo medir si la que ya tenés está funcionando.",
+        "readingTime": "6 min de lectura",
+        "intro": [
+          "Muchos negocios en Argentina venden bien con Instagram, WhatsApp y el boca en boca. Entonces aparece la pregunta: ¿hace falta una página web o es un gasto más? La respuesta honesta es que depende. Una web no vende sola, pero en ciertos casos te ahorra tiempo, te consigue consultas que hoy se pierden y le da confianza a quien todavía no te conoce.",
+          "En esta guía vas a encontrar señales concretas para decidir, los casos en los que conviene esperar y cómo medir si la web que ya tenés está sirviendo."
+        ],
+        "sections": [
+          {
+            "title": "Señales de que una página web tiene sentido",
+            "paragraphs": [
+              "Si te reconocés en dos o más de estas situaciones, una web probablemente te sume:"
+            ],
+            "items": [
+              "Te buscan en Google. Si la gente escribe el nombre de tu negocio, o algo como «ferretería en Rosario», y no te encuentra, esas consultas terminan en otro lado. Una web con tu información, junto con un perfil en Google Business Profile, hace que aparezcas cuando te buscan.",
+              "Respondés lo mismo todo el día. Si por WhatsApp o Instagram contestás una y otra vez precios, horarios, zonas de envío o formas de pago, una web con esa información te devuelve tiempo y hace que el cliente llegue a la charla con la decisión casi tomada.",
+              "Tenés productos o servicios para mostrar. Un catálogo ordenado, con fotos, descripciones y precios o rangos, es más fácil de recorrer que un feed de Instagram o una lista de PDFs que mandás por chat.",
+              "Necesitás generar confianza. Muchos clientes, sobre todo otras empresas, buscan tu web antes de escribirte o de pagar. Ver quién está detrás, dónde estás, cómo trabajás y cómo contactarte les baja la desconfianza.",
+              "Dependés de una sola red social. Si mañana te bloquean la cuenta o cambia el algoritmo, perdés tu vidriera. Una web es un lugar propio que controlás vos.",
+              "Querés tomar pedidos, turnos o consultas sin estar encima. Un formulario, un catálogo con pedido por WhatsApp o un sistema de turnos trabajan aunque estés atendiendo otra cosa."
+            ]
+          },
+          {
+            "title": "Cuándo todavía no hace falta",
+            "paragraphs": ["Una web no siempre es la prioridad. Puede esperar si:"],
+            "items": [
+              "Todos tus clientes llegan por recomendación y no das abasto con los pedidos que ya tenés.",
+              "Todavía estás probando qué vender o a quién, y lo que ofrecés cambia cada semana.",
+              "No vas a poder mantener la información actualizada. Una web con precios viejos o un teléfono que nadie atiende hace más daño que no tener nada."
+            ],
+            "closing": "En esos casos, un perfil completo en Google Business Profile y un buen catálogo en WhatsApp Business pueden alcanzar por ahora. Cuando el negocio crezca o te encuentres respondiendo lo mismo todo el tiempo, volvé a hacerte la pregunta."
+          },
+          {
+            "title": "Cómo saber si la web que ya tenés funciona",
+            "paragraphs": [
+              "Si ya tenés una página, no alcanza con que exista. Estas son cuatro formas simples de revisar si está haciendo su trabajo:"
+            ],
+            "items": [
+              "Impresiones y clics en Google Search Console. Es una herramienta gratuita de Google que muestra cuántas veces apareciste en los resultados (impresiones), cuántas personas entraron (clics) y con qué búsquedas. Si casi no tenés impresiones, Google no te está mostrando. Si tenés impresiones pero pocos clics, conviene revisar el título y la descripción de tus páginas.",
+              "Consultas que llegan desde la web. Preguntale a cada cliente nuevo cómo te encontró, o usá un formulario o un link de WhatsApp propio de la web para saber qué consultas vienen de ahí. Al final, lo que importa es si la web te trae conversaciones.",
+              "Velocidad. Si la página tarda en cargar, mucha gente se va antes de verla. Podés medirla gratis con PageSpeed Insights de Google, que además te dice qué la está frenando.",
+              "Cómo se ve en el celular. Muchas personas van a entrar desde el teléfono. Abrila desde el tuyo: ¿se lee bien sin hacer zoom?, ¿los botones se tocan fácil?, ¿encontrás el WhatsApp o el teléfono en segundos?"
+            ],
+            "closing": "Si en alguno de estos puntos la respuesta es «no» o «no sé», ahí tenés por dónde empezar."
+          },
+          {
+            "title": "Qué tiene que tener una web para que valga la pena",
+            "paragraphs": [
+              "Una web útil para una pyme o un comercio no necesita ser grande. Necesita responder rápido las preguntas que hoy te hacen por chat: qué hacés, para quién, dónde, cuánto (aunque sea un rango o un «desde») y cómo contactarte.",
+              "Si además tiene un catálogo actualizado, un botón de WhatsApp visible y carga rápido en el celular, ya cubre lo que la mayoría de los clientes va a buscar. Lo demás se puede sumar después, cuando sepas qué páginas visitan y qué consultas te traen."
+            ],
+            "link": {
+              "label": "Ver cómo armamos webs y catálogos",
+              "href": "/webs-y-catalogos"
+            }
+          }
+        ],
+        "checklist": {
+          "title": "Checklist rápido",
+          "intro": "Antes de decidir, repasá esta lista:",
+          "items": [
+            "¿La gente busca mi negocio o lo que vendo en Google?",
+            "¿Respondo las mismas preguntas varias veces por día?",
+            "¿Tengo productos o servicios que se entienden mejor con fotos y descripciones?",
+            "¿Mis clientes necesitan confiar antes de comprar o pagar por adelantado?",
+            "¿Dependo de una sola red social para que me encuentren?",
+            "¿Voy a poder mantener la información al día?",
+            "Si ya tengo web: ¿sé cuántas impresiones, clics y consultas me trae?"
+          ],
+          "closing": "Si respondiste que sí a varias de las primeras cinco y también a la sexta, una web probablemente valga la pena."
+        },
+        "faq": {
+          "title": "Preguntas frecuentes",
+          "items": [
+            {
+              "question": "¿Alcanza con Instagram en vez de una página web?",
+              "answer": "Para muchos negocios es un buen comienzo. La diferencia es que la cuenta de Instagram no es tuya y Google no siempre la muestra cuando alguien busca lo que vendés. Una web y las redes se complementan: las redes generan interés y la web ordena la información y te hace encontrable."
+            },
+            {
+              "question": "¿Cuánto tarda una web nueva en aparecer en Google?",
+              "answer": "No hay un plazo fijo y depende de cada sitio. Ayuda darla de alta en Google Search Console, enviar el mapa del sitio y tener un perfil en Google Business Profile con el link a la web. Search Console te muestra cuándo empiezan a aparecer las primeras impresiones."
+            },
+            {
+              "question": "¿Necesito un catálogo con carrito de compras?",
+              "answer": "No siempre. Si vendés pocos productos o cada venta necesita una charla, un catálogo con pedido por WhatsApp suele alcanzar. Una tienda con pagos online tiene sentido cuando la cantidad de pedidos lo justifica."
+            },
+            {
+              "question": "¿Qué hago si ya tengo una web pero no me trae consultas?",
+              "answer": "Revisá primero lo básico: si aparece en Search Console, si carga rápido, si se ve bien en el celular y si el contacto está a la vista. Muchas veces el problema no es tener web, sino que no responde lo que el cliente busca o que es difícil escribirte."
+            },
+            {
+              "question": "¿Una web reemplaza a WhatsApp?",
+              "answer": "No, lo complementa. La idea es que la web responda las preguntas de siempre y que la charla por WhatsApp empiece con el cliente ya informado."
+            }
+          ]
+        },
+        "related": {
+          "title": "Seguí leyendo",
+          "links": [
+            {
+              "label": "Webs y catálogos",
+              "href": "/webs-y-catalogos",
+              "description": "Cómo armamos webs y catálogos para pymes y comercios."
+            },
+            {
+              "label": "Cómo trabajamos",
+              "href": "/como-trabajamos",
+              "description": "Charla gratis de 30 minutos, alcance por escrito y entregas cada semana."
+            }
+          ]
+        },
+        "ctaTitle": "¿No sabés si tu negocio necesita una web?",
+        "ctaDescription": "Contanos cómo te encuentran hoy tus clientes y qué querés resolver. Te respondemos con alcance y precio por escrito.",
+        "ctaButton": "Contanos tu problema"
+      }
+    }
   }
 }

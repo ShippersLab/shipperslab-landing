@@ -25,6 +25,7 @@ const EXPLORE_LINKS = [
   { key: "como-trabajamos", href: "/como-trabajamos" },
   { key: "casos", href: "/casos" },
   { key: "eventos", href: "/eventos" },
+  { key: "blog", href: "/blog" },
 ] as const;
 
 export function Footer() {
