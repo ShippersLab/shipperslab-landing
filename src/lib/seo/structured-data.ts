@@ -13,7 +13,7 @@ import type {
 } from "schema-dts";
 
 import es from "@/i18n/messages/es.json";
-import { type BlogSlug, blogPosts, getBlogPost } from "@/lib/blog";
+import { type BlogSlug, blogPosts, getBlogAuthor, getBlogPost } from "@/lib/blog";
 import { eventopsImages } from "@/lib/projects/eventops";
 import { DESCRIPTION } from "@/lib/seo/metadata";
 import { plainText, singleLine } from "@/lib/seo/text";
@@ -323,12 +323,21 @@ export function buildBlogPostStructuredData(slug: BlogSlug): Graph {
   const meta = getBlogPost(slug);
   const path = `${BLOG_PATH}/${slug}`;
   const url = `${site.url}${path}`;
-  const author = {
+  const publisher = {
     "@type": "Organization" as const,
     "@id": ORGANIZATION_ID,
     name: site.name,
     url: site.url,
   };
+  const member = getBlogAuthor(slug);
+  const author = member
+    ? {
+        "@type": "Person" as const,
+        "@id": `${site.url}/#${member.id}`,
+        name: member.name,
+        url: member.profileUrl,
+      }
+    : publisher;
 
   const article: BlogPosting = {
     "@type": "BlogPosting",
@@ -342,7 +351,7 @@ export function buildBlogPostStructuredData(slug: BlogSlug): Graph {
     datePublished: meta?.datePublished,
     dateModified: meta?.datePublished,
     author,
-    publisher: author,
+    publisher,
     isPartOf: { "@id": BLOG_ID },
   };
 

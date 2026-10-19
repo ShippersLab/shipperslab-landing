@@ -8,7 +8,7 @@ import { TextureButton } from "@/components/ui/button/texture-button";
 import { FaqAccordion } from "@/components/ui/faq-accordion";
 import { Container } from "@/components/ui/section/container";
 import { useI18n } from "@/i18n/provider";
-import { type BlogSlug, formatBlogDate, getBlogPost } from "@/lib/blog";
+import { type BlogSlug, formatBlogDate, getBlogAuthor, getBlogPost } from "@/lib/blog";
 
 const TITLE_DELAY = 0;
 const DETAIL_DELAY = 100;
@@ -27,6 +27,7 @@ export function BlogPost({ slug }: BlogPostProps) {
   const blog = messages.blog;
   const post = blog.posts[slug];
   const meta = getBlogPost(slug);
+  const author = getBlogAuthor(slug);
 
   return (
     <div className="mx-auto w-full max-w-content border-x border-border">
@@ -45,6 +46,12 @@ export function BlogPost({ slug }: BlogPostProps) {
           </h1>
           {meta ? (
             <p className="mt-5 text-sm text-muted">
+              {author ? (
+                <>
+                  {blog.byline} {author.name}
+                  {" · "}
+                </>
+              ) : null}
               {blog.publishedOn}{" "}
               <time dateTime={meta.datePublished}>
                 {formatBlogDate(meta.datePublished, locale)}

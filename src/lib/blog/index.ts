@@ -1,7 +1,10 @@
+import { team } from "@/lib/site";
+
 export const blogPosts = [
   {
     slug: "como-saber-si-tu-negocio-necesita-pagina-web",
     datePublished: "2026-10-18",
+    authorId: "juani",
   },
 ] as const;
 
@@ -22,4 +25,9 @@ export function formatBlogDate(date: string, locale: string) {
     year: "numeric",
     timeZone: "UTC",
   }).format(new Date(`${date}T00:00:00Z`));
+}
+
+export function getBlogAuthor(slug: BlogSlug) {
+  const post = getBlogPost(slug);
+  return team.find((member) => member.id === post?.authorId);
 }
