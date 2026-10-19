@@ -47,7 +47,7 @@ export function Hero() {
           height={822}
           loading="eager"
           fetchPriority="high"
-          quality={90}
+          quality={75}
           placeholder="blur"
           blurDataURL={HERO_BLUR_DATA_URL}
           className="aspect-4/3 w-full object-cover object-center select-none sm:aspect-8/3 sm:object-top lg:max-h-[calc(100svh-15rem)]"

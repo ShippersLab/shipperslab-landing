@@ -42,6 +42,7 @@
     },
     "profileLink": "Ver perfil",
     "profileLabel": "Ver perfil de {name}",
+    "coverAlt": "Foto de portada de {name}",
     "ctaTitle": "¿Querés saber si esto tiene sentido para tu negocio? Escribinos y lo vemos.",
     "ctaButton": "Escribinos a hola@shipperslab.tech"
   },
