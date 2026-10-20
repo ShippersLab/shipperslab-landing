@@ -1080,6 +1080,7 @@
     "publishedOn": "Published on",
     "byline": "By",
     "back": "Back to the blog",
+    "answerLabel": "Short answer",
     "posts": {
       "como-saber-si-tu-negocio-necesita-pagina-web": {
         "title": "Does your business need a website? How to know if it is worth it",
@@ -1087,6 +1088,7 @@
         "metaDescription": "Signs a website makes sense for your small business or shop, when it does not yet, and how to measure whether yours works. With a checklist and FAQ.",
         "excerpt": "Concrete signs to decide whether a website adds value to your business, when it is better to wait and how to measure whether yours is working.",
         "readingTime": "6 min read",
+        "answer": "A website is worth it if people look for you on Google, if you answer the same questions all day on WhatsApp or Instagram, if you have products or services to show or if your customers need to trust you before buying. It can wait if all your customers come through referrals and you can barely keep up, if you are still testing what to sell or if you will not be able to keep the information up to date. In the meantime, a complete Google Business Profile and a WhatsApp Business catalog may be enough.",
         "intro": [
           "Many businesses in Argentina sell well with Instagram, WhatsApp and word of mouth. So the question comes up: do you need a website, or is it just another expense? The honest answer is that it depends. A website does not sell on its own, but in some cases it saves you time, brings in inquiries you are losing today and builds trust with people who do not know you yet.",
           "In this guide you will find concrete signs to help you decide, the cases where it is better to wait and how to measure whether the website you already have is doing its job."
@@ -1113,6 +1115,53 @@
               "You will not be able to keep the information up to date. A website with old prices or a phone number nobody answers does more harm than having nothing."
             ],
             "closing": "In those cases, a complete Google Business Profile and a good WhatsApp Business catalog may be enough for now. When the business grows or you find yourself answering the same things over and over, ask the question again."
+          },
+          {
+            "title": "Summary: when a website helps and when it can wait",
+            "paragraphs": [
+              "This table puts the two lists above side by side so you can compare them at a glance:"
+            ],
+            "table": {
+              "caption": "When a website helps a business and when it can wait",
+              "columns": ["A website helps if…", "It can wait if…"],
+              "rows": [
+                {
+                  "label": "How people find you",
+                  "cells": [
+                    "People search for your name or what you sell on Google.",
+                    "All your customers come through referrals."
+                  ]
+                },
+                {
+                  "label": "Chat inquiries",
+                  "cells": [
+                    "You answer the same things all day: prices, opening hours, delivery or payment methods.",
+                    "You can barely keep up with the orders you already have."
+                  ]
+                },
+                {
+                  "label": "What you offer",
+                  "cells": [
+                    "You have products or services that are easier to understand with photos and descriptions.",
+                    "You are still testing what to sell or to whom, and it changes every week."
+                  ]
+                },
+                {
+                  "label": "Trust and channels",
+                  "cells": [
+                    "Customers look you up before writing or paying, or you depend on a single social network.",
+                    "A Google Business Profile and a WhatsApp Business catalog are enough for now."
+                  ]
+                },
+                {
+                  "label": "Upkeep",
+                  "cells": [
+                    "You can keep prices, catalog and contact details up to date.",
+                    "You will not be able to update the information. An outdated website does more harm than having nothing."
+                  ]
+                }
+              ]
+            }
           },
           {
             "title": "How to know if your current website works",

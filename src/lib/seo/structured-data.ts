@@ -344,6 +344,7 @@ export function buildBlogPostStructuredData(slug: BlogSlug): Graph {
     "@id": `${url}#article`,
     headline: post.title,
     description: post.metaDescription,
+    abstract: post.answer,
     url,
     mainEntityOfPage: url,
     inLanguage: "es-AR",

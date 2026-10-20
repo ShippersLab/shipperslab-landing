@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 
+import { BlogPostTable } from "@/components/sections/blog/post-table";
 import { DiaTextReveal } from "@/components/ui/animation/dia-text-reveal";
 import { Reveal } from "@/components/ui/animation/reveal";
 import { TextureButton } from "@/components/ui/button/texture-button";
@@ -60,6 +61,10 @@ export function BlogPost({ slug }: BlogPostProps) {
               {post.readingTime}
             </p>
           ) : null}
+          <div className="mt-8 rounded-lg border border-border border-l-4 border-l-accent p-5 sm:p-6">
+            <p className="text-sm font-medium text-accent">{blog.answerLabel}</p>
+            <p className="mt-2 text-base leading-relaxed text-ink sm:text-lg">{post.answer}</p>
+          </div>
           {post.intro.map((paragraph) => (
             <p key={paragraph} className={PARAGRAPH_CLASS}>
               {paragraph}
@@ -81,6 +86,9 @@ export function BlogPost({ slug }: BlogPostProps) {
                       <li key={item}>{item}</li>
                     ))}
                   </ul>
+                ) : null}
+                {"table" in section && section.table ? (
+                  <BlogPostTable table={section.table} />
                 ) : null}
                 {"closing" in section && section.closing ? (
                   <p className={PARAGRAPH_CLASS}>{section.closing}</p>

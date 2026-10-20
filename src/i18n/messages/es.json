@@ -1080,6 +1080,7 @@
     "publishedOn": "Publicado el",
     "byline": "Por",
     "back": "Volver al blog",
+    "answerLabel": "Respuesta corta",
     "posts": {
       "como-saber-si-tu-negocio-necesita-pagina-web": {
         "title": "¿Tu negocio necesita una página web? Cómo saber si vale la pena",
@@ -1087,6 +1088,7 @@
         "metaDescription": "Señales de que una web tiene sentido para tu pyme o comercio, cuándo todavía no y cómo medir si la que ya tenés funciona. Con checklist y preguntas.",
         "excerpt": "Señales concretas para decidir si una web le suma a tu negocio, cuándo conviene esperar y cómo medir si la que ya tenés está funcionando.",
         "readingTime": "6 min de lectura",
+        "answer": "Una página web vale la pena si te buscan en Google, si respondés las mismas preguntas todo el día por WhatsApp o Instagram, si tenés productos o servicios para mostrar o si tus clientes necesitan confiar en vos antes de comprar. Puede esperar si todos tus clientes llegan por recomendación y no das abasto, si todavía estás probando qué vender o si no vas a poder mantener la información al día. Mientras tanto, un perfil completo en Google Business Profile y un catálogo en WhatsApp Business pueden alcanzar.",
         "intro": [
           "Muchos negocios en Argentina venden bien con Instagram, WhatsApp y el boca en boca. Entonces aparece la pregunta: ¿hace falta una página web o es un gasto más? La respuesta honesta es que depende. Una web no vende sola, pero en ciertos casos te ahorra tiempo, te consigue consultas que hoy se pierden y le da confianza a quien todavía no te conoce.",
           "En esta guía vas a encontrar señales concretas para decidir, los casos en los que conviene esperar y cómo medir si la web que ya tenés está sirviendo."
@@ -1115,6 +1117,53 @@
               "No vas a poder mantener la información actualizada. Una web con precios viejos o un teléfono que nadie atiende hace más daño que no tener nada."
             ],
             "closing": "En esos casos, un perfil completo en Google Business Profile y un buen catálogo en WhatsApp Business pueden alcanzar por ahora. Cuando el negocio crezca o te encuentres respondiendo lo mismo todo el tiempo, volvé a hacerte la pregunta."
+          },
+          {
+            "title": "Resumen: cuándo te suma una web y cuándo puede esperar",
+            "paragraphs": [
+              "Esta tabla junta las dos listas anteriores para que las compares de un vistazo:"
+            ],
+            "table": {
+              "caption": "Cuándo a un negocio le suma una página web y cuándo puede esperar",
+              "columns": ["Una web te suma si…", "Puede esperar si…"],
+              "rows": [
+                {
+                  "label": "Cómo te encuentran",
+                  "cells": [
+                    "Te buscan en Google por tu nombre o por lo que vendés.",
+                    "Todos tus clientes llegan por recomendación."
+                  ]
+                },
+                {
+                  "label": "Consultas por chat",
+                  "cells": [
+                    "Respondés todo el día lo mismo: precios, horarios, envíos o formas de pago.",
+                    "No das abasto con los pedidos que ya tenés."
+                  ]
+                },
+                {
+                  "label": "Lo que ofrecés",
+                  "cells": [
+                    "Tenés productos o servicios que se entienden mejor con fotos y descripciones.",
+                    "Todavía estás probando qué vender o a quién, y cambia cada semana."
+                  ]
+                },
+                {
+                  "label": "Confianza y canales",
+                  "cells": [
+                    "Tus clientes te buscan antes de escribirte o pagar, o dependés de una sola red social.",
+                    "Un perfil en Google Business Profile y un catálogo en WhatsApp Business te alcanzan por ahora."
+                  ]
+                },
+                {
+                  "label": "Mantenimiento",
+                  "cells": [
+                    "Podés mantener precios, catálogo y contacto al día.",
+                    "No vas a poder actualizar la información. Una web desactualizada hace más daño que no tener nada."
+                  ]
+                }
+              ]
+            }
           },
           {
             "title": "Cómo saber si la web que ya tenés funciona",
