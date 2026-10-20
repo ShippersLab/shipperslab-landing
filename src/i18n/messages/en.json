@@ -1081,6 +1081,8 @@
     "byline": "By",
     "back": "Back to the blog",
     "answerLabel": "Short answer",
+    "draft": "Draft",
+    "empty": "No articles published yet.",
     "posts": {
       "como-saber-si-tu-negocio-necesita-pagina-web": {
         "title": "Does your business need a website? How to know if it is worth it",

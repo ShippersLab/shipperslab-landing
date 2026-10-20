@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 
+import { DraftBadge } from "@/components/sections/blog/draft-badge";
 import { BlogPostTable } from "@/components/sections/blog/post-table";
 import { DiaTextReveal } from "@/components/ui/animation/dia-text-reveal";
 import { Reveal } from "@/components/ui/animation/reveal";
@@ -37,6 +38,11 @@ export function BlogPost({ slug }: BlogPostProps) {
           <Link href="/blog" className={`text-sm ${LINK_CLASS}`}>
             {blog.back}
           </Link>
+          {meta && !meta.published ? (
+            <div className="mt-6">
+              <DraftBadge label={blog.draft} />
+            </div>
+          ) : null}
           <h1 className="mt-6 font-pixel text-4xl font-medium tracking-tighter text-ink sm:text-5xl">
             <DiaTextReveal
               text={post.title}

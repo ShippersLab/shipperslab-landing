@@ -1,5 +1,5 @@
 import es from "@/i18n/messages/es.json";
-import { blogPosts } from "@/lib/blog";
+import { getPublishedBlogPosts } from "@/lib/blog";
 import { plainText, singleLine } from "@/lib/seo/text";
 import { getServiceHref, serviceRoutes } from "@/lib/services";
 import { site, team } from "@/lib/site";
@@ -83,7 +83,7 @@ export function buildLlmsTxt() {
       const items = page.faq.items.map((item) => `- ${item.question} ${item.answer}`);
       return `### ${page.navLabel}: preguntas frecuentes\n\n${items.join("\n")}`;
     }),
-    `## Blog\n\n${blogPosts
+    `## Blog\n\n${getPublishedBlogPosts()
       .map((post) =>
         link(
           es.blog.posts[post.slug].title,

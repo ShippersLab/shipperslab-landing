@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-import { blogPosts } from "@/lib/blog";
+import { getPublishedBlogPosts } from "@/lib/blog";
 import { projectRoutes } from "@/lib/projects";
 import { serviceRoutes } from "@/lib/services";
 import { site } from "@/lib/site";
@@ -14,7 +14,7 @@ const routes = [
   ...serviceRoutes.map((route) => ({ path: `/${route.slug}`, priority: 0.85 })),
   { path: "/eventos", priority: 0.8 },
   { path: "/blog", priority: 0.7 },
-  ...blogPosts.map((post) => ({ path: `/blog/${post.slug}`, priority: 0.6 })),
+  ...getPublishedBlogPosts().map((post) => ({ path: `/blog/${post.slug}`, priority: 0.6 })),
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

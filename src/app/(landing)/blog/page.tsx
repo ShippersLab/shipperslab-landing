@@ -1,6 +1,7 @@
 import { JsonLd } from "@/components/seo/json-ld";
 import { BlogIndex } from "@/components/sections/blog";
 import { getMessages } from "@/i18n/get-messages";
+import { getVisibleBlogPosts } from "@/lib/blog";
 import { buildPageMetadata } from "@/lib/seo/page-metadata";
 import { buildBlogIndexStructuredData } from "@/lib/seo/structured-data";
 
@@ -16,7 +17,7 @@ export default function BlogPage() {
   return (
     <>
       <JsonLd data={buildBlogIndexStructuredData()} />
-      <BlogIndex />
+      <BlogIndex posts={getVisibleBlogPosts()} />
     </>
   );
 }

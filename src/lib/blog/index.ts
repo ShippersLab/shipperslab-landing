@@ -1,14 +1,40 @@
 import { team } from "@/lib/site";
 
+type BlogPostEntry = {
+  slug: string;
+  datePublished: string;
+  authorId: string;
+  published: boolean;
+};
+
 export const blogPosts = [
   {
     slug: "como-saber-si-tu-negocio-necesita-pagina-web",
     datePublished: "2026-10-18",
     authorId: "juani",
+    published: true,
   },
-] as const;
+] as const satisfies readonly BlogPostEntry[];
 
-export type BlogSlug = (typeof blogPosts)[number]["slug"];
+export type BlogPostMeta = (typeof blogPosts)[number];
+
+export type BlogSlug = BlogPostMeta["slug"];
+
+export function isPreviewEnvironment() {
+  return process.env.VERCEL_ENV !== "production";
+}
+
+export function isPostVisible(post: BlogPostMeta) {
+  return post.published || isPreviewEnvironment();
+}
+
+export function getVisibleBlogPosts() {
+  return blogPosts.filter(isPostVisible);
+}
+
+export function getPublishedBlogPosts() {
+  return blogPosts.filter((post) => post.published);
+}
 
 export function isBlogSlug(value: string): value is BlogSlug {
   return blogPosts.some((post) => post.slug === value);

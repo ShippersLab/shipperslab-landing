@@ -13,7 +13,7 @@ import type {
 } from "schema-dts";
 
 import es from "@/i18n/messages/es.json";
-import { type BlogSlug, blogPosts, getBlogAuthor, getBlogPost } from "@/lib/blog";
+import { type BlogSlug, getBlogAuthor, getBlogPost, getPublishedBlogPosts } from "@/lib/blog";
 import { eventopsImages } from "@/lib/projects/eventops";
 import { DESCRIPTION } from "@/lib/seo/metadata";
 import { plainText, singleLine } from "@/lib/seo/text";
@@ -303,7 +303,7 @@ export function buildBlogIndexStructuredData(): Graph {
     inLanguage: "es-AR",
     isPartOf: { "@id": WEBSITE_ID },
     publisher: { "@id": ORGANIZATION_ID },
-    blogPost: blogPosts.map((post) => ({
+    blogPost: getPublishedBlogPosts().map((post) => ({
       "@type": "BlogPosting",
       "@id": `${BLOG_URL}/${post.slug}#article`,
       headline: page.posts[post.slug].title,

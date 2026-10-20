@@ -2,18 +2,23 @@
 
 import Link from "next/link";
 
+import { DraftBadge } from "@/components/sections/blog/draft-badge";
 import { DiaTextReveal } from "@/components/ui/animation/dia-text-reveal";
 import { Reveal } from "@/components/ui/animation/reveal";
 import { WordReveal } from "@/components/ui/animation/word-reveal";
 import { Container } from "@/components/ui/section/container";
 import { useI18n } from "@/i18n/provider";
-import { blogPosts, formatBlogDate } from "@/lib/blog";
+import { type BlogPostMeta, formatBlogDate } from "@/lib/blog";
 
 const TITLE_DELAY = 0;
 const LEAD_DELAY = 0.25;
 const LIST_DELAY = 400;
 
-export function BlogIndex() {
+type BlogIndexProps = {
+  posts: readonly BlogPostMeta[];
+};
+
+export function BlogIndex({ posts }: BlogIndexProps) {
   const { locale, messages } = useI18n();
   const page = messages.blog;
 
@@ -36,36 +41,41 @@ export function BlogIndex() {
           />
         </div>
 
-        <ul className="mt-16 grid gap-6 sm:mt-20">
-          {blogPosts.map((post, index) => {
-            const content = page.posts[post.slug];
-            return (
-              <li key={post.slug}>
-                <Reveal delay={LIST_DELAY + index * 80}>
-                  <Link
-                    href={`/blog/${post.slug}`}
-                    className="group block max-w-2xl rounded-lg border border-border p-6 transition-colors duration-200 ease-out hover:border-ink/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink sm:p-8"
-                  >
-                    <p className="text-sm text-muted">
-                      <time dateTime={post.datePublished}>
-                        {formatBlogDate(post.datePublished, locale)}
-                      </time>
-                      {" · "}
-                      {content.readingTime}
-                    </p>
-                    <h2 className="mt-3 text-2xl text-ink sm:text-3xl">{content.title}</h2>
-                    <p className="mt-3 text-base leading-relaxed text-muted sm:text-lg">
-                      {content.excerpt}
-                    </p>
-                    <span className="mt-4 inline-block text-base font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-[text-decoration-color] duration-200 ease-out group-hover:decoration-accent">
-                      {page.readMore}
-                    </span>
-                  </Link>
-                </Reveal>
-              </li>
-            );
-          })}
-        </ul>
+        {posts.length === 0 ? (
+          <p className="mt-16 max-w-2xl text-base text-muted sm:mt-20 sm:text-lg">{page.empty}</p>
+        ) : (
+          <ul className="mt-16 grid gap-6 sm:mt-20">
+            {posts.map((post, index) => {
+              const content = page.posts[post.slug];
+              return (
+                <li key={post.slug}>
+                  <Reveal delay={LIST_DELAY + index * 80}>
+                    <Link
+                      href={`/blog/${post.slug}`}
+                      className="group block max-w-2xl rounded-lg border border-border p-6 transition-colors duration-200 ease-out hover:border-ink/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink sm:p-8"
+                    >
+                      {post.published ? null : <DraftBadge label={page.draft} className="mb-3" />}
+                      <p className="text-sm text-muted">
+                        <time dateTime={post.datePublished}>
+                          {formatBlogDate(post.datePublished, locale)}
+                        </time>
+                        {" · "}
+                        {content.readingTime}
+                      </p>
+                      <h2 className="mt-3 text-2xl text-ink sm:text-3xl">{content.title}</h2>
+                      <p className="mt-3 text-base leading-relaxed text-muted sm:text-lg">
+                        {content.excerpt}
+                      </p>
+                      <span className="mt-4 inline-block text-base font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-[text-decoration-color] duration-200 ease-out group-hover:decoration-accent">
+                        {page.readMore}
+                      </span>
+                    </Link>
+                  </Reveal>
+                </li>
+              );
+            })}
+          </ul>
+        )}
       </Container>
     </div>
   );

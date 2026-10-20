@@ -1081,6 +1081,8 @@
     "byline": "Por",
     "back": "Volver al blog",
     "answerLabel": "Respuesta corta",
+    "draft": "Borrador",
+    "empty": "Todavía no hay artículos publicados.",
     "posts": {
       "como-saber-si-tu-negocio-necesita-pagina-web": {
         "title": "¿Tu negocio necesita una página web? Cómo saber si vale la pena",
