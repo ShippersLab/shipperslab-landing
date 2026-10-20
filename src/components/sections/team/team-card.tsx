@@ -16,11 +16,10 @@ export function TeamCard({ member }: { member: TeamMember }) {
       <div className="relative aspect-3/1 bg-border">
         <Image
           src={member.cover}
-          alt={`Cover image de ${member.name}`}
+          alt={messages.team.coverAlt.replace("{name}", member.name)}
           fill
           sizes="(min-width: 640px) 568px, 100vw"
           className="object-cover"
-          loading="eager"
           quality={90}
         />
       </div>
