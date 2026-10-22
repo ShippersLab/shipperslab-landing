@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import type { ReactNode } from "react";
 
 import { cn } from "@/lib/utils";
 
@@ -22,15 +23,29 @@ const ServiceHeroDither = dynamic(
 );
 
 type ServiceHeroProps = {
-  eyebrow: string;
+  eyebrow?: string;
+  eyebrowSlot?: ReactNode;
   title: string;
   lead: string;
   ditherBelowNavbar?: boolean;
+  variant?: "service" | "article";
+  children?: ReactNode;
 };
 
-export function ServiceHero({ eyebrow, title, lead, ditherBelowNavbar = false }: ServiceHeroProps) {
+export function ServiceHero({
+  eyebrow,
+  eyebrowSlot,
+  title,
+  lead,
+  ditherBelowNavbar = false,
+  variant = "service",
+  children,
+}: ServiceHeroProps) {
+  const isArticle = variant === "article";
+  const Root = isArticle ? "header" : "div";
+
   return (
-    <div className="relative isolate overflow-clip border-b border-border">
+    <Root className="relative isolate overflow-clip border-b border-border">
       <div
         aria-hidden="true"
         className={cn(
@@ -42,15 +57,22 @@ export function ServiceHero({ eyebrow, title, lead, ditherBelowNavbar = false }:
       </div>
 
       <Container className="w-full py-24 sm:py-32 lg:py-40">
-        <div className="max-w-2xl">
-          <Reveal
-            as="p"
-            delay={EYEBROW_DELAY}
-            className="inline-flex rounded-md border border-border bg-paper px-3 py-1.5 font-mono text-sm tracking-tight text-muted"
+        <div className={isArticle ? "max-w-3xl" : "max-w-2xl"}>
+          {eyebrowSlot ?? (
+            <Reveal
+              as="p"
+              delay={EYEBROW_DELAY}
+              className="inline-flex rounded-md border border-border bg-paper px-3 py-1.5 font-mono text-sm tracking-tight text-muted"
+            >
+              {eyebrow}
+            </Reveal>
+          )}
+          <h1
+            className={cn(
+              "mt-6 font-pixel text-4xl text-balance font-medium tracking-tighter text-ink sm:text-5xl",
+              !isArticle && "lg:text-6xl",
+            )}
           >
-            {eyebrow}
-          </Reveal>
-          <h1 className="mt-6 font-pixel text-4xl text-balance font-medium tracking-tighter text-ink sm:text-5xl lg:text-6xl">
             <DiaTextReveal
               text={title}
               colors={["var(--accent)"]}
@@ -58,9 +80,14 @@ export function ServiceHero({ eyebrow, title, lead, ditherBelowNavbar = false }:
               delay={TITLE_DELAY}
             />
           </h1>
-          <WordReveal text={lead} delay={LEAD_DELAY} className="mt-6 max-w-xl text-lg text-muted" />
+          <WordReveal
+            text={lead}
+            delay={LEAD_DELAY}
+            className={cn("mt-6 text-lg text-muted", isArticle ? "max-w-2xl" : "max-w-xl")}
+          />
+          {children}
         </div>
       </Container>
-    </div>
+    </Root>
   );
 }
