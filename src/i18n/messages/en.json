@@ -559,7 +559,7 @@
       "lead": "A clear website for your business, online booking or a catalog with WhatsApp ordering. Customers find you, see what you offer and get in touch.",
       "covers": {
         "title": "What we solve.",
-        "body": "Concrete digital presence: a landing that explains what you do, a booking flow so people schedule themselves, or a catalog with WhatsApp ordering. No platforms that take your margin, no templates that do not look like your business.",
+        "body": "Concrete digital presence: a landing that explains what you do, a booking flow so people schedule themselves, or a catalog with WhatsApp ordering. No platforms that take your margin, no templates that do not look like your business. If you are not sure you need a website yet, read [Does your business need a website?](/blog/como-saber-si-tu-negocio-necesita-pagina-web).",
         "items": [
           {
             "id": "web",
@@ -1072,11 +1072,11 @@
   },
   "blog": {
     "navLabel": "Blog",
-    "metaTitle": "Software and web blog for businesses in Argentina",
+    "metaTitle": "Software and website blog for small businesses in Argentina",
     "metaDescription": "Practical guides for small businesses and shops in Argentina about websites, management systems, integrations and automation.",
     "eyebrow": "Blog",
-    "title": "Blog.",
-    "description": "Practical guides for small businesses and shops: websites, systems, integrations and automation.",
+    "title": "Software and website blog for small businesses.",
+    "description": "Practical guides for small businesses and shops in Argentina about websites, management systems, integrations and automation. They help you decide with a clearer picture before commissioning a build.",
     "readMore": "Read article",
     "publishedOn": "Published on",
     "answerLabel": "Short answer",

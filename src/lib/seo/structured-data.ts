@@ -21,6 +21,7 @@ import {
   getWordCount,
 } from "@/lib/blog";
 import { eventopsImages } from "@/lib/projects/eventops";
+import { blogPostOpenGraphPath } from "@/lib/seo/blog-og-path";
 import { DESCRIPTION } from "@/lib/seo/metadata";
 import { plainText, singleLine } from "@/lib/seo/text";
 import type { ServiceSlug } from "@/lib/services";
@@ -314,6 +315,7 @@ export function buildBlogIndexStructuredData(): Graph {
       "@id": `${BLOG_URL}/${post.slug}#article`,
       headline: page.posts[post.slug].title,
       url: `${BLOG_URL}/${post.slug}`,
+      image: `${site.url}${blogPostOpenGraphPath(post.slug)}`,
       datePublished: post.datePublished,
     })),
   };
@@ -355,7 +357,10 @@ export function buildBlogPostStructuredData(slug: BlogSlug): Graph {
     url,
     mainEntityOfPage: url,
     inLanguage: "es-AR",
-    image: `${site.url}/opengraph-image.jpg`,
+    image:
+      meta?.published === true
+        ? `${site.url}${blogPostOpenGraphPath(slug)}`
+        : `${site.url}/opengraph-image.jpg`,
     datePublished: meta?.datePublished,
     dateModified: meta?.datePublished,
     author,

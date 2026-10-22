@@ -26,7 +26,7 @@ export function BlogIndex({ posts }: BlogIndexProps) {
     <div className="mx-auto w-full max-w-content border-x border-border">
       <Container className="w-full py-20 sm:py-28">
         <div className="max-w-2xl">
-          <h1 className="font-pixel text-4xl font-medium tracking-tighter text-ink sm:text-5xl">
+          <h1 className="font-pixel text-4xl font-medium tracking-tighter text-balance text-ink sm:text-5xl">
             <DiaTextReveal
               text={page.title}
               colors={["var(--accent)"]}

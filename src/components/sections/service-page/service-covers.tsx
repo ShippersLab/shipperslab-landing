@@ -1,3 +1,4 @@
+import { InlineText } from "@/components/sections/service-page/inline-text";
 import { serviceIcon } from "@/components/sections/service-page/service-icons";
 
 type CoverItem = {
@@ -13,7 +14,9 @@ type ServiceCoversProps = {
 export function ServiceCovers({ body, items }: ServiceCoversProps) {
   return (
     <>
-      <p className="text-lg leading-relaxed text-ink sm:text-xl">{body}</p>
+      <p className="text-lg leading-relaxed text-ink sm:text-xl">
+        <InlineText text={body} />
+      </p>
       <ul className="mt-6 flex flex-wrap gap-2">
         {items.map((item) => {
           const Icon = serviceIcon(item.id);
