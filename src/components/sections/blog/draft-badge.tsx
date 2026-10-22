@@ -1,12 +1,17 @@
+import { cn } from "@/lib/utils";
+
 type DraftBadgeProps = {
   label: string;
   className?: string;
 };
 
-export function DraftBadge({ label, className = "" }: DraftBadgeProps) {
+export function DraftBadge({ label, className }: DraftBadgeProps) {
   return (
     <span
-      className={`inline-flex items-center rounded-full border border-accent px-2.5 py-0.5 text-xs font-medium text-accent ${className}`}
+      className={cn(
+        "inline-flex rounded-md border border-border bg-paper px-3 py-1.5 font-mono text-sm tracking-tight text-muted",
+        className,
+      )}
     >
       {label}
     </span>
