@@ -10,13 +10,17 @@ const CELL_CLASS = "w-1/2 px-4 align-top sm:px-5";
 
 export function BlogPostTable({ table }: BlogPostTableProps) {
   return (
-    <div className="mt-6 overflow-hidden rounded-lg border border-border">
+    <div className="mt-6 overflow-hidden rounded-lg border border-border bg-paper">
       <table className="w-full table-fixed border-collapse text-left text-sm leading-relaxed sm:text-base">
         <caption className="sr-only">{table.caption}</caption>
         <thead>
           <tr className="border-b border-border">
             {table.columns.map((column) => (
-              <th key={column} scope="col" className={`${CELL_CLASS} py-3 font-medium text-ink`}>
+              <th
+                key={column}
+                scope="col"
+                className={`${CELL_CLASS} py-3 font-mono text-label font-normal uppercase tracking-label text-muted`}
+              >
                 {column}
               </th>
             ))}

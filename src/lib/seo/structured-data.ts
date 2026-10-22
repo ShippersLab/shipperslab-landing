@@ -13,7 +13,13 @@ import type {
 } from "schema-dts";
 
 import es from "@/i18n/messages/es.json";
-import { type BlogSlug, getBlogAuthor, getBlogPost, getPublishedBlogPosts } from "@/lib/blog";
+import {
+  type BlogSlug,
+  getBlogAuthor,
+  getBlogPost,
+  getPublishedBlogPosts,
+  getWordCount,
+} from "@/lib/blog";
 import { eventopsImages } from "@/lib/projects/eventops";
 import { DESCRIPTION } from "@/lib/seo/metadata";
 import { plainText, singleLine } from "@/lib/seo/text";
@@ -345,6 +351,7 @@ export function buildBlogPostStructuredData(slug: BlogSlug): Graph {
     headline: post.title,
     description: post.metaDescription,
     abstract: post.answer,
+    wordCount: getWordCount(post),
     url,
     mainEntityOfPage: url,
     inLanguage: "es-AR",

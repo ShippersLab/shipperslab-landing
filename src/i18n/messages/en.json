@@ -1078,18 +1078,19 @@
     "description": "Practical guides for small businesses and shops: websites, systems, integrations and automation.",
     "readMore": "Read article",
     "publishedOn": "Published on",
-    "byline": "By",
-    "back": "Back to the blog",
     "answerLabel": "Short answer",
     "draft": "Draft",
     "empty": "No articles published yet.",
+    "home": "Home",
+    "toc": "In this article",
+    "readingTime": "{minutes} min read",
+    "breadcrumb": "Breadcrumb",
     "posts": {
       "como-saber-si-tu-negocio-necesita-pagina-web": {
         "title": "Does your business need a website? How to know if it is worth it",
         "metaTitle": "Does your business need a website? How to know if it is worth it",
         "metaDescription": "Signs a website makes sense for your small business or shop, when it does not yet, and how to measure whether yours works. With a checklist and FAQ.",
         "excerpt": "Concrete signs to decide whether a website adds value to your business, when it is better to wait and how to measure whether yours is working.",
-        "readingTime": "6 min read",
         "answer": "A website is worth it if people look for you on Google, if you answer the same questions all day on WhatsApp or Instagram, if you have products or services to show or if your customers need to trust you before buying. It can wait if all your customers come through referrals and you can barely keep up, if you are still testing what to sell or if you will not be able to keep the information up to date. In the meantime, a complete Google Business Profile and a WhatsApp Business catalog may be enough.",
         "intro": [
           "Many businesses in Argentina sell well with Instagram, WhatsApp and word of mouth. So the question comes up: do you need a website, or is it just another expense? The honest answer is that it depends. A website does not sell on its own, but in some cases it saves you time, brings in inquiries you are losing today and builds trust with people who do not know you yet.",

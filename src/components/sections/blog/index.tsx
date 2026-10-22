@@ -8,7 +8,7 @@ import { Reveal } from "@/components/ui/animation/reveal";
 import { WordReveal } from "@/components/ui/animation/word-reveal";
 import { Container } from "@/components/ui/section/container";
 import { useI18n } from "@/i18n/provider";
-import { type BlogPostMeta, formatBlogDate } from "@/lib/blog";
+import { type BlogPostMeta, formatBlogDate, getReadingMinutes } from "@/lib/blog";
 
 const TITLE_DELAY = 0;
 const LEAD_DELAY = 0.25;
@@ -60,7 +60,7 @@ export function BlogIndex({ posts }: BlogIndexProps) {
                           {formatBlogDate(post.datePublished, locale)}
                         </time>
                         {" · "}
-                        {content.readingTime}
+                        {page.readingTime.replace("{minutes}", String(getReadingMinutes(content)))}
                       </p>
                       <h2 className="mt-3 text-2xl text-ink sm:text-3xl">{content.title}</h2>
                       <p className="mt-3 text-base leading-relaxed text-muted sm:text-lg">

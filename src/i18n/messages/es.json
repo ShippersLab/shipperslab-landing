@@ -1078,18 +1078,19 @@
     "description": "Guías prácticas para pymes y comercios: webs, sistemas, integraciones y automatización.",
     "readMore": "Leer artículo",
     "publishedOn": "Publicado el",
-    "byline": "Por",
-    "back": "Volver al blog",
     "answerLabel": "Respuesta corta",
     "draft": "Borrador",
     "empty": "Todavía no hay artículos publicados.",
+    "home": "Inicio",
+    "toc": "En este artículo",
+    "readingTime": "{minutes} min de lectura",
+    "breadcrumb": "Ruta de navegación",
     "posts": {
       "como-saber-si-tu-negocio-necesita-pagina-web": {
         "title": "¿Tu negocio necesita una página web? Cómo saber si vale la pena",
         "metaTitle": "¿Tu negocio necesita página web? Cómo saber si vale la pena",
         "metaDescription": "Señales de que una web tiene sentido para tu pyme o comercio, cuándo todavía no y cómo medir si la que ya tenés funciona. Con checklist y preguntas.",
         "excerpt": "Señales concretas para decidir si una web le suma a tu negocio, cuándo conviene esperar y cómo medir si la que ya tenés está funcionando.",
-        "readingTime": "6 min de lectura",
         "answer": "Una página web vale la pena si te buscan en Google, si respondés las mismas preguntas todo el día por WhatsApp o Instagram, si tenés productos o servicios para mostrar o si tus clientes necesitan confiar en vos antes de comprar. Puede esperar si todos tus clientes llegan por recomendación y no das abasto, si todavía estás probando qué vender o si no vas a poder mantener la información al día. Mientras tanto, un perfil completo en Google Business Profile y un catálogo en WhatsApp Business pueden alcanzar.",
         "intro": [
           "Muchos negocios en Argentina venden bien con Instagram, WhatsApp y el boca en boca. Entonces aparece la pregunta: ¿hace falta una página web o es un gasto más? La respuesta honesta es que depende. Una web no vende sola, pero en ciertos casos te ahorra tiempo, te consigue consultas que hoy se pierden y le da confianza a quien todavía no te conoce.",

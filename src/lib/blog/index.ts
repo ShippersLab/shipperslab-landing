@@ -57,3 +57,48 @@ export function getBlogAuthor(slug: BlogSlug) {
   const post = getBlogPost(slug);
   return team.find((member) => member.id === post?.authorId);
 }
+
+const WORDS_PER_MINUTE = 200;
+const NON_READING_KEYS = new Set([
+  "metaTitle",
+  "metaDescription",
+  "excerpt",
+  "href",
+  "related",
+  "ctaTitle",
+  "ctaDescription",
+  "ctaButton",
+]);
+
+function collectText(value: unknown, key?: string): string[] {
+  if (key && NON_READING_KEYS.has(key)) {
+    return [];
+  }
+  if (typeof value === "string") {
+    return [value];
+  }
+  if (Array.isArray(value)) {
+    return value.flatMap((item) => collectText(item));
+  }
+  if (value && typeof value === "object") {
+    return Object.entries(value).flatMap(([childKey, child]) => collectText(child, childKey));
+  }
+  return [];
+}
+
+export function getWordCount(content: unknown) {
+  return collectText(content).join(" ").split(/\s+/).filter(Boolean).length;
+}
+
+export function getReadingMinutes(content: unknown) {
+  return Math.max(1, Math.ceil(getWordCount(content) / WORDS_PER_MINUTE));
+}
+
+export function slugifyHeading(text: string) {
+  return text
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
