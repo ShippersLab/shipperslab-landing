@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 const INLINE_LINK = /\[([^\]]+)\]\((\/[^)\s]+)\)/;
 
 const LINK_CLASS =
-  "font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-[text-decoration-color] duration-200 ease-out hover:decoration-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink";
+  "font-medium text-ink underline decoration-accent underline-offset-4 transition-[text-decoration-thickness] duration-200 ease-out hover:decoration-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink";
 
 export function InlineText({ text }: { text: string }) {
   const nodes: ReactNode[] = [];
