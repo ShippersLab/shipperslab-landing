@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 
 import { getMessages } from "@/i18n/get-messages";
 import { getBlogPost, isBlogSlug } from "@/lib/blog";
-import { BlogOgCard, blogOgFonts, blogOgSize } from "@/lib/seo/blog-og";
+import { BlogOgCard, blogOgSize, loadBlogOgAssets } from "@/lib/seo/blog-og";
 
 export const alt = "ShippersLab";
 export const size = blogOgSize;
@@ -29,8 +29,10 @@ export default async function BlogOpenGraphImage({
 
   const title = getMessages("es").blog.posts[slug].title;
 
-  return new ImageResponse(<BlogOgCard title={title} />, {
-    ...size,
-    fonts: await blogOgFonts(),
-  });
+  const { fonts, logoSrc, backgroundSrc } = await loadBlogOgAssets();
+
+  return new ImageResponse(
+    <BlogOgCard title={title} logoSrc={logoSrc} backgroundSrc={backgroundSrc} />,
+    { ...size, fonts },
+  );
 }
