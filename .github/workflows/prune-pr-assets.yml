@@ -1,0 +1,66 @@
+name: Prune PR assets
+
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+    inputs:
+      days:
+        description: Days a PR must be closed before its assets branch is deleted
+        type: number
+        default: 30
+      dry_run:
+        description: Only log what would be deleted
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  prune:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+      DAYS: ${{ inputs.days || 30 }}
+      DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || false }}
+    steps:
+      - name: Delete stale pr-assets branches
+        run: |
+          cutoff=$(date -u -d "-${DAYS} days" +%s)
+          kept=0
+          deleted=0
+          refs=$(gh api --paginate "repos/${REPO}/git/matching-refs/heads/pr-assets/" --jq '.[].ref')
+          for ref in $refs; do
+            if [[ ! "$ref" =~ ^refs/heads/pr-assets/pr-([0-9]+)$ ]]; then
+              continue
+            fi
+            number="${BASH_REMATCH[1]}"
+            if ! pr=$(gh pr view "$number" --repo "$REPO" --json state,closedAt); then
+              echo "keep ${ref}: PR lookup failed"
+              kept=$((kept + 1))
+              continue
+            fi
+            state=$(jq -r '.state' <<< "$pr")
+            closed_at=$(jq -r '.closedAt // empty' <<< "$pr")
+            if [[ "$state" == "OPEN" || -z "$closed_at" ]]; then
+              echo "keep ${ref}: PR is ${state}"
+              kept=$((kept + 1))
+              continue
+            fi
+            if (( $(date -u -d "$closed_at" +%s) > cutoff )); then
+              echo "keep ${ref}: closed ${closed_at}, newer than ${DAYS} days"
+              kept=$((kept + 1))
+              continue
+            fi
+            if [[ "$DRY_RUN" == "true" ]]; then
+              echo "would delete ${ref}: closed ${closed_at}"
+            else
+              gh api -X DELETE "repos/${REPO}/git/${ref}"
+              echo "deleted ${ref}: closed ${closed_at}"
+            fi
+            deleted=$((deleted + 1))
+          done
+          echo "Summary: kept=${kept} deleted=${deleted} dry_run=${DRY_RUN}" | tee -a "$GITHUB_STEP_SUMMARY"
