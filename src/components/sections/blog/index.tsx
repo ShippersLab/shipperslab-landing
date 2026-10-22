@@ -66,7 +66,7 @@ export function BlogIndex({ posts }: BlogIndexProps) {
                       <p className="mt-3 text-base leading-relaxed text-muted sm:text-lg">
                         {content.excerpt}
                       </p>
-                      <span className="mt-4 inline-block text-base font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-[text-decoration-color] duration-200 ease-out group-hover:decoration-accent">
+                      <span className="mt-4 inline-block text-base font-medium text-ink underline decoration-accent/40 underline-offset-4 transition-[text-decoration-color] duration-200 ease-out group-hover:decoration-accent">
                         {page.readMore}
                       </span>
                     </Link>

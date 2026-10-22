@@ -25,7 +25,7 @@ import {
 const FAQ_DELAY = 0.1;
 
 const LINK_CLASS =
-  "text-base font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-[text-decoration-color] duration-200 ease-out hover:decoration-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink";
+  "text-base font-medium text-ink underline decoration-accent/40 underline-offset-4 transition-[text-decoration-color] duration-200 ease-out hover:decoration-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink";
 
 const PARAGRAPH_CLASS = "mt-4 text-base leading-relaxed text-muted sm:text-lg";
 
@@ -42,6 +42,7 @@ export function BlogPost({ slug }: BlogPostProps) {
   const blog = messages.blog;
   const post = blog.posts[slug];
   const meta = getBlogPost(slug);
+  if (!meta) return null;
   const author = getBlogAuthor(slug);
   const authorRole = author ? messages.team.members[author.id].role : undefined;
   const readingTime = blog.readingTime.replace("{minutes}", String(getReadingMinutes(post)));
@@ -67,11 +68,11 @@ export function BlogPost({ slug }: BlogPostProps) {
           breadcrumbLabel={blog.breadcrumb}
           homeLabel={blog.home}
           blogLabel={blog.navLabel}
-          draftLabel={meta && !meta.published ? blog.draft : undefined}
+          draftLabel={!meta.published ? blog.draft : undefined}
           author={author}
           authorRole={authorRole}
-          date={meta?.datePublished ?? ""}
-          dateLabel={meta ? formatBlogDate(meta.datePublished, locale) : ""}
+          date={meta.datePublished}
+          dateLabel={formatBlogDate(meta.datePublished, locale)}
           publishedOn={blog.publishedOn}
           readingTime={readingTime}
         />
@@ -83,7 +84,7 @@ export function BlogPost({ slug }: BlogPostProps) {
             <div className="min-w-0 max-w-2xl">
               <StepCard
                 label={blog.answerLabel}
-                icon={<CheckIcon size={14} className="shrink-0 text-accent" />}
+                icon={<CheckIcon size={14} className="shrink-0 text-muted" />}
                 className="mt-0 bg-paper"
               >
                 <p className="p-5 text-base leading-relaxed text-ink sm:p-6 sm:text-lg">
@@ -133,7 +134,7 @@ export function BlogPost({ slug }: BlogPostProps) {
                       <li key={item} className="flex gap-3 px-5 py-4 text-base text-ink">
                         <span
                           aria-hidden
-                          className="mt-1.5 size-3.5 shrink-0 rounded-sm border border-accent"
+                          className="mt-1.5 size-3.5 shrink-0 rounded-sm border border-muted"
                         />
                         <span>{item}</span>
                       </li>

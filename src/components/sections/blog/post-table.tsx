@@ -32,7 +32,7 @@ export function BlogPostTable({ table }: BlogPostTableProps) {
               <th
                 scope="rowgroup"
                 colSpan={table.columns.length}
-                className="px-4 pt-4 text-sm font-medium text-accent sm:px-5"
+                className="px-4 pt-4 text-sm font-medium text-ink sm:px-5"
               >
                 {row.label}
               </th>
