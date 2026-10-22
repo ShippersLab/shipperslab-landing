@@ -1,4 +1,6 @@
 import type {
+  Blog,
+  BlogPosting,
   BreadcrumbList,
   CollectionPage,
   FAQPage,
@@ -11,6 +13,13 @@ import type {
 } from "schema-dts";
 
 import es from "@/i18n/messages/es.json";
+import {
+  type BlogSlug,
+  getBlogAuthor,
+  getBlogPost,
+  getPublishedBlogPosts,
+  getWordCount,
+} from "@/lib/blog";
 import { eventopsImages } from "@/lib/projects/eventops";
 import { DESCRIPTION } from "@/lib/seo/metadata";
 import { plainText, singleLine } from "@/lib/seo/text";
@@ -227,16 +236,32 @@ export function buildEventopsCaseStructuredData(): Graph {
   };
 }
 
-export function buildPageBreadcrumbStructuredData(path: string, name: string): Graph {
+type BreadcrumbParent = {
+  name: string;
+  path: string;
+};
+
+export function buildPageBreadcrumbStructuredData(
+  path: string,
+  name: string,
+  parents: BreadcrumbParent[] = [],
+): Graph {
   const url = `${site.url}${path}`;
+  const trail = [
+    { name: "Inicio", item: site.url },
+    ...parents.map((parent) => ({ name: parent.name, item: `${site.url}${parent.path}` })),
+    { name, item: url },
+  ];
 
   const breadcrumb: BreadcrumbList = {
     "@type": "BreadcrumbList",
     "@id": `${url}#breadcrumb`,
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Inicio", item: site.url },
-      { "@type": "ListItem", position: 2, name, item: url },
-    ],
+    itemListElement: trail.map((entry, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: entry.name,
+      item: entry.item,
+    })),
   };
 
   return {
@@ -265,5 +290,99 @@ export function buildComoTrabajamosStructuredData(): Graph {
   return {
     "@context": "https://schema.org",
     "@graph": [...buildPageBreadcrumbStructuredData(path, page.navLabel)["@graph"], faq],
+  };
+}
+
+const BLOG_PATH = "/blog";
+const BLOG_URL = `${site.url}${BLOG_PATH}`;
+const BLOG_ID = `${BLOG_URL}#blog`;
+
+export function buildBlogIndexStructuredData(): Graph {
+  const page = es.blog;
+
+  const blog: Blog = {
+    "@type": "Blog",
+    "@id": BLOG_ID,
+    url: BLOG_URL,
+    name: page.metaTitle,
+    description: page.metaDescription,
+    inLanguage: "es-AR",
+    isPartOf: { "@id": WEBSITE_ID },
+    publisher: { "@id": ORGANIZATION_ID },
+    blogPost: getPublishedBlogPosts().map((post) => ({
+      "@type": "BlogPosting",
+      "@id": `${BLOG_URL}/${post.slug}#article`,
+      headline: page.posts[post.slug].title,
+      url: `${BLOG_URL}/${post.slug}`,
+      datePublished: post.datePublished,
+    })),
+  };
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [blog, ...buildPageBreadcrumbStructuredData(BLOG_PATH, page.navLabel)["@graph"]],
+  };
+}
+
+export function buildBlogPostStructuredData(slug: BlogSlug): Graph {
+  const post = es.blog.posts[slug];
+  const meta = getBlogPost(slug);
+  const path = `${BLOG_PATH}/${slug}`;
+  const url = `${site.url}${path}`;
+  const publisher = {
+    "@type": "Organization" as const,
+    "@id": ORGANIZATION_ID,
+    name: site.name,
+    url: site.url,
+  };
+  const member = getBlogAuthor(slug);
+  const author = member
+    ? {
+        "@type": "Person" as const,
+        "@id": `${site.url}/#${member.id}`,
+        name: member.name,
+        url: member.profileUrl,
+      }
+    : publisher;
+
+  const article: BlogPosting = {
+    "@type": "BlogPosting",
+    "@id": `${url}#article`,
+    headline: post.title,
+    description: post.metaDescription,
+    abstract: post.answer,
+    wordCount: getWordCount(post),
+    url,
+    mainEntityOfPage: url,
+    inLanguage: "es-AR",
+    image: `${site.url}/opengraph-image.jpg`,
+    datePublished: meta?.datePublished,
+    dateModified: meta?.datePublished,
+    author,
+    publisher,
+    isPartOf: { "@id": BLOG_ID },
+  };
+
+  const faq: FAQPage = {
+    "@type": "FAQPage",
+    "@id": `${url}#faq`,
+    isPartOf: { "@id": WEBSITE_ID },
+    inLanguage: "es-AR",
+    mainEntity: post.faq.items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  };
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      article,
+      ...buildPageBreadcrumbStructuredData(path, post.title, [
+        { name: es.blog.navLabel, path: BLOG_PATH },
+      ])["@graph"],
+      faq,
+    ],
   };
 }
