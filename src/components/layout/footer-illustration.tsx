@@ -37,7 +37,7 @@ export function FooterIllustration() {
         width={3000}
         height={990}
         sizes="100vw"
-        quality={90}
+        quality={75}
         onLoad={() => setLoaded(true)}
         className="h-auto w-full"
       />
