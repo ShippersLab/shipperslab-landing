@@ -161,7 +161,11 @@
     "title": "Empecemos.",
     "description": "Tres pasos, menos de un minuto. Te respondemos para coordinar una charla.",
     "stepsLabel": "Pasos del formulario",
-    "steps": ["Vos", "Contacto", "Tu problema"],
+    "steps": [
+      "Vos",
+      "Contacto",
+      "Tu problema"
+    ],
     "fields": {
       "name": "Nombre",
       "namePlaceholder": "Tu nombre",
@@ -244,7 +248,13 @@
   "events": {
     "title": "Eventos para toda la comunidad",
     "description": "Networking, demos de proyectos, charlas y hackathons abiertos a todos. Arrancamos en Santa Fe.",
-    "formats": ["Networking", "Demo nights", "Charlas", "Hackathons", "Café"],
+    "formats": [
+      "Networking",
+      "Demo nights",
+      "Charlas",
+      "Hackathons",
+      "Café"
+    ],
     "sponsorTitle": "Buscamos partners",
     "sponsorDescription": "Queremos armar estos eventos junto a empresas y personas que quieran sumarse. No hace falta ser una marca grande: estas son algunas formas de ayudar, y si se te ocurre otra, también suma.",
     "sponsorWays": [
@@ -311,7 +321,10 @@
       "heroAlt": "Captura de la página de inicio de EventOps",
       "title": "EventOps",
       "summary": "Calendario, personal y finanzas de tu empresa de eventos.",
-      "tags": ["Gestión de eventos", "B2B"],
+      "tags": [
+        "Gestión de eventos",
+        "B2B"
+      ],
       "metaTitle": "EventOps: sistema de gestión para empresas de eventos",
       "metaDescription": "EventOps reúne el calendario, los clientes, el personal y las finanzas de una empresa de eventos en un único sistema. Producto propio de ShippersLab, en producción.",
       "visitLabel": "Visitar EventOps",
@@ -445,7 +458,11 @@
           "label": "Ver el caso de EventOps",
           "href": "/casos/eventops"
         },
-        "tabs": ["Calendario", "Presupuestos", "Personal"],
+        "tabs": [
+          "Calendario",
+          "Presupuestos",
+          "Personal"
+        ],
         "alt": "Calendario de EventOps con la visita técnica, el montaje y la prueba de sonido de cada evento"
       },
       "audience": {
@@ -980,7 +997,11 @@
         "body": "Arrancamos con una charla de media hora. Nuestro trabajo ahí es escuchar e identificar bien el problema, que no siempre es el que aparece primero.",
         "topics": {
           "label": "Nos contás",
-          "items": ["Cómo trabajan hoy", "Qué te lleva tiempo", "Qué querés resolver"]
+          "items": [
+            "Cómo trabajan hoy",
+            "Qué te lleva tiempo",
+            "Qué querés resolver"
+          ]
         }
       },
       "scope": {
@@ -1114,7 +1135,9 @@
           },
           {
             "title": "Cuándo todavía no hace falta",
-            "paragraphs": ["Una web no siempre es la prioridad. Puede esperar si:"],
+            "paragraphs": [
+              "Una web no siempre es la prioridad. Puede esperar si:"
+            ],
             "items": [
               "Todos tus clientes llegan por recomendación y no das abasto con los pedidos que ya tenés.",
               "Todavía estás probando qué vender o a quién, y lo que ofrecés cambia cada semana.",
@@ -1129,7 +1152,10 @@
             ],
             "table": {
               "caption": "Cuándo a un negocio le suma una página web y cuándo puede esperar",
-              "columns": ["Una web te suma si…", "Puede esperar si…"],
+              "columns": [
+                "Una web te suma si…",
+                "Puede esperar si…"
+              ],
               "rows": [
                 {
                   "label": "Cómo te encuentran",
@@ -1256,11 +1282,11 @@
         "title": "Cómo organizar una empresa de eventos: del Excel a un solo sistema",
         "metaTitle": "Cómo organizar una empresa de eventos: del Excel a un sistema",
         "metaDescription": "Software para empresas de eventos y productoras de sonido e iluminación: calendario, personal, presupuestos y caja. Del Excel a EventOps.",
-        "excerpt": "Cómo una productora de eventos pasó de un Excel con clientes, fechas y caja a un solo sistema, y cómo fluye un evento hoy en EventOps.",
-        "answer": "Para organizar una empresa de eventos hace falta un solo lugar con el calendario, el personal, los presupuestos y la caja. Un Excel para empresa de eventos se complica con varias fechas, armado y desarmado, señas y presupuestos a la vez. Un sistema para productoras de sonido e iluminación carga el evento una vez y de ahí salen el calendario, el PDF, los pagos y los gastos. EventOps es ese software para empresas de eventos: lo hace ShippersLab en Argentina por $ 50.000 ARS al mes, en un solo plan, con una semana de prueba.",
+        "excerpt": "Cómo una productora de eventos pasó de un Excel con clientes, fechas y caja a un solo sistema, y cómo se trabaja un evento hoy en EventOps.",
+        "answer": "Para organizar una empresa de eventos hace falta un solo lugar con el calendario, el personal, los presupuestos y la caja. Un Excel aguanta mientras las fechas son pocas, y se complica cuando hay que cruzar armado, desarmado, señas y presupuestos a la vez. En un sistema, el evento se carga una vez y de ahí salen el calendario, el presupuesto en PDF, los pagos y los gastos. EventOps es un software para empresas de eventos y productoras de sonido e iluminación, hecho por ShippersLab en Argentina: $ 50.000 ARS por mes, un solo plan y una semana de prueba.",
         "intro": [
-          "Si tenés una productora de sonido, iluminación o eventos, el Excel suele alcanzar al principio: fechas, clientes y caja en un archivo. Igual hay que cotizar, armar, cobrar la seña y saber quién va.",
-          "Esta nota cuenta cómo una productora pasó de esa planilla a un solo sistema, y cómo fluye un evento hoy en EventOps."
+          "Si tenés una productora de sonido, iluminación o eventos, al principio el Excel alcanza: fechas, clientes y caja en un archivo. Se complica cuando además hay que cotizar, coordinar el armado, cobrar la seña y saber quién va a cada fecha.",
+          "Esta nota cuenta cómo una productora pasó de esa planilla a un solo sistema, y cómo se trabaja un evento hoy en EventOps."
         ],
         "sections": [
           {
@@ -1278,12 +1304,11 @@
             ]
           },
           {
-            "title": "El caso: pidieron calendario, clientes y caja",
+            "title": "Cómo nació EventOps",
             "paragraphs": [
-              "Pidieron presupuesto por calendario, clientes y flujo de caja. ShippersLab terminó armando algo más grande: EventOps, en producción para empresas de sonido, iluminación y eventos.",
+              "EventOps arrancó con un pedido concreto: una productora nos pidió presupuesto para un calendario, una lista de clientes y el flujo de caja. Al armarlo vimos que cualquier empresa de sonido, iluminación o eventos tiene el mismo problema, así que lo convertimos en un producto propio, hoy en producción.",
               "El calendario era la parte visible. Lo que había que modelar era el pago del personal y la plata de cada evento, que en la planilla se mezclaba con todo lo demás."
             ],
-            "closing": "Del resultado, lo que dijeron fue: «nos arreglaron un quilombo que teníamos».",
             "link": {
               "label": "Ver el caso de EventOps",
               "href": "/casos/eventops"
@@ -1296,9 +1321,9 @@
             ],
             "image": {
               "src": "/images/blog/eventops-calendario.webp",
-              "width": 882,
-              "height": 824,
-              "alt": "Demo de EventOps con visita técnica, montaje, evento y desmontaje de un casamiento.",
+              "width": 860,
+              "height": 802,
+              "alt": "Demo de EventOps con la visita técnica, el montaje, el evento y el desmontaje de un casamiento, cada uno con su día y horario.",
               "caption": "Fechas de un casamiento de ejemplo en el demo público de EventOps."
             },
             "items": [
@@ -1307,7 +1332,7 @@
               "Vistas. Mes, semana, día o agenda. Para reprogramar, el evento se arrastra a otro día."
             ],
             "link": {
-              "label": "Ver EventOps",
+              "label": "Conocer EventOps",
               "href": "https://eventops.digital"
             }
           },
@@ -1319,9 +1344,9 @@
             ],
             "image": {
               "src": "/images/blog/eventops-personal.webp",
-              "width": 842,
-              "height": 852,
-              "alt": "Demo de EventOps con técnicos, DJ y chofer asignados a un casamiento, y quién falta.",
+              "width": 822,
+              "height": 832,
+              "alt": "Demo de EventOps con técnicos, DJ y chofer de un casamiento, con quién está asignado y quién falta.",
               "caption": "Personal de un casamiento de ejemplo. Los nombres son del demo público."
             },
             "items": [
@@ -1338,9 +1363,9 @@
             "image": {
               "src": "/images/blog/eventops-presupuesto.webp",
               "width": 1200,
-              "height": 1698,
-              "alt": "Presupuesto en PDF del demo de EventOps, con sonido, iluminación, pantalla y el total.",
-              "caption": "PDF de ejemplo en eventops.digital/presupuestos, con servicios y total."
+              "height": 1180,
+              "alt": "Presupuesto en PDF del demo de EventOps, con los servicios de sonido, iluminación y DJ.",
+              "caption": "PDF de ejemplo de eventops.digital/presupuestos, armado desde la lista de servicios."
             },
             "items": [
               "Desde el catálogo. Cada servicio trae nombre, qué incluye, precio base y unidad: por evento, por jornada, por hora o por unidad.",
@@ -1362,15 +1387,15 @@
             "image": {
               "src": "/images/blog/eventops-finanzas.webp",
               "width": 1200,
-              "height": 1698,
-              "alt": "PDF del demo de EventOps con el total del presupuesto, la seña y el saldo.",
-              "caption": "La hoja de total del mismo demo: seña, saldo y condiciones. Importes de ejemplo."
+              "height": 880,
+              "alt": "Hoja de propuesta en PDF del demo de EventOps, con el monto total y el alcance del servicio.",
+              "caption": "La hoja de condiciones del mismo PDF: monto total y alcance. Importes de ejemplo."
             }
           },
           {
             "title": "Excel o sistema: qué cambia en cada parte",
             "paragraphs": [
-              "La tabla compara calendario, pago por armado y desarmado, señas, presupuestos y caja."
+              "Parte por parte, esto es lo que cambia al pasar de la planilla a un sistema."
             ],
             "table": {
               "caption": "Excel y un sistema: calendario, personal, señas, presupuestos y caja",
@@ -1429,10 +1454,10 @@
               "Presupuestos en PDF, y seña o cuotas para el saldo.",
               "La caja del mes en pesos y en dólares, por separado."
             ],
-            "closing": "Si esas cuatro te cierran, el sistema del rubro ya cubre el recorrido.",
+            "closing": "Si esas cuatro describen cómo trabajás, empezá por la semana de prueba.",
             "link": {
-              "label": "Ver sistemas de gestión a medida",
-              "href": "/sistemas-de-gestion"
+              "label": "Probar EventOps",
+              "href": "https://eventops.digital"
             }
           }
         ],
@@ -1454,7 +1479,7 @@
           "items": [
             {
               "question": "¿Alcanza un Excel para una empresa de eventos?",
-              "answer": "Alcanza si las fechas son pocas y las mira siempre la misma persona. Cuando calendario, personal, señas y presupuestos comparten la planilla, el evento se carga una vez y de ahí salen el calendario, el PDF, los pagos y los gastos."
+              "answer": "Alcanza mientras las fechas son pocas y las mira siempre la misma persona. Cuando el calendario, el personal, las señas y los presupuestos comparten la planilla, conviene un sistema: el evento se carga una vez y de ahí salen el calendario, el PDF, los pagos y los gastos."
             },
             {
               "question": "¿Qué tiene que resolver un sistema para productoras de sonido e iluminación?",

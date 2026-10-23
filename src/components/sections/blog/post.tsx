@@ -25,6 +25,10 @@ import {
 
 const FAQ_DELAY = 0.1;
 
+function isExternalHref(href: string) {
+  return href.startsWith("http");
+}
+
 const LINK_CLASS =
   "text-base font-medium text-ink underline decoration-accent/40 underline-offset-4 transition-[text-decoration-color] duration-200 ease-out hover:decoration-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink";
 
@@ -126,12 +130,12 @@ export function BlogPost({ slug }: BlogPostProps) {
                       <Link
                         href={section.link.href}
                         className={`mt-6 inline-block ${LINK_CLASS}`}
-                        {...(section.link.href.startsWith("http")
+                        {...(isExternalHref(section.link.href)
                           ? { target: "_blank", rel: "noreferrer" }
                           : {})}
                       >
                         {section.link.label}
-                        {section.link.href.startsWith("http") ? (
+                        {isExternalHref(section.link.href) ? (
                           <span className="sr-only"> ({messages.common.opensNewTab})</span>
                         ) : null}
                       </Link>

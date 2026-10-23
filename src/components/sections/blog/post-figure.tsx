@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { BlurInImage } from "@/components/ui/animation/blur-in-image";
 
 type BlogPostFigureProps = {
   image: {
@@ -13,7 +13,7 @@ type BlogPostFigureProps = {
 export function BlogPostFigure({ image }: BlogPostFigureProps) {
   return (
     <figure className="mt-6">
-      <Image
+      <BlurInImage
         src={image.src}
         alt={image.alt}
         width={image.width}

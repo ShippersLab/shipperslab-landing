@@ -161,7 +161,11 @@
     "title": "Let's start.",
     "description": "Three steps, under a minute. We'll get back to you to set up a call.",
     "stepsLabel": "Form steps",
-    "steps": ["You", "Contact", "Your problem"],
+    "steps": [
+      "You",
+      "Contact",
+      "Your problem"
+    ],
     "fields": {
       "name": "Name",
       "namePlaceholder": "Your name",
@@ -244,7 +248,13 @@
   "events": {
     "title": "Events for the whole community",
     "description": "Networking, project demos, talks and hackathons, open to everyone. Starting in Santa Fe.",
-    "formats": ["Networking", "Demo nights", "Talks", "Hackathons", "Coffee"],
+    "formats": [
+      "Networking",
+      "Demo nights",
+      "Talks",
+      "Hackathons",
+      "Coffee"
+    ],
     "sponsorTitle": "We're looking for partners",
     "sponsorDescription": "We want to run these events with companies and people who want to get involved. You don't need to be a big brand. Here are a few ways to help, and if you think of another one, it counts too.",
     "sponsorWays": [
@@ -311,7 +321,10 @@
       "heroAlt": "Screenshot of the EventOps home page",
       "title": "EventOps",
       "summary": "Calendar, staff and finances for your events company.",
-      "tags": ["Event management", "B2B"],
+      "tags": [
+        "Event management",
+        "B2B"
+      ],
       "metaTitle": "EventOps: management system for event companies",
       "metaDescription": "EventOps brings the calendar, clients, staff and finances of an event company into a single system. A ShippersLab own product, in production.",
       "visitLabel": "Visit EventOps",
@@ -445,7 +458,11 @@
           "label": "See how we built EventOps",
           "href": "/casos/eventops"
         },
-        "tabs": ["Calendar", "Quotes", "Crew"],
+        "tabs": [
+          "Calendar",
+          "Quotes",
+          "Crew"
+        ],
         "alt": "EventOps calendar showing each event's site visit, setup and sound check"
       },
       "audience": {
@@ -980,7 +997,11 @@
         "body": "We start with a half-hour conversation. Our job there is to listen and pin down the real problem, which is not always the first one that shows up.",
         "topics": {
           "label": "You tell us",
-          "items": ["How you work today", "What takes up your time", "What you want to solve"]
+          "items": [
+            "How you work today",
+            "What takes up your time",
+            "What you want to solve"
+          ]
         }
       },
       "scope": {
@@ -1100,7 +1121,9 @@
         "sections": [
           {
             "title": "Signs a website makes sense",
-            "paragraphs": ["If two or more of these sound familiar, a website will probably help:"],
+            "paragraphs": [
+              "If two or more of these sound familiar, a website will probably help:"
+            ],
             "items": [
               "People look for you on Google. If someone types your business name, or something like «hardware store in Rosario», and cannot find you, those inquiries go somewhere else. A website with your information, together with a Google Business Profile, makes you show up when people search.",
               "You answer the same questions all day. If on WhatsApp or Instagram you keep replying about prices, opening hours, delivery areas or payment methods, a website with that information gives you time back and lets customers start the conversation almost decided.",
@@ -1112,7 +1135,9 @@
           },
           {
             "title": "When you do not need one yet",
-            "paragraphs": ["A website is not always the priority. It can wait if:"],
+            "paragraphs": [
+              "A website is not always the priority. It can wait if:"
+            ],
             "items": [
               "All your customers come through referrals and you can barely keep up with the orders you already have.",
               "You are still testing what to sell or to whom, and your offer changes every week.",
@@ -1127,7 +1152,10 @@
             ],
             "table": {
               "caption": "When a website helps a business and when it can wait",
-              "columns": ["A website helps if…", "It can wait if…"],
+              "columns": [
+                "A website helps if…",
+                "It can wait if…"
+              ],
               "rows": [
                 {
                   "label": "How people find you",
@@ -1254,11 +1282,11 @@
         "title": "How to organize an event company: from a spreadsheet to one system",
         "metaTitle": "How to organize an event company: from Excel to one system",
         "metaDescription": "Software for event companies and sound and lighting producers: calendar, crew, quotes and cash. From Excel to EventOps.",
-        "excerpt": "How an event production company moved from one Excel file of clients, dates and cash to a single system, and how an event flows in EventOps today.",
+        "excerpt": "How an event production company moved from one Excel file of clients, dates and cash to a single system, and how an event runs in EventOps today.",
         "answer": "Organizing an event company takes one place for the calendar, the crew, the quotes and the cash. An Excel file for an event company gets messy once there are several dates, setup and teardown, deposits and quotes at the same time. A system for sound and lighting producers enters the event once, and the calendar, the PDF, the payments and the expenses come from that. EventOps is that software for event companies: ShippersLab builds it in Argentina for ARS 50,000 a month, on a single plan, with one free week.",
         "intro": [
           "If you run a sound, lighting or event company, Excel is often enough at the start: dates, clients and cash in one file. You still have to quote, set up, collect the deposit and know who is going.",
-          "This note is about how one event production company left that spreadsheet for a single system, and how an event flows in EventOps today."
+          "This post covers how one event production company left that spreadsheet for a single system, and how an event runs in EventOps today."
         ],
         "sections": [
           {
@@ -1276,12 +1304,11 @@
             ]
           },
           {
-            "title": "The case: they asked for a calendar, clients and cash",
+            "title": "How EventOps started",
             "paragraphs": [
-              "They asked for a quote covering the calendar, clients and cash flow. ShippersLab ended up building something much bigger: EventOps, in production for sound, lighting and event companies.",
+              "EventOps started with a specific request: an event production company asked us to quote a calendar, a client list and cash flow. While building it we saw that every sound, lighting and event company has the same problem, so we turned it into our own product, now in production.",
               "The calendar was the visible part. What had to be modeled was crew pay, and the money of each event, which in the spreadsheet was mixed in with everything else."
             ],
-            "closing": "On the result, what they said was: «nos arreglaron un quilombo que teníamos». They had been stuck in a mess, and it got sorted out.",
             "link": {
               "label": "See the EventOps case",
               "href": "/casos/eventops"
@@ -1294,9 +1321,9 @@
             ],
             "image": {
               "src": "/images/blog/eventops-calendario.webp",
-              "width": 882,
-              "height": 824,
-              "alt": "EventOps demo card with a wedding's site visit, setup, event and teardown.",
+              "width": 860,
+              "height": 802,
+              "alt": "EventOps demo showing a wedding's site visit, setup, event and teardown, each with its day and time.",
               "caption": "Sample wedding dates on the public EventOps demo."
             },
             "items": [
@@ -1305,7 +1332,7 @@
               "Views. Month, week, day or agenda. To reschedule, you drag the event to another day."
             ],
             "link": {
-              "label": "See EventOps",
+              "label": "Explore EventOps",
               "href": "https://eventops.digital"
             }
           },
@@ -1317,9 +1344,9 @@
             ],
             "image": {
               "src": "/images/blog/eventops-personal.webp",
-              "width": 842,
-              "height": 852,
-              "alt": "EventOps demo card with technicians, a DJ and a driver assigned to a wedding, and who is still missing.",
+              "width": 822,
+              "height": 832,
+              "alt": "EventOps demo showing a wedding's technicians, DJ and driver, with who is assigned and who is still missing.",
               "caption": "Crew for a sample wedding. The names are from the public demo."
             },
             "items": [
@@ -1336,9 +1363,9 @@
             "image": {
               "src": "/images/blog/eventops-presupuesto.webp",
               "width": 1200,
-              "height": 1698,
-              "alt": "PDF quote from the EventOps demo, with sound, lighting, a screen and the total.",
-              "caption": "Sample PDF on eventops.digital/presupuestos, with services and the total."
+              "height": 1180,
+              "alt": "PDF quote from the EventOps demo, with sound, lighting and DJ services.",
+              "caption": "Sample PDF from eventops.digital/presupuestos, built from the service list."
             },
             "items": [
               "From the catalog. Each service brings a name, what it includes, a base price and a unit: per event, per day, per hour or per unit.",
@@ -1360,15 +1387,15 @@
             "image": {
               "src": "/images/blog/eventops-finanzas.webp",
               "width": 1200,
-              "height": 1698,
-              "alt": "EventOps demo PDF with the quote total, the deposit and the balance due.",
-              "caption": "The totals page of the same demo: deposit, balance and payment terms. The amounts are sample figures."
+              "height": 880,
+              "alt": "PDF proposal page from the EventOps demo, with the total amount and the scope of the service.",
+              "caption": "The terms page of the same PDF: total amount and scope. The amounts are sample figures."
             }
           },
           {
             "title": "Excel or a system: what changes in each part",
             "paragraphs": [
-              "The table compares the calendar, pay for setup and teardown, deposits, quotes and cash."
+              "Part by part, here is what changes when you move from the spreadsheet to a system."
             ],
             "table": {
               "caption": "Excel and a system: calendar, crew, deposits, quotes and cash",
@@ -1427,10 +1454,10 @@
               "Quotes as PDF, and a deposit or installments for the balance.",
               "The month's cash in pesos and in dollars, kept apart."
             ],
-            "closing": "If those four match how you work, the system built for this trade already covers the path.",
+            "closing": "If those four describe how you work, start with the trial week.",
             "link": {
-              "label": "See custom management systems",
-              "href": "/sistemas-de-gestion"
+              "label": "Try EventOps",
+              "href": "https://eventops.digital"
             }
           }
         ],
@@ -1452,7 +1479,7 @@
           "items": [
             {
               "question": "Is Excel enough for an event company?",
-              "answer": "It is enough when there are few dates and the same person always looks at them. When the calendar, the crew, the deposits and the quotes share the spreadsheet, the event is entered once and the calendar, the PDF, the payments and the expenses come from that."
+              "answer": "It is enough while there are few dates and the same person always looks at them. When the calendar, the crew, the deposits and the quotes share the spreadsheet, a system makes sense: the event is entered once and the calendar, the PDF, the payments and the expenses come from that."
             },
             {
               "question": "What should a system for sound and lighting producers cover?",
