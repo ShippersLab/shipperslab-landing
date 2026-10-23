@@ -61,6 +61,11 @@ export function buildLlmsTxt() {
   return [
     `# ${site.name}`,
     `> ${SUMMARY}`,
+    link(
+      "llms-full.txt",
+      `${site.url}/llms-full.txt`,
+      "texto completo en español de las páginas públicas y de los artículos publicados",
+    ),
     SCOPE,
     `Para quién:\n\n${bullets(AUDIENCES)}`,
     `Cómo trabajamos:\n\n${steps.join("\n")}`,

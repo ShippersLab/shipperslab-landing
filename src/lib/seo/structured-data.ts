@@ -22,7 +22,7 @@ import {
 } from "@/lib/blog";
 import { eventopsImages } from "@/lib/projects/eventops";
 import { blogPostOpenGraphPath } from "@/lib/seo/blog-og-path";
-import { DESCRIPTION } from "@/lib/seo/metadata";
+import { organizationIdentity } from "@/lib/seo/organization";
 import { plainText, singleLine } from "@/lib/seo/text";
 import type { ServiceSlug } from "@/lib/services";
 import { serviceRoutes } from "@/lib/services";
@@ -44,30 +44,23 @@ const founders: Person[] = team.map((member) => ({
 const organization: Organization = {
   "@type": "Organization",
   "@id": ORGANIZATION_ID,
-  name: site.name,
-  url: site.url,
-  logo: `${site.url}/logo/accent.svg`,
-  image: `${site.url}/opengraph-image.jpg`,
-  description: DESCRIPTION,
-  slogan: "Software a medida para tu negocio.",
-  email: site.emails.contact,
-  areaServed: { "@type": "Country", name: "Argentina" },
-  address: { "@type": "PostalAddress", addressCountry: "AR" },
-  knowsAbout: [
-    "Software a medida",
-    "Sistemas de gestión",
-    "Integraciones",
-    "Bots con IA",
-    "Agentes de IA",
-    "Desarrollo web",
-  ],
+  name: organizationIdentity.name,
+  url: organizationIdentity.url,
+  logo: organizationIdentity.logo,
+  image: organizationIdentity.image,
+  description: organizationIdentity.description,
+  slogan: organizationIdentity.slogan,
+  email: organizationIdentity.email,
+  areaServed: { "@type": "Country", name: organizationIdentity.areaServed },
+  address: { "@type": "PostalAddress", addressCountry: organizationIdentity.addressCountry },
+  knowsAbout: [...organizationIdentity.knowsAbout],
   contactPoint: {
     "@type": "ContactPoint",
-    contactType: "sales",
-    email: site.emails.contact,
-    areaServed: "AR",
+    contactType: organizationIdentity.contactType,
+    email: organizationIdentity.email,
+    areaServed: organizationIdentity.addressCountry,
   },
-  sameAs: [site.social.instagram, site.social.x],
+  sameAs: [...organizationIdentity.sameAs],
   founder: founders,
   hasOfferCatalog: {
     "@type": "OfferCatalog",
