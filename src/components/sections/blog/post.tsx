@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 
+import { BlogPostFigure } from "@/components/sections/blog/post-figure";
 import { BlogPostHero } from "@/components/sections/blog/post-hero";
 import { BlogPostList } from "@/components/sections/blog/post-list";
 import { BlogPostTable } from "@/components/sections/blog/post-table";
@@ -109,6 +110,9 @@ export function BlogPost({ slug }: BlogPostProps) {
                         {paragraph}
                       </p>
                     ))}
+                    {"image" in section && section.image ? (
+                      <BlogPostFigure image={section.image} />
+                    ) : null}
                     {"items" in section && section.items ? (
                       <BlogPostList items={section.items} />
                     ) : null}
@@ -119,8 +123,17 @@ export function BlogPost({ slug }: BlogPostProps) {
                       <p className={PARAGRAPH_CLASS}>{section.closing}</p>
                     ) : null}
                     {"link" in section && section.link ? (
-                      <Link href={section.link.href} className={`mt-6 inline-block ${LINK_CLASS}`}>
+                      <Link
+                        href={section.link.href}
+                        className={`mt-6 inline-block ${LINK_CLASS}`}
+                        {...(section.link.href.startsWith("http")
+                          ? { target: "_blank", rel: "noreferrer" }
+                          : {})}
+                      >
                         {section.link.label}
+                        {section.link.href.startsWith("http") ? (
+                          <span className="sr-only"> ({messages.common.opensNewTab})</span>
+                        ) : null}
                       </Link>
                     ) : null}
                   </section>

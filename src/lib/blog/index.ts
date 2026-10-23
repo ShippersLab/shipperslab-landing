@@ -9,6 +9,12 @@ type BlogPostEntry = {
 
 export const blogPosts = [
   {
+    slug: "como-organizar-una-empresa-de-eventos",
+    datePublished: "2026-10-23",
+    authorId: "juani",
+    published: false,
+  },
+  {
     slug: "como-saber-si-tu-negocio-necesita-pagina-web",
     datePublished: "2026-10-18",
     authorId: "juani",
