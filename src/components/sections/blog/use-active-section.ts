@@ -7,45 +7,59 @@ const RELEASE_EVENTS = ["wheel", "touchstart", "keydown"] as const;
 
 export function useActiveSection(ids: readonly string[]) {
   const [activeId, setActiveId] = useState<string | null>(null);
-  const lockedRef = useRef(false);
+  const lockedIdRef = useRef<string | null>(null);
+  const inBandRef = useRef(new Set<string>());
+  const footerVisibleRef = useRef(false);
   const releaseRef = useRef<() => void>(() => {});
   const idsKey = ids.join("|");
 
-  const select = useCallback((id: string) => {
-    releaseRef.current();
-    setActiveId(id);
+  const select = useCallback(
+    (id: string) => {
+      releaseRef.current();
+      setActiveId(id);
 
-    if (!("onscrollend" in window)) {
-      return;
-    }
+      const lastId = idsKey.split("|").pop();
+      const reached = inBandRef.current.has(id) || (footerVisibleRef.current && id === lastId);
+      if (reached) {
+        return;
+      }
 
-    lockedRef.current = true;
+      lockedIdRef.current = id;
 
-    function release() {
-      lockedRef.current = false;
-      window.removeEventListener("scrollend", release);
-      RELEASE_EVENTS.forEach((name) => window.removeEventListener(name, release));
-      releaseRef.current = () => {};
-    }
+      function release() {
+        lockedIdRef.current = null;
+        RELEASE_EVENTS.forEach((name) => window.removeEventListener(name, release));
+        releaseRef.current = () => {};
+      }
 
-    releaseRef.current = release;
-    window.addEventListener("scrollend", release, { once: true });
-    RELEASE_EVENTS.forEach((name) =>
-      window.addEventListener(name, release, { once: true, passive: true }),
-    );
-  }, []);
+      releaseRef.current = release;
+      RELEASE_EVENTS.forEach((name) =>
+        window.addEventListener(name, release, { once: true, passive: true }),
+      );
+    },
+    [idsKey],
+  );
 
   useEffect(() => {
     const sectionIds = idsKey.split("|");
-    const inBand = new Set<string>();
-    let footerVisible = false;
+    const lastId = sectionIds[sectionIds.length - 1];
+    const inBand = inBandRef.current;
+    inBand.clear();
+    footerVisibleRef.current = false;
 
     function resolve() {
-      if (lockedRef.current) {
+      const lockedId = lockedIdRef.current;
+      if (lockedId) {
+        const reached = inBand.has(lockedId) || (footerVisibleRef.current && lockedId === lastId);
+        if (!reached) {
+          return;
+        }
+        releaseRef.current();
+        setActiveId(lockedId);
         return;
       }
-      if (footerVisible) {
-        setActiveId(sectionIds[sectionIds.length - 1]);
+      if (footerVisibleRef.current) {
+        setActiveId(lastId);
         return;
       }
       const current = sectionIds.filter((id) => inBand.has(id)).pop();
@@ -77,23 +91,16 @@ export function useActiveSection(ids: readonly string[]) {
 
     const footer = document.querySelector("footer");
     const footerObserver = new IntersectionObserver((entries) => {
-      footerVisible = entries.some((entry) => entry.isIntersecting);
+      footerVisibleRef.current = entries.some((entry) => entry.isIntersecting);
       resolve();
     });
     if (footer) {
       footerObserver.observe(footer);
     }
 
-    const releaseOnLock = () => {
-      releaseRef.current();
-      resolve();
-    };
-    window.addEventListener("scrollend", releaseOnLock);
-
     return () => {
       bandObserver.disconnect();
       footerObserver.disconnect();
-      window.removeEventListener("scrollend", releaseOnLock);
       releaseRef.current();
     };
   }, [idsKey]);
