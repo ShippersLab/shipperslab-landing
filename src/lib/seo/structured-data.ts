@@ -319,6 +319,18 @@ export function buildBlogIndexStructuredData(): Graph {
   };
 }
 
+function firstSectionImage(sections: readonly object[]) {
+  for (const section of sections) {
+    if (!("image" in section)) continue;
+    const image = section.image;
+    if (!image || typeof image !== "object" || !("src" in image) || typeof image.src !== "string") {
+      continue;
+    }
+    return image.src;
+  }
+  return undefined;
+}
+
 export function buildBlogPostStructuredData(slug: BlogSlug): Graph {
   const post = es.blog.posts[slug];
   const meta = getBlogPost(slug);
@@ -340,6 +352,12 @@ export function buildBlogPostStructuredData(slug: BlogSlug): Graph {
       }
     : publisher;
 
+  const ogImage =
+    meta?.published === true
+      ? `${site.url}${blogPostOpenGraphPath(slug)}`
+      : `${site.url}/opengraph-image.jpg`;
+  const contentImage = firstSectionImage(post.sections as readonly object[]);
+
   const article: BlogPosting = {
     "@type": "BlogPosting",
     "@id": `${url}#article`,
@@ -350,10 +368,7 @@ export function buildBlogPostStructuredData(slug: BlogSlug): Graph {
     url,
     mainEntityOfPage: url,
     inLanguage: "es-AR",
-    image:
-      meta?.published === true
-        ? `${site.url}${blogPostOpenGraphPath(slug)}`
-        : `${site.url}/opengraph-image.jpg`,
+    image: contentImage ? [ogImage, `${site.url}${contentImage}`] : ogImage,
     datePublished: meta?.datePublished,
     dateModified: meta?.datePublished,
     author,

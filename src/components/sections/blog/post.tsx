@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 
+import { BlogPostFigure } from "@/components/sections/blog/post-figure";
 import { BlogPostHero } from "@/components/sections/blog/post-hero";
 import { BlogPostList } from "@/components/sections/blog/post-list";
 import { BlogPostTable } from "@/components/sections/blog/post-table";
@@ -23,6 +24,10 @@ import {
 } from "@/lib/blog";
 
 const FAQ_DELAY = 0.1;
+
+function isExternalHref(href: string) {
+  return href.startsWith("http");
+}
 
 const LINK_CLASS =
   "text-base font-medium text-ink underline decoration-accent/40 underline-offset-4 transition-[text-decoration-color] duration-200 ease-out hover:decoration-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink";
@@ -109,6 +114,9 @@ export function BlogPost({ slug }: BlogPostProps) {
                         {paragraph}
                       </p>
                     ))}
+                    {"image" in section && section.image ? (
+                      <BlogPostFigure image={section.image} />
+                    ) : null}
                     {"items" in section && section.items ? (
                       <BlogPostList items={section.items} />
                     ) : null}
@@ -119,8 +127,17 @@ export function BlogPost({ slug }: BlogPostProps) {
                       <p className={PARAGRAPH_CLASS}>{section.closing}</p>
                     ) : null}
                     {"link" in section && section.link ? (
-                      <Link href={section.link.href} className={`mt-6 inline-block ${LINK_CLASS}`}>
+                      <Link
+                        href={section.link.href}
+                        className={`mt-6 inline-block ${LINK_CLASS}`}
+                        {...(isExternalHref(section.link.href)
+                          ? { target: "_blank", rel: "noreferrer" }
+                          : {})}
+                      >
                         {section.link.label}
+                        {isExternalHref(section.link.href) ? (
+                          <span className="sr-only"> ({messages.common.opensNewTab})</span>
+                        ) : null}
                       </Link>
                     ) : null}
                   </section>
