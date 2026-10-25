@@ -35,10 +35,15 @@ function markdownTable(table: BlogTable) {
   return [table.caption, header, rule, ...rows].join("\n");
 }
 
+function markdownImage(image: { src: string; alt: string; caption: string }) {
+  return `![${image.alt}](${absoluteUrl(image.src)})\n\n${image.caption}`;
+}
+
 function buildBlogSection(section: BlogSection) {
   return joinBlocks([
     heading(3, section.title),
     ...section.paragraphs.map((paragraph) => renderCopy(paragraph)),
+    "image" in section && section.image ? markdownImage(section.image) : undefined,
     "items" in section && section.items ? bullets(section.items) : undefined,
     "table" in section && section.table ? markdownTable(section.table) : undefined,
     "closing" in section && section.closing ? section.closing : undefined,
