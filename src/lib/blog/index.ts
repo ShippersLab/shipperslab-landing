@@ -12,7 +12,7 @@ export const blogPosts = [
     slug: "como-organizar-una-empresa-de-eventos",
     datePublished: "2026-10-23",
     authorId: "juani",
-    published: false,
+    published: true,
   },
   {
     slug: "como-saber-si-tu-negocio-necesita-pagina-web",
