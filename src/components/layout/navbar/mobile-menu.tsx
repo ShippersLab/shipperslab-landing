@@ -1,7 +1,8 @@
 "use client";
 
 import { AnimatePresence, motion } from "motion/react";
-import { useEffect, useId, useState } from "react";
+import { useEffect, useId, useState, useSyncExternalStore } from "react";
+import { createPortal } from "react-dom";
 
 import { MobileMenuPanel } from "@/components/layout/navbar/mobile-menu-panel";
 import { NAV_LINKS } from "@/components/layout/navbar/nav-links";
@@ -16,20 +17,37 @@ const panelVariants = {
     opacity: 1,
     scale: 1,
     y: 0,
-    transition: { duration: 0.35, ease: EASE, staggerChildren: 0.04, delayChildren: 0.05 },
+    transition: {
+      duration: 0.35,
+      ease: EASE,
+      staggerChildren: 0.04,
+      delayChildren: 0.05,
+    },
   },
   exit: {
     opacity: 0,
     scale: 0.96,
     y: -10,
-    transition: { duration: 0.28, ease: EASE, staggerChildren: 0.03, staggerDirection: -1 },
+    transition: {
+      duration: 0.28,
+      ease: EASE,
+      staggerChildren: 0.03,
+      staggerDirection: -1,
+    },
   },
 };
+
+const subscribe = () => () => {};
 
 export function MobileMenu() {
   const { messages } = useI18n();
   const [isOpen, setIsOpen] = useState(false);
   const panelId = useId();
+  const canPortal = useSyncExternalStore(
+    subscribe,
+    () => true,
+    () => false,
+  );
 
   useEffect(() => {
     if (!isOpen) return;
@@ -58,8 +76,8 @@ export function MobileMenu() {
         aria-controls={panelId}
         aria-label={isOpen ? messages.nav.menuClose : messages.nav.menuOpen}
         onClick={() => setIsOpen((value) => !value)}
-        className={`relative z-40 flex items-center gap-2 rounded-full px-4 py-2 text-sm text-ink transition-colors duration-200 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink ${
-          isOpen ? "border-none bg-paper" : "border border-border bg-border/50 hover:bg-border"
+        className={`relative z-40 flex items-center gap-2 rounded-md px-3 py-1.5 text-sm text-ink transition-colors duration-200 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink ${
+          isOpen ? "bg-border" : "hover:bg-border/60"
         }`}
       >
         {messages.nav.menuLabel}
@@ -81,18 +99,9 @@ export function MobileMenu() {
         {isOpen ? (
           <>
             <motion.div
-              key="backdrop"
-              className="fixed inset-0 z-20 bg-ink/40"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.25, ease: EASE }}
-              onClick={() => setIsOpen(false)}
-            />
-            <motion.div
               key="panel"
               id={panelId}
-              className="absolute inset-x-4 top-full z-30 mt-1 rounded-lg border border-border bg-paper"
+              className="absolute inset-x-0 top-full z-30 mt-1 rounded-lg border border-border bg-paper"
               style={{ transformOrigin: "top" }}
               variants={panelVariants}
               initial="hidden"
@@ -104,6 +113,26 @@ export function MobileMenu() {
           </>
         ) : null}
       </AnimatePresence>
+
+      {canPortal
+        ? createPortal(
+            <AnimatePresence>
+              {isOpen ? (
+                <motion.div
+                  key="backdrop"
+                  data-lenis-prevent
+                  className="fixed inset-0 z-19 bg-ink/40 backdrop-blur-sm"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.25, ease: EASE }}
+                  onClick={() => setIsOpen(false)}
+                />
+              ) : null}
+            </AnimatePresence>,
+            document.body,
+          )
+        : null}
     </div>
   );
 }

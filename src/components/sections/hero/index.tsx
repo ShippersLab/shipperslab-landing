@@ -1,120 +1,88 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useRef } from "react";
 
+import { HERO_TITLE_DELAY, HERO_TITLE_DURATION } from "@/components/sections/hero/hero.animation";
 import { DiaTextReveal } from "@/components/ui/animation/dia-text-reveal";
-import { Container } from "@/components/ui/section/container";
-import { ArrowRightIcon } from "@/components/ui/icons";
 import { TextureButton } from "@/components/ui/button/texture-button";
-import { HERO_TITLE_DELAY, useHeroAnimation } from "@/components/sections/hero/hero.animation";
+import { Container } from "@/components/ui/section/container";
+import { LocalizedLink } from "@/i18n/link";
 import { useI18n } from "@/i18n/provider";
+import { buildWhatsAppUrl } from "@/lib/contact/message";
+import { site } from "@/lib/site";
 
 const HERO_BLUR_DATA_URL =
-  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4pLSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUk//2wBDAQ4ODhMREyYVFSZPNS01T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0//wAARCAAHABADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDs4tURsedGyEdehzS3eqLF8sMbO3qcAUUVye1lY9H6vT5tj//Z";
-const HERO_VIDEO_SRC = "/hero-animation.mp4";
-const VIDEO_MEDIA = "(min-width: 640px) and (prefers-reduced-motion: no-preference)";
+  "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQF/8QAHRAAAgIDAAMAAAAAAAAAAAAAAQIAAwUREgQhcf/EABUBAQEAAAAAAAAAAAAAAAAAAAYH/8QAGREAAgMBAAAAAAAAAAAAAAAAAAECAxEE/9oADAMBAAIRAxEAPwDXuw7r4W6XSxxad+uTzyNSWjF3WaLFEBP0xEKOqOlRj1WY0f/Z";
 
 export function Hero() {
   const { messages } = useI18n();
-  const sectionRef = useRef<HTMLElement>(null);
-
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  useHeroAnimation(sectionRef);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video || !window.matchMedia(VIDEO_MEDIA).matches) {
-      return;
-    }
-    video.src = HERO_VIDEO_SRC;
-    video.play().catch(() => {});
-  }, []);
+  const whatsappUrl = buildWhatsAppUrl(site.whatsappNumber, messages.hero.whatsappMessage);
 
   return (
-    <section
-      id="top"
-      ref={sectionRef}
-      className="flex min-h-[calc(100svh-68px)] w-full flex-1 flex-col bg-paper lg:min-h-svh lg:bg-transparent"
-    >
-      <div className="relative mt-10 lg:mt-0">
-        <Image
-          src="/images/hero-illustration.webp"
-          alt={messages.hero.imageAlt}
-          width={1920}
-          height={822}
-          loading="eager"
-          fetchPriority="high"
-          quality={75}
-          placeholder="blur"
-          blurDataURL={HERO_BLUR_DATA_URL}
-          className="aspect-4/3 w-full object-cover object-center select-none sm:aspect-8/3 sm:object-top lg:max-h-[calc(100svh-15rem)]"
-          sizes="100vw"
-        />
-        <video
-          ref={videoRef}
-          poster="/images/hero-illustration.webp"
-          aria-hidden="true"
-          muted
-          loop
-          playsInline
-          preload="none"
-          tabIndex={-1}
-          disablePictureInPicture
-          disableRemotePlayback
-          controlsList="nodownload nofullscreen noremoteplayback"
-          className="pointer-events-none absolute inset-0 hidden size-full object-cover object-top select-none sm:block"
-        />
-        <div
-          aria-hidden
-          className="animate-hero-veil pointer-events-none absolute inset-0 bg-paper"
-        />
-      </div>
-
-      <div className="mx-auto flex w-full max-w-content flex-1 flex-col justify-center border-x border-border lg:justify-start">
-        <Container className="grid gap-8 py-10 lg:grid-cols-[1.8fr_1.2fr] lg:items-start lg:gap-0 lg:pt-6 lg:pb-16">
-          <h1 className="max-w-full font-pixel text-hero tracking-hero text-ink">
-            <DiaTextReveal
-              text={messages.hero.title}
-              colors={["var(--accent)"]}
-              textColor="var(--ink)"
-              delay={HERO_TITLE_DELAY}
-              startOnView={false}
+    <section id="top" className="flex w-full flex-col lg:h-[calc(100svh-1rem)] lg:min-h-160">
+      <div className="px-4 pt-4 sm:px-6 lg:min-h-0 lg:flex-1 lg:px-8">
+        <div className="relative aspect-square overflow-hidden rounded-lg bg-accent sm:aspect-auto sm:h-[64svh] lg:h-full">
+          <div className="absolute inset-x-0 top-16 bottom-0 sm:top-0">
+            <Image
+              src="/images/obelisco-accent.webp"
+              alt={messages.hero.imageAlt}
+              fill
+              preload
+              fetchPriority="high"
+              quality={100}
+              placeholder="blur"
+              blurDataURL={HERO_BLUR_DATA_URL}
+              className="animate-hero-image object-cover object-[25%_bottom] sm:object-[30%_center] select-none"
+              sizes="(min-width: 1200px) 1200px, 100vw"
             />
-          </h1>
-
-          <div className="flex w-full max-w-fit flex-col gap-4 pt-1">
-            <p className="hero-description invisible w-full font-sans text-sm leading-relaxed text-muted sm:text-lg">
-              {messages.hero.description}
-            </p>
-
-            <div className="hero-ctas invisible flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-              <TextureButton
-                asChild
-                variant="primary"
-                size="pill"
-                className="w-full rounded-full sm:w-auto"
-              >
-                <Link href="/empecemos" className="text-sm sm:text-base">
-                  {messages.hero.primaryCta}
-                </Link>
-              </TextureButton>
-              <a
-                href="#servicios"
-                className="group flex items-center justify-center gap-1 px-4 py-2.5 text-sm text-muted transition-colors duration-200 hover:text-ink sm:justify-start sm:text-base"
-              >
-                {messages.hero.secondaryCta}
-                <ArrowRightIcon
-                  size={16}
-                  className="mt-px transition-transform duration-200 group-hover:translate-x-0.5"
-                />
-              </a>
-            </div>
           </div>
-        </Container>
+        </div>
       </div>
+
+      <Container className="grid shrink-0 gap-8 py-10 lg:grid-cols-[1.6fr_1fr] lg:items-start lg:gap-16 lg:pt-10 lg:pb-8">
+        <h1 className="-mt-[0.12em] text-hero tracking-hero text-ink">
+          <DiaTextReveal
+            text={messages.hero.title}
+            colors={["var(--accent)"]}
+            textColor="var(--ink)"
+            delay={HERO_TITLE_DELAY}
+            duration={HERO_TITLE_DURATION}
+            className="pb-[0.12em]"
+            startOnView={false}
+          />
+        </h1>
+
+        <div className="flex flex-col gap-6">
+          <p className="mt-2 animate-hero-text text-base text-muted [animation-delay:0.75s] sm:text-lg">
+            {messages.hero.description}
+          </p>
+
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+            <TextureButton
+              asChild
+              variant="primary"
+              size="square"
+              className="w-full animate-hero-text [animation-delay:0.9s] sm:w-auto"
+            >
+              {whatsappUrl ? (
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                  {messages.hero.primaryCta}
+                </a>
+              ) : (
+                <LocalizedLink href="/empecemos">{messages.hero.primaryCta}</LocalizedLink>
+              )}
+            </TextureButton>
+            <TextureButton
+              asChild
+              variant="secondary"
+              size="square"
+              className="w-full animate-hero-text [animation-delay:1.02s] sm:w-auto"
+            >
+              <LocalizedLink href="/casos">{messages.hero.secondaryCta}</LocalizedLink>
+            </TextureButton>
+          </div>
+        </div>
+      </Container>
     </section>
   );
 }
