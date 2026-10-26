@@ -291,12 +291,8 @@
     "sponsorDescription": "Queremos armar estos eventos junto a empresas y personas que quieran sumarse. No hace falta ser una marca grande: estas son algunas formas de ayudar, y si se te ocurre otra, también suma.",
     "sponsorWays": [
       {
-        "title": "Un lugar",
-        "description": "Una oficina, un cowork o un espacio donde juntarnos. Si alguien viaja, un lugar donde quedarse también suma."
-      },
-      {
-        "title": "Vendors",
-        "description": "Café, comida, merch o lo que quieras ofrecer en el evento."
+        "title": "Venues",
+        "description": "Una oficina, un cowork o cualquier espacio donde juntarnos. Si alguien viaja, un lugar donde quedarse también suma."
       },
       {
         "title": "Sponsors",
@@ -305,6 +301,10 @@
       {
         "title": "Una mano organizando",
         "description": "Difusión, logística o tiempo para que cada evento salga bien."
+      },
+      {
+        "title": "Comida y café",
+        "description": "Café, comida, merch o lo que quieras ofrecer en el evento."
       }
     ],
     "cta": "Enviar un mensaje",

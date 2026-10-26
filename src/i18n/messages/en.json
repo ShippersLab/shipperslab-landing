@@ -291,12 +291,8 @@
     "sponsorDescription": "We want to run these events with companies and people who want to get involved. You don't need to be a big brand. Here are a few ways to help, and if you think of another one, it counts too.",
     "sponsorWays": [
       {
-        "title": "A venue",
-        "description": "An office, a coworking space or a place to get together. If someone is traveling, a place to stay helps too."
-      },
-      {
-        "title": "Vendors",
-        "description": "Coffee, food, merch or anything you'd like to offer at the event."
+        "title": "Venues",
+        "description": "An office, a coworking space or any place to get together. If someone is traveling, a place to stay helps too."
       },
       {
         "title": "Sponsors",
@@ -305,6 +301,10 @@
       {
         "title": "Help organizing",
         "description": "Promotion, logistics or time to help each event go well."
+      },
+      {
+        "title": "Food and coffee",
+        "description": "Coffee, food, merch or anything you'd like to offer at the event."
       }
     ],
     "cta": "Send a message",
