@@ -433,7 +433,7 @@
         }
       ],
       "overviewTitle": "El problema.",
-      "overview": "Una empresa de eventos maneja fechas, equipos, clientes y pagos al mismo tiempo. Con la información repartida en planillas y mensajes, se pisan dos eventos, falta personal y nadie sabe cuánto entró y cuánto falta cobrar.",
+      "overview": "Una empresa de eventos maneja fechas, equipos, clientes y pagos al mismo tiempo. Con la información repartida en planillas y mensajes, se pisan dos eventos, falta personal y nadie sabe cuánto entró y cuánto falta cobrar. Si todavía lo resolvés con planillas, leé [cómo organizar una empresa de eventos](/blog/como-organizar-una-empresa-de-eventos).",
       "approachTitle": "Cómo lo resolvemos.",
       "approach": "EventOps junta toda la operación en un solo sistema. Cada evento tiene su cliente, su equipo y su plata, y el calendario muestra de un vistazo qué hay que hacer y cuándo. Todo el equipo ve siempre la misma información.",
       "flowTitle": "Un evento, de punta a punta.",
@@ -540,7 +540,7 @@
       "lead": "Stock, pedidos, caja o turnos en un solo lugar, armado para cómo trabaja tu negocio. Dejá de pelearte con planillas que ya no dan abasto.",
       "covers": {
         "title": "Qué resolvemos.",
-        "body": "Un sistema pensado para tu operación: control de stock, pedidos, caja, turnos o lo que hoy se te escapa entre chats y planillas. Lo armamos alrededor de cómo trabaja tu equipo.",
+        "body": "Un sistema pensado para tu operación: control de stock, pedidos, caja, turnos o lo que hoy se te escapa entre chats y planillas. Lo armamos alrededor de cómo trabaja tu equipo. Si estás pidiendo un presupuesto, leé [Cuánto cuesta un sistema de gestión a medida](/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida).",
         "items": [
           {
             "id": "stock",
@@ -1371,6 +1371,442 @@
         },
         "ctaTitle": "¿No sabés si tu negocio necesita una web?",
         "ctaDescription": "Contanos cómo te encuentran hoy tus clientes y qué querés resolver. Te respondemos con alcance y precio por escrito.",
+        "ctaButton": "Contanos tu problema"
+      },
+      "como-organizar-una-empresa-de-eventos": {
+        "title": "Cómo organizar una empresa de eventos: del Excel a un solo sistema",
+        "metaTitle": "Cómo organizar una empresa de eventos: del Excel a un sistema",
+        "metaDescription": "Software para empresas de eventos y productoras de sonido e iluminación: calendario, personal, presupuestos y caja. Del Excel a EventOps.",
+        "excerpt": "Cómo una productora de eventos pasó de un Excel con clientes, fechas y caja a un solo sistema, y cómo se trabaja un evento hoy en EventOps.",
+        "answer": "Para organizar una empresa de eventos hace falta un solo lugar con el calendario, el personal, los presupuestos y la caja. Un Excel aguanta mientras las fechas son pocas, y se complica cuando hay que cruzar armado, desarmado, señas y presupuestos a la vez. En un sistema, el evento se carga una vez y de ahí salen el calendario, el presupuesto en PDF, los pagos y los gastos. EventOps es un software para empresas de eventos y productoras de sonido e iluminación, hecho por ShippersLab en Argentina: $ 50.000 ARS por mes, un solo plan y una semana de prueba.",
+        "intro": [
+          "Si tenés una productora de sonido, iluminación o eventos, al principio el Excel alcanza: fechas, clientes y caja en un archivo. Se complica cuando además hay que cotizar, coordinar el armado, cobrar la seña y saber quién va a cada fecha.",
+          "Esta nota cuenta cómo una productora pasó de esa planilla a un solo sistema, y cómo se trabaja un evento hoy en EventOps."
+        ],
+        "sections": [
+          {
+            "title": "Qué se desarma cuando todo vive en un Excel",
+            "paragraphs": [
+              "Una productora de eventos llegó sin calendario. Clientes, fechas y flujo de caja estaban en un solo Excel.",
+              "Con esa base, cada cosa que el rubro necesita queda colgada de la misma hoja:"
+            ],
+            "items": [
+              "La visita técnica, el montaje, el evento y el desmontaje se leen entre filas, porque no hay un calendario propio.",
+              "Una fecha que se pisa con otra hay que verla a ojo antes de confirmar.",
+              "El personal del armado y del desmontaje no queda atado a esa fecha, y el pago se calcula aparte.",
+              "La seña y lo que falta cobrar se mezclan con el resto de los números.",
+              "El presupuesto se arma en otro archivo y se pasa al cliente a mano."
+            ]
+          },
+          {
+            "title": "Cómo nació EventOps",
+            "paragraphs": [
+              "EventOps arrancó con un pedido concreto: una productora nos pidió presupuesto para un calendario, una lista de clientes y el flujo de caja. Al armarlo vimos que cualquier empresa de sonido, iluminación o eventos tiene el mismo problema, así que lo convertimos en un producto propio, hoy en producción.",
+              "El calendario era la parte visible. Lo que había que modelar era el pago del personal y la plata de cada evento, que en la planilla se mezclaba con todo lo demás."
+            ],
+            "link": {
+              "label": "Ver el caso de EventOps",
+              "href": "/casos/eventops"
+            }
+          },
+          {
+            "title": "Cómo se ve el calendario de un evento",
+            "paragraphs": [
+              "Hoy el evento se carga una vez. Se le agregan las fechas relacionadas y todas aparecen en el calendario. Si dos fechas coinciden en horario, EventOps avisa antes de confirmar."
+            ],
+            "image": {
+              "src": "/images/blog/eventops-calendario.webp",
+              "width": 860,
+              "height": 802,
+              "alt": "Demo de EventOps con la visita técnica, el montaje, el evento y el desmontaje de un casamiento, cada uno con su día y horario.",
+              "caption": "Fechas de un casamiento de ejemplo en el demo público de EventOps."
+            },
+            "items": [
+              "Fechas relacionadas. A la visita técnica, el montaje y el desmontaje se les puede sumar una reunión, una prueba de sonido u otra fecha.",
+              "Estados. Presupuesto, reservado con seña, confirmado, realizado y cancelado. Cada uno tiene su color en la grilla.",
+              "Vistas. Mes, semana, día o agenda. Para reprogramar, el evento se arrastra a otro día."
+            ],
+            "link": {
+              "label": "Conocer EventOps",
+              "href": "https://eventops.digital"
+            }
+          },
+          {
+            "title": "El costo del personal: armado, desarmado y horas de más",
+            "paragraphs": [
+              "La parte más difícil fue el costo del personal. En esa productora se pagaba por armado y por desarmado, y a veces se pagaba más cuando las horas se pasaban.",
+              "En EventOps cada función tiene un monto fijo por etapa (montaje, desmontaje o visita técnica) o un valor por hora. Al asignar a alguien, el monto se completa solo."
+            ],
+            "image": {
+              "src": "/images/blog/eventops-personal.webp",
+              "width": 822,
+              "height": 832,
+              "alt": "Demo de EventOps con técnicos, DJ y chofer de un casamiento, con quién está asignado y quién falta.",
+              "caption": "Personal de un casamiento de ejemplo. Los nombres son del demo público."
+            },
+            "items": [
+              "Asignación por fecha. Cada integrante entra con su rol: técnico, DJ, iluminación o chofer.",
+              "Quién está libre. Antes de sumar a alguien, se ve si ya tiene otra fecha ese día.",
+              "Pago por etapa o por hora. El fijo cubre el armado o el desmontaje. El valor por hora cubre cuando el tiempo se estira."
+            ]
+          },
+          {
+            "title": "El presupuesto sale en PDF",
+            "paragraphs": [
+              "El presupuesto se arma desde el evento, con los servicios de tu lista. El total se calcula solo. El PDF baja con tu logo, listo para mandar por WhatsApp o por mail."
+            ],
+            "image": {
+              "src": "/images/blog/eventops-presupuesto.webp",
+              "width": 1200,
+              "height": 1180,
+              "alt": "Presupuesto en PDF del demo de EventOps, con los servicios de sonido, iluminación y DJ.",
+              "caption": "PDF de ejemplo de eventops.digital/presupuestos, armado desde la lista de servicios."
+            },
+            "items": [
+              "Desde el catálogo. Cada servicio trae nombre, qué incluye, precio base y unidad: por evento, por jornada, por hora o por unidad.",
+              "Ajustes. Se puede cambiar cantidad y precio, agregar un ítem y aplicar un descuento o un recargo.",
+              "Pesos o dólares. El presupuesto va en ARS o en USD. Si el evento ya tiene pagos, la moneda queda fija.",
+              "PDF con tu logo. Presupuesto para el cliente, proforma, hoja de armado y recibo de cada pago. La factura se hace por fuera: esos PDF no tienen validez fiscal."
+            ],
+            "link": {
+              "label": "Ver cómo salen los presupuestos en PDF",
+              "href": "https://eventops.digital/presupuestos"
+            }
+          },
+          {
+            "title": "Seña, gastos y el mes en números",
+            "paragraphs": [
+              "Con el total se cobra una seña y el saldo se parte en cuotas, en pesos o en dólares. Cada pago queda marcado, se ve cuánto falta y el recibo sale en PDF.",
+              "Personal, alquiler de equipos e insumos van al evento o quedan como gasto general. El mes muestra ingresos, egresos y neto, con pesos y dólares por separado. Los movimientos se exportan a CSV."
+            ],
+            "image": {
+              "src": "/images/blog/eventops-finanzas.webp",
+              "width": 1200,
+              "height": 880,
+              "alt": "Hoja de propuesta en PDF del demo de EventOps, con el monto total y el alcance del servicio.",
+              "caption": "La hoja de condiciones del mismo PDF: monto total y alcance. Importes de ejemplo."
+            }
+          },
+          {
+            "title": "Excel o sistema: qué cambia en cada parte",
+            "paragraphs": [
+              "Parte por parte, esto es lo que cambia al pasar de la planilla a un sistema."
+            ],
+            "table": {
+              "caption": "Excel y un sistema: calendario, personal, señas, presupuestos y caja",
+              "columns": ["En el Excel", "En un sistema"],
+              "rows": [
+                {
+                  "label": "Calendario",
+                  "cells": [
+                    "Las fechas viven en la misma planilla que clientes y caja, o no hay calendario.",
+                    "Visita, montaje, evento y desmontaje están en el calendario, y avisa si dos fechas se pisan."
+                  ]
+                },
+                {
+                  "label": "Pago por armado y desarmado",
+                  "cells": [
+                    "El monto por etapa y las horas de más se calculan a mano.",
+                    "Monto fijo por etapa o valor por hora. Al asignar, el pago se completa solo."
+                  ]
+                },
+                {
+                  "label": "Señas",
+                  "cells": [
+                    "La seña y el saldo se mezclan con otros números.",
+                    "La seña y las cuotas quedan en el evento, en pesos o en dólares."
+                  ]
+                },
+                {
+                  "label": "Presupuestos",
+                  "cells": [
+                    "Se arma en otro archivo y se manda como se puede.",
+                    "Sale en PDF con tu logo, desde tus servicios, con el total calculado."
+                  ]
+                },
+                {
+                  "label": "Flujo de caja",
+                  "cells": [
+                    "Ingresos y gastos del mes hay que rearmarlos.",
+                    "Gastos del evento o generales, y el mes en pesos y dólares por separado."
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "title": "Cuándo EventOps encaja así como está",
+            "paragraphs": [
+              "EventOps encaja así como está si organizás eventos, tenés personal a cargo y mandás presupuestos. El plan es uno solo, de $ 50.000 ARS por mes, con una semana de prueba.",
+              "Si la operación es otra, por ejemplo stock, pedidos o turnos, eso se construye a medida."
+            ],
+            "items": [
+              "Eventos con visita, armado y desarmado en el mismo calendario.",
+              "Personal a cargo, con rol y con pago por etapa o por hora.",
+              "Presupuestos en PDF, y seña o cuotas para el saldo.",
+              "La caja del mes en pesos y en dólares, por separado."
+            ],
+            "closing": "Si esas cuatro describen cómo trabajás, empezá por la semana de prueba.",
+            "link": {
+              "label": "Probar EventOps",
+              "href": "https://eventops.digital"
+            }
+          }
+        ],
+        "checklist": {
+          "title": "Checklist rápido",
+          "intro": "Repasá esta lista antes de agrandar la planilla:",
+          "items": [
+            "¿Las fechas, los clientes y la caja viven en el mismo Excel?",
+            "¿Pago el armado y el desarmado por etapa, y a veces más si las horas se pasan?",
+            "¿Armo cada presupuesto a mano para mandarlo por WhatsApp?",
+            "¿Cobro seña y cuotas, y no siempre sé cuánto falta de cada evento?",
+            "¿Necesito ver quién está libre antes de confirmar una fecha?",
+            "¿Mi trabajo es organizar eventos, con personal a cargo y presupuestos para el cliente?"
+          ],
+          "closing": "Si varias respuestas son sí, un sistema del rubro ordena más que otra hoja."
+        },
+        "faq": {
+          "title": "Preguntas frecuentes",
+          "items": [
+            {
+              "question": "¿Alcanza un Excel para una empresa de eventos?",
+              "answer": "Alcanza mientras las fechas son pocas y las mira siempre la misma persona. Cuando el calendario, el personal, las señas y los presupuestos comparten la planilla, conviene un sistema: el evento se carga una vez y de ahí salen el calendario, el PDF, los pagos y los gastos."
+            },
+            {
+              "question": "¿Qué tiene que resolver un sistema para productoras de sonido e iluminación?",
+              "answer": "Calendario con visita técnica, montaje y desmontaje, personal con rol y pago, presupuesto en PDF, y la caja del evento: seña, cuotas y gastos, en pesos o en dólares."
+            },
+            {
+              "question": "¿EventOps sirve así como está?",
+              "answer": "Sirve así como está si organizás eventos, tenés personal a cargo y mandás presupuestos. Si la operación es stock, pedidos o turnos, eso se construye a medida."
+            },
+            {
+              "question": "¿Cuánto cuesta EventOps?",
+              "answer": "El plan sale $ 50.000 ARS por mes. Es un solo plan, con todas las funciones, y tiene una semana de prueba. Se puede dejar cuando se quiera y pedir una copia de los datos."
+            },
+            {
+              "question": "¿El PDF del presupuesto reemplaza la factura?",
+              "answer": "Presupuesto, proforma, hoja de armado y recibo bajan en PDF con tu logo, para mandar la propuesta y dejar constancia del pago. La factura se hace por fuera: esos documentos no tienen validez fiscal."
+            }
+          ]
+        },
+        "related": {
+          "title": "Seguí leyendo",
+          "links": [
+            {
+              "label": "Sistemas de gestión",
+              "href": "/sistemas-de-gestion",
+              "description": "Stock, pedidos, caja o turnos en un sistema armado para cómo trabaja tu pyme."
+            },
+            {
+              "label": "Caso EventOps",
+              "href": "/casos/eventops",
+              "description": "Calendario, personal, presupuestos y finanzas para una empresa de eventos."
+            }
+          ]
+        },
+        "ctaTitle": "¿Tu empresa de eventos sigue en un Excel?",
+        "ctaDescription": "Contanos cómo organizás fechas, personal y cobros. Te respondemos con alcance y precio por escrito.",
+        "ctaButton": "Contanos tu problema"
+      },
+      "cuanto-cuesta-un-sistema-de-gestion-a-medida": {
+        "title": "Cuánto cuesta un sistema de gestión a medida",
+        "metaTitle": "Cuánto cuesta un sistema de gestión a medida para una pyme",
+        "metaDescription": "Qué define el precio de un sistema de gestión a medida para una pyme: módulos, usuarios, integraciones y migrar desde Excel. Alcance y precio por escrito.",
+        "excerpt": "Qué empuja el precio de un sistema de gestión a medida, qué costos van aparte del desarrollo y qué llevar a la primera charla.",
+        "answer": "El precio de un sistema de gestión a medida depende de los módulos y las pantallas, los usuarios y permisos, las integraciones, el pase de datos desde Excel y los reportes. No publicamos una tarifa. Armamos el precio con el alcance de tu operación y acordamos los dos por escrito antes de arrancar.",
+        "intro": [
+          "Si tu pyme se maneja con Excel y estás pidiendo un presupuesto, el precio solo no alcanza. Primero hay que saber qué entra en el sistema y qué queda afuera, y de eso sale el precio.",
+          "Esta nota recorre qué define el precio, qué costos mirar aparte del desarrollo, cómo se compara con seguir en la planilla o con un software enlatado y qué llevar a la primera charla."
+        ],
+        "sections": [
+          {
+            "title": "Qué define el precio",
+            "paragraphs": [
+              "El precio depende del sistema. Ordenar el stock es un trabajo. Sumar pedidos, caja, permisos por rol y un cierre para el contador es otro bastante más grande.",
+              "Por eso no publicamos una tarifa. Escribimos el alcance en la propuesta y el precio acompaña ese alcance. Miramos las partes juntas: un flujo corto sin integraciones lleva menos trabajo que uno con permisos, migración y reportes de cierre.",
+              "Una distribuidora que quiere descontar stock al confirmar un pedido necesita algo distinto de un negocio de turnos que quiere la agenda y lo cobrado en el día. Estas son las partes que más mueven el precio:"
+            ],
+            "items": [
+              "Módulos y pantallas. Stock, pedidos, caja, turnos o clientes suman pantallas, estados y reglas. Un recorrido corto lleva menos trabajo que una operación con varias etapas.",
+              "Usuarios y permisos. Con una sola persona el sistema es simple. Cuando dueño, administración, depósito o sucursal ven y hacen cosas distintas, hay más que construir.",
+              "Integraciones. Conectar facturación, pagos, correo o una API es trabajo aparte de las pantallas. Si la herramienta deja entrar y salir datos, usamos esa vía.",
+              "Migración desde Excel. Pasar productos, clientes o movimientos implica unificar nombres, resolver duplicados y decidir qué historia traer. Si una planilla te sigue sirviendo, puede quedar afuera o conectada.",
+              "Reportes. Ver qué falta cobrar, qué reponer o cómo cerró la caja se diseña con las reglas de tu equipo."
+            ],
+            "closing": "Si el sistema es grande, lo partimos y arrancamos por lo que más duele, como el stock o los pedidos. Qué entra ahora y qué queda para después va por escrito, así el precio no incluye trabajo que todavía no vamos a hacer.",
+            "link": {
+              "label": "Ver sistemas de gestión",
+              "href": "/sistemas-de-gestion"
+            }
+          },
+          {
+            "title": "Costos aparte que conviene conocer",
+            "paragraphs": [
+              "El desarrollo es una parte del presupuesto. Hay costos que conviene ver al lado, con nombre, para que no aparezcan después.",
+              "Entran en la propuesta solo si el sistema los necesita."
+            ],
+            "items": [
+              "Servidor, dominio y cuentas. Si ya tenés servidor, dominio, la API de WhatsApp o un modelo de IA, los usamos. Si no, los gestionamos nosotros y te cobramos el costo más la gestión.",
+              "Mantenimiento. Es opcional. Cubre cambios y ajustes cuando el sistema ya está en marcha. Sin mantenimiento, el proyecto sale menos.",
+              "Capacitación. También es opcional. Si querés que tu equipo aprenda a usarlo, la sumamos. Sin capacitación, el proyecto sale menos.",
+              "Errores del sistema. Si el fallo es nuestro, lo corregimos nosotros, con o sin mantenimiento.",
+              "Cambios en una API externa. Si una API que elegiste cambia y no contrataste soporte, ese arreglo lo pagás vos. El desarrollo no lo cubre.",
+              "Tus datos. Son confidenciales. Los usamos para construir el sistema y, si contratás mantenimiento, para mantenerlo."
+            ],
+            "closing": "El documento separa qué es el sistema, qué es opcional y qué servicios externos usamos o gestionamos."
+          },
+          {
+            "title": "Excel, enlatado o sistema a medida",
+            "paragraphs": [
+              "En la primera charla suele aparecer la misma comparación: seguir en Excel, adoptar un software enlatado o encargar un sistema a medida. Ninguna opción le sirve a toda pyme. Depende de qué tan propia sea la operación.",
+              "La tabla es cualitativa y no reemplaza un presupuesto. El precio concreto sale del alcance, por escrito."
+            ],
+            "table": {
+              "caption": "Excel, software enlatado y sistema a medida: costo inicial, costo mensual, ajuste al proceso y quién lo mantiene",
+              "columns": [
+                "Excel",
+                "Enlatado",
+                "A medida"
+              ],
+              "rows": [
+                {
+                  "label": "Costo inicial",
+                  "cells": [
+                    "La planilla ya está. Lleva el tiempo de armarla y de rehacerla cuando se queda corta.",
+                    "Usás el producto que ya existe. El límite aparece cuando la operación pide algo que ese plan no trae.",
+                    "Es el desarrollo acordado. Crece con los módulos, los permisos, las integraciones y los datos a pasar."
+                  ]
+                },
+                {
+                  "label": "Costo mensual",
+                  "cells": [
+                    "La licencia de la planilla, si la hay, y el tiempo de quien la mantiene al día.",
+                    "Una suscripción mientras la usás. Si no alcanza, aparece otro programa o volvés al Excel.",
+                    "El mantenimiento es opcional. Servidor, dominio o APIs se cobran aparte cuando los gestionamos nosotros."
+                  ]
+                },
+                {
+                  "label": "Ajuste al proceso",
+                  "cells": [
+                    "Se adapta a cómo trabajás, hasta que las fórmulas, las copias y los archivos sueltos no dan más.",
+                    "El equipo se adapta al programa. Lo que no entra queda en un parche o en otra herramienta.",
+                    "Lo armamos alrededor de cómo trabaja tu equipo, con las reglas que ya usan."
+                  ]
+                },
+                {
+                  "label": "Quién lo mantiene",
+                  "cells": [
+                    "Alguien de tu equipo. Si esa persona no está, cuesta reconstruir dónde quedó cada dato.",
+                    "Quien hace el producto. Podés pedir lo que el producto permite, y el flujo que no trae queda afuera.",
+                    "Si contratás mantenimiento, lo seguimos nosotros. Los errores nuestros los corregimos igual."
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "title": "Cómo pedir un presupuesto bien",
+            "paragraphs": [
+              "Un presupuesto cerrado sale de entender la operación. Cuanto más claro llegues a la primera charla, menos vueltas hacen falta para cerrar alcance y precio.",
+              "No hace falta un documento prolijo. Alcanza con mostrar cómo trabajan hoy. Escuchamos la operación, escribimos qué entra y qué no, y el precio va en ese mismo documento, antes de arrancar."
+            ],
+            "items": [
+              "Un caso real. Elegí un pedido, un turno o un movimiento de stock y contá el recorrido desde que entra hasta que se cobra o se entrega.",
+              "Las planillas. Aunque estén desordenadas. Ahí se ven columnas, estados y qué dato se carga en más de un lugar.",
+              "Quién hace cada cosa. Quién carga, quién aprueba, quién mira la caja y quién no debería ver costos o márgenes.",
+              "Con qué hay que conectarlo. Facturación, pagos, correo, WhatsApp u otra herramienta. Si ya tenés la cuenta o la API, decilo en la charla.",
+              "Qué duele hoy. La parte que se traba, se pierde o se discute. Si el sistema es grande, por ahí empezamos.",
+              "Qué queda afuera. Decir qué no entra en esta etapa evita que el precio incluya trabajo que todavía no vamos a hacer."
+            ],
+            "closing": "Con eso armamos el documento: qué construimos, qué no, qué hace falta de tu lado, cuánto sale la implementación y cuánto el mantenimiento. Lo acordamos por escrito antes de arrancar. No publicamos un plazo típico: el tiempo depende del sistema y queda en ese documento.",
+            "link": {
+              "label": "Pedir el presupuesto",
+              "href": "/empecemos"
+            }
+          },
+          {
+            "title": "Señales de que conviene a medida",
+            "paragraphs": [
+              "Un software enlatado alcanza cuando la operación entra en lo que ese programa ya hace y el equipo puede trabajar así, sin una planilla al lado. El sistema a medida tiene sentido cuando hay pasos propios y el hueco se sostiene con Excel y mensajes.",
+              "Una empresa de eventos llevaba todo en un Excel: flujo de caja, clientes y ningún calendario. Nos pidió presupuesto para un calendario, una lista de clientes y el flujo de caja. De ese trabajo salió EventOps, que abarca más que el pedido inicial: el evento se carga una vez y de ahí salen el calendario, el presupuesto, los pagos y los gastos. El día a día está en la nota sobre organizar una empresa de eventos.",
+              "Cotizar una pantalla y mirar la operación entera son trabajos distintos, y este caso lo muestra. Si tu pyme hace otra cosa, escribimos el alcance para esa operación."
+            ],
+            "items": [
+              "Reglas propias. Descuentos, estados o excepciones que un enlatado no deja modelar sin parches ni otra planilla.",
+              "Datos partidos. Lo mismo se carga en el Excel, en el chat y en otro programa, y nadie confía en una sola lista.",
+              "Permisos distintos. No todo el equipo debería ver costos, márgenes o la caja.",
+              "Ya volviste a la planilla. Probaste un enlatado y el día a día siguió en el Excel, porque la operación no entraba.",
+              "Tiene que hablar con lo que ya elegiste. Facturación, pagos o una API, con tus cuentas si ya las tenés."
+            ],
+            "closing": "Si el enlatado cubre el día a día y tu equipo lo usa sin una planilla paralela, no hace falta reemplazarlo. En la primera charla te decimos qué nos parece más conveniente, y escribimos el alcance antes del precio.",
+            "link": {
+              "label": "Ver el caso de EventOps",
+              "href": "/casos/eventops"
+            }
+          }
+        ],
+        "checklist": {
+          "title": "Checklist rápido",
+          "intro": "Antes de la primera charla, repasá esto:",
+          "items": [
+            "¿Puedo contar un pedido, un turno o un movimiento de stock de punta a punta?",
+            "¿Tengo a mano las planillas, aunque estén desordenadas?",
+            "¿Sé quién carga, quién aprueba y quién no debería ver cada dato?",
+            "¿Sé con qué hay que conectarlo y si esas cuentas ya existen?",
+            "¿Puedo decir qué entra en esta etapa y qué queda afuera?",
+            "¿El programa enlatado que miré me deja trabajar como trabajo hoy, o me empuja de nuevo al Excel?"
+          ],
+          "closing": "Si podés responder las primeras, la charla alcanza para escribir alcance y precio. Si la última también es sí, conviene mirar un sistema a medida."
+        },
+        "faq": {
+          "title": "Preguntas frecuentes",
+          "items": [
+            {
+              "question": "¿Hay un precio de referencia para un sistema a medida?",
+              "answer": "No publicamos una tarifa. El precio depende del sistema: módulos y pantallas, usuarios y permisos, integraciones, migración desde Excel y reportes. El alcance y el precio se acuerdan por escrito antes de arrancar."
+            },
+            {
+              "question": "¿El mantenimiento y la capacitación son obligatorios?",
+              "answer": "No. Mantenimiento y capacitación son opcionales. Sin ellos, el proyecto sale menos. Si el error es del sistema que construimos, lo corregimos nosotros igual."
+            },
+            {
+              "question": "¿Qué pasa si ya tengo servidor, dominio o WhatsApp?",
+              "answer": "Los usamos. Si no los tenés, los gestionamos nosotros y te cobramos el costo más la gestión. Lo mismo aplica a un modelo de IA cuando el sistema lo necesita."
+            },
+            {
+              "question": "¿Quién paga si cambia una API externa?",
+              "answer": "Si el fallo es nuestro, lo arreglamos nosotros. Si una API que elegiste cambia y no contrataste soporte, ese arreglo lo pagás vos."
+            },
+            {
+              "question": "¿Qué pasa con los datos de mi negocio?",
+              "answer": "Son confidenciales. Los usamos para construir el sistema y, si contratás mantenimiento, para mantenerlo. En la propuesta escribimos qué planillas migramos y cuáles no."
+            }
+          ]
+        },
+        "related": {
+          "title": "Seguí leyendo",
+          "links": [
+            {
+              "label": "Sistemas de gestión",
+              "href": "/sistemas-de-gestion",
+              "description": "Stock, pedidos, caja o turnos en un sistema armado para cómo trabaja tu pyme."
+            },
+            {
+              "label": "Caso EventOps",
+              "href": "/casos/eventops",
+              "description": "Calendario, personal, presupuestos y caja para una empresa de eventos."
+            },
+            {
+              "label": "Cómo organizar una empresa de eventos",
+              "href": "/blog/como-organizar-una-empresa-de-eventos",
+              "description": "Del Excel de una productora al sistema que junta calendario, personal, presupuesto y caja."
+            }
+          ]
+        },
+        "ctaTitle": "¿Querés el precio por escrito?",
+        "ctaDescription": "Contanos cómo trabajan hoy y qué se escapa entre planillas. Te respondemos con alcance y precio por escrito, antes de arrancar.",
         "ctaButton": "Contanos tu problema"
       }
     }

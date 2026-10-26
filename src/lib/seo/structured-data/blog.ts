@@ -53,6 +53,18 @@ export function buildBlogIndexStructuredData(lang: Locale): Graph {
   };
 }
 
+function firstSectionImage(sections: readonly object[]) {
+  for (const section of sections) {
+    if (!("image" in section)) continue;
+    const image = section.image;
+    if (!image || typeof image !== "object" || !("src" in image) || typeof image.src !== "string") {
+      continue;
+    }
+    return image.src;
+  }
+  return undefined;
+}
+
 export function buildBlogPostStructuredData(slug: BlogSlug, lang: Locale): Graph {
   const messages = getMessages(lang);
   const post = messages.blog.posts[slug];
@@ -75,6 +87,12 @@ export function buildBlogPostStructuredData(slug: BlogSlug, lang: Locale): Graph
       }
     : publisher;
 
+  const ogImage =
+    meta?.published === true
+      ? `${site.url}${blogPostOpenGraphPath(slug, lang)}`
+      : `${site.url}/opengraph-image.jpg`;
+  const contentImage = firstSectionImage(post.sections as readonly object[]);
+
   const article: BlogPosting = {
     "@type": "BlogPosting",
     "@id": `${url}#article`,
@@ -85,10 +103,7 @@ export function buildBlogPostStructuredData(slug: BlogSlug, lang: Locale): Graph
     url,
     mainEntityOfPage: url,
     inLanguage: languageTags[lang],
-    image:
-      meta?.published === true
-        ? `${site.url}${blogPostOpenGraphPath(slug, lang)}`
-        : `${site.url}/opengraph-image.jpg`,
+    image: contentImage ? [ogImage, `${site.url}${contentImage}`] : ogImage,
     datePublished: meta?.datePublished,
     dateModified: meta?.datePublished,
     author,

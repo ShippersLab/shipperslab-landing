@@ -1,6 +1,14 @@
 import es from "@/i18n/messages/es.json";
 import { type ProjectSlug } from "@/lib/projects";
-import { bullets, canonical, heading, joinBlocks, labeled, page } from "@/lib/seo/llms/copy";
+import {
+  bullets,
+  canonical,
+  heading,
+  joinBlocks,
+  labeled,
+  page,
+  renderCopy,
+} from "@/lib/seo/llms/copy";
 import { site } from "@/lib/site";
 
 export function buildCasos() {
@@ -44,7 +52,7 @@ function buildEventops() {
     copy.factsLabel,
     ...copy.facts.map((fact) => labeled(fact.label, fact.value)),
     heading(3, copy.overviewTitle),
-    copy.overview,
+    renderCopy(copy.overview),
     heading(3, copy.approachTitle),
     copy.approach,
     heading(3, copy.flowTitle),

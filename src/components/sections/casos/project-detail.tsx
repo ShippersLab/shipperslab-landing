@@ -6,6 +6,7 @@ import { CaseImage } from "@/components/sections/casos/case-image";
 import { CaseList } from "@/components/sections/casos/case-list";
 import { CaseRow } from "@/components/sections/casos/case-row";
 import { GalleryMarquee } from "@/components/sections/casos/gallery-marquee";
+import { InlineText } from "@/components/sections/service-page/inline-text";
 import { BlurReveal } from "@/components/ui/animation/blur-reveal";
 import { TextureButton } from "@/components/ui/button/texture-button";
 import { Container } from "@/components/ui/section/container";
@@ -59,7 +60,9 @@ export function ProjectDetail() {
         </CaseRow>
 
         <CaseRow title={page.overviewTitle}>
-          <p className={BODY}>{page.overview}</p>
+          <p className={BODY}>
+            <InlineText text={page.overview} />
+          </p>
         </CaseRow>
 
         <CaseRow title={page.approachTitle}>

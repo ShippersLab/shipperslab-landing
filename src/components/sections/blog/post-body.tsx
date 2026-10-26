@@ -1,3 +1,4 @@
+import { BlogPostFigure } from "@/components/sections/blog/post-figure";
 import { BlogPostTable } from "@/components/sections/blog/post-table";
 import { FaqAccordion } from "@/components/ui/faq-accordion";
 import { LocalizedLink } from "@/i18n/link";
@@ -39,6 +40,11 @@ export function BlogPostBody({ slug }: BlogPostBodyProps) {
           {section.paragraphs.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}
+          {"image" in section && section.image ? (
+            <div className="not-prose">
+              <BlogPostFigure image={section.image} />
+            </div>
+          ) : null}
           {"items" in section && section.items ? (
             <ul>
               {section.items.map((item) => {
@@ -56,7 +62,14 @@ export function BlogPostBody({ slug }: BlogPostBodyProps) {
           {"closing" in section && section.closing ? <p>{section.closing}</p> : null}
           {"link" in section && section.link ? (
             <p>
-              <LocalizedLink href={section.link.href}>{section.link.label}</LocalizedLink>
+              {section.link.href.startsWith("http") ? (
+                <a href={section.link.href} target="_blank" rel="noopener noreferrer">
+                  {section.link.label}
+                  <span className="sr-only"> ({messages.common.opensNewTab})</span>
+                </a>
+              ) : (
+                <LocalizedLink href={section.link.href}>{section.link.label}</LocalizedLink>
+              )}
             </p>
           ) : null}
         </section>

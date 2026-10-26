@@ -433,7 +433,7 @@
         }
       ],
       "overviewTitle": "The problem.",
-      "overview": "An event company handles dates, teams, clients and payments at the same time. With the information scattered across spreadsheets and messages, two events overlap, staff goes missing and nobody knows how much came in and how much is still owed.",
+      "overview": "An event company handles dates, teams, clients and payments at the same time. With the information scattered across spreadsheets and messages, two events overlap, staff goes missing and nobody knows how much came in and how much is still owed. If you still run it on spreadsheets, read [how to organize an event company](/blog/como-organizar-una-empresa-de-eventos).",
       "approachTitle": "How we solve it.",
       "approach": "EventOps puts the whole operation in one system. Each event has its client, its team and its money, and the calendar shows at a glance what needs to happen and when. Everyone on the team always sees the same information.",
       "flowTitle": "One event, end to end.",
@@ -540,7 +540,7 @@
       "lead": "Inventory, orders, sales or bookings in one place, built around how your business works. Stop fighting spreadsheets that can't keep up.",
       "covers": {
         "title": "What we solve.",
-        "body": "A system shaped around your operation: inventory control, orders, sales, bookings or whatever slips between chats and spreadsheets today. We build it around how your team already works.",
+        "body": "A system shaped around your operation: inventory control, orders, sales, bookings or whatever slips between chats and spreadsheets today. We build it around how your team already works. If you are asking for a quote, read [What a custom management system costs a small business](/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida).",
         "items": [
           {
             "id": "stock",
@@ -1369,6 +1369,442 @@
         },
         "ctaTitle": "Not sure if your business needs a website?",
         "ctaDescription": "Tell us how your customers find you today and what you want to solve. We reply with scope and price in writing.",
+        "ctaButton": "Tell us your problem"
+      },
+      "como-organizar-una-empresa-de-eventos": {
+        "title": "How to organize an event company: from a spreadsheet to one system",
+        "metaTitle": "How to organize an event company: from Excel to one system",
+        "metaDescription": "Software for event companies and sound and lighting producers: calendar, crew, quotes and cash. From Excel to EventOps.",
+        "excerpt": "How an event production company moved from one Excel file of clients, dates and cash to a single system, and how an event runs in EventOps today.",
+        "answer": "Organizing an event company takes one place for the calendar, the crew, the quotes and the cash. An Excel file for an event company gets messy once there are several dates, setup and teardown, deposits and quotes at the same time. A system for sound and lighting producers enters the event once, and the calendar, the PDF, the payments and the expenses come from that. EventOps is that software for event companies: ShippersLab builds it in Argentina for ARS 50,000 a month, on a single plan, with one free week.",
+        "intro": [
+          "If you run a sound, lighting or event company, Excel is often enough at the start: dates, clients and cash in one file. You still have to quote, set up, collect the deposit and know who is going.",
+          "This post covers how one event production company left that spreadsheet for a single system, and how an event runs in EventOps today."
+        ],
+        "sections": [
+          {
+            "title": "What falls apart when everything lives in Excel",
+            "paragraphs": [
+              "An event production company arrived with no calendar. Clients, dates and cash flow all sat in one Excel file.",
+              "From that base, everything the trade needs hangs off the same sheet:"
+            ],
+            "items": [
+              "The site visit, the setup, the event and the teardown have to be read between rows, because there is no calendar of their own.",
+              "A date that overlaps another one has to be spotted by eye before you confirm.",
+              "The crew for setup and teardown is not tied to that date, and the pay is calculated separately.",
+              "The deposit and what is still owed get mixed in with the rest of the numbers.",
+              "The quote is built in another file and sent to the client by hand."
+            ]
+          },
+          {
+            "title": "How EventOps started",
+            "paragraphs": [
+              "EventOps started with a specific request: an event production company asked us to quote a calendar, a client list and cash flow. While building it we saw that every sound, lighting and event company has the same problem, so we turned it into our own product, now in production.",
+              "The calendar was the visible part. What had to be modeled was crew pay, and the money of each event, which in the spreadsheet was mixed in with everything else."
+            ],
+            "link": {
+              "label": "See the EventOps case",
+              "href": "/casos/eventops"
+            }
+          },
+          {
+            "title": "What an event looks like on the calendar",
+            "paragraphs": [
+              "Today the event is entered once. Related dates are added and they all show up on the calendar. If two dates overlap in time, EventOps warns you before you confirm."
+            ],
+            "image": {
+              "src": "/images/blog/eventops-calendario.webp",
+              "width": 860,
+              "height": 802,
+              "alt": "EventOps demo showing a wedding's site visit, setup, event and teardown, each with its day and time.",
+              "caption": "Sample wedding dates on the public EventOps demo."
+            },
+            "items": [
+              "Related dates. A meeting, a sound check or another date can be added alongside the site visit, the setup and the teardown.",
+              "Statuses. Quote, reserved with a deposit, confirmed, done and cancelled. Each one has its own color on the grid.",
+              "Views. Month, week, day or agenda. To reschedule, you drag the event to another day."
+            ],
+            "link": {
+              "label": "Explore EventOps",
+              "href": "https://eventops.digital"
+            }
+          },
+          {
+            "title": "Crew cost: setup, teardown and extra hours",
+            "paragraphs": [
+              "The hardest part was crew cost. This company paid per setup and per teardown, and sometimes paid more when the hours ran over.",
+              "In EventOps each role has a fixed amount per stage (setup, teardown or site visit) or an hourly rate. When you assign someone, the amount fills in on its own."
+            ],
+            "image": {
+              "src": "/images/blog/eventops-personal.webp",
+              "width": 822,
+              "height": 832,
+              "alt": "EventOps demo showing a wedding's technicians, DJ and driver, with who is assigned and who is still missing.",
+              "caption": "Crew for a sample wedding. The names are from the public demo."
+            },
+            "items": [
+              "Assignment by date. Each person comes in with a role: technician, DJ, lighting or driver.",
+              "Who is free. Before you add someone, you can see if they already have another date that day.",
+              "Pay per stage or per hour. The fixed amount covers setup or teardown. The hourly rate covers it when the time runs long."
+            ]
+          },
+          {
+            "title": "The quote comes out as a PDF",
+            "paragraphs": [
+              "The quote is built from the event, using services from your list. The total calculates itself. The PDF downloads with your logo, ready to send on WhatsApp or by email."
+            ],
+            "image": {
+              "src": "/images/blog/eventops-presupuesto.webp",
+              "width": 1200,
+              "height": 1180,
+              "alt": "PDF quote from the EventOps demo, with sound, lighting and DJ services.",
+              "caption": "Sample PDF from eventops.digital/presupuestos, built from the service list."
+            },
+            "items": [
+              "From the catalog. Each service brings a name, what it includes, a base price and a unit: per event, per day, per hour or per unit.",
+              "Adjustments. You can change the quantity and the price, add a free item and apply a discount or a surcharge.",
+              "Pesos or dollars. The quote is in ARS or USD. If the event already has payments, the currency stays fixed.",
+              "PDF with your logo. A quote for the client, a proforma, a setup sheet and a receipt for each payment. The invoice is issued separately: these PDFs have no tax validity."
+            ],
+            "link": {
+              "label": "See how PDF quotes work",
+              "href": "https://eventops.digital/presupuestos"
+            }
+          },
+          {
+            "title": "Deposits, expenses and the month in numbers",
+            "paragraphs": [
+              "From the total you collect a deposit and split the balance into the installments you agree, in pesos or in dollars. Each payment is marked, you can see what is left, and the receipt comes out as a PDF.",
+              "Crew, equipment rental and supplies go on the event or stay as a general expense. The month shows income, expenses and net, with pesos and dollars kept apart. Movements can be exported to CSV."
+            ],
+            "image": {
+              "src": "/images/blog/eventops-finanzas.webp",
+              "width": 1200,
+              "height": 880,
+              "alt": "PDF proposal page from the EventOps demo, with the total amount and the scope of the service.",
+              "caption": "The terms page of the same PDF: total amount and scope. The amounts are sample figures."
+            }
+          },
+          {
+            "title": "Excel or a system: what changes in each part",
+            "paragraphs": [
+              "Part by part, here is what changes when you move from the spreadsheet to a system."
+            ],
+            "table": {
+              "caption": "Excel and a system: calendar, crew, deposits, quotes and cash",
+              "columns": ["In Excel", "In a system"],
+              "rows": [
+                {
+                  "label": "Calendar",
+                  "cells": [
+                    "Dates live in the same spreadsheet as clients and cash, or there is no calendar.",
+                    "Site visit, setup, event and teardown are on the calendar, and it warns you if two dates overlap."
+                  ]
+                },
+                {
+                  "label": "Pay for setup and teardown",
+                  "cells": [
+                    "The amount per stage and the extra hours are calculated by hand.",
+                    "A fixed amount per stage or an hourly rate. When you assign someone, the pay fills in on its own."
+                  ]
+                },
+                {
+                  "label": "Deposits",
+                  "cells": [
+                    "The deposit and the balance get mixed in with other numbers.",
+                    "The deposit and the installments stay on the event, in pesos or in dollars."
+                  ]
+                },
+                {
+                  "label": "Quotes",
+                  "cells": [
+                    "Built in another file and sent however you can.",
+                    "Comes out as a PDF with your logo, from your services, with the total calculated."
+                  ]
+                },
+                {
+                  "label": "Cash flow",
+                  "cells": [
+                    "Income and expenses for the month have to be rebuilt.",
+                    "Event or general expenses, and the month in pesos and dollars kept apart."
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "title": "When EventOps fits as it is",
+            "paragraphs": [
+              "EventOps fits as it is if you run events, you have crew to assign and you send quotes. There is a single plan, ARS 50,000 a month, with one free week.",
+              "If the operation is something else, such as stock, orders or appointments, that is built to fit."
+            ],
+            "items": [
+              "Events with site visit, setup and teardown on the same calendar.",
+              "Crew in charge, with a role and pay per stage or per hour.",
+              "Quotes as PDF, and a deposit or installments for the balance.",
+              "The month's cash in pesos and in dollars, kept apart."
+            ],
+            "closing": "If those four describe how you work, start with the trial week.",
+            "link": {
+              "label": "Try EventOps",
+              "href": "https://eventops.digital"
+            }
+          }
+        ],
+        "checklist": {
+          "title": "Quick checklist",
+          "intro": "Go through this list before you add another sheet:",
+          "items": [
+            "Do dates, clients and cash live in the same Excel file?",
+            "Do I pay setup and teardown per stage, and sometimes more when the hours run over?",
+            "Do I build every quote by hand to send it on WhatsApp?",
+            "Do I collect a deposit and installments, and not always know what each event still owes?",
+            "Do I need to see who is free before I confirm a date?",
+            "Is my work running events, with crew in charge and quotes for the client?"
+          ],
+          "closing": "If several answers are yes, a system for this trade will do more than another sheet in the same file."
+        },
+        "faq": {
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "question": "Is Excel enough for an event company?",
+              "answer": "It is enough while there are few dates and the same person always looks at them. When the calendar, the crew, the deposits and the quotes share the spreadsheet, a system makes sense: the event is entered once and the calendar, the PDF, the payments and the expenses come from that."
+            },
+            {
+              "question": "What should a system for sound and lighting producers cover?",
+              "answer": "A calendar with site visit, setup and teardown, crew with a role and pay, a PDF quote, and the event's cash: deposit, installments and expenses, in pesos or in dollars."
+            },
+            {
+              "question": "Does EventOps fit as it is?",
+              "answer": "It fits as it is if you run events, you have crew to assign and you send quotes. If the operation is stock, orders or appointments, that is built to fit."
+            },
+            {
+              "question": "How much does EventOps cost?",
+              "answer": "The plan is ARS 50,000 a month. It is a single plan, with every feature, and it includes one free week. You can leave whenever you want and ask for a copy of your data."
+            },
+            {
+              "question": "Does the quote PDF replace an invoice?",
+              "answer": "The quote, the proforma, the setup sheet and the receipt download as a PDF with your logo, so you can send the proposal and keep a record of the payment. The invoice is issued separately: these documents have no tax validity."
+            }
+          ]
+        },
+        "related": {
+          "title": "Keep reading",
+          "links": [
+            {
+              "label": "Management systems",
+              "href": "/sistemas-de-gestion",
+              "description": "Stock, orders, cash or appointments in a system built around how your business works."
+            },
+            {
+              "label": "EventOps case",
+              "href": "/casos/eventops",
+              "description": "Calendar, crew, quotes and finances for an event company."
+            }
+          ]
+        },
+        "ctaTitle": "Is your event company still in Excel?",
+        "ctaDescription": "Tell us how you organize dates, crew and payments. We reply with scope and price in writing.",
+        "ctaButton": "Tell us your problem"
+      },
+      "cuanto-cuesta-un-sistema-de-gestion-a-medida": {
+        "title": "What a custom management system costs",
+        "metaTitle": "What a custom management system costs a small business",
+        "metaDescription": "What drives the price of a custom management system: modules, users, integrations and moving off Excel. Scope and price agreed in writing.",
+        "excerpt": "What pushes the price of a custom management system, which costs sit outside the build and what to bring to the first conversation.",
+        "answer": "The price of a custom management system depends on the modules and screens, the users and permissions, the integrations, moving the data out of Excel, and the reports. We do not publish a rate. We build the price from the scope of your operation and agree both in writing before we start.",
+        "intro": [
+          "If your business runs on Excel and you are asking for a quote, a figure on its own is not enough. First we need to know what goes into the system and what stays out, and the price comes from that.",
+          "This note covers what drives the price, which costs to look at apart from the build, how it compares with staying on a spreadsheet or buying off-the-shelf software, and what to bring to the first conversation."
+        ],
+        "sections": [
+          {
+            "title": "What drives the price",
+            "paragraphs": [
+              "The price depends on the system. Tidying up inventory is one job. Adding orders, cash, role permissions and a close for the accountant is a much bigger one.",
+              "That is why we do not publish a rate. We write the scope in the proposal and the price follows that scope. We look at the parts together: a short flow with no integrations takes less work than one with permissions, migration and closing reports.",
+              "A distributor that wants an order to reduce stock needs something different from a booking business that wants the team's schedule and the day's takings. These are the parts that move the price the most:"
+            ],
+            "items": [
+              "Modules and screens. Inventory, orders, cash, bookings or clients add screens, states and rules. A short path takes less work than an operation with several stages.",
+              "Users and permissions. With one person the system is simple. When owner, admin, warehouse or branch each see and do different things, there is more to build.",
+              "Integrations. Connecting invoicing, payments, email or an API is work on top of the screens. If the tool lets data in and out, we use that route.",
+              "Migration from Excel. Moving products, clients or movements means unifying names, resolving duplicates and deciding which history to bring. If a spreadsheet still works for you, it can stay out or stay connected.",
+              "Reports. Seeing what is still unpaid, what to restock or how the cash closed is designed around your team's rules."
+            ],
+            "closing": "If the system is large, we split it and start with what hurts most, such as inventory or orders. What goes in now and what waits goes in writing, so the price does not include work we are not doing yet.",
+            "link": {
+              "label": "See management systems",
+              "href": "/sistemas-de-gestion"
+            }
+          },
+          {
+            "title": "Costs worth knowing apart from the build",
+            "paragraphs": [
+              "The build is one part of the quote. Some costs are worth seeing beside it, named, so they do not show up later.",
+              "They go in the proposal only if the system needs them."
+            ],
+            "items": [
+              "Server, domain and accounts. If you already have a server, a domain, the WhatsApp API or an AI model, we use them. If you do not, we manage them and charge the cost plus management.",
+              "Maintenance. It is optional. It covers changes and adjustments once the system is running. Without maintenance, the project costs less.",
+              "Training. It is optional too. If you want your team to learn to use it, we add it. Without training, the project costs less.",
+              "Bugs in the system. If the fault is ours, we fix it, with or without maintenance.",
+              "Changes in an external API. If an API you chose changes and you did not hire support, you pay for that fix. The build does not cover it.",
+              "Your data. It is confidential. We use it to build the system and, if you hire maintenance, to maintain it."
+            ],
+            "closing": "The document separates what the system is, what is optional and which external services we use or manage."
+          },
+          {
+            "title": "Excel, off-the-shelf, or custom",
+            "paragraphs": [
+              "The first conversation usually brings up the same comparison: stay in Excel, adopt off-the-shelf software, or commission a custom system. No option fits every small business. It depends on how specific the operation is.",
+              "The table is qualitative and does not replace a quote. The actual price comes from the scope, in writing."
+            ],
+            "table": {
+              "caption": "Excel, off-the-shelf software and a custom system: upfront cost, ongoing cost, fit to the process and who maintains it",
+              "columns": [
+                "Excel",
+                "Off the shelf",
+                "Custom"
+              ],
+              "rows": [
+                {
+                  "label": "Upfront cost",
+                  "cells": [
+                    "The spreadsheet is already there. It costs the time to build it and to rebuild it when it falls short.",
+                    "You use the product that already exists. The limit shows up when the operation needs something that plan does not include.",
+                    "It is the agreed build. It grows with the modules, the permissions, the integrations and the data to move."
+                  ]
+                },
+                {
+                  "label": "Ongoing cost",
+                  "cells": [
+                    "The spreadsheet license, if there is one, and the time of whoever keeps it up to date.",
+                    "A subscription while you use it. If it falls short, you add another program or go back to Excel.",
+                    "Maintenance is optional. Server, domain or APIs are charged separately when we manage them."
+                  ]
+                },
+                {
+                  "label": "Fit to the process",
+                  "cells": [
+                    "It bends to how you work, until the formulas, the copies and the loose files cannot keep up.",
+                    "The team adapts to the program. What does not fit ends up in a patch or in another tool.",
+                    "We build it around how your team works, with the rules they already use."
+                  ]
+                },
+                {
+                  "label": "Who maintains it",
+                  "cells": [
+                    "Someone on your team. If that person is away, it is hard to work out where each piece of data ended up.",
+                    "Whoever makes the product. You can ask for what the product allows, and a flow it lacks stays out.",
+                    "If you hire maintenance, we keep it going. We still fix our own bugs."
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "title": "How to ask for a quote properly",
+            "paragraphs": [
+              "A closed quote comes from understanding the operation. The clearer you arrive at the first conversation, the less back and forth it takes to close scope and price.",
+              "You do not need a tidy document. It is enough to show how you work today. We listen to the operation, write what is in and what is out, and put the price in that same document, before we start."
+            ],
+            "items": [
+              "A real case. Pick an order, a booking or a stock movement and walk through it from the moment it comes in until it is paid or delivered.",
+              "The spreadsheets. Even if they are messy. That is where columns, states and data entered in more than one place show up.",
+              "Who does what. Who enters data, who approves, who looks at the cash and who should not see costs or margins.",
+              "What it has to connect to. Invoicing, payments, email, WhatsApp or another tool. If you already have the account or the API, say so in the conversation.",
+              "What hurts today. The part that gets stuck, gets lost or gets argued about. If the system is large, that is where we start.",
+              "What stays out. Saying what is not in this stage keeps the price from including work we are not doing yet."
+            ],
+            "closing": "From that we write the document: what we build, what we do not, what we need from you, what the implementation costs and what maintenance costs. We agree it in writing before we start. We do not publish a typical timeline: the time depends on the system and goes in that document.",
+            "link": {
+              "label": "Ask for the quote",
+              "href": "/empecemos"
+            }
+          },
+          {
+            "title": "Signs that custom is the right fit",
+            "paragraphs": [
+              "Off-the-shelf software is enough when the operation fits what that program already does and the team can work that way without a parallel spreadsheet. A custom system makes sense when the way of working has its own steps and Excel and messages hold the gap together.",
+              "An events company ran everything in one Excel file: cash flow, clients and no calendar. They asked us for a quote for a calendar, a client list and cash flow. EventOps came out of that work and covers more than the original request: the event is entered once, and the calendar, the quote, the payments and the expenses come from that. The day-to-day is in the note on organizing an events company.",
+              "Quoting a screen and looking at the whole operation are different jobs, and this case shows it. If your business does something else, we write the scope for that operation."
+            ],
+            "items": [
+              "Your own rules. Discounts, states or exceptions that off-the-shelf software cannot model without patches or another spreadsheet.",
+              "Split data. The same thing is entered in Excel, in chat and in another program, and nobody fully trusts a single list.",
+              "Different permissions. Not everyone on the team should see costs, margins or the cash.",
+              "You already went back to the spreadsheet. You tried off-the-shelf software and the daily work stayed in Excel, because the operation did not fit.",
+              "It has to talk to what you already chose. Invoicing, payments or an API, using your accounts if you already have them."
+            ],
+            "closing": "If the off-the-shelf product covers the day to day and your team uses it without a parallel spreadsheet, there is no need to replace it. In the first conversation we tell you what looks like the better fit, and we write the scope before the price.",
+            "link": {
+              "label": "See the EventOps case",
+              "href": "/casos/eventops"
+            }
+          }
+        ],
+        "checklist": {
+          "title": "Quick checklist",
+          "intro": "Before the first conversation, go through this:",
+          "items": [
+            "Can I walk through an order, a booking or a stock movement from start to finish?",
+            "Do I have the spreadsheets at hand, even if they are messy?",
+            "Do I know who enters data, who approves and who should not see each piece of data?",
+            "Do I know what it has to connect to, and whether those accounts already exist?",
+            "Can I say what goes into this stage and what stays out?",
+            "Does the off-the-shelf program I looked at let me work the way I work today, or does it push me back to Excel?"
+          ],
+          "closing": "If you can answer the first ones, the conversation is enough to write scope and price. If the last one is also yes, it is worth looking at a custom system."
+        },
+        "faq": {
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "question": "Is there a reference price for a custom system?",
+              "answer": "We do not publish a rate. The price depends on the system: modules and screens, users and permissions, integrations, migration from Excel and reports. Scope and price are agreed in writing before we start."
+            },
+            {
+              "question": "Are maintenance and training required?",
+              "answer": "No. Maintenance and training are optional. Without them, the project costs less. If the bug is in the system we built, we fix it anyway."
+            },
+            {
+              "question": "What if I already have a server, a domain or WhatsApp?",
+              "answer": "We use them. If you do not have them, we manage them and charge the cost plus management. The same applies to an AI model when the system needs one."
+            },
+            {
+              "question": "Who pays if an external API changes?",
+              "answer": "If the fault is ours, we fix it. If an API you chose changes and you did not hire support, you pay for that fix."
+            },
+            {
+              "question": "What happens to my business data?",
+              "answer": "It is confidential. We use it to build the system and, if you hire maintenance, to maintain it. In the proposal we write which spreadsheets we migrate and which we do not."
+            }
+          ]
+        },
+        "related": {
+          "title": "Keep reading",
+          "links": [
+            {
+              "label": "Management systems",
+              "href": "/sistemas-de-gestion",
+              "description": "Inventory, orders, cash or bookings in a system built around how your business works."
+            },
+            {
+              "label": "EventOps case",
+              "href": "/casos/eventops",
+              "description": "Calendar, crew, quotes and cash for an events company."
+            },
+            {
+              "label": "How to organize an events company",
+              "href": "/blog/como-organizar-una-empresa-de-eventos",
+              "description": "From a production company's Excel file to the system that brings calendar, crew, quotes and cash together."
+            }
+          ]
+        },
+        "ctaTitle": "Want the price in writing?",
+        "ctaDescription": "Tell us how you work today and what slips between spreadsheets. We reply with scope and price in writing, before we start.",
         "ctaButton": "Tell us your problem"
       }
     }
