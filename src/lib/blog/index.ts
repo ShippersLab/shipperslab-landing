@@ -12,7 +12,7 @@ export const blogPosts = [
     slug: "cuanto-cuesta-un-sistema-de-gestion-a-medida",
     datePublished: "2026-10-26",
     authorId: "juani",
-    published: false,
+    published: true,
   },
   {
     slug: "como-organizar-una-empresa-de-eventos",
