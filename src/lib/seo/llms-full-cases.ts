@@ -1,5 +1,13 @@
 import es from "@/i18n/messages/es.json";
-import { bullets, canonical, heading, joinBlocks, labeled, page } from "@/lib/seo/llms-copy";
+import {
+  bullets,
+  canonical,
+  heading,
+  joinBlocks,
+  labeled,
+  page,
+  renderCopy,
+} from "@/lib/seo/llms-copy";
 import { type ProjectSlug } from "@/lib/projects";
 import { site } from "@/lib/site";
 
@@ -38,7 +46,7 @@ function buildEventops() {
     copy.factsLabel,
     ...copy.facts.map((fact) => labeled(fact.label, fact.value)),
     heading(3, copy.overviewTitle),
-    copy.overview,
+    renderCopy(copy.overview),
     heading(3, copy.approachTitle),
     copy.approach,
     heading(3, copy.flowTitle),

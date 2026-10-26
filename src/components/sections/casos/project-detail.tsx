@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { GalleryMarquee } from "@/components/sections/casos/gallery-marquee";
+import { InlineText } from "@/components/sections/service-page/inline-text";
 import { DiaTextReveal } from "@/components/ui/animation/dia-text-reveal";
 import { Reveal } from "@/components/ui/animation/reveal";
 import { WordReveal } from "@/components/ui/animation/word-reveal";
@@ -87,7 +88,9 @@ export function ProjectDetail() {
         <Reveal className="mt-16 sm:mt-20">
           <div className="grid gap-6 border-t border-border pt-10 lg:grid-cols-[1fr_2fr] lg:gap-16">
             <h2 className="text-2xl text-ink sm:text-3xl">{page.overviewTitle}</h2>
-            <p className="max-w-2xl text-base leading-relaxed text-muted">{page.overview}</p>
+            <p className="max-w-2xl text-base leading-relaxed text-muted">
+              <InlineText text={page.overview} />
+            </p>
           </div>
         </Reveal>
 
