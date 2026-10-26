@@ -7,11 +7,40 @@
   "site": {
     "name": "ShippersLab"
   },
+  "seo": {
+    "home": {
+      "title": "ShippersLab | Custom software for small businesses",
+      "description": "Management systems, integrations, WhatsApp bots and websites for small businesses and shops. Free 30-minute call.",
+      "keywords": [
+        "custom software",
+        "custom software for small business",
+        "custom management system",
+        "inventory system",
+        "appointment booking system",
+        "AI bots for business",
+        "AI agents",
+        "integrations",
+        "web development for shops",
+        "catalog with WhatsApp ordering",
+        "software development"
+      ]
+    },
+    "empecemos": {
+      "title": "Get a custom software quote for your business",
+      "description": "Tell us what eats your time or what you want to organize in your business. We reply with scope and price in writing, after a free 30-minute call."
+    },
+    "eventos": {
+      "title": "Events for builders",
+      "description": "Workshops, build nights, demo nights and hackathons for people who build, starting in Santa Fe. No dates yet: write to eventos@shipperslab.tech."
+    },
+    "notFound": {
+      "title": "Page not found"
+    }
+  },
   "nav": {
     "services": "Services",
-    "about": "About",
     "events": "Events",
-    "contact": "Contact",
+    "contact": "Let's talk",
     "skip": "Skip to content",
     "casos": "Work",
     "menuOpen": "Open menu",
@@ -21,15 +50,15 @@
   },
   "hero": {
     "title": "Custom software for your business.",
-    "description": "Management systems, websites, AI bots and integrations for small businesses and shops. Built around how you work, connected to the tools you use.",
-    "primaryCta": "Tell us your problem",
-    "secondaryCta": "See services",
+    "description": "Management systems, websites, AI bots and integrations for small businesses and shops.",
+    "primaryCta": "Message us on WhatsApp",
+    "secondaryCta": "See our work",
+    "whatsappMessage": "Hi, I want to tell you about my business",
     "imageAlt": "Illustration of the Buenos Aires Obelisk on a wide avenue, in orange tones"
   },
   "team": {
-    "title": "Engineers and designers from Argentina.",
-    "description": "We are a small team. We come from large companies and from products built for clients abroad, and we work in Spanish and English.",
-    "foundersTitle": "Who is behind it",
+    "title": "Who we are",
+    "description": "We are a team of engineers and designers from Argentina, with experience at large companies.",
     "members": {
       "juani": {
         "role": "Co-founder · Engineering and product",
@@ -40,79 +69,61 @@
         "bio": "He designs the screens and builds the system behind them. A software and AI engineer whose portfolio includes online stores, management dashboards and AI agents."
       }
     },
+    "employersLine": "Plus a team of engineers who have worked at companies like:",
     "profileLink": "View profile",
     "profileLabel": "View {name}'s profile",
-    "coverAlt": "Cover photo of {name}",
-    "ctaTitle": "Want to know if this makes sense for your business? Write to us and we will take a look.",
-    "ctaButton": "Write to hola@shipperslab.tech"
+    "coverAlt": "Cover photo of {name}"
   },
   "services": {
     "title": "What we do.",
-    "description": "Every system is built around your business, your problems and your goals.",
+    "description": "Systems, websites, bots and integrations so your business sells and answers without friction.",
     "eventopsPreviewAlt": "Screenshot of the EventOps homepage",
     "items": [
       {
         "id": "systems",
-        "title": "Custom management\nsystems",
-        "description": "Inventory, orders, sales or bookings in one system, built around how your business works. That is how we built {EventOps} for event companies.",
-        "audience": "For small businesses with inventory, orders or bookings"
+        "title": "Custom management systems",
+        "description": "Leave the spreadsheet and run inventory, orders and bookings in one place. That is how we built {EventOps}, shaped around how each business works.",
+        "includes": ["Inventory and orders", "A dashboard with your numbers"],
+        "audience": "Businesses with stock and orders"
       },
       {
         "id": "presence",
-        "title": "Websites, booking\nand catalogs",
-        "description": "A website for your business, online booking or a catalog with WhatsApp ordering. Customers find you, see what you offer and get in touch.",
-        "audience": "For shops and small businesses"
+        "title": "Websites, booking and catalogs",
+        "description": "Help customers find you, book and order without friction. We build your website, online booking or a catalog with WhatsApp ordering.",
+        "includes": ["Online booking", "Catalog with WhatsApp orders"],
+        "audience": "Shops and small businesses"
       },
       {
         "id": "bots",
-        "title": "AI bots\nand agents",
-        "description": "A bot or agent that answers around the clock on WhatsApp, your website or wherever your customers are: it takes orders, books appointments or answers questions. When something needs a person, it hands it to you.",
-        "audience": "For businesses that get a lot of questions"
+        "title": "Bots and AI agents",
+        "description": "Answer around the clock without living on your phone. A WhatsApp bot takes orders, books appointments and flags what needs a person.",
+        "includes": ["Automatic orders and bookings", "Handoff to a person"],
+        "audience": "Businesses with lots of questions"
       },
       {
         "id": "integrations",
-        "title": "Integrations with\nyour current tools",
-        "description": "We connect WhatsApp, your spreadsheets and invoicing to each other. Enter something once and it shows up where it should.",
-        "audience": "For teams juggling several tools"
+        "title": "Integrations with what you already use",
+        "description": "Enter something once and it shows up where it should, with no tool switching. We connect WhatsApp, spreadsheets and invoicing.",
+        "includes": ["WhatsApp and sheets connected", "Invoicing without double entry"],
+        "audience": "Teams juggling several tools"
       }
     ],
-    "casesCta": "See projects"
-  },
-  "process": {
-    "title": "What happens after you write.",
-    "steps": [
-      {
-        "title": "A call about your business",
-        "description": "You tell us how things work today and where they get stuck. We figure out together what to fix first."
-      },
-      {
-        "title": "Scope in writing",
-        "description": "What's in, what's out, what it costs and when it's ready. All clear before we start."
-      },
-      {
-        "title": "Progress every week",
-        "description": "Every week you see something working and try it with your team."
-      },
-      {
-        "title": "Your team starts using it",
-        "description": "We roll it out with your team and adjust it based on real use."
-      }
-    ],
-    "link": "See how we work"
+    "casesCta": "See projects",
+    "moreCta": "Learn more"
   },
   "faq": {
     "label": "FAQ",
     "title": "What people ask before writing to us.",
-    "description": "Answers to what we get asked the most. Don't see yours? Write to us at",
+    "description": "What we get asked the most, in a few lines.",
     "help": {
       "title": "Still have a question?",
       "description": "Write to us and someone from the team will reply.",
-      "cta": "Write to us"
+      "cta": "Book a call"
     },
     "items": [
       {
         "question": "How much does it cost?",
-        "answer": "It depends on what needs solving. After the first call we send you a price in writing, before any work starts. If it makes sense, we start with a small piece and build from there."
+        "answer": "It depends on what needs solving. After the first call we send you a price in writing, before any work starts."
       },
       {
         "question": "How long does it take?",
@@ -120,7 +131,7 @@
       },
       {
         "question": "What happens to the tools we already use?",
-        "answer": "We start from them. If your spreadsheets, invoicing or WhatsApp work for you, we connect them instead of replacing them. If data has to move to a new system, that goes into the proposal."
+        "answer": "We start from them. If your spreadsheets, invoicing or WhatsApp work for you, we connect them instead of replacing them."
       },
       {
         "question": "Do we have to replace our whole system?",
@@ -132,9 +143,22 @@
       }
     ]
   },
+  "cta": {
+    "title": "Take the leap.",
+    "description": "Leave the spreadsheets and the messy WhatsApp behind. We build the system your business needs.",
+    "button": "Let's talk"
+  },
   "contact": {
-    "title": "Let's start with your problem.",
-    "description": "Tell us what you want to fix and we'll get back to you to set up a call.",
+    "title": "Tell us what you need.",
+    "description": "The first 30-minute call is free.",
+    "links": {
+      "copy": "Copy",
+      "copied": "Copied",
+      "copyLabel": "Copy email",
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram",
+      "call": "Book a call"
+    },
     "form": {
       "name": "Name",
       "namePlaceholder": "Your name",
@@ -153,7 +177,6 @@
       "whatsappMessage": "Hi, I'd like to tell you about a problem in my business.",
       "whatsappGreeting": "Hi, I'm {name}.",
       "whatsappGreetingWithCompany": "Hi, I'm {name}, from {company}.",
-      "bookCall": "Book a call",
       "alternative": "Or write to us directly at"
     }
   },
@@ -191,7 +214,8 @@
       "back": "Back",
       "next": "Next",
       "submit": "Send",
-      "sending": "Sending..."
+      "sending": "Sending...",
+      "call": "Book a call"
     },
     "errors": {
       "nameRequired": "Tell us your name.",
@@ -219,14 +243,8 @@
     "stepAnnouncement": "Step {step} of {total}: {title}"
   },
   "footer": {
-    "illustrationAlt": "Illustration of the Puente Colgante suspension bridge in Santa Fe, Argentina, in orange tones",
     "tagline": "Systems, websites, bots and integrations for small businesses and shops. A small team from Argentina.",
     "legal": "Made in Argentina.",
-    "social": {
-      "instagram": "ShippersLab on Instagram (opens in a new tab)",
-      "x": "ShippersLab on X (opens in a new tab)",
-      "mail": "Email us at {email}"
-    },
     "servicesTitle": "Services",
     "exploreTitle": "Explore",
     "links": {
@@ -244,21 +262,45 @@
   "events": {
     "title": "Events for the whole community",
     "description": "Networking, project demos, talks and hackathons, open to everyone. Starting in Santa Fe.",
-    "formats": ["Networking", "Demo nights", "Talks", "Hackathons", "Coffee"],
+    "formats": [
+      {
+        "title": "Workshops",
+        "description": "Hands-on sessions where we build something step by step, led by local people who have done it."
+      },
+      {
+        "title": "Build nights",
+        "description": "One evening, shared tables, everyone on their own thing. Show up with something half-done and leave with it closer to shipping."
+      },
+      {
+        "title": "Demo nights",
+        "description": "Evenings to show what you are building, your side projects, and get feedback from people who build too."
+      },
+      {
+        "title": "Hackathons",
+        "description": "A weekend to form teams, build something from scratch and show it on Sunday."
+      },
+      {
+        "title": "Coffee and networking",
+        "description": "Time to chat with people who build things, no agenda and no tie."
+      }
+    ],
+    "formatsTitle": "What we'd like to run.",
+    "formatsDescription": "There are no dates yet. These are the event ideas we want to organize.",
+    "formatSoon": "Coming soon",
     "sponsorTitle": "We're looking for partners",
     "sponsorDescription": "We want to run these events with companies and people who want to get involved. You don't need to be a big brand. Here are a few ways to help, and if you think of another one, it counts too.",
     "sponsorWays": [
       {
         "title": "A venue",
-        "description": "An office, a coworking space or any place where we can get together."
+        "description": "An office, a coworking space or a place to get together. If someone is traveling, a place to stay helps too."
       },
       {
-        "title": "Credits and tools",
-        "description": "API credits or access to your tools so people can try them."
+        "title": "Vendors",
+        "description": "Coffee, food, merch or anything you'd like to offer at the event."
       },
       {
-        "title": "Prizes",
-        "description": "Something to recognize the best projects or add to a raffle."
+        "title": "Sponsors",
+        "description": "Credits, tools or prizes for the projects and the people taking part."
       },
       {
         "title": "Help organizing",
@@ -303,16 +345,33 @@
     "cta": "Back to home"
   },
   "casos": {
-    "metaTitle": "Custom software case studies: EventOps",
-    "metaDescription": "ShippersLab custom software case studies: EventOps, our management system in production for sound, lighting and event companies.",
+    "metaTitle": "Software case studies: EventOps and Estacionar",
+    "metaDescription": "ShippersLab case studies: EventOps, our management system in production for event companies, and Estacionar, the branding of a parking marketplace.",
     "title": "Latest projects.",
     "description": "A selection of what we have built and have in production.",
+    "soon": {
+      "title": "Your case goes here.",
+      "description": "We're adding the projects we build with our clients. The next one could be yours."
+    },
     "eventops": {
+      "doneTitle": "What we did.",
+      "done": [
+        "Product and interface design",
+        "Development of the full web system",
+        "PDF quotes and CSV export",
+        "Per-company users, with email invitations",
+        "Ongoing improvements with the people who use it"
+      ],
+      "whyTitle": "Why we built it.",
+      "why": "Event companies coordinate dates, staff and payments with spreadsheets and messages. We built a system around how they actually work, to offer as our own product.",
+      "customersTitle": "We improve it with the people who use it.",
+      "customers": "EventOps is in production and event companies use it. We talk to them often, and every improvement comes from what they need day to day.",
+      "category": "Management systems · Event companies",
       "heroAlt": "Screenshot of the EventOps home page",
       "title": "EventOps",
       "summary": "Calendar, staff and finances for your events company.",
       "tags": ["Event management", "B2B"],
-      "metaTitle": "EventOps: management system for event companies",
+      "metaTitle": "EventOps: event company management system",
       "metaDescription": "EventOps brings the calendar, clients, staff and finances of an event company into a single system. A ShippersLab own product, in production.",
       "visitLabel": "Visit EventOps",
       "featuresTitle": "What it includes.",
@@ -352,7 +411,7 @@
         "EventOps finances dashboard"
       ],
       "eyebrow": "Own product",
-      "lead": "The calendar, clients, staff and finances of your event company in a single system. A ShippersLab own product, in production.",
+      "lead": "The calendar, clients, staff and finances of your event company in one place. A ShippersLab own product, in production and in use.",
       "backLabel": "All projects",
       "factsLabel": "Project details",
       "facts": [
@@ -366,49 +425,112 @@
         },
         {
           "label": "Built for",
-          "value": "Sound, lighting and event companies"
+          "value": "Event companies"
         },
         {
           "label": "Service",
-          "value": "Custom management system"
+          "value": "Management system"
         }
       ],
       "overviewTitle": "The problem.",
-      "overview": "An event company handles dates, teams, clients and payments all at once. When that information is scattered across spreadsheets and messages, it is easy for two events to overlap, for staff to be missing, or for nobody to know exactly how much money came in and how much is still owed.",
+      "overview": "An event company handles dates, teams, clients and payments at the same time. With the information scattered across spreadsheets and messages, two events overlap, staff goes missing and nobody knows how much came in and how much is still owed.",
       "approachTitle": "How we solve it.",
-      "approach": "EventOps brings the whole operation into a single system. Each event has its client, its team and its money movements, and the calendar shows at a glance what needs to happen and when. We designed it around how an event company works, so everyone always sees the same information.",
+      "approach": "EventOps puts the whole operation in one system. Each event has its client, its team and its money, and the calendar shows at a glance what needs to happen and when. Everyone on the team always sees the same information.",
       "flowTitle": "One event, end to end.",
       "flowDescription": "Each event is entered once and everything else comes from it. Nothing has to be copied into another spreadsheet.",
       "flow": [
         {
           "title": "Create the event",
-          "body": "The event is created with its client and related dates are added: site visit, setup, sound check and teardown. They all show up in the calendar and the system warns when two dates overlap."
+          "body": "Create it with its client and dates: site visit, setup, soundcheck and teardown. The system warns you if two overlap."
         },
         {
           "title": "Build the quote",
-          "body": "Services such as sound, lighting or an LED screen are picked from the list and the total is calculated automatically. The quote downloads as a PDF with the company logo."
+          "body": "Pick the services and the total is calculated for you. It exports as a PDF with your logo."
         },
         {
           "title": "Assign the staff",
-          "body": "For each date, the team members who will work are added with their role, showing who is free and how many are still missing."
+          "body": "Add team members to each date with their role and see who is free."
         },
         {
           "title": "Collect and track",
-          "body": "The deposit, installments and event expenses are recorded, in pesos or dollars. At month end, the summary shows what came in, what went out and what is still pending."
+          "body": "Log deposits, installments and expenses in pesos or dollars. The monthly summary shows what is still owed."
         }
       ]
     },
+    "estacionar": {
+      "ideaTitle": "The idea.",
+      "idea": "Estacionar started in-house: we came up with it. A marketplace, think Airbnb for parking, that connects people with an unused garage or space to people who need somewhere to leave the car. It is a big idea and we took it seriously: we built the brand, the app and the landing page ourselves, end to end.",
+      "howTitle": "How it was going to work.",
+      "howIntro": "Three sides on one platform.",
+      "how": [
+        {
+          "title": "Drivers",
+          "body": "Search for parking by city and book the spot. It also helps plan a trip: you can book a space while you are on vacation."
+        },
+        {
+          "title": "Garage owners",
+          "body": "List a garage or a space they do not use and rent it out. A parked-empty space starts earning."
+        },
+        {
+          "title": "Parking lots",
+          "body": "Our plan was to talk to parking lots in different cities so they could load their profile and their prices on the platform."
+        }
+      ],
+      "brandTitle": "The brand.",
+      "brand": "We thought the colors in terms of traffic: road signs, roads and parking. That is why we chose yellow and black, a palette you can spot from afar. The logo is a P for parking combined with a map pin.",
+      "stageTitle": "Where it stands.",
+      "stage": "Estacionar is not published yet. The brand is defined, the social media is set up, and the web app and the landing page are built. We keep developing it as our own product.",
+      "factsLabel": "Project facts",
+      "facts": [
+        {
+          "label": "Project",
+          "value": "Own product"
+        },
+        {
+          "label": "Status",
+          "value": "In development"
+        },
+        {
+          "label": "Service",
+          "value": "Brand, web app and landing page"
+        },
+        {
+          "label": "Type",
+          "value": "Marketplace"
+        }
+      ],
+      "whyTitle": "The problem.",
+      "why": "There are empty garages, and there are drivers circling the block with nowhere to park. Both exist in the same city and rarely find each other. Estacionar puts them in one place.",
+      "heroAlt": "Estacionar logo, a map pin spiral, on a yellow background",
+      "title": "Estacionar",
+      "category": "Branding · Parking marketplace",
+      "summary": "The identity of a marketplace to rent and find parking spaces.",
+      "tags": ["Branding", "Identity", "Web app", "Landing page"],
+      "metaTitle": "Estacionar: the parking space marketplace",
+      "metaDescription": "Estacionar connects people with an unused garage to drivers looking for parking. A ShippersLab own product: brand, app and landing page. Not published yet.",
+      "eyebrow": "Own product",
+      "lead": "A marketplace to rent out the garage you do not use or find parking in any city, even on vacation. Our idea, designed and built by us.",
+      "backLabel": "All work",
+      "status": "In development. Not published yet.",
+      "images": [
+        {
+          "alt": "Estacionar logo on a yellow background"
+        },
+        {
+          "alt": "Estacionar logo and wordmark on a dark grid"
+        },
+        {
+          "alt": "Estacionar logo construction grid"
+        }
+      ],
+      "doneTitle": "What we built.",
+      "done": ["Branding and visual identity", "Social media", "Web app", "Landing page"]
+    },
     "ctaTitle": "Want to see if this fits your business?",
     "ctaDescription": "Tell us what takes your time or what you want to organize. We reply with scope and price in writing.",
-    "ctaButton": "Tell us your problem",
-    "soon": {
-      "label": "Coming soon",
-      "title": "More coming soon.",
-      "description": "We are putting together the next projects to show here."
-    }
+    "ctaButton": "Tell us your problem"
   },
   "servicePages": {
-    "eyebrow": "Service",
     "relatedTitle": "Other services.",
     "sistemas-de-gestion": {
       "navLabel": "Management systems",
@@ -554,7 +676,7 @@
     "webs-y-catalogos": {
       "navLabel": "Websites and catalogs",
       "metaTitle": "Websites, booking and catalogs for shops",
-      "metaDescription": "A website for your business, online booking or a catalog with WhatsApp ordering. Customers find you and get in touch.",
+      "metaDescription": "A website for your shop, online booking or a catalog with WhatsApp ordering. Customers find you and get in touch with you. Ask for a quote today.",
       "h1": "Websites, booking and catalogs.",
       "lead": "A clear website for your business, online booking or a catalog with WhatsApp ordering. Customers find you, see what you offer and get in touch.",
       "covers": {
@@ -688,8 +810,8 @@
     },
     "bots-con-ia": {
       "navLabel": "AI bots",
-      "metaTitle": "AI bots and agents for businesses",
-      "metaDescription": "A bot or agent that answers around the clock on WhatsApp or your site: it takes orders, books appointments or answers questions. When a person is needed, it hands it to you.",
+      "metaTitle": "WhatsApp bots and AI agents for businesses",
+      "metaDescription": "A bot or agent that answers 24/7 on WhatsApp or your site: it takes orders, books appointments and answers questions. When a person is needed, it hands over.",
       "h1": "AI bots and agents.",
       "lead": "A bot or agent that answers around the clock on WhatsApp, your website or wherever your customers are. It takes orders, books appointments or answers questions. When something needs a person, it hands it to you.",
       "covers": {
@@ -829,7 +951,7 @@
     },
     "integraciones": {
       "navLabel": "Integrations",
-      "metaTitle": "Integrations: Mercado Pago, Tiendanube, ARCA and WhatsApp",
+      "metaTitle": "Integrations: Mercado Pago, ARCA and WhatsApp",
       "metaDescription": "Custom integrations with Mercado Pago, Tiendanube, ARCA invoicing, AI WhatsApp bots and Google Sheets. Enter data once. Scope in writing.",
       "h1": "Custom integrations with your current tools.",
       "lead": "We connect Mercado Pago, Tiendanube, ARCA invoicing, WhatsApp and your spreadsheets to each other. Enter something once and it shows up where it should, without tearing down what already works.",
@@ -965,9 +1087,8 @@
   },
   "comoTrabajamos": {
     "navLabel": "How we work",
-    "metaTitle": "Custom software development process",
+    "metaTitle": "How we work: custom software process",
     "metaDescription": "How we work at ShippersLab: a free 30-minute call, a written scope document, weekly deliveries and clear pricing for implementation and maintenance.",
-    "eyebrow": "Process",
     "h1": "How we work, step by step.",
     "lead": "This is the process we follow on every project, so you know from day one what working with us looks like, no fine print.",
     "overviewLabel": "Process steps",
@@ -1072,24 +1193,24 @@
   },
   "blog": {
     "navLabel": "Blog",
-    "metaTitle": "Software and website blog for small businesses in Argentina",
-    "metaDescription": "Practical guides for small businesses and shops in Argentina about websites, management systems, integrations and automation.",
-    "eyebrow": "Blog",
+    "metaTitle": "Blog: software and web for small businesses",
+    "metaDescription": "Practical guides for small businesses and shops about websites, management systems, integrations and automation. No jargon.",
     "title": "Software and website blog for small businesses.",
-    "description": "Practical guides for small businesses and shops in Argentina about websites, management systems, integrations and automation. They help you decide with a clearer picture before commissioning a build.",
+    "description": "Practical guides for small businesses and shops on websites, systems, integrations and automation.",
     "readMore": "Read article",
     "publishedOn": "Published on",
     "answerLabel": "Short answer",
     "draft": "Draft",
     "empty": "No articles published yet.",
+    "ctaTitle": "Have a similar problem? Let's talk.",
+    "ctaDescription": "Tell us what eats your time or what you want to organize. We set up a free 30-minute call and reply with scope and price in writing.",
+    "ctaButton": "Tell us your problem",
     "home": "Home",
-    "toc": "In this article",
     "readingTime": "{minutes} min read",
-    "breadcrumb": "Breadcrumb",
     "posts": {
       "como-saber-si-tu-negocio-necesita-pagina-web": {
         "title": "Does your business need a website? How to know if it is worth it",
-        "metaTitle": "Does your business need a website? How to know if it is worth it",
+        "metaTitle": "Does your business need a website? How to tell",
         "metaDescription": "Signs a website makes sense for your small business or shop, when it does not yet, and how to measure whether yours works. With a checklist and FAQ.",
         "excerpt": "Concrete signs to decide whether a website adds value to your business, when it is better to wait and how to measure whether yours is working.",
         "answer": "A website is worth it if people look for you on Google, if you answer the same questions all day on WhatsApp or Instagram, if you have products or services to show or if your customers need to trust you before buying. It can wait if all your customers come through referrals and you can barely keep up, if you are still testing what to sell or if you will not be able to keep the information up to date. In the meantime, a complete Google Business Profile and a WhatsApp Business catalog may be enough.",

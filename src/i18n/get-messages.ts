@@ -1,5 +1,4 @@
 import type { Locale } from "@/i18n/config";
-
 import en from "@/i18n/messages/en.json";
 import es from "@/i18n/messages/es.json";
 
