@@ -16,7 +16,7 @@ import {
   labeled,
   page,
   renderCopy,
-} from "@/lib/seo/llms-copy";
+} from "@/lib/seo/llms/copy";
 
 type BlogPost = (typeof es.blog.posts)[keyof typeof es.blog.posts];
 type BlogSection = BlogPost["sections"][number];

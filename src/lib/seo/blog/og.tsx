@@ -1,7 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 
-import { BLOG_OG_HEIGHT, BLOG_OG_WIDTH } from "@/lib/seo/blog-og-path";
+import { BLOG_OG_HEIGHT, BLOG_OG_WIDTH } from "@/lib/seo/blog/og-path";
 
 const LOGO_WIDTH = 110;
 const LOGO_HEIGHT = Math.round((LOGO_WIDTH * 179) / 325);
@@ -17,8 +17,8 @@ function toDataUri(mime: string, data: Buffer) {
 }
 
 export async function loadBlogOgAssets() {
-  const [pixel, medium, regular, logo, background] = await Promise.all([
-    readFile(join(process.cwd(), "src/assets/fonts/GeistPixel-Square.ttf")),
+  const [heading, medium, regular, logo, background] = await Promise.all([
+    readFile(join(process.cwd(), "src/assets/fonts/HankenGrotesk-Medium.ttf")),
     readFile(join(process.cwd(), "src/assets/fonts/Geist-Medium.ttf")),
     readFile(join(process.cwd(), "src/assets/fonts/Geist-Regular.ttf")),
     readFile(join(process.cwd(), "public/logo/white.svg")),
@@ -31,7 +31,7 @@ export async function loadBlogOgAssets() {
 
   return {
     fonts: [
-      { name: "Geist Pixel", data: pixel, style: "normal" as const, weight: 500 as const },
+      { name: "Hanken Grotesk", data: heading, style: "normal" as const, weight: 500 as const },
       { name: "Geist", data: medium, style: "normal" as const, weight: 500 as const },
       { name: "Geist", data: regular, style: "normal" as const, weight: 400 as const },
     ],
@@ -68,11 +68,11 @@ export function BlogOgCard({ title, logoSrc, backgroundSrc }: BlogOgCardProps) {
       <div
         style={{
           display: "flex",
-          fontFamily: "Geist Pixel",
+          fontFamily: "Hanken Grotesk",
           fontSize: 64,
           fontWeight: 500,
           lineHeight: 1.05,
-          letterSpacing: "-0.04em",
+          letterSpacing: "-0.045em",
           width: 1000,
         }}
       >

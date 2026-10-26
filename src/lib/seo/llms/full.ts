@@ -1,12 +1,13 @@
 import es from "@/i18n/messages/es.json";
 import { getPublishedBlogPosts } from "@/lib/blog";
-import { blogCopy, buildBlogPost } from "@/lib/seo/llms-full-blog";
-import { buildCasos, buildProject } from "@/lib/seo/llms-full-cases";
-import { buildHome, buildIdentity } from "@/lib/seo/llms-full-home";
-import { buildComoTrabajamos, buildServicePage } from "@/lib/seo/llms-full-services";
-import { assertSourceCopy, joinBlocks } from "@/lib/seo/llms-copy";
-import { organizationIdentity } from "@/lib/seo/organization";
 import { projectRoutes } from "@/lib/projects";
+import { blogCopy, buildBlogPost } from "@/lib/seo/llms/blog";
+import { buildCasos, buildProject } from "@/lib/seo/llms/cases";
+import { assertSourceCopy, joinBlocks } from "@/lib/seo/llms/copy";
+import { buildHome, buildIdentity } from "@/lib/seo/llms/home";
+import { buildEventos } from "@/lib/seo/llms/events";
+import { buildComoTrabajamos, buildServicePage } from "@/lib/seo/llms/services";
+import { organizationIdentity, organizationSummary } from "@/lib/seo/shared/organization";
 import { serviceRoutes, type ServiceSlug } from "@/lib/services";
 
 const SERVICE_PAGE_ORDER = [
@@ -32,24 +33,27 @@ export function buildLlmsFullTxt() {
   const published = getPublishedBlogPosts().filter((post) => post.published);
   const document = joinBlocks([
     buildIdentity(),
+    organizationSummary,
+    `Versión en inglés: ${organizationIdentity.url}/en (mismas páginas bajo ${organizationIdentity.url}/en/...)`,
     buildHome(),
     ...SERVICE_PAGE_ORDER.map((slug) => buildServicePage(slug)),
     buildComoTrabajamos(),
     buildCasos(),
     ...projectRoutes.map((route) => buildProject(route.slug)),
+    buildEventos(),
     ...published.map((post) => buildBlogPost(post.slug)),
   ]);
 
   assertSourceCopy(organizationIdentity, document);
   assertSourceCopy(es.hero, document);
   assertSourceCopy(es.services, document);
-  assertSourceCopy(es.process, document);
   assertSourceCopy(es.team, document);
   assertSourceCopy(es.faq, document);
   assertSourceCopy(es.contact, document);
   assertSourceCopy(es.servicePages, document);
   assertSourceCopy(es.comoTrabajamos, document);
   assertSourceCopy(es.casos, document);
+  assertSourceCopy(es.events, document);
   for (const post of published) {
     assertSourceCopy(blogCopy(post.slug), document);
   }

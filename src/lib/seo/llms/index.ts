@@ -1,20 +1,18 @@
+import { buildWhatsAppUrl } from "@/lib/contact/message";
 import es from "@/i18n/messages/es.json";
 import { getPublishedBlogPosts } from "@/lib/blog";
-import { plainText, singleLine } from "@/lib/seo/text";
+import { organizationSummary } from "@/lib/seo/shared/organization";
+import { plainText, singleLine } from "@/lib/seo/shared/text";
 import { getServiceHref, serviceRoutes } from "@/lib/services";
 import { site, team } from "@/lib/site";
 
 const SUMMARY =
-  "ShippersLab es un estudio de desarrollo de software de Argentina. Un equipo chico de ingenieros y diseñadores que diseña y construye software a medida para pymes, empresas, comercios y emprendedores. Lo que necesiten, lo podemos desarrollar. Alcance y precio por escrito antes de arrancar.";
-
-const SCOPE =
-  "Construimos cualquier producto digital que un negocio necesite: sistemas de gestión, integraciones, automatizaciones, bots e IA aplicada, apps web y mobile, webs y productos completos, de la idea al lanzamiento o sobre algo que ya existe. Si se puede construir con software, lo podemos resolver.";
+  "ShippersLab es un estudio de software de Santa Fe, Argentina. Un equipo chico de ingenieros y diseñadores que construye sistemas de gestión a medida, integraciones, bots de WhatsApp con IA y webs para pymes y comercios. Alcance y precio por escrito antes de arrancar.";
 
 const AUDIENCES = [
   "Pymes que hoy se manejan con Excel, WhatsApp, papel o sistemas viejos.",
-  "Empresas que necesitan un sistema, una integración o más manos en su equipo de producto.",
-  "Comercios que necesitan vender, recibir pedidos o turnos online.",
-  "Emprendedores que quieren lanzar su producto.",
+  "Empresas de servicios que coordinan operaciones, como las empresas de eventos para las que nació EventOps.",
+  "Comercios y emprendedores que necesitan que los encuentren, reserven o pidan online.",
 ];
 
 const EXPERIENCE =
@@ -42,9 +40,7 @@ function link(name: string, url: string, note?: string) {
 }
 
 export function buildLlmsTxt() {
-  const steps = es.process.steps.map(
-    (step, index) => `${index + 1}. ${step.title}: ${step.description}`,
-  );
+  const whatsappUrl = buildWhatsAppUrl(site.whatsappNumber, es.contact.form.whatsappMessage);
   const faq = es.faq.items.map((item) => `- ${item.question} ${item.answer}`);
   const founders = team.map((member) => {
     const links = member.links.map((link) => `[${link.network}](${link.url})`).join(", ");
@@ -66,10 +62,9 @@ export function buildLlmsTxt() {
       `${site.url}/llms-full.txt`,
       "texto completo en español de las páginas públicas y de los artículos publicados",
     ),
-    SCOPE,
+    `Versión en inglés: ${site.url}/en (mismas páginas bajo ${site.url}/en/...)`,
+    organizationSummary,
     `Para quién:\n\n${bullets(AUDIENCES)}`,
-    `Cómo trabajamos:\n\n${steps.join("\n")}`,
-    `Más detalle: ${link(es.comoTrabajamos.navLabel, `${site.url}/como-trabajamos`)}`,
     `Experiencia: ${EXPERIENCE}`,
     `Fundadores:\n\n${founders.join("\n")}`,
     `Preguntas frecuentes:\n\n${faq.join("\n")}`,
@@ -100,6 +95,7 @@ export function buildLlmsTxt() {
     `## Contacto\n\n${[
       link("Contanos tu problema", `${site.url}/empecemos`, "formulario para empezar un proyecto"),
       link("Email", `mailto:${site.emails.contact}`, site.emails.contact),
+      ...(whatsappUrl ? [link("WhatsApp", whatsappUrl, "escribinos directo")] : []),
       link("Agendar una llamada", site.calUrl),
     ].join("\n")}`,
     `## Optional\n\n${[
@@ -111,9 +107,13 @@ export function buildLlmsTxt() {
       link(
         "Casos y experiencia",
         `${site.url}/casos`,
-        "proyectos publicados: EventOps en producción",
+        "proyectos propios: EventOps en producción y Estacionar, aún sin publicar",
       ),
-      link("Eventos", `${site.url}/eventos`, "build nights, meetups y hackathons que organizamos"),
+      link(
+        "Eventos",
+        `${site.url}/eventos`,
+        "workshops, build nights, demo nights y hackatones que queremos organizar, empezando en Santa Fe. Todavía sin fechas",
+      ),
       link("X", site.social.x),
       link("Instagram", site.social.instagram),
     ].join("\n")}`,

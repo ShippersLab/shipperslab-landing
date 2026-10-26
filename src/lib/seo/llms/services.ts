@@ -9,7 +9,7 @@ import {
   numbered,
   page,
   renderCopy,
-} from "@/lib/seo/llms-copy";
+} from "@/lib/seo/llms/copy";
 import { serviceRoutes, type ServiceSlug } from "@/lib/services";
 
 type ServicePage = (typeof es.servicePages)[ServiceSlug];
@@ -76,7 +76,6 @@ export function buildServicePage(slug: ServiceSlug) {
     servicePage.navLabel,
     servicePage.metaTitle,
     servicePage.metaDescription,
-    es.servicePages.eyebrow,
     heading(3, servicePage.h1),
     renderCopy(servicePage.lead),
     buildServiceExtras(servicePage),
@@ -137,7 +136,6 @@ export function buildComoTrabajamos() {
     copy.navLabel,
     copy.metaTitle,
     copy.metaDescription,
-    copy.eyebrow,
     heading(3, copy.h1),
     copy.lead,
     copy.overviewLabel,

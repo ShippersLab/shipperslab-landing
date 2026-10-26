@@ -1,4 +1,4 @@
-import { singleLine } from "@/lib/seo/text";
+import { singleLine } from "@/lib/seo/shared/text";
 import { site } from "@/lib/site";
 
 const MIN_NEEDLE = 20;

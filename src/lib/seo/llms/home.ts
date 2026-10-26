@@ -1,15 +1,7 @@
 import es from "@/i18n/messages/es.json";
-import {
-  bullets,
-  canonical,
-  heading,
-  joinBlocks,
-  labeled,
-  numbered,
-  page,
-  renderCopy,
-} from "@/lib/seo/llms-copy";
-import { organizationIdentity } from "@/lib/seo/organization";
+import { buildWhatsAppUrl } from "@/lib/contact/message";
+import { bullets, canonical, heading, joinBlocks, page, renderCopy } from "@/lib/seo/llms/copy";
+import { organizationIdentity } from "@/lib/seo/shared/organization";
 import { getServiceHref } from "@/lib/services";
 import { site, team } from "@/lib/site";
 
@@ -23,6 +15,7 @@ export function buildIdentity() {
     `url: ${organizationIdentity.url}`,
     `email: ${organizationIdentity.email}`,
     `areaServed: ${organizationIdentity.areaServed}`,
+    `region: ${organizationIdentity.region}`,
     `addressCountry: ${organizationIdentity.addressCountry}`,
     `contactType: ${organizationIdentity.contactType}`,
     `logo: ${organizationIdentity.logo}`,
@@ -51,6 +44,7 @@ function buildHomeServices() {
       heading(4, `[${service.title}](${canonical(href)})`),
       renderCopy(service.description),
       preview,
+      bullets(service.includes),
       service.audience,
     ]);
   });
@@ -82,10 +76,9 @@ function buildHomeTeam() {
   return joinBlocks([
     heading(3, es.team.title),
     es.team.description,
-    es.team.foundersTitle,
     ...members,
-    es.team.ctaTitle,
-    `[${es.team.ctaButton}](mailto:${site.emails.contact})`,
+    es.team.employersLine,
+    "Mercado Libre, Coderhouse, PUMA, NFTYDoor",
   ]);
 }
 
@@ -108,7 +101,6 @@ function buildHomeContact() {
     form.success,
     form.error,
     form.whatsappMessage,
-    `[${form.bookCall}](${site.calUrl})`,
     `${form.alternative} [${site.emails.contact}](mailto:${site.emails.contact})`,
   ]);
 }
@@ -118,12 +110,10 @@ export function buildHome() {
     heading(3, es.hero.title),
     es.hero.description,
     es.hero.imageAlt,
-    `[${es.hero.primaryCta}](${canonical("/empecemos")})`,
-    `[${es.hero.secondaryCta}](${canonical("/#servicios")})`,
+    `[${es.hero.primaryCta}](${buildWhatsAppUrl(site.whatsappNumber, es.hero.whatsappMessage) ?? canonical("/empecemos")})`,
+    es.hero.whatsappMessage,
+    `[${es.hero.secondaryCta}](${canonical("/casos")})`,
     buildHomeServices(),
-    heading(3, es.process.title),
-    numbered(es.process.steps.map((step) => labeled(step.title, step.description))),
-    `[${es.process.link}](${canonical("/como-trabajamos")})`,
     buildHomeTeam(),
     heading(3, es.faq.label),
     heading(4, es.faq.title),
@@ -131,7 +121,10 @@ export function buildHome() {
     ...es.faq.items.map((item) => joinBlocks([heading(4, item.question), item.answer])),
     heading(4, es.faq.help.title),
     es.faq.help.description,
-    `[${es.faq.help.cta}](${canonical("/#contacto")})`,
+    `[${es.faq.help.cta}](${canonical("/empecemos")})`,
+    heading(3, es.cta.title),
+    es.cta.description,
+    `[${es.cta.button}](${canonical("/empecemos")})`,
     buildHomeContact(),
   ]);
 }

@@ -13,10 +13,11 @@ export const site = {
     instagramHandle: "@shipperslab",
     x: "https://x.com/theshipperslab",
     xHandle: "@theshipperslab",
+    github: "https://github.com/ShippersLab",
   },
 } as const;
 
-export type TeamMemberId = "juani" | "franco";
+type TeamMemberId = "juani" | "franco";
 
 export type TeamMember = {
   id: TeamMemberId;
