@@ -23,7 +23,7 @@ export function Casos() {
         <PageHeader title={page.title} description={page.description} />
       </Container>
 
-      <Container className="w-full border-t border-border py-16 sm:py-20 md:py-28">
+      <Container className="w-full py-16 sm:py-20 md:py-28">
         <div className="grid gap-x-12 gap-y-20 md:grid-cols-2">
           <Reveal delay={GRID_DELAY} className="h-full">
             <ProjectCard

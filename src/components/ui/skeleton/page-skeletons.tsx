@@ -30,7 +30,7 @@ function TextLines({ lines, className }: { lines: number; className?: string }) 
 
 function HeroSkeleton({ wide }: { wide?: boolean }) {
   return (
-    <div className="border-b border-border">
+    <div>
       <Container className="w-full py-24 sm:py-32 lg:py-40">
         <div className={wide ? "max-w-3xl" : "max-w-2xl"}>
           <Skeleton className="h-8 w-32" />
@@ -74,7 +74,7 @@ export function BlogIndexSkeleton() {
           <TextLines lines={2} className="mt-5 w-full" />
         </div>
       </Container>
-      <Container className="w-full border-t border-border py-16 sm:py-20 md:py-28">
+      <Container className="w-full py-16 sm:py-20 md:py-28">
         <div className="grid gap-6">
           {[0, 1].map((item) => (
             <div key={item} className="max-w-2xl rounded-lg border border-border p-6 sm:p-8">

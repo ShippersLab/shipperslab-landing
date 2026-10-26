@@ -14,7 +14,11 @@ export function Services() {
   const { messages } = useI18n();
 
   return (
-    <Section id="servicios" bordered>
+    <Section id="servicios">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -inset-x-px top-0 h-40 bg-linear-to-b from-paper to-transparent sm:h-56"
+      />
       <div className="flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
         <SectionHeading
           title={messages.services.title}

@@ -26,7 +26,7 @@ export function BlogIndex({ posts }: BlogIndexProps) {
         <PageHeader title={page.title} description={page.description} />
       </Container>
 
-      <Container className="w-full border-t border-border py-16 sm:py-20 md:py-28">
+      <Container className="w-full py-16 sm:py-20 md:py-28">
         {posts.length === 0 ? (
           <p className="rounded-lg border border-border p-8 text-center text-base text-muted sm:p-12 sm:text-lg">
             {page.empty}

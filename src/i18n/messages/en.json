@@ -1663,11 +1663,7 @@
             ],
             "table": {
               "caption": "Excel, off-the-shelf software and a custom system: upfront cost, ongoing cost, fit to the process and who maintains it",
-              "columns": [
-                "Excel",
-                "Off the shelf",
-                "Custom"
-              ],
+              "columns": ["Excel", "Off the shelf", "Custom"],
               "rows": [
                 {
                   "label": "Upfront cost",

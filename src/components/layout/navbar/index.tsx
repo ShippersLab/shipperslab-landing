@@ -2,11 +2,10 @@
 
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { MobileMenu } from "@/components/layout/navbar/mobile-menu";
 import { NAV_LINKS } from "@/components/layout/navbar/nav-links";
-import { useNavbarAnimation } from "@/components/layout/navbar/navbar.animation";
 import { TextureButton } from "@/components/ui/button/texture-button";
 import { LocalizedLink } from "@/i18n/link";
 import { localizePath, stripLocale } from "@/i18n/paths";
@@ -34,15 +33,12 @@ function useScrolled() {
 
 export function Navbar() {
   const { locale, messages } = useI18n();
-  const ref = useRef<HTMLElement>(null);
   const isHome = stripLocale(usePathname()) === "/";
   const scrolled = useScrolled();
 
-  useNavbarAnimation(ref, isHome);
-
   return (
     <>
-      <header ref={ref} className="invisible fixed inset-x-4 top-4 z-50 flex justify-center">
+      <header className="fixed inset-x-4 top-4 z-50 flex animate-navbar-in justify-center">
         <div
           className={cn(
             "relative z-30 grid w-full max-w-xl grid-cols-[1fr_auto] items-center gap-4 rounded-md border py-2 pr-2 pl-4 transition-[background-color,border-color,backdrop-filter] duration-300 ease-out md:grid-cols-[1fr_auto_1fr]",

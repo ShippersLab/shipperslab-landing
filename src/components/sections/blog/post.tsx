@@ -56,7 +56,7 @@ export function BlogPost({ slug }: BlogPostProps) {
         </Container>
       </article>
 
-      <Container className="border-t border-border py-16 sm:py-20">
+      <Container className="py-16 sm:py-20">
         <Reveal>
           <h2 className="text-xl text-ink sm:text-2xl">{post.related.title}</h2>
           <ul className="mt-6 grid gap-3 sm:grid-cols-2">

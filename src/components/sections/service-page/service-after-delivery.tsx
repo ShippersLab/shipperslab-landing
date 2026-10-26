@@ -12,7 +12,7 @@ type ServiceAfterDeliveryProps = {
 
 export function ServiceAfterDelivery({ items }: ServiceAfterDeliveryProps) {
   return (
-    <Container className="w-full border-t border-border py-16 sm:py-20">
+    <Container className="w-full py-16 sm:py-20">
       <StaggerReveal as="ul" className="grid gap-3 sm:grid-cols-3">
         {items.map((item) => (
           <li key={item.label} className="rounded-lg border border-border p-5">

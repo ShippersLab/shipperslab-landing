@@ -24,7 +24,7 @@ export function Events() {
         <PageHeader title={page.title} description={page.description} />
       </Container>
 
-      <Container className={`border-t border-border ${SECTION}`}>
+      <Container className={SECTION}>
         <BlurReveal>
           <SectionHeading
             title={page.formatsTitle}
@@ -40,7 +40,7 @@ export function Events() {
         />
       </Container>
 
-      <Container className={`border-t border-border ${SECTION}`}>
+      <Container className={SECTION}>
         <BlurReveal>
           <SectionHeading
             title={page.gallery.title}
@@ -53,7 +53,7 @@ export function Events() {
         </div>
       </Container>
 
-      <Container className={`border-t border-border ${SECTION}`}>
+      <Container className={SECTION}>
         <BlurReveal>
           <SectionHeading
             title={page.sponsorTitle}

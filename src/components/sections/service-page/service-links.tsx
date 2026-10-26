@@ -16,7 +16,7 @@ export function ServiceLinks({ title, slugs }: ServiceLinksProps) {
   const { messages } = useI18n();
 
   return (
-    <Container className="w-full border-t border-border py-16 sm:py-20">
+    <Container className="w-full py-16 sm:py-20">
       <h2 className="text-center font-heading text-2xl tracking-heading text-ink sm:text-3xl">
         <DiaTextReveal text={title} colors={["var(--accent)"]} textColor="var(--ink)" delay={0} />
       </h2>

@@ -2,8 +2,6 @@
 
 import Image from "next/image";
 
-import { HERO_TITLE_DELAY, HERO_TITLE_DURATION } from "@/components/sections/hero/hero.animation";
-import { DiaTextReveal } from "@/components/ui/animation/dia-text-reveal";
 import { TextureButton } from "@/components/ui/button/texture-button";
 import { Container } from "@/components/ui/section/container";
 import { LocalizedLink } from "@/i18n/link";
@@ -43,15 +41,7 @@ export function Hero() {
 
       <Container className="grid shrink-0 gap-8 py-10 lg:grid-cols-[1.6fr_1fr] lg:items-start lg:gap-16 lg:pt-10 lg:pb-8">
         <h1 className="-mt-[0.12em] text-hero tracking-hero text-ink">
-          <DiaTextReveal
-            text={messages.hero.title}
-            colors={["var(--accent)"]}
-            textColor="var(--ink)"
-            delay={HERO_TITLE_DELAY}
-            duration={HERO_TITLE_DURATION}
-            className="pb-[0.12em]"
-            startOnView={false}
-          />
+          <span className="inline-block animate-hero-title pb-[0.12em]">{messages.hero.title}</span>
         </h1>
 
         <div className="flex flex-col gap-6">

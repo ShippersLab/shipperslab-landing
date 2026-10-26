@@ -117,7 +117,7 @@ export function ProjectDetail() {
         </CaseRow>
       </Container>
 
-      <div className="border-t border-border py-16 sm:py-24">
+      <div className="py-16 sm:py-24">
         <Container>
           <BlurReveal>
             <h2 className="text-2xl text-ink sm:text-3xl">{page.galleryTitle}</h2>

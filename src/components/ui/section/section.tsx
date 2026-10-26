@@ -6,17 +6,15 @@ import { cn } from "@/lib/utils";
 type SectionProps = {
   children: ReactNode;
   id?: string;
-  bordered?: boolean;
   className?: string;
 };
 
-export function Section({ children, id, bordered = true, className }: SectionProps) {
+export function Section({ children, id, className }: SectionProps) {
   return (
     <section
       id={id}
       className={cn(
-        "mx-auto w-full max-w-content border-x border-border py-16 sm:py-20 md:py-section",
-        bordered && "border-t",
+        "relative mx-auto w-full max-w-content border-x border-border py-16 sm:py-20 md:py-section",
         className,
       )}
     >

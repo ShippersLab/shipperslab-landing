@@ -31,11 +31,6 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[la
 
   return (
     <html lang={lang} className={`${fontVariables} antialiased`}>
-      <head>
-        <noscript>
-          <style>{".invisible{visibility:visible !important}"}</style>
-        </noscript>
-      </head>
       <body className="bg-paper">
         <SmoothScroll />
         <I18nProvider locale={lang} messages={getMessages(lang)}>

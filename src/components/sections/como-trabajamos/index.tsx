@@ -55,7 +55,7 @@ export function ComoTrabajamos() {
     <div className="mx-auto w-full max-w-content border-x border-border">
       <ServiceHero title={page.h1} lead={page.lead} />
 
-      <Container className="w-full border-t border-border py-16 sm:py-20">
+      <Container className="w-full py-16 sm:py-20">
         <ProcessOverview label={page.overviewLabel} steps={overview} />
       </Container>
 
@@ -74,7 +74,7 @@ export function ComoTrabajamos() {
         <FaqAccordion items={page.faq.items} className="border-t-0" />
       </ServiceSection>
 
-      <Container className="w-full border-t border-border py-16 sm:py-20">
+      <Container className="w-full py-16 sm:py-20">
         <ServiceCta
           title={page.ctaTitle}
           description={page.ctaDescription}

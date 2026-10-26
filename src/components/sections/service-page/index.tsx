@@ -24,7 +24,7 @@ export function ServicePage({ slug }: ServicePageProps) {
 
       <ServiceBody page={page} processLink={messages.servicePages.processLink} />
 
-      <Container className="w-full border-t border-border py-16 sm:py-20">
+      <Container className="w-full py-16 sm:py-20">
         <ServiceCta
           title={page.ctaTitle}
           description={page.ctaDescription}

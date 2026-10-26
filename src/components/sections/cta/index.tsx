@@ -20,7 +20,7 @@ export function Cta() {
   const copy = messages.cta;
 
   return (
-    <Section bordered>
+    <Section>
       <div className="selection-paper relative isolate flex min-h-120 items-start justify-center overflow-hidden rounded-lg px-6 pt-20 sm:min-h-128 sm:pt-24 lg:aspect-video lg:min-h-0 lg:pt-24">
         <motion.div
           aria-hidden
@@ -50,8 +50,13 @@ export function Cta() {
           viewport={{ once: true, amount: 0.3 }}
           className="flex max-w-md flex-col items-center text-center"
         >
-          <h2 className="text-5xl text-paper sm:text-6xl lg:text-7xl">
-            <DiaTextReveal text={copy.title} colors={["var(--ink)"]} textColor="var(--paper)" />
+          <h2 className="text-5xl leading-[1.12] text-paper sm:text-6xl lg:text-7xl">
+            <DiaTextReveal
+              text={copy.title}
+              colors={["var(--ink)"]}
+              textColor="var(--paper)"
+              className="pb-[0.1em]"
+            />
           </h2>
           <WordReveal
             text={copy.description}

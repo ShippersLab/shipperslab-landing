@@ -15,7 +15,7 @@ export function Faq() {
   const { faq } = messages;
 
   return (
-    <Section bordered className="py-12 sm:py-16 md:py-20">
+    <Section className="py-12 sm:py-16 md:py-20">
       <div className="grid gap-12 lg:grid-cols-[1fr_1.4fr] lg:gap-16">
         <div className="flex flex-col gap-10 lg:sticky lg:top-28 lg:self-start">
           <FaqIntro label={faq.label} title={faq.title} description={faq.description} />

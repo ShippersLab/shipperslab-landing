@@ -42,7 +42,7 @@ export function ServiceHero({
   const Root = isArticle ? "header" : "div";
 
   return (
-    <Root className={cn("relative isolate overflow-clip", isArticle && "border-b border-border")}>
+    <Root className={"relative isolate overflow-clip"}>
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 -z-10 mask-b-from-60% mask-b-to-100%"

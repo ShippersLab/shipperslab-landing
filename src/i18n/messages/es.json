@@ -1665,11 +1665,7 @@
             ],
             "table": {
               "caption": "Excel, software enlatado y sistema a medida: costo inicial, costo mensual, ajuste al proceso y quién lo mantiene",
-              "columns": [
-                "Excel",
-                "Enlatado",
-                "A medida"
-              ],
+              "columns": ["Excel", "Enlatado", "A medida"],
               "rows": [
                 {
                   "label": "Costo inicial",

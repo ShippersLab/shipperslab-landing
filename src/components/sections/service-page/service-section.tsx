@@ -13,7 +13,7 @@ type ServiceSectionProps = {
 
 export function ServiceSection({ title, children, label, id }: ServiceSectionProps) {
   return (
-    <Container className="w-full border-t border-border py-16 sm:py-20">
+    <Container className="w-full py-16 sm:py-20">
       <div id={id} className="grid scroll-mt-28 gap-6 lg:grid-cols-[1fr_2fr] lg:gap-16">
         <div>
           {label ? (

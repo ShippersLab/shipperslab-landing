@@ -198,6 +198,36 @@
   }
 }
 
+@keyframes hero-title-sweep {
+  from {
+    background-position: 100% 50%;
+  }
+
+  to {
+    background-position: 0% 50%;
+  }
+}
+
+@utility animate-hero-title {
+  background-image: linear-gradient(
+    90deg,
+    var(--ink) 0%,
+    var(--ink) 40%,
+    var(--accent) 50%,
+    var(--ink) 60%,
+    var(--ink) 100%
+  );
+  background-size: 300% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hero-title-sweep 1.6s var(--ease-out) 0.3s both;
+}
+
+@utility animate-navbar-in {
+  animation: hero-text 0.6s var(--ease-out) 0.15s backwards;
+}
+
 @utility animate-hero-text {
   animation: hero-text 0.6s var(--ease-out) both;
 }

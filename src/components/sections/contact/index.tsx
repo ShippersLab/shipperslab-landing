@@ -22,7 +22,7 @@ export function Contact() {
   const copy = messages.contact.form;
 
   return (
-    <Section id="contacto" bordered>
+    <Section id="contacto">
       <div className="selection-paper relative isolate overflow-hidden rounded-lg p-3 sm:p-8 lg:p-12">
         <motion.div
           aria-hidden
