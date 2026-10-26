@@ -70,7 +70,7 @@ export function Onboarding() {
           initial={initial}
           animate="visible"
           transition={{ delay: FORM_DELAY }}
-          className="mt-16 w-full max-w-xl sm:mt-20"
+          className="mt-10 w-full max-w-2xl sm:mt-12"
         >
           <OnboardingForm />
         </motion.div>

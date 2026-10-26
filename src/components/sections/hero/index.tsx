@@ -16,7 +16,9 @@ const HERO_BLUR_DATA_URL =
 
 export function Hero() {
   const { messages } = useI18n();
-  const whatsappUrl = buildWhatsAppUrl(site.whatsappNumber, messages.hero.whatsappMessage);
+  const whatsappUrl =
+    buildWhatsAppUrl(site.whatsappNumber, messages.hero.whatsappMessage) ??
+    `https://wa.me/?text=${encodeURIComponent(messages.hero.whatsappMessage)}`;
 
   return (
     <section id="top" className="flex w-full flex-col lg:h-[calc(100svh-1rem)] lg:min-h-160">
@@ -64,13 +66,9 @@ export function Hero() {
               size="square"
               className="w-full animate-hero-text [animation-delay:0.9s] sm:w-auto"
             >
-              {whatsappUrl ? (
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  {messages.hero.primaryCta}
-                </a>
-              ) : (
-                <LocalizedLink href="/empecemos">{messages.hero.primaryCta}</LocalizedLink>
-              )}
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                {messages.hero.primaryCta}
+              </a>
             </TextureButton>
             <TextureButton
               asChild

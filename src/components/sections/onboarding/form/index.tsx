@@ -37,7 +37,7 @@ export function OnboardingForm() {
 
   return (
     <MotionConfig reducedMotion="user">
-      <div className="w-full rounded-lg bg-paper p-6 sm:p-8">
+      <div className="w-full rounded-lg bg-paper p-8 sm:p-12">
         {status === "success" ? (
           <Success />
         ) : (
