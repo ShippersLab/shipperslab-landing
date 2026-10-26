@@ -19,6 +19,7 @@ export function useNavbarAnimation(scope: RefObject<HTMLElement | null>, isHome:
             duration: 0.6,
             delay: isHome ? HOME_DELAY : 0,
             ease: "power3.out",
+            clearProps: "filter",
           },
         );
       });

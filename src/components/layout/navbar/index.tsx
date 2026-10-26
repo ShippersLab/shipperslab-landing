@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { MobileMenu } from "@/components/layout/navbar/mobile-menu";
 import { NAV_LINKS } from "@/components/layout/navbar/nav-links";
@@ -14,80 +14,89 @@ import { useI18n } from "@/i18n/provider";
 import { site } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
+const LINK_CLASS =
+  "-my-2 rounded-sm py-2 text-sm text-ink/70 transition-colors duration-200 ease-out hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink";
+
+const SCROLL_THRESHOLD = 24;
+
+function useScrolled() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const update = () => setScrolled(window.scrollY > SCROLL_THRESHOLD);
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    return () => window.removeEventListener("scroll", update);
+  }, []);
+
+  return scrolled;
+}
+
 export function Navbar() {
   const { locale, messages } = useI18n();
   const ref = useRef<HTMLElement>(null);
   const isHome = stripLocale(usePathname()) === "/";
-  const linkClassName = cn(
-    "-my-2 rounded-sm py-2 text-sm transition-colors duration-200 ease-out focus-visible:outline-2 focus-visible:outline-offset-2",
-    isHome
-      ? "text-paper/80 hover:text-paper focus-visible:outline-paper"
-      : "text-ink hover:text-ink/70 focus-visible:outline-ink",
-  );
+  const scrolled = useScrolled();
 
   useNavbarAnimation(ref, isHome);
 
   return (
-    <header
-      ref={ref}
-      className={cn(
-        "invisible z-50 flex justify-center",
-        isHome
-          ? "absolute inset-x-11 top-11 sm:inset-x-14 sm:top-12"
-          : "relative pb-4 group-has-data-fullbleed/shell:absolute group-has-data-fullbleed/shell:inset-x-4 group-has-data-fullbleed/shell:top-4 group-has-data-fullbleed/shell:pb-0",
-      )}
-    >
-      <div
-        className={cn(
-          "relative z-30 grid w-full max-w-xl grid-cols-[1fr_auto] items-center gap-4 rounded-md py-2 pr-2 pl-4 md:grid-cols-[1fr_auto_1fr]",
-          isHome && "bg-accent",
-        )}
-      >
-        <LocalizedLink
-          href="/"
-          aria-label={site.name}
+    <>
+      <header ref={ref} className="invisible fixed inset-x-4 top-4 z-50 flex justify-center">
+        <div
           className={cn(
-            "-m-2 justify-self-start rounded-md p-2 focus-visible:outline-2 focus-visible:outline-offset-2",
-            isHome ? "focus-visible:outline-paper" : "focus-visible:outline-ink",
+            "relative z-30 grid w-full max-w-xl grid-cols-[1fr_auto] items-center gap-4 rounded-md border py-2 pr-2 pl-4 transition-[background-color,border-color,backdrop-filter] duration-300 ease-out md:grid-cols-[1fr_auto_1fr]",
+            scrolled
+              ? "border-border/80 bg-paper/70 backdrop-blur-md"
+              : "border-transparent bg-transparent",
           )}
         >
-          <Image
-            src={isHome ? "/logo/white.svg" : "/logo/accent.svg"}
-            alt="ShippersLab"
-            width={44}
-            height={24}
-            unoptimized
-            className="h-5 w-auto"
-          />
-        </LocalizedLink>
-
-        <nav className="hidden items-center justify-center justify-self-center gap-8 md:flex">
-          {NAV_LINKS.map((link) =>
-            link.kind === "anchor" ? (
-              <a key={link.key} href={localizePath(link.href, locale)} className={linkClassName}>
-                {messages.nav[link.key]}
-              </a>
-            ) : (
-              <LocalizedLink key={link.key} href={link.href} className={linkClassName}>
-                {messages.nav[link.key]}
-              </LocalizedLink>
-            ),
-          )}
-        </nav>
-
-        <div className="flex items-center justify-self-end gap-3">
-          <TextureButton
-            asChild
-            variant={isHome ? "paper" : "primary"}
-            size="compact"
-            className="hidden w-auto md:flex"
+          <LocalizedLink
+            href="/"
+            aria-label={site.name}
+            className="-m-2 justify-self-start rounded-md p-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
           >
-            <LocalizedLink href="/empecemos">{messages.nav.contact}</LocalizedLink>
-          </TextureButton>
+            <Image
+              src="/logo/accent.svg"
+              alt="ShippersLab"
+              width={44}
+              height={24}
+              unoptimized
+              className="h-5 w-auto"
+            />
+          </LocalizedLink>
 
-          <MobileMenu onHome={isHome} />
+          <nav className="hidden items-center justify-center justify-self-center gap-8 md:flex">
+            {NAV_LINKS.map((link) =>
+              link.kind === "anchor" ? (
+                <a key={link.key} href={localizePath(link.href, locale)} className={LINK_CLASS}>
+                  {messages.nav[link.key]}
+                </a>
+              ) : (
+                <LocalizedLink key={link.key} href={link.href} className={LINK_CLASS}>
+                  {messages.nav[link.key]}
+                </LocalizedLink>
+              ),
+            )}
+          </nav>
+
+          <div className="flex items-center justify-self-end gap-3">
+            <TextureButton
+              asChild
+              variant="primary"
+              size="compact"
+              className="hidden w-auto md:flex"
+            >
+              <LocalizedLink href="/empecemos">{messages.nav.contact}</LocalizedLink>
+            </TextureButton>
+
+            <MobileMenu onHome={false} />
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+      {isHome ? null : (
+        <div aria-hidden className="h-16 shrink-0 group-has-data-fullbleed/shell:hidden" />
+      )}
+    </>
   );
 }
