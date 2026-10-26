@@ -1,3 +1,4 @@
+import { omitUnpublishedBlogLinks } from "@/lib/blog";
 import { singleLine } from "@/lib/seo/text";
 import { site } from "@/lib/site";
 
@@ -15,7 +16,7 @@ export function absoluteUrl(href: string) {
 }
 
 export function renderCopy(text: string) {
-  return text
+  return omitUnpublishedBlogLinks(text)
     .replace(/\{EventOps\}/g, `[EventOps](${site.eventopsUrl})`)
     .replace(/\[([^\]]+)\]\((\/[^)\s]+)\)/g, (_, label: string, href: string) => {
       return `[${label}](${absoluteUrl(href)})`;
@@ -47,7 +48,7 @@ export function page(path: string, blocks: ReadonlyArray<string | false | null |
 }
 
 function needles(text: string) {
-  const normalized = singleLine(text).replace(/\{EventOps\}/g, "\n");
+  const normalized = singleLine(omitUnpublishedBlogLinks(text)).replace(/\{EventOps\}/g, "\n");
   if (normalized.includes("{")) return [];
 
   const labels = [...normalized.matchAll(/\[([^\]]+)\]\([^)]+\)/g)].map((match) => match[1]);

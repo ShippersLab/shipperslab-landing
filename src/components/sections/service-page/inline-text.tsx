@@ -1,6 +1,8 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
+import { omitUnpublishedBlogLinks } from "@/lib/blog";
+
 const INLINE_LINK = /\[([^\]]+)\]\((\/[^)\s]+)\)/;
 
 const LINK_CLASS =
@@ -8,7 +10,7 @@ const LINK_CLASS =
 
 export function InlineText({ text }: { text: string }) {
   const nodes: ReactNode[] = [];
-  let rest = text;
+  let rest = omitUnpublishedBlogLinks(text);
 
   while (rest.length > 0) {
     const match = rest.match(INLINE_LINK);
