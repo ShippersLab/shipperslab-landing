@@ -1,8 +1,10 @@
 import type { RefObject } from "react";
 
-import { gsap, useGSAP } from "@/lib/gsap";
+import { gsap, useGSAP } from "@/lib/animation/gsap";
 
-export function useNavbarAnimation(scope: RefObject<HTMLElement | null>) {
+const HOME_DELAY = 0.25;
+
+export function useNavbarAnimation(scope: RefObject<HTMLElement | null>, isHome: boolean) {
   useGSAP(
     () => {
       const mm = gsap.matchMedia();
@@ -10,8 +12,15 @@ export function useNavbarAnimation(scope: RefObject<HTMLElement | null>) {
       mm.add("(prefers-reduced-motion: no-preference)", () => {
         gsap.fromTo(
           scope.current,
-          { autoAlpha: 0 },
-          { autoAlpha: 1, duration: 1, ease: "power2.out" },
+          { autoAlpha: 0, filter: "blur(16px)" },
+          {
+            autoAlpha: 1,
+            filter: "blur(0px)",
+            duration: 0.6,
+            delay: isHome ? HOME_DELAY : 0,
+            ease: "power3.out",
+            clearProps: "filter",
+          },
         );
       });
 
@@ -21,6 +30,6 @@ export function useNavbarAnimation(scope: RefObject<HTMLElement | null>) {
 
       return () => mm.revert();
     },
-    { scope },
+    { scope, dependencies: [isHome] },
   );
 }

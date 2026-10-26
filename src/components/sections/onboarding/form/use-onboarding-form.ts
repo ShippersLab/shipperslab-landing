@@ -1,13 +1,12 @@
+import { track } from "@vercel/analytics";
 import { useRef, useState, type FocusEvent, type SubmitEvent } from "react";
 
 import { useI18n } from "@/i18n/provider";
-
 import {
   EMPTY_ONBOARDING_REQUEST,
   type OnboardingNeed,
   type OnboardingRequest,
 } from "@/lib/onboarding/request";
-
 import {
   findFirstInvalidStep,
   validateField,
@@ -125,6 +124,7 @@ export function useOnboardingForm(stepCount: number) {
         throw new Error(`Onboarding request failed with status ${response.status}`);
       }
 
+      track("lead_submitted", { page: window.location.pathname });
       setStatus("success");
     } catch {
       setStatus("error");

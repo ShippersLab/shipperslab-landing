@@ -20,14 +20,16 @@ export function ServicePage({ slug }: ServicePageProps) {
 
   return (
     <div className="mx-auto w-full max-w-content border-x border-border">
-      <ServiceHero eyebrow={messages.servicePages.eyebrow} title={page.h1} lead={page.lead} />
+      <ServiceHero title={page.h1} lead={page.lead} />
 
-      <Container className="w-full py-16 sm:py-20">
-        <ServiceBody page={page} processLink={messages.servicePages.processLink} />
+      <ServiceBody page={page} processLink={messages.servicePages.processLink} />
+
+      <Container className="w-full border-t border-border py-16 sm:py-20">
         <ServiceCta
           title={page.ctaTitle}
           description={page.ctaDescription}
           button={page.ctaButton}
+          className="mt-0 sm:mt-0"
         />
       </Container>
 

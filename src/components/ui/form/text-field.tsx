@@ -6,7 +6,7 @@ import { FieldError } from "@/components/ui/form/field-error";
 import { cn } from "@/lib/utils";
 
 const FIELD_CLASS =
-  "w-full rounded-lg border border-border bg-paper/60 px-4 py-3 text-base text-ink ring-ink/10 outline-hidden transition-[background-color,border-color,box-shadow] duration-200 ease-out placeholder:text-muted hover:border-ink/20 hover:bg-paper focus:border-ink focus:bg-paper focus:ring-2 aria-invalid:border-accent";
+  "w-full rounded-lg border border-muted/40 bg-paper px-4 py-3 text-base text-ink ring-ink/10 outline-hidden transition-[background-color,border-color,box-shadow] duration-200 ease-out placeholder:text-muted hover:border-muted/70 focus:border-ink focus:bg-paper focus:ring-2 aria-invalid:border-accent";
 
 const LABEL_CLASS = "group flex flex-col gap-2 text-sm";
 

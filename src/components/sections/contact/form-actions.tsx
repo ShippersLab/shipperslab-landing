@@ -1,10 +1,8 @@
 "use client";
 
-import type { ContactStatus } from "@/components/sections/contact/use-contact-form";
 import { SubmitButton } from "@/components/sections/contact/submit-button";
-import { CalendarIcon } from "@/components/ui/icons";
+import type { ContactStatus } from "@/components/sections/contact/use-contact-form";
 import { useI18n } from "@/i18n/provider";
-import { site } from "@/lib/site";
 
 type FormActionsProps = {
   status: ContactStatus;
@@ -15,42 +13,13 @@ export function FormActions({ status }: FormActionsProps) {
   const copy = messages.contact.form;
 
   return (
-    <div className="flex flex-col gap-4">
-      <div className="flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-        <SubmitButton status={status} />
+    <div className="flex flex-col-reverse items-stretch gap-4 sm:flex-row sm:items-center sm:justify-end">
+      <p role={status === "error" ? "alert" : "status"} className="text-sm text-ink sm:text-right">
+        {status === "error" ? copy.error : null}
+        {status === "success" ? copy.success : null}
+      </p>
 
-        <a
-          href={site.calUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="flex items-center justify-center gap-2 rounded-full px-4 py-2.5 text-sm text-muted transition-colors duration-200 ease-out hover:text-ink sm:justify-start sm:text-base focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
-        >
-          <CalendarIcon size={16} />
-          {copy.bookCall}
-          <span className="sr-only">({messages.common.opensNewTab})</span>
-        </a>
-      </div>
-
-      <div>
-        <p role="alert" className="text-sm text-ink">
-          {status === "error" ? copy.error : null}
-        </p>
-
-        <p role="status" className="text-sm text-muted">
-          {status === "success" ? <span className="text-ink">{copy.success}</span> : null}
-          {status === "idle" || status === "sending" ? (
-            <>
-              {copy.alternative}{" "}
-              <a
-                href={`mailto:${site.emails.contact}`}
-                className="rounded-sm text-ink underline decoration-border underline-offset-4 transition-colors duration-200 ease-out hover:decoration-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
-              >
-                {site.emails.contact}
-              </a>
-            </>
-          ) : null}
-        </p>
-      </div>
+      <SubmitButton status={status} />
     </div>
   );
 }

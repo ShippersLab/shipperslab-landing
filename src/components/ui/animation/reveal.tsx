@@ -1,7 +1,9 @@
 "use client";
 
-import { motion, useInView, useReducedMotion } from "motion/react";
-import { useEffect, useMemo, useRef, useState, type ElementType, type ReactNode } from "react";
+import { useRef, type ElementType, type ReactNode } from "react";
+
+import { useGSAP } from "@/lib/animation/gsap";
+import { scrollReveal } from "@/lib/animation/scroll-reveal";
 
 type RevealProps = {
   children: ReactNode;
@@ -11,9 +13,6 @@ type RevealProps = {
   as?: "div" | "li" | "p";
 };
 
-const HIDDEN = { opacity: 0, transform: "translateY(16px)" };
-const VISIBLE = { opacity: 1, transform: "translateY(0px)" };
-
 export function Reveal({
   children,
   className,
@@ -22,27 +21,26 @@ export function Reveal({
   as = "div",
 }: RevealProps) {
   const ref = useRef<HTMLElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "0px 0px -12% 0px" });
-  const prefersReducedMotion = useReducedMotion();
+  const Tag = as as ElementType;
 
-  const [hydrated, setHydrated] = useState(false);
-
-  useEffect(() => {
-    setHydrated(true);
-  }, []);
-
-  const reduced = hydrated && prefersReducedMotion;
-  const MotionTag = useMemo(() => motion.create(as as ElementType), [as]);
+  useGSAP(
+    () => {
+      const element = ref.current;
+      if (!element) return;
+      return scrollReveal({
+        trigger: element,
+        targets: element,
+        from: { y: 16 },
+        duration,
+        delay: delay / 1000,
+      });
+    },
+    { scope: ref },
+  );
 
   return (
-    <MotionTag
-      ref={ref}
-      className={className}
-      initial={HIDDEN}
-      animate={reduced || isInView ? VISIBLE : HIDDEN}
-      transition={{ duration, delay: delay / 1000, ease: [0.23, 1, 0.32, 1] }}
-    >
+    <Tag ref={ref} className={className}>
       {children}
-    </MotionTag>
+    </Tag>
   );
 }

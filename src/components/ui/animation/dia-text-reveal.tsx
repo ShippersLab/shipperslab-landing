@@ -1,6 +1,5 @@
 "use client";
 
-import { cn } from "@/lib/utils";
 import {
   animate,
   type MotionProps,
@@ -25,6 +24,8 @@ import {
   useState,
 } from "react";
 
+import { cn } from "@/lib/utils";
+
 type EaseValue =
   | "linear"
   | "easeIn"
@@ -40,7 +41,7 @@ type EaseValue =
   | readonly [number, number, number, number]
   | ((t: number) => number);
 
-export interface DiaTextRevealHandle {
+interface DiaTextRevealHandle {
   play: () => void;
   replay: () => void;
 }

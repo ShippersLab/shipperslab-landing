@@ -2,7 +2,7 @@
 
 import { motion, useReducedMotion } from "motion/react";
 
-import { Reveal } from "@/components/ui/animation/reveal";
+import { StaggerReveal } from "@/components/ui/animation/stagger-reveal";
 import { StepNumber } from "@/components/ui/section/step-number";
 
 type OverviewStep = {
@@ -17,30 +17,33 @@ type ProcessOverviewProps = {
 };
 
 const ITEMS_DELAY = 0.3;
-const ITEM_STAGGER = 0.08;
 const LINE_DURATION = 1.1;
 
 export function ProcessOverview({ label, steps }: ProcessOverviewProps) {
   const prefersReducedMotion = useReducedMotion();
 
   return (
-    <nav aria-label={label} className="border-b border-border pb-16 sm:pb-20">
-      <ol className="relative grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-4 lg:gap-8">
-        <motion.span
-          aria-hidden
-          initial={{ scaleX: 0 }}
-          whileInView={{ scaleX: 1 }}
-          viewport={{ once: true, margin: "0px 0px -12% 0px" }}
-          transition={{
-            duration: prefersReducedMotion ? 0 : LINE_DURATION,
-            delay: prefersReducedMotion ? 0 : ITEMS_DELAY,
-            ease: [0.23, 1, 0.32, 1],
-          }}
-          className="absolute top-5 right-[calc(25%-2.75rem)] left-5 hidden h-px origin-left bg-border lg:block"
-        />
+    <nav aria-label={label} className="relative">
+      <motion.span
+        aria-hidden
+        initial={{ scaleX: 0 }}
+        whileInView={{ scaleX: 1 }}
+        viewport={{ once: true, margin: "0px 0px -12% 0px" }}
+        transition={{
+          duration: prefersReducedMotion ? 0 : LINE_DURATION,
+          delay: prefersReducedMotion ? 0 : ITEMS_DELAY,
+          ease: [0.23, 1, 0.32, 1],
+        }}
+        className="absolute top-5 right-[calc(25%-2.75rem)] left-5 hidden h-px origin-left bg-border lg:block"
+      />
 
+      <StaggerReveal
+        as="ol"
+        delay={ITEMS_DELAY}
+        className="relative grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-4 lg:gap-8"
+      >
         {steps.map((step, index) => (
-          <Reveal key={step.id} as="li" delay={(ITEMS_DELAY + index * ITEM_STAGGER) * 1000}>
+          <li key={step.id}>
             <a
               href={`#${step.id}`}
               className="group flex gap-4 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink lg:flex-col"
@@ -58,9 +61,9 @@ export function ProcessOverview({ label, steps }: ProcessOverviewProps) {
                 </span>
               </span>
             </a>
-          </Reveal>
+          </li>
         ))}
-      </ol>
+      </StaggerReveal>
     </nav>
   );
 }

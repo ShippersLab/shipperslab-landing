@@ -13,6 +13,9 @@ const AI_CRAWLERS = [
   "Perplexity-User",
   "Google-Extended",
   "Applebot-Extended",
+  "Googlebot",
+  "Bingbot",
+  "Applebot",
 ];
 
 export default function robots(): MetadataRoute.Robots {

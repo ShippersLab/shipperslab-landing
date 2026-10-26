@@ -1,7 +1,7 @@
 "use client";
 
-import { TextField } from "@/components/ui/form/text-field";
 import type { StepProps } from "@/components/sections/onboarding/steps/types";
+import { TextField } from "@/components/ui/form/text-field";
 import { useI18n } from "@/i18n/provider";
 
 export function AboutStep({ data, errors, setField }: StepProps) {

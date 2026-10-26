@@ -1,4 +1,4 @@
-import { isRecord, readString } from "@/lib/payload";
+import { isRecord, readString } from "@/lib/forms/payload";
 
 export type ContactMessage = {
   name: string;

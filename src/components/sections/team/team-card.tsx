@@ -1,8 +1,7 @@
 "use client";
 
-import Image from "next/image";
-
 import { ArrowUpRightIcon } from "@/components/ui/icons";
+import { SkeletonImage } from "@/components/ui/skeleton/skeleton-image";
 import { useI18n } from "@/i18n/provider";
 import type { TeamMember } from "@/lib/site";
 
@@ -13,8 +12,8 @@ export function TeamCard({ member }: { member: TeamMember }) {
 
   return (
     <article className="flex h-full flex-col overflow-hidden rounded-lg border border-border bg-paper">
-      <div className="relative aspect-3/1 bg-border">
-        <Image
+      <div className="relative aspect-3/1">
+        <SkeletonImage
           src={member.cover}
           alt={messages.team.coverAlt.replace("{name}", member.name)}
           fill
@@ -25,9 +24,9 @@ export function TeamCard({ member }: { member: TeamMember }) {
       </div>
 
       <div className="flex flex-1 flex-col px-6 pb-6 sm:px-8 sm:pb-8">
-        <div className="relative -mt-12 size-24 overflow-hidden sm:-mt-14 sm:size-28 rounded-full border-4 border-paper bg-border">
+        <div className="relative -mt-12 size-24 overflow-hidden sm:-mt-14 sm:size-28 rounded-full border-4 border-paper">
           {member.avatar ? (
-            <Image
+            <SkeletonImage
               src={member.avatar}
               alt={member.name}
               fill

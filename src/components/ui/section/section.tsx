@@ -15,7 +15,7 @@ export function Section({ children, id, bordered = true, className }: SectionPro
     <section
       id={id}
       className={cn(
-        "mx-auto w-full max-w-content border-x border-border py-20 sm:py-28 md:py-section",
+        "mx-auto w-full max-w-content border-x border-border py-16 sm:py-20 md:py-section",
         bordered && "border-t",
         className,
       )}

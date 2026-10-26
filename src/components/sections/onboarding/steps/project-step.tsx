@@ -1,8 +1,8 @@
 "use client";
 
+import type { StepProps } from "@/components/sections/onboarding/steps/types";
 import { ChoiceGroup } from "@/components/ui/form/choice-group";
 import { TextAreaField } from "@/components/ui/form/text-field";
-import type { StepProps } from "@/components/sections/onboarding/steps/types";
 import { useI18n } from "@/i18n/provider";
 import { ONBOARDING_NEEDS, ONBOARDING_STAGES } from "@/lib/onboarding/request";
 
@@ -16,7 +16,10 @@ export function ProjectStep({ data, errors, setField, toggleNeed }: StepProps) {
         type="checkbox"
         name="needs"
         legend={copy.fields.needs}
-        options={ONBOARDING_NEEDS.map((value) => ({ value, label: copy.needs[value] }))}
+        options={ONBOARDING_NEEDS.map((value) => ({
+          value,
+          label: copy.needs[value],
+        }))}
         isSelected={(value) => data.needs.includes(value)}
         onSelect={toggleNeed}
       />
@@ -24,7 +27,10 @@ export function ProjectStep({ data, errors, setField, toggleNeed }: StepProps) {
         type="radio"
         name="stage"
         legend={copy.fields.stage}
-        options={ONBOARDING_STAGES.map((value) => ({ value, label: copy.stages[value] }))}
+        options={ONBOARDING_STAGES.map((value) => ({
+          value,
+          label: copy.stages[value],
+        }))}
         isSelected={(value) => data.stage === value}
         onSelect={(value) => setField("stage", value)}
       />

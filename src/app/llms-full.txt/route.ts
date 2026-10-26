@@ -1,4 +1,4 @@
-import { buildLlmsFullTxt } from "@/lib/seo/llms-full";
+import { buildLlmsFullTxt } from "@/lib/seo/llms/full";
 
 export const dynamic = "force-static";
 

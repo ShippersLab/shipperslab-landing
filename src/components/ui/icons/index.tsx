@@ -1,33 +1,25 @@
-import { HugeiconsIcon, type HugeiconsIconProps, type IconSvgElement } from "@hugeicons/react";
 import {
   AiChat01Icon,
   AlertCircleIcon,
   BubbleChatIcon,
   Building03Icon,
-  ArrowDown01Icon,
   ArrowRight01Icon,
   ArrowUpRight01Icon,
-  ArrowUp01Icon,
   Award01Icon,
-  Attachment01Icon,
   Calendar01Icon,
   CashierIcon as CashierIconSource,
-  CloudUploadIcon,
   Cancel01Icon,
   ContactBookIcon,
   DashboardCircleIcon,
-  Database01Icon,
   File01Icon,
   GlobeIcon as GlobeIconSource,
   HeadsetIcon as HeadsetIconSource,
   HelpCircleIcon,
   InstagramIcon as InstagramIconSource,
   Invoice01Icon,
-  Link01Icon,
   Mail01Icon,
   Menu01Icon,
   Mic01Icon,
-  NewTwitterIcon,
   Package01Icon,
   Payment01Icon,
   Plug01Icon,
@@ -36,15 +28,14 @@ import {
   Robot01Icon,
   Rocket01Icon,
   ShoppingCart01Icon,
-  SmartPhone01Icon,
   FileSpreadsheetIcon,
   Store01Icon,
   Tick02Icon,
   TranslateIcon as TranslateIconSource,
   UserGroupIcon,
   WhatsappIcon,
-  WorkflowCircle06Icon,
 } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon, type HugeiconsIconProps, type IconSvgElement } from "@hugeicons/react";
 
 type IconProps = Omit<HugeiconsIconProps, "icon">;
 
@@ -55,20 +46,14 @@ function createIcon(source: IconSvgElement) {
 }
 
 export const DashboardIcon = createIcon(DashboardCircleIcon);
-export const DatabaseIcon = createIcon(Database01Icon);
 export const TeamIcon = createIcon(UserGroupIcon);
-export const WorkflowIcon = createIcon(WorkflowCircle06Icon);
-export const UploadIcon = createIcon(CloudUploadIcon);
 export const RefreshIcon = createIcon(Refresh01Icon);
 export const RobotIcon = createIcon(Robot01Icon);
 export const DocumentIcon = createIcon(File01Icon);
 export const ChatIcon = createIcon(AiChat01Icon);
 export const GlobeIcon = createIcon(GlobeIconSource);
-export const PhoneIcon = createIcon(SmartPhone01Icon);
 export const RocketIcon = createIcon(Rocket01Icon);
-export const AttachmentIcon = createIcon(Attachment01Icon);
 export const MicIcon = createIcon(Mic01Icon);
-export const SendIcon = createIcon(ArrowUp01Icon);
 export const ArrowRightIcon = createIcon(ArrowRight01Icon);
 export const ArrowUpRightIcon = createIcon(ArrowUpRight01Icon);
 export const PlusIcon = createIcon(PlusSignIcon);
@@ -76,7 +61,6 @@ export const CheckIcon = createIcon(Tick02Icon);
 export const CalendarIcon = createIcon(Calendar01Icon);
 export const MailIcon = createIcon(Mail01Icon);
 export const AlertIcon = createIcon(AlertCircleIcon);
-export const TwitterIcon = createIcon(NewTwitterIcon);
 export const InstagramIcon = createIcon(InstagramIconSource);
 export const WhatsAppIcon = createIcon(WhatsappIcon);
 export const StockIcon = createIcon(Package01Icon);
@@ -84,7 +68,6 @@ export const OrdersIcon = createIcon(ShoppingCart01Icon);
 export const CashierIcon = createIcon(CashierIconSource);
 export const SpreadsheetIcon = createIcon(FileSpreadsheetIcon);
 export const InvoiceIcon = createIcon(Invoice01Icon);
-export const LinkIcon = createIcon(Link01Icon);
 export const StoreIcon = createIcon(Store01Icon);
 export const BuildingIcon = createIcon(Building03Icon);
 export const ConversationIcon = createIcon(BubbleChatIcon);
@@ -95,6 +78,5 @@ export const ContactsIcon = createIcon(ContactBookIcon);
 export const HeadsetIcon = createIcon(HeadsetIconSource);
 export const MenuIcon = createIcon(Menu01Icon);
 export const CloseIcon = createIcon(Cancel01Icon);
-export const ChevronDownIcon = createIcon(ArrowDown01Icon);
 export const LanguageIcon = createIcon(TranslateIconSource);
 export const HelpIcon = createIcon(HelpCircleIcon);

@@ -59,7 +59,7 @@ export function LinkPreview({
         <a
           href={url}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className={className}
           onMouseMove={handleMouseMove}
         >
@@ -80,7 +80,7 @@ export function LinkPreview({
                 <a
                   href={url}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   tabIndex={-1}
                   className="block rounded-lg border border-border bg-paper p-1"
                 >

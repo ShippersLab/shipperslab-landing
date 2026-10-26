@@ -1,5 +1,5 @@
-import { eventopsImages } from "@/lib/projects/eventops";
 import { LinkPreview } from "@/components/ui/link-preview";
+import { eventopsImages } from "@/lib/projects/eventops";
 import { site } from "@/lib/site";
 
 const LINK_TOKEN = /\{([^}]+)\}/;

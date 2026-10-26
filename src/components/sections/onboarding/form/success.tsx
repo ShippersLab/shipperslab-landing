@@ -1,11 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useRef } from "react";
 
 import { Reveal } from "@/components/ui/animation/reveal";
-import { CheckIcon } from "@/components/ui/icons";
 import { TextureButton } from "@/components/ui/button/texture-button";
+import { CheckIcon } from "@/components/ui/icons";
+import { LocalizedLink } from "@/i18n/link";
 import { useI18n } from "@/i18n/provider";
 
 const ITEM_STAGGER = 80;
@@ -24,7 +24,10 @@ function useRevealOnMount() {
     const rect = element.getBoundingClientRect();
     const top = window.scrollY + rect.top - (window.innerHeight - rect.height) / 2;
 
-    window.scrollTo({ top: Math.max(0, top), behavior: reduced ? "auto" : "smooth" });
+    window.scrollTo({
+      top: Math.max(0, top),
+      behavior: reduced ? "auto" : "smooth",
+    });
     element.focus({ preventScroll: true });
   }, []);
 
@@ -56,9 +59,9 @@ export function Success() {
       </Reveal>
       <Reveal delay={ITEM_STAGGER * 3}>
         <TextureButton asChild variant="primary" size="pill" className="w-auto rounded-full">
-          <Link href="/" className="text-sm sm:text-base">
+          <LocalizedLink href="/" className="text-sm sm:text-base">
             {copy.cta}
-          </Link>
+          </LocalizedLink>
         </TextureButton>
       </Reveal>
     </div>

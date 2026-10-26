@@ -1,15 +1,9 @@
 "use client";
 
-import { motion, useInView, useReducedMotion, type MotionProps, type Variants } from "motion/react";
-import {
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-  type ComponentType,
-  type ReactNode,
-  type Ref,
-} from "react";
+import { Fragment, useMemo, useRef } from "react";
+
+import { useGSAP } from "@/lib/animation/gsap";
+import { scrollReveal } from "@/lib/animation/scroll-reveal";
 
 type WordRevealProps = {
   text: string;
@@ -18,85 +12,41 @@ type WordRevealProps = {
   delay?: number;
 };
 
-const EASE = [0.23, 1, 0.32, 1] as const;
-const MAX_ANIMATED_WORDS = 12;
-
-const word: Variants = {
-  hidden: { opacity: 0, transform: "translateY(16px)" },
-  visible: { opacity: 1, transform: "translateY(0px)", transition: { duration: 0.7, ease: EASE } },
-};
-
-const block: Variants = {
-  hidden: { opacity: 0, transform: "translateY(8px)" },
-  visible: { opacity: 1, transform: "translateY(0px)" },
-};
+const WORD_STAGGER = 0.04;
+const MAX_STAGGER_TOTAL = 0.9;
 
 export function WordReveal({ text, as = "p", className, delay = 0 }: WordRevealProps) {
   const ref = useRef<HTMLElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "0px 0px -12% 0px" });
-  const prefersReducedMotion = useReducedMotion();
-
-  const [hydrated, setHydrated] = useState(false);
-
-  useEffect(() => {
-    setHydrated(true);
-  }, []);
-
-  const reduced = hydrated && prefersReducedMotion;
   const words = useMemo(() => text.split(" ").filter(Boolean), [text]);
-  const container = useMemo<Variants>(
-    () => ({
-      hidden: {},
-      visible: { transition: { staggerChildren: 0.04, delayChildren: delay } },
-    }),
-    [delay],
-  );
-  const MotionTag = useMemo(
-    () =>
-      motion.create(as) as ComponentType<
-        MotionProps & { children?: ReactNode; className?: string; ref?: Ref<HTMLElement> }
-      >,
-    [as],
-  );
+  const stagger = Math.min(WORD_STAGGER, MAX_STAGGER_TOTAL / words.length);
+  const Tag = as;
 
-  if (reduced) {
-    const StaticTag = as;
-    return (
-      <StaticTag ref={ref as never} className={className}>
-        {text}
-      </StaticTag>
-    );
-  }
-
-  if (words.length > MAX_ANIMATED_WORDS) {
-    return (
-      <MotionTag
-        ref={ref}
-        className={className}
-        initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
-        variants={block}
-        transition={{ duration: 0.7, delay, ease: EASE }}
-      >
-        {text}
-      </MotionTag>
-    );
-  }
+  useGSAP(
+    () => {
+      const element = ref.current;
+      if (!element) return;
+      return scrollReveal({
+        trigger: element,
+        targets: element.querySelectorAll("[data-word]"),
+        from: { y: 16 },
+        duration: 0.7,
+        delay,
+        stagger,
+      });
+    },
+    { scope: ref, dependencies: [text, stagger, delay] },
+  );
 
   return (
-    <MotionTag
-      ref={ref}
-      className={className}
-      initial="hidden"
-      animate={isInView ? "visible" : "hidden"}
-      variants={container}
-    >
+    <Tag ref={ref as never} className={className}>
       {words.map((entry, index) => (
-        <motion.span key={`${entry}-${index}`} variants={word} className="inline-block">
-          {entry}
-          {index < words.length - 1 ? " " : ""}
-        </motion.span>
+        <Fragment key={`${entry}-${index}`}>
+          <span data-word className="inline-block">
+            {entry}
+          </span>
+          {index < words.length - 1 ? " " : null}
+        </Fragment>
       ))}
-    </MotionTag>
+    </Tag>
   );
 }

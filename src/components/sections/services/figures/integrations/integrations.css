@@ -1,0 +1,108 @@
+.iso.ig[data-theme="light"] {
+  --anatomy-page: var(--paper);
+  --anatomy-card: var(--paper);
+  --anatomy-paper: var(--paper);
+  --anatomy-face: var(--paper);
+  --anatomy-top: var(--paper);
+  --anatomy-text: var(--muted);
+  --anatomy-strong: var(--ink);
+  --anatomy-muted: var(--muted);
+  --anatomy-shade-3: color-mix(in srgb, var(--paper) 93%, var(--ink));
+  --anatomy-shade-2: color-mix(in srgb, var(--paper) 87%, var(--ink));
+  --anatomy-shade-1: color-mix(in srgb, var(--paper) 80%, var(--ink));
+  --anatomy-shade-0: color-mix(in srgb, var(--paper) 72%, var(--ink));
+  --anatomy-lit-top: var(--paper);
+  --anatomy-lit-shade: var(--anatomy-shade-3);
+  --anatomy-hi: var(--ink);
+  --anatomy-mid: var(--muted);
+  --anatomy-lo: color-mix(in srgb, var(--muted) 55%, var(--paper));
+  --anatomy-faint: var(--border);
+  --anatomy-lit: var(--accent);
+  --anatomy-dot: var(--ink);
+  --anatomy-weight: 0.7px;
+  --anatomy-mono: var(--font-mono), ui-monospace, monospace;
+}
+
+.ig .iso-figure {
+  margin: 0;
+}
+
+.ig-live {
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.ig-stage .iso-svg {
+  overflow: visible;
+}
+
+.ig-edge,
+.ig-core,
+.ig-shine,
+.ig-trail {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ig-edge {
+  stroke: var(--ink);
+  stroke-width: 4.4px;
+}
+
+.ig-core {
+  stroke: color-mix(in srgb, var(--paper) 78%, var(--ink));
+  stroke-width: 3px;
+}
+
+.ig-shine {
+  stroke: var(--paper);
+  stroke-width: 0.9px;
+}
+
+.ig-trail {
+  stroke-width: 3px;
+}
+
+.ig-head {
+  fill: var(--accent);
+  stroke: var(--paper);
+  stroke-width: 1px;
+}
+
+.ig-hit {
+  fill: transparent;
+  stroke: none;
+  cursor: pointer;
+}
+
+.ig-focus {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1.2px;
+  opacity: 0;
+  transition: opacity 200ms var(--ease-out, ease-out);
+}
+
+.ig-jack:hover .ig-focus,
+.ig-jack[data-on] .ig-focus,
+.ig-jack:focus-visible .ig-focus {
+  opacity: 1;
+}
+
+.ig-jack {
+  outline-style: none;
+}
+
+.ig-jack:focus-visible {
+  outline-style: solid;
+}
+
+.ig-lamp[data-lit] .iso-top {
+  fill: var(--accent);
+}
+
+.ig-lamp[data-lit] .iso-edge {
+  stroke: var(--accent);
+}

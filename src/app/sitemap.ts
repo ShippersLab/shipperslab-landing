@@ -1,11 +1,12 @@
 import type { MetadataRoute } from "next";
 
+import { locales } from "@/i18n/config";
+import { languageAlternates, localizedUrl } from "@/i18n/paths";
 import { getPublishedBlogPosts } from "@/lib/blog";
 import { projectRoutes } from "@/lib/projects";
 import { serviceRoutes } from "@/lib/services";
-import { site } from "@/lib/site";
 
-const routes = [
+const routes: { path: string; priority: number; lastModified?: string }[] = [
   { path: "", priority: 1 },
   { path: "/casos", priority: 0.8 },
   ...projectRoutes.map((route) => ({ path: `/casos/${route.slug}`, priority: 0.7 })),
@@ -14,13 +15,21 @@ const routes = [
   ...serviceRoutes.map((route) => ({ path: `/${route.slug}`, priority: 0.85 })),
   { path: "/eventos", priority: 0.8 },
   { path: "/blog", priority: 0.7 },
-  ...getPublishedBlogPosts().map((post) => ({ path: `/blog/${post.slug}`, priority: 0.6 })),
+  ...getPublishedBlogPosts().map((post) => ({
+    path: `/blog/${post.slug}`,
+    priority: 0.6,
+    lastModified: post.datePublished,
+  })),
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return routes.map((route) => ({
-    url: `${site.url}${route.path}`,
-    changeFrequency: "monthly",
-    priority: route.priority,
-  }));
+  return routes.flatMap((route) =>
+    locales.map((lang) => ({
+      url: localizedUrl(route.path || "/", lang),
+      changeFrequency: "monthly" as const,
+      ...(route.lastModified ? { lastModified: route.lastModified } : {}),
+      priority: route.priority,
+      alternates: { languages: languageAlternates(route.path || "/") },
+    })),
+  );
 }

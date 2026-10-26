@@ -1,4 +1,6 @@
 import { InlineText } from "@/components/sections/service-page/inline-text";
+import { BlurReveal } from "@/components/ui/animation/blur-reveal";
+import { StaggerReveal } from "@/components/ui/animation/stagger-reveal";
 import { serviceIcon } from "@/components/sections/service-page/service-icons";
 
 type CoverItem = {
@@ -14,24 +16,26 @@ type ServiceCoversProps = {
 export function ServiceCovers({ body, items }: ServiceCoversProps) {
   return (
     <>
-      <p className="text-lg leading-relaxed text-ink sm:text-xl">
-        <InlineText text={body} />
-      </p>
-      <ul className="mt-6 flex flex-wrap gap-2">
+      <BlurReveal>
+        <p className="text-base leading-relaxed text-muted">
+          <InlineText text={body} />
+        </p>
+      </BlurReveal>
+      <StaggerReveal as="ul" className="mt-6 flex flex-wrap gap-2">
         {items.map((item) => {
           const Icon = serviceIcon(item.id);
 
           return (
             <li
               key={item.id}
-              className="inline-flex items-center gap-2 rounded-full border border-border px-3 py-1.5 font-mono text-label uppercase tracking-label text-muted"
+              className="inline-flex items-center gap-2 rounded-md border border-border px-3 py-1.5 font-mono text-sm tracking-tight text-muted"
             >
               <Icon size={14} className="shrink-0" />
               {item.label}
             </li>
           );
         })}
-      </ul>
+      </StaggerReveal>
     </>
   );
 }

@@ -7,11 +7,40 @@
   "site": {
     "name": "ShippersLab"
   },
+  "seo": {
+    "home": {
+      "title": "ShippersLab | Software a medida para pymes y comercios",
+      "description": "Sistemas de gestión, integraciones, bots de WhatsApp y webs a medida para pymes y comercios. Charla gratis de 30 minutos.",
+      "keywords": [
+        "software a medida",
+        "software a medida para pymes",
+        "sistema de gestión a medida",
+        "sistema de stock",
+        "sistema de turnos",
+        "bots con IA para negocios",
+        "agentes de IA",
+        "integraciones",
+        "desarrollo web para comercios",
+        "catálogo con pedido por WhatsApp",
+        "desarrollo de software"
+      ]
+    },
+    "empecemos": {
+      "title": "Pedí presupuesto de software a medida",
+      "description": "Contanos qué te lleva tiempo o qué querés ordenar en tu negocio. Te respondemos con alcance y precio por escrito, después de una charla gratis de 30 minutos."
+    },
+    "eventos": {
+      "title": "Eventos para quienes construyen",
+      "description": "Workshops, build nights, demo nights y hackatones para gente que construye, empezando en Santa Fe. Todavía no hay fechas: escribinos a eventos@shipperslab.tech."
+    },
+    "notFound": {
+      "title": "Página no encontrada"
+    }
+  },
   "nav": {
     "services": "Servicios",
-    "about": "Nosotros",
     "events": "Eventos",
-    "contact": "Escribinos",
+    "contact": "Hablemos",
     "skip": "Saltar al contenido",
     "casos": "Casos",
     "menuOpen": "Abrir menú",
@@ -21,15 +50,15 @@
   },
   "hero": {
     "title": "Software a medida para tu negocio.",
-    "description": "Sistemas de gestión, webs, bots con IA e integraciones para pymes y comercios. Armado para cómo trabajás y conectado con lo que ya usás.",
-    "primaryCta": "Contanos tu problema",
-    "secondaryCta": "Ver servicios",
-    "imageAlt": "Ilustración del Obelisco de Buenos Aires sobre una avenida amplia, en tonos naranja"
+    "description": "Sistemas de gestión, webs, bots con IA e integraciones para pymes y comercios.",
+    "primaryCta": "Escribinos por WhatsApp",
+    "secondaryCta": "Ver casos",
+    "whatsappMessage": "Hola, quiero contarles sobre mi negocio",
+    "imageAlt": "Ilustración del Obelisco de Buenos Aires y la avenida 9 de Julio, en trazo naranja sobre fondo blanco"
   },
   "team": {
-    "title": "Ingenieros y diseñadores de Argentina.",
-    "description": "Somos un equipo chico. Venimos de empresas grandes y de productos para clientes del exterior, y trabajamos en español y en inglés.",
-    "foundersTitle": "Quiénes están detrás",
+    "title": "¿Quiénes somos?",
+    "description": "Somos un equipo de ingenieros y diseñadores de Argentina, con experiencia en empresas grandes.",
     "members": {
       "juani": {
         "role": "Cofundador · Ingeniería y producto",
@@ -40,79 +69,61 @@
         "bio": "Diseña las pantallas y construye el sistema que hay detrás. Ingeniero de software e IA, con tiendas online, paneles de gestión y agentes de IA en su portfolio."
       }
     },
+    "employersLine": "Y un equipo de ingenieros que trabajó en empresas como:",
     "profileLink": "Ver perfil",
     "profileLabel": "Ver perfil de {name}",
-    "coverAlt": "Foto de portada de {name}",
-    "ctaTitle": "¿Querés saber si esto tiene sentido para tu negocio? Escribinos y lo vemos.",
-    "ctaButton": "Escribinos a hola@shipperslab.tech"
+    "coverAlt": "Foto de portada de {name}"
   },
   "services": {
     "title": "Qué hacemos.",
-    "description": "Cada sistema se arma para tu negocio, tus problemas y tus objetivos.",
+    "description": "Sistemas, webs, bots e integraciones para que tu negocio venda y atienda sin trabas.",
     "eventopsPreviewAlt": "Captura de la página de inicio de EventOps",
     "items": [
       {
         "id": "systems",
-        "title": "Sistemas de gestión\na medida",
-        "description": "Stock, pedidos, caja o turnos en un solo sistema, armado para cómo trabaja tu negocio. Así hicimos {EventOps} para empresas de eventos.",
-        "audience": "Para pymes con stock, pedidos o turnos"
+        "title": "Sistemas de gestión a medida",
+        "description": "Dejá el Excel y manejá stock, pedidos y turnos en un solo lugar. Hicimos {EventOps} así, a medida de cómo trabaja cada negocio.",
+        "includes": ["Stock y pedidos", "Panel con tus números"],
+        "audience": "Pymes con stock y pedidos"
       },
       {
         "id": "presence",
-        "title": "Webs, turneros\ny catálogos",
-        "description": "Una web para tu negocio, un turnero online o un catálogo con pedido por WhatsApp. Tus clientes te encuentran, ven lo que ofrecés y te escriben.",
-        "audience": "Para comercios y emprendedores"
+        "title": "Webs, turneros y catálogos",
+        "description": "Que tus clientes te encuentren, reserven y te pidan sin vueltas. Armamos tu web, tu turnero o tu catálogo con pedidos por WhatsApp.",
+        "includes": ["Turnos online", "Catálogo con pedidos por WhatsApp"],
+        "audience": "Comercios y emprendedores"
       },
       {
         "id": "bots",
-        "title": "Bots y agentes\nde IA",
-        "description": "Un bot o agente que atiende a toda hora por WhatsApp, tu web o donde estén tus clientes: toma pedidos, agenda turnos o responde consultas. Cuando algo necesita a una persona, te lo pasa.",
-        "audience": "Para negocios que reciben muchas consultas"
+        "title": "Bots y agentes de IA",
+        "description": "Atendé a toda hora sin estar pegado al celular. Un bot en WhatsApp toma pedidos, agenda turnos y te avisa cuando hace falta una persona.",
+        "includes": ["Pedidos y turnos automáticos", "Aviso cuando entra una persona"],
+        "audience": "Negocios con muchas consultas"
       },
       {
         "id": "integrations",
-        "title": "Integraciones con\nlo que ya usás",
-        "description": "Conectamos WhatsApp, tus planillas y la facturación entre sí. Cargás algo una vez y aparece donde tiene que estar.",
-        "audience": "Para quien ya usa varias herramientas"
+        "title": "Integraciones con lo que ya usás",
+        "description": "Cargás algo una vez y aparece donde tiene que estar, sin cambiar de herramientas. Conectamos WhatsApp, planillas y facturación.",
+        "includes": ["WhatsApp y planillas conectados", "Facturación sin carga doble"],
+        "audience": "Equipos con varias herramientas"
       }
     ],
-    "casesCta": "Ver casos"
-  },
-  "process": {
-    "title": "Qué pasa cuando nos escribís.",
-    "steps": [
-      {
-        "title": "Charla sobre tu negocio",
-        "description": "Nos contás cómo trabajan hoy y qué se traba. Vemos juntos qué conviene resolver primero."
-      },
-      {
-        "title": "Alcance por escrito",
-        "description": "Qué entra, qué no, cuánto cuesta y cuándo está. Todo claro antes de arrancar."
-      },
-      {
-        "title": "Avance cada semana",
-        "description": "Cada semana ves algo funcionando y lo probás con tu equipo."
-      },
-      {
-        "title": "Lo empiezan a usar",
-        "description": "Lo ponemos en marcha con tu equipo y lo ajustamos con el uso real."
-      }
-    ],
-    "link": "Ver cómo trabajamos"
+    "casesCta": "Ver casos",
+    "moreCta": "Ver más"
   },
   "faq": {
     "label": "Preguntas frecuentes",
     "title": "Lo que nos preguntan antes de escribir.",
-    "description": "Respuestas a lo que más nos preguntan. ¿No está la tuya? Escribinos a",
+    "description": "Lo que más nos preguntan, en pocas líneas.",
     "help": {
       "title": "¿Te quedó alguna duda?",
       "description": "Escribinos y te responde alguien del equipo.",
-      "cta": "Escribinos"
+      "cta": "Agendanos una llamada"
     },
     "items": [
       {
         "question": "¿Cuánto cuesta?",
-        "answer": "Depende de qué haya que resolver. Después de la primera charla te mandamos el precio por escrito, antes de arrancar. Si conviene, empezamos por una parte chica y seguimos desde ahí."
+        "answer": "Depende de qué haya que resolver. Después de la primera charla te mandamos el precio por escrito, antes de arrancar."
       },
       {
         "question": "¿Cuánto tarda?",
@@ -120,7 +131,7 @@
       },
       {
         "question": "¿Qué pasa con lo que ya usamos?",
-        "answer": "Partimos de ahí. Si tus planillas, tu facturación o tu WhatsApp te sirven, los conectamos en lugar de reemplazarlos. Si hay que pasar datos a un sistema nuevo, queda planificado en la propuesta."
+        "answer": "Partimos de ahí. Si tus planillas, tu facturación o tu WhatsApp te sirven, los conectamos en lugar de reemplazarlos."
       },
       {
         "question": "¿Hay que cambiar todo el sistema?",
@@ -132,9 +143,22 @@
       }
     ]
   },
+  "cta": {
+    "title": "Pegá el salto.",
+    "description": "Dejá el Excel y el WhatsApp desordenado. Te armamos el sistema que tu negocio necesita.",
+    "button": "Hablemos"
+  },
   "contact": {
-    "title": "Empecemos por tu problema.",
-    "description": "Contanos qué querés resolver y te respondemos para coordinar una charla.",
+    "title": "Contanos qué necesitás.",
+    "description": "La primera llamada de 30 minutos es gratis.",
+    "links": {
+      "copy": "Copiar",
+      "copied": "Copiado",
+      "copyLabel": "Copiar email",
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram",
+      "call": "Reservar llamada"
+    },
     "form": {
       "name": "Nombre",
       "namePlaceholder": "Tu nombre",
@@ -153,7 +177,6 @@
       "whatsappMessage": "Hola, quiero contarles un problema de mi negocio.",
       "whatsappGreeting": "Hola, soy {name}.",
       "whatsappGreetingWithCompany": "Hola, soy {name}, de {company}.",
-      "bookCall": "Reservar una llamada",
       "alternative": "O escribinos directo a"
     }
   },
@@ -191,7 +214,8 @@
       "back": "Atrás",
       "next": "Siguiente",
       "submit": "Enviar",
-      "sending": "Enviando..."
+      "sending": "Enviando...",
+      "call": "Agendá una llamada"
     },
     "errors": {
       "nameRequired": "Contanos cómo te llamás.",
@@ -219,14 +243,8 @@
     "stepAnnouncement": "Paso {step} de {total}: {title}"
   },
   "footer": {
-    "illustrationAlt": "Ilustración del Puente Colgante de Santa Fe sobre la laguna Setúbal, en tonos naranja",
     "tagline": "Sistemas, webs, bots e integraciones para pymes y comercios. Un equipo chico de Argentina.",
     "legal": "Hecho en Argentina.",
-    "social": {
-      "instagram": "Instagram de ShippersLab (abre en una pestaña nueva)",
-      "x": "X de ShippersLab (abre en una pestaña nueva)",
-      "mail": "Escribinos a {email}"
-    },
     "servicesTitle": "Servicios",
     "exploreTitle": "Explorar",
     "links": {
@@ -244,25 +262,49 @@
   "events": {
     "title": "Eventos para toda la comunidad",
     "description": "Networking, demos de proyectos, charlas y hackathons abiertos a todos. Arrancamos en Santa Fe.",
-    "formats": ["Networking", "Demo nights", "Charlas", "Hackathons", "Café"],
+    "formats": [
+      {
+        "title": "Workshops",
+        "description": "Talleres prácticos donde se arma algo paso a paso, con gente de la zona que ya lo hizo."
+      },
+      {
+        "title": "Build nights",
+        "description": "Una noche, mesas compartidas y cada uno con lo suyo. Venís con algo a medias y te vas con algo más cerca de salir."
+      },
+      {
+        "title": "Demo nights",
+        "description": "Noches para mostrar lo que estás armando, tus proyectos propios, y recibir feedback de gente que también construye."
+      },
+      {
+        "title": "Hackatones",
+        "description": "Un fin de semana para formar equipos, armar algo desde cero y mostrarlo el domingo."
+      },
+      {
+        "title": "Café y networking",
+        "description": "Un rato para charlar con gente que construye cosas, sin agenda ni corbata."
+      }
+    ],
+    "formatsTitle": "Lo que nos gustaría armar.",
+    "formatsDescription": "Todavía no hay fechas. Estas son las ideas de eventos que queremos organizar.",
+    "formatSoon": "Próximamente",
     "sponsorTitle": "Buscamos partners",
     "sponsorDescription": "Queremos armar estos eventos junto a empresas y personas que quieran sumarse. No hace falta ser una marca grande: estas son algunas formas de ayudar, y si se te ocurre otra, también suma.",
     "sponsorWays": [
       {
-        "title": "Un lugar",
-        "description": "Una oficina, un cowork o cualquier espacio donde podamos juntarnos."
+        "title": "Venues",
+        "description": "Una oficina, un cowork o cualquier espacio donde juntarnos. Si alguien viaja, un lugar donde quedarse también suma."
       },
       {
-        "title": "Créditos y herramientas",
-        "description": "Créditos de API o acceso a tus herramientas para que la gente las pruebe."
-      },
-      {
-        "title": "Premios",
-        "description": "Algo para reconocer a los mejores proyectos o sumar a un sorteo."
+        "title": "Sponsors",
+        "description": "Créditos, herramientas o premios para los proyectos y la gente que participa."
       },
       {
         "title": "Una mano organizando",
         "description": "Difusión, logística o tiempo para que cada evento salga bien."
+      },
+      {
+        "title": "Comida y café",
+        "description": "Café, comida, merch o lo que quieras ofrecer en el evento."
       }
     ],
     "cta": "Enviar un mensaje",
@@ -303,17 +345,34 @@
     "cta": "Volver al inicio"
   },
   "casos": {
-    "metaTitle": "Casos de software a medida: EventOps",
-    "metaDescription": "Casos de software a medida de ShippersLab: EventOps, nuestro sistema de gestión en producción para empresas de sonido, iluminación y eventos.",
+    "metaTitle": "Casos de software: EventOps y Estacionar",
+    "metaDescription": "Casos de ShippersLab: EventOps, nuestro sistema de gestión en producción para empresas de eventos, y Estacionar, el branding de un marketplace de cocheras.",
     "title": "Últimos proyectos.",
     "description": "Una selección de lo que construimos y tenemos en producción.",
+    "soon": {
+      "title": "Acá va tu caso.",
+      "description": "Estamos sumando los proyectos que hacemos con nuestros clientes. El próximo puede ser el tuyo."
+    },
     "eventops": {
+      "doneTitle": "Qué hicimos.",
+      "done": [
+        "Diseño del producto y de la interfaz",
+        "Desarrollo del sistema web completo",
+        "Presupuestos en PDF y exportación a CSV",
+        "Usuarios por empresa, con invitaciones por email",
+        "Mejoras continuas junto a quienes lo usan"
+      ],
+      "whyTitle": "Por qué lo hicimos.",
+      "why": "Las empresas de eventos coordinan fechas, personal y cobros con planillas y mensajes. Vimos que eso no escala y armamos un sistema desde su forma de trabajar, para ofrecerlo como producto propio.",
+      "customersTitle": "Lo mejoramos con quienes lo usan.",
+      "customers": "EventOps está en producción y lo usan empresas de eventos. Hablamos seguido con ellas y cada mejora sale de lo que necesitan en su día a día.",
+      "category": "Sistemas de gestión · Empresas de eventos",
       "heroAlt": "Captura de la página de inicio de EventOps",
       "title": "EventOps",
       "summary": "Calendario, personal y finanzas de tu empresa de eventos.",
       "tags": ["Gestión de eventos", "B2B"],
-      "metaTitle": "EventOps: sistema de gestión para empresas de eventos",
-      "metaDescription": "EventOps reúne el calendario, los clientes, el personal y las finanzas de una empresa de eventos en un único sistema. Producto propio de ShippersLab, en producción.",
+      "metaTitle": "EventOps: sistema de gestión para eventos",
+      "metaDescription": "EventOps reúne calendario, clientes, personal y finanzas de una empresa de eventos en un solo sistema. Producto propio de ShippersLab, en producción.",
       "visitLabel": "Visitar EventOps",
       "featuresTitle": "Qué incluye.",
       "features": [
@@ -352,7 +411,7 @@
         "Panel de finanzas de EventOps"
       ],
       "eyebrow": "Producto propio",
-      "lead": "Calendario, clientes, personal y finanzas de tu empresa de eventos en un único sistema. Un producto propio de ShippersLab, en producción.",
+      "lead": "El calendario, los clientes, el personal y las finanzas de tu empresa de eventos en un solo lugar. Producto propio de ShippersLab, en producción y en uso.",
       "backLabel": "Todos los casos",
       "factsLabel": "Datos del proyecto",
       "facts": [
@@ -366,54 +425,117 @@
         },
         {
           "label": "Pensado para",
-          "value": "Empresas de sonido, iluminación y eventos"
+          "value": "Empresas de eventos"
         },
         {
           "label": "Servicio",
-          "value": "Sistema de gestión a medida"
+          "value": "Sistema de gestión"
         }
       ],
       "overviewTitle": "El problema.",
-      "overview": "Una empresa de eventos maneja a la vez fechas, equipos, clientes y pagos. Cuando esa información está repartida en planillas y mensajes, es fácil que dos eventos se superpongan, que falte personal o que nadie sepa con certeza cuánto dinero ingresó y cuánto queda por cobrar. Si todavía lo resolvés con planillas, leé [cómo organizar una empresa de eventos](/blog/como-organizar-una-empresa-de-eventos).",
-      "approachTitle": "Cómo lo solucionamos.",
-      "approach": "EventOps reúne toda la operación en un único sistema. Cada evento tiene su cliente, su equipo y sus movimientos de dinero, y el calendario muestra de un vistazo qué hay que hacer y cuándo. Lo diseñamos a partir de cómo trabaja una empresa de eventos, para que todos vean siempre la misma información.",
+      "overview": "Una empresa de eventos maneja fechas, equipos, clientes y pagos al mismo tiempo. Con la información repartida en planillas y mensajes, se pisan dos eventos, falta personal y nadie sabe cuánto entró y cuánto falta cobrar. Si todavía lo resolvés con planillas, leé [cómo organizar una empresa de eventos](/blog/como-organizar-una-empresa-de-eventos).",
+      "approachTitle": "Cómo lo resolvemos.",
+      "approach": "EventOps junta toda la operación en un solo sistema. Cada evento tiene su cliente, su equipo y su plata, y el calendario muestra de un vistazo qué hay que hacer y cuándo. Todo el equipo ve siempre la misma información.",
       "flowTitle": "Un evento, de punta a punta.",
       "flowDescription": "Cada evento se carga una sola vez y de ahí sale todo lo demás. No hay que copiar nada a otra planilla.",
       "flow": [
         {
           "title": "Cargar el evento",
-          "body": "Se crea el evento con su cliente y se le agregan las fechas relacionadas: visita técnica, montaje, prueba de sonido y desmontaje. Todas aparecen en el calendario y el sistema avisa si dos fechas se pisan."
+          "body": "Se crea con su cliente y sus fechas: visita técnica, montaje, prueba y desmontaje. El sistema avisa si dos se pisan."
         },
         {
           "title": "Armar el presupuesto",
-          "body": "Se eligen los servicios de la lista, como sonido, iluminación o pantalla LED, y el total se calcula solo. El presupuesto se descarga en PDF con el logo de la empresa."
+          "body": "Elegís los servicios y el total se calcula solo. Sale en PDF con el logo de la empresa."
         },
         {
           "title": "Asignar al personal",
-          "body": "Para cada fecha se suman los integrantes que van a trabajar, con su rol, y se ve quién está libre y cuántos faltan asignar."
+          "body": "Sumás integrantes a cada fecha con su rol y ves quién está libre."
         },
         {
           "title": "Cobrar y controlar",
-          "body": "Se registran la seña, las cuotas y los gastos del evento, en pesos o en dólares. Al cierre del mes, el resumen muestra cuánto ingresó, cuánto salió y cuánto queda por cobrar."
+          "body": "Registrás seña, cuotas y gastos en pesos o dólares. El resumen mensual muestra lo que falta cobrar."
         }
       ]
     },
+    "estacionar": {
+      "ideaTitle": "La idea.",
+      "idea": "Estacionar nació en casa: se nos ocurrió a nosotros. Pensamos un marketplace, algo así como Airbnb para estacionar, que conecte a quienes tienen una cochera o un espacio sin usar con quienes necesitan dónde dejar el auto. Es una idea grande y la tomamos en serio: la marca, la aplicación y la landing las hicimos nosotros de punta a punta.",
+      "howTitle": "Cómo iba a funcionar.",
+      "howIntro": "Tres puntas en una misma plataforma.",
+      "how": [
+        {
+          "title": "Conductores",
+          "body": "Buscan estacionamiento por ciudad y reservan el lugar. También sirve para organizar el viaje: podés reservar un lugar mientras estás de vacaciones."
+        },
+        {
+          "title": "Dueños de cocheras",
+          "body": "Publican una cochera o un espacio que no usan y lo alquilan. Un espacio parado pasa a generar ingresos."
+        },
+        {
+          "title": "Estacionamientos",
+          "body": "Nuestro plan era hablar con estacionamientos de distintas ciudades para que cargaran su perfil y sus precios en la plataforma."
+        }
+      ],
+      "brandTitle": "La marca.",
+      "brand": "Pensamos los colores como el tránsito: señales, rutas y cocheras. Por eso elegimos amarillo y negro, una paleta que se ve de lejos. El logo es una P de parking combinada con un pin de mapa.",
+      "stageTitle": "Dónde está hoy.",
+      "stage": "Estacionar todavía no está publicado. La marca está definida, las redes armadas, y la aplicación web y la landing construidas. Seguimos pensándolo como producto propio.",
+      "factsLabel": "Datos del proyecto",
+      "facts": [
+        {
+          "label": "Proyecto",
+          "value": "Producto propio"
+        },
+        {
+          "label": "Estado",
+          "value": "En desarrollo"
+        },
+        {
+          "label": "Servicio",
+          "value": "Marca, aplicación web y landing"
+        },
+        {
+          "label": "Tipo",
+          "value": "Marketplace"
+        }
+      ],
+      "whyTitle": "El problema.",
+      "why": "Hay cocheras vacías y gente que da vueltas sin encontrar dónde estacionar. Las dos puntas existen en la misma ciudad y casi nunca se encuentran. Estacionar las junta en un solo lugar.",
+      "heroAlt": "Logo de Estacionar, un pin de mapa en espiral, sobre fondo amarillo",
+      "title": "Estacionar",
+      "category": "Branding · Marketplace de estacionamiento",
+      "summary": "La identidad de un marketplace para alquilar y encontrar cocheras.",
+      "tags": ["Branding", "Identidad", "Aplicación web", "Landing"],
+      "metaTitle": "Estacionar: el marketplace de cocheras",
+      "metaDescription": "Estacionar conecta a quienes tienen una cochera sin usar con quienes buscan dónde estacionar. Producto propio de ShippersLab. Aún sin publicar.",
+      "eyebrow": "Producto propio",
+      "lead": "Un marketplace para alquilar la cochera que no usás o encontrar dónde estacionar en cualquier ciudad, incluso de vacaciones. Idea nuestra, diseñada y construida por nosotros.",
+      "backLabel": "Todos los casos",
+      "status": "En desarrollo. Aún sin publicar.",
+      "images": [
+        {
+          "alt": "Logo de Estacionar sobre fondo amarillo"
+        },
+        {
+          "alt": "Logo y nombre estacionar sobre una grilla oscura"
+        },
+        {
+          "alt": "Grilla de construcción del logo de Estacionar"
+        }
+      ],
+      "doneTitle": "Qué construimos.",
+      "done": ["Branding e identidad visual", "Redes sociales", "Aplicación web", "Landing page"]
+    },
     "ctaTitle": "¿Querés ver si esto aplica a tu negocio?",
     "ctaDescription": "Contanos qué te lleva tiempo o qué querés ordenar. Te respondemos con alcance y precio por escrito.",
-    "ctaButton": "Contanos tu problema",
-    "soon": {
-      "label": "Próximamente",
-      "title": "Próximamente más.",
-      "description": "Estamos armando los próximos proyectos para mostrar acá."
-    }
+    "ctaButton": "Contanos tu problema"
   },
   "servicePages": {
-    "eyebrow": "Servicio",
     "relatedTitle": "Otros servicios.",
     "sistemas-de-gestion": {
       "navLabel": "Sistemas de gestión",
-      "metaTitle": "Sistemas de gestión a medida para pymes",
-      "metaDescription": "Stock, pedidos, caja o turnos en un solo sistema armado para cómo trabaja tu pyme. Alcance y precio por escrito antes de arrancar.",
+      "metaTitle": "Sistema de gestión a medida para pymes",
+      "metaDescription": "Stock, pedidos, caja o turnos en un solo sistema armado para cómo trabaja tu pyme. Alcance y precio por escrito antes de arrancar. Pedí tu charla gratis.",
       "h1": "Sistemas de gestión a medida.",
       "lead": "Stock, pedidos, caja o turnos en un solo lugar, armado para cómo trabaja tu negocio. Dejá de pelearte con planillas que ya no dan abasto.",
       "covers": {
@@ -553,8 +675,8 @@
     },
     "webs-y-catalogos": {
       "navLabel": "Webs y catálogos",
-      "metaTitle": "Webs, turneros y catálogos para comercios",
-      "metaDescription": "Una web para tu negocio, un turnero online o un catálogo con pedido por WhatsApp. Tus clientes te encuentran y te escriben.",
+      "metaTitle": "Página web para comercios, turnos y catálogos",
+      "metaDescription": "Una página web para tu comercio, un turnero online o un catálogo con pedido por WhatsApp. Tus clientes te encuentran y te escriben. Pedí presupuesto.",
       "h1": "Webs, turneros y catálogos.",
       "lead": "Una web clara para tu negocio, un turnero online o un catálogo con pedido por WhatsApp. Tus clientes te encuentran, ven lo que ofrecés y te escriben.",
       "covers": {
@@ -688,7 +810,7 @@
     },
     "bots-con-ia": {
       "navLabel": "Bots con IA",
-      "metaTitle": "Bots y agentes de IA para negocios",
+      "metaTitle": "Bot de WhatsApp y agentes de IA para negocios",
       "metaDescription": "Un bot o agente que atiende a toda hora por WhatsApp o tu web: toma pedidos, agenda turnos o responde consultas. Cuando hace falta una persona, te lo pasa.",
       "h1": "Bots y agentes de IA.",
       "lead": "Un bot o agente que atiende a toda hora por WhatsApp, tu web o donde estén tus clientes. Toma pedidos, agenda turnos o responde consultas. Cuando algo necesita a una persona, te lo pasa.",
@@ -829,7 +951,7 @@
     },
     "integraciones": {
       "navLabel": "Integraciones",
-      "metaTitle": "Integraciones: Mercado Pago, Tiendanube, ARCA y WhatsApp",
+      "metaTitle": "Integraciones: Mercado Pago, ARCA y WhatsApp",
       "metaDescription": "Integraciones a medida con Mercado Pago, Tiendanube, facturación de ARCA, WhatsApp con IA y Google Sheets. Cargás el dato una vez. Alcance por escrito.",
       "h1": "Integraciones a medida con lo que ya usás.",
       "lead": "Conectamos Mercado Pago, Tiendanube, la facturación de ARCA, WhatsApp y tus planillas entre sí. Cargás algo una vez y aparece donde tiene que estar, sin tirar abajo lo que hoy te funciona.",
@@ -965,9 +1087,8 @@
   },
   "comoTrabajamos": {
     "navLabel": "Cómo trabajamos",
-    "metaTitle": "Proceso de desarrollo de software a medida",
+    "metaTitle": "Cómo trabajamos: proceso de software a medida",
     "metaDescription": "Cómo trabajamos en ShippersLab: charla gratis de 30 minutos, alcance por escrito, entregas cada semana y precio claro de implementación y mantenimiento.",
-    "eyebrow": "Proceso",
     "h1": "Cómo trabajamos, paso a paso.",
     "lead": "Este es el proceso que seguimos en cada proyecto, para que sepas desde el principio cómo es trabajar con nosotros, sin letra chica.",
     "overviewLabel": "Los pasos del proceso",
@@ -1072,24 +1193,24 @@
   },
   "blog": {
     "navLabel": "Blog",
-    "metaTitle": "Blog de software y webs para pymes en Argentina",
-    "metaDescription": "Guías prácticas para pymes y comercios de Argentina sobre páginas web, sistemas de gestión, integraciones y automatización.",
-    "eyebrow": "Blog",
+    "metaTitle": "Blog: software y webs para pymes",
+    "metaDescription": "Guías prácticas para pymes y comercios sobre páginas web, sistemas de gestión, integraciones y automatización. Sin tecnicismos.",
     "title": "Blog de software y webs para pymes.",
-    "description": "Guías prácticas para pymes y comercios de Argentina sobre páginas web, sistemas de gestión, integraciones y automatización. Sirven para decidir con más criterio antes de encargar un desarrollo.",
+    "description": "Guías prácticas para pymes y comercios sobre webs, sistemas, integraciones y automatización.",
     "readMore": "Leer artículo",
     "publishedOn": "Publicado el",
     "answerLabel": "Respuesta corta",
     "draft": "Borrador",
     "empty": "Todavía no hay artículos publicados.",
+    "ctaTitle": "Si tenés un problema parecido, charlemos.",
+    "ctaDescription": "Contanos qué te lleva tiempo o qué querés ordenar. Coordinamos 30 minutos gratis y te respondemos con alcance y precio por escrito.",
+    "ctaButton": "Contanos tu problema",
     "home": "Inicio",
-    "toc": "En este artículo",
     "readingTime": "{minutes} min de lectura",
-    "breadcrumb": "Ruta de navegación",
     "posts": {
       "como-saber-si-tu-negocio-necesita-pagina-web": {
         "title": "¿Tu negocio necesita una página web? Cómo saber si vale la pena",
-        "metaTitle": "¿Tu negocio necesita página web? Cómo saber si vale la pena",
+        "metaTitle": "¿Tu negocio necesita página web? Cómo saberlo",
         "metaDescription": "Señales de que una web tiene sentido para tu pyme o comercio, cuándo todavía no y cómo medir si la que ya tenés funciona. Con checklist y preguntas.",
         "excerpt": "Señales concretas para decidir si una web le suma a tu negocio, cuándo conviene esperar y cómo medir si la que ya tenés está funcionando.",
         "answer": "Una página web vale la pena si te buscan en Google, si respondés las mismas preguntas todo el día por WhatsApp o Instagram, si tenés productos o servicios para mostrar o si tus clientes necesitan confiar en vos antes de comprar. Puede esperar si todos tus clientes llegan por recomendación y no das abasto, si todavía estás probando qué vender o si no vas a poder mantener la información al día. Mientras tanto, un perfil completo en Google Business Profile y un catálogo en WhatsApp Business pueden alcanzar.",

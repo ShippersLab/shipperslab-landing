@@ -1,89 +1,119 @@
 "use client";
 
+import { motion, useReducedMotion } from "motion/react";
+import Image from "next/image";
+
+import { ContactLinks } from "@/components/sections/contact/contact-links";
 import { FormActions } from "@/components/sections/contact/form-actions";
 import { useContactForm } from "@/components/sections/contact/use-contact-form";
-import { Reveal } from "@/components/ui/animation/reveal";
-import { GridGlowBackground } from "@/components/ui/background/grid-glow-background";
 import { TextAreaField, TextField } from "@/components/ui/form/text-field";
 import { Section } from "@/components/ui/section/section";
-import { SectionHeading } from "@/components/ui/section/section-heading";
 import { useI18n } from "@/i18n/provider";
+import { BLUR_EASE, blurItem, staggerGroup } from "@/lib/animation/motion";
+import { PUENTE_BLUR_DATA_URL } from "@/lib/images/blur-data";
 
-const TITLE_DELAY = 0;
-const DESCRIPTION_DELAY = 0.1;
-const FIELDS_DELAY = 0.2;
-const FIELD_STAGGER = 0.08;
+const FIELD_CLASS = "bg-transparent";
+const formGroup = staggerGroup(0.6);
 
 export function Contact() {
   const { messages } = useI18n();
   const { form, status, handleChange, handleSubmit } = useContactForm();
+  const reducedMotion = useReducedMotion();
+  const copy = messages.contact.form;
 
   return (
-    <Section id="contacto" bordered className="relative isolate overflow-clip">
-      <GridGlowBackground
-        aria-hidden
-        className="absolute inset-0 -z-10 saturate-150 hue-rotate-30"
-      />
+    <Section id="contacto" bordered>
+      <div className="selection-paper relative isolate overflow-hidden rounded-lg p-3 sm:p-8 lg:p-12">
+        <motion.div
+          aria-hidden
+          initial={reducedMotion ? false : { opacity: 0, filter: "blur(12px)" }}
+          whileInView={{ opacity: 1, filter: "blur(0px)" }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.9, ease: BLUR_EASE }}
+          className="absolute inset-0 -z-10"
+        >
+          <Image
+            src="/images/puente-accent.webp"
+            alt=""
+            fill
+            quality={90}
+            loading="lazy"
+            placeholder="blur"
+            blurDataURL={PUENTE_BLUR_DATA_URL}
+            sizes="(min-width: 1200px) 1200px, 100vw"
+            className="object-cover"
+          />
+        </motion.div>
 
-      <div className="grid gap-12 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
-        <SectionHeading
-          title={messages.contact.title}
-          description={messages.contact.description}
-          className="max-w-sm"
-          titleDelay={TITLE_DELAY}
-          descriptionDelay={DESCRIPTION_DELAY}
-        />
+        <motion.div
+          variants={formGroup}
+          initial={reducedMotion ? "visible" : "hidden"}
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          className="max-w-xl px-3 pt-6 sm:px-0 sm:pt-0"
+        >
+          <motion.h2 variants={blurItem} className="text-4xl text-paper sm:text-5xl">
+            {messages.contact.title}
+          </motion.h2>
+          <motion.p variants={blurItem} className="mt-4 text-base text-paper/85 sm:text-lg">
+            {messages.contact.description}
+          </motion.p>
+        </motion.div>
 
-        <form onSubmit={handleSubmit} className="flex flex-col gap-5">
-          <Reveal delay={FIELDS_DELAY * 1000} className="grid gap-5 sm:grid-cols-2">
-            <TextField
-              label={messages.contact.form.name}
-              required
-              name="name"
-              autoComplete="name"
-              value={form.name}
-              onChange={handleChange("name")}
-              placeholder={messages.contact.form.namePlaceholder}
-            />
+        <div className="mt-8 rounded-lg bg-paper p-6 sm:mt-10 sm:p-8">
+          <motion.form
+            onSubmit={handleSubmit}
+            variants={formGroup}
+            initial={reducedMotion ? "visible" : "hidden"}
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            className="grid gap-5 sm:grid-cols-2"
+          >
+            <motion.div variants={blurItem}>
+              <TextField
+                label={copy.name}
+                required
+                name="name"
+                autoComplete="name"
+                value={form.name}
+                onChange={handleChange("name")}
+                placeholder={copy.namePlaceholder}
+                className={FIELD_CLASS}
+              />
+            </motion.div>
 
-            <TextField
-              label={messages.contact.form.company}
-              name="company"
-              autoComplete="organization"
-              value={form.company}
-              onChange={handleChange("company")}
-              placeholder={messages.contact.form.companyPlaceholder}
-            />
-          </Reveal>
+            <motion.div variants={blurItem}>
+              <TextField
+                label={copy.contactMethod}
+                required
+                name="contactMethod"
+                autoComplete="email"
+                value={form.contactMethod}
+                onChange={handleChange("contactMethod")}
+                placeholder={copy.contactMethodPlaceholder}
+                className={FIELD_CLASS}
+              />
+            </motion.div>
 
-          <Reveal delay={(FIELDS_DELAY + FIELD_STAGGER) * 1000}>
-            <TextField
-              label={messages.contact.form.contactMethod}
-              required
-              name="contactMethod"
-              autoComplete="email"
-              value={form.contactMethod}
-              onChange={handleChange("contactMethod")}
-              placeholder={messages.contact.form.contactMethodPlaceholder}
-            />
-          </Reveal>
+            <motion.div variants={blurItem} className="sm:col-span-2">
+              <TextAreaField
+                label={copy.message}
+                required
+                name="message"
+                rows={3}
+                value={form.message}
+                onChange={handleChange("message")}
+                placeholder={copy.messagePlaceholder}
+                className={FIELD_CLASS}
+              />
+            </motion.div>
 
-          <Reveal delay={(FIELDS_DELAY + FIELD_STAGGER * 2) * 1000}>
-            <TextAreaField
-              label={messages.contact.form.message}
-              required
-              name="message"
-              rows={4}
-              value={form.message}
-              onChange={handleChange("message")}
-              placeholder={messages.contact.form.messagePlaceholder}
-            />
-          </Reveal>
-
-          <Reveal delay={(FIELDS_DELAY + FIELD_STAGGER * 3) * 1000}>
-            <FormActions status={status} />
-          </Reveal>
-        </form>
+            <motion.div variants={blurItem} className="sm:col-span-2">
+              <FormActions status={status} />
+            </motion.div>
+          </motion.form>
+          <ContactLinks />
+        </div>
       </div>
     </Section>
   );

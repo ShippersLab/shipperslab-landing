@@ -7,7 +7,7 @@ type BlogPostEntry = {
   published: boolean;
 };
 
-export const blogPosts = [
+const blogPosts = [
   {
     slug: "cuanto-cuesta-un-sistema-de-gestion-a-medida",
     datePublished: "2026-10-26",
@@ -32,7 +32,7 @@ export type BlogPostMeta = (typeof blogPosts)[number];
 
 export type BlogSlug = BlogPostMeta["slug"];
 
-export function isPreviewEnvironment() {
+function isPreviewEnvironment() {
   return process.env.VERCEL_ENV !== "production";
 }
 

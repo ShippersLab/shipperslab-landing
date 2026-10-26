@@ -98,7 +98,11 @@ export function useDither(
       });
       const head = trailPoints[0];
       if (!head || Math.hypot(head.x - state.hx, head.y - state.hy) > 0.012 || moved > 0.012) {
-        trailPoints.unshift({ x: state.hx, y: state.hy, weight: state.presence });
+        trailPoints.unshift({
+          x: state.hx,
+          y: state.hy,
+          weight: state.presence,
+        });
       } else {
         head.x = state.hx;
         head.y = state.hy;

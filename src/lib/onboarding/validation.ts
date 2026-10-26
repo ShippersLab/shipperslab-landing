@@ -44,7 +44,7 @@ export function validateField(
   }
 }
 
-export function validateStep(step: number, data: OnboardingRequest) {
+function validateStep(step: number, data: OnboardingRequest) {
   const errors: OnboardingErrors = {};
 
   for (const field of STEP_FIELDS[step - 1] ?? []) {

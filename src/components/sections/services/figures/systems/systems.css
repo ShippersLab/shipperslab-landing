@@ -1,0 +1,98 @@
+.iso.sys[data-theme="light"] {
+  --anatomy-page: var(--paper);
+  --anatomy-card: var(--paper);
+  --anatomy-paper: var(--paper);
+  --anatomy-text: var(--ink);
+  --anatomy-strong: var(--ink);
+  --anatomy-muted: var(--muted);
+  --anatomy-face: color-mix(in srgb, white 55%, var(--paper));
+  --anatomy-top: color-mix(in srgb, white 70%, var(--paper));
+  --anatomy-shade-0: color-mix(in srgb, var(--ink) 15%, var(--paper));
+  --anatomy-shade-1: color-mix(in srgb, var(--ink) 10%, var(--paper));
+  --anatomy-shade-2: color-mix(in srgb, var(--ink) 6%, var(--paper));
+  --anatomy-shade-3: color-mix(in srgb, var(--ink) 3%, var(--paper));
+  --anatomy-lit-top: color-mix(in srgb, var(--accent) 22%, var(--paper));
+  --anatomy-lit-shade: color-mix(in srgb, var(--accent) 12%, var(--paper));
+  --anatomy-hi: var(--ink);
+  --anatomy-mid: color-mix(in srgb, var(--muted) 85%, var(--paper));
+  --anatomy-lo: color-mix(in srgb, var(--muted) 50%, var(--paper));
+  --anatomy-faint: var(--border);
+  --anatomy-lit: var(--accent);
+  --anatomy-halo: var(--ink);
+  --anatomy-halo-opacity: 0.14;
+  --anatomy-dot: var(--ink);
+  --anatomy-mono: var(--font-dm-mono), ui-monospace, monospace;
+}
+
+.iso.sys .iso-figure {
+  margin: 0;
+}
+
+.sys-stage {
+  position: relative;
+}
+
+.sys .sys-void {
+  fill: color-mix(in srgb, var(--ink) 22%, var(--paper));
+  stroke: var(--anatomy-lo);
+  stroke-width: 0.6px;
+}
+
+.sys .sys-window {
+  fill: var(--ink);
+  stroke: var(--ink);
+  stroke-width: 0.6px;
+}
+
+.sys .sys-digit {
+  fill: var(--paper);
+  font-family: var(--anatomy-mono);
+  font-weight: 500;
+}
+
+.sys .sys-cell-line {
+  stroke: var(--paper);
+  stroke-opacity: 0.22;
+  stroke-width: 0.5px;
+  vector-effect: non-scaling-stroke;
+}
+
+.sys .sys-lamp {
+  fill: var(--paper);
+  stroke: var(--anatomy-mid);
+  stroke-width: 0.6px;
+  transition: fill 200ms var(--ease-out, ease-out);
+}
+
+.sys .sys-lamp[data-on] {
+  fill: var(--ink);
+  stroke: var(--ink);
+}
+
+.sys .sys-knob {
+  fill: var(--ink);
+  stroke: none;
+}
+
+.sys .sys-label[data-on] > .iso-solid > .iso-top {
+  fill: var(--anatomy-lit-top);
+}
+
+.sys .sys-label[data-on] > .iso-solid > .iso-edge {
+  stroke: var(--anatomy-lit);
+}
+
+.sys .sys-label .iso-solid > .iso-top {
+  transition: fill 200ms var(--ease-out, ease-out);
+}
+
+.sys .iso-face-text[data-tone="hi"] {
+  fill: var(--ink);
+  font-weight: 500;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sys * {
+    transition: none !important;
+  }
+}

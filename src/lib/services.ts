@@ -17,14 +17,9 @@ export const serviceRoutes = [
   },
 ] as const;
 
-export type ServiceId = (typeof serviceRoutes)[number]["id"];
 export type ServiceSlug = (typeof serviceRoutes)[number]["slug"];
 
-export function isServiceSlug(value: string): value is ServiceSlug {
-  return serviceRoutes.some((route) => route.slug === value);
-}
-
-export function getServiceRouteById(id: string) {
+function getServiceRouteById(id: string) {
   return serviceRoutes.find((route) => route.id === id);
 }
 

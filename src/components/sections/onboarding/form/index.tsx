@@ -5,9 +5,9 @@ import { MotionConfig } from "motion/react";
 import { FormNavigation } from "@/components/sections/onboarding/form/form-navigation";
 import { FormStepper } from "@/components/sections/onboarding/form/form-stepper";
 import { StepTransition } from "@/components/sections/onboarding/form/step-transition";
-import { ONBOARDING_STEPS } from "@/components/sections/onboarding/steps";
 import { Success } from "@/components/sections/onboarding/form/success";
 import { useOnboardingForm } from "@/components/sections/onboarding/form/use-onboarding-form";
+import { ONBOARDING_STEPS } from "@/components/sections/onboarding/steps";
 import { useI18n } from "@/i18n/provider";
 
 export function OnboardingForm() {
@@ -37,7 +37,7 @@ export function OnboardingForm() {
 
   return (
     <MotionConfig reducedMotion="user">
-      <div className="w-full rounded-lg border border-border bg-paper/80 p-6 backdrop-blur-sm sm:p-8">
+      <div className="w-full rounded-lg bg-paper p-8 sm:p-12">
         {status === "success" ? (
           <Success />
         ) : (

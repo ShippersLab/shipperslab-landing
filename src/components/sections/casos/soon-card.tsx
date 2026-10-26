@@ -1,24 +1,24 @@
-import { FramedImage } from "@/components/sections/casos/framed-image";
 import { PlusIcon } from "@/components/ui/icons";
+import { TextureButton } from "@/components/ui/button/texture-button";
+import { LocalizedLink } from "@/i18n/link";
 
 type SoonCardProps = {
-  label: string;
   title: string;
   description: string;
+  cta: string;
 };
 
-export function SoonCard({ label, title, description }: SoonCardProps) {
+export function SoonCard({ title, description, cta }: SoonCardProps) {
   return (
-    <div className="flex h-full flex-col">
-      <FramedImage tabs={[label]} frameClassName="border-dashed">
-        <div className="flex aspect-video items-center justify-center rounded-md bg-ink/5">
-          <PlusIcon className="size-10 text-ink/30" />
-        </div>
-      </FramedImage>
-      <div className="mt-5 flex-1 px-1">
-        <h2 className="font-pixel text-2xl text-ink">{title}</h2>
-        <p className="mt-2 text-base text-muted">{description}</p>
-      </div>
+    <div className="flex flex-col items-center rounded-lg border border-dashed border-muted/35 px-6 py-16 text-center sm:py-20">
+      <span className="flex size-12 items-center justify-center rounded-md border border-muted/35">
+        <PlusIcon className="size-6 text-muted" />
+      </span>
+      <h2 className="mt-6 font-heading text-2xl text-ink">{title}</h2>
+      <p className="mt-2 max-w-sm text-base text-muted">{description}</p>
+      <TextureButton asChild variant="primary" size="square" className="mt-8 w-full sm:w-auto">
+        <LocalizedLink href="/empecemos">{cta}</LocalizedLink>
+      </TextureButton>
     </div>
   );
 }
