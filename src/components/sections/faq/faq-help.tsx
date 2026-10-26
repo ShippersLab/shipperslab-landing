@@ -1,11 +1,8 @@
-import Link from "next/link";
-
 import { Reveal } from "@/components/ui/animation/reveal";
 import { TextureButton } from "@/components/ui/button/texture-button";
-import { ArrowRightIcon, ConversationIcon } from "@/components/ui/icons";
+import { ConversationIcon } from "@/components/ui/icons";
+import { site } from "@/lib/site";
 import { cn } from "@/lib/utils";
-
-const CONTACT_HREF = "/#contacto";
 
 type FaqHelpProps = {
   title: string;
@@ -19,24 +16,8 @@ export function FaqHelp({ title, description, cta, delay = 0, className }: FaqHe
   return (
     <Reveal
       delay={delay}
-      className={cn(
-        "relative flex flex-col gap-6 rounded-lg p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8",
-        className,
-      )}
+      className={cn("flex flex-col gap-6 rounded-lg border border-border p-6", className)}
     >
-      <svg
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 size-full overflow-visible"
-      >
-        <rect
-          width="100%"
-          height="100%"
-          rx="8"
-          className="fill-none stroke-muted/40"
-          strokeWidth="1"
-          strokeDasharray="8 8"
-        />
-      </svg>
       <div className="flex items-start gap-4">
         <span className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-accent text-paper">
           <ConversationIcon className="size-5" />
@@ -47,11 +28,10 @@ export function FaqHelp({ title, description, cta, delay = 0, className }: FaqHe
         </div>
       </div>
 
-      <TextureButton asChild variant="secondary" size="pill" className="w-full sm:w-auto">
-        <Link href={CONTACT_HREF}>
+      <TextureButton asChild variant="secondary" size="square" className="w-full">
+        <a href={site.calUrl} target="_blank" rel="noopener noreferrer">
           {cta}
-          <ArrowRightIcon className="size-4" />
-        </Link>
+        </a>
       </TextureButton>
     </Reveal>
   );

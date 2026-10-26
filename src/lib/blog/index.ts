@@ -7,7 +7,7 @@ type BlogPostEntry = {
   published: boolean;
 };
 
-export const blogPosts = [
+const blogPosts = [
   {
     slug: "como-saber-si-tu-negocio-necesita-pagina-web",
     datePublished: "2026-10-18",
@@ -20,7 +20,7 @@ export type BlogPostMeta = (typeof blogPosts)[number];
 
 export type BlogSlug = BlogPostMeta["slug"];
 
-export function isPreviewEnvironment() {
+function isPreviewEnvironment() {
   return process.env.VERCEL_ENV !== "production";
 }
 

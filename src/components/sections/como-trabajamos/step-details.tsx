@@ -1,4 +1,5 @@
 import { StepCard, StepParagraph } from "@/components/sections/como-trabajamos/step-card";
+import { StaggerReveal } from "@/components/ui/animation/stagger-reveal";
 import { CheckIcon, ConversationIcon, DocumentIcon, RefreshIcon } from "@/components/ui/icons";
 import type { Messages } from "@/i18n/get-messages";
 
@@ -76,13 +77,13 @@ export function PricingDetails({ step }: { step: Steps["pricing"] }) {
   return (
     <>
       <StepParagraph>{step.body}</StepParagraph>
-      <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+      <StaggerReveal as="ul" className="mt-8 grid gap-3 sm:grid-cols-2">
         {fees.map((fee) => (
           <li key={fee.label} className="flex flex-col gap-3 rounded-lg border border-border p-5">
             <div className="flex items-center justify-between gap-3">
               <h3 className="text-lg text-ink">{fee.label}</h3>
               {fee.tag ? (
-                <span className="rounded-full border border-border px-2.5 py-1 font-mono text-label uppercase tracking-label text-muted">
+                <span className="rounded-md border border-border px-2.5 py-1 font-mono text-sm tracking-tight text-muted">
                   {fee.tag}
                 </span>
               ) : null}
@@ -90,7 +91,7 @@ export function PricingDetails({ step }: { step: Steps["pricing"] }) {
             <p className="text-base leading-relaxed text-muted">{fee.body}</p>
           </li>
         ))}
-      </ul>
+      </StaggerReveal>
     </>
   );
 }

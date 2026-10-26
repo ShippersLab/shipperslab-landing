@@ -1,0 +1,119 @@
+.bots {
+  --anatomy-page: var(--paper);
+  --anatomy-card: var(--paper);
+  --anatomy-paper: var(--paper);
+  --anatomy-text: var(--muted);
+  --anatomy-strong: var(--ink);
+  --anatomy-muted: var(--muted);
+  --anatomy-face: color-mix(in srgb, white 55%, var(--paper));
+  --anatomy-top: color-mix(in srgb, white 72%, var(--paper));
+  --anatomy-shade-0: color-mix(in srgb, var(--ink) 15%, var(--paper));
+  --anatomy-shade-1: color-mix(in srgb, var(--ink) 10%, var(--paper));
+  --anatomy-shade-2: color-mix(in srgb, var(--ink) 6%, var(--paper));
+  --anatomy-shade-3: color-mix(in srgb, var(--ink) 2.5%, var(--paper));
+  --anatomy-lit-top: color-mix(in srgb, white 80%, var(--paper));
+  --anatomy-lit-shade: color-mix(in srgb, var(--ink) 5%, var(--paper));
+  --anatomy-hi: var(--ink);
+  --anatomy-mid: var(--muted);
+  --anatomy-lo: color-mix(in srgb, var(--muted) 50%, var(--paper));
+  --anatomy-faint: var(--border);
+  --anatomy-lit: var(--ink);
+  --anatomy-halo: var(--muted);
+  --anatomy-halo-opacity: 0.3;
+  --anatomy-dot: var(--ink);
+  --anatomy-mono: var(--font-mono), ui-monospace, monospace;
+  font-family: var(--font-sans), sans-serif;
+}
+
+.bots .iso-figure {
+  margin: 0;
+}
+
+.bots-stage {
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.bots-glass {
+  fill: var(--ink);
+  stroke: none;
+}
+
+.bots-screen {
+  fill: var(--ink);
+  stroke: var(--ink);
+  stroke-width: 0.6px;
+  stroke-linejoin: round;
+}
+
+.bots-glare {
+  fill: var(--paper);
+  opacity: 0.1;
+  stroke: none;
+}
+
+.bots-eye {
+  fill: var(--paper);
+  stroke: none;
+}
+
+.bots-mouth {
+  fill: none;
+  stroke: var(--paper);
+  stroke-width: 1.1px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.85;
+}
+
+.bots-ticker {
+  fill: var(--paper);
+}
+
+.bots-led {
+  fill: var(--paper);
+  stroke: none;
+  opacity: 0.16;
+}
+
+.bots-knob {
+  fill: var(--anatomy-top);
+  stroke: var(--ink);
+  stroke-width: 0.6px;
+}
+
+.bots-knob-hi {
+  fill: white;
+  stroke: none;
+  opacity: 0.9;
+}
+
+.bots-lens,
+.bots-lens-rest {
+  fill: var(--ink);
+  stroke: none;
+}
+
+.bots-lens-rest {
+  opacity: 0.18;
+}
+
+.bots-lens {
+  opacity: 0;
+}
+
+.bots-tip,
+.bots-tip-top {
+  fill: var(--accent);
+  stroke: none;
+  opacity: 0;
+}
+
+.bots-glow {
+  fill: var(--accent);
+  stroke: none;
+  opacity: 0;
+  filter: blur(6px);
+}

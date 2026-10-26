@@ -3,8 +3,8 @@
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 
 import type { ContactStatus } from "@/components/sections/contact/use-contact-form";
-import { CheckIcon, RefreshIcon } from "@/components/ui/icons";
 import { TextureButton } from "@/components/ui/button/texture-button";
+import { CheckIcon, RefreshIcon } from "@/components/ui/icons";
 import { useI18n } from "@/i18n/provider";
 
 type SubmitButtonProps = {
@@ -38,12 +38,12 @@ export function SubmitButton({ status }: SubmitButtonProps) {
     <TextureButton
       type="submit"
       variant="primary"
-      size="pill"
-      className="w-full min-w-33 rounded-full sm:w-auto"
+      size="square"
+      className="w-full sm:w-auto sm:min-w-44"
       disabled={sending}
     >
       {reducedMotion ? (
-        <span className="flex items-center justify-center gap-2 text-sm sm:text-base">{inner}</span>
+        <span className="flex items-center gap-2">{inner}</span>
       ) : (
         <AnimatePresence mode="wait" initial={false}>
           <motion.span
@@ -52,7 +52,7 @@ export function SubmitButton({ status }: SubmitButtonProps) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -4 }}
             transition={{ duration: 0.18 }}
-            className="flex items-center justify-center gap-2 text-sm sm:text-base"
+            className="flex items-center gap-2"
           >
             {inner}
           </motion.span>

@@ -4,10 +4,17 @@ import { mixHex, useDesignTokens } from "@/components/ui/background/design-token
 import { Dither } from "@/components/ui/background/dither";
 
 const WAVE_TOWARD_SURFACE = 0.78;
+const MIN_CORES = 6;
+const DESKTOP_QUERY = "(min-width: 768px)";
+
+function canAffordDither() {
+  const cores = navigator.hardwareConcurrency ?? MIN_CORES;
+  return window.matchMedia(DESKTOP_QUERY).matches && cores >= MIN_CORES;
+}
 
 export function ServiceHeroDither() {
   const tokens = useDesignTokens();
-  if (!tokens) return null;
+  if (!tokens || !canAffordDither()) return null;
 
   return (
     <Dither

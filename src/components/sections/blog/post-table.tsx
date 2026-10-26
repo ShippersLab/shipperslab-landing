@@ -6,46 +6,37 @@ type BlogPostTableProps = {
   };
 };
 
-const CELL_CLASS = "w-1/2 px-4 align-top sm:px-5";
-
 export function BlogPostTable({ table }: BlogPostTableProps) {
   return (
-    <div className="mt-6 overflow-hidden rounded-lg border border-border bg-paper">
-      <table className="w-full table-fixed border-collapse text-left text-sm leading-relaxed sm:text-base">
+    <div className="my-8 overflow-x-auto">
+      <table className="w-full min-w-xl table-fixed">
         <caption className="sr-only">{table.caption}</caption>
         <thead>
-          <tr className="border-b border-border">
+          <tr>
+            <th scope="col" className="w-1/4 text-left">
+              <span className="sr-only">{table.caption}</span>
+            </th>
             {table.columns.map((column) => (
-              <th
-                key={column}
-                scope="col"
-                className={`${CELL_CLASS} py-3 font-mono text-label font-normal uppercase tracking-label text-muted`}
-              >
+              <th key={column} scope="col" className="text-left">
                 {column}
               </th>
             ))}
           </tr>
         </thead>
-        {table.rows.map((row) => (
-          <tbody key={row.label} className="border-b border-border last:border-b-0">
-            <tr>
-              <th
-                scope="rowgroup"
-                colSpan={table.columns.length}
-                className="px-4 pt-4 text-sm font-medium text-ink sm:px-5"
-              >
+        <tbody>
+          {table.rows.map((row) => (
+            <tr key={row.label}>
+              <th scope="row" className="align-top">
                 {row.label}
               </th>
-            </tr>
-            <tr>
               {row.cells.map((cell) => (
-                <td key={cell} className={`${CELL_CLASS} pt-1 pb-4 text-muted`}>
+                <td key={cell} className="align-top">
                   {cell}
                 </td>
               ))}
             </tr>
-          </tbody>
-        ))}
+          ))}
+        </tbody>
       </table>
     </div>
   );

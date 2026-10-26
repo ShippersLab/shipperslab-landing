@@ -19,7 +19,6 @@ import type { Messages } from "@/i18n/get-messages";
 import { useI18n } from "@/i18n/provider";
 import { serviceRoutes } from "@/lib/services";
 
-const ROW_DELAY = 0.1;
 const STEP_ORDER = ["call", "scope", "weekly", "pricing"] as const;
 const SERVICE_SLUGS = serviceRoutes.map((route) => route.slug);
 
@@ -54,33 +53,33 @@ export function ComoTrabajamos() {
 
   return (
     <div className="mx-auto w-full max-w-content border-x border-border">
-      <ServiceHero eyebrow={page.eyebrow} title={page.h1} lead={page.lead} ditherBelowNavbar />
+      <ServiceHero title={page.h1} lead={page.lead} />
 
-      <Container className="w-full py-16 sm:py-20">
+      <Container className="w-full border-t border-border py-16 sm:py-20">
         <ProcessOverview label={page.overviewLabel} steps={overview} />
+      </Container>
 
-        <div className="mt-16 grid gap-16 sm:mt-20 sm:gap-20">
-          {STEP_ORDER.map((id, index) => (
-            <ServiceSection
-              key={id}
-              id={id}
-              label={stepLabel(page.stepLabel, index)}
-              title={page.steps[id].title}
-              delay={ROW_DELAY * 1000}
-            >
-              {stepDetails(id, page.steps)}
-            </ServiceSection>
-          ))}
+      {STEP_ORDER.map((id, index) => (
+        <ServiceSection
+          key={id}
+          id={id}
+          label={stepLabel(page.stepLabel, index)}
+          title={page.steps[id].title}
+        >
+          {stepDetails(id, page.steps)}
+        </ServiceSection>
+      ))}
 
-          <ServiceSection id="faq" title={page.faq.title} delay={ROW_DELAY * 1000}>
-            <FaqAccordion items={page.faq.items} delay={ROW_DELAY} className="-mt-6 border-t-0" />
-          </ServiceSection>
-        </div>
+      <ServiceSection id="faq" title={page.faq.title}>
+        <FaqAccordion items={page.faq.items} className="border-t-0" />
+      </ServiceSection>
 
+      <Container className="w-full border-t border-border py-16 sm:py-20">
         <ServiceCta
           title={page.ctaTitle}
           description={page.ctaDescription}
           button={page.ctaButton}
+          className="mt-0 sm:mt-0"
         />
       </Container>
 

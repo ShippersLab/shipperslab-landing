@@ -1,5 +1,6 @@
-import Link from "next/link";
 import type { ReactNode } from "react";
+
+import { LocalizedLink } from "@/i18n/link";
 
 const INLINE_LINK = /\[([^\]]+)\]\((\/[^)\s]+)\)/;
 
@@ -23,9 +24,9 @@ export function InlineText({ text }: { text: string }) {
     }
 
     nodes.push(
-      <Link key={`${match[2]}-${nodes.length}`} href={match[2]} className={LINK_CLASS}>
+      <LocalizedLink key={`${match[2]}-${nodes.length}`} href={match[2]} className={LINK_CLASS}>
         {match[1]}
-      </Link>,
+      </LocalizedLink>,
     );
 
     rest = rest.slice(match.index + match[0].length);

@@ -1,4 +1,6 @@
 import { serviceIcon } from "@/components/sections/service-page/service-icons";
+import { WordReveal } from "@/components/ui/animation/word-reveal";
+import { StaggerReveal } from "@/components/ui/animation/stagger-reveal";
 
 type AudienceItem = {
   id: string;
@@ -14,13 +16,13 @@ type ServiceAudienceProps = {
 export function ServiceAudience({ intro, items }: ServiceAudienceProps) {
   return (
     <>
-      <p className="text-base leading-relaxed text-muted sm:text-lg">{intro}</p>
-      <ul className="mt-8 grid divide-y divide-border rounded-lg border border-border sm:grid-cols-3 sm:divide-x sm:divide-y-0">
+      <WordReveal text={intro} className="text-base leading-relaxed text-muted" />
+      <StaggerReveal as="ul" className="mt-8 grid gap-3 sm:grid-cols-3">
         {items.map((item) => {
           const Icon = serviceIcon(item.id);
 
           return (
-            <li key={item.id} className="flex flex-col gap-3 p-5">
+            <li key={item.id} className="flex flex-col gap-3 rounded-lg border border-border p-5">
               <Icon size={20} className="text-muted" />
               <h3 className="font-sans text-base font-normal tracking-normal text-ink">
                 {item.title}
@@ -29,7 +31,7 @@ export function ServiceAudience({ intro, items }: ServiceAudienceProps) {
             </li>
           );
         })}
-      </ul>
+      </StaggerReveal>
     </>
   );
 }

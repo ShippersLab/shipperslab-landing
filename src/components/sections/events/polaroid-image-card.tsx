@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { forwardRef, type ComponentPropsWithoutRef, type ReactNode } from "react";
 
+import { SkeletonImage } from "@/components/ui/skeleton/skeleton-image";
 import { cn } from "@/lib/utils";
 
 export type PolaroidImageCardProps = Readonly<
@@ -29,15 +29,15 @@ export const PolaroidImageCard = forwardRef<HTMLDivElement, PolaroidImageCardPro
             rotate ? "-rotate-2 group-hover:rotate-0" : "group-hover:rotate-2",
           )}
         >
-          <div className="relative aspect-square w-full overflow-hidden border border-muted/20 bg-border/30">
+          <div className="relative aspect-square w-full overflow-hidden border border-muted/20">
             {image ? (
-              <Image
+              <SkeletonImage
                 src={image}
                 alt={imageAlt}
                 fill
                 sizes="256px"
                 quality={90}
-                className="object-cover transition-all duration-300 ease-out group-hover:scale-105"
+                className="object-cover"
               />
             ) : null}
           </div>

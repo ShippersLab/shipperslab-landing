@@ -3,6 +3,7 @@
 import { motion, useReducedMotion } from "motion/react";
 import { useId, useRef, useState, type KeyboardEvent } from "react";
 
+import { BlurReveal } from "@/components/ui/animation/blur-reveal";
 import { cn } from "@/lib/utils";
 
 type CaseItem = {
@@ -54,7 +55,7 @@ export function ServiceCases({ items, tabsLabel }: ServiceCasesProps) {
   };
 
   return (
-    <div>
+    <BlurReveal>
       <div
         role="tablist"
         aria-label={tabsLabel}
@@ -118,11 +119,11 @@ export function ServiceCases({ items, tabsLabel }: ServiceCasesProps) {
               <h3 className="font-sans text-lg font-normal tracking-normal text-ink">
                 {item.title}
               </h3>
-              <p className="mt-2 text-base leading-relaxed text-muted sm:text-lg">{item.body}</p>
+              <p className="mt-2 text-base leading-relaxed text-muted">{item.body}</p>
             </div>
           );
         })}
       </div>
-    </div>
+    </BlurReveal>
   );
 }

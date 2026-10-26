@@ -12,9 +12,17 @@ type StepTransitionProps = {
 const OFFSET = 24;
 
 const variants: Variants = {
-  enter: (direction: number) => ({ opacity: 0, x: direction * OFFSET }),
-  center: { opacity: 1, x: 0 },
-  exit: (direction: number) => ({ opacity: 0, x: direction * -OFFSET }),
+  enter: (direction: number) => ({
+    opacity: 0,
+    x: direction * OFFSET,
+    filter: "blur(6px)",
+  }),
+  center: { opacity: 1, x: 0, filter: "blur(0px)" },
+  exit: (direction: number) => ({
+    opacity: 0,
+    x: direction * -OFFSET,
+    filter: "blur(6px)",
+  }),
 };
 
 export function StepTransition({ step, direction, children }: StepTransitionProps) {

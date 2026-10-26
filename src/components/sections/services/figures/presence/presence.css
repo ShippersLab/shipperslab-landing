@@ -1,0 +1,174 @@
+.iso.pf[data-theme="light"] {
+  --anatomy-page: var(--paper);
+  --anatomy-card: var(--paper);
+  --anatomy-paper: var(--paper);
+  --anatomy-face: color-mix(in srgb, var(--paper), white 45%);
+  --anatomy-top: color-mix(in srgb, var(--paper), white 65%);
+  --anatomy-shade-0: color-mix(in srgb, var(--paper), var(--ink) 13%);
+  --anatomy-shade-1: color-mix(in srgb, var(--paper), var(--ink) 9%);
+  --anatomy-shade-2: color-mix(in srgb, var(--paper), var(--ink) 5.5%);
+  --anatomy-shade-3: color-mix(in srgb, var(--paper), var(--ink) 2.5%);
+  --anatomy-text: var(--muted);
+  --anatomy-strong: var(--ink);
+  --anatomy-muted: var(--muted);
+  --anatomy-hi: var(--ink);
+  --anatomy-mid: color-mix(in srgb, var(--muted), var(--paper) 25%);
+  --anatomy-lo: color-mix(in srgb, var(--muted), var(--paper) 58%);
+  --anatomy-faint: var(--border);
+  --anatomy-lit: var(--accent);
+  --anatomy-lit-top: var(--ink);
+  --anatomy-lit-shade: var(--ink);
+  --anatomy-halo: var(--muted);
+  --anatomy-halo-opacity: 0.3;
+  --anatomy-dot: var(--ink);
+  --anatomy-mono: var(--font-dm-mono, ui-monospace, monospace);
+  --anatomy-ease: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.pf .iso-figure {
+  margin: 0;
+}
+
+.pf .iso-stage {
+  touch-action: pan-y;
+  cursor: pointer;
+}
+
+.pf-well {
+  fill: var(--anatomy-shade-1);
+}
+
+.pf-bezel {
+  fill: var(--anatomy-top);
+}
+
+.pf-dark {
+  fill: var(--anatomy-shade-0);
+}
+
+.pf-glass {
+  fill: var(--anatomy-shade-0);
+  transition: fill 0.5s var(--anatomy-ease);
+}
+
+.pf-glass[data-on] {
+  fill: var(--ink);
+}
+
+.pf-glow {
+  fill: var(--accent);
+  opacity: 0.16;
+  filter: blur(7px);
+}
+
+.pf-scan {
+  fill: none;
+  stroke: var(--paper);
+  stroke-width: 0.5px;
+  opacity: 0.07;
+}
+
+.pf-bar {
+  fill: var(--paper);
+  opacity: 0.92;
+}
+
+.pf-dim {
+  fill: var(--paper);
+  opacity: 0.2;
+}
+
+.pf-ghost {
+  fill: none;
+  stroke: var(--paper);
+  stroke-opacity: 0.4;
+  stroke-width: 0.6px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.pf-pick {
+  stroke: var(--accent);
+  stroke-opacity: 1;
+}
+
+.pf-acc {
+  fill: var(--accent);
+}
+
+.pf-t {
+  fill: var(--paper);
+  font-family: var(--anatomy-mono);
+  letter-spacing: 0.02em;
+}
+
+.pf-soft {
+  opacity: 0.55;
+}
+
+.pf-cursor {
+  fill: var(--accent);
+  animation: pf-blink 1.06s steps(1, end) infinite;
+}
+
+.pf-beam {
+  fill: none;
+  stroke: var(--paper);
+  stroke-width: 1.4px;
+  stroke-linecap: round;
+}
+
+.pf-dot {
+  fill: var(--paper);
+}
+
+.pf-led circle {
+  fill: var(--accent);
+}
+
+.pf-led {
+  transition: opacity 0.4s var(--anatomy-ease);
+}
+
+.pf-cord {
+  stroke-width: 1.1px;
+}
+
+.pf-key,
+.pf-computer,
+[data-tab] {
+  cursor: pointer;
+}
+
+.pf-key[data-down] .iso-edge {
+  stroke: var(--anatomy-hi);
+}
+
+.pf-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+[data-product] {
+  transition: opacity 0.25s var(--anatomy-ease);
+}
+
+@keyframes pf-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pf-cursor {
+    animation: none;
+  }
+
+  .pf * {
+    transition: none !important;
+  }
+}

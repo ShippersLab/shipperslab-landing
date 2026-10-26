@@ -1,23 +1,20 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
-
+import { CaseCta } from "@/components/sections/casos/case-cta";
+import { CaseHeader } from "@/components/sections/casos/case-header";
+import { CaseImage } from "@/components/sections/casos/case-image";
+import { CaseList } from "@/components/sections/casos/case-list";
+import { CaseRow } from "@/components/sections/casos/case-row";
 import { GalleryMarquee } from "@/components/sections/casos/gallery-marquee";
-import { DiaTextReveal } from "@/components/ui/animation/dia-text-reveal";
-import { Reveal } from "@/components/ui/animation/reveal";
-import { WordReveal } from "@/components/ui/animation/word-reveal";
+import { BlurReveal } from "@/components/ui/animation/blur-reveal";
 import { TextureButton } from "@/components/ui/button/texture-button";
-import { ArrowRightIcon, ArrowUpRightIcon } from "@/components/ui/icons";
 import { Container } from "@/components/ui/section/container";
+import { SkeletonImage } from "@/components/ui/skeleton/skeleton-image";
 import { useI18n } from "@/i18n/provider";
 import { eventopsImages } from "@/lib/projects/eventops";
 import { site } from "@/lib/site";
 
-const TITLE_DELAY = 0;
-const LEAD_DELAY = 0.25;
-const BUTTON_DELAY = 450;
-const IMAGE_DELAY = 300;
+const BODY = "text-base leading-relaxed text-muted";
 
 export function ProjectDetail() {
   const { messages } = useI18n();
@@ -26,125 +23,111 @@ export function ProjectDetail() {
   return (
     <div className="mx-auto w-full max-w-content border-x border-border">
       <Container className="w-full py-20 sm:py-28">
-        <Link
-          href="/casos"
-          className="inline-flex items-center gap-2 rounded-sm text-sm text-muted transition-colors duration-200 ease-out hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+        <CaseHeader
+          backLabel={page.backLabel}
+          eyebrow={page.eyebrow}
+          title={page.title}
+          lead={page.lead}
+          facts={page.facts}
+          factsLabel={page.factsLabel}
         >
-          <ArrowRightIcon className="size-4 rotate-180" />
-          {page.backLabel}
-        </Link>
+          <TextureButton asChild variant="primary" size="square" className="w-full sm:w-fit">
+            <a href={site.eventopsUrl} target="_blank" rel="noopener noreferrer">
+              {page.visitLabel}
+              <span className="sr-only"> ({messages.common.opensNewTab})</span>
+            </a>
+          </TextureButton>
+        </CaseHeader>
 
-        <div className="mt-8 flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-          <div className="max-w-2xl">
-            <p className="text-sm text-muted">{page.eyebrow}</p>
-            <h1 className="mt-4 font-pixel text-4xl font-medium tracking-tighter text-ink sm:text-5xl">
-              <DiaTextReveal
-                text={page.title}
-                colors={["var(--accent)"]}
-                textColor="var(--ink)"
-                delay={TITLE_DELAY}
-              />
-            </h1>
-            <WordReveal text={page.lead} delay={LEAD_DELAY} className="mt-5 text-lg text-muted" />
-          </div>
-          <Reveal delay={BUTTON_DELAY} className="w-full lg:w-auto">
-            <TextureButton asChild variant="secondary" size="pill" className="w-full lg:w-auto">
-              <a href={site.eventopsUrl} target="_blank" rel="noreferrer">
-                {page.visitLabel}
-                <ArrowUpRightIcon size={16} />
-                <span className="sr-only"> ({messages.common.opensNewTab})</span>
-              </a>
-            </TextureButton>
-          </Reveal>
-        </div>
-
-        <Reveal delay={IMAGE_DELAY} className="mt-6 sm:mt-10">
-          <div className="aspect-video overflow-hidden rounded-lg border border-border bg-ink">
-            <Image
+        <CaseImage tags={page.tags} delay={0.4} className="mt-16 sm:mt-20">
+          <div className="relative aspect-video overflow-hidden rounded-lg">
+            <SkeletonImage
               src={eventopsImages.hero}
               alt={page.heroAlt}
-              priority
+              fill
+              preload
+              fetchPriority="high"
+              quality={90}
               sizes="(min-width: 1200px) 1136px, 100vw"
-              className="size-full object-cover"
+              className="object-cover"
             />
           </div>
-        </Reveal>
+        </CaseImage>
 
-        <Reveal className="mt-10 sm:mt-12">
-          <dl
-            aria-label={page.factsLabel}
-            className="grid grid-cols-2 gap-x-6 gap-y-8 border-t border-border pt-8 lg:grid-cols-4"
-          >
-            {page.facts.map((fact) => (
-              <div key={fact.label}>
-                <dt className="text-sm text-muted">{fact.label}</dt>
-                <dd className="mt-2 text-base text-ink">{fact.value}</dd>
-              </div>
+        <CaseRow title={page.whyTitle}>
+          <p className={BODY}>{page.why}</p>
+        </CaseRow>
+
+        <CaseRow title={page.overviewTitle}>
+          <p className={BODY}>{page.overview}</p>
+        </CaseRow>
+
+        <CaseRow title={page.approachTitle}>
+          <p className={BODY}>{page.approach}</p>
+        </CaseRow>
+
+        <div className="mt-16 sm:mt-24">
+          <BlurReveal className="max-w-2xl">
+            <h2 className="text-2xl text-ink sm:text-3xl">{page.flowTitle}</h2>
+            <p className={`mt-4 ${BODY}`}>{page.flowDescription}</p>
+          </BlurReveal>
+          <ol className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {page.flow.map((step, index) => (
+              <BlurReveal
+                as="li"
+                key={step.title}
+                delay={index * 0.08}
+                className="flex flex-col rounded-lg border border-muted/25 p-6"
+              >
+                <span className="flex size-8 items-center justify-center rounded-md border border-border font-heading text-base text-accent">
+                  {index + 1}
+                </span>
+                <h3 className="mt-5 text-lg text-ink">{step.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted">{step.body}</p>
+              </BlurReveal>
             ))}
-          </dl>
-        </Reveal>
+          </ol>
+        </div>
 
-        <Reveal className="mt-16 sm:mt-20">
-          <div className="grid gap-6 border-t border-border pt-10 lg:grid-cols-[1fr_2fr] lg:gap-16">
-            <h2 className="text-2xl text-ink sm:text-3xl">{page.overviewTitle}</h2>
-            <p className="max-w-2xl text-base leading-relaxed text-muted">{page.overview}</p>
-          </div>
-        </Reveal>
-
-        <Reveal className="mt-16 sm:mt-20">
-          <div className="grid gap-6 border-t border-border pt-10 lg:grid-cols-[1fr_2fr] lg:gap-16">
-            <h2 className="text-2xl text-ink sm:text-3xl">{page.approachTitle}</h2>
-            <p className="max-w-2xl text-base leading-relaxed text-muted">{page.approach}</p>
-          </div>
-        </Reveal>
-
-        <Reveal className="mt-16 sm:mt-20">
-          <div className="grid gap-6 border-t border-border pt-10 lg:grid-cols-[1fr_2fr] lg:gap-16">
-            <div>
-              <h2 className="text-2xl text-ink sm:text-3xl">{page.flowTitle}</h2>
-              <p className="mt-4 text-base leading-relaxed text-muted">{page.flowDescription}</p>
-            </div>
-            <ol className="flex max-w-2xl flex-col gap-8">
-              {page.flow.map((step, index) => (
-                <li key={step.title} className="flex gap-5">
-                  <span className="font-pixel text-xl text-accent">{index + 1}</span>
-                  <div>
-                    <h3 className="text-xl text-ink">{step.title}</h3>
-                    <p className="mt-2 text-base leading-relaxed text-muted">{step.body}</p>
-                  </div>
-                </li>
-              ))}
-            </ol>
-          </div>
-        </Reveal>
-
-        <div className="mt-16 sm:mt-20">
-          <Reveal>
+        <div className="mt-16 sm:mt-24">
+          <BlurReveal>
             <h2 className="text-2xl text-ink sm:text-3xl">{page.featuresTitle}</h2>
-          </Reveal>
+          </BlurReveal>
           <ul className="mt-8 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {page.features.map((feature, index) => (
-              <Reveal key={feature.title} as="li" delay={index * 80}>
+              <BlurReveal as="li" key={feature.title} delay={index * 0.08}>
                 <div className="border-t border-border pt-6">
                   <h3 className="text-xl text-ink">{feature.title}</h3>
-                  <p className="mt-3 text-base leading-relaxed text-muted">{feature.body}</p>
+                  <p className={`mt-3 ${BODY}`}>{feature.body}</p>
                 </div>
-              </Reveal>
+              </BlurReveal>
             ))}
           </ul>
         </div>
+
+        <CaseRow title={page.doneTitle}>
+          <CaseList items={page.done} />
+        </CaseRow>
+
+        <CaseRow title={page.customersTitle}>
+          <p className={BODY}>{page.customers}</p>
+        </CaseRow>
       </Container>
 
       <div className="border-t border-border py-16 sm:py-24">
         <Container>
-          <Reveal>
+          <BlurReveal>
             <h2 className="text-2xl text-ink sm:text-3xl">{page.galleryTitle}</h2>
-          </Reveal>
+          </BlurReveal>
         </Container>
-        <Reveal delay={150} className="mt-8">
+        <BlurReveal delay={0.1} className="mt-8">
           <GalleryMarquee images={eventopsImages.gallery} alts={page.galleryAlts} />
-        </Reveal>
+        </BlurReveal>
       </div>
+
+      <Container className="pb-20 sm:pb-28">
+        <CaseCta />
+      </Container>
     </div>
   );
 }
