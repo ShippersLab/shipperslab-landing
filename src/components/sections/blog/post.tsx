@@ -83,7 +83,7 @@ export function BlogPost({ slug }: BlogPostProps) {
         />
 
         <Container className="w-full py-16 sm:py-20">
-          <div className="grid gap-12 lg:grid-cols-[1fr_2fr] lg:gap-16">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1fr_2fr] lg:gap-16">
             <BlogPostToc label={blog.toc} items={toc} />
 
             <div className="min-w-0 max-w-2xl">
