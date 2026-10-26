@@ -374,7 +374,7 @@
         }
       ],
       "overviewTitle": "El problema.",
-      "overview": "Una empresa de eventos maneja a la vez fechas, equipos, clientes y pagos. Cuando esa información está repartida en planillas y mensajes, es fácil que dos eventos se superpongan, que falte personal o que nadie sepa con certeza cuánto dinero ingresó y cuánto queda por cobrar. Si todavía lo resolvés con planillas, leé [cómo organizar una empresa de eventos: del Excel a un solo sistema](/blog/como-organizar-una-empresa-de-eventos).",
+      "overview": "Una empresa de eventos maneja a la vez fechas, equipos, clientes y pagos. Cuando esa información está repartida en planillas y mensajes, es fácil que dos eventos se superpongan, que falte personal o que nadie sepa con certeza cuánto dinero ingresó y cuánto queda por cobrar. Si todavía lo resolvés con planillas, leé [cómo organizar una empresa de eventos](/blog/como-organizar-una-empresa-de-eventos).",
       "approachTitle": "Cómo lo solucionamos.",
       "approach": "EventOps reúne toda la operación en un único sistema. Cada evento tiene su cliente, su equipo y sus movimientos de dinero, y el calendario muestra de un vistazo qué hay que hacer y cuándo. Lo diseñamos a partir de cómo trabaja una empresa de eventos, para que todos vean siempre la misma información.",
       "flowTitle": "Un evento, de punta a punta.",
