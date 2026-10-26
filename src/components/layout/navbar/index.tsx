@@ -25,7 +25,7 @@ export function Navbar() {
     <header
       ref={ref}
       className={cn(
-        "invisible z-20 flex justify-center",
+        "invisible z-50 flex justify-center",
         isHome
           ? "absolute inset-x-11 top-11 sm:inset-x-14 sm:top-12"
           : "relative pb-4 group-has-data-fullbleed/shell:absolute group-has-data-fullbleed/shell:inset-x-4 group-has-data-fullbleed/shell:top-4 group-has-data-fullbleed/shell:pb-0",
