@@ -161,11 +161,7 @@
     "title": "Empecemos.",
     "description": "Tres pasos, menos de un minuto. Te respondemos para coordinar una charla.",
     "stepsLabel": "Pasos del formulario",
-    "steps": [
-      "Vos",
-      "Contacto",
-      "Tu problema"
-    ],
+    "steps": ["Vos", "Contacto", "Tu problema"],
     "fields": {
       "name": "Nombre",
       "namePlaceholder": "Tu nombre",
@@ -248,13 +244,7 @@
   "events": {
     "title": "Eventos para toda la comunidad",
     "description": "Networking, demos de proyectos, charlas y hackathons abiertos a todos. Arrancamos en Santa Fe.",
-    "formats": [
-      "Networking",
-      "Demo nights",
-      "Charlas",
-      "Hackathons",
-      "Café"
-    ],
+    "formats": ["Networking", "Demo nights", "Charlas", "Hackathons", "Café"],
     "sponsorTitle": "Buscamos partners",
     "sponsorDescription": "Queremos armar estos eventos junto a empresas y personas que quieran sumarse. No hace falta ser una marca grande: estas son algunas formas de ayudar, y si se te ocurre otra, también suma.",
     "sponsorWays": [
@@ -321,10 +311,7 @@
       "heroAlt": "Captura de la página de inicio de EventOps",
       "title": "EventOps",
       "summary": "Calendario, personal y finanzas de tu empresa de eventos.",
-      "tags": [
-        "Gestión de eventos",
-        "B2B"
-      ],
+      "tags": ["Gestión de eventos", "B2B"],
       "metaTitle": "EventOps: sistema de gestión para empresas de eventos",
       "metaDescription": "EventOps reúne el calendario, los clientes, el personal y las finanzas de una empresa de eventos en un único sistema. Producto propio de ShippersLab, en producción.",
       "visitLabel": "Visitar EventOps",
@@ -458,11 +445,7 @@
           "label": "Ver el caso de EventOps",
           "href": "/casos/eventops"
         },
-        "tabs": [
-          "Calendario",
-          "Presupuestos",
-          "Personal"
-        ],
+        "tabs": ["Calendario", "Presupuestos", "Personal"],
         "alt": "Calendario de EventOps con la visita técnica, el montaje y la prueba de sonido de cada evento"
       },
       "audience": {
@@ -997,11 +980,7 @@
         "body": "Arrancamos con una charla de media hora. Nuestro trabajo ahí es escuchar e identificar bien el problema, que no siempre es el que aparece primero.",
         "topics": {
           "label": "Nos contás",
-          "items": [
-            "Cómo trabajan hoy",
-            "Qué te lleva tiempo",
-            "Qué querés resolver"
-          ]
+          "items": ["Cómo trabajan hoy", "Qué te lleva tiempo", "Qué querés resolver"]
         }
       },
       "scope": {
@@ -1135,9 +1114,7 @@
           },
           {
             "title": "Cuándo todavía no hace falta",
-            "paragraphs": [
-              "Una web no siempre es la prioridad. Puede esperar si:"
-            ],
+            "paragraphs": ["Una web no siempre es la prioridad. Puede esperar si:"],
             "items": [
               "Todos tus clientes llegan por recomendación y no das abasto con los pedidos que ya tenés.",
               "Todavía estás probando qué vender o a quién, y lo que ofrecés cambia cada semana.",
@@ -1152,10 +1129,7 @@
             ],
             "table": {
               "caption": "Cuándo a un negocio le suma una página web y cuándo puede esperar",
-              "columns": [
-                "Una web te suma si…",
-                "Puede esperar si…"
-              ],
+              "columns": ["Una web te suma si…", "Puede esperar si…"],
               "rows": [
                 {
                   "label": "Cómo te encuentran",
@@ -1399,10 +1373,7 @@
             ],
             "table": {
               "caption": "Excel y un sistema: calendario, personal, señas, presupuestos y caja",
-              "columns": [
-                "En el Excel",
-                "En un sistema"
-              ],
+              "columns": ["En el Excel", "En un sistema"],
               "rows": [
                 {
                   "label": "Calendario",
