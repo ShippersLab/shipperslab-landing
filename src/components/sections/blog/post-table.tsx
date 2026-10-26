@@ -6,12 +6,18 @@ type BlogPostTableProps = {
   };
 };
 
-const CELL_CLASS = "w-1/2 px-4 align-top sm:px-5";
+const CELL_CLASS = "px-4 align-top sm:px-5";
 
 export function BlogPostTable({ table }: BlogPostTableProps) {
+  const scrolls = table.columns.length > 2;
+
   return (
-    <div className="mt-6 overflow-hidden rounded-lg border border-border bg-paper">
-      <table className="w-full table-fixed border-collapse text-left text-sm leading-relaxed sm:text-base">
+    <div
+      className={`mt-6 rounded-lg border border-border bg-paper ${scrolls ? "overflow-x-auto" : "overflow-hidden"}`}
+    >
+      <table
+        className={`w-full table-fixed border-collapse text-left text-sm leading-relaxed sm:text-base ${scrolls ? "min-w-[36rem]" : ""}`}
+      >
         <caption className="sr-only">{table.caption}</caption>
         <thead>
           <tr className="border-b border-border">

@@ -431,7 +431,7 @@
       "lead": "Inventory, orders, sales or bookings in one place, built around how your business works. Stop fighting spreadsheets that can't keep up.",
       "covers": {
         "title": "What we solve.",
-        "body": "A system shaped around your operation: inventory control, orders, sales, bookings or whatever slips between chats and spreadsheets today. We build it around how your team already works.",
+        "body": "A system shaped around your operation: inventory control, orders, sales, bookings or whatever slips between chats and spreadsheets today. We build it around how your team already works. If you are asking for a quote, read [What a custom management system costs a small business](/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida).",
         "items": [
           {
             "id": "stock",
@@ -1516,6 +1516,205 @@
         },
         "ctaTitle": "Is your event company still in Excel?",
         "ctaDescription": "Tell us how you organize dates, crew and payments. We reply with scope and price in writing.",
+        "ctaButton": "Tell us your problem"
+      },
+      "cuanto-cuesta-un-sistema-de-gestion-a-medida": {
+        "title": "What a custom management system costs a small business",
+        "metaTitle": "What a custom management system costs a small business",
+        "metaDescription": "What drives the price of a custom management system: modules, users, integrations and moving off Excel. Scope and price agreed in writing.",
+        "excerpt": "What pushes the price of a custom management system, which costs sit outside the build, and what to bring to the first conversation so the quote can close.",
+        "answer": "The price of a custom management system depends on the modules and screens, the users and permissions, the integrations, moving the data out of Excel, and the reports. We do not publish a rate: the price is built from the scope of your operation and agreed in writing, together with that scope, before we start. Here is how that price is put together.",
+        "intro": [
+          "If the business runs on Excel and you are asking for a quote, the figure on its own is not enough. You need to know what goes into the system and what stays out, because that is what the price comes from.",
+          "This note covers what drives it, which costs are worth looking at apart from the build, how it compares with staying on a spreadsheet or buying off-the-shelf software, and what to bring to the first conversation."
+        ],
+        "sections": [
+          {
+            "title": "What drives the price",
+            "paragraphs": [
+              "The price depends on the system. Tidying up inventory is not the same job as adding orders, cash, role permissions and a close for the accountant. The name of the trade does not say how much work there is.",
+              "That is why there is no published rate. The proposal states the scope, and the price follows that scope. It does not come from a catalog of loose screens: the parts are looked at together, because a short flow with no integrations is not the same work as one with permissions, a heavy migration and closing reports.",
+              "A distributor that wants an order to reduce stock is not asking for the same thing as a booking business that wants the team's schedule and the day's takings. The screens look similar from far away. The rules do not. These are the parts that move the price the most:"
+            ],
+            "items": [
+              "Modules and screens. Each part of the operation that goes in, such as inventory, orders, cash, bookings or clients, adds screens, states and rules. A short path is not the same work as an operation with several stages and exceptions.",
+              "Users and permissions. One person signing in is not the same as each role seeing and doing something different. Owner, admin, warehouse or branch changes what has to be built and what each person can touch.",
+              "Integrations. Connecting invoicing, payments, email or an API is work on top of the screens. If the tool has a clear way for data to go in and out, that is what we use. If it does not, we define how the information travels.",
+              "Migration from Excel. Moving products, clients or movements is not copying the spreadsheet. Names have to be unified, duplicates resolved, and you decide which history comes along. If a spreadsheet still works for you, it can stay out or stay connected.",
+              "Reports. A list is not a close. If you need to see what is still unpaid, what to restock or how the cash closed, that is designed with the same rules your team already uses, not with a generic dashboard."
+            ],
+            "closing": "If the system is large, it can be split so we start with what hurts most, such as inventory or orders. What goes into this stage and what waits also goes in writing, so the price does not mix work that will be done with work that will not.",
+            "link": {
+              "label": "See management systems",
+              "href": "/sistemas-de-gestion"
+            }
+          },
+          {
+            "title": "Costs worth knowing apart from the build",
+            "paragraphs": [
+              "The build is one part of the quote. Some costs are worth seeing beside it, named, so they do not show up later. They do not change how we quote: they are separated from the system.",
+              "They go in the proposal only if the system needs them. If they are not needed, they are not added to fill out a list."
+            ],
+            "items": [
+              "Server, domain and accounts. If you already have a server, a domain, the WhatsApp API or an AI model, we use them. If you do not, we manage them and charge the cost plus management.",
+              "Maintenance. It is optional. It covers changes and adjustments once the system is running. Without maintenance, the project costs less.",
+              "Training. It is optional too. If you want a session so your team learns to use it, it is added. If you do not hire it, the project costs less.",
+              "Bugs in the system. If the fault is ours, we fix it. That does not depend on having hired maintenance.",
+              "Changes in an external API. If an API you chose changes and you did not hire support, you pay for that fix. It is not covered by the build.",
+              "Your data. It is confidential. We use it to build the system and, if you hire maintenance, to maintain it."
+            ],
+            "closing": "The document separates what the system is, what is optional and which external services are used or managed. You can choose the build without dragging the rest along."
+          },
+          {
+            "title": "Excel, off-the-shelf, or custom",
+            "paragraphs": [
+              "The first conversation usually brings up the same comparison: stay in Excel, adopt off-the-shelf software, or commission a custom system. There is no option that fits every small business. It depends on how specific the operation is and on whether the team can work the way the program already works.",
+              "The table is qualitative. It does not replace a quote and it does not hide figures. The actual price comes from the scope, in writing."
+            ],
+            "table": {
+              "caption": "Excel, off-the-shelf software and a custom system: upfront cost, ongoing cost, fit to the process and who maintains it",
+              "columns": [
+                "Excel",
+                "Off the shelf",
+                "Custom"
+              ],
+              "rows": [
+                {
+                  "label": "Upfront cost",
+                  "cells": [
+                    "The spreadsheet is already there. What it takes is the time to build it and to rebuild it when it falls short.",
+                    "You use the product that already exists. The limit shows up when the operation needs something that plan does not include.",
+                    "It is the agreed build. It grows with the modules, the permissions, the integrations and the data to move."
+                  ]
+                },
+                {
+                  "label": "Ongoing cost",
+                  "cells": [
+                    "The spreadsheet license, if there is one, and the time of whoever keeps it up to date.",
+                    "A subscription while you use it. If it falls short, another program appears or you go back to Excel.",
+                    "Maintenance is optional. Server, domain or APIs are charged separately when they have to be managed."
+                  ]
+                },
+                {
+                  "label": "Fit to the process",
+                  "cells": [
+                    "It bends to how you work, until the formulas, the copies and the loose files cannot keep up.",
+                    "The team adapts to the program. What does not fit stays in a patch or in another tool.",
+                    "It is built around how your team works, with the rules they already use."
+                  ]
+                },
+                {
+                  "label": "Who maintains it",
+                  "cells": [
+                    "Someone on your team. If that person is away, it is hard to reconstruct where each piece of data ended up.",
+                    "Whoever makes the product. You can ask for what the product allows, not a flow it does not contemplate.",
+                    "If you hire maintenance, we keep going with it. We still fix our own bugs."
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "title": "How to ask for a quote properly",
+            "paragraphs": [
+              "A closed quote comes from understanding the operation, not from a short message with the name of the trade. The clearer you arrive at the first conversation, the less back and forth it takes to write the scope and the price.",
+              "You do not need a tidy document. It is enough to show how you work today. The order is simple: we listen to the operation, we write what is in and what is out, and the price goes in that same document, before we start. Maintenance, training and external services sit on another line, so they are visible apart."
+            ],
+            "items": [
+              "A real case. Pick an order, a booking or a stock movement and walk through it from the moment it comes in until it is paid or delivered.",
+              "The spreadsheets. Even if they are messy. That is where columns, states and data entered in more than one place show up.",
+              "Who does what. Who enters data, who approves, who looks at the cash and who should not see costs or margins.",
+              "What it has to connect to. Invoicing, payments, email, WhatsApp or another tool. If you already have the account or the API, say so in the conversation.",
+              "What hurts today. The part that gets stuck, gets lost or gets argued about. If the system is large, that is where we start.",
+              "What stays out. Saying what is not in this stage keeps the price from mixing in work that is not going to be done yet."
+            ],
+            "closing": "From that we write the document: what gets built, what does not, what we need from you, what the implementation costs and what maintenance costs. It is agreed in writing before we start. We do not publish a typical timeline. The time also depends on the system and it lives in that document, not in a generic promise.",
+            "link": {
+              "label": "Ask for the quote",
+              "href": "/empecemos"
+            }
+          },
+          {
+            "title": "Signs that custom is the right fit",
+            "paragraphs": [
+              "Off-the-shelf software is enough when the operation fits what that program already does and the team can work that way, without a spreadsheet beside it. A custom system makes sense when the way of working has its own steps and the gap is held together with Excel and messages.",
+              "An events company, the first client, ran everything in Excel: cash flow, clients and no calendar. They asked for a quote for a calendar, client management and cash flow. The system that came out of that work is EventOps, and it covers more than the original request: the event is entered once, and the calendar, the quote, the payments and the expenses come from that. How an event runs there is told in the note on organizing an events company.",
+              "That case is not a template to copy. It shows the difference between quoting a screen and looking at the whole operation. If your business does something else, the scope is written for that operation, not for another trade."
+            ],
+            "items": [
+              "Your own rules. Discounts, states, deposits or exceptions that off-the-shelf software cannot model without patches or a spreadsheet beside it.",
+              "Split data. The same thing is entered in Excel, in chat and in another program, and nobody fully trusts a single list.",
+              "Different permissions. Not everyone on the team should see costs, margins or the cash, and today that is solved by hiding columns.",
+              "You already went back to the spreadsheet. You tried off-the-shelf software and the daily work stayed in Excel, because the operation did not fit.",
+              "It has to talk to what you already chose. Invoicing, payments or an API, using your accounts if you already have them."
+            ],
+            "closing": "If the off-the-shelf product covers the day to day and your team uses it without a parallel spreadsheet, there is no need to replace it. In the first conversation we say what looks like the better fit for your case, and the scope is written before there is a price.",
+            "link": {
+              "label": "See the EventOps case",
+              "href": "/casos/eventops"
+            }
+          }
+        ],
+        "checklist": {
+          "title": "Quick checklist",
+          "intro": "Before the first conversation, go through this:",
+          "items": [
+            "Can I walk through an order, a booking or a stock movement from start to finish?",
+            "Do I have the spreadsheets at hand, even if they are messy?",
+            "Do I know who enters data, who approves and who should not see each piece of data?",
+            "Do I know what it has to connect to, and whether those accounts already exist?",
+            "Can I say what goes into this stage and what stays out?",
+            "Does the off-the-shelf program I looked at let me work the way I work today, or does it push me back to Excel?"
+          ],
+          "closing": "If you can answer the first ones, the conversation is enough to write scope and price. If the last one is also yes, it is worth looking at a custom system before stretching the spreadsheet."
+        },
+        "faq": {
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "question": "Is there a reference price for a custom system?",
+              "answer": "We do not publish a rate. The price depends on the system: modules and screens, users and permissions, integrations, migration from Excel and reports. Scope and price are agreed in writing before we start."
+            },
+            {
+              "question": "Are maintenance and training required?",
+              "answer": "No. Maintenance and training are optional. Without them, the project costs less. If the bug is in the system we built, we fix it anyway."
+            },
+            {
+              "question": "What if I already have a server, a domain or WhatsApp?",
+              "answer": "We use them. If you do not have them, we manage them and charge the cost plus management. The same applies to an AI model when the system needs one."
+            },
+            {
+              "question": "Who pays if an external API changes?",
+              "answer": "If the fault is ours, we fix it. If an API you chose changes and you did not hire support, you pay for that fix."
+            },
+            {
+              "question": "What happens to my business data?",
+              "answer": "It is confidential. We use it to build the system and, if you hire maintenance, to maintain it. Which spreadsheets are migrated, and which are not, is written in the proposal."
+            }
+          ]
+        },
+        "related": {
+          "title": "Keep reading",
+          "links": [
+            {
+              "label": "Management systems",
+              "href": "/sistemas-de-gestion",
+              "description": "Inventory, orders, cash or bookings in a system built around how your business works."
+            },
+            {
+              "label": "EventOps case",
+              "href": "/casos/eventops",
+              "description": "Calendar, crew, quotes and cash for an events company."
+            },
+            {
+              "label": "How to organize an events company",
+              "href": "/blog/como-organizar-una-empresa-de-eventos",
+              "description": "From a production company's Excel file to the system that brings calendar, crew, quotes and cash together."
+            }
+          ]
+        },
+        "ctaTitle": "Want the price in writing?",
+        "ctaDescription": "Tell us how you work today and what slips between spreadsheets. We reply with scope and price in writing, before we start.",
         "ctaButton": "Tell us your problem"
       }
     }

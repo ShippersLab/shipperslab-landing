@@ -431,7 +431,7 @@
       "lead": "Stock, pedidos, caja o turnos en un solo lugar, armado para cómo trabaja tu negocio. Dejá de pelearte con planillas que ya no dan abasto.",
       "covers": {
         "title": "Qué resolvemos.",
-        "body": "Un sistema pensado para tu operación: control de stock, pedidos, caja, turnos o lo que hoy se te escapa entre chats y planillas. Lo armamos alrededor de cómo trabaja tu equipo.",
+        "body": "Un sistema pensado para tu operación: control de stock, pedidos, caja, turnos o lo que hoy se te escapa entre chats y planillas. Lo armamos alrededor de cómo trabaja tu equipo. Si estás pidiendo un presupuesto, leé [Cuánto cuesta un sistema de gestión a medida](/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida).",
         "items": [
           {
             "id": "stock",
@@ -1516,6 +1516,205 @@
         },
         "ctaTitle": "¿Tu empresa de eventos sigue en un Excel?",
         "ctaDescription": "Contanos cómo organizás fechas, personal y cobros. Te respondemos con alcance y precio por escrito.",
+        "ctaButton": "Contanos tu problema"
+      },
+      "cuanto-cuesta-un-sistema-de-gestion-a-medida": {
+        "title": "Cuánto cuesta un sistema de gestión a medida para una pyme",
+        "metaTitle": "Cuánto cuesta un sistema de gestión a medida para una pyme",
+        "metaDescription": "Qué define el precio de un sistema de gestión a medida para una pyme: módulos, usuarios, integraciones y migrar desde Excel. Alcance y precio por escrito.",
+        "excerpt": "Qué empuja el precio de un sistema de gestión a medida, qué costos van aparte del desarrollo y qué llevar a la primera charla.",
+        "answer": "El precio de un sistema de gestión a medida depende de los módulos y las pantallas, de los usuarios y permisos, de las integraciones, de pasar los datos desde Excel y de los reportes. No publicamos una tarifa: se arma con el alcance de tu operación y se acuerda por escrito, junto con ese alcance, antes de arrancar. Acá está cómo se construye.",
+        "intro": [
+          "Si la pyme se maneja con Excel y estás pidiendo un presupuesto, el precio solo no alcanza. Hace falta saber qué entra en el sistema y qué queda afuera, porque de eso sale el precio.",
+          "Esta nota recorre qué lo define, qué costos conviene mirar aparte del desarrollo, cómo se compara con seguir en la planilla o con un software enlatado, y qué llevar a la primera charla."
+        ],
+        "sections": [
+          {
+            "title": "Qué define el precio",
+            "paragraphs": [
+              "El precio depende del sistema. Ordenar el stock no es lo mismo que sumar pedidos, caja, permisos por rol y un cierre para el contador.",
+              "Por eso no hay una tarifa publicada. En la propuesta se escribe el alcance, y el precio acompaña ese alcance. Las partes se miran juntas: un flujo corto, sin integraciones, no es el mismo trabajo que uno con permisos, migración y reportes de cierre.",
+              "Una distribuidora que quiere descontar stock al confirmar un pedido no pide lo mismo que un negocio de turnos que quiere la agenda y lo cobrado en el día. Estas son las partes que más mueven el precio:"
+            ],
+            "items": [
+              "Módulos y pantallas. Stock, pedidos, caja, turnos o clientes suman pantallas, estados y reglas. Un recorrido corto no es lo mismo que una operación con varias etapas.",
+              "Usuarios y permisos. Que entre una sola persona no es lo mismo que cada rol vea y haga algo distinto. Dueño, administración, depósito o sucursal cambian el sistema.",
+              "Integraciones. Conectar facturación, pagos, correo o una API es trabajo aparte de las pantallas. Si la herramienta deja entrar y salir datos, se usa esa vía.",
+              "Migración desde Excel. Pasar productos, clientes o movimientos implica unificar nombres, resolver duplicados y decidir qué historia se trae. Si una planilla te sigue sirviendo, puede quedar afuera o conectada.",
+              "Reportes. Un listado no es un cierre. Ver qué falta cobrar, qué reponer o cómo cerró la caja se diseña con las reglas de tu equipo."
+            ],
+            "closing": "Si el sistema es grande, se puede partir y empezar por lo que más duele, como el stock o los pedidos. Qué entra ahora y qué queda para después va por escrito, para no mezclar en el precio un trabajo que todavía no se va a hacer.",
+            "link": {
+              "label": "Ver sistemas de gestión",
+              "href": "/sistemas-de-gestion"
+            }
+          },
+          {
+            "title": "Costos aparte que conviene conocer",
+            "paragraphs": [
+              "El desarrollo es una parte del presupuesto. Hay costos que conviene ver al lado, con nombre, para que no aparezcan después.",
+              "Entran en la propuesta solo si el sistema los necesita."
+            ],
+            "items": [
+              "Servidor, dominio y cuentas. Si ya tenés servidor, dominio, la API de WhatsApp o un modelo de IA, los usamos. Si no los tenés, los gestionamos nosotros y te cobramos el costo más la gestión.",
+              "Mantenimiento. Es opcional. Cubre cambios y ajustes cuando el sistema ya está en marcha. Sin mantenimiento, el proyecto sale menos.",
+              "Capacitación. También es opcional. Si querés que tu equipo tenga una instancia para aprender a usarlo, se suma. Si no la contratás, el proyecto sale menos.",
+              "Errores del sistema. Si el fallo es nuestro, lo corregimos nosotros. Eso no depende de haber contratado mantenimiento.",
+              "Cambios en una API externa. Si una API que elegiste cambia y no contrataste soporte, ese arreglo lo pagás vos. No queda cubierto por el desarrollo.",
+              "Tus datos. Son confidenciales. Los usamos para construir el sistema y, si contratás mantenimiento, para mantenerlo."
+            ],
+            "closing": "En el documento queda separado qué es el sistema, qué es opcional y qué servicios externos se usan o se gestionan."
+          },
+          {
+            "title": "Excel, enlatado o sistema a medida",
+            "paragraphs": [
+              "En la primera charla suele aparecer la misma comparación: seguir en Excel, adoptar un software enlatado o encargar un sistema a medida. No hay una opción que le sirva a toda pyme. Depende de qué tan propia es la operación.",
+              "La tabla es cualitativa. No reemplaza un presupuesto. El precio concreto sale del alcance, por escrito."
+            ],
+            "table": {
+              "caption": "Excel, software enlatado y sistema a medida: costo inicial, costo mensual, ajuste al proceso y quién lo mantiene",
+              "columns": [
+                "Excel",
+                "Enlatado",
+                "A medida"
+              ],
+              "rows": [
+                {
+                  "label": "Costo inicial",
+                  "cells": [
+                    "La planilla ya está. Lo que lleva es el tiempo de armarla y de rehacerla cuando se queda corta.",
+                    "Se usa el producto que ya existe. El límite aparece cuando la operación pide algo que ese plan no trae.",
+                    "Es el desarrollo acordado. Crece con los módulos, los permisos, las integraciones y los datos a pasar."
+                  ]
+                },
+                {
+                  "label": "Costo mensual",
+                  "cells": [
+                    "La licencia de la planilla, si la hay, y el tiempo de quien la mantiene al día.",
+                    "Una suscripción mientras se usa. Si no alcanza, aparece otro programa o se vuelve al Excel.",
+                    "El mantenimiento es opcional. Servidor, dominio o APIs se cobran aparte cuando hay que gestionarlos."
+                  ]
+                },
+                {
+                  "label": "Ajuste al proceso",
+                  "cells": [
+                    "Se adapta a cómo trabajás, hasta que las fórmulas, las copias y los archivos sueltos no dan más.",
+                    "El equipo se adapta al programa. Lo que no entra queda en un parche o en otra herramienta.",
+                    "Se arma alrededor de cómo trabaja tu equipo, con las reglas que ya usan."
+                  ]
+                },
+                {
+                  "label": "Quién lo mantiene",
+                  "cells": [
+                    "Alguien de tu equipo. Si esa persona no está, cuesta reconstruir dónde quedó cada dato.",
+                    "Quien hace el producto. Se puede pedir lo que el producto permite, no un flujo que no contempla.",
+                    "Si contratás mantenimiento, lo seguimos nosotros. Los errores nuestros los corregimos igual."
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "title": "Cómo pedir un presupuesto bien",
+            "paragraphs": [
+              "Un presupuesto cerrado sale de entender la operación, no de un mensaje corto con el nombre del rubro. Cuanto más claro llegues, menos vueltas hacen falta para cerrar alcance y precio.",
+              "No hace falta un documento prolijo. Alcanza con mostrar cómo trabajan hoy. Se escucha la operación, se escribe qué entra y qué no, y el precio va en ese mismo documento, antes de arrancar."
+            ],
+            "items": [
+              "Un caso real. Elegí un pedido, un turno o un movimiento de stock y contá el recorrido desde que entra hasta que se cobra o se entrega.",
+              "Las planillas. Aunque estén desordenadas. Ahí se ven columnas, estados y qué dato se carga en más de un lugar.",
+              "Quién hace cada cosa. Quién carga, quién aprueba, quién mira la caja y quién no debería ver costos o márgenes.",
+              "Con qué hay que conectarlo. Facturación, pagos, correo, WhatsApp u otra herramienta. Si ya tenés la cuenta o la API, decilo en la charla.",
+              "Qué duele hoy. La parte que se traba, se pierde o se discute. Si el sistema es grande, por ahí se empieza.",
+              "Qué queda afuera. Decir qué no entra en esta etapa evita que el precio mezcle trabajo que todavía no se va a hacer."
+            ],
+            "closing": "Con eso se arma el documento: qué se construye, qué no, qué hace falta de tu lado, cuánto sale la implementación y cuánto el mantenimiento. Se acuerda por escrito antes de arrancar. No publicamos un plazo típico: el tiempo depende del sistema y queda en ese documento.",
+            "link": {
+              "label": "Pedir el presupuesto",
+              "href": "/empecemos"
+            }
+          },
+          {
+            "title": "Señales de que conviene a medida",
+            "paragraphs": [
+              "Un software enlatado alcanza cuando la operación entra en lo que ese programa ya hace y el equipo puede trabajar así, sin una planilla al lado. El sistema a medida tiene sentido cuando hay pasos propios y el hueco se sostiene con Excel y mensajes.",
+              "Una empresa de eventos, el primer cliente, llevaba todo en un Excel: flujo de caja, clientes y ningún calendario. Pidió presupuesto para un calendario, la gestión de clientes y el flujo de caja. De ese trabajo salió EventOps, que abarca más que el pedido inicial: el evento se carga una vez y de ahí salen el calendario, el presupuesto, los pagos y los gastos. El día a día está en la nota sobre organizar una empresa de eventos.",
+              "Ese caso no es un molde. Muestra la diferencia entre cotizar una pantalla y mirar la operación entera. Si tu pyme hace otra cosa, el alcance se escribe para esa operación."
+            ],
+            "items": [
+              "Reglas propias. Descuentos, estados o excepciones que un enlatado no deja modelar sin parches ni otra planilla.",
+              "Datos partidos. Lo mismo se carga en el Excel, en el chat y en otro programa, y nadie confía en una sola lista.",
+              "Permisos distintos. No todo el equipo debería ver costos, márgenes o la caja.",
+              "Ya volviste a la planilla. Probaste un enlatado y el día a día siguió en el Excel, porque la operación no entraba.",
+              "Tiene que hablar con lo que ya elegiste. Facturación, pagos o una API, con tus cuentas si ya las tenés."
+            ],
+            "closing": "Si el enlatado cubre el día a día y tu equipo lo usa sin una planilla paralela, no hace falta reemplazarlo. En la primera charla decimos qué vemos más conveniente, y el alcance queda escrito antes del precio.",
+            "link": {
+              "label": "Ver el caso de EventOps",
+              "href": "/casos/eventops"
+            }
+          }
+        ],
+        "checklist": {
+          "title": "Checklist rápido",
+          "intro": "Antes de la primera charla, repasá esto:",
+          "items": [
+            "¿Puedo contar un pedido, un turno o un movimiento de stock de punta a punta?",
+            "¿Tengo a mano las planillas, aunque estén desordenadas?",
+            "¿Sé quién carga, quién aprueba y quién no debería ver cada dato?",
+            "¿Sé con qué hay que conectarlo y si esas cuentas ya existen?",
+            "¿Puedo decir qué entra en esta etapa y qué queda afuera?",
+            "¿El programa enlatado que miré me deja trabajar como trabajo hoy, o me empuja de nuevo al Excel?"
+          ],
+          "closing": "Si podés responder las primeras, la charla alcanza para escribir alcance y precio. Si la última también es sí, conviene mirar un sistema a medida."
+        },
+        "faq": {
+          "title": "Preguntas frecuentes",
+          "items": [
+            {
+              "question": "¿Hay un precio de referencia para un sistema a medida?",
+              "answer": "No publicamos una tarifa. El precio depende del sistema: módulos y pantallas, usuarios y permisos, integraciones, migración desde Excel y reportes. El alcance y el precio se acuerdan por escrito antes de arrancar."
+            },
+            {
+              "question": "¿El mantenimiento y la capacitación son obligatorios?",
+              "answer": "No. Mantenimiento y capacitación son opcionales. Sin ellos, el proyecto sale menos. Si el error es del sistema que construimos, lo corregimos nosotros igual."
+            },
+            {
+              "question": "¿Qué pasa si ya tengo servidor, dominio o WhatsApp?",
+              "answer": "Los usamos. Si no los tenés, los gestionamos nosotros y te cobramos el costo más la gestión. Lo mismo aplica a un modelo de IA cuando el sistema lo necesita."
+            },
+            {
+              "question": "¿Quién paga si cambia una API externa?",
+              "answer": "Si el fallo es nuestro, lo arreglamos nosotros. Si una API que elegiste cambia y no contrataste soporte, ese arreglo lo pagás vos."
+            },
+            {
+              "question": "¿Qué pasa con los datos de mi negocio?",
+              "answer": "Son confidenciales. Los usamos para construir el sistema y, si contratás mantenimiento, para mantenerlo. Qué planillas se migran y cuáles no queda escrito en la propuesta."
+            }
+          ]
+        },
+        "related": {
+          "title": "Seguí leyendo",
+          "links": [
+            {
+              "label": "Sistemas de gestión",
+              "href": "/sistemas-de-gestion",
+              "description": "Stock, pedidos, caja o turnos en un sistema armado para cómo trabaja tu pyme."
+            },
+            {
+              "label": "Caso EventOps",
+              "href": "/casos/eventops",
+              "description": "Calendario, personal, presupuestos y caja para una empresa de eventos."
+            },
+            {
+              "label": "Cómo organizar una empresa de eventos",
+              "href": "/blog/como-organizar-una-empresa-de-eventos",
+              "description": "Del Excel de una productora al sistema que junta calendario, personal, presupuesto y caja."
+            }
+          ]
+        },
+        "ctaTitle": "¿Querés el precio por escrito?",
+        "ctaDescription": "Contanos cómo trabajan hoy y qué se escapa entre planillas. Te respondemos con alcance y precio por escrito, antes de arrancar.",
         "ctaButton": "Contanos tu problema"
       }
     }

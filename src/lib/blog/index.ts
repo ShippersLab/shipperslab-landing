@@ -9,6 +9,12 @@ type BlogPostEntry = {
 
 export const blogPosts = [
   {
+    slug: "cuanto-cuesta-un-sistema-de-gestion-a-medida",
+    datePublished: "2026-10-26",
+    authorId: "juani",
+    published: false,
+  },
+  {
     slug: "como-organizar-una-empresa-de-eventos",
     datePublished: "2026-10-23",
     authorId: "juani",
@@ -107,4 +113,31 @@ export function slugifyHeading(text: string) {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
+}
+
+const BLOG_HREF = /^\/blog\/([^/]+)$/;
+
+export function isPublishedBlogHref(href: string) {
+  const slug = BLOG_HREF.exec(href)?.[1];
+  if (!slug || !isBlogSlug(slug)) return true;
+  return getBlogPost(slug)?.published === true;
+}
+
+export function omitUnpublishedBlogLinks(text: string) {
+  if (!text.includes("](/blog/")) return text;
+
+  const sentences = text.split(/(?<=[.!?])\s+/);
+  let changed = false;
+  const kept = sentences.filter((sentence) => {
+    const hrefs = [...sentence.matchAll(/\((\/blog\/[^)\s]+)\)/g)].map((match) => match[1]);
+    const drop = hrefs.some((href) => !isPublishedBlogHref(href));
+    if (drop) changed = true;
+    return !drop;
+  });
+
+  if (!changed) return text;
+  return kept
+    .join(" ")
+    .replace(/[ \t]{2,}/g, " ")
+    .trim();
 }
