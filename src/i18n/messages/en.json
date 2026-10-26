@@ -247,7 +247,7 @@
   },
   "events": {
     "title": "Events for the whole community",
-    "description": "Networking, project demos, talks and hackathons, open to everyone. Starting in Santa Fe.",
+    "description": "Networking, project demos, talks and hackathons, open to everyone. Starting in Santa Fe. If you run an event company and dates, crew and cash still live in Excel, read [how to organize an event company: from a spreadsheet to one system](/blog/como-organizar-una-empresa-de-eventos).",
     "formats": [
       "Networking",
       "Demo nights",
@@ -387,7 +387,7 @@
         }
       ],
       "overviewTitle": "The problem.",
-      "overview": "An event company handles dates, teams, clients and payments all at once. When that information is scattered across spreadsheets and messages, it is easy for two events to overlap, for staff to be missing, or for nobody to know exactly how much money came in and how much is still owed.",
+      "overview": "An event company handles dates, teams, clients and payments all at once. When that information is scattered across spreadsheets and messages, it is easy for two events to overlap, for staff to be missing, or for nobody to know exactly how much money came in and how much is still owed. If you still run it on spreadsheets, read [how to organize an event company: from a spreadsheet to one system](/blog/como-organizar-una-empresa-de-eventos).",
       "approachTitle": "How we solve it.",
       "approach": "EventOps brings the whole operation into a single system. Each event has its client, its team and its money movements, and the calendar shows at a glance what needs to happen and when. We designed it around how an event company works, so everyone always sees the same information.",
       "flowTitle": "One event, end to end.",

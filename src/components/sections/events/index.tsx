@@ -3,6 +3,7 @@
 import { BuildingIllustration } from "@/components/sections/events/building-illustration";
 import { PartnerWays } from "@/components/sections/events/partner-ways";
 import { PolaroidGallery } from "@/components/sections/events/polaroid-gallery";
+import { InlineText } from "@/components/sections/service-page/inline-text";
 import { DiaTextReveal } from "@/components/ui/animation/dia-text-reveal";
 import { Reveal } from "@/components/ui/animation/reveal";
 import { WordReveal } from "@/components/ui/animation/word-reveal";
@@ -37,11 +38,9 @@ export function Events() {
                 delay={TITLE_DELAY}
               />
             </h1>
-            <WordReveal
-              text={messages.events.description}
-              delay={DESCRIPTION_DELAY}
-              className="mt-5 text-lg text-muted"
-            />
+            <Reveal as="p" delay={DESCRIPTION_DELAY * 1000} className="mt-5 text-lg text-muted">
+              <InlineText text={messages.events.description} />
+            </Reveal>
           </div>
 
           <Reveal delay={ILLUSTRATION_DELAY * 1000} className="w-full">
