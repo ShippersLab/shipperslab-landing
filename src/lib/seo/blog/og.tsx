@@ -5,7 +5,7 @@ import { BLOG_OG_HEIGHT, BLOG_OG_WIDTH } from "@/lib/seo/blog/og-path";
 
 const LOGO_WIDTH = 110;
 const LOGO_HEIGHT = Math.round((LOGO_WIDTH * 179) / 325);
-const PAPER_FILL = "#EEEEF3";
+const PAPER_FILL = "#FEFEFE";
 
 export const blogOgSize = {
   width: BLOG_OG_WIDTH,
@@ -59,7 +59,7 @@ export function BlogOgCard({ title, logoSrc, backgroundSrc }: BlogOgCardProps) {
         backgroundImage: `url(${backgroundSrc})`,
         backgroundSize: "100% 100%",
         padding: "72px 80px",
-        color: "#eeeef3",
+        color: "#fefefe",
       }}
     >
       <div style={{ display: "flex" }}>

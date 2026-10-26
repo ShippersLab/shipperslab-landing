@@ -23,7 +23,7 @@ export function Hero() {
   return (
     <section id="top" className="flex w-full flex-col lg:h-[calc(100svh-1rem)] lg:min-h-160">
       <div className="px-4 pt-4 sm:px-6 lg:min-h-0 lg:flex-1 lg:px-8">
-        <div className="relative aspect-square overflow-hidden rounded-lg bg-surface sm:aspect-auto sm:h-[64svh] lg:h-full">
+        <div className="relative aspect-square overflow-hidden rounded-lg bg-paper sm:aspect-auto sm:h-[64svh] lg:h-full">
           <div className="absolute inset-x-0 top-16 bottom-0 sm:top-0">
             <Image
               src="/images/obelisco-white.webp"
@@ -34,7 +34,7 @@ export function Hero() {
               quality={100}
               placeholder="blur"
               blurDataURL={HERO_BLUR_DATA_URL}
-              className="animate-hero-image object-cover object-[22%_bottom] sm:object-[30%_bottom] select-none"
+              className="animate-hero-image object-cover object-[22%_top] sm:object-top select-none"
               sizes="(min-width: 1200px) 1200px, 100vw"
             />
           </div>
