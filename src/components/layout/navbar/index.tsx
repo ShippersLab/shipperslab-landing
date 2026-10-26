@@ -18,6 +18,12 @@ export function Navbar() {
   const { locale, messages } = useI18n();
   const ref = useRef<HTMLElement>(null);
   const isHome = stripLocale(usePathname()) === "/";
+  const linkClassName = cn(
+    "-my-2 rounded-sm py-2 text-sm transition-colors duration-200 ease-out focus-visible:outline-2 focus-visible:outline-offset-2",
+    isHome
+      ? "text-paper/80 hover:text-paper focus-visible:outline-paper"
+      : "text-ink hover:text-ink/70 focus-visible:outline-ink",
+  );
 
   useNavbarAnimation(ref, isHome);
 
@@ -31,14 +37,22 @@ export function Navbar() {
           : "relative pb-4 group-has-data-fullbleed/shell:absolute group-has-data-fullbleed/shell:inset-x-4 group-has-data-fullbleed/shell:top-4 group-has-data-fullbleed/shell:pb-0",
       )}
     >
-      <div className="relative z-30 grid w-full max-w-xl grid-cols-[1fr_auto] items-center gap-4 rounded-md bg-accent py-2 pr-2 pl-4 md:grid-cols-[1fr_auto_1fr]">
+      <div
+        className={cn(
+          "relative z-30 grid w-full max-w-xl grid-cols-[1fr_auto] items-center gap-4 rounded-md py-2 pr-2 pl-4 md:grid-cols-[1fr_auto_1fr]",
+          isHome && "bg-accent",
+        )}
+      >
         <LocalizedLink
           href="/"
           aria-label={site.name}
-          className="-m-2 justify-self-start rounded-md p-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-paper"
+          className={cn(
+            "-m-2 justify-self-start rounded-md p-2 focus-visible:outline-2 focus-visible:outline-offset-2",
+            isHome ? "focus-visible:outline-paper" : "focus-visible:outline-ink",
+          )}
         >
           <Image
-            src="/logo/white.svg"
+            src={isHome ? "/logo/white.svg" : "/logo/accent.svg"}
             alt="ShippersLab"
             width={44}
             height={24}
@@ -50,19 +64,11 @@ export function Navbar() {
         <nav className="hidden items-center justify-center justify-self-center gap-8 md:flex">
           {NAV_LINKS.map((link) =>
             link.kind === "anchor" ? (
-              <a
-                key={link.key}
-                href={localizePath(link.href, locale)}
-                className="-my-2 rounded-sm py-2 text-sm text-paper/80 transition-colors duration-200 ease-out hover:text-paper focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-paper"
-              >
+              <a key={link.key} href={localizePath(link.href, locale)} className={linkClassName}>
                 {messages.nav[link.key]}
               </a>
             ) : (
-              <LocalizedLink
-                key={link.key}
-                href={link.href}
-                className="-my-2 rounded-sm py-2 text-sm text-paper/80 transition-colors duration-200 ease-out hover:text-paper focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-paper"
-              >
+              <LocalizedLink key={link.key} href={link.href} className={linkClassName}>
                 {messages.nav[link.key]}
               </LocalizedLink>
             ),
@@ -70,11 +76,16 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center justify-self-end gap-3">
-          <TextureButton asChild variant="paper" size="compact" className="hidden w-auto md:flex">
+          <TextureButton
+            asChild
+            variant={isHome ? "paper" : "primary"}
+            size="compact"
+            className="hidden w-auto md:flex"
+          >
             <LocalizedLink href="/empecemos">{messages.nav.contact}</LocalizedLink>
           </TextureButton>
 
-          <MobileMenu />
+          <MobileMenu onHome={isHome} />
         </div>
       </div>
     </header>

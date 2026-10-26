@@ -8,6 +8,7 @@ import { MobileMenuPanel } from "@/components/layout/navbar/mobile-menu-panel";
 import { NAV_LINKS } from "@/components/layout/navbar/nav-links";
 import { CloseIcon, MenuIcon } from "@/components/ui/icons";
 import { useI18n } from "@/i18n/provider";
+import { cn } from "@/lib/utils";
 
 const EASE = [0.23, 1, 0.32, 1] as const;
 
@@ -39,7 +40,7 @@ const panelVariants = {
 
 const subscribe = () => () => {};
 
-export function MobileMenu() {
+export function MobileMenu({ onHome }: { onHome: boolean }) {
   const { messages } = useI18n();
   const [isOpen, setIsOpen] = useState(false);
   const panelId = useId();
@@ -76,9 +77,17 @@ export function MobileMenu() {
         aria-controls={panelId}
         aria-label={isOpen ? messages.nav.menuClose : messages.nav.menuOpen}
         onClick={() => setIsOpen((value) => !value)}
-        className={`relative z-40 flex items-center gap-2 rounded-md px-3 py-1.5 text-sm text-paper transition-colors duration-200 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-paper ${
-          isOpen ? "bg-paper/20" : "hover:bg-paper/10"
-        }`}
+        className={cn(
+          "relative z-40 flex items-center gap-2 rounded-md px-3 py-1.5 text-sm transition-colors duration-200 ease-out focus-visible:outline-2 focus-visible:outline-offset-2",
+          onHome ? "text-paper focus-visible:outline-paper" : "text-ink focus-visible:outline-ink",
+          onHome
+            ? isOpen
+              ? "bg-paper/20"
+              : "hover:bg-paper/10"
+            : isOpen
+              ? "bg-border"
+              : "hover:bg-border/60",
+        )}
       >
         {messages.nav.menuLabel}
         <AnimatePresence mode="wait" initial={false}>
