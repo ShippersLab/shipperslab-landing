@@ -1,124 +1,23 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import localFont from "next/font/local";
+import { DM_Mono, Geist, Hanken_Grotesk } from "next/font/google";
 
 const fontSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const fontMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const fontMono = DM_Mono({
+  variable: "--font-dm-mono",
   subsets: ["latin"],
+  weight: ["400", "500"],
   preload: false,
 });
 
-const GeistPixelSquare = localFont({
-  src: "../../node_modules/geist/dist/fonts/geist-pixel/GeistPixel-Square.woff2",
-  variable: "--font-geist-pixel-square",
-  weight: "500",
-  fallback: [
-    "Geist Mono",
-    "ui-monospace",
-    "SFMono-Regular",
-    "Roboto Mono",
-    "Menlo",
-    "Monaco",
-    "Liberation Mono",
-    "DejaVu Sans Mono",
-    "Courier New",
-    "monospace",
-  ],
-  adjustFontFallback: false,
+const fontHeading = Hanken_Grotesk({
+  variable: "--font-hanken-grotesk",
+  subsets: ["latin"],
+  weight: ["500", "600"],
 });
 
-const GeistPixelCircle = localFont({
-  src: "../../node_modules/geist/dist/fonts/geist-pixel/GeistPixel-Circle.woff2",
-  variable: "--font-geist-pixel-circle",
-  weight: "500",
-  fallback: [
-    "Geist Mono",
-    "ui-monospace",
-    "SFMono-Regular",
-    "Roboto Mono",
-    "Menlo",
-    "Monaco",
-    "Liberation Mono",
-    "DejaVu Sans Mono",
-    "Courier New",
-    "monospace",
-  ],
-  adjustFontFallback: false,
-  preload: false,
-});
-
-const GeistPixelGrid = localFont({
-  src: "../../node_modules/geist/dist/fonts/geist-pixel/GeistPixel-Grid.woff2",
-  variable: "--font-geist-pixel-grid",
-  weight: "500",
-  fallback: [
-    "Geist Mono",
-    "ui-monospace",
-    "SFMono-Regular",
-    "Roboto Mono",
-    "Menlo",
-    "Monaco",
-    "Liberation Mono",
-    "DejaVu Sans Mono",
-    "Courier New",
-    "monospace",
-  ],
-  adjustFontFallback: false,
-  preload: false,
-});
-
-const GeistPixelTriangle = localFont({
-  src: "../../node_modules/geist/dist/fonts/geist-pixel/GeistPixel-Triangle.woff2",
-  variable: "--font-geist-pixel-triangle",
-  weight: "500",
-  fallback: [
-    "Geist Mono",
-    "ui-monospace",
-    "SFMono-Regular",
-    "Roboto Mono",
-    "Menlo",
-    "Monaco",
-    "Liberation Mono",
-    "DejaVu Sans Mono",
-    "Courier New",
-    "monospace",
-  ],
-  adjustFontFallback: false,
-  preload: false,
-});
-
-const GeistPixelLine = localFont({
-  src: "../../node_modules/geist/dist/fonts/geist-pixel/GeistPixel-Line.woff2",
-  variable: "--font-geist-pixel-line",
-  weight: "500",
-  fallback: [
-    "Geist Mono",
-    "ui-monospace",
-    "SFMono-Regular",
-    "Roboto Mono",
-    "Menlo",
-    "Monaco",
-    "Liberation Mono",
-    "DejaVu Sans Mono",
-    "Courier New",
-    "monospace",
-  ],
-  adjustFontFallback: false,
-  preload: false,
-});
-
-export const fontVariables = [
-  fontSans,
-  fontMono,
-  GeistPixelSquare,
-  GeistPixelCircle,
-  GeistPixelGrid,
-  GeistPixelTriangle,
-  GeistPixelLine,
-]
+export const fontVariables = [fontSans, fontMono, fontHeading]
   .map((font) => font.variable)
   .join(" ");

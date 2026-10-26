@@ -45,14 +45,16 @@ Publicly only two people are named and shown: Franco (engineering and design) an
 
 Combined experience covers infrastructure, AWS, backend, frontend and AI, earned at large companies and on products built for clients abroad.
 
-The approved employer names for copy are Mercado Libre, Coderhouse, PUMA and NFTYDoor. They are former employers, never clients. No other employer without explicit approval. The landing does not currently show an employer strip; a future strip will show companies we worked for (clients), only once they are approved.
+The approved employer names for copy are Mercado Libre, Coderhouse, PUMA and NFTYDoor. They are former employers, never clients. No other employer without explicit approval. The Team section shows a quiet logo marquee of exactly these four former employers (the team, Franco and Juani included), introduced as where the team has worked, never as clients. A future client strip is separate and only once clients are approved.
 
 ## Current stage
 
 ShippersLab is new. Keep this in mind in every piece of copy and UI:
 
 - There are no public client case studies yet. Never invent clients, logos, metrics, testimonials or results.
-- EventOps (https://eventops.digital) is approved to be named in public copy as an own Lab product in production. Only claim "in production", never user counts or client names. Other projects and client work stay unnamed until approved. Use neutral placeholders ("Project 01") for them.
+- EventOps (https://eventops.digital) is approved to be named in public copy as an own Lab product in production. It is in production and used by events companies; copy may say so ("lo usan empresas de eventos"), but never add user counts or client names.
+- Estacionar is approved to be named in public copy as an own product that is not launched yet. Facts allowed, and only these: a marketplace like Airbnb for parking where people publish an unused garage or space and drivers rent it or search parking by city, including booking a spot on vacation; commercial garages and private (P2P) spaces; the plan was to talk with parking lots (estacionamientos) in different cities so they could load their profile and prices; it is our own idea and we designed and built it ourselves (branding, social media, a web app, a landing page); brand: colors thought in terms of traffic, road signs and parking, hence the yellow and black palette, and the logo is a P for parking combined with a map pin. Never claim it is published, and never add users, metrics or clients.
+- Other projects and client work stay unnamed until approved. Use neutral placeholders ("Project 01") for them.
 - Events are planned, not yet held. Talk about them as what we organize, not as past successes with attendance numbers.
 - No formal company structure yet. Do not reference legal entities, offices or headcount beyond "a small team".
 ## Audience
@@ -89,7 +91,7 @@ Do not:
 ## Language
 
 - **Spanish first.** Local and community content is in Spanish (rioplatense, using "vos": "traé", "contanos", "hablemos").
-- **English second.** Every public page supports English through i18n. English copy should read as native English, not a literal translation.
+- **English second.** Every public page supports English through real localized URLs: Spanish at the root (`/casos`), English under `/en` (`/en/casos`), same slugs in both. The app lives under `src/app/[lang]`, `src/proxy.ts` rewrites unprefixed paths to `es` and redirects `/es/*` to the unprefixed path, internal links go through `LocalizedLink` / `localizePath` in `src/i18n`, and every page declares `hreflang` alternates and a sitemap entry per locale. English copy should read as native English, not a literal translation.
 - Code, commit messages, file names and technical docs are in English.
 ## Phrase bank
 

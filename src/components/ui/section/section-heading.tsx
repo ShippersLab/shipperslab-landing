@@ -7,6 +7,7 @@ type SectionHeadingProps = {
   description?: string;
   className?: string;
   descriptionClassName?: string;
+  titleClassName?: string;
   titleDelay?: number;
   descriptionDelay?: number;
 };
@@ -16,12 +17,13 @@ export function SectionHeading({
   description,
   className,
   descriptionClassName,
+  titleClassName,
   titleDelay = 0,
   descriptionDelay = 0.08,
 }: SectionHeadingProps) {
   return (
     <div className={className}>
-      <h2 className="text-3xl sm:text-4xl">
+      <h2 className={cn("text-3xl sm:text-4xl", titleClassName)}>
         <DiaTextReveal
           text={title}
           colors={["var(--accent)"]}

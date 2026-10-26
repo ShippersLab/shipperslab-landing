@@ -11,7 +11,7 @@ import {
   srgbToLinear,
 } from "@/components/ui/background/webgl-program";
 
-export type DitherView = {
+type DitherView = {
   width: number;
   height: number;
   ratio: number;
@@ -66,7 +66,15 @@ export function createDitherRenderer(gl: WebGL2RenderingContext, canvas: HTMLCan
   };
 
   const paletteData = new Float32Array(MAX_PALETTE * 3);
-  const view: DitherView = { width: 1, height: 1, ratio: 1, cell: 1, cellCss: 1, cols: 1, rows: 1 };
+  const view: DitherView = {
+    width: 1,
+    height: 1,
+    ratio: 1,
+    cell: 1,
+    cellCss: 1,
+    cols: 1,
+    rows: 1,
+  };
 
   const allocate = (pixelSize: number) => {
     view.cell = Math.max(1, Math.round(pixelSize * view.ratio));
@@ -162,5 +170,3 @@ export function createDitherRenderer(gl: WebGL2RenderingContext, canvas: HTMLCan
 
   return { view, resize, render, dispose };
 }
-
-export type DitherRenderer = NonNullable<ReturnType<typeof createDitherRenderer>>;

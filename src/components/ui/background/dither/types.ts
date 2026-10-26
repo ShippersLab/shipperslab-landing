@@ -1,5 +1,5 @@
 export type DitherColor = string | [number, number, number];
-export type DitherMode =
+type DitherMode =
   | "bayer"
   | "bayer4"
   | "bayer2"
@@ -8,7 +8,7 @@ export type DitherMode =
   | "crosshatch"
   | "noise"
   | "none";
-export type DitherMouseEffect = "erase" | "reveal" | "ripple";
+type DitherMouseEffect = "erase" | "reveal" | "ripple";
 
 export type DitherProps = {
   waveSpeed?: number;
@@ -74,7 +74,11 @@ const MODES: Record<DitherMode, number> = {
   none: 7,
 };
 
-const EFFECTS: Record<DitherMouseEffect, number> = { erase: 0, reveal: 1, ripple: 2 };
+const EFFECTS: Record<DitherMouseEffect, number> = {
+  erase: 0,
+  reveal: 1,
+  ripple: 2,
+};
 
 export function clamp(value: number, min: number, max: number) {
   return Math.min(max, Math.max(min, value));

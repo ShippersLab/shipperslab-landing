@@ -118,7 +118,7 @@ export function StepperIndicator({ className }: { className?: string }) {
     <span
       aria-hidden="true"
       className={cn(
-        "relative flex size-7 shrink-0 items-center justify-center rounded-full border border-border bg-paper font-mono text-xs text-muted transition-colors duration-200 ease-out",
+        "relative flex size-7 shrink-0 items-center justify-center rounded-full border border-muted/40 bg-paper font-mono text-xs text-muted transition-colors duration-200 ease-out",
         "group-data-[state=active]/step:border-muted/60 group-data-[state=active]/step:text-ink",
         "group-data-[state=completed]/step:border-accent group-data-[state=completed]/step:bg-accent group-data-[state=completed]/step:text-paper",
         className,
@@ -158,7 +158,7 @@ export function StepperSeparator({ className }: { className?: string }) {
   return (
     <span
       aria-hidden="true"
-      className={cn("relative mx-3 h-px flex-1 overflow-hidden bg-border", className)}
+      className={cn("relative mx-3 h-px flex-1 overflow-hidden bg-muted/40", className)}
     >
       <motion.span
         className="absolute inset-0 origin-left bg-accent"
