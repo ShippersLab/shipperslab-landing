@@ -76,8 +76,8 @@ export function MobileMenu() {
         aria-controls={panelId}
         aria-label={isOpen ? messages.nav.menuClose : messages.nav.menuOpen}
         onClick={() => setIsOpen((value) => !value)}
-        className={`relative z-40 flex items-center gap-2 rounded-md px-3 py-1.5 text-sm text-ink transition-colors duration-200 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink ${
-          isOpen ? "bg-border" : "hover:bg-border/60"
+        className={`relative z-40 flex items-center gap-2 rounded-md px-3 py-1.5 text-sm text-paper transition-colors duration-200 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-paper ${
+          isOpen ? "bg-paper/20" : "hover:bg-paper/10"
         }`}
       >
         {messages.nav.menuLabel}

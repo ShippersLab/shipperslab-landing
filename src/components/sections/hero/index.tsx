@@ -12,7 +12,7 @@ import { buildWhatsAppUrl } from "@/lib/contact/message";
 import { site } from "@/lib/site";
 
 const HERO_BLUR_DATA_URL =
-  "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQF/8QAHRAAAgIDAAMAAAAAAAAAAAAAAQIAAwUREgQhcf/EABUBAQEAAAAAAAAAAAAAAAAAAAYH/8QAGREAAgMBAAAAAAAAAAAAAAAAAAECAxEE/9oADAMBAAIRAxEAPwDXuw7r4W6XSxxad+uTzyNSWjF3WaLFEBP0xEKOqOlRj1WY0f/Z";
+  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4pLSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUk//2wBDAQ4ODhMREyYVFSZPNS01T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0//wAARCAAHABADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDuINVLNiWBgeh2kfn1qS61PywRDC7t2JwB/OiiudTlY7nShzbH/9k=";
 
 export function Hero() {
   const { messages } = useI18n();
@@ -23,10 +23,10 @@ export function Hero() {
   return (
     <section id="top" className="flex w-full flex-col lg:h-[calc(100svh-1rem)] lg:min-h-160">
       <div className="px-4 pt-4 sm:px-6 lg:min-h-0 lg:flex-1 lg:px-8">
-        <div className="relative aspect-square overflow-hidden rounded-lg bg-accent sm:aspect-auto sm:h-[64svh] lg:h-full">
+        <div className="relative aspect-square overflow-hidden rounded-lg bg-surface sm:aspect-auto sm:h-[64svh] lg:h-full">
           <div className="absolute inset-x-0 top-16 bottom-0 sm:top-0">
             <Image
-              src="/images/obelisco-accent.webp"
+              src="/images/obelisco-white.webp"
               alt={messages.hero.imageAlt}
               fill
               preload
@@ -34,7 +34,7 @@ export function Hero() {
               quality={100}
               placeholder="blur"
               blurDataURL={HERO_BLUR_DATA_URL}
-              className="animate-hero-image object-cover object-[25%_bottom] sm:object-[30%_center] select-none"
+              className="animate-hero-image object-cover object-[22%_bottom] sm:object-[30%_bottom] select-none"
               sizes="(min-width: 1200px) 1200px, 100vw"
             />
           </div>

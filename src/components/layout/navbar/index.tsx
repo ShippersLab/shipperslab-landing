@@ -31,14 +31,14 @@ export function Navbar() {
           : "relative pb-4 group-has-data-fullbleed/shell:absolute group-has-data-fullbleed/shell:inset-x-4 group-has-data-fullbleed/shell:top-4 group-has-data-fullbleed/shell:pb-0",
       )}
     >
-      <div className="relative z-30 grid w-full max-w-xl grid-cols-[1fr_auto] items-center gap-4 rounded-md bg-paper py-2 pr-2 pl-4 md:grid-cols-[1fr_auto_1fr]">
+      <div className="relative z-30 grid w-full max-w-xl grid-cols-[1fr_auto] items-center gap-4 rounded-md bg-accent py-2 pr-2 pl-4 md:grid-cols-[1fr_auto_1fr]">
         <LocalizedLink
           href="/"
           aria-label={site.name}
-          className="-m-2 justify-self-start rounded-md p-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+          className="-m-2 justify-self-start rounded-md p-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-paper"
         >
           <Image
-            src="/logo/accent.svg"
+            src="/logo/white.svg"
             alt="ShippersLab"
             width={44}
             height={24}
@@ -53,7 +53,7 @@ export function Navbar() {
               <a
                 key={link.key}
                 href={localizePath(link.href, locale)}
-                className="-my-2 rounded-sm py-2 text-sm text-ink/70 transition-colors duration-200 ease-out hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+                className="-my-2 rounded-sm py-2 text-sm text-paper/80 transition-colors duration-200 ease-out hover:text-paper focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-paper"
               >
                 {messages.nav[link.key]}
               </a>
@@ -61,7 +61,7 @@ export function Navbar() {
               <LocalizedLink
                 key={link.key}
                 href={link.href}
-                className="-my-2 rounded-sm py-2 text-sm text-ink/70 transition-colors duration-200 ease-out hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+                className="-my-2 rounded-sm py-2 text-sm text-paper/80 transition-colors duration-200 ease-out hover:text-paper focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-paper"
               >
                 {messages.nav[link.key]}
               </LocalizedLink>
@@ -70,7 +70,7 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center justify-self-end gap-3">
-          <TextureButton asChild variant="primary" size="compact" className="hidden w-auto md:flex">
+          <TextureButton asChild variant="paper" size="compact" className="hidden w-auto md:flex">
             <LocalizedLink href="/empecemos">{messages.nav.contact}</LocalizedLink>
           </TextureButton>
 
