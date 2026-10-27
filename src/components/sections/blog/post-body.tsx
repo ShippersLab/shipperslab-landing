@@ -1,55 +1,12 @@
-import type { ReactNode } from "react";
-
 import { BlogPostFigure } from "@/components/sections/blog/post-figure";
 import { BlogPostTable } from "@/components/sections/blog/post-table";
 import { FaqAccordion } from "@/components/ui/faq-accordion";
+import { InlineText } from "@/components/ui/inline-text";
 import { LocalizedLink } from "@/i18n/link";
 import { useI18n } from "@/i18n/provider";
-import { type BlogSlug, omitUnpublishedBlogLinks, slugifyHeading } from "@/lib/blog";
+import { type BlogSlug, slugifyHeading } from "@/lib/blog";
 
 const LEAD_MAX_LENGTH = 70;
-const COPY_LINK = /\[([^\]]+)\]\((https?:\/\/[^)\s]+|\/(?!\/)[^)\s]+)\)/;
-
-function BlogCopy({ text }: { text: string }) {
-  const { messages } = useI18n();
-  const nodes: ReactNode[] = [];
-  let rest = omitUnpublishedBlogLinks(text);
-
-  while (rest.length > 0) {
-    const match = rest.match(COPY_LINK);
-
-    if (!match || match.index === undefined || !match[1] || !match[2]) {
-      nodes.push(rest);
-      break;
-    }
-
-    if (match.index > 0) {
-      nodes.push(rest.slice(0, match.index));
-    }
-
-    const label = match[1];
-    const href = match[2];
-
-    if (href.startsWith("http")) {
-      nodes.push(
-        <a key={`${href}-${nodes.length}`} href={href} target="_blank" rel="noopener noreferrer">
-          {label}
-          <span className="sr-only"> ({messages.common.opensNewTab})</span>
-        </a>,
-      );
-    } else {
-      nodes.push(
-        <LocalizedLink key={`${href}-${nodes.length}`} href={href}>
-          {label}
-        </LocalizedLink>,
-      );
-    }
-
-    rest = rest.slice(match.index + match[0].length);
-  }
-
-  return nodes;
-}
 
 function splitLead(item: string) {
   const end = item.indexOf(". ");
@@ -76,7 +33,7 @@ export function BlogPostBody({ slug }: BlogPostBodyProps) {
 
       {post.intro.map((paragraph) => (
         <p key={paragraph}>
-          <BlogCopy text={paragraph} />
+          <InlineText text={paragraph} />
         </p>
       ))}
 
@@ -85,7 +42,7 @@ export function BlogPostBody({ slug }: BlogPostBodyProps) {
           <h2>{section.title}</h2>
           {section.paragraphs.map((paragraph) => (
             <p key={paragraph}>
-              <BlogCopy text={paragraph} />
+              <InlineText text={paragraph} />
             </p>
           ))}
           {"image" in section && section.image ? (
@@ -109,7 +66,7 @@ export function BlogPostBody({ slug }: BlogPostBodyProps) {
           {"table" in section && section.table ? <BlogPostTable table={section.table} /> : null}
           {"closing" in section && section.closing ? (
             <p>
-              <BlogCopy text={section.closing} />
+              <InlineText text={section.closing} />
             </p>
           ) : null}
           {"link" in section && section.link ? (

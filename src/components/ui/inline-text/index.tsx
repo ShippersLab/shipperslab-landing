@@ -8,10 +8,10 @@ import { omitUnpublishedBlogLinks } from "@/lib/blog";
 
 const INLINE_LINK = /\[([^\]]+)\]\((https?:\/\/[^)\s]+|\/(?!\/)[^)\s]+)\)/;
 
-const LINK_CLASS =
+export const INLINE_LINK_CLASS =
   "font-medium text-ink underline decoration-accent underline-offset-4 transition-[text-decoration-thickness] duration-200 ease-out hover:decoration-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink";
 
-export function InlineText({ text }: { text: string }) {
+export function InlineText({ text, className }: { text: string; className?: string }) {
   const { messages } = useI18n();
   const nodes: ReactNode[] = [];
   let rest = omitUnpublishedBlogLinks(text);
@@ -38,7 +38,7 @@ export function InlineText({ text }: { text: string }) {
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className={LINK_CLASS}
+          className={className}
         >
           {label}
           <span className="sr-only"> ({messages.common.opensNewTab})</span>
@@ -46,7 +46,7 @@ export function InlineText({ text }: { text: string }) {
       );
     } else {
       nodes.push(
-        <LocalizedLink key={`${href}-${nodes.length}`} href={href} className={LINK_CLASS}>
+        <LocalizedLink key={`${href}-${nodes.length}`} href={href} className={className}>
           {label}
         </LocalizedLink>,
       );
