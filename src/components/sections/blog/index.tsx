@@ -2,6 +2,7 @@
 
 import { DraftBadge } from "@/components/sections/blog/draft-badge";
 import { ServiceCta } from "@/components/sections/service-page/service-cta";
+import { ArcBandsBackground } from "@/components/ui/background/arc-bands-background";
 import { StaggerReveal } from "@/components/ui/animation/stagger-reveal";
 import { ArrowRightIcon } from "@/components/ui/icons";
 import { Container } from "@/components/ui/section/container";
@@ -10,14 +11,13 @@ import { SkeletonImage } from "@/components/ui/skeleton/skeleton-image";
 import { LocalizedLink } from "@/i18n/link";
 import { useI18n } from "@/i18n/provider";
 import { type BlogPostMeta, getReadingMinutes } from "@/lib/blog";
-import { blogPostOpenGraphPath } from "@/lib/seo/blog/og-path";
 
 type BlogIndexProps = {
   posts: readonly BlogPostMeta[];
 };
 
 export function BlogIndex({ posts }: BlogIndexProps) {
-  const { locale, messages } = useI18n();
+  const { messages } = useI18n();
   const page = messages.blog;
 
   return (
@@ -41,14 +41,17 @@ export function BlogIndex({ posts }: BlogIndexProps) {
                     href={`/blog/${post.slug}`}
                     className="group grid items-center gap-6 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline-ink md:grid-cols-[2fr_3fr] md:gap-10"
                   >
-                    <div className="relative aspect-video overflow-hidden rounded-lg border border-border">
+                    <div className="relative isolate aspect-video overflow-hidden rounded-lg bg-border/30">
+                      <ArcBandsBackground
+                        aria-hidden
+                        className="absolute inset-0 -z-10 bg-transparent opacity-90"
+                      />
                       <SkeletonImage
-                        src={blogPostOpenGraphPath(post.slug, locale)}
+                        src={post.cover}
                         alt=""
                         fill
-                        unoptimized
                         sizes="(min-width: 768px) 460px, 100vw"
-                        className="object-cover"
+                        className="object-contain p-2 mix-blend-multiply sm:p-3"
                       />
                     </div>
                     <div className="flex flex-col items-start">
