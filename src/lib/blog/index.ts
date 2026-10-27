@@ -87,7 +87,7 @@ function collectText(value: unknown, key?: string): string[] {
     return [];
   }
   if (typeof value === "string") {
-    return [value];
+    return [value.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")];
   }
   if (Array.isArray(value)) {
     return value.flatMap((item) => collectText(item));

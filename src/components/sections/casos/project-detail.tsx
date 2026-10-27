@@ -101,7 +101,9 @@ export function ProjectDetail() {
               <BlurReveal as="li" key={feature.title} delay={index * 0.08}>
                 <div className="border-t border-border pt-6">
                   <h3 className="text-xl text-ink">{feature.title}</h3>
-                  <p className={`mt-3 ${BODY}`}>{feature.body}</p>
+                  <p className={`mt-3 ${BODY}`}>
+                    <InlineText text={feature.body} />
+                  </p>
                 </div>
               </BlurReveal>
             ))}
