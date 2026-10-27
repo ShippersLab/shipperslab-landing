@@ -382,11 +382,11 @@
         },
         {
           "title": "Quotes",
-          "body": "Pick services from your list and the total adds up on its own. The quote is exported as a PDF with your logo, ready to send to the client. If you start from Excel, the [free event budget template](https://eventops.digital/plantilla-presupuesto-eventos) downloads as Excel and PDF."
+          "body": "Pick services from your list and the total adds up on its own. The quote is exported as a PDF with your logo, ready to send to the client. If you start from Excel, there is a [free budget template](https://eventops.digital/plantilla-presupuesto-eventos) (in Spanish) you can download as Excel and PDF."
         },
         {
           "title": "Staff",
-          "body": "Add team members to each date with their role and, with [staff management for event companies](https://eventops.digital/gestion-de-personal), see who is free before assigning them, so no event is left short-handed."
+          "body": "Add team members to each date with their role and see who is free before assigning them, so no event is left short-handed. The same goes for [crew pay and assignment](https://eventops.digital/gestion-de-personal) (in Spanish) on every event."
         },
         {
           "title": "Finances",
@@ -1395,12 +1395,12 @@
               "The deposit and what is still owed get mixed in with the rest of the numbers.",
               "The quote is built in another file and sent to the client by hand."
             ],
-            "closing": "If the quote still lives in another file, the [free event budget template](https://eventops.digital/plantilla-presupuesto-eventos) downloads as Excel and PDF."
+            "closing": "If the quote still lives in another file, you can download a [free event budget template](https://eventops.digital/plantilla-presupuesto-eventos) (in Spanish) as Excel and PDF."
           },
           {
             "title": "How EventOps started",
             "paragraphs": [
-              "EventOps started with a specific request: an event production company asked us to quote a calendar, a client list and cash flow. While building it we saw that every sound, lighting and event company has the same problem, so we turned it into our own product, now in production: a [system for sound and lighting companies](https://eventops.digital/sistema-para-empresas-de-sonido-e-iluminacion) and for event companies.",
+              "EventOps started with a specific request: an event production company asked us to quote a calendar, a client list and cash flow. While building it we saw that every sound, lighting and event company has the same problem, so we turned it into our own product, now in production.",
               "The calendar was the visible part. What had to be modeled was crew pay, and the money of each event, which in the spreadsheet was mixed in with everything else."
             ],
             "link": {
@@ -1434,7 +1434,7 @@
             "title": "Crew cost: setup, teardown and extra hours",
             "paragraphs": [
               "The hardest part was crew cost. This company paid per setup and per teardown, and sometimes paid more when the hours ran over.",
-              "In EventOps, [staff management for event companies](https://eventops.digital/gestion-de-personal) gives each role a fixed amount per stage (setup, teardown or site visit) or an hourly rate. When you assign someone, the amount fills in on its own."
+              "In EventOps each role has a fixed amount per stage (setup, teardown or site visit) or an hourly rate. When you assign someone, the amount fills in on its own. To see how the crew for each date comes together, check out [staff management for events](https://eventops.digital/gestion-de-personal) (in Spanish)."
             ],
             "image": {
               "src": "/images/blog/eventops-personal.webp",

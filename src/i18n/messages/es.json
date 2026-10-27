@@ -382,11 +382,11 @@
         },
         {
           "title": "Presupuestos",
-          "body": "Elegís servicios de tu lista y el total se arma solo. El presupuesto sale en PDF con tu logo, listo para enviar al cliente. Si partís de Excel, la [plantilla de presupuesto para eventos](https://eventops.digital/plantilla-presupuesto-eventos) se baja en Excel y en PDF."
+          "body": "Elegís servicios de tu lista y el total se arma solo. El presupuesto sale en PDF con tu logo, listo para enviar al cliente. Si partís de Excel, hay una [plantilla de presupuesto gratis](https://eventops.digital/plantilla-presupuesto-eventos) que se baja en Excel y en PDF."
         },
         {
           "title": "Personal",
-          "body": "Sumás integrantes a cada fecha con su rol y, con la [gestión de personal para eventos](https://eventops.digital/gestion-de-personal), ves quién está libre antes de asignarlo, para no dejar un evento sin gente."
+          "body": "Sumás integrantes a cada fecha con su rol y ves quién está libre antes de asignarlo, para no dejar un evento sin gente. Lo mismo vale para el [pago y la asignación del personal](https://eventops.digital/gestion-de-personal) de cada evento."
         },
         {
           "title": "Finanzas",
@@ -1397,12 +1397,12 @@
               "La seña y lo que falta cobrar se mezclan con el resto de los números.",
               "El presupuesto se arma en otro archivo y se pasa al cliente a mano."
             ],
-            "closing": "Si el presupuesto sigue en otro archivo, la [plantilla de presupuesto para eventos](https://eventops.digital/plantilla-presupuesto-eventos) se baja gratis en Excel y en PDF."
+            "closing": "Si el presupuesto sigue en otro archivo, podés bajar la [plantilla de presupuesto para eventos](https://eventops.digital/plantilla-presupuesto-eventos) gratis, en Excel y en PDF."
           },
           {
             "title": "Cómo nació EventOps",
             "paragraphs": [
-              "EventOps arrancó con un pedido concreto: una productora nos pidió presupuesto para un calendario, una lista de clientes y el flujo de caja. Al armarlo vimos que cualquier empresa de sonido, iluminación o eventos tiene el mismo problema, así que lo convertimos en un producto propio, hoy en producción: un [sistema para empresas de sonido e iluminación](https://eventops.digital/sistema-para-empresas-de-sonido-e-iluminacion) y de eventos.",
+              "EventOps arrancó con un pedido concreto: una productora nos pidió presupuesto para un calendario, una lista de clientes y el flujo de caja. Al armarlo vimos que cualquier empresa de sonido, iluminación o eventos tiene el mismo problema, así que lo convertimos en un producto propio, hoy en producción.",
               "El calendario era la parte visible. Lo que había que modelar era el pago del personal y la plata de cada evento, que en la planilla se mezclaba con todo lo demás."
             ],
             "link": {
@@ -1436,7 +1436,7 @@
             "title": "El costo del personal: armado, desarmado y horas de más",
             "paragraphs": [
               "La parte más difícil fue el costo del personal. En esa productora se pagaba por armado y por desarmado, y a veces se pagaba más cuando las horas se pasaban.",
-              "En EventOps, la [gestión de personal para eventos](https://eventops.digital/gestion-de-personal) le da a cada función un monto fijo por etapa (montaje, desmontaje o visita técnica) o un valor por hora. Al asignar a alguien, el monto se completa solo."
+              "En EventOps cada función tiene un monto fijo por etapa (montaje, desmontaje o visita técnica) o un valor por hora. Al asignar a alguien, el monto se completa solo. Si querés ver cómo se arma el equipo de cada fecha, mirá la [gestión de personal para eventos](https://eventops.digital/gestion-de-personal)."
             ],
             "image": {
               "src": "/images/blog/eventops-personal.webp",
