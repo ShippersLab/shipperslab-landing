@@ -1,5 +1,6 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import Image from "next/image";
 
 import { TextureButton } from "@/components/ui/button/texture-button";
@@ -9,8 +10,13 @@ import { useI18n } from "@/i18n/provider";
 import { buildWhatsAppUrl } from "@/lib/contact/message";
 import { site } from "@/lib/site";
 
+const HeroAscii = dynamic(
+  () => import("@/components/sections/hero/hero-ascii").then((module) => module.HeroAscii),
+  { ssr: false },
+);
+
 const HERO_BLUR_DATA_URL =
-  "data:image/jpeg;base64,/9j/2wBDAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4pLSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUk//2wBDAQ4ODhMREyYVFSZPNS01T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0//wAARCAAHABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMG/8QAHxAAAQQCAgMAAAAAAAAAAAAAAQACAxEEBRIxIZGx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAaEQACAgMAAAAAAAAAAAAAAAAAAgEDERIx/9oADAMBAAIRAxEAPwDc4+0c51SwOvo8SPfaplbIxAiKBznV4JIr6iIIdsFs1pvw/9k=";
+  "data:image/jpeg;base64,/9j/2wBDAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4pLSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUk//2wBDAQ4ODhMREyYVFSZPNS01T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0//wAARCAAHABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMG/8QAIBAAAAUDBQAAAAAAAAAAAAAAAAECAxEEBTEhIjJRkf/EABUBAQEAAAAAAAAAAAAAAAAAAAQF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAMBMQIREv/aAAwDAQACEQMRAD8A2tNdlqcl5szKI2xnsWqLslKDNhtStOR48AAWGZaspyhfVH//2Q==";
 
 export function Hero() {
   const { messages } = useI18n();
@@ -24,7 +30,7 @@ export function Hero() {
         <div className="relative aspect-square overflow-hidden rounded-b-lg bg-paper sm:aspect-auto sm:h-[64svh] lg:h-full">
           <div className="absolute inset-x-0 top-24 bottom-0 sm:top-0">
             <Image
-              src="/images/obelisco-white.webp"
+              src="/images/hero-illustration.webp"
               alt={messages.hero.imageAlt}
               fill
               preload
@@ -35,6 +41,7 @@ export function Hero() {
               className="animate-hero-image object-cover object-[22%_top] sm:object-top select-none"
               sizes="100vw"
             />
+            <HeroAscii />
           </div>
         </div>
       </div>
