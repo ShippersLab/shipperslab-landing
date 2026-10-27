@@ -15,8 +15,6 @@ const HeroAscii = dynamic(
   { ssr: false },
 );
 
-const HERO_IMAGE_QUALITY = 85;
-
 const HERO_BLUR_DATA_URL =
   "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAHABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMG/8QAFQEBAQAAAAAAAAAAAAAAAAAABAX/2gAMAwEAAhADEAAAANXUNQ//xAAbEAACAgMBAAAAAAAAAAAAAAABAgADBCJhkf/aAAgBAQABPwCrOYtunktzgBohPZ//xAAYEQACAwAAAAAAAAAAAAAAAAAAAhESMf/aAAgBAgEBPwC7Rp//xAAYEQACAwAAAAAAAAAAAAAAAAAAAwESMv/aAAgBAwEBPwCUrvk//9k=";
 
@@ -37,7 +35,7 @@ export function Hero() {
               fill
               preload
               fetchPriority="high"
-              quality={HERO_IMAGE_QUALITY}
+              quality={100}
               placeholder="blur"
               blurDataURL={HERO_BLUR_DATA_URL}
               className="animate-hero-image object-cover object-[22%_top] sm:object-top select-none"

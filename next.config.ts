@@ -13,7 +13,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   images: {
     formats: ["image/avif", "image/webp"],
-    qualities: [75, 85, 90, 100],
+    qualities: [75, 90, 100],
     deviceSizes: [640, 750, 828, 1080, 1200, 1536, 1920, 2560],
     imageSizes: [64, 96, 128, 256, 384],
   },
