@@ -1804,6 +1804,193 @@
         "ctaTitle": "¿Querés el precio por escrito?",
         "ctaDescription": "Contanos cómo trabajan hoy y qué se escapa entre planillas. Te respondemos con alcance y precio por escrito, antes de arrancar.",
         "ctaButton": "Contanos tu problema"
+      },
+      "como-pagarle-al-personal-de-eventos": {
+        "title": "Cómo pagarle al personal de eventos: por armado y desarmado o por hora",
+        "metaTitle": "Cómo pagarle al personal de eventos: por armado o por hora",
+        "metaDescription": "Cómo pagar técnicos, ayudantes y personal de armado y desarmado: por etapa, por hora o mixto, qué hacer si el evento se extiende y cómo dejar el Excel.",
+        "excerpt": "Tres formas de pagar técnicos, ayudantes y personal de armado, qué hacer cuando el evento se pasa de hora y cómo dejar de cerrar las cuentas en una planilla.",
+        "answer": "Al personal de eventos se le paga un monto fijo por armado y por desarmado, un valor por hora, o un mixto de los dos. Si la fecha se extiende, el monto fijo se completa con un extra acordado antes y el valor por hora se recalcula con la hora de fin. Si esa cuenta vive entre un Excel y el chat, a fin de mes no se sabe quién fue, con qué esquema y cuánto falta pagar.",
+        "intro": [
+          "En una productora de sonido, iluminación o eventos, técnicos, ayudantes y personal de armado no cobran todos igual. Una misma fecha puede mezclar un monto por montaje, otro por desmontaje y un adicional si el show se pasa de hora.",
+          "Esta nota compara los tres esquemas, dice qué hacer con las horas de más y muestra un cálculo con números inventados."
+        ],
+        "sections": [
+          {
+            "title": "Qué estás pagando en cada fecha",
+            "paragraphs": [
+              "Antes de elegir el esquema, separá la fecha en etapas: visita técnica, armado, evento y desarmado. Cambia el horario, cambia quién va y cambia qué corresponde cobrar.",
+              "El personal de armado y desarmado carga, monta, prueba y desmonta. El técnico puede quedarse al show o volver solo para el desarmado, y el ayudante cubre el tramo que haga falta. Si todo cae en un único monto por el evento, después no se ve qué era armado, qué era desarmado y de dónde sale la hora de más."
+            ],
+            "items": [
+              "Visita técnica. Quien va a ver el salón no cobra igual que quien se queda al show.",
+              "Armado. Carga, montaje y prueba. Por etapa, es un monto cerrado.",
+              "Evento. El horario del show: otro fijo, o las horas de inicio a fin.",
+              "Desarmado. Arranca al terminar el show. Si no está aparte, se discute al final."
+            ]
+          },
+          {
+            "title": "Pagar por armado y desarmado",
+            "paragraphs": [
+              "Pagar por armado y desarmado es un monto fijo por etapa. Quien trabaja sabe cuánto cobra por montar y cuánto por desmontar, dentro de lo ya acordado. Cada función tiene su importe: el técnico y el ayudante no comparten el número. Si el día del show también es fijo, se suma un importe más, el del evento.",
+              "Si una fecha se paga distinto, el número queda en la fecha. Así paga una empresa de sonido e iluminación, el primer cliente de EventOps: por armado y por desarmado, no por hora, y a veces más cuando las horas se pasan. Antes esa cuenta estaba en un Excel."
+            ],
+            "link": {
+              "label": "Ver el caso de EventOps",
+              "href": "/casos/eventops"
+            }
+          },
+          {
+            "title": "Pagar por hora",
+            "paragraphs": [
+              "Pagar por hora es anotar el inicio y el fin de cada etapa y multiplicar ese tiempo por el valor de la persona. Sirve cuando la duración cambia de un evento a otro, o cuando alguien está desde que se llega hasta que se va. Sin hora de fin, la cuenta queda abierta.",
+              "Hay que contar lo que pasa de medianoche. Un show de 21 a 2 dura cinco horas: el cambio de día no acorta el turno. Si el desarmado sigue hasta las 5, esas horas van en el desarmado. Anotarlas en el chat y pasarlas a la planilla al día siguiente las redondea de memoria."
+            ]
+          },
+          {
+            "title": "El esquema mixto",
+            "paragraphs": [
+              "El mixto junta los dos criterios en la misma fecha. Lo más claro es un fijo para el técnico, por armado y por desarmado, y por hora para el ayudante. También es mixto un fijo más un extra cuando el evento se pasa de hora: la etapa queda cerrada y el tiempo de más tiene su regla.",
+              "Cada persona, en cada fecha, muestra un solo criterio: fijo, por hora, o fijo más extra. Si la regla vive en la cabeza de quien arma el Excel, el mes siguiente nadie la reconstruye."
+            ]
+          },
+          {
+            "title": "Por armado y desarmado, por hora o mixto",
+            "paragraphs": [
+              "Si en tus fechas el armado y el desarmado duran parecido, el fijo alcanza. Si cada show termina a una hora distinta, conviene la hora o el mixto con extra."
+            ],
+            "table": {
+              "caption": "Por armado y desarmado, por hora y mixto: pros, contras y cuándo conviene",
+              "columns": ["Por armado y desarmado", "Por hora", "Mixto"],
+              "rows": [
+                {
+                  "label": "Pros",
+                  "cells": [
+                    "El costo se conoce antes y entra al presupuesto como filas.",
+                    "Sigue la duración real de cada fecha.",
+                    "El fijo queda en la etapa y la hora en quien se queda."
+                  ]
+                },
+                {
+                  "label": "Contras",
+                  "cells": [
+                    "Sin extra, el tiempo de más se discute al final.",
+                    "Hay que anotar inicio y fin, o las horas salen de memoria.",
+                    "Si no queda escrito el criterio de cada persona, el mes no cierra."
+                  ]
+                },
+                {
+                  "label": "Cuándo conviene",
+                  "cells": [
+                    "Cuando armado y desarmado duran parecido.",
+                    "Cuando la duración cambia, o el ayudante está de punta a punta.",
+                    "Cuando el técnico va por etapa, el ayudante por hora, o el fijo lleva extra."
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "title": "Horas extra cuando el evento se extiende",
+            "paragraphs": [
+              "La regla se escribe antes de la fecha, no cuando piden una hora más. Si cobra por hora, se actualiza la hora de fin y se vuelve a multiplicar. Si cobra un monto fijo, el fijo queda quieto y se suma un extra con concepto y monto, separado de la etapa.",
+              "Definí desde qué momento corre, por ejemplo pasado el horario del presupuesto, y que las dos partes lo conozcan antes de salir. Cómo documentar el pago lo ves con tu contador: esta nota no reemplaza ese criterio ni un convenio."
+            ],
+            "items": [
+              "Antes de salir. Dejá escrito el valor del extra, o que se recalcula por hora.",
+              "Monto fijo. Sumá el extra aparte. No lo escondas dentro del fijo.",
+              "En el presupuesto. Si el cliente puede pedir más tiempo, hace falta una fila o una frase. Si no está, ese costo lo absorbés vos."
+            ]
+          },
+          {
+            "title": "Ejemplo con números inventados",
+            "paragraphs": [
+              "Los montos de este ejemplo son redondos e inventados, para que se vea la cuenta. No son tarifas de mercado, ni sueldos, ni importes de un convenio. Reemplazalos por los tuyos. Están en pesos. Si alguien cobra en dólares, esa suma va aparte.",
+              "La fecha es un casamiento. El armado va de 10 a 14: cuatro horas. El show está acordado de 20 a 2: seis horas, y termina a las 4, con dos horas de más. El desarmado pasa de las 2 a las 4 y termina a las 7: tres horas.",
+              "El técnico hace armado y desarmado, cobra por etapa y el show acordado ya entra en ese trato. Armado, $ 40.000. Desarmado, $ 40.000. El extra inventado es $ 10.000 por hora de más: dos horas suman $ 20.000. Total: $ 40.000 + $ 40.000 + $ 20.000 = $ 100.000.",
+              "El ayudante se queda todo el tiempo a $ 5.000 por hora, otro número inventado. Suma 4 horas de armado, 6 del show, 2 de más y 3 de desarmado: 15 horas. 15 por $ 5.000 da $ 75.000. Entre los dos, este ejemplo suma $ 175.000."
+            ]
+          },
+          {
+            "title": "Cómo llevar la cuenta sin un Excel",
+            "paragraphs": [
+              "La cuenta no cierra si los nombres, las fechas y las horas viven en lugares distintos. Un «+2» no actualiza el total. A fin de mes hay que reconstruir quién fue, con qué criterio y si ya se le pagó. Saber quién está libre pide cruzar otro archivo.",
+              "Ese costo fue la parte más difícil de construir EventOps, el sistema de ShippersLab para empresas de sonido, iluminación y eventos.",
+              "Cada función tiene un monto fijo por etapa o un valor por hora, en pesos o en dólares. Al asignar a alguien, el monto se completa solo. Si cobra por hora, se actualiza la hora de fin y se vuelve a aplicar la tarifa. Si cobra un fijo, se suma un extra con concepto y monto. El pago queda como gasto de Personal, en pendiente, parcial o pagado, y los importes los ve solo quien tiene permiso."
+            ],
+            "link": {
+              "label": "Ver la gestión de personal y el pago por armado o por hora",
+              "href": "https://eventops.digital/gestion-de-personal"
+            }
+          },
+          {
+            "title": "El personal también va en el presupuesto",
+            "paragraphs": [
+              "Lo que le pagás al personal y lo que le cobrás al cliente son dos cuentas. Si el presupuesto solo habla del día del evento, el armado, el desarmado y la hora de más quedan a cargo de la productora. Hace falta una fila de cada cosa, o una frase con hasta qué hora entra el servicio.",
+              "La plantilla de presupuesto para eventos trae filas de personal de armado, de desarmado y de horas extra. Los importes de ejemplo no son precios del rubro: se reemplazan por los tuyos, y la seña y el saldo salen de ese total. Cómo se ordenan la fecha, la seña y la caja está en la nota sobre organizar una empresa de eventos."
+            ],
+            "link": {
+              "label": "Bajar la plantilla de presupuesto para eventos",
+              "href": "https://eventops.digital/plantilla-presupuesto-eventos"
+            }
+          }
+        ],
+        "checklist": {
+          "title": "Checklist rápido",
+          "intro": "Antes de la próxima fecha, repasá esto:",
+          "items": [
+            "¿Cada rol tiene definido si cobra por armado y desarmado, por hora o mixto?",
+            "¿El armado y el desarmado están separados del horario del show?",
+            "¿La regla de las horas de más está escrita y se conoce antes de salir?",
+            "¿El presupuesto incluye armado, desarmado y qué pasa si se pasa de hora?",
+            "¿Queda anotado quién fue, con qué esquema, y si el pago está pendiente o hecho?",
+            "¿Puedo ver quién está libre sin cruzar otra planilla?"
+          ],
+          "closing": "Si varias respuestas son no, el esquema puede estar bien y el registro no. Ahí aparece el caos del Excel."
+        },
+        "faq": {
+          "title": "Preguntas frecuentes",
+          "items": [
+            {
+              "question": "¿Conviene pagar por armado y desarmado o por hora?",
+              "answer": "Por armado y desarmado, cuando esas etapas duran parecido y querés un monto cerrado. Por hora, cuando la duración cambia o la persona está de punta a punta. Se pueden mezclar en la misma fecha, o sumarle un extra al fijo si el evento se pasa."
+            },
+            {
+              "question": "¿Qué hago si el evento se extiende y cobran un monto fijo?",
+              "answer": "Dejá el fijo como estaba y sumá un extra con concepto y monto, acordado antes de la fecha. Si cobran por hora, actualizá la hora de fin y volvé a calcular. El encuadre del pago lo ves con tu contador."
+            },
+            {
+              "question": "¿El técnico y el ayudante tienen que usar el mismo esquema?",
+              "answer": "No. El técnico puede cobrar un fijo por armado y por desarmado, y el ayudante por hora, en la misma fecha. Cada uno necesita un solo criterio escrito."
+            },
+            {
+              "question": "¿Cómo dejo de calcular estos pagos en Excel?",
+              "answer": "El evento tiene que mostrar quién fue, si cobra fijo o por hora, las horas de más y si el pago está pendiente o hecho. EventOps completa el monto al asignar, recalcula o suma el extra, y lo anota como gasto de personal."
+            },
+            {
+              "question": "¿Los montos del ejemplo son tarifas del rubro?",
+              "answer": "No. Son números inventados para mostrar la cuenta, no tarifas de mercado, sueldos ni importes de un convenio. Los valores los definís con tu equipo y el encuadre lo revisás con tu contador."
+            }
+          ]
+        },
+        "related": {
+          "title": "Seguí leyendo",
+          "links": [
+            {
+              "label": "Cómo organizar una empresa de eventos",
+              "href": "/blog/como-organizar-una-empresa-de-eventos",
+              "description": "Del Excel de una productora al sistema que junta calendario, personal, presupuesto y caja."
+            },
+            {
+              "label": "Caso EventOps",
+              "href": "/casos/eventops",
+              "description": "Calendario, personal, presupuestos y caja para una empresa de eventos."
+            }
+          ]
+        },
+        "ctaTitle": "¿El pago del personal sigue en un Excel?",
+        "ctaDescription": "Contanos cómo pagás el armado, el desarmado y las horas de más. Te respondemos con alcance y precio por escrito.",
+        "ctaButton": "Contanos tu problema"
       }
     }
   }
