@@ -6,7 +6,7 @@ import { CaseImage } from "@/components/sections/casos/case-image";
 import { CaseList } from "@/components/sections/casos/case-list";
 import { CaseRow } from "@/components/sections/casos/case-row";
 import { GalleryMarquee } from "@/components/sections/casos/gallery-marquee";
-import { InlineText } from "@/components/sections/service-page/inline-text";
+import { INLINE_LINK_CLASS, InlineText } from "@/components/ui/inline-text";
 import { BlurReveal } from "@/components/ui/animation/blur-reveal";
 import { TextureButton } from "@/components/ui/button/texture-button";
 import { Container } from "@/components/ui/section/container";
@@ -61,7 +61,7 @@ export function ProjectDetail() {
 
         <CaseRow title={page.overviewTitle}>
           <p className={BODY}>
-            <InlineText text={page.overview} />
+            <InlineText className={INLINE_LINK_CLASS} text={page.overview} />
           </p>
         </CaseRow>
 
@@ -101,7 +101,9 @@ export function ProjectDetail() {
               <BlurReveal as="li" key={feature.title} delay={index * 0.08}>
                 <div className="border-t border-border pt-6">
                   <h3 className="text-xl text-ink">{feature.title}</h3>
-                  <p className={`mt-3 ${BODY}`}>{feature.body}</p>
+                  <p className={`mt-3 ${BODY}`}>
+                    <InlineText className={INLINE_LINK_CLASS} text={feature.body} />
+                  </p>
                 </div>
               </BlurReveal>
             ))}

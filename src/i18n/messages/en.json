@@ -382,11 +382,11 @@
         },
         {
           "title": "Quotes",
-          "body": "Pick services from your list and the total adds up on its own. The quote is exported as a PDF with your logo, ready to send to the client."
+          "body": "Pick services from your list and the total adds up on its own. The quote is exported as a PDF with your logo, ready to send to the client. If you start from Excel, there's a [free budget template](https://eventops.digital/plantilla-presupuesto-eventos) (in Spanish) you can download as Excel or PDF."
         },
         {
           "title": "Staff",
-          "body": "Add team members to each date with their role and see who is free before assigning them, so no event is left short-handed."
+          "body": "Add team members to each date with their role and see who's free before assigning them, so no event is left short-handed. When you assign someone, their pay fills in on its own. See how [crew pay and scheduling](https://eventops.digital/gestion-de-personal) works (in Spanish)."
         },
         {
           "title": "Finances",
@@ -1394,7 +1394,8 @@
               "The crew for setup and teardown is not tied to that date, and the pay is calculated separately.",
               "The deposit and what is still owed get mixed in with the rest of the numbers.",
               "The quote is built in another file and sent to the client by hand."
-            ]
+            ],
+            "closing": "If the quote still lives in another file, you can download a [free event budget template](https://eventops.digital/plantilla-presupuesto-eventos) (in Spanish) as Excel and PDF."
           },
           {
             "title": "How EventOps started",
@@ -1433,7 +1434,7 @@
             "title": "Crew cost: setup, teardown and extra hours",
             "paragraphs": [
               "The hardest part was crew cost. This company paid per setup and per teardown, and sometimes paid more when the hours ran over.",
-              "In EventOps each role has a fixed amount per stage (setup, teardown or site visit) or an hourly rate. When you assign someone, the amount fills in on its own."
+              "In EventOps each role has a fixed amount per stage (setup, teardown or site visit) or an hourly rate. When you assign someone, the amount fills in on its own. To see how the crew for each date comes together, check out [staff management for events](https://eventops.digital/gestion-de-personal) (in Spanish)."
             ],
             "image": {
               "src": "/images/blog/eventops-personal.webp",

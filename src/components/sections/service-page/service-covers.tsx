@@ -1,4 +1,4 @@
-import { InlineText } from "@/components/sections/service-page/inline-text";
+import { INLINE_LINK_CLASS, InlineText } from "@/components/ui/inline-text";
 import { BlurReveal } from "@/components/ui/animation/blur-reveal";
 import { StaggerReveal } from "@/components/ui/animation/stagger-reveal";
 import { serviceIcon } from "@/components/sections/service-page/service-icons";
@@ -18,7 +18,7 @@ export function ServiceCovers({ body, items }: ServiceCoversProps) {
     <>
       <BlurReveal>
         <p className="text-base leading-relaxed text-muted">
-          <InlineText text={body} />
+          <InlineText className={INLINE_LINK_CLASS} text={body} />
         </p>
       </BlurReveal>
       <StaggerReveal as="ul" className="mt-6 flex flex-wrap gap-2">

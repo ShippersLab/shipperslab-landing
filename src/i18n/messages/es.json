@@ -382,11 +382,11 @@
         },
         {
           "title": "Presupuestos",
-          "body": "Elegís servicios de tu lista y el total se arma solo. El presupuesto sale en PDF con tu logo, listo para enviar al cliente."
+          "body": "Elegís servicios de tu lista y el total se arma solo. El presupuesto sale en PDF con tu logo, listo para enviar al cliente. Si partís de Excel, hay una [plantilla de presupuesto gratis](https://eventops.digital/plantilla-presupuesto-eventos) que se baja en Excel y en PDF."
         },
         {
           "title": "Personal",
-          "body": "Sumás integrantes a cada fecha con su rol y ves quién está libre antes de asignarlo, para no dejar un evento sin gente."
+          "body": "Sumás integrantes a cada fecha con su rol y ves quién está libre antes de asignarlo, para no dejar un evento sin gente. Al asignar a alguien, lo que cobra se completa solo: así funciona el [pago y la asignación del personal](https://eventops.digital/gestion-de-personal)."
         },
         {
           "title": "Finanzas",
@@ -1396,7 +1396,8 @@
               "El personal del armado y del desmontaje no queda atado a esa fecha, y el pago se calcula aparte.",
               "La seña y lo que falta cobrar se mezclan con el resto de los números.",
               "El presupuesto se arma en otro archivo y se pasa al cliente a mano."
-            ]
+            ],
+            "closing": "Si el presupuesto sigue en otro archivo, podés bajar la [plantilla de presupuesto para eventos](https://eventops.digital/plantilla-presupuesto-eventos) gratis, en Excel y en PDF."
           },
           {
             "title": "Cómo nació EventOps",
@@ -1435,7 +1436,7 @@
             "title": "El costo del personal: armado, desarmado y horas de más",
             "paragraphs": [
               "La parte más difícil fue el costo del personal. En esa productora se pagaba por armado y por desarmado, y a veces se pagaba más cuando las horas se pasaban.",
-              "En EventOps cada función tiene un monto fijo por etapa (montaje, desmontaje o visita técnica) o un valor por hora. Al asignar a alguien, el monto se completa solo."
+              "En EventOps cada función tiene un monto fijo por etapa (montaje, desmontaje o visita técnica) o un valor por hora. Al asignar a alguien, el monto se completa solo. Si querés ver cómo se arma el equipo de cada fecha, mirá la [gestión de personal para eventos](https://eventops.digital/gestion-de-personal)."
             ],
             "image": {
               "src": "/images/blog/eventops-personal.webp",

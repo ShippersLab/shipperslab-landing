@@ -1,6 +1,7 @@
 import { BlogPostFigure } from "@/components/sections/blog/post-figure";
 import { BlogPostTable } from "@/components/sections/blog/post-table";
 import { FaqAccordion } from "@/components/ui/faq-accordion";
+import { InlineText } from "@/components/ui/inline-text";
 import { LocalizedLink } from "@/i18n/link";
 import { useI18n } from "@/i18n/provider";
 import { type BlogSlug, slugifyHeading } from "@/lib/blog";
@@ -31,14 +32,18 @@ export function BlogPostBody({ slug }: BlogPostBodyProps) {
       </aside>
 
       {post.intro.map((paragraph) => (
-        <p key={paragraph}>{paragraph}</p>
+        <p key={paragraph}>
+          <InlineText text={paragraph} />
+        </p>
       ))}
 
       {post.sections.map((section) => (
         <section key={section.title} id={slugifyHeading(section.title)}>
           <h2>{section.title}</h2>
           {section.paragraphs.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
+            <p key={paragraph}>
+              <InlineText text={paragraph} />
+            </p>
           ))}
           {"image" in section && section.image ? (
             <div className="not-prose">
@@ -59,7 +64,11 @@ export function BlogPostBody({ slug }: BlogPostBodyProps) {
             </ul>
           ) : null}
           {"table" in section && section.table ? <BlogPostTable table={section.table} /> : null}
-          {"closing" in section && section.closing ? <p>{section.closing}</p> : null}
+          {"closing" in section && section.closing ? (
+            <p>
+              <InlineText text={section.closing} />
+            </p>
+          ) : null}
           {"link" in section && section.link ? (
             <p>
               {section.link.href.startsWith("http") ? (
