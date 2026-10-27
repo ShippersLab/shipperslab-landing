@@ -232,6 +232,31 @@
   animation: hero-text 0.6s var(--ease-out) both;
 }
 
+@keyframes scroll-fade-out {
+  from,
+  90% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@utility scroll-hint-scope {
+  timeline-scope: --scroll-hint;
+}
+
+@utility scroll-hint-source {
+  scroll-timeline: --scroll-hint x;
+}
+
+@utility scroll-hint-fade {
+  opacity: 0;
+  animation: scroll-fade-out linear both;
+  animation-duration: auto;
+  animation-timeline: --scroll-hint;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
