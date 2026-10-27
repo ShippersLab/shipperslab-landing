@@ -1804,34 +1804,34 @@
         "ctaButton": "Tell us your problem"
       },
       "como-pagarle-al-personal-de-eventos": {
-        "title": "How to pay event staff: per setup and teardown or per hour",
-        "metaTitle": "How to pay event staff: per setup or per hour",
-        "metaDescription": "How to pay technicians, helpers and setup and teardown crew: per stage, per hour or mixed, what to do when an event runs long, and how to leave the spreadsheet.",
-        "excerpt": "Three ways to pay technicians, helpers and setup crew, what to do when an event runs long, and how to stop closing the numbers in a spreadsheet.",
-        "answer": "Event staff are paid a fixed amount per setup and teardown, an hourly rate, or a mix of the two. If the date runs long, the fixed amount is completed with an extra agreed beforehand, and the hourly rate is recalculated from the real end time. If that sum lives between a spreadsheet and a chat, by the end of the month you cannot tell who worked, on which scheme, and what is still owed.",
+        "title": "How to pay event crew: flat rate per load-in and load-out, or hourly",
+        "metaTitle": "How to pay event crew: flat rate or hourly",
+        "metaDescription": "Flat rate per load-in and load-out, hourly or mixed: when each fits, how to handle overtime, and a worked example.",
+        "excerpt": "Three ways to pay techs, stagehands and crew, what to do when an event runs long, and how to stop reconciling it in a spreadsheet.",
+        "answer": "Event crew get a flat rate per load-in and load-out, an hourly rate, or a mix of both. If the night runs long, you add a pre-agreed extra on top of the flat rate, or recalculate hourly pay from the real end time. If all of that lives between a spreadsheet and a group chat, by month end you can't tell who worked, on which rule, or what you still owe. In the example below, with made-up amounts, a tech on a flat rate plus overtime and a stagehand paid hourly come to $ 175,000 for a wedding that ran two hours over.",
         "intro": [
-          "At a sound, lighting or event company, technicians, helpers and setup crew are not all paid the same way. One date can mix an amount for setup, another for teardown and an extra if the show runs long.",
-          "This post compares the three schemes, says what to do with extra hours and walks through a calculation with made-up numbers."
+          "At a sound, lighting or event production company, techs, stagehands and crew don't all get paid the same way. One date can mix a flat rate for load-in, another for load-out, and an extra if the show runs late.",
+          "This post compares the three options, covers what to do with overtime and walks through the math with made-up numbers."
         ],
         "sections": [
           {
-            "title": "What you are paying for on each date",
+            "title": "What you're paying for on each date",
             "paragraphs": [
-              "Before you pick a scheme, split the date into stages: the site visit, setup, the show and teardown. The hours change, the people change and what you owe changes.",
-              "Setup and teardown crew load in, rig, soundcheck and then strike. A technician can stay for the show or come back only for teardown, and a helper covers whatever stretch you need. If everything falls into a single amount for the event, you later cannot see what was setup, what was teardown and where the extra hour comes from."
+              "Before you pick how to pay, split the date into stages: site visit, load-in, show and load-out. At each stage the hours, the people and what you owe can change.",
+              "Load-in and load-out crew haul, rig, test and strike. A tech can stay for the show or come back only for load-out, and a stagehand covers whatever stretch you need. If everything goes into one amount for the event, you can't tell later what was load-in, what was load-out and where the extra hour came from."
             ],
             "items": [
-              "Site visit. Whoever goes to see the venue is not paid the same as whoever stays for the show.",
-              "Setup. Load-in, rigging and the soundcheck. Paid per stage, it is a closed amount.",
-              "The show. The hours of the event: another fixed amount, or the hours from start to end.",
-              "Teardown. It starts when the show ends. If it is not separate, it gets argued at the end."
+              "Site visit. Whoever goes to check out the venue isn't paid the same as whoever stays for the show.",
+              "Load-in. Hauling, rigging and soundcheck. Paid per stage, it's a flat rate.",
+              "Show. The event hours: another flat rate, or the hours from start to finish.",
+              "Load-out. It starts when the show ends. If it isn't paid separately, it turns into an argument at the end of the night."
             ]
           },
           {
-            "title": "Paying per setup and teardown",
+            "title": "Paying a flat rate per load-in and load-out",
             "paragraphs": [
-              "Paying per setup and teardown is a fixed amount per stage. The person knows what they earn to rig and what they earn to strike, inside what you already agreed. Each role has its own amount: the technician and the helper do not share a number. If the show day is also fixed, that is one more amount, the one for the event.",
-              "If one date is paid differently, the number stays on that date. This is how a sound and lighting company, the first client of EventOps, pays: per setup and teardown, not by the hour, and sometimes more when the hours run over. That sum used to live in Excel."
+              "A flat rate per load-in and load-out means one fixed amount per stage. The crew member knows what they get to rig and what they get to strike. Each role has its own rate: the tech and the stagehand don't earn the same. If the show itself is also flat, that's a third amount for the event.",
+              "If one date is paid differently, that amount goes on that date. This is how the production company that asked us to build EventOps pays: per load-in and per load-out, with an extra when the date runs late."
             ],
             "link": {
               "label": "See the EventOps case",
@@ -1839,93 +1839,93 @@
             }
           },
           {
-            "title": "Paying per hour",
+            "title": "Paying by the hour",
             "paragraphs": [
-              "Paying per hour means writing the start and end of each stage and multiplying that time by the person's rate. It fits when the length changes from one event to the next, or when someone is there from arrival until departure. Without an end time, the sum stays open.",
-              "You have to count what happens after midnight. A show from 9pm to 2am is five hours: the change of day does not shorten the shift. If teardown goes on until 5am, those hours belong to teardown. Writing them in the chat and copying them into the spreadsheet the next day rounds them from memory."
+              "Hourly pay means logging the start and end of each stage and multiplying that time by the person's rate. It fits when the length changes from one event to the next, or when someone is there from arrival to wrap. If you don't log the end time, there's nothing to calculate.",
+              "Count past midnight. A show from 9pm to 2am is five hours: the date changing doesn't shorten the shift. If load-out runs until 5am, those hours belong to load-out. If they sit in the chat and get copied into the spreadsheet the next day, they get rounded from memory."
             ]
           },
           {
-            "title": "The mixed scheme",
+            "title": "Mixing both",
             "paragraphs": [
-              "A mixed scheme puts both rules on the same date. The clearest version is a fixed amount for the technician, per setup and teardown, and an hourly rate for the helper. A fixed amount plus an extra only when the event runs past the agreed time is mixed too: the stage stays closed and the extra time has its own rule.",
-              "Each person, on each date, shows one criterion: fixed, hourly, or fixed plus an extra. If the rule lives in the head of whoever maintains the spreadsheet, nobody can rebuild it next month."
+              "A mixed setup puts both on the same date. The clearest version is a flat rate per load-in and load-out for the tech and an hourly rate for the stagehand. A flat rate plus an extra when the event runs past the agreed time counts as mixed too: the stage stays flat and the extra time is paid on its own.",
+              "Each person gets one rule per date: flat, hourly, or flat plus an extra. If that rule lives in the head of whoever keeps the spreadsheet, nobody can rebuild it next month."
             ]
           },
           {
-            "title": "Per setup and teardown, per hour, or mixed",
+            "title": "Flat rate, hourly or mixed",
             "paragraphs": [
-              "If setup and teardown take about the same time on your dates, the fixed amount is enough. If every show ends at a different hour, hourly pay or a mixed scheme with an extra fits better."
+              "If load-in and load-out take about the same time on your dates, a flat rate is enough. If every show ends at a different time, go hourly or mixed with an extra."
             ],
             "table": {
-              "caption": "Per setup and teardown, per hour and mixed: pros, cons and when each fits",
-              "columns": ["Per setup and teardown", "Per hour", "Mixed"],
+              "caption": "Flat rate per stage, hourly and mixed: pros, cons and when each fits",
+              "columns": ["Flat rate per stage", "Hourly", "Mixed"],
               "rows": [
                 {
                   "label": "Pros",
                   "cells": [
-                    "You know the cost beforehand and it goes on the quote as line items.",
-                    "It follows the real length of each date.",
-                    "The fixed amount stays on the closed stage and the hour on whoever stays the whole time."
+                    "You know the cost up front and it goes on the quote as line items.",
+                    "It tracks the real length of each date.",
+                    "The flat rate covers the stage and the hourly rate covers whoever stays."
                   ]
                 },
                 {
                   "label": "Cons",
                   "cells": [
-                    "Without an extra, the overrun gets argued at the end.",
-                    "You have to write start and end, or the hours come from memory.",
-                    "If each person's rule is not written down, the month does not close."
+                    "Without an extra, overtime turns into an argument at the end of the night.",
+                    "You have to log start and end times, or the hours come from memory.",
+                    "If each person's rule isn't written down, the numbers won't add up."
                   ]
                 },
                 {
                   "label": "When it fits",
                   "cells": [
-                    "When setup and teardown take about the same time.",
-                    "When the length changes a lot, or the helper is there from start to finish.",
-                    "When the technician is paid per stage, the helper by the hour, or the fixed amount carries an extra."
+                    "When load-in and load-out take about the same time.",
+                    "When the length varies, or the stagehand is there start to finish.",
+                    "When the tech is paid per stage, the stagehand by the hour, or the flat rate carries an extra."
                   ]
                 }
               ]
             }
           },
           {
-            "title": "Extra hours when the event runs long",
+            "title": "Overtime when the event runs long",
             "paragraphs": [
-              "Write the rule before the date, not when someone asks for one more hour. If the person is paid by the hour, you update the end time and multiply again. If they are paid a fixed amount, that amount stays as it was and you add an extra with a description and an amount, separate from the stage.",
-              "Decide when it starts, for example past the hours on the quote, and make sure both sides know before you leave. How to record the payment is a question for your accountant: this post does not replace that judgment or a labor agreement."
+              "Agree on the extra before the date. If the person is paid hourly, update the end time and multiply again. If they're on a flat rate, the rate stays put and you add an extra with its own description and amount, separate from the stage.",
+              "Decide when it kicks in, for example once you pass the hours on the quote, and make sure both sides know before you head out. If the person is on your payroll as an employee, Argentine law adds a surcharge for overtime: your accountant works that out, along with how to record each payment. This post doesn't replace that advice or a collective labor agreement."
             ],
             "items": [
-              "Before you leave. Write down the extra rate, or that pay is recalculated by the hour.",
-              "Fixed amount. Add the extra on its own. Do not hide it inside the fixed amount.",
-              "On the quote. If the client can ask for more time, you need a line or a sentence. If it is missing, you absorb that cost."
+              "Before you head out. Write down the extra rate, or that pay gets recalculated by the hour.",
+              "Flat rate. Add the extra on its own line. Don't bury it inside the flat rate.",
+              "On the quote. If the client can ask for more time, you need a line item or a sentence about it. If it's missing, you eat that cost."
             ]
           },
           {
-            "title": "An example with made-up numbers",
+            "title": "A worked example with made-up numbers",
             "paragraphs": [
-              "The amounts in this example are round and made up, so the arithmetic is easy to follow. They are not market rates, wages or figures from a labor agreement. Replace them with yours. They are in pesos. If someone is paid in dollars, that sum stays separate.",
-              "The sample date is a wedding. Setup runs from 10am to 2pm: four hours. The show is agreed from 8pm to 2am: six hours, and it ends at 4am, so there are two extra hours. Teardown moves from 2am to 4am and finishes at 7am: three hours.",
-              "The technician does setup and teardown, is paid per stage, and the agreed show is already covered by that deal. Setup, $ 40,000. Teardown, $ 40,000. The made-up extra is $ 10,000 per extra hour: two hours add up to $ 20,000. Total: $ 40,000 + $ 40,000 + $ 20,000 = $ 100,000.",
-              "The helper stays the whole time at $ 5,000 per hour, another made-up number. That is 4 hours of setup, 6 of the show, 2 extra and 3 of teardown: 15 hours. 15 times $ 5,000 is $ 75,000. Together, this example comes to $ 175,000."
+              "The amounts in this example are round and made up so the math is easy to follow. They don't come from the market or a labor agreement: swap in your own. They're in pesos. If someone is paid in dollars, that amount stays separate.",
+              "The date is a wedding. Load-in runs from 10am to 2pm: four hours. The show is booked from 8pm to 2am, six hours, and runs until 4am: two hours over. Because the show ends at 4am, load-out starts then and finishes at 7am: three hours.",
+              "The tech is paid per stage, load-in and load-out, and the booked show is already part of that deal. Load-in, $ 40,000. Load-out, $ 40,000. The made-up extra is $ 10,000 per hour over: two hours come to $ 20,000. Total: $ 40,000 + $ 40,000 + $ 20,000 = $ 100,000.",
+              "The stagehand is paid by the hour for every stretch they work, at $ 5,000 an hour, another made-up number. That's 4 hours of load-in, 6 of show, 2 over and 3 of load-out: 15 hours. 15 times $ 5,000 is $ 75,000. Together, the example comes to $ 175,000."
             ]
           },
           {
-            "title": "How to keep the numbers without a spreadsheet",
+            "title": "Tracking crew pay without a spreadsheet",
             "paragraphs": [
-              "The sum does not close if names, dates and hours live in different places. A “+2” does not update the total. At month end you have to rebuild who worked, on which rule and whether they were already paid. Seeing who is free means cross-checking another file.",
-              "That cost was the hardest part of building EventOps, the ShippersLab system for sound, lighting and event companies.",
-              "Each role has a fixed amount per stage or an hourly rate, in pesos or in dollars. When you assign someone, the amount fills in on its own. If they are paid by the hour, you update the end time and apply the rate again. If they are paid a fixed amount, you add an extra with a description and an amount. The payment is recorded as a staff expense, as pending, partial or paid, and only people with permission see the amounts."
+              "The numbers won't add up if names, dates and hours live in different places. A “+2” in the chat doesn't update the total. At month end you have to rebuild who worked, on which rule and whether they've been paid. Checking who's free means cross-referencing another file.",
+              "Getting that math right took us more work than anything else in EventOps, the ShippersLab system for sound, lighting and event companies.",
+              "Each role has a flat rate per stage or an hourly rate, in pesos or dollars. When you assign someone, the amount fills in automatically. If they're paid hourly, you update the end time and the rate is applied again. If they're on a flat rate, you add an extra with a description and an amount. The payment is logged as a crew expense marked pending, partial or paid. Only people with permission see the amounts."
             ],
             "link": {
-              "label": "See how staff and pay per setup or per hour are tracked",
+              "label": "See how EventOps tracks crew and pay",
               "href": "https://eventops.digital/gestion-de-personal"
             }
           },
           {
-            "title": "Staff cost also belongs on the quote",
+            "title": "Crew cost belongs on the quote too",
             "paragraphs": [
-              "What you pay the crew and what you charge the client are two different sums. If the quote only names the day of the event, setup, teardown and the extra hour stay with the company. You need a line for each, or a sentence that says until what time the service is included.",
-              "The event quote template has rows for setup crew, teardown crew and extra hours. The sample amounts on that sheet are not trade prices: you replace them with yours, and the deposit and the balance come from that total. How the date, the deposit and the cash get organized is in the post on how to organize an event company."
+              "What you pay the crew and what you charge the client are two separate numbers. If the quote only covers the event day, load-in, load-out and the extra hour come out of your pocket. You need a line item for each, or a sentence that says until what time the service runs.",
+              "The event quote template has rows for load-in crew, load-out crew and overtime. The sample amounts aren't industry rates: swap in your own, and the deposit and balance come from that total. How to organize the date, the deposit and cash flow is covered in the post on how to organize an event company."
             ],
             "link": {
               "label": "Download the event quote template",
@@ -1935,39 +1935,39 @@
         ],
         "checklist": {
           "title": "Quick checklist",
-          "intro": "Before the next date, go through this:",
+          "intro": "Before your next date, run through this:",
           "items": [
-            "Does each role have a rule: per setup and teardown, per hour, or mixed?",
-            "Are setup and teardown separate from the show hours?",
-            "Is the extra-hours rule written down, and known before you leave?",
-            "Does the quote include setup, teardown and what happens if the event runs long?",
-            "Is it written who worked, on which scheme, and whether pay is pending or done?",
-            "Can I see who is free without cross-checking another spreadsheet?"
+            "Does each role have a rule: flat rate per stage, hourly, or mixed?",
+            "Are load-in and load-out separate from the show hours?",
+            "Is the overtime extra written down and known before you head out?",
+            "Does the quote cover load-in, load-out and what happens if the event runs long?",
+            "Is there a record of who worked, on which rule, and whether pay is pending or done?",
+            "Can you see who's free without cross-checking another spreadsheet?"
           ],
-          "closing": "If several answers are no, the scheme may be fine and the record may not. That is where the spreadsheet turns into a mess."
+          "closing": "If several answers are no, the way you pay may be fine and the record may not."
         },
         "faq": {
           "title": "Frequently asked questions",
           "items": [
             {
-              "question": "Should I pay per setup and teardown or per hour?",
-              "answer": "Per setup and teardown fits when those stages take about the same time and you want a closed amount to quote. Per hour fits when the length changes, or when the person is there from start to finish. You can mix them on the same date, or add an extra to the fixed amount if the event runs long."
+              "question": "Should I pay a flat rate per load-in and load-out, or by the hour?",
+              "answer": "A flat rate fits when those stages take about the same time and you want a fixed number to quote. Hourly fits when the length varies, or when the person is there start to finish. You can mix both on the same date, or add an extra to the flat rate if the event runs long."
             },
             {
-              "question": "What if the event runs long and they are paid a fixed amount?",
-              "answer": "Leave the fixed amount as it was and add an extra with a description and an amount, agreed before the date. If they are paid by the hour, update the end time and calculate again. How to record the payment is a question for your accountant."
+              "question": "What if the event runs long and they're on a flat rate?",
+              "answer": "Leave the flat rate as is and add an extra with a description and an amount, agreed before the date. If they're paid hourly, update the end time and recalculate. Your accountant can tell you how to record the payment."
             },
             {
-              "question": "Do the technician and the helper have to use the same scheme?",
-              "answer": "No. The technician can be paid a fixed amount per setup and teardown, and the helper by the hour, on the same date. Each person needs one written rule."
+              "question": "Do the tech and the stagehand have to be paid the same way?",
+              "answer": "No. The tech can get a flat rate per load-in and load-out and the stagehand an hourly rate on the same date. Each person needs one written rule."
             },
             {
-              "question": "How do I stop calculating these payments in Excel?",
-              "answer": "The event has to show who worked, whether they are paid fixed or hourly, the extra hours and whether pay is pending or done. EventOps fills in the amount when you assign the person, recalculates or adds the extra, and records it as a staff expense."
+              "question": "How do I stop calculating crew pay in Excel?",
+              "answer": "The event record has to show who worked, whether they're on a flat or hourly rate, the overtime, and whether pay is pending or done. EventOps fills in the amount when you assign someone, recalculates or adds the extra, and logs it as a crew expense."
             },
             {
-              "question": "Are the amounts in the example trade rates?",
-              "answer": "No. They are made-up numbers so the arithmetic is visible, not market rates, wages or figures from a labor agreement. You set the values with your crew, and your accountant reviews how the payment is recorded."
+              "question": "Are the amounts in the example industry rates?",
+              "answer": "No. They're made-up numbers to show the math. You set the real rates with your crew, and your accountant reviews how the payment is recorded."
             }
           ]
         },
@@ -1980,14 +1980,14 @@
               "description": "From a production company's spreadsheet to the system that brings calendar, crew, quote and cash together."
             },
             {
-              "label": "EventOps case",
-              "href": "/casos/eventops",
-              "description": "Calendar, crew, quotes and cash for an event company."
+              "label": "What a custom management system costs",
+              "href": "/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida",
+              "description": "What pushes the price, which costs sit outside the build and what to bring to the first conversation."
             }
           ]
         },
         "ctaTitle": "Is crew pay still in a spreadsheet?",
-        "ctaDescription": "Tell us how you pay setup, teardown and extra hours. We reply with scope and price in writing.",
+        "ctaDescription": "Tell us how you pay load-in, load-out and overtime. We'll reply with scope and price in writing.",
         "ctaButton": "Tell us your problem"
       }
     }
