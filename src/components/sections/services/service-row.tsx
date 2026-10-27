@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
 
 import { DescriptionWithLink } from "@/components/sections/services/description-with-link";
@@ -22,6 +23,7 @@ const SERVICE_ICONS = {
 
 const SECOND_COLUMN_DELAY = 0.35;
 const ITEM_STEP = 0.1;
+const FIGURE_ROOT_MARGIN = "400px 0px";
 
 type ServiceRowProps = {
   index: number;
@@ -42,9 +44,33 @@ function blurIn(blur: number, delay: number, instant: boolean) {
   } as const;
 }
 
+function useMountWhenNear<T extends Element>() {
+  const ref = useRef<T>(null);
+  const [isNear, setIsNear] = useState(false);
+
+  useEffect(() => {
+    const node = ref.current;
+    if (!node) return;
+
+    const observer = new IntersectionObserver(
+      (entries, current) => {
+        if (!entries.some((entry) => entry.isIntersecting)) return;
+        setIsNear(true);
+        current.disconnect();
+      },
+      { rootMargin: FIGURE_ROOT_MARGIN },
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
+
+  return { ref, isNear };
+}
+
 export function ServiceRow({ index, service }: ServiceRowProps) {
   const { messages } = useI18n();
   const instant = Boolean(useReducedMotion());
+  const { ref: figureRef, isNear } = useMountWhenNear<HTMLDivElement>();
   const Figure = SERVICE_FIGURES[service.id];
   const ServiceIcon = SERVICE_ICONS[service.id as keyof typeof SERVICE_ICONS];
   const figureRight = index % 2 === 1;
@@ -58,6 +84,7 @@ export function ServiceRow({ index, service }: ServiceRowProps) {
       className="grid items-center gap-8 border-t border-border py-12 first:border-t-0 first:pt-0 sm:py-16 lg:grid-cols-2 lg:gap-16"
     >
       <motion.div
+        ref={figureRef}
         {...blurIn(12, figureDelay, instant)}
         className={cn(
           "relative isolate mx-auto flex aspect-5/4 w-full items-center justify-center overflow-hidden rounded-lg bg-border/30 p-6 sm:p-10 [&>*:not([data-slot])]:max-h-full [&>*:not([data-slot])]:w-full [&_svg]:max-h-full",
@@ -68,7 +95,7 @@ export function ServiceRow({ index, service }: ServiceRowProps) {
           aria-hidden
           className="absolute inset-0 -z-10 bg-transparent opacity-90"
         />
-        {Figure ? <Figure /> : null}
+        {isNear && Figure ? <Figure /> : null}
       </motion.div>
 
       <div className="flex max-w-lg flex-col items-start lg:px-4">
