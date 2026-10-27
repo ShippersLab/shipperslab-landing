@@ -5,6 +5,7 @@ type BlogPostEntry = {
   datePublished: string;
   authorId: string;
   published: boolean;
+  cover: string;
 };
 
 const blogPosts = [
@@ -13,18 +14,21 @@ const blogPosts = [
     datePublished: "2026-10-26",
     authorId: "juani",
     published: true,
+    cover: "/images/blog/covers/cuanto-cuesta-un-sistema-de-gestion-a-medida.webp",
   },
   {
     slug: "como-organizar-una-empresa-de-eventos",
     datePublished: "2026-10-23",
     authorId: "juani",
     published: true,
+    cover: "/images/blog/covers/como-organizar-una-empresa-de-eventos.webp",
   },
   {
     slug: "como-saber-si-tu-negocio-necesita-pagina-web",
     datePublished: "2026-10-18",
     authorId: "juani",
     published: true,
+    cover: "/images/blog/covers/como-saber-si-tu-negocio-necesita-pagina-web.webp",
   },
 ] as const satisfies readonly BlogPostEntry[];
 

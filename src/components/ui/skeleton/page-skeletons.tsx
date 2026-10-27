@@ -75,12 +75,15 @@ export function BlogIndexSkeleton() {
         </div>
       </Container>
       <Container className="w-full py-16 sm:py-20 md:py-28">
-        <div className="grid gap-6">
+        <div className="grid gap-12">
           {[0, 1].map((item) => (
-            <div key={item} className="max-w-2xl rounded-lg border border-border p-6 sm:p-8">
-              <Skeleton className="h-4 w-40" />
-              <Skeleton className="mt-3 h-8 w-4/5" />
-              <TextLines lines={3} className="mt-3" />
+            <div key={item} className="grid items-center gap-6 md:grid-cols-[2fr_3fr] md:gap-10">
+              <Skeleton className="aspect-video w-full" />
+              <div>
+                <Skeleton className="h-4 w-40" />
+                <Skeleton className="mt-3 h-8 w-4/5" />
+                <TextLines lines={3} className="mt-3" />
+              </div>
             </div>
           ))}
         </div>
