@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import { BlogIndex } from "@/components/sections/blog";
 import { JsonLd } from "@/components/seo/json-ld";
+import { getBlogPostSummary } from "@/content/blog/content";
 import { getMessages } from "@/i18n/get-messages";
 import { resolveLocale } from "@/i18n/params";
 import { getVisibleBlogPosts } from "@/lib/blog";
@@ -26,7 +27,12 @@ export default async function BlogPage({ params }: PageProps<"/[lang]/blog">) {
   return (
     <>
       <JsonLd data={buildBlogIndexStructuredData(lang)} />
-      <BlogIndex posts={getVisibleBlogPosts()} />
+      <BlogIndex
+        posts={getVisibleBlogPosts().map((meta) => ({
+          meta,
+          ...getBlogPostSummary(meta.slug, lang),
+        }))}
+      />
     </>
   );
 }

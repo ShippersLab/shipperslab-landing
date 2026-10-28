@@ -1,0 +1,238 @@
+{
+  "title": "How to organize an event company: from a spreadsheet to one system",
+  "metaTitle": "How to organize an event company: from Excel to one system",
+  "metaDescription": "Software for event companies and sound and lighting producers: calendar, crew, quotes and cash. From Excel to EventOps.",
+  "excerpt": "How an event production company moved from one Excel file of clients, dates and cash to a single system, and how an event runs in EventOps today.",
+  "answer": "Organizing an event company takes one place for the calendar, the crew, the quotes and the cash. An Excel file for an event company gets messy once there are several dates, setup and teardown, deposits and quotes at the same time. A system for sound and lighting producers enters the event once, and the calendar, the PDF, the payments and the expenses come from that. EventOps is that software for event companies: ShippersLab builds it in Argentina for ARS 50,000 a month, on a single plan, with one free week.",
+  "intro": [
+    "If you run a sound, lighting or event company, Excel is often enough at the start: dates, clients and cash in one file. You still have to quote, set up, collect the deposit and know who is going.",
+    "This post covers how one event production company left that spreadsheet for a single system, and how an event runs in EventOps today."
+  ],
+  "sections": [
+    {
+      "title": "What falls apart when everything lives in Excel",
+      "paragraphs": [
+        "An event production company arrived with no calendar. Clients, dates and cash flow all sat in one Excel file.",
+        "From that base, everything the trade needs hangs off the same sheet:"
+      ],
+      "items": [
+        "The site visit, the setup, the event and the teardown have to be read between rows, because there is no calendar of their own.",
+        "A date that overlaps another one has to be spotted by eye before you confirm.",
+        "The crew for setup and teardown is not tied to that date, and the pay is calculated separately.",
+        "The deposit and what is still owed get mixed in with the rest of the numbers.",
+        "The quote is built in another file and sent to the client by hand."
+      ],
+      "closing": "If the quote still lives in another file, you can download a [free event budget template](https://eventops.digital/plantilla-presupuesto-eventos) (in Spanish) as Excel and PDF."
+    },
+    {
+      "title": "How EventOps started",
+      "paragraphs": [
+        "EventOps started with a specific request: an event production company asked us to quote a calendar, a client list and cash flow. While building it we saw that every sound, lighting and event company has the same problem, so we turned it into our own product, now in production.",
+        "The calendar was the visible part. What had to be modeled was crew pay, and the money of each event, which in the spreadsheet was mixed in with everything else."
+      ],
+      "link": {
+        "label": "See the EventOps case",
+        "href": "/casos/eventops"
+      }
+    },
+    {
+      "title": "What an event looks like on the calendar",
+      "paragraphs": [
+        "Today the event is entered once. Related dates are added and they all show up on the calendar. If two dates overlap in time, EventOps warns you before you confirm."
+      ],
+      "image": {
+        "src": "/images/blog/eventops-calendario.webp",
+        "width": 860,
+        "height": 802,
+        "alt": "EventOps demo showing a wedding's site visit, setup, event and teardown, each with its day and time.",
+        "caption": "Sample wedding dates on the public EventOps demo."
+      },
+      "items": [
+        "Related dates. A meeting, a sound check or another date can be added alongside the site visit, the setup and the teardown.",
+        "Statuses. Quote, reserved with a deposit, confirmed, done and cancelled. Each one has its own color on the grid.",
+        "Views. Month, week, day or agenda. To reschedule, you drag the event to another day."
+      ],
+      "link": {
+        "label": "Explore EventOps",
+        "href": "https://eventops.digital"
+      }
+    },
+    {
+      "title": "Crew cost: setup, teardown and extra hours",
+      "paragraphs": [
+        "The hardest part was crew cost. This company paid per setup and per teardown, and sometimes paid more when the hours ran over.",
+        "In EventOps each role has a fixed amount per stage (setup, teardown or site visit) or an hourly rate. When you assign someone, the amount fills in on its own. To see how the crew for each date comes together, check out [staff management for events](https://eventops.digital/gestion-de-personal) (in Spanish)."
+      ],
+      "image": {
+        "src": "/images/blog/eventops-personal.webp",
+        "width": 822,
+        "height": 832,
+        "alt": "EventOps demo showing a wedding's technicians, DJ and driver, with who is assigned and who is still missing.",
+        "caption": "Crew for a sample wedding. The names are from the public demo."
+      },
+      "items": [
+        "Assignment by date. Each person comes in with a role: technician, DJ, lighting or driver.",
+        "Who is free. Before you add someone, you can see if they already have another date that day.",
+        "Pay per stage or per hour. The fixed amount covers setup or teardown. The hourly rate covers it when the time runs long."
+      ]
+    },
+    {
+      "title": "The quote comes out as a PDF",
+      "paragraphs": [
+        "The quote is built from the event, using services from your list. The total calculates itself. The PDF downloads with your logo, ready to send on WhatsApp or by email."
+      ],
+      "image": {
+        "src": "/images/blog/eventops-presupuesto.webp",
+        "width": 1200,
+        "height": 1180,
+        "alt": "PDF quote from the EventOps demo, with sound, lighting and DJ services.",
+        "caption": "Sample PDF from eventops.digital/presupuestos, built from the service list."
+      },
+      "items": [
+        "From the catalog. Each service brings a name, what it includes, a base price and a unit: per event, per day, per hour or per unit.",
+        "Adjustments. You can change the quantity and the price, add a free item and apply a discount or a surcharge.",
+        "Pesos or dollars. The quote is in ARS or USD. If the event already has payments, the currency stays fixed.",
+        "PDF with your logo. A quote for the client, a proforma, a setup sheet and a receipt for each payment. The invoice is issued separately: these PDFs have no tax validity."
+      ],
+      "link": {
+        "label": "See how PDF quotes work",
+        "href": "https://eventops.digital/presupuestos"
+      }
+    },
+    {
+      "title": "Deposits, expenses and the month in numbers",
+      "paragraphs": [
+        "From the total you collect a deposit and split the balance into the installments you agree, in pesos or in dollars. Each payment is marked, you can see what is left, and the receipt comes out as a PDF.",
+        "Crew, equipment rental and supplies go on the event or stay as a general expense. The month shows income, expenses and net, with pesos and dollars kept apart. Movements can be exported to CSV."
+      ],
+      "image": {
+        "src": "/images/blog/eventops-finanzas.webp",
+        "width": 1200,
+        "height": 880,
+        "alt": "PDF proposal page from the EventOps demo, with the total amount and the scope of the service.",
+        "caption": "The terms page of the same PDF: total amount and scope. The amounts are sample figures."
+      }
+    },
+    {
+      "title": "Excel or a system: what changes in each part",
+      "paragraphs": [
+        "Part by part, here is what changes when you move from the spreadsheet to a system."
+      ],
+      "table": {
+        "caption": "Excel and a system: calendar, crew, deposits, quotes and cash",
+        "columns": ["In Excel", "In a system"],
+        "rows": [
+          {
+            "label": "Calendar",
+            "cells": [
+              "Dates live in the same spreadsheet as clients and cash, or there is no calendar.",
+              "Site visit, setup, event and teardown are on the calendar, and it warns you if two dates overlap."
+            ]
+          },
+          {
+            "label": "Pay for setup and teardown",
+            "cells": [
+              "The amount per stage and the extra hours are calculated by hand.",
+              "A fixed amount per stage or an hourly rate. When you assign someone, the pay fills in on its own."
+            ]
+          },
+          {
+            "label": "Deposits",
+            "cells": [
+              "The deposit and the balance get mixed in with other numbers.",
+              "The deposit and the installments stay on the event, in pesos or in dollars."
+            ]
+          },
+          {
+            "label": "Quotes",
+            "cells": [
+              "Built in another file and sent however you can.",
+              "Comes out as a PDF with your logo, from your services, with the total calculated."
+            ]
+          },
+          {
+            "label": "Cash flow",
+            "cells": [
+              "Income and expenses for the month have to be rebuilt.",
+              "Event or general expenses, and the month in pesos and dollars kept apart."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "When EventOps fits as it is",
+      "paragraphs": [
+        "EventOps fits as it is if you run events, you have crew to assign and you send quotes. There is a single plan, ARS 50,000 a month, with one free week.",
+        "If the operation is something else, such as stock, orders or appointments, that is built to fit."
+      ],
+      "items": [
+        "Events with site visit, setup and teardown on the same calendar.",
+        "Crew in charge, with a role and pay per stage or per hour.",
+        "Quotes as PDF, and a deposit or installments for the balance.",
+        "The month's cash in pesos and in dollars, kept apart."
+      ],
+      "closing": "If those four describe how you work, start with the trial week.",
+      "link": {
+        "label": "Try EventOps",
+        "href": "https://eventops.digital"
+      }
+    }
+  ],
+  "checklist": {
+    "title": "Quick checklist",
+    "intro": "Go through this list before you add another sheet:",
+    "items": [
+      "Do dates, clients and cash live in the same Excel file?",
+      "Do I pay setup and teardown per stage, and sometimes more when the hours run over?",
+      "Do I build every quote by hand to send it on WhatsApp?",
+      "Do I collect a deposit and installments, and not always know what each event still owes?",
+      "Do I need to see who is free before I confirm a date?",
+      "Is my work running events, with crew in charge and quotes for the client?"
+    ],
+    "closing": "If several answers are yes, a system for this trade will do more than another sheet in the same file."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "question": "Is Excel enough for an event company?",
+        "answer": "It is enough while there are few dates and the same person always looks at them. When the calendar, the crew, the deposits and the quotes share the spreadsheet, a system makes sense: the event is entered once and the calendar, the PDF, the payments and the expenses come from that."
+      },
+      {
+        "question": "What should a system for sound and lighting producers cover?",
+        "answer": "A calendar with site visit, setup and teardown, crew with a role and pay, a PDF quote, and the event's cash: deposit, installments and expenses, in pesos or in dollars."
+      },
+      {
+        "question": "Does EventOps fit as it is?",
+        "answer": "It fits as it is if you run events, you have crew to assign and you send quotes. If the operation is stock, orders or appointments, that is built to fit."
+      },
+      {
+        "question": "How much does EventOps cost?",
+        "answer": "The plan is ARS 50,000 a month. It is a single plan, with every feature, and it includes one free week. You can leave whenever you want and ask for a copy of your data."
+      },
+      {
+        "question": "Does the quote PDF replace an invoice?",
+        "answer": "The quote, the proforma, the setup sheet and the receipt download as a PDF with your logo, so you can send the proposal and keep a record of the payment. The invoice is issued separately: these documents have no tax validity."
+      }
+    ]
+  },
+  "related": {
+    "title": "Keep reading",
+    "links": [
+      {
+        "label": "Management systems",
+        "href": "/sistemas-de-gestion",
+        "description": "Stock, orders, cash or appointments in a system built around how your business works."
+      },
+      {
+        "label": "EventOps case",
+        "href": "/casos/eventops",
+        "description": "Calendar, crew, quotes and finances for an event company."
+      }
+    ]
+  },
+  "ctaTitle": "Is your event company still in Excel?",
+  "ctaDescription": "Tell us how you organize dates, crew and payments. We reply with scope and price in writing.",
+  "ctaButton": "Tell us your problem"
+}

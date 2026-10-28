@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { ImageResponse } from "next/og";
 
-import { getMessages } from "@/i18n/get-messages";
+import { getBlogPostContent } from "@/content/blog/content";
 import { resolveLocale } from "@/i18n/params";
 import { getBlogPost, isBlogSlug } from "@/lib/blog";
 import { BlogOgCard, blogOgSize, loadBlogOgAssets } from "@/lib/seo/blog/og";
@@ -29,7 +29,7 @@ export default async function BlogOpenGraphImage({
     notFound();
   }
 
-  const title = getMessages(lang).blog.posts[slug].title;
+  const title = getBlogPostContent(slug, lang).title;
 
   const { fonts, logoSrc, backgroundSrc } = await loadBlogOgAssets();
 

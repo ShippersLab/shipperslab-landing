@@ -1,0 +1,187 @@
+{
+  "title": "How to pay event crew: flat rate per load-in and load-out, or hourly",
+  "metaTitle": "How to pay event crew: flat rate or hourly",
+  "metaDescription": "Flat rate per load-in and load-out, hourly or mixed: when each fits, how to handle overtime, and a worked example.",
+  "excerpt": "Three ways to pay techs, stagehands and crew, what to do when an event runs long, and how to stop reconciling it in a spreadsheet.",
+  "answer": "Event crew get a flat rate per load-in and load-out, an hourly rate, or a mix of both. If the night runs long, you add a pre-agreed extra on top of the flat rate, or recalculate hourly pay from the real end time. If all of that lives between a spreadsheet and a group chat, by month end you can't tell who worked, on which rule, or what you still owe. In the example below, with made-up amounts, a tech on a flat rate plus overtime and a stagehand paid hourly come to $ 175,000 for a wedding that ran two hours over.",
+  "intro": [
+    "At a sound, lighting or event production company, techs, stagehands and crew don't all get paid the same way. One date can mix a flat rate for load-in, another for load-out, and an extra if the show runs late.",
+    "This post compares the three options, covers what to do with overtime and walks through the math with made-up numbers."
+  ],
+  "sections": [
+    {
+      "title": "What you're paying for on each date",
+      "paragraphs": [
+        "Before you pick how to pay, split the date into stages: site visit, load-in, show and load-out. At each stage the hours, the people and what you owe can change.",
+        "Load-in and load-out crew haul, rig, test and strike. A tech can stay for the show or come back only for load-out, and a stagehand covers whatever stretch you need. If everything goes into one amount for the event, you can't tell later what was load-in, what was load-out and where the extra hour came from."
+      ],
+      "items": [
+        "Site visit. Whoever goes to check out the venue isn't paid the same as whoever stays for the show.",
+        "Load-in. Hauling, rigging and soundcheck. Paid per stage, it's a flat rate.",
+        "Show. The event hours: another flat rate, or the hours from start to finish.",
+        "Load-out. It starts when the show ends. If it isn't paid separately, it turns into an argument at the end of the night."
+      ]
+    },
+    {
+      "title": "Paying a flat rate per load-in and load-out",
+      "paragraphs": [
+        "A flat rate per load-in and load-out means one fixed amount per stage. The crew member knows what they get to rig and what they get to strike. Each role has its own rate: the tech and the stagehand don't earn the same. If the show itself is also flat, that's a third amount for the event.",
+        "If one date is paid differently, that amount goes on that date. This is how the production company that asked us to build EventOps pays: per load-in and per load-out, with an extra when the date runs late."
+      ],
+      "link": {
+        "label": "See the EventOps case",
+        "href": "/casos/eventops"
+      }
+    },
+    {
+      "title": "Paying by the hour",
+      "paragraphs": [
+        "Hourly pay means logging the start and end of each stage and multiplying that time by the person's rate. It fits when the length changes from one event to the next, or when someone is there from arrival to wrap. If you don't log the end time, there's nothing to calculate.",
+        "Count past midnight. A show from 9pm to 2am is five hours: the date changing doesn't shorten the shift. If load-out runs until 5am, those hours belong to load-out. If they sit in the chat and get copied into the spreadsheet the next day, they get rounded from memory."
+      ]
+    },
+    {
+      "title": "Mixing both",
+      "paragraphs": [
+        "A mixed setup puts both on the same date. The clearest version is a flat rate per load-in and load-out for the tech and an hourly rate for the stagehand. A flat rate plus an extra when the event runs past the agreed time counts as mixed too: the stage stays flat and the extra time is paid on its own.",
+        "Each person gets one rule per date: flat, hourly, or flat plus an extra. If that rule lives in the head of whoever keeps the spreadsheet, nobody can rebuild it next month."
+      ]
+    },
+    {
+      "title": "Flat rate, hourly or mixed",
+      "paragraphs": [
+        "If load-in and load-out take about the same time on your dates, a flat rate is enough. If every show ends at a different time, go hourly or mixed with an extra."
+      ],
+      "table": {
+        "caption": "Flat rate per stage, hourly and mixed: pros, cons and when each fits",
+        "columns": ["Flat rate per stage", "Hourly", "Mixed"],
+        "rows": [
+          {
+            "label": "Pros",
+            "cells": [
+              "You know the cost up front and it goes on the quote as line items.",
+              "It tracks the real length of each date.",
+              "The flat rate covers the stage and the hourly rate covers whoever stays."
+            ]
+          },
+          {
+            "label": "Cons",
+            "cells": [
+              "Without an extra, overtime turns into an argument at the end of the night.",
+              "You have to log start and end times, or the hours come from memory.",
+              "If each person's rule isn't written down, the numbers won't add up."
+            ]
+          },
+          {
+            "label": "When it fits",
+            "cells": [
+              "When load-in and load-out take about the same time.",
+              "When the length varies, or the stagehand is there start to finish.",
+              "When the tech is paid per stage, the stagehand by the hour, or the flat rate carries an extra."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "Overtime when the event runs long",
+      "paragraphs": [
+        "Agree on the extra before the date. If the person is paid hourly, update the end time and multiply again. If they're on a flat rate, the rate stays put and you add an extra with its own description and amount, separate from the stage.",
+        "Decide when it kicks in, for example once you pass the hours on the quote, and make sure both sides know before you head out. If the person is on your payroll as an employee, Argentine law adds a surcharge for overtime: your accountant works that out, along with how to record each payment. This post doesn't replace that advice or a collective labor agreement."
+      ],
+      "items": [
+        "Before you head out. Write down the extra rate, or that pay gets recalculated by the hour.",
+        "Flat rate. Add the extra on its own line. Don't bury it inside the flat rate.",
+        "On the quote. If the client can ask for more time, you need a line item or a sentence about it. If it's missing, you eat that cost."
+      ]
+    },
+    {
+      "title": "A worked example with made-up numbers",
+      "paragraphs": [
+        "The amounts in this example are round and made up so the math is easy to follow. They don't come from the market or a labor agreement: swap in your own. They're in pesos. If someone is paid in dollars, that amount stays separate.",
+        "The date is a wedding. Load-in runs from 10am to 2pm: four hours. The show is booked from 8pm to 2am, six hours, and runs until 4am: two hours over. Because the show ends at 4am, load-out starts then and finishes at 7am: three hours.",
+        "The tech is paid per stage, load-in and load-out, and the booked show is already part of that deal. Load-in, $ 40,000. Load-out, $ 40,000. The made-up extra is $ 10,000 per hour over: two hours come to $ 20,000. Total: $ 40,000 + $ 40,000 + $ 20,000 = $ 100,000.",
+        "The stagehand is paid by the hour for every stretch they work, at $ 5,000 an hour, another made-up number. That's 4 hours of load-in, 6 of show, 2 over and 3 of load-out: 15 hours. 15 times $ 5,000 is $ 75,000. Together, the example comes to $ 175,000."
+      ]
+    },
+    {
+      "title": "Tracking crew pay without a spreadsheet",
+      "paragraphs": [
+        "The numbers won't add up if names, dates and hours live in different places. A “+2” in the chat doesn't update the total. At month end you have to rebuild who worked, on which rule and whether they've been paid. Checking who's free means cross-referencing another file.",
+        "Getting that math right took us more work than anything else in EventOps, the ShippersLab system for sound, lighting and event companies.",
+        "Each role has a flat rate per stage or an hourly rate, in pesos or dollars. When you assign someone, the amount fills in automatically. If they're paid hourly, you update the end time and the rate is applied again. If they're on a flat rate, you add an extra with a description and an amount. The payment is logged as a crew expense marked pending, partial or paid. Only people with permission see the amounts."
+      ],
+      "link": {
+        "label": "See how EventOps tracks crew and pay",
+        "href": "https://eventops.digital/gestion-de-personal"
+      }
+    },
+    {
+      "title": "Crew cost belongs on the quote too",
+      "paragraphs": [
+        "What you pay the crew and what you charge the client are two separate numbers. If the quote only covers the event day, load-in, load-out and the extra hour come out of your pocket. You need a line item for each, or a sentence that says until what time the service runs.",
+        "The event quote template has rows for load-in crew, load-out crew and overtime. The sample amounts aren't industry rates: swap in your own, and the deposit and balance come from that total. How to organize the date, the deposit and cash flow is covered in the post on how to organize an event company."
+      ],
+      "link": {
+        "label": "Download the event quote template",
+        "href": "https://eventops.digital/plantilla-presupuesto-eventos"
+      }
+    }
+  ],
+  "checklist": {
+    "title": "Quick checklist",
+    "intro": "Before your next date, run through this:",
+    "items": [
+      "Does each role have a rule: flat rate per stage, hourly, or mixed?",
+      "Are load-in and load-out separate from the show hours?",
+      "Is the overtime extra written down and known before you head out?",
+      "Does the quote cover load-in, load-out and what happens if the event runs long?",
+      "Is there a record of who worked, on which rule, and whether pay is pending or done?",
+      "Can you see who's free without cross-checking another spreadsheet?"
+    ],
+    "closing": "If several answers are no, the way you pay may be fine and the record may not."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "question": "Should I pay a flat rate per load-in and load-out, or by the hour?",
+        "answer": "A flat rate fits when those stages take about the same time and you want a fixed number to quote. Hourly fits when the length varies, or when the person is there start to finish. You can mix both on the same date, or add an extra to the flat rate if the event runs long."
+      },
+      {
+        "question": "What if the event runs long and they're on a flat rate?",
+        "answer": "Leave the flat rate as is and add an extra with a description and an amount, agreed before the date. If they're paid hourly, update the end time and recalculate. Your accountant can tell you how to record the payment."
+      },
+      {
+        "question": "Do the tech and the stagehand have to be paid the same way?",
+        "answer": "No. The tech can get a flat rate per load-in and load-out and the stagehand an hourly rate on the same date. Each person needs one written rule."
+      },
+      {
+        "question": "How do I stop calculating crew pay in Excel?",
+        "answer": "The event record has to show who worked, whether they're on a flat or hourly rate, the overtime, and whether pay is pending or done. EventOps fills in the amount when you assign someone, recalculates or adds the extra, and logs it as a crew expense."
+      },
+      {
+        "question": "Are the amounts in the example industry rates?",
+        "answer": "No. They're made-up numbers to show the math. You set the real rates with your crew, and your accountant reviews how the payment is recorded."
+      }
+    ]
+  },
+  "related": {
+    "title": "Keep reading",
+    "links": [
+      {
+        "label": "How to organize an event company",
+        "href": "/blog/como-organizar-una-empresa-de-eventos",
+        "description": "From a production company's spreadsheet to the system that brings calendar, crew, quote and cash together."
+      },
+      {
+        "label": "What a custom management system costs",
+        "href": "/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida",
+        "description": "What pushes the price, which costs sit outside the build and what to bring to the first conversation."
+      }
+    ]
+  },
+  "ctaTitle": "Is crew pay still in a spreadsheet?",
+  "ctaDescription": "Tell us how you pay load-in, load-out and overtime. We'll reply with scope and price in writing.",
+  "ctaButton": "Tell us your problem"
+}

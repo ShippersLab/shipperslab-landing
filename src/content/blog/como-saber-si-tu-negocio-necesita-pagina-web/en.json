@@ -1,0 +1,163 @@
+{
+  "title": "Does your business need a website? How to know if it is worth it",
+  "metaTitle": "Does your business need a website? How to tell",
+  "metaDescription": "Signs a website makes sense for your small business or shop, when it does not yet, and how to measure whether yours works. With a checklist and FAQ.",
+  "excerpt": "Concrete signs to decide whether a website adds value to your business, when it is better to wait and how to measure whether yours is working.",
+  "answer": "A website is worth it if people look for you on Google, if you answer the same questions all day on WhatsApp or Instagram, if you have products or services to show or if your customers need to trust you before buying. It can wait if all your customers come through referrals and you can barely keep up, if you are still testing what to sell or if you will not be able to keep the information up to date. In the meantime, a complete Google Business Profile and a WhatsApp Business catalog may be enough.",
+  "intro": [
+    "Many businesses in Argentina sell well with Instagram, WhatsApp and word of mouth. So the question comes up: do you need a website, or is it just another expense? The honest answer is that it depends. A website does not sell on its own, but in some cases it saves you time, brings in inquiries you are losing today and builds trust with people who do not know you yet.",
+    "In this guide you will find concrete signs to help you decide, the cases where it is better to wait and how to measure whether the website you already have is doing its job."
+  ],
+  "sections": [
+    {
+      "title": "Signs a website makes sense",
+      "paragraphs": ["If two or more of these sound familiar, a website will probably help:"],
+      "items": [
+        "People look for you on Google. If someone types your business name, or something like «hardware store in Rosario», and cannot find you, those inquiries go somewhere else. A website with your information, together with a Google Business Profile, makes you show up when people search.",
+        "You answer the same questions all day. If on WhatsApp or Instagram you keep replying about prices, opening hours, delivery areas or payment methods, a website with that information gives you time back and lets customers start the conversation almost decided.",
+        "You have products or services to show. An organized catalog with photos, descriptions and prices or ranges is easier to browse than an Instagram feed or a set of PDFs you send by chat.",
+        "You need to build trust. Many customers, especially other businesses, look up your website before writing or paying. Seeing who is behind it, where you are, how you work and how to reach you lowers their doubts.",
+        "You depend on a single social network. If your account gets blocked tomorrow or the algorithm changes, you lose your storefront. A website is a place of your own that you control.",
+        "You want to take orders, bookings or inquiries without being on top of it. A form, a catalog with WhatsApp ordering or a booking system keep working while you are busy with something else."
+      ]
+    },
+    {
+      "title": "When you do not need one yet",
+      "paragraphs": ["A website is not always the priority. It can wait if:"],
+      "items": [
+        "All your customers come through referrals and you can barely keep up with the orders you already have.",
+        "You are still testing what to sell or to whom, and your offer changes every week.",
+        "You will not be able to keep the information up to date. A website with old prices or a phone number nobody answers does more harm than having nothing."
+      ],
+      "closing": "In those cases, a complete Google Business Profile and a good WhatsApp Business catalog may be enough for now. When the business grows or you find yourself answering the same things over and over, ask the question again."
+    },
+    {
+      "title": "Summary: when a website helps and when it can wait",
+      "paragraphs": [
+        "This table puts the two lists above side by side so you can compare them at a glance:"
+      ],
+      "table": {
+        "caption": "When a website helps a business and when it can wait",
+        "columns": ["A website helps if…", "It can wait if…"],
+        "rows": [
+          {
+            "label": "How people find you",
+            "cells": [
+              "People search for your name or what you sell on Google.",
+              "All your customers come through referrals."
+            ]
+          },
+          {
+            "label": "Chat inquiries",
+            "cells": [
+              "You answer the same things all day: prices, opening hours, delivery or payment methods.",
+              "You can barely keep up with the orders you already have."
+            ]
+          },
+          {
+            "label": "What you offer",
+            "cells": [
+              "You have products or services that are easier to understand with photos and descriptions.",
+              "You are still testing what to sell or to whom, and it changes every week."
+            ]
+          },
+          {
+            "label": "Trust and channels",
+            "cells": [
+              "Customers look you up before writing or paying, or you depend on a single social network.",
+              "A Google Business Profile and a WhatsApp Business catalog are enough for now."
+            ]
+          },
+          {
+            "label": "Upkeep",
+            "cells": [
+              "You can keep prices, catalog and contact details up to date.",
+              "You will not be able to update the information. An outdated website does more harm than having nothing."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "How to know if your current website works",
+      "paragraphs": [
+        "If you already have a website, existing is not enough. Here are four simple ways to check whether it is doing its job:"
+      ],
+      "items": [
+        "Impressions and clicks in Google Search Console. It is a free Google tool that shows how many times you appeared in results (impressions), how many people clicked through (clicks) and for which searches. If you have almost no impressions, Google is not showing you. If you have impressions but few clicks, review the title and description of your pages.",
+        "Inquiries coming from the website. Ask every new customer how they found you, or use a form or a WhatsApp link that only lives on the website so you know which inquiries come from it. In the end, what matters is whether the website brings you conversations.",
+        "Speed. If the page is slow to load, many people leave before seeing it. You can measure it for free with Google PageSpeed Insights, which also tells you what is slowing it down.",
+        "How it looks on a phone. Many people will visit from their phone. Open it on yours: can you read it without zooming? Are the buttons easy to tap? Can you find the WhatsApp or phone number in seconds?"
+      ],
+      "closing": "If the answer to any of these is «no» or «I do not know», that is where to start."
+    },
+    {
+      "title": "What a website needs to be worth it",
+      "paragraphs": [
+        "A useful website for a small business or shop does not need to be big. It needs to quickly answer the questions people ask you by chat today: what you do, for whom, where, how much (even if it is a range or a starting price) and how to contact you.",
+        "If it also has an up-to-date catalog, a visible WhatsApp button and loads fast on a phone, it already covers what most customers will look for. Everything else can be added later, once you know which pages people visit and which inquiries it brings."
+      ],
+      "link": {
+        "label": "See how we build websites and catalogs",
+        "href": "/webs-y-catalogos"
+      }
+    }
+  ],
+  "checklist": {
+    "title": "Quick checklist",
+    "intro": "Before deciding, go through this list:",
+    "items": [
+      "Do people search for my business or what I sell on Google?",
+      "Do I answer the same questions several times a day?",
+      "Do I have products or services that are easier to understand with photos and descriptions?",
+      "Do my customers need to trust me before buying or paying in advance?",
+      "Do I depend on a single social network to be found?",
+      "Will I be able to keep the information up to date?",
+      "If I already have a website: do I know how many impressions, clicks and inquiries it brings?"
+    ],
+    "closing": "If you said yes to several of the first five and also to the sixth, a website is probably worth it."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "question": "Is Instagram enough instead of a website?",
+        "answer": "For many businesses it is a good start. The difference is that the Instagram account is not yours and Google does not always show it when someone searches for what you sell. A website and social media complement each other: social media creates interest and the website organizes the information and makes you findable."
+      },
+      {
+        "question": "How long does a new website take to show up on Google?",
+        "answer": "There is no fixed timeline and it depends on each site. It helps to add it to Google Search Console, submit the sitemap and have a Google Business Profile that links to the website. Search Console shows you when the first impressions start to appear."
+      },
+      {
+        "question": "Do I need a catalog with a shopping cart?",
+        "answer": "Not always. If you sell few products or each sale needs a conversation, a catalog with WhatsApp ordering is usually enough. An online store with payments makes sense when the number of orders justifies it."
+      },
+      {
+        "question": "What if I already have a website but it brings no inquiries?",
+        "answer": "Check the basics first: whether it shows up in Search Console, whether it loads fast, whether it looks good on a phone and whether contact details are visible. Often the website does not answer what customers are looking for, or it is hard to reach you from there."
+      },
+      {
+        "question": "Does a website replace WhatsApp?",
+        "answer": "No, it complements it. The idea is that the website answers the usual questions so the WhatsApp conversation starts with an informed customer."
+      }
+    ]
+  },
+  "related": {
+    "title": "Keep reading",
+    "links": [
+      {
+        "label": "Websites and catalogs",
+        "href": "/webs-y-catalogos",
+        "description": "How we build websites and catalogs for small businesses and shops."
+      },
+      {
+        "label": "How we work",
+        "href": "/como-trabajamos",
+        "description": "A free 30-minute call, written scope and weekly deliveries."
+      }
+    ]
+  },
+  "ctaTitle": "Not sure if your business needs a website?",
+  "ctaDescription": "Tell us how your customers find you today and what you want to solve. We reply with scope and price in writing.",
+  "ctaButton": "Tell us your problem"
+}

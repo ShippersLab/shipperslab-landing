@@ -14,7 +14,7 @@ type FaqItem = {
 };
 
 type FaqAccordionProps = {
-  items: FaqItem[];
+  items: readonly FaqItem[];
   delay?: number;
   stagger?: number;
   defaultOpenIndex?: number | null;

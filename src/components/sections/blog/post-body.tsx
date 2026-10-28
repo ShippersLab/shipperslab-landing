@@ -3,8 +3,9 @@ import { BlogPostTable } from "@/components/sections/blog/post-table";
 import { FaqAccordion } from "@/components/ui/faq-accordion";
 import { InlineText } from "@/components/ui/inline-text";
 import { LocalizedLink } from "@/i18n/link";
+import type { BlogPostContent } from "@/content/blog/types";
 import { useI18n } from "@/i18n/provider";
-import { type BlogSlug, slugifyHeading } from "@/lib/blog";
+import { slugifyHeading } from "@/lib/blog";
 
 const LEAD_MAX_LENGTH = 70;
 
@@ -17,12 +18,11 @@ function splitLead(item: string) {
 }
 
 type BlogPostBodyProps = {
-  slug: BlogSlug;
+  post: BlogPostContent;
 };
 
-export function BlogPostBody({ slug }: BlogPostBodyProps) {
+export function BlogPostBody({ post }: BlogPostBodyProps) {
   const { messages } = useI18n();
-  const post = messages.blog.posts[slug];
 
   return (
     <div className="prose-article prose">

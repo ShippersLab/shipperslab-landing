@@ -3,8 +3,8 @@ import { notFound } from "next/navigation";
 
 import { BlogPost } from "@/components/sections/blog/post";
 import { JsonLd } from "@/components/seo/json-ld";
+import { getBlogPostContent } from "@/content/blog/content";
 import { locales } from "@/i18n/config";
-import { getMessages } from "@/i18n/get-messages";
 import { resolveLocale } from "@/i18n/params";
 import { getBlogPost, getVisibleBlogPosts, isBlogSlug, isPostVisible } from "@/lib/blog";
 import { BLOG_OG_HEIGHT, BLOG_OG_WIDTH, blogPostOpenGraphPath } from "@/lib/seo/blog/og-path";
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   if (!isBlogSlug(slug) || !meta || !isPostVisible(meta)) {
     return {};
   }
-  const post = getMessages(lang).blog.posts[slug];
+  const post = getBlogPostContent(slug, lang);
   const base = buildPageMetadata({
     title: post.metaTitle,
     description: post.metaDescription,
@@ -76,7 +76,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   return (
     <>
       <JsonLd data={buildBlogPostStructuredData(slug, lang)} />
-      <BlogPost slug={slug} />
+      <BlogPost slug={slug} post={getBlogPostContent(slug, lang)} />
     </>
   );
 }

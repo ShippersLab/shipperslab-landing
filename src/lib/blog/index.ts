@@ -1,47 +1,7 @@
+import { type BlogPostMeta, type BlogSlug, blogPosts } from "@/content/blog";
 import { team } from "@/lib/site";
 
-type BlogPostEntry = {
-  slug: string;
-  datePublished: string;
-  authorId: string;
-  published: boolean;
-  cover: string;
-};
-
-const blogPosts = [
-  {
-    slug: "como-pagarle-al-personal-de-eventos",
-    datePublished: "2026-10-28",
-    authorId: "juani",
-    published: true,
-    cover: "/images/blog/covers/como-pagarle-al-personal-de-eventos.webp",
-  },
-  {
-    slug: "cuanto-cuesta-un-sistema-de-gestion-a-medida",
-    datePublished: "2026-10-26",
-    authorId: "juani",
-    published: true,
-    cover: "/images/blog/covers/cuanto-cuesta-un-sistema-de-gestion-a-medida.webp",
-  },
-  {
-    slug: "como-organizar-una-empresa-de-eventos",
-    datePublished: "2026-10-23",
-    authorId: "juani",
-    published: true,
-    cover: "/images/blog/covers/como-organizar-una-empresa-de-eventos.webp",
-  },
-  {
-    slug: "como-saber-si-tu-negocio-necesita-pagina-web",
-    datePublished: "2026-10-18",
-    authorId: "juani",
-    published: true,
-    cover: "/images/blog/covers/como-saber-si-tu-negocio-necesita-pagina-web.webp",
-  },
-] as const satisfies readonly BlogPostEntry[];
-
-export type BlogPostMeta = (typeof blogPosts)[number];
-
-export type BlogSlug = BlogPostMeta["slug"];
+export type { BlogPostMeta, BlogSlug };
 
 function isPreviewEnvironment() {
   return process.env.VERCEL_ENV !== "production";
