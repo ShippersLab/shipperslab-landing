@@ -10,6 +10,12 @@ type BlogPostEntry = {
 
 const blogPosts = [
   {
+    slug: "como-pagarle-al-personal-de-eventos",
+    datePublished: "2026-10-28",
+    authorId: "juani",
+    published: true,
+  },
+  {
     slug: "cuanto-cuesta-un-sistema-de-gestion-a-medida",
     datePublished: "2026-10-26",
     authorId: "juani",
