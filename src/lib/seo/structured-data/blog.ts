@@ -1,5 +1,7 @@
 import type { Blog, BlogPosting, Graph } from "schema-dts";
 
+import { getBlogPostContent } from "@/content/blog/content";
+import type { BlogPostSection } from "@/content/blog/types";
 import { languageTags, type Locale } from "@/i18n/config";
 import { getMessages } from "@/i18n/get-messages";
 import { localizedUrl } from "@/i18n/paths";
@@ -37,7 +39,7 @@ export function buildBlogIndexStructuredData(lang: Locale): Graph {
     blogPost: getPublishedBlogPosts().map((post) => ({
       "@type": "BlogPosting",
       "@id": `${blogUrl}/${post.slug}#article`,
-      headline: page.posts[post.slug].title,
+      headline: getBlogPostContent(post.slug, lang).title,
       url: `${blogUrl}/${post.slug}`,
       image: `${site.url}${blogPostOpenGraphPath(post.slug, lang)}`,
       datePublished: post.datePublished,
@@ -53,21 +55,13 @@ export function buildBlogIndexStructuredData(lang: Locale): Graph {
   };
 }
 
-function firstSectionImage(sections: readonly object[]) {
-  for (const section of sections) {
-    if (!("image" in section)) continue;
-    const image = section.image;
-    if (!image || typeof image !== "object" || !("src" in image) || typeof image.src !== "string") {
-      continue;
-    }
-    return image.src;
-  }
-  return undefined;
+function firstSectionImage(sections: readonly BlogPostSection[]) {
+  return sections.find((section) => section.image)?.image?.src;
 }
 
 export function buildBlogPostStructuredData(slug: BlogSlug, lang: Locale): Graph {
   const messages = getMessages(lang);
-  const post = messages.blog.posts[slug];
+  const post = getBlogPostContent(slug, lang);
   const meta = getBlogPost(slug);
   const path = `${BLOG_PATH}/${slug}`;
   const url = localizedUrl(path, lang);
@@ -91,7 +85,7 @@ export function buildBlogPostStructuredData(slug: BlogSlug, lang: Locale): Graph
     meta?.published === true
       ? `${site.url}${blogPostOpenGraphPath(slug, lang)}`
       : `${site.url}/opengraph-image.jpg`;
-  const contentImage = firstSectionImage(post.sections as readonly object[]);
+  const contentImage = firstSectionImage(post.sections);
 
   const article: BlogPosting = {
     "@type": "BlogPosting",

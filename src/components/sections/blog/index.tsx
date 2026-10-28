@@ -10,10 +10,15 @@ import { PageHeader } from "@/components/ui/section/page-header";
 import { SkeletonImage } from "@/components/ui/skeleton/skeleton-image";
 import { LocalizedLink } from "@/i18n/link";
 import { useI18n } from "@/i18n/provider";
-import { type BlogPostMeta, getReadingMinutes } from "@/lib/blog";
+import type { BlogPostSummary } from "@/content/blog/types";
+import type { BlogPostMeta } from "@/lib/blog";
+
+type BlogIndexItem = BlogPostSummary & {
+  meta: BlogPostMeta;
+};
 
 type BlogIndexProps = {
-  posts: readonly BlogPostMeta[];
+  posts: readonly BlogIndexItem[];
 };
 
 export function BlogIndex({ posts }: BlogIndexProps) {
@@ -33,8 +38,7 @@ export function BlogIndex({ posts }: BlogIndexProps) {
           </p>
         ) : (
           <StaggerReveal as="ul" className="grid gap-12">
-            {posts.map((post) => {
-              const content = page.posts[post.slug];
+            {posts.map(({ meta: post, title, excerpt, readingMinutes }) => {
               return (
                 <li key={post.slug}>
                   <LocalizedLink
@@ -57,12 +61,10 @@ export function BlogIndex({ posts }: BlogIndexProps) {
                     <div className="flex flex-col items-start">
                       {post.published ? null : <DraftBadge label={page.draft} />}
                       <p className="text-sm text-muted">
-                        {page.readingTime.replace("{minutes}", String(getReadingMinutes(content)))}
+                        {page.readingTime.replace("{minutes}", String(readingMinutes))}
                       </p>
-                      <h2 className="mt-3 text-2xl text-balance text-ink sm:text-3xl">
-                        {content.title}
-                      </h2>
-                      <p className="mt-3 text-base leading-relaxed text-muted">{content.excerpt}</p>
+                      <h2 className="mt-3 text-2xl text-balance text-ink sm:text-3xl">{title}</h2>
+                      <p className="mt-3 text-base leading-relaxed text-muted">{excerpt}</p>
                       <span className="mt-5 inline-flex items-center gap-2 text-base font-medium text-ink underline decoration-accent/40 underline-offset-4 transition-[text-decoration-color] duration-200 ease-out group-hover:decoration-accent">
                         {page.readMore}
                         <ArrowRightIcon size={16} aria-hidden />

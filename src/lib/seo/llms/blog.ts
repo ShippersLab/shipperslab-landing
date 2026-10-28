@@ -1,3 +1,10 @@
+import { getBlogPostContent } from "@/content/blog/content";
+import type {
+  BlogPostContent,
+  BlogPostImage,
+  BlogPostSection,
+  BlogPostTable,
+} from "@/content/blog/types";
 import es from "@/i18n/messages/es.json";
 import {
   type BlogSlug,
@@ -18,15 +25,11 @@ import {
   renderCopy,
 } from "@/lib/seo/llms/copy";
 
-type BlogPost = (typeof es.blog.posts)[keyof typeof es.blog.posts];
-type BlogSection = BlogPost["sections"][number];
-type BlogTable = Extract<BlogSection, { table: unknown }>["table"];
-
 function escapeCell(value: string) {
   return value.replace(/\|/g, "\\|").replace(/\n/g, " ");
 }
 
-function markdownTable(table: BlogTable) {
+function markdownTable(table: BlogPostTable) {
   const header = `| | ${table.columns.map(escapeCell).join(" | ")} |`;
   const rule = `| --- | ${table.columns.map(() => "---").join(" | ")} |`;
   const rows = table.rows.map(
@@ -35,11 +38,11 @@ function markdownTable(table: BlogTable) {
   return [table.caption, header, rule, ...rows].join("\n");
 }
 
-function markdownImage(image: { src: string; alt: string; caption: string }) {
+function markdownImage(image: BlogPostImage) {
   return `![${image.alt}](${absoluteUrl(image.src)})\n\n${image.caption}`;
 }
 
-function buildBlogSection(section: BlogSection) {
+function buildBlogSection(section: BlogPostSection) {
   return joinBlocks([
     heading(3, section.title),
     ...section.paragraphs.map((paragraph) => renderCopy(paragraph)),
@@ -53,11 +56,8 @@ function buildBlogSection(section: BlogSection) {
   ]);
 }
 
-export function blogCopy(slug: BlogSlug): BlogPost {
-  if (!(slug in es.blog.posts)) {
-    throw new Error(`Missing Spanish copy for blog post ${slug}`);
-  }
-  return es.blog.posts[slug];
+export function blogCopy(slug: BlogSlug): BlogPostContent {
+  return getBlogPostContent(slug, "es");
 }
 
 export function buildBlogPost(slug: BlogSlug) {

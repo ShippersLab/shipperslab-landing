@@ -1,5 +1,6 @@
 import { buildWhatsAppUrl } from "@/lib/contact/message";
 import es from "@/i18n/messages/es.json";
+import { getBlogPostContent } from "@/content/blog/content";
 import { getPublishedBlogPosts } from "@/lib/blog";
 import { organizationSummary } from "@/lib/seo/shared/organization";
 import { plainText, singleLine } from "@/lib/seo/shared/text";
@@ -86,9 +87,9 @@ export function buildLlmsTxt() {
     `## Blog\n\n${getPublishedBlogPosts()
       .map((post) =>
         link(
-          es.blog.posts[post.slug].title,
+          getBlogPostContent(post.slug, "es").title,
           `${site.url}/blog/${post.slug}`,
-          `${es.blog.posts[post.slug].excerpt} (${post.datePublished})`,
+          `${getBlogPostContent(post.slug, "es").excerpt} (${post.datePublished})`,
         ),
       )
       .join("\n")}`,

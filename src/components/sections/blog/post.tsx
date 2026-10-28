@@ -7,6 +7,7 @@ import { Reveal } from "@/components/ui/animation/reveal";
 import { ArrowRightIcon } from "@/components/ui/icons";
 import { Container } from "@/components/ui/section/container";
 import { LocalizedLink } from "@/i18n/link";
+import type { BlogPostContent } from "@/content/blog/types";
 import { useI18n } from "@/i18n/provider";
 import {
   type BlogSlug,
@@ -18,12 +19,12 @@ import {
 
 type BlogPostProps = {
   slug: BlogSlug;
+  post: BlogPostContent;
 };
 
-export function BlogPost({ slug }: BlogPostProps) {
+export function BlogPost({ slug, post }: BlogPostProps) {
   const { locale, messages } = useI18n();
   const blog = messages.blog;
-  const post = blog.posts[slug];
   const meta = getBlogPost(slug);
   if (!meta) return null;
   const author = getBlogAuthor(slug);
@@ -46,7 +47,7 @@ export function BlogPost({ slug }: BlogPostProps) {
         />
 
         <Container className="w-full py-16 sm:py-20">
-          <BlogPostBody slug={slug} />
+          <BlogPostBody post={post} />
 
           <ServiceCta
             title={post.ctaTitle}
