@@ -13,7 +13,7 @@ const routes: { path: string; priority: number; lastModified?: string }[] = [
   { path: "/empecemos", priority: 0.9 },
   { path: "/como-trabajamos", priority: 0.8 },
   ...serviceRoutes.map((route) => ({ path: `/${route.slug}`, priority: 0.85 })),
-  { path: TIENDANUBE_PATH, priority: 0.8 },
+  { path: TIENDANUBE_PATH, priority: 0.85 },
   { path: "/eventos", priority: 0.8 },
   { path: "/blog", priority: 0.7 },
   ...getPublishedBlogPosts().map((post) => ({

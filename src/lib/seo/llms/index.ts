@@ -78,17 +78,18 @@ export function buildLlmsTxt() {
     `## Cómo trabajamos\n\n${bullets(comoTrabajamosSteps())}\n\nPreguntas frecuentes:\n\n${es.comoTrabajamos.faq.items
       .map((item) => `- ${item.question} ${item.answer}`)
       .join("\n")}\n\n${link(es.comoTrabajamos.navLabel, `${site.url}/como-trabajamos`)}`,
-    `## Servicios\n\n${services.join("\n")}`,
+    `## Servicios\n\n${[
+      ...services,
+      link(es.tiendanube.metaTitle, `${site.url}${TIENDANUBE_PATH}`, es.tiendanube.metaDescription),
+    ].join("\n")}`,
     ...serviceRoutes.map((route) => {
       const page = es.servicePages[route.slug];
       const items = page.faq.items.map((item) => `- ${item.question} ${item.answer}`);
       return `### ${page.navLabel}: preguntas frecuentes\n\n${items.join("\n")}`;
     }),
-    `### ${es.tiendanube.metaTitle}\n\n${link(
-      es.tiendanube.navLabel,
-      `${site.url}${TIENDANUBE_PATH}`,
-      es.tiendanube.metaDescription,
-    )}\n\n${es.tiendanube.faq.items.map((item) => `- ${item.question} ${item.answer}`).join("\n")}`,
+    `### ${es.tiendanube.navLabel}: preguntas frecuentes\n\n${es.tiendanube.faq.items
+      .map((item) => `- ${item.question} ${item.answer}`)
+      .join("\n")}`,
     `## Blog\n\n${getPublishedBlogPosts()
       .map((post) =>
         link(

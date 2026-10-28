@@ -44,7 +44,7 @@ function buildHomeServices() {
       heading(4, `[${service.title}](${canonical(href)})`),
       renderCopy(service.description),
       preview,
-      bullets(service.includes),
+      bullets(service.includes.map(renderCopy)),
       service.audience,
     ]);
   });
