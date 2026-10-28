@@ -1,0 +1,297 @@
+{
+  "title": "Cómo migrar de WooCommerce a Tiendanube sin perder posicionamiento",
+  "metaTitle": "Migrar de WooCommerce a Tiendanube sin perder posicionamiento",
+  "metaDescription": "Qué pasa al migrar de WooCommerce a Tiendanube: catálogo, variantes, redirecciones 301, DNS y correo, plan mayorista, pagos y medición.",
+  "excerpt": "Qué se puede pasar de WooCommerce a Tiendanube, qué hay que rehacer y cómo cuidar las URLs, el dominio y el correo.",
+  "answer": "Se puede migrar de WooCommerce a Tiendanube sin tirar el posicionamiento si el dominio sigue igual y cada URL vieja tiene una redirección 301 a la nueva. No hay una herramienta oficial: el CSV no sube imágenes y llega hasta 20.000 filas, una por variante. Los pedidos históricos y las contraseñas no migran.",
+  "intro": [
+    "WooCommerce guarda el catálogo, las URLs y el correo en el mismo dominio. Al pasar a Tiendanube, Google sigue mandando gente a esas direcciones viejas. Si no las conectás con las nuevas, el tráfico cae en un error.",
+    "Esta nota recorre qué se puede pasar, qué no, cómo quedan las variantes y las categorías, las redirecciones, el DNS sin romper el mail, el plan si vendés mayorista, los pagos y la medición. Si querés que lo hagamos, está en [desarrollo e integración con Tiendanube](/integraciones/tiendanube)."
+  ],
+  "sections": [
+    {
+      "title": "Qué migra y qué no",
+      "paragraphs": [
+        "Tiendanube no tiene una herramienta oficial para traer una tienda de WooCommerce. El importador CSV admite hasta 20.000 filas, una por variante, y no sube imágenes. Hay apps de pago, como MigraShop, que ayudan con el catálogo y no mencionan los pedidos históricos.",
+        "La vía que nos queda para un catálogo con fotos es un script propio contra la API de Tiendanube: carga nombre, precio, código, categorías e imágenes, y sirve para ordenar el catálogo en el mismo paso."
+      ],
+      "table": {
+        "caption": "Qué se puede pasar de WooCommerce a Tiendanube y qué hay que rehacer",
+        "columns": ["Qué pasa"],
+        "rows": [
+          {
+            "label": "Productos, precios y códigos",
+            "cells": ["Se cargan. Con el CSV, una fila por variante y sin fotos. Con la API, también las imágenes."]
+          },
+          {
+            "label": "Imágenes",
+            "cells": ["El importador CSV no las sube. Hay que cargarlas aparte."]
+          },
+          {
+            "label": "Categorías",
+            "cells": ["Se pueden pasar. Conviene unificar duplicados antes de publicarlas."]
+          },
+          {
+            "label": "Clientes",
+            "cells": ["Nombre y email se pueden cargar. La contraseña no viaja."]
+          },
+          {
+            "label": "Pedidos históricos",
+            "cells": ["No migran. El historial de ventas queda en WooCommerce."]
+          },
+          {
+            "label": "Contraseñas",
+            "cells": ["No migran. Quien tenía cuenta tiene que crear una nueva."]
+          },
+          {
+            "label": "URLs",
+            "cells": ["No se conservan solas. Cada dirección vieja necesita una redirección 301."]
+          }
+        ]
+      },
+      "closing": "Revisá una muestra después de cargar: precio, foto, código y categoría. Un catálogo grande no se controla producto por producto, y un error repetido se ve enseguida en la muestra."
+    },
+    {
+      "title": "Variantes y categorías",
+      "paragraphs": [
+        "En WooCommerce es común que cada talle o color sea un producto aparte, con el talle escrito en el nombre. En Tiendanube eso se ve como el mismo artículo repetido. Conviene agruparlo en un solo producto con variantes.",
+        "Las categorías duplicadas, por ejemplo el mismo nombre en mayúscula y en minúscula, o en singular y en plural, confunden el menú y parten la autoridad de la URL. Unificalas en un árbol más chico antes de publicar."
+      ],
+      "items": [
+        "Variantes. Una fila del CSV es una variante, no un producto. Si hoy cada talle es un producto, el importador los deja separados.",
+        "Agrupar. El script contra la API puede unir talles y colores en un solo producto mientras carga el catálogo.",
+        "Categorías. Pasá solo las que se usan y fusioná los duplicados. Validá el árbol antes de aplicarlo.",
+        "Nombres. Corregí errores de tipeo en el pase. Una URL nueva con el nombre viejo mal escrito no ayuda.",
+        "Fotos que faltan. Listalas. Sin imagen el producto vende menos y tiene menos chance de aparecer en Google."
+      ],
+      "closing": "Este orden del catálogo es el trabajo que más horas puede llevar. Conviene cotizarlo aparte de la carga, por tandas de categorías."
+    },
+    {
+      "title": "Redirecciones 301",
+      "paragraphs": [
+        "La redirección 301 le dice a Google, y a quien entra por un link viejo, que esa dirección ahora vive en otra. Sin ella, la URL indexada devuelve un error y el posicionamiento de esa página se pierde.",
+        "Tiendanube tiene redirecciones 301 nativas. La documentación pública muestra la carga de a una. En un catálogo grande, con una URL por producto más las de categorías y páginas, hay que confirmar si se pueden cargar en lote antes de cerrar el alcance. Si no se puede, el tiempo de carga cambia y hay que decirlo antes de empezar."
+      ],
+      "items": [
+        "Mapa de URLs. Una fila por producto, categoría y página: la dirección vieja y la nueva.",
+        "Misma intención. La URL de un producto tiene que caer en ese producto, no en el inicio.",
+        "Categorías y páginas. Contacto, preguntas frecuentes y las categorías que rankean también se redirigen.",
+        "Search Console. Después del lanzamiento, el sitio se da de alta, se envía el mapa del sitio y se miran los errores del primer mes.",
+        "Prueba. Abrí un puñado de URLs viejas, en el celular, y fijate que lleguen al producto nuevo."
+      ],
+      "link": {
+        "label": "Ver desarrollo e integración con Tiendanube",
+        "href": "/integraciones/tiendanube"
+      }
+    },
+    {
+      "title": "Dominio, DNS y el correo",
+      "paragraphs": [
+        "El dominio puede quedarse en el registrador donde ya está. Lo que cambia son los registros de la web, no los del correo. Si la web y el mail comparten el mismo servidor, tocar de más deja a la empresa sin mails.",
+        "Exportá la zona DNS completa antes del cambio. Si algo queda mal, esa copia es lo que permite volver atrás."
+      ],
+      "table": {
+        "caption": "Qué registro DNS se cambia al apuntar el dominio a Tiendanube y cuál no",
+        "columns": ["Qué hacer"],
+        "rows": [
+          {
+            "label": "Raíz, el dominio sin www",
+            "cells": ["Registros A hacia la tienda."]
+          },
+          {
+            "label": "www",
+            "cells": ["Un CNAME hacia la tienda."]
+          },
+          {
+            "label": "MX y el host de correo",
+            "cells": ["No se tocan. El mail tiene que seguir llegando."]
+          },
+          {
+            "label": "Zona completa",
+            "cells": ["Exportarla antes de cambiar nada."]
+          }
+        ]
+      },
+      "closing": "Si el correo vive en el mismo hosting que la web, ese hosting se sigue pagando. La otra opción es mudar el correo a un servicio como Google Workspace o Zoho, y eso es un trabajo aparte. Conviene decirlo como costo recurrente antes de apagar el hosting viejo."
+    },
+    {
+      "title": "Qué plan hace falta para vender mayorista",
+      "paragraphs": [
+        "El plan depende de si la tienda usa dominio propio y de si los mayoristas compran adentro, con su precio. Tiendanube actualiza las condiciones de cada plan. Acá va lo que habilita cada uno, sin los precios en pesos, que cambian seguido.",
+        "La tabla de precios mayoristas es nativa y está marcada como beta. Empieza en Impulso."
+      ],
+      "table": {
+        "caption": "Qué habilita cada plan de Tiendanube para dominio, mayorista y código del tema",
+        "columns": ["Dominio propio", "Mayorista", "Código del tema"],
+        "rows": [
+          {
+            "label": "Inicial",
+            "cells": [
+              "No. Queda en un subdominio mitiendanube.com.",
+              "No incluye tabla mayorista.",
+              "No. Solo el tema por defecto."
+            ]
+          },
+          {
+            "label": "Esencial",
+            "cells": [
+              "Sí, con dominio propio.",
+              "Sin tabla mayorista.",
+              "Sin acceso al código."
+            ]
+          },
+          {
+            "label": "Impulso",
+            "cells": [
+              "Sí, con dominio propio.",
+              "Una tabla mayorista.",
+              "Sí, se puede editar el tema."
+            ]
+          },
+          {
+            "label": "Escala",
+            "cells": [
+              "Sí, con dominio propio.",
+              "Hasta tres tablas mayoristas.",
+              "Sí, se puede editar el tema."
+            ]
+          }
+        ]
+      },
+      "items": [
+        "Inicial, además. Solo cobra con Pago Nube, no importa productos por planilla y no tiene envío personalizado por zona.",
+        "Impulso. El mayorista inicia sesión y ve su precio. Se le pueden asignar medios de pago y de envío, ocultar los precios a quien no entró y poner un mínimo de compra.",
+        "Límites de la tabla. No se sincroniza con un sistema de gestión. Las promociones y los cupones valen para el precio minorista. No hay un campo explícito de precio más IVA.",
+        "Pago anual. Tiene 25% de descuento y no pide permanencia mínima."
+      ]
+    },
+    {
+      "title": "Pagos y facturación con ARCA",
+      "paragraphs": [
+        "La elección del medio de pago cambia dos cosas: el porcentaje que cobra Tiendanube y si se puede facturar solo con una app de ARCA. Mercado Pago y Pago Nube cobran, además, su propia comisión por cada cobro.",
+        "Los porcentajes de Tiendanube son los que publica la plataforma y los puede actualizar. El de un medio externo se calcula sobre las ventas del mes anterior."
+      ],
+      "table": {
+        "caption": "Pago Nube y Mercado Pago: porcentaje de Tiendanube y facturación automática con ARCA",
+        "columns": ["Pago Nube", "Mercado Pago u otro medio externo"],
+        "rows": [
+          {
+            "label": "Porcentaje de Tiendanube",
+            "cells": [
+              "0% en los planes pagos.",
+              "2% en Esencial, 1% en Impulso y 0,7% en Escala."
+            ]
+          },
+          {
+            "label": "Facturación automática con ARCA",
+            "cells": [
+              "No es compatible.",
+              "Sí, con apps como Contabilium, Facturante, Xubio o Tango Factura."
+            ]
+          },
+          {
+            "label": "Comisión del medio de pago",
+            "cells": [
+              "La cobra Pago Nube, aparte del plan.",
+              "La cobra Mercado Pago, aparte del plan."
+            ]
+          }
+        ]
+      },
+      "closing": "Si necesitás la factura electrónica automática, el camino es Mercado Pago u otro medio externo, y aceptás el porcentaje del plan. Si preferís no pagar ese porcentaje, Pago Nube no factura solo."
+    },
+    {
+      "title": "Envíos",
+      "paragraphs": [
+        "Tiendanube trae medios de envío para Argentina y deja sumar apps. El envío personalizado se puede limitar por provincia o por distancia. El checkout, donde el cliente elige el envío, no se puede rediseñar.",
+        "Definí los medios antes de lanzar, y si los mayoristas usan otros. La tabla mayorista permite asignarles envíos propios."
+      ],
+      "items": [
+        "Envío Nube. Lo opera Andreani.",
+        "Correo Argentino. Integración disponible en la tienda.",
+        "Apps. Zipnova o Envíopack, entre otras, si hacen falta más opciones.",
+        "Retiro. Se puede ofrecer retiro en el local.",
+        "Por zona. El envío personalizado se limita por provincia o por distancia."
+      ]
+    },
+    {
+      "title": "Medición para Meta y Google",
+      "paragraphs": [
+        "Tiendanube manda de forma nativa el Pixel y la API de Conversiones de Meta: vista de producto, carrito, inicio de pago y compra. El catálogo se puede sincronizar para anuncios. Google Analytics 4, Search Console y la integración con Google Shopping y Merchant Center se suman al lado.",
+        "Dos límites conviene conocerlos antes de pautar. Instagram y Facebook Shopping no están disponibles en Argentina desde 2023: no se puede ofrecer tienda ni etiquetar productos en Instagram. Los anuncios de catálogo sí. Y la compra no aparece en las herramientas de prueba de Meta; puede tardar hasta 24 horas. Se valida con una compra real de prueba."
+      ],
+      "items": [
+        "No dupliques eventos. Si Google Tag Manager manda la misma compra que ya manda Tiendanube, las conversiones se cuentan dos veces.",
+        "Tag Manager, para lo otro. Sirve para eventos que Tiendanube no envía, como un clic a WhatsApp.",
+        "Dominio en Meta. Verificá el dominio en el Business Manager junto con el Pixel y la API de Conversiones.",
+        "WhatsApp. Si los mayoristas consultan por ahí, medí ese clic. Muchas ventas no pasan por el checkout.",
+        "UTM. Una convención simple en los links de cada anuncio deja ver cuál generó la venta."
+      ]
+    }
+  ],
+  "checklist": {
+    "title": "Checklist de la migración",
+    "intro": "Antes de apuntar el dominio, repasá esto:",
+    "items": [
+      "¿El catálogo está exportado con nombre, precio, código, categorías e imágenes?",
+      "¿Los talles y colores que hoy son productos sueltos van a quedar como variantes?",
+      "¿Las categorías duplicadas ya están unificadas?",
+      "¿Hay un mapa de URLs viejas a nuevas para productos, categorías y páginas?",
+      "¿Está confirmado si las redirecciones 301 se pueden cargar en lote?",
+      "¿La zona DNS está exportada y los MX del correo quedaron fuera del cambio?",
+      "¿El plan alcanza para dominio propio y, si hace falta, para la tabla mayorista?",
+      "¿Está elegido Mercado Pago, con factura automática, o Pago Nube, sin porcentaje de Tiendanube?",
+      "¿El Pixel, la API de Conversiones y GA4 están conectados, sin repetir los mismos eventos en Tag Manager?",
+      "¿Una compra de prueba recorrió el pago, el envío y la factura?"
+    ],
+    "closing": "Con eso el dominio puede apuntar a la tienda nueva y las URLs viejas dejan de caer en un error. El alcance de cada ítem, y el precio, se escriben antes de arrancar."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "question": "¿Hay una herramienta oficial para migrar de WooCommerce a Tiendanube?",
+        "answer": "No. El importador CSV admite hasta 20.000 filas, una por variante, y no sube imágenes. Apps de pago como MigraShop ayudan con el catálogo y no mencionan los pedidos. Para pasar también las fotos, y para agrupar variantes, hace falta un script contra la API."
+      },
+      {
+        "question": "¿Se pierden las posiciones de Google al migrar?",
+        "answer": "Se pierden las de las URLs que quedan en un error. Con el mismo dominio y una redirección 301 de cada URL vieja a la nueva, quien entra desde Google llega al producto. Google decide si mantiene la posición. No prometemos un puesto."
+      },
+      {
+        "question": "¿Qué plan necesito para precios mayoristas?",
+        "answer": "La tabla mayorista nativa empieza en Impulso y está en beta. Escala llega a tres tablas. Esencial no la incluye. El plan Inicial no sirve para una tienda con dominio propio: queda en un subdominio, solo cobra con Pago Nube y no importa por planilla."
+      },
+      {
+        "question": "¿El correo deja de andar si cambio el dominio a Tiendanube?",
+        "answer": "No, si solo se cambian los registros de la web. La raíz va con registros A y www con un CNAME. Los MX y el host de correo no se tocan. Si el mail vive en el mismo hosting, ese hosting se sigue pagando, salvo que el correo se mude."
+      },
+      {
+        "question": "¿Puedo vender por Instagram Shopping en Argentina?",
+        "answer": "No desde 2023. Instagram y Facebook Shopping no están disponibles en Argentina, así que no se puede etiquetar productos ni abrir la tienda en Instagram. Sí se pueden pautar anuncios de catálogo, con el Pixel y la API de Conversiones."
+      }
+    ]
+  },
+  "related": {
+    "title": "Seguí leyendo",
+    "links": [
+      {
+        "label": "Desarrollo e integración con Tiendanube",
+        "href": "/integraciones/tiendanube",
+        "description": "Migración del catálogo, mayorista, tema, stock con tu sistema y medición lista para pautar."
+      },
+      {
+        "label": "Integraciones",
+        "href": "/integraciones",
+        "description": "Mercado Pago, Tiendanube, facturación de ARCA, WhatsApp y planillas, conectados entre sí."
+      },
+      {
+        "label": "Sistemas de gestión",
+        "href": "/sistemas-de-gestion",
+        "description": "Cuando el precio mayorista tiene que salir de tu sistema, o la tienda ya no alcanza."
+      }
+    ]
+  },
+  "ctaTitle": "¿Vas a pasar la tienda a Tiendanube?",
+  "ctaDescription": "Contanos cuántos productos tenés, si vendés mayorista y quién administra el dominio y el correo. Te respondemos con alcance y precio por escrito.",
+  "ctaButton": "Contanos tu problema"
+}

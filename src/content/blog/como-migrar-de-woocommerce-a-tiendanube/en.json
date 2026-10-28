@@ -1,0 +1,297 @@
+{
+  "title": "How to migrate from WooCommerce to Tiendanube without losing rankings",
+  "metaTitle": "Migrate from WooCommerce to Tiendanube without losing rankings",
+  "metaDescription": "What moves from WooCommerce to Tiendanube: catalog, variants, 301 redirects, DNS and email, the wholesale plan, payments and measurement.",
+  "excerpt": "What can move from WooCommerce to Tiendanube, what has to be rebuilt, and how to protect URLs, the domain and email.",
+  "answer": "You can migrate from WooCommerce to Tiendanube without throwing rankings away if the domain stays the same and every old URL has a 301 redirect to the new one. There is no official tool: the CSV importer does not upload images and stops at 20,000 rows, one per variant. Historical orders and passwords do not migrate.",
+  "intro": [
+    "WooCommerce keeps the catalog, the URLs and email on the same domain. After the move to Tiendanube, Google still sends people to those old addresses. If you do not connect them to the new ones, that traffic lands on an error.",
+    "This note covers what can move, what cannot, how variants and categories should look, redirects, DNS without breaking email, the plan if you sell wholesale, payments and measurement. If you want us to do it, that work is in [Tiendanube development and integration](/integraciones/tiendanube)."
+  ],
+  "sections": [
+    {
+      "title": "What migrates and what does not",
+      "paragraphs": [
+        "Tiendanube has no official tool to bring in a WooCommerce store. The CSV importer allows up to 20,000 rows, one per variant, and does not upload images. Paid apps such as MigraShop help with the catalog and do not mention historical orders.",
+        "The route that still carries a catalog with photos is our own script against the Tiendanube API: it loads name, price, code, categories and images, and it can tidy the catalog in the same pass."
+      ],
+      "table": {
+        "caption": "What can move from WooCommerce to Tiendanube and what has to be redone",
+        "columns": ["What happens"],
+        "rows": [
+          {
+            "label": "Products, prices and codes",
+            "cells": ["They load. With CSV, one row per variant and no photos. With the API, images too."]
+          },
+          {
+            "label": "Images",
+            "cells": ["The CSV importer does not upload them. They have to be loaded separately."]
+          },
+          {
+            "label": "Categories",
+            "cells": ["They can move. Merge duplicates before you publish them."]
+          },
+          {
+            "label": "Customers",
+            "cells": ["Name and email can be loaded. The password does not travel."]
+          },
+          {
+            "label": "Historical orders",
+            "cells": ["They do not migrate. Sales history stays in WooCommerce."]
+          },
+          {
+            "label": "Passwords",
+            "cells": ["They do not migrate. Anyone with an account has to create a new one."]
+          },
+          {
+            "label": "URLs",
+            "cells": ["They are not kept on their own. Each old address needs a 301 redirect."]
+          }
+        ]
+      },
+      "closing": "Check a sample after the load: price, photo, code and category. A large catalog is not reviewed product by product, and a repeated mistake shows up quickly in the sample."
+    },
+    {
+      "title": "Variants and categories",
+      "paragraphs": [
+        "On WooCommerce it is common for each size or color to be its own product, with the size written in the name. On Tiendanube that looks like the same item repeated. It is worth grouping them into one product with variants.",
+        "Duplicate categories, the same name in different case or in singular and plural, confuse the menu and split the URL. Merge them into a smaller tree before you publish."
+      ],
+      "items": [
+        "Variants. One CSV row is a variant, not a product. If each size is a product today, the importer leaves them separate.",
+        "Grouping. The script against the API can join sizes and colors into one product while it loads the catalog.",
+        "Categories. Move only the ones in use and merge the duplicates. Agree the tree before applying it.",
+        "Names. Fix typos in the pass. A new URL that keeps a misspelled name does not help.",
+        "Missing photos. List them. A product without an image sells less and has a smaller chance of showing up in Google."
+      ],
+      "closing": "Tidying the catalog is the part that can take the most hours. It is worth quoting it apart from the load, in batches of categories."
+    },
+    {
+      "title": "301 redirects",
+      "paragraphs": [
+        "A 301 redirect tells Google, and anyone following an old link, that the address now lives somewhere else. Without it, the indexed URL returns an error and that page's ranking is lost.",
+        "Tiendanube has native 301 redirects. The public docs show them loaded one at a time. On a large catalog, with one URL per product plus categories and pages, confirm whether they can be loaded in bulk before you close the scope. If they cannot, the loading time changes and that should be said before the work starts."
+      ],
+      "items": [
+        "URL map. One row per product, category and page: the old address and the new one.",
+        "Same intent. A product URL should land on that product, not on the home page.",
+        "Categories and pages. Contact, the FAQ and the categories that rank get redirects too.",
+        "Search Console. After launch, add the site, submit the sitemap and watch the first month of errors.",
+        "A check. Open a handful of old URLs, on a phone, and see that they reach the new product."
+      ],
+      "link": {
+        "label": "See Tiendanube development and integration",
+        "href": "/integraciones/tiendanube"
+      }
+    },
+    {
+      "title": "Domain, DNS and email",
+      "paragraphs": [
+        "The domain can stay with the registrar you already use. What changes are the website records, not the email records. If the site and the mail share a server, changing too much leaves the company without email.",
+        "Export the full DNS zone before the change. If something goes wrong, that copy is what lets you roll back."
+      ],
+      "table": {
+        "caption": "Which DNS record changes when the domain points at Tiendanube, and which does not",
+        "columns": ["What to do"],
+        "rows": [
+          {
+            "label": "Root, the domain without www",
+            "cells": ["A records pointing at the store."]
+          },
+          {
+            "label": "www",
+            "cells": ["A CNAME pointing at the store."]
+          },
+          {
+            "label": "MX and the mail host",
+            "cells": ["Leave them alone. Email has to keep arriving."]
+          },
+          {
+            "label": "The full zone",
+            "cells": ["Export it before changing anything."]
+          }
+        ]
+      },
+      "closing": "If email lives on the same hosting as the website, that hosting stays as a cost. The other option is to move email to a service such as Google Workspace or Zoho, and that is separate work. Say it as a recurring cost before you turn the old hosting off."
+    },
+    {
+      "title": "Which plan you need to sell wholesale",
+      "paragraphs": [
+        "The plan depends on whether the store uses its own domain and whether wholesalers buy inside it, at their price. Tiendanube updates each plan's conditions. Here is what each one enables, without the peso prices, which change often.",
+        "The wholesale price list is native and marked as beta. It starts on Impulso."
+      ],
+      "table": {
+        "caption": "What each Tiendanube plan enables for domain, wholesale and theme code",
+        "columns": ["Own domain", "Wholesale", "Theme code"],
+        "rows": [
+          {
+            "label": "Inicial",
+            "cells": [
+              "No. It stays on a mitiendanube.com subdomain.",
+              "No wholesale list.",
+              "No. Default theme only."
+            ]
+          },
+          {
+            "label": "Esencial",
+            "cells": [
+              "Yes, on your own domain.",
+              "No wholesale list.",
+              "No access to the code."
+            ]
+          },
+          {
+            "label": "Impulso",
+            "cells": [
+              "Yes, on your own domain.",
+              "One wholesale list.",
+              "Yes, the theme can be edited."
+            ]
+          },
+          {
+            "label": "Escala",
+            "cells": [
+              "Yes, on your own domain.",
+              "Up to three wholesale lists.",
+              "Yes, the theme can be edited."
+            ]
+          }
+        ]
+      },
+      "items": [
+        "Inicial, also. It only collects with Pago Nube, does not import products from a spreadsheet and has no custom shipping by zone.",
+        "Impulso. The wholesaler signs in and sees their price. You can assign payment and shipping methods, hide prices from anyone signed out and set a minimum order.",
+        "Limits of the list. It does not sync from a management system. Promotions and coupons apply to the retail price. There is no explicit field for a price plus VAT.",
+        "Annual payment. It has a 25% discount and no minimum term."
+      ]
+    },
+    {
+      "title": "Payments and ARCA invoicing",
+      "paragraphs": [
+        "The payment method changes two things: the percentage Tiendanube charges and whether an ARCA app can invoice on its own. Mercado Pago and Pago Nube also charge their own fee on each payment.",
+        "Tiendanube's percentages are what the platform publishes, and it can update them. The fee on an external method is calculated on the previous month's sales."
+      ],
+      "table": {
+        "caption": "Pago Nube and Mercado Pago: Tiendanube's percentage and automatic ARCA invoicing",
+        "columns": ["Pago Nube", "Mercado Pago or another external method"],
+        "rows": [
+          {
+            "label": "Tiendanube's percentage",
+            "cells": [
+              "0% on the paid plans.",
+              "2% on Esencial, 1% on Impulso and 0.7% on Escala."
+            ]
+          },
+          {
+            "label": "Automatic ARCA invoicing",
+            "cells": [
+              "Not compatible.",
+              "Yes, with apps such as Contabilium, Facturante, Xubio or Tango Factura."
+            ]
+          },
+          {
+            "label": "The payment method's fee",
+            "cells": [
+              "Pago Nube charges it, on top of the plan.",
+              "Mercado Pago charges it, on top of the plan."
+            ]
+          }
+        ]
+      },
+      "closing": "If you need the electronic invoice to go out on its own, the path is Mercado Pago or another external method, and you accept the plan's percentage. If you would rather not pay that percentage, Pago Nube does not invoice on its own."
+    },
+    {
+      "title": "Shipping",
+      "paragraphs": [
+        "Tiendanube includes shipping methods for Argentina and lets you add apps. Custom shipping can be limited by province or by distance. Checkout, where the customer picks shipping, cannot be redesigned.",
+        "Choose the methods before launch, and whether wholesalers use different ones. The wholesale list lets you assign them their own shipping."
+      ],
+      "items": [
+        "Envío Nube. Operated with Andreani.",
+        "Correo Argentino. Available as an integration in the store.",
+        "Apps. Zipnova or Envíopack, among others, if you need more options.",
+        "Pickup. In-store pickup can be offered.",
+        "By zone. Custom shipping is limited by province or by distance."
+      ]
+    },
+    {
+      "title": "Measurement for Meta and Google",
+      "paragraphs": [
+        "Tiendanube sends the Meta Pixel and Conversions API natively: product view, cart, checkout and purchase. The catalog can be synced for ads. Google Analytics 4, Search Console and the integration with Google Shopping and Merchant Center sit beside that.",
+        "Two limits are worth knowing before you run ads. Instagram and Facebook Shopping have not been available in Argentina since 2023: you cannot offer a shop or tag products on Instagram. Catalog ads still work. And the purchase does not show up in Meta's test tools; it can take up to 24 hours. Validate it with a real test order."
+      ],
+      "items": [
+        "Do not duplicate events. If Google Tag Manager sends the same purchase Tiendanube already sends, conversions are counted twice.",
+        "Tag Manager, for the rest. Use it for events Tiendanube does not send, such as a click to WhatsApp.",
+        "Domain in Meta. Verify the domain in Business Manager along with the Pixel and the Conversions API.",
+        "WhatsApp. If wholesalers ask there, measure that click. Many sales never reach checkout.",
+        "UTM. A simple convention on each ad's links shows which one produced the sale."
+      ]
+    }
+  ],
+  "checklist": {
+    "title": "Migration checklist",
+    "intro": "Before you point the domain, go through this:",
+    "items": [
+      "Is the catalog exported with name, price, code, categories and images?",
+      "Will sizes and colors that are separate products today become variants?",
+      "Are duplicate categories already merged?",
+      "Is there a map of old URLs to new ones for products, categories and pages?",
+      "Is it confirmed whether 301 redirects can be loaded in bulk?",
+      "Is the DNS zone exported, with the email MX records left out of the change?",
+      "Does the plan cover your own domain and, if you need it, the wholesale list?",
+      "Is the choice Mercado Pago, with automatic invoicing, or Pago Nube, with no Tiendanube percentage?",
+      "Are the Pixel, the Conversions API and GA4 connected, without repeating the same events in Tag Manager?",
+      "Did a test purchase go through payment, shipping and the invoice?"
+    ],
+    "closing": "With that, the domain can point at the new store and the old URLs stop landing on an error. The scope of each item, and the price, are written down before the work starts."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "question": "Is there an official tool to migrate from WooCommerce to Tiendanube?",
+        "answer": "No. The CSV importer allows up to 20,000 rows, one per variant, and does not upload images. Paid apps such as MigraShop help with the catalog and do not mention orders. To bring the photos as well, and to group variants, you need a script against the API."
+      },
+      {
+        "question": "Do Google rankings disappear in the migration?",
+        "answer": "The rankings of URLs that land on an error do. With the same domain and a 301 redirect from each old URL to the new one, someone arriving from Google reaches the product. Google decides whether the position stays. We do not promise a ranking."
+      },
+      {
+        "question": "Which plan do I need for wholesale prices?",
+        "answer": "The native wholesale list starts on Impulso and is in beta. Escala goes up to three lists. Esencial does not include it. The Inicial plan is not enough for a store on your own domain: it stays on a subdomain, only collects with Pago Nube and does not import from a spreadsheet."
+      },
+      {
+        "question": "Does email stop working if the domain points at Tiendanube?",
+        "answer": "Not if only the website records change. The root uses A records and www uses a CNAME. The MX records and the mail host stay as they are. If email lives on the same hosting, that hosting continues, unless email moves."
+      },
+      {
+        "question": "Can I sell with Instagram Shopping in Argentina?",
+        "answer": "Not since 2023. Instagram and Facebook Shopping are not available in Argentina, so you cannot tag products or open the shop on Instagram. You can still run catalog ads, with the Pixel and the Conversions API."
+      }
+    ]
+  },
+  "related": {
+    "title": "Keep reading",
+    "links": [
+      {
+        "label": "Tiendanube development and integration",
+        "href": "/integraciones/tiendanube",
+        "description": "Catalog migration, wholesale, a theme, stock synced with your system and measurement ready for ads."
+      },
+      {
+        "label": "Integrations",
+        "href": "/integraciones",
+        "description": "Mercado Pago, Tiendanube, ARCA invoicing, WhatsApp and spreadsheets, connected to each other."
+      },
+      {
+        "label": "Management systems",
+        "href": "/sistemas-de-gestion",
+        "description": "When the wholesale price has to come from your system, or the store is no longer enough."
+      }
+    ]
+  },
+  "ctaTitle": "Moving the store to Tiendanube?",
+  "ctaDescription": "Tell us how many products you have, whether you sell wholesale and who manages the domain and email. We reply with scope and price in writing.",
+  "ctaButton": "Tell us your problem"
+}

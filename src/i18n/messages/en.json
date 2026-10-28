@@ -1140,7 +1140,7 @@
         {
           "id": "stock",
           "title": "Migrate WooCommerce to Tiendanube",
-          "body": "Your whole catalog moves to Tiendanube: products, prices, SKUs, categories and images, with variants grouped by size or color. We move it with our own script, and order history stays in WooCommerce unless we add it to the scope."
+          "body": "Your whole catalog moves to Tiendanube: products, prices, SKUs, categories and images, with variants grouped by size or color. We move it with our own script, and order history stays in WooCommerce unless we add it to the scope. The step by step for keeping rankings is in [How to migrate from WooCommerce to Tiendanube](/blog/como-migrar-de-woocommerce-a-tiendanube)."
         },
         {
           "id": "wholesale",

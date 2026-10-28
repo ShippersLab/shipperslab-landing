@@ -1,5 +1,7 @@
 import "server-only";
 
+import comoMigrarDeWoocommerceATiendanubeEn from "@/content/blog/como-migrar-de-woocommerce-a-tiendanube/en.json";
+import comoMigrarDeWoocommerceATiendanubeEs from "@/content/blog/como-migrar-de-woocommerce-a-tiendanube/es.json";
 import comoOrganizarUnaEmpresaDeEventosEn from "@/content/blog/como-organizar-una-empresa-de-eventos/en.json";
 import comoOrganizarUnaEmpresaDeEventosEs from "@/content/blog/como-organizar-una-empresa-de-eventos/es.json";
 import comoPagarleAlPersonalDeEventosEn from "@/content/blog/como-pagarle-al-personal-de-eventos/en.json";
@@ -14,6 +16,10 @@ import type { Locale } from "@/i18n/config";
 import { getReadingMinutes } from "@/lib/blog";
 
 const blogPostContent = {
+  "como-migrar-de-woocommerce-a-tiendanube": {
+    es: comoMigrarDeWoocommerceATiendanubeEs,
+    en: comoMigrarDeWoocommerceATiendanubeEn,
+  },
   "como-pagarle-al-personal-de-eventos": {
     es: comoPagarleAlPersonalDeEventosEs,
     en: comoPagarleAlPersonalDeEventosEn,
