@@ -9,7 +9,7 @@ import { Container } from "@/components/ui/section/container";
 import { buildWhatsAppUrl } from "@/lib/contact/message";
 import { LocalizedLink } from "@/i18n/link";
 import { useI18n } from "@/i18n/provider";
-import { serviceRoutes } from "@/lib/services";
+import { serviceRoutes, TIENDANUBE_PATH } from "@/lib/services";
 import { site } from "@/lib/site";
 
 const YEAR = new Date().getFullYear();
@@ -56,6 +56,11 @@ export function Footer() {
                 </LocalizedLink>
               </li>
             ))}
+            <li>
+              <LocalizedLink href={TIENDANUBE_PATH} className={LINK_CLASS}>
+                {footer.links.tiendanube}
+              </LocalizedLink>
+            </li>
           </FooterColumn>
 
           <FooterColumn title={footer.exploreTitle}>

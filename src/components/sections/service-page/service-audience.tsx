@@ -27,7 +27,7 @@ export function ServiceAudience({ intro, items }: ServiceAudienceProps) {
               <h3 className="font-sans text-base font-normal tracking-normal text-ink">
                 {item.title}
               </h3>
-              <p className="text-sm leading-relaxed text-muted">{item.body}</p>
+              <p className="text-base leading-relaxed text-muted">{item.body}</p>
             </li>
           );
         })}

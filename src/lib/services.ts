@@ -19,6 +19,10 @@ export const serviceRoutes = [
 
 export type ServiceSlug = (typeof serviceRoutes)[number]["slug"];
 
+export const TIENDANUBE_PATH = "/integraciones/tiendanube";
+
+export type ServicePageKey = ServiceSlug | "tiendanube";
+
 function getServiceRouteById(id: string) {
   return serviceRoutes.find((route) => route.id === id);
 }

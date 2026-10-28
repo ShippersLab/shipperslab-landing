@@ -4,7 +4,7 @@ import { getBlogPostContent } from "@/content/blog/content";
 import { getPublishedBlogPosts } from "@/lib/blog";
 import { organizationSummary } from "@/lib/seo/shared/organization";
 import { plainText, singleLine } from "@/lib/seo/shared/text";
-import { getServiceHref, serviceRoutes } from "@/lib/services";
+import { getServiceHref, serviceRoutes, TIENDANUBE_PATH } from "@/lib/services";
 import { site, team } from "@/lib/site";
 
 const SUMMARY =
@@ -78,12 +78,18 @@ export function buildLlmsTxt() {
     `## Cómo trabajamos\n\n${bullets(comoTrabajamosSteps())}\n\nPreguntas frecuentes:\n\n${es.comoTrabajamos.faq.items
       .map((item) => `- ${item.question} ${item.answer}`)
       .join("\n")}\n\n${link(es.comoTrabajamos.navLabel, `${site.url}/como-trabajamos`)}`,
-    `## Servicios\n\n${services.join("\n")}`,
+    `## Servicios\n\n${[
+      ...services,
+      link(es.tiendanube.metaTitle, `${site.url}${TIENDANUBE_PATH}`, es.tiendanube.metaDescription),
+    ].join("\n")}`,
     ...serviceRoutes.map((route) => {
       const page = es.servicePages[route.slug];
       const items = page.faq.items.map((item) => `- ${item.question} ${item.answer}`);
       return `### ${page.navLabel}: preguntas frecuentes\n\n${items.join("\n")}`;
     }),
+    `### ${es.tiendanube.navLabel}: preguntas frecuentes\n\n${es.tiendanube.faq.items
+      .map((item) => `- ${item.question} ${item.answer}`)
+      .join("\n")}`,
     `## Blog\n\n${getPublishedBlogPosts()
       .map((post) =>
         link(

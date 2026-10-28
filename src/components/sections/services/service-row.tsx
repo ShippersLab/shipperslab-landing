@@ -8,6 +8,7 @@ import { SERVICE_FIGURES } from "@/components/sections/services/figures";
 import { ArcBandsBackground } from "@/components/ui/background/arc-bands-background";
 import { TextureButton } from "@/components/ui/button/texture-button";
 import { CheckIcon, DashboardIcon, GlobeIcon, PlugIcon, RobotIcon } from "@/components/ui/icons";
+import { INLINE_LINK_CLASS, InlineText } from "@/components/ui/inline-text";
 import { LocalizedLink } from "@/i18n/link";
 import { useI18n } from "@/i18n/provider";
 import { BLUR_EASE } from "@/lib/animation/motion";
@@ -124,7 +125,9 @@ export function ServiceRow({ index, service }: ServiceRowProps) {
               <span className="inline-flex size-5 shrink-0 items-center justify-center rounded-full bg-accent/15 text-accent">
                 <CheckIcon className="size-3" />
               </span>
-              {item}
+              <span>
+                <InlineText className={INLINE_LINK_CLASS} text={item} />
+              </span>
             </li>
           ))}
         </motion.ul>

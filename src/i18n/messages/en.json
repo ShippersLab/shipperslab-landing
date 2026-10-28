@@ -104,7 +104,11 @@
         "id": "integrations",
         "title": "Integrations with what you already use",
         "description": "Enter something once and it shows up where it should, with no tool switching. We connect WhatsApp, spreadsheets and invoicing.",
-        "includes": ["WhatsApp and sheets connected", "Invoicing without double entry"],
+        "includes": [
+          "WhatsApp and sheets connected",
+          "Invoicing without double entry",
+          "[Tiendanube development](/integraciones/tiendanube)"
+        ],
         "audience": "Teams juggling several tools"
       }
     ],
@@ -252,6 +256,7 @@
       "webs-y-catalogos": "Websites and catalogs",
       "bots-con-ia": "AI bots",
       "integraciones": "Integrations",
+      "tiendanube": "Tiendanube development",
       "casos": "Work",
       "eventos": "Events",
       "empecemos": "Get started",
@@ -957,7 +962,7 @@
       "lead": "We connect Mercado Pago, Tiendanube, ARCA invoicing, WhatsApp and your spreadsheets to each other. Enter something once and it shows up where it should, without tearing down what already works.",
       "covers": {
         "title": "What we solve.",
-        "body": "Data that moves by hand from one place to another: an order that comes in on WhatsApp and gets typed into a spreadsheet, a sale you collect in one place and invoice in another. We connect those pieces so the data is entered once and nobody has to copy it.",
+        "body": "Data that moves by hand from one place to another: an order that comes in on WhatsApp and gets typed into a spreadsheet, a sale you collect in one place and invoice in another. We connect those pieces so the data is entered once and nobody has to copy it. If you sell online, we also do [Tiendanube development](/integraciones/tiendanube): migration from WooCommerce, wholesale prices and connected stock.",
         "items": [
           {
             "id": "whatsapp",
@@ -996,7 +1001,7 @@
           {
             "id": "tiendanube",
             "title": "Tiendanube: stock and orders",
-            "body": "If you sell online and in a physical shop, there should be a single stock. We sync Tiendanube inventory with your spreadsheet or system and make each new order reach whoever prepares it, without checking the dashboard."
+            "body": "If you sell online and in a physical shop, there should be a single stock. We sync Tiendanube inventory with your spreadsheet or system and make each new order reach whoever prepares it, without checking the dashboard. To set up the store, migrate from WooCommerce or configure wholesale prices, the detail is in [Tiendanube development and integration](/integraciones/tiendanube)."
           },
           {
             "id": "arca",
@@ -1084,6 +1089,183 @@
       "ctaButton": "Tell us your problem"
     },
     "processLink": "See how we work"
+  },
+  "tiendanube": {
+    "navLabel": "Tiendanube",
+    "metaTitle": "Tiendanube development and migration",
+    "metaDescription": "We build your Tiendanube store: migrate from WooCommerce, set up wholesale prices and connect stock to your management system. Scope and price in writing.",
+    "h1": "Tiendanube development and integration.",
+    "lead": "We migrate the catalog from WooCommerce, set up wholesale and retail prices, and connect stock, invoicing and measurement. The domain stays yours.",
+    "covers": {
+      "title": "What we solve.",
+      "body": "A WooCommerce store that no longer holds up, wholesale orders put together by hand over WhatsApp, or stock entered in two places that never match. We sort it out on Tiendanube, with your domain and email left as they are. Scope and price in writing before we start.",
+      "items": [
+        {
+          "id": "catalog",
+          "label": "Catalog"
+        },
+        {
+          "id": "wholesale",
+          "label": "Wholesale"
+        },
+        {
+          "id": "theme",
+          "label": "Theme"
+        },
+        {
+          "id": "stock",
+          "label": "Stock and prices"
+        },
+        {
+          "id": "arca",
+          "label": "ARCA invoicing"
+        },
+        {
+          "id": "measurement",
+          "label": "Measurement"
+        },
+        {
+          "id": "domain",
+          "label": "Domain and email"
+        },
+        {
+          "id": "redirect",
+          "label": "301 redirects"
+        }
+      ]
+    },
+    "tools": {
+      "title": "How we solve it.",
+      "items": [
+        {
+          "id": "stock",
+          "title": "Migrate WooCommerce to Tiendanube",
+          "body": "Your whole catalog moves to Tiendanube: products, prices, SKUs, categories and images, with variants grouped by size or color. We move it with our own script, and order history stays in WooCommerce unless we add it to the scope."
+        },
+        {
+          "id": "wholesale",
+          "title": "Wholesale prices",
+          "body": "Your wholesale buyers log in and see their price, with their own payment and shipping methods and a minimum order. We set it up with Tiendanube's native wholesale price list."
+        },
+        {
+          "id": "theme",
+          "title": "The store theme",
+          "body": "Your store looks like your brand, with an adapted theme or a custom one. Tiendanube hosts the checkout and we don't redesign it."
+        },
+        {
+          "id": "sync",
+          "title": "Management system and invoicing",
+          "body": "Stock and retail prices update on their own between the store and systems such as Tango or Contabilium. Each sale is invoiced with ARCA through an invoicing app connected to the store."
+        },
+        {
+          "id": "measurement",
+          "title": "Measurement ready for ads",
+          "body": "You reach your first campaign knowing which ad brings sales. We connect the Meta Pixel and Conversions API, Google Analytics 4 and Merchant Center, and check it all with a test purchase."
+        },
+        {
+          "id": "domain",
+          "title": "Domain, email and 301 redirects",
+          "body": "Your domain stays where it is and email keeps arriving, because we leave its records alone. Every old URL redirects to the new one with a 301, so people coming from Google don't land on an error."
+        },
+        {
+          "id": "custom",
+          "title": "When a custom store makes more sense",
+          "body": "If wholesale prices come from your system, or the checkout needs rules Tiendanube doesn't allow, a store of your own fits better. We build it as a [custom management system](/sistemas-de-gestion), plus hosting and maintenance."
+        }
+      ]
+    },
+    "audience": {
+      "title": "Who it's for.",
+      "intro": "For shops that already sell online, or want to start, and need the store to fit how they work: with wholesale buyers, with a stock system or with years of catalog in WooCommerce.",
+      "items": [
+        {
+          "id": "store",
+          "title": "Shops on WooCommerce",
+          "body": "The store grew and keeping it running became a job of its own."
+        },
+        {
+          "id": "distributor",
+          "title": "Wholesalers and distributors",
+          "body": "They want to sell online at their price without building every order over WhatsApp."
+        },
+        {
+          "id": "sync",
+          "title": "Shops already on Tiendanube",
+          "body": "Stock lives in another system and gets entered twice."
+        }
+      ]
+    },
+    "process": {
+      "title": "How we work and how we quote.",
+      "steps": [
+        {
+          "title": "A 30-minute call",
+          "body": "We look at how you sell today: WooCommerce or another store, whether you have wholesale prices, which system holds stock and prices, and who manages the domain and email."
+        },
+        {
+          "title": "A scope document",
+          "body": "What migrates, which Tiendanube plan you need, what gets connected and what stays out. Price and timeline in writing before we start."
+        },
+        {
+          "title": "Partial deliveries every week",
+          "body": "We work on a test store. Every week you see a working piece: the loaded catalog, the theme, the wholesale list or the sync, and you try it with real products."
+        },
+        {
+          "title": "Rollout",
+          "body": "We connect the domain without touching email, load the redirects and set up payment and shipping: Envío Nube, in-store pickup or rates by zone. We close with a test purchase to validate measurement."
+        }
+      ],
+      "pricing": {
+        "label": "Price and timeline",
+        "body": "They depend on catalog size, on how much variant and category cleanup is needed, on the theme and on whether a management system needs connecting. The Tiendanube plan and any paid apps are paid separately, directly to each provider. If email stays on your current hosting, that hosting keeps being billed."
+      }
+    },
+    "afterDelivery": [
+      {
+        "label": "Warranty",
+        "body": "If a bug is on our side, we fix it under warranty."
+      },
+      {
+        "label": "Maintenance",
+        "body": "Optional, for changes and for the adjustments when Tiendanube or a connected app changes how it connects. Without it, that adjustment is on you."
+      },
+      {
+        "label": "Your data",
+        "body": "It's confidential and we only use it for your project."
+      }
+    ],
+    "faq": {
+      "title": "Questions about Tiendanube development.",
+      "items": [
+        {
+          "question": "Can you migrate WooCommerce to Tiendanube?",
+          "answer": "Yes. We move products, prices, SKUs, categories and images with our own script. Order history stays in WooCommerce unless we add it to the scope. Customer passwords don't carry over with this method, so each customer creates a new account."
+        },
+        {
+          "question": "Which Tiendanube plan do I need for wholesale prices?",
+          "answer": "The native wholesale price list is available from the Impulso plan up. Tiendanube updates its plans, so the scope document tells you which one fits your store."
+        },
+        {
+          "question": "Can ARCA invoicing run automatically?",
+          "answer": "Yes, with an invoicing app connected to the store. If you collect with Pago Nube, automatic invoicing currently works only with Facturante, and with other apps invoices are issued by hand."
+        },
+        {
+          "question": "Do you integrate Tiendanube with a management system?",
+          "answer": "Yes, when the system has a way to connect. Stock and retail prices sync. Wholesale prices are loaded and kept in the store."
+        },
+        {
+          "question": "Do 301 redirects protect rankings in a migration?",
+          "answer": "Yes. They send people coming from Google, or from an old link, to the new URL instead of an error. We map products, categories and pages, and the domain stays the same."
+        },
+        {
+          "question": "When is a custom store a better fit than Tiendanube?",
+          "answer": "When wholesale prices have to come from the management system, or when the checkout needs rules Tiendanube doesn't allow. If the platform covers payments, shipping, wholesale and invoicing, Tiendanube is usually the shortest path."
+        }
+      ]
+    },
+    "ctaTitle": "Selling on Tiendanube?",
+    "ctaDescription": "Tell us if you are coming from WooCommerce, whether you sell wholesale and which system holds your stock. We reply with scope and price in writing.",
+    "ctaButton": "Tell us your problem"
   },
   "comoTrabajamos": {
     "navLabel": "How we work",

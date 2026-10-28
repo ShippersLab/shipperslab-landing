@@ -8,6 +8,7 @@ import {
   Award01Icon,
   Calendar01Icon,
   CashierIcon as CashierIconSource,
+  ChartLineData01Icon,
   Cancel01Icon,
   ContactBookIcon,
   DashboardCircleIcon,
@@ -16,11 +17,13 @@ import {
   HeadsetIcon as HeadsetIconSource,
   HelpCircleIcon,
   InstagramIcon as InstagramIconSource,
+  Link01Icon,
   Invoice01Icon,
   Mail01Icon,
   Menu01Icon,
   Mic01Icon,
   Package01Icon,
+  PaintBrush01Icon,
   Payment01Icon,
   Plug01Icon,
   PlusSignIcon,
@@ -80,3 +83,6 @@ export const MenuIcon = createIcon(Menu01Icon);
 export const CloseIcon = createIcon(Cancel01Icon);
 export const LanguageIcon = createIcon(TranslateIconSource);
 export const HelpIcon = createIcon(HelpCircleIcon);
+export const PaintBrushIcon = createIcon(PaintBrush01Icon);
+export const LinkIcon = createIcon(Link01Icon);
+export const ChartIcon = createIcon(ChartLineData01Icon);

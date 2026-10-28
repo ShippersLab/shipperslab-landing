@@ -6,7 +6,11 @@ import { buildCasos, buildProject } from "@/lib/seo/llms/cases";
 import { assertSourceCopy, joinBlocks } from "@/lib/seo/llms/copy";
 import { buildHome, buildIdentity } from "@/lib/seo/llms/home";
 import { buildEventos } from "@/lib/seo/llms/events";
-import { buildComoTrabajamos, buildServicePage } from "@/lib/seo/llms/services";
+import {
+  buildComoTrabajamos,
+  buildServicePage,
+  buildTiendanubePage,
+} from "@/lib/seo/llms/services";
 import { organizationIdentity, organizationSummary } from "@/lib/seo/shared/organization";
 import { serviceRoutes, type ServiceSlug } from "@/lib/services";
 
@@ -37,6 +41,7 @@ export function buildLlmsFullTxt() {
     `Versión en inglés: ${organizationIdentity.url}/en (mismas páginas bajo ${organizationIdentity.url}/en/...)`,
     buildHome(),
     ...SERVICE_PAGE_ORDER.map((slug) => buildServicePage(slug)),
+    buildTiendanubePage(),
     buildComoTrabajamos(),
     buildCasos(),
     ...projectRoutes.map((route) => buildProject(route.slug)),
@@ -51,6 +56,7 @@ export function buildLlmsFullTxt() {
   assertSourceCopy(es.faq, document);
   assertSourceCopy(es.contact, document);
   assertSourceCopy(es.servicePages, document);
+  assertSourceCopy(es.tiendanube, document);
   assertSourceCopy(es.comoTrabajamos, document);
   assertSourceCopy(es.casos, document);
   assertSourceCopy(es.events, document);

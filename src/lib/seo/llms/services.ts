@@ -10,9 +10,9 @@ import {
   page,
   renderCopy,
 } from "@/lib/seo/llms/copy";
-import { serviceRoutes, type ServiceSlug } from "@/lib/services";
+import { serviceRoutes, TIENDANUBE_PATH, type ServiceSlug } from "@/lib/services";
 
-type ServicePage = (typeof es.servicePages)[ServiceSlug];
+type ServicePage = (typeof es.servicePages)[ServiceSlug] | typeof es.tiendanube;
 
 const PROCESS_STEPS = ["call", "scope", "weekly", "pricing"] as const;
 
@@ -42,7 +42,9 @@ function buildServiceExtras(servicePage: ServicePage) {
     "tools" in servicePage
       ? joinBlocks([
           heading(3, servicePage.tools.title),
-          ...servicePage.tools.items.map((item) => joinBlocks([heading(4, item.title), item.body])),
+          ...servicePage.tools.items.map((item) =>
+            joinBlocks([heading(4, item.title), renderCopy(item.body)]),
+          ),
         ])
       : undefined,
     "audience" in servicePage
@@ -66,13 +68,12 @@ function buildServiceExtras(servicePage: ServicePage) {
   ]);
 }
 
-export function buildServicePage(slug: ServiceSlug) {
-  const servicePage = es.servicePages[slug];
+function buildServicePageCopy(path: string, servicePage: ServicePage) {
   const related = serviceRoutes
-    .filter((route) => route.slug !== slug)
+    .filter((route) => `/${route.slug}` !== path)
     .map((route) => `[${es.servicePages[route.slug].navLabel}](${canonical(`/${route.slug}`)})`);
 
-  return page(`/${slug}`, [
+  return page(path, [
     servicePage.navLabel,
     servicePage.metaTitle,
     servicePage.metaDescription,
@@ -92,6 +93,14 @@ export function buildServicePage(slug: ServiceSlug) {
     heading(3, es.servicePages.relatedTitle),
     bullets(related),
   ]);
+}
+
+export function buildServicePage(slug: ServiceSlug) {
+  return buildServicePageCopy(`/${slug}`, es.servicePages[slug]);
+}
+
+export function buildTiendanubePage() {
+  return buildServicePageCopy(TIENDANUBE_PATH, es.tiendanube);
 }
 
 function buildProcessStep(id: (typeof PROCESS_STEPS)[number]) {

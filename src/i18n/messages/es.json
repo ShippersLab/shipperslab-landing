@@ -104,7 +104,11 @@
         "id": "integrations",
         "title": "Integraciones con lo que ya usás",
         "description": "Cargás algo una vez y aparece donde tiene que estar, sin cambiar de herramientas. Conectamos WhatsApp, planillas y facturación.",
-        "includes": ["WhatsApp y planillas conectados", "Facturación sin carga doble"],
+        "includes": [
+          "WhatsApp y planillas conectados",
+          "Facturación sin carga doble",
+          "[Desarrollo en Tiendanube](/integraciones/tiendanube)"
+        ],
         "audience": "Equipos con varias herramientas"
       }
     ],
@@ -252,6 +256,7 @@
       "webs-y-catalogos": "Webs y catálogos",
       "bots-con-ia": "Bots con IA",
       "integraciones": "Integraciones",
+      "tiendanube": "Desarrollo en Tiendanube",
       "casos": "Casos",
       "eventos": "Eventos",
       "empecemos": "Empecemos",
@@ -957,7 +962,7 @@
       "lead": "Conectamos Mercado Pago, Tiendanube, la facturación de ARCA, WhatsApp y tus planillas entre sí. Cargás algo una vez y aparece donde tiene que estar, sin tirar abajo lo que hoy te funciona.",
       "covers": {
         "title": "Qué resolvemos.",
-        "body": "Datos que viajan a mano de un lado a otro: un pedido que llega por WhatsApp y después cargás en la planilla, una venta que cobrás por un lado y facturás por otro. Unimos esas piezas para que el dato entre una sola vez y nadie tenga que copiarlo.",
+        "body": "Datos que viajan a mano de un lado a otro: un pedido que llega por WhatsApp y después cargás en la planilla, una venta que cobrás por un lado y facturás por otro. Unimos esas piezas para que el dato entre una sola vez y nadie tenga que copiarlo. Si vendés online, también hacemos [desarrollo en Tiendanube](/integraciones/tiendanube): migración desde WooCommerce, precios mayoristas y stock conectado.",
         "items": [
           {
             "id": "whatsapp",
@@ -996,7 +1001,7 @@
           {
             "id": "tiendanube",
             "title": "Tiendanube: stock y pedidos",
-            "body": "Si vendés online y en un local, el stock tiene que ser uno solo. Sincronizamos el inventario de Tiendanube con tu planilla o sistema y hacemos que cada pedido nuevo llegue a quien lo prepara, sin tener que entrar al panel a mirar."
+            "body": "Si vendés online y en un local, el stock tiene que ser uno solo. Sincronizamos el inventario de Tiendanube con tu planilla o sistema y hacemos que cada pedido nuevo llegue a quien lo prepara, sin tener que entrar al panel a mirar. Para armar la tienda, migrar desde WooCommerce o configurar precios mayoristas, está el detalle en [desarrollo e integración con Tiendanube](/integraciones/tiendanube)."
           },
           {
             "id": "arca",
@@ -1084,6 +1089,183 @@
       "ctaButton": "Contanos tu problema"
     },
     "processLink": "Ver cómo trabajamos"
+  },
+  "tiendanube": {
+    "navLabel": "Tiendanube",
+    "metaTitle": "Desarrollo y migración a Tiendanube",
+    "metaDescription": "Armamos tu tienda en Tiendanube: migrar de WooCommerce, precios mayoristas y stock conectado con tu sistema de gestión. Alcance y precio por escrito.",
+    "h1": "Desarrollo e integración con Tiendanube.",
+    "lead": "Migramos el catálogo desde WooCommerce, configuramos precios mayoristas y minoristas, y conectamos stock, facturación y medición. El dominio sigue siendo el tuyo.",
+    "covers": {
+      "title": "Qué resolvemos.",
+      "body": "Una tienda en WooCommerce que ya no aguanta, pedidos mayoristas que se arman a mano por WhatsApp o el stock cargado en dos lugares que nunca coinciden. Lo ordenamos en Tiendanube, con tu dominio y tu correo como están. Alcance y precio por escrito antes de arrancar.",
+      "items": [
+        {
+          "id": "catalog",
+          "label": "Catálogo"
+        },
+        {
+          "id": "wholesale",
+          "label": "Mayorista"
+        },
+        {
+          "id": "theme",
+          "label": "Tema"
+        },
+        {
+          "id": "stock",
+          "label": "Stock y precios"
+        },
+        {
+          "id": "arca",
+          "label": "Facturación ARCA"
+        },
+        {
+          "id": "measurement",
+          "label": "Medición"
+        },
+        {
+          "id": "domain",
+          "label": "Dominio y correo"
+        },
+        {
+          "id": "redirect",
+          "label": "Redirecciones 301"
+        }
+      ]
+    },
+    "tools": {
+      "title": "Cómo lo resolvemos.",
+      "items": [
+        {
+          "id": "stock",
+          "title": "Migrar WooCommerce a Tiendanube",
+          "body": "Tu catálogo pasa completo a Tiendanube: productos, precios, códigos, categorías e imágenes, con las variantes agrupadas por talle o color. Lo movemos con un script propio, y el historial de pedidos queda en WooCommerce salvo que lo sumemos al alcance."
+        },
+        {
+          "id": "wholesale",
+          "title": "Precios mayoristas",
+          "body": "Tus mayoristas inician sesión y ven su precio, con medios de pago y envío propios y un mínimo de compra. Lo armamos con la tabla mayorista nativa de Tiendanube."
+        },
+        {
+          "id": "theme",
+          "title": "Tema de la tienda",
+          "body": "Tu tienda se ve como tu marca, con un tema adaptado o uno hecho a medida. El checkout lo hospeda Tiendanube y no lo rediseñamos."
+        },
+        {
+          "id": "sync",
+          "title": "Sistema de gestión y facturación",
+          "body": "El stock y los precios minoristas se actualizan solos entre la tienda y sistemas como Tango o Contabilium. Cada venta se factura en ARCA con una app de facturación conectada a la tienda."
+        },
+        {
+          "id": "measurement",
+          "title": "Medición lista para pautar",
+          "body": "Llegás a la primera campaña sabiendo qué anuncio trae ventas. Conectamos el Pixel y la API de Conversiones de Meta, Google Analytics 4 y Merchant Center, y lo validamos con una compra de prueba."
+        },
+        {
+          "id": "domain",
+          "title": "Dominio, correo y redirecciones 301",
+          "body": "Tu dominio queda donde está y el correo sigue llegando, porque no tocamos sus registros. Cada URL vieja redirige a la nueva con un 301, así quien entra desde Google no cae en un error."
+        },
+        {
+          "id": "custom",
+          "title": "Cuándo conviene una tienda a medida",
+          "body": "Si el precio mayorista sale de tu sistema o el checkout necesita reglas que Tiendanube no permite, te conviene una tienda propia. La armamos como un [sistema de gestión a medida](/sistemas-de-gestion), sumando hosting y mantenimiento."
+        }
+      ]
+    },
+    "audience": {
+      "title": "Para quién.",
+      "intro": "Para comercios que ya venden online, o quieren empezar, y necesitan que la tienda acompañe cómo trabajan: con mayoristas, con un sistema de stock o con años de catálogo en WooCommerce.",
+      "items": [
+        {
+          "id": "store",
+          "title": "Comercios en WooCommerce",
+          "body": "La tienda creció y mantenerla se volvió un trabajo aparte."
+        },
+        {
+          "id": "distributor",
+          "title": "Mayoristas y distribuidoras",
+          "body": "Quieren vender online a su precio sin armar cada pedido por WhatsApp."
+        },
+        {
+          "id": "sync",
+          "title": "Tiendas que ya usan Tiendanube",
+          "body": "El stock vive en otro sistema y se carga dos veces."
+        }
+      ]
+    },
+    "process": {
+      "title": "Cómo trabajamos y cómo se cotiza.",
+      "steps": [
+        {
+          "title": "Una charla de 30 minutos",
+          "body": "Vemos cómo vendés hoy: WooCommerce u otra tienda, si hay precios mayoristas, de qué sistema salen el stock y los precios, y quién administra el dominio y el correo."
+        },
+        {
+          "title": "Un documento de alcance",
+          "body": "Qué migra, qué plan de Tiendanube hace falta, qué se conecta y qué queda afuera. Precio y plazo por escrito antes de arrancar."
+        },
+        {
+          "title": "Entregas parciales cada semana",
+          "body": "Trabajamos sobre una tienda de prueba. Cada semana ves una parte andando: el catálogo cargado, el tema, la tabla mayorista o la sincronización, y la probás con productos reales."
+        },
+        {
+          "title": "Puesta en marcha",
+          "body": "Conectamos el dominio sin tocar el correo, cargamos las redirecciones y dejamos listos los medios de pago y los envíos: Envío Nube, retiro en el local o costos por zona. Cerramos con una compra de prueba para validar la medición."
+        }
+      ],
+      "pricing": {
+        "label": "Precio y plazo",
+        "body": "Dependen del tamaño del catálogo, de cuánto hay que ordenar variantes y categorías, del tema y de si hay que conectar un sistema de gestión. El plan de Tiendanube y las apps pagas se pagan aparte, directo a cada proveedor. Si el correo sigue en tu hosting actual, ese hosting se sigue pagando."
+      }
+    },
+    "afterDelivery": [
+      {
+        "label": "Garantía",
+        "body": "Si aparece un error de nuestro lado, lo arreglamos dentro de la garantía."
+      },
+      {
+        "label": "Mantenimiento",
+        "body": "Opcional, para cambios y para los ajustes cuando Tiendanube o una app conectada cambia su forma de conectarse. Sin él, ese ajuste corre por tu cuenta."
+      },
+      {
+        "label": "Tus datos",
+        "body": "Son confidenciales y solo los usamos para tu proyecto."
+      }
+    ],
+    "faq": {
+      "title": "Preguntas sobre desarrollo en Tiendanube.",
+      "items": [
+        {
+          "question": "¿Pueden migrar WooCommerce a Tiendanube?",
+          "answer": "Sí. Pasamos productos, precios, códigos, categorías e imágenes con un script propio. El historial de pedidos queda en WooCommerce salvo que lo sumemos al alcance. Las contraseñas de los clientes no pasan con este método, así que cada cliente crea su cuenta nueva."
+        },
+        {
+          "question": "¿Qué plan de Tiendanube necesito para precios mayoristas?",
+          "answer": "La tabla mayorista nativa está disponible desde el plan Impulso. Tiendanube actualiza sus planes, así que en el documento de alcance te decimos cuál conviene para tu tienda."
+        },
+        {
+          "question": "¿Se puede facturar en ARCA de forma automática?",
+          "answer": "Sí, con una app de facturación conectada a la tienda. Si cobrás con Pago Nube, hoy la facturación automática funciona solo con Facturante, y con otras apps la factura se hace a mano."
+        },
+        {
+          "question": "¿Hacen la integración de Tiendanube con un sistema de gestión?",
+          "answer": "Sí, cuando el sistema tiene una vía de conexión. El stock y los precios minoristas se sincronizan. Los precios mayoristas se cargan y se mantienen en la tienda."
+        },
+        {
+          "question": "¿Las redirecciones 301 cuidan el posicionamiento al migrar?",
+          "answer": "Sí. Llevan a quien entra desde Google, o desde un link viejo, a la URL nueva en lugar de a un error. Armamos el mapa de productos, categorías y páginas, y el dominio se mantiene."
+        },
+        {
+          "question": "¿Cuándo conviene una tienda a medida en lugar de Tiendanube?",
+          "answer": "Cuando el precio mayorista tiene que salir del sistema de gestión, o cuando el checkout necesita reglas que Tiendanube no permite. Si la plataforma cubre pagos, envíos, mayorista y facturación, Tiendanube suele ser el camino más corto."
+        }
+      ]
+    },
+    "ctaTitle": "¿Vas a vender con Tiendanube?",
+    "ctaDescription": "Contanos si venís de WooCommerce, si vendés a mayoristas y con qué sistema llevás el stock. Te respondemos con alcance y precio por escrito.",
+    "ctaButton": "Contanos tu problema"
   },
   "comoTrabajamos": {
     "navLabel": "Cómo trabajamos",

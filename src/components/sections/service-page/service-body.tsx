@@ -11,15 +11,51 @@ import { ServiceSteps } from "@/components/sections/service-page/service-steps";
 import { ServiceTools } from "@/components/sections/service-page/service-tools";
 import { WordReveal } from "@/components/ui/animation/word-reveal";
 import { FaqAccordion } from "@/components/ui/faq-accordion";
-import type { Messages } from "@/i18n/get-messages";
-import type { ServiceSlug } from "@/lib/services";
 
 const PROCESS_HREF = "/como-trabajamos";
 
-type ServicePageMessages = Messages["servicePages"][ServiceSlug];
+export type ServicePageContent = {
+  covers?: {
+    title: string;
+    body: string;
+    items: readonly { id: string; label: string }[];
+  };
+  example?: {
+    title: string;
+    body: string;
+    link: { label: string; href: string };
+    tabs: readonly string[];
+    alt: string;
+  };
+  sections?: readonly { title: string; body: string }[];
+  tools?: {
+    title: string;
+    items: readonly { id: string; title: string; body: string }[];
+  };
+  audience?: {
+    title: string;
+    intro: string;
+    items: readonly { id: string; title: string; body: string }[];
+  };
+  examples?: {
+    title: string;
+    tabsLabel: string;
+    items: readonly { title: string; body: string }[];
+  };
+  process: {
+    title: string;
+    steps: readonly { title: string; body: string }[];
+    pricing: { label: string; body: string };
+  };
+  faq: {
+    title: string;
+    items: readonly { question: string; answer: string }[];
+  };
+  afterDelivery: readonly { label: string; body: string }[];
+};
 
 type ServiceBodyProps = {
-  page: ServicePageMessages;
+  page: ServicePageContent;
   processLink: string;
 };
 
@@ -33,10 +69,10 @@ function Paragraph({ children }: { children: string }) {
   return <WordReveal text={children} className="text-base leading-relaxed text-muted" />;
 }
 
-function pageRows(page: ServicePageMessages, processLink: string): Row[] {
+function pageRows(page: ServicePageContent, processLink: string): Row[] {
   const rows: Row[] = [];
 
-  if ("covers" in page) {
+  if (page.covers) {
     rows.push({
       key: "covers",
       title: page.covers.title,
@@ -44,7 +80,7 @@ function pageRows(page: ServicePageMessages, processLink: string): Row[] {
     });
   }
 
-  if ("example" in page) {
+  if (page.example) {
     rows.push({
       key: "example",
       title: page.example.title,
@@ -59,7 +95,7 @@ function pageRows(page: ServicePageMessages, processLink: string): Row[] {
     });
   }
 
-  if ("sections" in page) {
+  if (page.sections) {
     for (const section of page.sections) {
       rows.push({
         key: section.title,
@@ -69,7 +105,7 @@ function pageRows(page: ServicePageMessages, processLink: string): Row[] {
     }
   }
 
-  if ("tools" in page) {
+  if (page.tools) {
     rows.push({
       key: "tools",
       title: page.tools.title,
@@ -77,7 +113,7 @@ function pageRows(page: ServicePageMessages, processLink: string): Row[] {
     });
   }
 
-  if ("audience" in page) {
+  if (page.audience) {
     rows.push({
       key: "audience",
       title: page.audience.title,
@@ -85,7 +121,7 @@ function pageRows(page: ServicePageMessages, processLink: string): Row[] {
     });
   }
 
-  if ("examples" in page) {
+  if (page.examples) {
     rows.push({
       key: "examples",
       title: page.examples.title,

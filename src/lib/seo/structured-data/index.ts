@@ -12,4 +12,7 @@ export {
   buildComoTrabajamosStructuredData,
   buildPageBreadcrumbStructuredData,
 } from "@/lib/seo/structured-data/pages";
-export { buildServiceStructuredData } from "@/lib/seo/structured-data/services";
+export {
+  buildServiceStructuredData,
+  buildTiendanubeStructuredData,
+} from "@/lib/seo/structured-data/services";

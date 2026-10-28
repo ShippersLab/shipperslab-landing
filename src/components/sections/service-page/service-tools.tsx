@@ -1,5 +1,6 @@
 import { serviceIcon } from "@/components/sections/service-page/service-icons";
 import { StaggerReveal } from "@/components/ui/animation/stagger-reveal";
+import { INLINE_LINK_CLASS, InlineText } from "@/components/ui/inline-text";
 import { cn } from "@/lib/utils";
 
 type ToolItem = {
@@ -33,7 +34,9 @@ export function ServiceTools({ items }: ServiceToolsProps) {
             <h3 className="font-sans text-base font-normal tracking-normal text-ink">
               {item.title}
             </h3>
-            <p className="text-sm leading-relaxed text-muted">{item.body}</p>
+            <p className="text-base leading-relaxed text-muted">
+              <InlineText className={INLINE_LINK_CLASS} text={item.body} />
+            </p>
           </li>
         );
       })}
