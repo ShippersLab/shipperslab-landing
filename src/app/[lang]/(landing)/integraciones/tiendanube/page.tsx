@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { TiendanubePage } from "@/components/sections/tiendanube";
+import { ServicePage } from "@/components/sections/service-page";
 import { JsonLd } from "@/components/seo/json-ld";
 import { getMessages } from "@/i18n/get-messages";
 import { resolveLocale } from "@/i18n/params";
@@ -30,7 +30,7 @@ export default async function TiendanubeServicePage({
   return (
     <>
       <JsonLd data={buildTiendanubeStructuredData(lang)} />
-      <TiendanubePage />
+      <ServicePage slug="tiendanube" />
     </>
   );
 }

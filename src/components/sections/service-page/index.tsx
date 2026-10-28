@@ -6,16 +6,20 @@ import { ServiceHero } from "@/components/sections/service-page/service-hero";
 import { ServiceLinks } from "@/components/sections/service-page/service-links";
 import { Container } from "@/components/ui/section/container";
 import { useI18n } from "@/i18n/provider";
-import type { ServiceSlug } from "@/lib/services";
-import { serviceRoutes } from "@/lib/services";
+import type { Messages } from "@/i18n/get-messages";
+import { serviceRoutes, type ServicePageKey } from "@/lib/services";
 
 type ServicePageProps = {
-  slug: ServiceSlug;
+  slug: ServicePageKey;
 };
+
+function servicePageContent(messages: Messages, slug: ServicePageKey) {
+  return slug === "tiendanube" ? messages.tiendanube : messages.servicePages[slug];
+}
 
 export function ServicePage({ slug }: ServicePageProps) {
   const { messages } = useI18n();
-  const page = messages.servicePages[slug];
+  const page = servicePageContent(messages, slug);
   const related = serviceRoutes.filter((route) => route.slug !== slug).map((route) => route.slug);
 
   return (

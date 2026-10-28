@@ -34,7 +34,7 @@ export function ServiceTools({ items }: ServiceToolsProps) {
             <h3 className="font-sans text-base font-normal tracking-normal text-ink">
               {item.title}
             </h3>
-            <p className="text-sm leading-relaxed text-muted">
+            <p className="text-base leading-relaxed text-muted">
               <InlineText className={INLINE_LINK_CLASS} text={item.body} />
             </p>
           </li>
