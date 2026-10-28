@@ -1,3 +1,5 @@
+import "server-only";
+
 import comoOrganizarUnaEmpresaDeEventosEn from "@/content/blog/como-organizar-una-empresa-de-eventos/en.json";
 import comoOrganizarUnaEmpresaDeEventosEs from "@/content/blog/como-organizar-una-empresa-de-eventos/es.json";
 import comoPagarleAlPersonalDeEventosEn from "@/content/blog/como-pagarle-al-personal-de-eventos/en.json";
