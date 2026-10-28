@@ -1,14 +1,18 @@
 import {
+  ArrowRightIcon,
   BuildingIcon,
   CalendarIcon,
   CashierIcon,
   ContactsIcon,
   ConversationIcon,
+  DashboardIcon,
   GlobeIcon,
   HeadsetIcon,
   InvoiceIcon,
   OrdersIcon,
   PaymentIcon,
+  RefreshIcon,
+  RocketIcon,
   SpreadsheetIcon,
   StockIcon,
   StoreIcon,
@@ -34,6 +38,13 @@ const iconsById: Record<string, typeof StockIcon> = {
   tiendanube: StoreIcon,
   arca: InvoiceIcon,
   crm: ContactsIcon,
+  wholesale: CashierIcon,
+  theme: StoreIcon,
+  sync: RefreshIcon,
+  measurement: DashboardIcon,
+  domain: GlobeIcon,
+  redirect: ArrowRightIcon,
+  custom: RocketIcon,
 };
 
 export function serviceIcon(id: string) {

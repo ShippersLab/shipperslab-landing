@@ -4,7 +4,7 @@ import { getBlogPostContent } from "@/content/blog/content";
 import { getPublishedBlogPosts } from "@/lib/blog";
 import { organizationSummary } from "@/lib/seo/shared/organization";
 import { plainText, singleLine } from "@/lib/seo/shared/text";
-import { getServiceHref, serviceRoutes } from "@/lib/services";
+import { getServiceHref, serviceRoutes, TIENDANUBE_PATH } from "@/lib/services";
 import { site, team } from "@/lib/site";
 
 const SUMMARY =
@@ -84,6 +84,11 @@ export function buildLlmsTxt() {
       const items = page.faq.items.map((item) => `- ${item.question} ${item.answer}`);
       return `### ${page.navLabel}: preguntas frecuentes\n\n${items.join("\n")}`;
     }),
+    `### ${es.tiendanube.metaTitle}\n\n${link(
+      es.tiendanube.navLabel,
+      `${site.url}${TIENDANUBE_PATH}`,
+      es.tiendanube.metaDescription,
+    )}\n\n${es.tiendanube.faq.items.map((item) => `- ${item.question} ${item.answer}`).join("\n")}`,
     `## Blog\n\n${getPublishedBlogPosts()
       .map((post) =>
         link(

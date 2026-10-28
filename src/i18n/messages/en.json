@@ -996,7 +996,7 @@
           {
             "id": "tiendanube",
             "title": "Tiendanube: stock and orders",
-            "body": "If you sell online and in a physical shop, there should be a single stock. We sync Tiendanube inventory with your spreadsheet or system and make each new order reach whoever prepares it, without checking the dashboard."
+            "body": "If you sell online and in a physical shop, there should be a single stock. We sync Tiendanube inventory with your spreadsheet or system and make each new order reach whoever prepares it, without checking the dashboard. To set up the store, migrate from WooCommerce or configure wholesale prices, the detail is in [Tiendanube development and integration](/integraciones/tiendanube)."
           },
           {
             "id": "arca",
@@ -1084,6 +1084,163 @@
       "ctaButton": "Tell us your problem"
     },
     "processLink": "See how we work"
+  },
+  "tiendanube": {
+    "navLabel": "Tiendanube",
+    "metaTitle": "Tiendanube development and integration",
+    "metaDescription": "Tiendanube development: migrate from WooCommerce, wholesale prices, a custom theme, a management-system integration and measurement ready for ads.",
+    "h1": "Tiendanube development and integration.",
+    "lead": "We migrate the catalog from WooCommerce, set up wholesale and retail prices, and connect stock, invoicing and measurement. The domain stays yours.",
+    "covers": {
+      "title": "What we do.",
+      "body": "Tiendanube store development, plus the integration with your management system, ARCA invoicing and ad measurement. Also the move from WooCommerce, with the catalog tidied up and the current domain kept. Scope and price in writing before we start.",
+      "items": [
+        {
+          "id": "stock",
+          "label": "Catalog"
+        },
+        {
+          "id": "wholesale",
+          "label": "Wholesale"
+        },
+        {
+          "id": "theme",
+          "label": "Theme"
+        },
+        {
+          "id": "sync",
+          "label": "Stock and prices"
+        },
+        {
+          "id": "arca",
+          "label": "ARCA invoicing"
+        },
+        {
+          "id": "measurement",
+          "label": "Measurement"
+        },
+        {
+          "id": "domain",
+          "label": "Domain and email"
+        },
+        {
+          "id": "redirect",
+          "label": "301 redirects"
+        }
+      ]
+    },
+    "tools": {
+      "title": "How we solve it.",
+      "items": [
+        {
+          "id": "stock",
+          "title": "Migrate WooCommerce to Tiendanube",
+          "body": "There is no official tool to move the catalog. The CSV importer allows up to 20,000 rows, one per variant, and does not upload images. We load products, prices, codes, categories and images with our own script against the Tiendanube API. In the same pass we group sizes and colors that are separate products today into variants, and we merge duplicate categories. Historical orders do not migrate. Customer passwords do not either: people have to create a new account. Bringing customers over with name and email can be added if you need it."
+        },
+        {
+          "id": "wholesale",
+          "title": "Wholesale prices on Tiendanube",
+          "body": "The wholesale price list is native, marked as beta, and starts on the Impulso plan. The wholesaler signs in and sees their price. You can assign their own payment and shipping methods, hide prices from anyone who is not signed in, limit purchasing to approved customers and set a minimum order. Escala allows up to three lists. Esencial includes neither the list nor access to the theme code. The lists do not sync from a management system, promotions and coupons apply to the retail price, and there is no explicit field for a price plus VAT."
+        },
+        {
+          "id": "theme",
+          "title": "The store theme",
+          "body": "Every plan includes free and paid themes, a visual editor and CSS. A custom theme starts from the Ipanema base theme, using Tiendanube's command-line tool, or it is edited over FTP. Theme code is available from Impulso up. Checkout cannot be changed: payment stays on Tiendanube's screen."
+        },
+        {
+          "id": "sync",
+          "title": "Integration with a management system",
+          "body": "When the system allows it, we sync stock and retail prices with the store. Dux and Contabilium do this natively. Tango connects through its own integration or through SynconMe. Wholesale prices on Tiendanube's list do not come down from the system: they stay in the store. If the system has no way to connect, we look at it in the first conversation and tell you the alternatives."
+        },
+        {
+          "id": "arca",
+          "title": "Payments and ARCA invoicing",
+          "body": "ARCA electronic invoicing connects through apps such as Contabilium, Facturante, Xubio or Tango Factura. With Mercado Pago that automatic invoicing is compatible, and Tiendanube charges a percentage on the previous month's sales collected through an external method: 2% on Esencial, 1% on Impulso and 0.7% on Escala, according to what the platform publishes and may update. With Pago Nube that percentage is 0%, and automatic ARCA invoicing is not compatible. Mercado Pago and Pago Nube also charge their own fee on each payment."
+        },
+        {
+          "id": "measurement",
+          "title": "Measurement ready for ads",
+          "body": "We connect the Meta Pixel and Conversions API, with product view, cart, checkout and purchase, and we sync the catalog for ads. We add Google Analytics 4, Search Console and the native integration with Google Shopping and Merchant Center. Instagram and Facebook Shopping have not been available in Argentina since 2023: you cannot offer a shop or tag products on Instagram. Catalog ads still work. We do not send those same events through Google Tag Manager, because that duplicates them. Tag Manager is for what Tiendanube does not send, such as a click to WhatsApp. A purchase may not show up right away in Meta's test tools: we validate it with a real test order."
+        },
+        {
+          "id": "domain",
+          "title": "Domain, email and 301 redirects",
+          "body": "The domain stays with the registrar you already use. We point the root with A records and www with a CNAME to the store, and we do not touch the MX records or the mail host, so email keeps arriving. If the website and email share the same hosting, that hosting stays as a cost, unless email moves to a service such as Google Workspace or Zoho. Before the change we export the full DNS zone. Each old URL is covered with a native 301 redirect, so someone arriving from Google lands on the new page. The public docs show uploads one at a time: on a large catalog we confirm whether they can be loaded in bulk before we close the scope."
+        },
+        {
+          "id": "custom",
+          "title": "When a custom store makes more sense",
+          "body": "Tiendanube is enough when the catalog, native wholesale and the payment, shipping and invoicing apps cover how you sell. A store of your own makes sense if the wholesale price has to come from the management system, or if checkout needs rules the platform will not let you change. In that case we build the admin, the cart, the payment and the invoicing, without Tiendanube's per-sale percentage. Security, hosting and payments then need ongoing care. A custom site in front of Tiendanube does not move the payment: there is no public checkout API. If what you need is the system and not only the store, we look at that in [custom management systems](/sistemas-de-gestion)."
+        }
+      ]
+    },
+    "process": {
+      "title": "How we work and how we quote.",
+      "steps": [
+        {
+          "title": "A 30-minute call",
+          "body": "We look at how you sell today: WooCommerce or another store, whether you have wholesale prices, which system holds stock and prices, and who manages the domain and email."
+        },
+        {
+          "title": "A scope document",
+          "body": "What migrates, which Tiendanube plan you need, what gets connected and what stays out. Price and timeline in writing before we start."
+        },
+        {
+          "title": "Partial deliveries every week",
+          "body": "We work on a test store. Every week you see a working piece: the loaded catalog, the theme, the wholesale list or the sync, and you try it with real products."
+        },
+        {
+          "title": "Rollout",
+          "body": "We connect the domain without touching email, load the redirects and set up payment and shipping: Envío Nube with Andreani, Correo Argentino, apps such as Zipnova or Envíopack, in-store pickup and rates by zone. We close with a test purchase to validate measurement."
+        }
+      ],
+      "pricing": {
+        "label": "Price and timeline",
+        "body": "They depend on the catalog, on whether variants need grouping and categories need cleaning, on whether the theme is custom and on whether a management system needs to sync. The Tiendanube plan is paid directly to Tiendanube. If email stays on the current hosting, that hosting continues. Paid shipping or invoicing apps are separate."
+      }
+    },
+    "afterDelivery": [
+      {
+        "label": "Warranty",
+        "body": "If a bug is on our side, we fix it under warranty."
+      },
+      {
+        "label": "Maintenance",
+        "body": "Optional, for changes and for the adjustments when Tiendanube or a connected app changes how it connects. Without it, that adjustment is on you."
+      },
+      {
+        "label": "Your data",
+        "body": "It's confidential and we only use it for your project."
+      }
+    ],
+    "faq": {
+      "title": "Questions about Tiendanube development.",
+      "items": [
+        {
+          "question": "Can you migrate WooCommerce to Tiendanube?",
+          "answer": "Yes. We export products, prices, codes, categories and images and load them with a script against the Tiendanube API. The platform's CSV importer does not upload images and stops at 20,000 rows, one per variant. Historical orders and passwords do not migrate: each customer creates a new account."
+        },
+        {
+          "question": "Which Tiendanube plan do I need for wholesale prices?",
+          "answer": "The Inicial plan is not enough for a store on your own domain: it stays on a mitiendanube.com subdomain, only collects with Pago Nube, does not import from a spreadsheet, only uses the default theme and has no custom shipping by zone. Esencial allows your own domain and external payment methods, without a wholesale list and without theme code. The native wholesale list starts on Impulso, and Escala goes up to three lists. Annual payment has a 25% discount and no minimum term. Tiendanube updates each plan's conditions."
+        },
+        {
+          "question": "Do you integrate Tiendanube with a management system?",
+          "answer": "Yes, when the system has a way to connect. Dux and Contabilium sync stock and retail prices. Tango connects directly or through SynconMe. Wholesale prices on the native list do not sync: they are loaded and kept in the store."
+        },
+        {
+          "question": "Do 301 redirects protect rankings in a migration?",
+          "answer": "They are what sends someone arriving from Google, or from an old link, to the new URL instead of an error. We map products, categories and pages, and the domain stays. Email records are not changed. Tiendanube has native 301 redirects. The public docs show them loaded one at a time; if the catalog is large, we confirm a bulk upload before we start."
+        },
+        {
+          "question": "When is a custom store a better fit than Tiendanube?",
+          "answer": "When the wholesale price has to come from the management system, or when checkout needs rules Tiendanube will not let you change. In those cases we build the store. If the platform covers payments, shipping, wholesale and invoicing, Tiendanube is usually the shorter path. We look at that in the first conversation, before choosing."
+        }
+      ]
+    },
+    "ctaTitle": "Selling on Tiendanube?",
+    "ctaDescription": "Tell us if you are coming from WooCommerce, whether you sell wholesale and which system holds your stock. We reply with scope and price in writing.",
+    "ctaButton": "Tell us your problem"
   },
   "comoTrabajamos": {
     "navLabel": "How we work",
