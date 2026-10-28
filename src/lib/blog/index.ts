@@ -14,6 +14,7 @@ const blogPosts = [
     datePublished: "2026-10-28",
     authorId: "juani",
     published: true,
+    cover: "/images/blog/covers/como-pagarle-al-personal-de-eventos.webp",
   },
   {
     slug: "cuanto-cuesta-un-sistema-de-gestion-a-medida",
