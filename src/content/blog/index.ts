@@ -1,3 +1,4 @@
+import { meta as comoMigrarDeWoocommerceATiendanube } from "@/content/blog/como-migrar-de-woocommerce-a-tiendanube/meta";
 import { meta as comoOrganizarUnaEmpresaDeEventos } from "@/content/blog/como-organizar-una-empresa-de-eventos/meta";
 import { meta as comoPagarleAlPersonalDeEventos } from "@/content/blog/como-pagarle-al-personal-de-eventos/meta";
 import { meta as comoSaberSiTuNegocioNecesitaPaginaWeb } from "@/content/blog/como-saber-si-tu-negocio-necesita-pagina-web/meta";
@@ -5,6 +6,7 @@ import { meta as cuantoCuestaUnSistemaDeGestionAMedida } from "@/content/blog/cu
 import type { BlogPostEntry } from "@/content/blog/types";
 
 export const blogPosts = [
+  comoMigrarDeWoocommerceATiendanube,
   comoPagarleAlPersonalDeEventos,
   cuantoCuestaUnSistemaDeGestionAMedida,
   comoOrganizarUnaEmpresaDeEventos,

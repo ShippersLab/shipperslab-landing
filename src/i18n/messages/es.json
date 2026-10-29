@@ -1140,7 +1140,7 @@
         {
           "id": "stock",
           "title": "Migrar WooCommerce a Tiendanube",
-          "body": "Tu catálogo pasa completo a Tiendanube: productos, precios, códigos, categorías e imágenes, con las variantes agrupadas por talle o color. Lo movemos con un script propio, y el historial de pedidos queda en WooCommerce salvo que lo sumemos al alcance."
+          "body": "Tu catálogo pasa completo a Tiendanube: productos, precios, códigos, categorías e imágenes, con las variantes agrupadas por talle o color. Lo movemos con un script propio, y el historial de pedidos queda en WooCommerce salvo que lo sumemos al alcance. El paso a paso para no perder posicionamiento está en [Cómo migrar de WooCommerce a Tiendanube](/blog/como-migrar-de-woocommerce-a-tiendanube)."
         },
         {
           "id": "wholesale",
