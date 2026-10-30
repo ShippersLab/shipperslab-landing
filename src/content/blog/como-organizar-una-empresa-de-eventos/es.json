@@ -27,7 +27,7 @@
     {
       "title": "Cómo nació EventOps",
       "paragraphs": [
-        "EventOps arrancó con un pedido concreto: una productora nos pidió presupuesto para un calendario, una lista de clientes y el flujo de caja. Al armarlo vimos que cualquier empresa de sonido, iluminación o eventos tiene el mismo problema, así que lo convertimos en un producto propio, hoy en producción.",
+        "EventOps arrancó con un pedido concreto: una productora nos pidió presupuesto para un calendario, una lista de clientes y el flujo de caja. Al armarlo vimos que cualquier empresa de sonido, iluminación o eventos tiene el mismo problema, así que lo convertimos en un producto propio, hoy en producción. Para sonido e iluminación, visita, montaje y desmontaje están en el [sistema para empresas de sonido e iluminación](https://eventops.digital/sistema-para-empresas-de-sonido-e-iluminacion).",
         "El calendario era la parte visible. Lo que había que modelar era el pago del personal y la plata de cada evento, que en la planilla se mezclaba con todo lo demás."
       ],
       "link": {
@@ -79,7 +79,7 @@
     {
       "title": "El presupuesto sale en PDF",
       "paragraphs": [
-        "El presupuesto se arma desde el evento, con los servicios de tu lista. El total se calcula solo. El PDF baja con tu logo, listo para mandar por WhatsApp o por mail."
+        "El presupuesto se arma desde el evento, con los servicios de tu lista. El total se calcula solo. El PDF baja con tu logo, listo para mandar por WhatsApp o por mail. Cómo armar esas partidas en sonido e iluminación, de equipos y personal a flete y seña, está en [cómo presupuestar un evento de sonido e iluminación](https://eventops.digital/como-presupuestar-un-evento-de-sonido-e-iluminacion)."
       ],
       "image": {
         "src": "/images/blog/eventops-presupuesto.webp",

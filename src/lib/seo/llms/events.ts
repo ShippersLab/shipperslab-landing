@@ -1,5 +1,5 @@
 import es from "@/i18n/messages/es.json";
-import { bullets, canonical, heading, joinBlocks, page } from "@/lib/seo/llms/copy";
+import { bullets, canonical, heading, joinBlocks, page, renderCopy } from "@/lib/seo/llms/copy";
 import { site } from "@/lib/site";
 
 export function buildEventos() {
@@ -12,6 +12,7 @@ export function buildEventos() {
     copy.description,
     heading(4, copy.formatsTitle),
     copy.formatsDescription,
+    renderCopy(copy.productNote),
     ...copy.formats.map((format) => joinBlocks([heading(4, format.title), format.description])),
     heading(4, copy.sponsorTitle),
     copy.sponsorDescription,
