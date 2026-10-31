@@ -24,6 +24,8 @@
 
   --tracking-hero: -0.06em;
   --tracking-heading: -0.045em;
+  --tracking-serif-hero: -0.03em;
+  --tracking-serif-heading: -0.02em;
   --tracking-label: 0.12em;
 
   --radius-xs: 2px;
@@ -71,6 +73,17 @@
     line-height: 1.05;
   }
 
+  .landing-display {
+    --font-heading: var(--font-geist-serif-regular), var(--font-hanken-grotesk), serif;
+    --tracking-heading: var(--tracking-serif-heading);
+  }
+
+  .landing-display :is(h1, h2, h3) {
+    font-weight: 400;
+    font-synthesis: none;
+    line-height: 1.12;
+  }
+
   ::selection {
     background-color: var(--accent);
     color: var(--paper);
@@ -87,6 +100,11 @@
     background-color: var(--accent);
     color: var(--paper);
   }
+}
+
+.landing-display h1 {
+  letter-spacing: var(--tracking-serif-hero);
+  line-height: 1;
 }
 
 @utility selection-paper {

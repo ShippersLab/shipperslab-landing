@@ -1,3 +1,4 @@
+import { GeistSerifRegular } from "geist/font/serif/regular";
 import type { Metadata } from "next";
 
 import { Cta } from "@/components/sections/cta";
@@ -18,13 +19,13 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
   const lang = await resolveLocale(params);
 
   return (
-    <>
+    <div className={`${GeistSerifRegular.variable} landing-display contents`}>
       <JsonLd data={buildHomeStructuredData(lang)} />
       <Hero />
       <Services />
       <Team />
       <Faq />
       <Cta />
-    </>
+    </div>
   );
 }
