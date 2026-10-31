@@ -5,7 +5,6 @@ import { PartnerWays } from "@/components/sections/events/partner-ways";
 import { PolaroidGallery } from "@/components/sections/events/polaroid-gallery";
 import { BlurReveal } from "@/components/ui/animation/blur-reveal";
 import { TextureButton } from "@/components/ui/button/texture-button";
-import { INLINE_LINK_CLASS, InlineText } from "@/components/ui/inline-text";
 import { Container } from "@/components/ui/section/container";
 import { PageHeader } from "@/components/ui/section/page-header";
 import { SectionHeading } from "@/components/ui/section/section-heading";
@@ -39,11 +38,6 @@ export function Events() {
           delay={0.1}
           className="mt-16 w-full sm:mt-20"
         />
-        <BlurReveal delay={0.15} className="mt-10 max-w-2xl sm:mt-12">
-          <p className="text-base leading-relaxed text-muted">
-            <InlineText className={INLINE_LINK_CLASS} text={page.productNote} />
-          </p>
-        </BlurReveal>
       </Container>
 
       <Container className={SECTION}>
