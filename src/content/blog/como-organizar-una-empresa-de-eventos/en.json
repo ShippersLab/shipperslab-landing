@@ -27,7 +27,7 @@
     {
       "title": "How EventOps started",
       "paragraphs": [
-        "EventOps started with a specific request: an event production company asked us to quote a calendar, a client list and cash flow. While building it we saw that every sound, lighting and event company has the same problem, so we turned it into our own product, now in production.",
+        "EventOps started with a specific request: an event production company asked us to quote a calendar, a client list and cash flow. While building it we saw that every sound, lighting and event company has the same problem, so we turned it into our own product, now in production. For sound and lighting, the site visit, setup and teardown are in the [system for sound and lighting companies](https://eventops.digital/sistema-para-empresas-de-sonido-e-iluminacion) (in Spanish).",
         "The calendar was the visible part. What had to be modeled was crew pay, and the money of each event, which in the spreadsheet was mixed in with everything else."
       ],
       "link": {
@@ -79,7 +79,7 @@
     {
       "title": "The quote comes out as a PDF",
       "paragraphs": [
-        "The quote is built from the event, using services from your list. The total calculates itself. The PDF downloads with your logo, ready to send on WhatsApp or by email."
+        "The quote is built from the event, using services from your list. The total calculates itself. The PDF downloads with your logo, ready to send on WhatsApp or by email. How to build those line items for sound and lighting, from gear and crew to freight and the deposit, is in [how to budget a sound and lighting event](https://eventops.digital/como-presupuestar-un-evento-de-sonido-e-iluminacion) (in Spanish)."
       ],
       "image": {
         "src": "/images/blog/eventops-presupuesto.webp",
