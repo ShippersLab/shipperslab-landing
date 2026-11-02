@@ -956,7 +956,7 @@
     },
     "integraciones": {
       "navLabel": "Integrations",
-      "metaTitle": "Integrations: Mercado Pago, ARCA and WhatsApp",
+      "metaTitle": "Tiendanube, Mercado Pago and ARCA integrations",
       "metaDescription": "Custom integrations with Mercado Pago, Tiendanube, ARCA invoicing, AI WhatsApp bots and Google Sheets. Enter data once. Scope in writing.",
       "h1": "Custom integrations with your current tools.",
       "lead": "We connect Mercado Pago, Tiendanube, ARCA invoicing, WhatsApp and your spreadsheets to each other. Enter something once and it shows up where it should, without tearing down what already works.",
