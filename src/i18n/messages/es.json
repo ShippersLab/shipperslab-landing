@@ -956,7 +956,7 @@
     },
     "integraciones": {
       "navLabel": "Integraciones",
-      "metaTitle": "Integraciones: Mercado Pago, ARCA y WhatsApp",
+      "metaTitle": "Integraciones: Tiendanube, Mercado Pago y ARCA",
       "metaDescription": "Integraciones a medida con Mercado Pago, Tiendanube, facturación de ARCA, WhatsApp con IA y Google Sheets. Cargás el dato una vez. Alcance por escrito.",
       "h1": "Integraciones a medida con lo que ya usás.",
       "lead": "Conectamos Mercado Pago, Tiendanube, la facturación de ARCA, WhatsApp y tus planillas entre sí. Cargás algo una vez y aparece donde tiene que estar, sin tirar abajo lo que hoy te funciona.",
