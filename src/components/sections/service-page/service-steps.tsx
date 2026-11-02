@@ -14,11 +14,11 @@ type Step = {
 
 type ServiceStepsProps = {
   steps: readonly Step[];
-  pricing: {
+  pricing?: {
     label: string;
     body: string;
   };
-  link: ReactNode;
+  link?: ReactNode;
 };
 
 const STEP_STAGGER = 0.12;
@@ -53,12 +53,14 @@ export function ServiceSteps({ steps, pricing, link }: ServiceStepsProps) {
         ))}
       </StaggerReveal>
 
-      <BlurReveal>{link}</BlurReveal>
+      {link ? <BlurReveal>{link}</BlurReveal> : null}
 
-      <BlurReveal className="mt-10 rounded-lg border border-border p-6">
-        <p className="font-mono text-sm tracking-tight text-muted">{pricing.label}</p>
-        <p className="mt-3 text-base leading-relaxed text-ink">{pricing.body}</p>
-      </BlurReveal>
+      {pricing ? (
+        <BlurReveal className="mt-10 rounded-lg border border-border p-6">
+          <p className="font-mono text-sm tracking-tight text-muted">{pricing.label}</p>
+          <p className="mt-3 text-base leading-relaxed text-ink">{pricing.body}</p>
+        </BlurReveal>
+      ) : null}
     </>
   );
 }

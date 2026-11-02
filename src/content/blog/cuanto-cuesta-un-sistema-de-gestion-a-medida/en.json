@@ -14,7 +14,7 @@
       "paragraphs": [
         "The price depends on the system. Tidying up inventory is one job. Adding orders, cash, role permissions and a close for the accountant is a much bigger one.",
         "That is why we do not publish a rate. We write the scope in the proposal and the price follows that scope. We look at the parts together: a short flow with no integrations takes less work than one with permissions, migration and closing reports.",
-        "A distributor that wants an order to reduce stock needs something different from a booking business that wants the team's schedule and the day's takings. These are the parts that move the price the most:"
+        "A distributor that wants an order to reduce stock needs something different from a booking business that wants the team's schedule and the day's takings. How that order system is put together is in [order management system](/sistemas-de-gestion/pedidos). These are the parts that move the price the most:"
       ],
       "items": [
         "Modules and screens. Inventory, orders, cash, bookings or clients add screens, states and rules. A short path takes less work than an operation with several stages.",
@@ -176,6 +176,11 @@
         "label": "Management systems",
         "href": "/sistemas-de-gestion",
         "description": "Inventory, orders, cash or bookings in a system built around how your business works."
+      },
+      {
+        "label": "Order management system",
+        "href": "/sistemas-de-gestion/pedidos",
+        "description": "Orders, per-customer price lists and stock for factories, distributors and wholesalers."
       },
       {
         "label": "EventOps case",

@@ -11,6 +11,8 @@ import { ServiceSteps } from "@/components/sections/service-page/service-steps";
 import { ServiceTools } from "@/components/sections/service-page/service-tools";
 import { WordReveal } from "@/components/ui/animation/word-reveal";
 import { FaqAccordion } from "@/components/ui/faq-accordion";
+import { INLINE_LINK_CLASS, InlineText } from "@/components/ui/inline-text";
+import { cn } from "@/lib/utils";
 
 const PROCESS_HREF = "/como-trabajamos";
 
@@ -18,7 +20,7 @@ export type ServicePageContent = {
   covers?: {
     title: string;
     body: string;
-    items: readonly { id: string; label: string }[];
+    items: readonly { id: string; label: string; href?: string }[];
   };
   example?: {
     title: string;
@@ -30,17 +32,33 @@ export type ServicePageContent = {
   sections?: readonly { title: string; body: string }[];
   tools?: {
     title: string;
+    intro?: string;
+    closing?: string;
+    items: readonly { id: string; title: string; body: string }[];
+  };
+  connections?: {
+    title: string;
+    intro?: string;
     items: readonly { id: string; title: string; body: string }[];
   };
   audience?: {
     title: string;
     intro: string;
-    items: readonly { id: string; title: string; body: string }[];
+    items: readonly { id: string; title: string; body: string; href?: string }[];
   };
   examples?: {
     title: string;
     tabsLabel: string;
     items: readonly { title: string; body: string }[];
+  };
+  flow?: {
+    title: string;
+    intro: string;
+    steps: readonly { title: string; body: string }[];
+  };
+  comparison?: {
+    title: string;
+    paragraphs: readonly string[];
   };
   process: {
     title: string;
@@ -67,6 +85,32 @@ type Row = {
 
 function Paragraph({ children }: { children: string }) {
   return <WordReveal text={children} className="text-base leading-relaxed text-muted" />;
+}
+
+function LinkedCopy({ text, className }: { text: string; className?: string }) {
+  return (
+    <p className={cn("text-base leading-relaxed text-muted", className)}>
+      <InlineText className={INLINE_LINK_CLASS} text={text} />
+    </p>
+  );
+}
+
+function ToolGroup({
+  intro,
+  closing,
+  items,
+}: {
+  intro?: string;
+  closing?: string;
+  items: readonly { id: string; title: string; body: string }[];
+}) {
+  return (
+    <>
+      {intro ? <LinkedCopy text={intro} className="mb-6" /> : null}
+      <ServiceTools items={items} />
+      {closing ? <LinkedCopy text={closing} className="mt-6" /> : null}
+    </>
+  );
 }
 
 function pageRows(page: ServicePageContent, processLink: string): Row[] {
@@ -109,7 +153,17 @@ function pageRows(page: ServicePageContent, processLink: string): Row[] {
     rows.push({
       key: "tools",
       title: page.tools.title,
-      content: <ServiceTools items={page.tools.items} />,
+      content: (
+        <ToolGroup intro={page.tools.intro} closing={page.tools.closing} items={page.tools.items} />
+      ),
+    });
+  }
+
+  if (page.connections) {
+    rows.push({
+      key: "connections",
+      title: page.connections.title,
+      content: <ToolGroup intro={page.connections.intro} items={page.connections.items} />,
     });
   }
 
@@ -126,6 +180,35 @@ function pageRows(page: ServicePageContent, processLink: string): Row[] {
       key: "examples",
       title: page.examples.title,
       content: <ServiceCases items={page.examples.items} tabsLabel={page.examples.tabsLabel} />,
+    });
+  }
+
+  if (page.flow) {
+    rows.push({
+      key: "flow",
+      title: page.flow.title,
+      content: (
+        <>
+          <LinkedCopy text={page.flow.intro} />
+          <div className="mt-8">
+            <ServiceSteps steps={page.flow.steps} />
+          </div>
+        </>
+      ),
+    });
+  }
+
+  if (page.comparison) {
+    rows.push({
+      key: "comparison",
+      title: page.comparison.title,
+      content: (
+        <div className="flex flex-col gap-4">
+          {page.comparison.paragraphs.map((paragraph) => (
+            <LinkedCopy key={paragraph} text={paragraph} />
+          ))}
+        </div>
+      ),
     });
   }
 

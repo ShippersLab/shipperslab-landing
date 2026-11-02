@@ -13,6 +13,7 @@ export {
   buildPageBreadcrumbStructuredData,
 } from "@/lib/seo/structured-data/pages";
 export {
+  buildPedidosStructuredData,
   buildServiceStructuredData,
   buildTiendanubeStructuredData,
 } from "@/lib/seo/structured-data/services";

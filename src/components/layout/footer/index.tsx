@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import type { ReactNode } from "react";
+import { Fragment, type ReactNode } from "react";
 
 import { Wordmark } from "@/components/layout/footer/wordmark";
 import { LanguageToggle } from "@/components/layout/language-toggle";
@@ -9,7 +9,7 @@ import { Container } from "@/components/ui/section/container";
 import { buildWhatsAppUrl } from "@/lib/contact/message";
 import { LocalizedLink } from "@/i18n/link";
 import { useI18n } from "@/i18n/provider";
-import { serviceRoutes, TIENDANUBE_PATH } from "@/lib/services";
+import { PEDIDOS_PATH, serviceRoutes, TIENDANUBE_PATH } from "@/lib/services";
 import { site } from "@/lib/site";
 
 const YEAR = new Date().getFullYear();
@@ -50,11 +50,20 @@ export function Footer() {
 
           <FooterColumn title={footer.servicesTitle}>
             {serviceRoutes.map((route) => (
-              <li key={route.slug}>
-                <LocalizedLink href={`/${route.slug}`} className={LINK_CLASS}>
-                  {footer.links[route.slug]}
-                </LocalizedLink>
-              </li>
+              <Fragment key={route.slug}>
+                <li>
+                  <LocalizedLink href={`/${route.slug}`} className={LINK_CLASS}>
+                    {footer.links[route.slug]}
+                  </LocalizedLink>
+                </li>
+                {route.slug === "sistemas-de-gestion" ? (
+                  <li>
+                    <LocalizedLink href={PEDIDOS_PATH} className={LINK_CLASS}>
+                      {footer.links.pedidos}
+                    </LocalizedLink>
+                  </li>
+                ) : null}
+              </Fragment>
             ))}
             <li>
               <LocalizedLink href={TIENDANUBE_PATH} className={LINK_CLASS}>
