@@ -350,8 +350,8 @@
     "cta": "Back to home"
   },
   "casos": {
-    "metaTitle": "Software case studies: EventOps and Estacionar",
-    "metaDescription": "ShippersLab case studies: EventOps, our management system in production for event companies, and Estacionar, the branding of a parking marketplace.",
+    "metaTitle": "Software case studies: Tuturnero, EventOps and Estacionar",
+    "metaDescription": "ShippersLab case studies: Tuturnero, the booking page in beta for appointment-based businesses; EventOps, our management system in production for event companies; and Estacionar, the branding of a parking marketplace.",
     "title": "Latest projects.",
     "description": "A selection of what we have built and have in production.",
     "soon": {
@@ -459,6 +459,106 @@
         {
           "title": "Collect and track",
           "body": "Log deposits, installments and expenses in pesos or dollars. The monthly summary shows what is still owed."
+        }
+      ]
+    },
+    "tuturnero": {
+      "doneTitle": "What we did.",
+      "done": [
+        "Product and interface design",
+        "Public booking page with a link and QR code",
+        "Hours, holidays and blocks",
+        "Requests you confirm, with no double booking",
+        "Day, week and month schedule"
+      ],
+      "whyTitle": "Why we built it.",
+      "why": "Appointments get requested over messages. You check the schedule, reply and type it in again. We built Tuturnero so the business can publish its hours and the client can book on their own.",
+      "customersTitle": "Where it stands.",
+      "customers": "Tuturnero is published and in beta. Creating the page is free while the beta lasts. Bookings have no commission.",
+      "category": "Bookings · Appointment-based businesses",
+      "heroAlt": "Screenshot of the Tuturnero home page",
+      "title": "Tuturnero",
+      "summary": "Your schedule, your hours and your clients on a single page.",
+      "tags": ["Bookings", "Appointments"],
+      "metaTitle": "Tuturnero: a booking page for appointments",
+      "metaDescription": "Tuturnero gives each business a page with a link and QR code so clients book without an account and without a commission. A ShippersLab own product, in beta.",
+      "visitLabel": "Visit Tuturnero",
+      "featuresTitle": "What it includes.",
+      "features": [
+        {
+          "title": "Page with a link and QR code",
+          "body": "The page gets a short link, a QR code and a poster you can print. Share it on Instagram, over WhatsApp or at the counter. The client opens the link, picks a time, leaves their name and that is it: no account needed."
+        },
+        {
+          "title": "Hours",
+          "body": "Turn each day of the week on or off, and use a different schedule per day. There are shortcuts for weekdays, every day or mornings only. If you are closed for a holiday or a vacation, you close that date without touching the rest. The page only shows what is free."
+        },
+        {
+          "title": "Requests",
+          "body": "A request comes in and you accept or decline it with one tap. You can also add the appointments people ask for by phone. Clients cancel on their own from their link, and confirmation and cancellation emails go out."
+        },
+        {
+          "title": "No double booking",
+          "body": "Two people never end up with the same time. As soon as someone requests a slot, it stops being available. What you confirm is taken on the schedule and nobody else can book it."
+        },
+        {
+          "title": "Your brand",
+          "body": "The page carries your banner, your photo and a description. You can also add Instagram, WhatsApp and your website."
+        },
+        {
+          "title": "Courts and other businesses",
+          "body": "It is built for businesses that work by appointment: football and padel courts, clinics, hair salons, barbershops, beauty studios, classes and more. On courts, slots can be 60 or 90 minutes, you can close a court for a tournament and players do not overlap."
+        }
+      ],
+      "galleryTitle": "Gallery",
+      "galleryAlts": [
+        "Tuturnero home page",
+        "Three steps to create a Tuturnero page",
+        "Opening hours in Tuturnero",
+        "Booking requests in Tuturnero",
+        "A court booking page in Tuturnero",
+        "Booking page features in Tuturnero"
+      ],
+      "eyebrow": "Own product",
+      "lead": "Your schedule, your hours and your clients on a single page. Create your booking page in minutes, share the link and stop answering messages to give out appointments.",
+      "backLabel": "All projects",
+      "factsLabel": "Project details",
+      "facts": [
+        {
+          "label": "Project",
+          "value": "Own product"
+        },
+        {
+          "label": "Status",
+          "value": "In beta"
+        },
+        {
+          "label": "Built for",
+          "value": "Businesses with appointments"
+        },
+        {
+          "label": "Service",
+          "value": "Booking page"
+        }
+      ],
+      "overviewTitle": "The problem.",
+      "overview": "A court, a clinic or a salon runs on appointments, and the schedule often lives on one person's phone. Messages overlap, two people ask for the same time and nobody can see what is free.",
+      "approachTitle": "How we solve it.",
+      "approach": "Tuturnero builds a public page for the business. You set the days and hours, share the link or the QR code and the client picks a time without creating an account. You accept or decline each request. A confirmed time is taken and nobody else can book it.",
+      "flowTitle": "One appointment, end to end.",
+      "flowDescription": "Nothing to install and no training. If you know how to use WhatsApp, you know how to use Tuturnero.",
+      "flow": [
+        {
+          "title": "Sign in with Google",
+          "body": "Your account is ready in seconds. One less password to remember."
+        },
+        {
+          "title": "Set when you are open",
+          "body": "Pick days and hours. If you are closed on a holiday, you close it with one tap."
+        },
+        {
+          "title": "Share your link",
+          "body": "Paste it on Instagram, send it over WhatsApp or print the QR code."
         }
       ]
     },
