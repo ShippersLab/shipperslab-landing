@@ -22,6 +22,9 @@ const EXPERIENCE =
 const EVENTOPS_CASE =
   "EventOps es un producto propio de ShippersLab, en producción, pensado para empresas de sonido, iluminación y eventos. Reemplaza las planillas: cada evento se carga una vez y de ahí salen el calendario, el presupuesto, los pagos y los gastos.";
 
+const TUTURNERO_CASE =
+  "Tuturnero es un producto propio de ShippersLab, publicado y en beta. Cada negocio tiene una página con link y QR para que sus clientes reserven un turno sin cuenta y sin comisión.";
+
 function bullets(lines: string[]) {
   return lines.map((line) => `- ${line}`).join("\n");
 }
@@ -69,6 +72,12 @@ export function buildLlmsTxt() {
     `Experiencia: ${EXPERIENCE}`,
     `Fundadores:\n\n${founders.join("\n")}`,
     `Preguntas frecuentes:\n\n${faq.join("\n")}`,
+    `## Caso: Tuturnero\n\n${TUTURNERO_CASE}\n\nQué incluye:\n\n${bullets(
+      es.casos.tuturnero.features.map((feature) => `${feature.title}: ${feature.body}`),
+    )}\n\n${[
+      link("Caso Tuturnero", `${site.url}/casos/tuturnero`),
+      link("Tuturnero", site.tuturneroUrl),
+    ].join("\n")}`,
     `## Caso: EventOps\n\n${EVENTOPS_CASE}\n\nMódulos:\n\n${bullets(
       es.casos.eventops.features.map((feature) => `${feature.title}: ${feature.body}`),
     )}\n\n${[
@@ -107,6 +116,11 @@ export function buildLlmsTxt() {
     ].join("\n")}`,
     `## Optional\n\n${[
       link(
+        "Tuturnero",
+        site.tuturneroUrl,
+        "producto propio en beta, página de reservas para negocios con turnos",
+      ),
+      link(
         "EventOps",
         site.eventopsUrl,
         "producto propio en producción, sistema para empresas de eventos",
@@ -114,7 +128,7 @@ export function buildLlmsTxt() {
       link(
         "Casos y experiencia",
         `${site.url}/casos`,
-        "proyectos propios: EventOps en producción y Estacionar, aún sin publicar",
+        "proyectos propios: Tuturnero en beta, EventOps en producción y Estacionar, aún sin publicar",
       ),
       link(
         "Eventos",

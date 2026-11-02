@@ -6,6 +6,7 @@ export {
   buildCasosStructuredData,
   buildEstacionarCaseStructuredData,
   buildEventopsCaseStructuredData,
+  buildTuturneroCaseStructuredData,
 } from "@/lib/seo/structured-data/cases";
 export { buildHomeStructuredData } from "@/lib/seo/structured-data/home";
 export {

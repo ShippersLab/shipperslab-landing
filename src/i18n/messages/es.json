@@ -350,8 +350,8 @@
     "cta": "Volver al inicio"
   },
   "casos": {
-    "metaTitle": "Casos de software: EventOps y Estacionar",
-    "metaDescription": "Casos de ShippersLab: EventOps, nuestro sistema de gestión en producción para empresas de eventos, y Estacionar, el branding de un marketplace de cocheras.",
+    "metaTitle": "Casos de software: Tuturnero, EventOps y Estacionar",
+    "metaDescription": "Casos de ShippersLab: Tuturnero, la página de reservas en beta para negocios con turnos; EventOps, el sistema de gestión en producción para empresas de eventos; y Estacionar, el branding de un marketplace de cocheras.",
     "title": "Últimos proyectos.",
     "description": "Una selección de lo que construimos y tenemos en producción.",
     "soon": {
@@ -459,6 +459,106 @@
         {
           "title": "Cobrar y controlar",
           "body": "Registrás seña, cuotas y gastos en pesos o dólares. El resumen mensual muestra lo que falta cobrar."
+        }
+      ]
+    },
+    "tuturnero": {
+      "doneTitle": "Qué hicimos.",
+      "done": [
+        "Diseño del producto y de la interfaz",
+        "Página pública de reservas con link y QR",
+        "Horarios, feriados y bloqueos",
+        "Pedidos con confirmación y sin doble reserva",
+        "Agenda por día, semana y mes"
+      ],
+      "whyTitle": "Por qué lo hicimos.",
+      "why": "Los turnos se piden por mensaje. Hay que mirar la agenda, responder y volver a escribir. Armamos Tuturnero para que el negocio publique sus horarios y el cliente reserve solo.",
+      "customersTitle": "Dónde está hoy.",
+      "customers": "Tuturnero está publicado y en beta. Crear la página es gratis mientras dure la beta. Las reservas no tienen comisión.",
+      "category": "Turnos · Negocios con agenda",
+      "heroAlt": "Captura de la página de inicio de Tuturnero",
+      "title": "Tuturnero",
+      "summary": "Tu agenda, tus horarios y tus clientes, en una sola página.",
+      "tags": ["Turnos", "Reservas"],
+      "metaTitle": "Tuturnero: página de reservas para turnos",
+      "metaDescription": "Tuturnero arma una página con link y QR para que tus clientes reserven un turno sin cuenta y sin comisión. Producto propio de ShippersLab, en beta.",
+      "visitLabel": "Visitar Tuturnero",
+      "featuresTitle": "Qué incluye.",
+      "features": [
+        {
+          "title": "Página con link y QR",
+          "body": "La página queda en un link corto, con QR y un cartel para imprimir. La podés compartir en Instagram, por WhatsApp o en el mostrador. El cliente abre el link, elige un horario, deja su nombre y listo: no necesita una cuenta."
+        },
+        {
+          "title": "Horarios",
+          "body": "Prendés y apagás cada día de la semana y podés usar un horario distinto por día. Hay atajos para lunes a viernes, todos los días o solo mañanas. Si un feriado o unas vacaciones no abrís, cerrás esa fecha sin tocar el resto. La página muestra únicamente lo que está libre."
+        },
+        {
+          "title": "Pedidos",
+          "body": "Te llega un pedido y lo aceptás o lo rechazás con un toque. También podés cargar los turnos que te piden por teléfono. Tus clientes cancelan solos desde su link, y salen emails de confirmación y de cancelación."
+        },
+        {
+          "title": "Sin doble reserva",
+          "body": "Dos personas nunca se quedan con el mismo horario. Apenas alguien pide un turno, deja de estar disponible. Lo que confirmás se ocupa en la agenda y nadie más lo puede pedir."
+        },
+        {
+          "title": "Tu marca",
+          "body": "La página lleva tu banner, tu foto y una descripción. También podés sumar Instagram, WhatsApp y tu web."
+        },
+        {
+          "title": "Canchas y otros rubros",
+          "body": "Está hecho para negocios que trabajan con turnos: canchas de fútbol y pádel, consultorios, peluquerías, barberías, estética, clases y más. En las canchas, los turnos pueden ser de 60 o 90 minutos, podés cerrar una cancha por torneo y no hay cruces entre jugadores."
+        }
+      ],
+      "galleryTitle": "Galería",
+      "galleryAlts": [
+        "Página de inicio de Tuturnero",
+        "Tres pasos para crear la página en Tuturnero",
+        "Horarios de atención en Tuturnero",
+        "Pedidos de turnos en Tuturnero",
+        "Página de reservas de una cancha en Tuturnero",
+        "Funciones de la página de reservas en Tuturnero"
+      ],
+      "eyebrow": "Producto propio",
+      "lead": "Tu agenda, tus horarios y tus clientes, en una sola página. Creá tu página de reservas en minutos, compartí el link y dejá de responder mensajes para dar turnos.",
+      "backLabel": "Todos los casos",
+      "factsLabel": "Datos del proyecto",
+      "facts": [
+        {
+          "label": "Proyecto",
+          "value": "Producto propio"
+        },
+        {
+          "label": "Estado",
+          "value": "En beta"
+        },
+        {
+          "label": "Pensado para",
+          "value": "Negocios con turnos"
+        },
+        {
+          "label": "Servicio",
+          "value": "Página de reservas"
+        }
+      ],
+      "overviewTitle": "El problema.",
+      "overview": "Una cancha, un consultorio o una peluquería atienden por turnos y la agenda suele estar en el teléfono de una persona. Los mensajes se pisan, dos personas piden el mismo horario y nadie ve qué está libre.",
+      "approachTitle": "Cómo lo resolvemos.",
+      "approach": "Tuturnero le arma al negocio una página pública. Marcás los días y los horarios, compartís el link o el QR y el cliente elige un turno sin crear una cuenta. Cada pedido lo aceptás o lo rechazás. Lo que confirmás se ocupa en la agenda y nadie más lo puede pedir.",
+      "flowTitle": "Un turno, de punta a punta.",
+      "flowDescription": "Sin instalar nada y sin capacitaciones. Si sabés usar WhatsApp, sabés usar Tuturnero.",
+      "flow": [
+        {
+          "title": "Entrá con Google",
+          "body": "Tu cuenta queda lista en segundos. Una contraseña menos para recordar."
+        },
+        {
+          "title": "Marcá cuándo atendés",
+          "body": "Elegís días y horarios. Si un feriado no abrís, lo cerrás con un toque."
+        },
+        {
+          "title": "Compartí tu link",
+          "body": "Lo pegás en Instagram, lo mandás por WhatsApp o imprimís el QR."
         }
       ]
     },
