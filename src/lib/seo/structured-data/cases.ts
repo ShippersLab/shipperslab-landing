@@ -96,7 +96,6 @@ export function buildEventopsCaseStructuredData(lang: Locale): Graph {
       "@type": "BusinessAudience",
       audienceType: page.facts[2].value,
     },
-    featureList: page.features.map((feature) => feature.title),
     image: `${site.url}${eventopsImages.hero.src}`,
     creator: {
       "@type": "Organization",
@@ -140,7 +139,6 @@ export function buildTuturneroCaseStructuredData(lang: Locale): Graph {
       "@type": "BusinessAudience",
       audienceType: page.facts[2].value,
     },
-    featureList: page.features.map((feature) => feature.title),
     image: `${site.url}${tuturneroImages.hero.src}`,
     creator: {
       "@type": "Organization",

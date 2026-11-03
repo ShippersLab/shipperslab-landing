@@ -359,18 +359,6 @@
       "description": "We're adding the projects we build with our clients. The next one could be yours."
     },
     "eventops": {
-      "doneTitle": "What we did.",
-      "done": [
-        "Product and interface design",
-        "Development of the full web system",
-        "PDF quotes and CSV export",
-        "Per-company users, with email invitations",
-        "Ongoing improvements with the people who use it"
-      ],
-      "whyTitle": "Why we built it.",
-      "why": "Event companies coordinate dates, staff and payments with spreadsheets and messages. We built a system around how they actually work, to offer as our own product.",
-      "customersTitle": "We improve it with the people who use it.",
-      "customers": "EventOps is in production and event companies use it. We talk to them often, and every improvement comes from what they need day to day.",
       "category": "Management systems · Event companies",
       "heroAlt": "Screenshot of the EventOps home page",
       "title": "EventOps",
@@ -378,34 +366,7 @@
       "tags": ["Event management", "B2B"],
       "metaTitle": "EventOps: event company management system",
       "metaDescription": "EventOps brings the calendar, clients, staff and finances of an event company into a single system. A ShippersLab own product, in production.",
-      "visitLabel": "Visit EventOps",
-      "featuresTitle": "What it includes.",
-      "features": [
-        {
-          "title": "Calendar",
-          "body": "All events for the month, week or day in a single view, with the site visit, setup, sound check and teardown of each one."
-        },
-        {
-          "title": "Quotes",
-          "body": "Pick services from your list and the total adds up on its own. The quote is exported as a PDF with your logo, ready to send to the client. If you start from Excel, there's a [free budget template](https://eventops.digital/plantilla-presupuesto-eventos) (in Spanish) you can download as Excel or PDF."
-        },
-        {
-          "title": "Staff",
-          "body": "Add team members to each date with their role and see who's free before assigning them, so no event is left short-handed. When you assign someone, their pay fills in on its own. See how [crew pay and scheduling](https://eventops.digital/gestion-de-personal) works (in Spanish)."
-        },
-        {
-          "title": "Finances",
-          "body": "Deposits and installments in pesos or dollars, per-event and general expenses, and a monthly summary of income and expenses. All the data can be exported to CSV."
-        },
-        {
-          "title": "Clients",
-          "body": "Each client with contact details, source, history and next event. Individuals, companies and venues in a single record."
-        },
-        {
-          "title": "Team",
-          "body": "Everyone at the company signs in with their own user. Invitations are sent by email and each company only sees its own data."
-        }
-      ],
+      "visitLabel": "Try EventOps",
       "galleryTitle": "Gallery",
       "galleryAlts": [
         "EventOps home page",
@@ -416,7 +377,7 @@
         "EventOps finances dashboard"
       ],
       "eyebrow": "Own product",
-      "lead": "The calendar, clients, staff and finances of your event company in one place. A ShippersLab own product, in production and in use.",
+      "lead": "The calendar, clients, staff and finances of your events company in one place. It is a ShippersLab own product, in production and used every day by events companies.",
       "backLabel": "All projects",
       "factsLabel": "Project details",
       "facts": [
@@ -437,79 +398,60 @@
           "value": "Management system"
         }
       ],
-      "overviewTitle": "The problem.",
-      "overview": "An event company handles dates, teams, clients and payments at the same time. With the information scattered across spreadsheets and messages, two events overlap, staff goes missing and nobody knows how much came in and how much is still owed. If you still run it on spreadsheets, read [how to organize an event company](/blog/como-organizar-una-empresa-de-eventos).",
-      "approachTitle": "How we solve it.",
-      "approach": "EventOps puts the whole operation in one system. Each event has its client, its team and its money, and the calendar shows at a glance what needs to happen and when. Everyone on the team always sees the same information.",
-      "flowTitle": "One event, end to end.",
-      "flowDescription": "Each event is entered once and everything else comes from it. Nothing has to be copied into another spreadsheet.",
-      "flow": [
+      "sections": [
         {
-          "title": "Create the event",
-          "body": "Create it with its client and dates: site visit, setup, soundcheck and teardown. The system warns you if two overlap."
+          "title": "Why we built it.",
+          "body": [
+            "Events companies coordinate dates, staff and payments with spreadsheets and messages. We saw that does not scale and built a system around the way they work.",
+            "We offer it as our own product, so any events company can get organized without commissioning custom software."
+          ]
         },
         {
-          "title": "Build the quote",
-          "body": "Pick the services and the total is calculated for you. It exports as a PDF with your logo."
+          "title": "The problem.",
+          "body": [
+            "An events company juggles dates, crews, clients and payments at once. With everything spread across spreadsheets and messages, two events overlap, staff is missing and nobody knows how much came in and how much is still owed.",
+            "If you still run it on spreadsheets, read [how to organize an events company](/blog/como-organizar-una-empresa-de-eventos)."
+          ]
         },
         {
-          "title": "Assign the staff",
-          "body": "Add team members to each date with their role and see who is free."
+          "title": "What we built.",
+          "body": [
+            "EventOps puts the whole operation in one system. Each event has its client, its team and its money, and the calendar shows at a glance what to do and when.",
+            "The whole team always sees the same information, with nothing to copy from one spreadsheet to another."
+          ]
         },
         {
-          "title": "Collect and track",
-          "body": "Log deposits, installments and expenses in pesos or dollars. The monthly summary shows what is still owed."
+          "title": "How we built it.",
+          "body": [
+            "We designed and developed it ourselves, from the interface to the full system. Each company signs in with its own users, invited by email, and sees only its own data.",
+            "We talk to the people using it often and every improvement comes from what they need day to day."
+          ]
+        },
+        {
+          "title": "How it works.",
+          "body": [
+            "You create an event once, with its client and dates: site visit, setup, sound check and teardown. Then you build the quote, which goes out as a PDF with your logo, and assign staff while seeing who is free. There is a [free quote template](https://eventops.digital/plantilla-presupuesto-eventos) and a guide to [staff payment and assignment](https://eventops.digital/gestion-de-personal).",
+            "To get paid, you record the deposit and installments in pesos or dollars, along with expenses. The monthly summary shows what came in and what is still owed, and everything exports to CSV."
+          ]
+        },
+        {
+          "title": "Where it stands.",
+          "body": ["EventOps is in production and events companies use it."]
         }
-      ]
+      ],
+      "productTitle": "Get your events company in order.",
+      "productDescription": "Calendar, clients, staff and finances in one system. Try it on your next event.",
+      "productCta": "Try EventOps"
     },
     "tuturnero": {
-      "doneTitle": "What we did.",
-      "done": [
-        "Product and interface design",
-        "Public booking page with a link and QR code",
-        "Hours, holidays and blocks",
-        "Requests you confirm, with no double booking",
-        "Day, week and month schedule"
-      ],
-      "whyTitle": "Why we built it.",
-      "why": "Appointments get requested over messages. You check the schedule, reply and type it in again. We built Tuturnero so the business can publish its hours and the client can book on their own.",
-      "customersTitle": "Where it stands.",
-      "customers": "Tuturnero is published and in beta. Creating the page is free while the beta lasts. Bookings have no commission.",
       "category": "Bookings · Appointment-based businesses",
       "heroAlt": "Screenshot of the Tuturnero home page",
       "title": "Tuturnero",
       "summary": "Your schedule, your hours and your clients on a single page.",
-      "tags": ["Bookings", "Appointments"],
+      "tags": ["Bookings", "SaaS"],
       "metaTitle": "Tuturnero: a booking page for appointments",
       "metaDescription": "Tuturnero gives each business a page with a link and QR code so clients book without an account and without a commission. A ShippersLab own product, in beta.",
-      "visitLabel": "Visit Tuturnero",
-      "featuresTitle": "What it includes.",
-      "features": [
-        {
-          "title": "Page with a link and QR code",
-          "body": "The page gets a short link, a QR code and a poster you can print. Share it on Instagram, over WhatsApp or at the counter. The client opens the link, picks a time, leaves their name and that is it: no account needed."
-        },
-        {
-          "title": "Hours",
-          "body": "Turn each day of the week on or off, and use a different schedule per day. There are shortcuts for weekdays, every day or mornings only. If you are closed for a holiday or a vacation, you close that date without touching the rest. The page only shows what is free."
-        },
-        {
-          "title": "Requests",
-          "body": "A request comes in and you accept or decline it with one tap. You can also add the appointments people ask for by phone. Clients cancel on their own from their link, and confirmation and cancellation emails go out."
-        },
-        {
-          "title": "No double booking",
-          "body": "Two people never end up with the same time. As soon as someone requests a slot, it stops being available. What you confirm is taken on the schedule and nobody else can book it."
-        },
-        {
-          "title": "Your brand",
-          "body": "The page carries your banner, your photo and a description. You can also add Instagram, WhatsApp and your website."
-        },
-        {
-          "title": "Courts and other businesses",
-          "body": "It is built for businesses that work by appointment: football and padel courts, clinics, hair salons, barbershops, beauty studios, classes and more. On courts, slots can be 60 or 90 minutes, you can close a court for a tournament and players do not overlap."
-        }
-      ],
+      "visitLabel": "Try Tuturnero for free",
       "galleryTitle": "Gallery",
       "galleryAlts": [
         "Tuturnero home page",
@@ -520,7 +462,7 @@
         "Booking page features in Tuturnero"
       ],
       "eyebrow": "Own product",
-      "lead": "Your schedule, your hours and your clients on a single page. Create your booking page in minutes, share the link and stop answering messages to give out appointments.",
+      "lead": "A multi-industry booking tool. Create your account, set up your booking page and start receiving appointments. It is built for courts, clinics, salons and any business that works by appointment. It is an own product and real customers already use it.",
       "backLabel": "All projects",
       "factsLabel": "Project details",
       "facts": [
@@ -541,50 +483,55 @@
           "value": "Booking page"
         }
       ],
-      "overviewTitle": "The problem.",
-      "overview": "A court, a clinic or a salon runs on appointments, and the schedule often lives on one person's phone. Messages overlap, two people ask for the same time and nobody can see what is free.",
-      "approachTitle": "How we solve it.",
-      "approach": "Tuturnero builds a public page for the business. You set the days and hours, share the link or the QR code and the client picks a time without creating an account. You accept or decline each request. A confirmed time is taken and nobody else can book it.",
-      "flowTitle": "One appointment, end to end.",
-      "flowDescription": "Nothing to install and no training. If you know how to use WhatsApp, you know how to use Tuturnero.",
-      "flow": [
+      "sections": [
         {
-          "title": "Sign in with Google",
-          "body": "Your account is ready in seconds. One less password to remember."
+          "title": "Why we built it.",
+          "body": [
+            "A business that works by appointment (a court, a clinic, a salon) usually books over messages. We thought booking an appointment should not take a conversation.",
+            "We wanted something that works for any industry, sets up in minutes and does not make anyone install or learn anything."
+          ]
         },
         {
-          "title": "Set when you are open",
-          "body": "Pick days and hours. If you are closed on a holiday, you close it with one tap."
+          "title": "The problem.",
+          "body": [
+            "Every appointment is an exchange: the client asks what is free, someone checks the schedule, replies, confirms and writes it down. If two people ask for the same time, one of them is left without a slot.",
+            "For the business it is lost time. For the client it is waiting on a reply for something that should take a minute."
+          ]
         },
         {
-          "title": "Share your link",
-          "body": "Paste it on Instagram, send it over WhatsApp or print the QR code."
-        }
-      ]
-    },
-    "estacionar": {
-      "ideaTitle": "The idea.",
-      "idea": "Estacionar started in-house: we came up with it. A marketplace, think Airbnb for parking, that connects people with an unused garage or space to people who need somewhere to leave the car. It is a big idea and we took it seriously: we built the brand, the app and the landing page ourselves, end to end.",
-      "howTitle": "How it was going to work.",
-      "howIntro": "Three sides on one platform.",
-      "how": [
-        {
-          "title": "Drivers",
-          "body": "Search for parking by city and book the spot. It also helps plan a trip: you can book a space while you are on vacation."
+          "title": "What we built.",
+          "body": [
+            "Tuturnero gives each business a booking page with its brand, its hours and a short link with a QR code. The client picks a free time, leaves a name and books, without creating an account.",
+            "The business receives each request and accepts or declines it with one tap. What it confirms is taken on the schedule, so nobody else can book that time."
+          ]
         },
         {
-          "title": "Garage owners",
-          "body": "List a garage or a space they do not use and rent it out. A parked-empty space starts earning."
+          "title": "How we built it.",
+          "body": [
+            "We designed and built it ourselves, from the interface to the code. We made it usable without explanations: you sign in with Google, set when you are open and your page is ready.",
+            "Each business sets its own hours, holidays and vacations, and the system prevents double bookings on its own. What we add comes from what the people already using it tell us."
+          ]
         },
         {
-          "title": "Parking lots",
-          "body": "Our plan was to talk to parking lots in different cities so they could load their profile and their prices on the platform."
+          "title": "How it works.",
+          "body": [
+            "You create your account, upload your banner and photo, and set the days and hours you are open. Then you share the link on Instagram, over WhatsApp or with the QR code at the counter.",
+            "Do people book by phone? You can add those by hand too."
+          ]
+        },
+        {
+          "title": "Where it stands.",
+          "body": [
+            "Tuturnero is published and in beta. Customers already use it every day and we work with them to improve it.",
+            "Creating your page is free while the beta lasts and bookings have no commission."
+          ]
         }
       ],
-      "brandTitle": "The brand.",
-      "brand": "We thought the colors in terms of traffic: road signs, roads and parking. That is why we chose yellow and black, a palette you can spot from afar. The logo is a P for parking combined with a map pin.",
-      "stageTitle": "Where it stands.",
-      "stage": "Estacionar is not published yet. The brand is defined, the social media is set up, and the web app and the landing page are built. We keep developing it as our own product.",
+      "productTitle": "Set up your booking page.",
+      "productDescription": "Create a free account, set your hours and share your link. You are up and running in minutes.",
+      "productCta": "Create my page for free"
+    },
+    "estacionar": {
       "factsLabel": "Project facts",
       "facts": [
         {
@@ -604,13 +551,11 @@
           "value": "Marketplace"
         }
       ],
-      "whyTitle": "The problem.",
-      "why": "There are empty garages, and there are drivers circling the block with nowhere to park. Both exist in the same city and rarely find each other. Estacionar puts them in one place.",
       "heroAlt": "Estacionar logo, a map pin spiral, on a yellow background",
       "title": "Estacionar",
       "category": "Branding · Parking marketplace",
       "summary": "The identity of a marketplace to rent and find parking spaces.",
-      "tags": ["Branding", "Identity", "Web app", "Landing page"],
+      "tags": ["Marketplace", "Branding"],
       "metaTitle": "Estacionar: the parking space marketplace",
       "metaDescription": "Estacionar connects people with an unused garage to drivers looking for parking. A ShippersLab own product: brand, app and landing page. Not published yet.",
       "eyebrow": "Own product",
@@ -628,12 +573,48 @@
           "alt": "Estacionar logo construction grid"
         }
       ],
-      "doneTitle": "What we built.",
-      "done": ["Branding and visual identity", "Social media", "Web app", "Landing page"]
+      "sections": [
+        {
+          "title": "Why we built it.",
+          "body": [
+            "There are empty garages and people circling without finding a place to park. Both sides exist in the same city and almost never meet.",
+            "The idea was ours: something like Airbnb for parking. We took it on as our own product and took it seriously."
+          ]
+        },
+        {
+          "title": "The problem.",
+          "body": [
+            "Anyone with an unused garage or space has no simple place to rent it out. Anyone driving does not know where there is room and loses time looking.",
+            "And on vacation in another city, figuring out where to leave the car becomes one more problem."
+          ]
+        },
+        {
+          "title": "What we built.",
+          "body": [
+            "A marketplace with three sides on one platform. Drivers search for parking by city and book the spot. Garage owners list a space they do not use and rent it out.",
+            "Commercial parking lots could join too: our plan was to talk to parking lots in different cities so they could load their profile and prices."
+          ]
+        },
+        {
+          "title": "How we built it.",
+          "body": [
+            "We did it end to end ourselves: the brand, the social media, a web app and a landing page.",
+            "We thought of the colors in terms of traffic: road signs, roads and garages. That is why we chose yellow and black, a palette you can see from far away. The logo is a P for parking combined with a map pin."
+          ]
+        },
+        {
+          "title": "Where it stands.",
+          "body": [
+            "Estacionar is not published yet. The brand is defined, the social media is set up, and the web app and the landing page are built.",
+            "We keep thinking of it as our own product."
+          ]
+        }
+      ]
     },
-    "ctaTitle": "Want to see if this fits your business?",
-    "ctaDescription": "Tell us what takes your time or what you want to organize. We reply with scope and price in writing.",
-    "ctaButton": "Tell us your problem"
+    "ctaTitle": "Let's build something together.",
+    "ctaDescription": "We design and build products like this end to end. Tell us what you want to get organized and we reply with scope and price in writing.",
+    "ctaButton": "Tell us your problem",
+    "ctaMore": "See more projects"
   },
   "servicePages": {
     "relatedTitle": "Other services.",

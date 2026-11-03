@@ -3,6 +3,7 @@
 import { ProjectCard } from "@/components/sections/casos/project-card";
 import { SoonCard } from "@/components/sections/casos/soon-card";
 import { Reveal } from "@/components/ui/animation/reveal";
+import { FrameFade } from "@/components/ui/section/frame-fade";
 import { Container } from "@/components/ui/section/container";
 import { PageHeader } from "@/components/ui/section/page-header";
 import { useI18n } from "@/i18n/provider";
@@ -20,12 +21,13 @@ export function Casos() {
   const page = messages.casos;
 
   return (
-    <div className="mx-auto w-full max-w-content border-x border-border">
-      <Container className="py-20 sm:py-28">
+    <div className="relative mx-auto w-full max-w-content border-x border-border">
+      <FrameFade />
+      <Container className="border-b border-border py-20 sm:py-28">
         <PageHeader title={page.title} description={page.description} />
       </Container>
 
-      <Container className="w-full py-16 sm:py-20 md:py-28">
+      <Container className="w-full py-12 sm:py-16">
         <div className="grid gap-x-12 gap-y-20 md:grid-cols-2">
           <Reveal delay={GRID_DELAY} className="h-full">
             <ProjectCard

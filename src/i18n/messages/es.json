@@ -359,18 +359,6 @@
       "description": "Estamos sumando los proyectos que hacemos con nuestros clientes. El próximo puede ser el tuyo."
     },
     "eventops": {
-      "doneTitle": "Qué hicimos.",
-      "done": [
-        "Diseño del producto y de la interfaz",
-        "Desarrollo del sistema web completo",
-        "Presupuestos en PDF y exportación a CSV",
-        "Usuarios por empresa, con invitaciones por email",
-        "Mejoras continuas junto a quienes lo usan"
-      ],
-      "whyTitle": "Por qué lo hicimos.",
-      "why": "Las empresas de eventos coordinan fechas, personal y cobros con planillas y mensajes. Vimos que eso no escala y armamos un sistema desde su forma de trabajar, para ofrecerlo como producto propio.",
-      "customersTitle": "Lo mejoramos con quienes lo usan.",
-      "customers": "EventOps está en producción y lo usan empresas de eventos. Hablamos seguido con ellas y cada mejora sale de lo que necesitan en su día a día.",
       "category": "Sistemas de gestión · Empresas de eventos",
       "heroAlt": "Captura de la página de inicio de EventOps",
       "title": "EventOps",
@@ -378,34 +366,7 @@
       "tags": ["Gestión de eventos", "B2B"],
       "metaTitle": "EventOps: sistema de gestión para eventos",
       "metaDescription": "EventOps reúne calendario, clientes, personal y finanzas de una empresa de eventos en un solo sistema. Producto propio de ShippersLab, en producción.",
-      "visitLabel": "Visitar EventOps",
-      "featuresTitle": "Qué incluye.",
-      "features": [
-        {
-          "title": "Calendario",
-          "body": "Todos los eventos del mes, la semana o el día en una sola vista, con la visita técnica, el montaje, la prueba de sonido y el desmontaje de cada uno."
-        },
-        {
-          "title": "Presupuestos",
-          "body": "Elegís servicios de tu lista y el total se arma solo. El presupuesto sale en PDF con tu logo, listo para enviar al cliente. Si partís de Excel, hay una [plantilla de presupuesto gratis](https://eventops.digital/plantilla-presupuesto-eventos) que se baja en Excel y en PDF."
-        },
-        {
-          "title": "Personal",
-          "body": "Sumás integrantes a cada fecha con su rol y ves quién está libre antes de asignarlo, para no dejar un evento sin gente. Al asignar a alguien, lo que cobra se completa solo: así funciona el [pago y la asignación del personal](https://eventops.digital/gestion-de-personal)."
-        },
-        {
-          "title": "Finanzas",
-          "body": "Seña y cuotas en pesos o dólares, gastos por evento y generales, y un resumen mensual de ingresos y egresos. Toda la información se puede exportar a CSV."
-        },
-        {
-          "title": "Clientes",
-          "body": "Cada cliente con sus datos de contacto, su origen, su historial y su próximo evento. Particulares, empresas y salones en un único registro."
-        },
-        {
-          "title": "Equipo",
-          "body": "Cada persona de la empresa entra con su propio usuario. Las invitaciones se envían por email y cada empresa ve solo sus datos."
-        }
-      ],
+      "visitLabel": "Probar EventOps",
       "galleryTitle": "Galería",
       "galleryAlts": [
         "Página de inicio de EventOps",
@@ -416,7 +377,7 @@
         "Panel de finanzas de EventOps"
       ],
       "eyebrow": "Producto propio",
-      "lead": "El calendario, los clientes, el personal y las finanzas de tu empresa de eventos en un solo lugar. Producto propio de ShippersLab, en producción y en uso.",
+      "lead": "El calendario, los clientes, el personal y las finanzas de tu empresa de eventos en un solo lugar. Es un producto propio de ShippersLab, está en producción y lo usan empresas de eventos todos los días.",
       "backLabel": "Todos los casos",
       "factsLabel": "Datos del proyecto",
       "facts": [
@@ -437,79 +398,60 @@
           "value": "Sistema de gestión"
         }
       ],
-      "overviewTitle": "El problema.",
-      "overview": "Una empresa de eventos maneja fechas, equipos, clientes y pagos al mismo tiempo. Con la información repartida en planillas y mensajes, se pisan dos eventos, falta personal y nadie sabe cuánto entró y cuánto falta cobrar. Si todavía lo resolvés con planillas, leé [cómo organizar una empresa de eventos](/blog/como-organizar-una-empresa-de-eventos).",
-      "approachTitle": "Cómo lo resolvemos.",
-      "approach": "EventOps junta toda la operación en un solo sistema. Cada evento tiene su cliente, su equipo y su plata, y el calendario muestra de un vistazo qué hay que hacer y cuándo. Todo el equipo ve siempre la misma información.",
-      "flowTitle": "Un evento, de punta a punta.",
-      "flowDescription": "Cada evento se carga una sola vez y de ahí sale todo lo demás. No hay que copiar nada a otra planilla.",
-      "flow": [
+      "sections": [
         {
-          "title": "Cargar el evento",
-          "body": "Se crea con su cliente y sus fechas: visita técnica, montaje, prueba y desmontaje. El sistema avisa si dos se pisan."
+          "title": "Por qué lo hicimos.",
+          "body": [
+            "Las empresas de eventos coordinan fechas, personal y cobros con planillas y mensajes. Vimos que eso no escala y armamos un sistema desde su forma de trabajar.",
+            "Lo ofrecemos como producto propio, para que cualquier empresa de eventos pueda ordenarse sin encargar un desarrollo a medida."
+          ]
         },
         {
-          "title": "Armar el presupuesto",
-          "body": "Elegís los servicios y el total se calcula solo. Sale en PDF con el logo de la empresa."
+          "title": "El problema.",
+          "body": [
+            "Una empresa de eventos maneja fechas, equipos, clientes y pagos al mismo tiempo. Con todo repartido en planillas y mensajes, se pisan dos eventos, falta personal y nadie sabe cuánto entró y cuánto falta cobrar.",
+            "Si todavía lo resolvés con planillas, leé [cómo organizar una empresa de eventos](/blog/como-organizar-una-empresa-de-eventos)."
+          ]
         },
         {
-          "title": "Asignar al personal",
-          "body": "Sumás integrantes a cada fecha con su rol y ves quién está libre."
+          "title": "Qué construimos.",
+          "body": [
+            "EventOps junta toda la operación en un solo sistema. Cada evento tiene su cliente, su equipo y su plata, y el calendario muestra de un vistazo qué hay que hacer y cuándo.",
+            "Todo el equipo ve siempre la misma información, sin copiar nada de una planilla a otra."
+          ]
         },
         {
-          "title": "Cobrar y controlar",
-          "body": "Registrás seña, cuotas y gastos en pesos o dólares. El resumen mensual muestra lo que falta cobrar."
+          "title": "Cómo lo hicimos.",
+          "body": [
+            "Lo diseñamos y lo desarrollamos nosotros, de la interfaz al sistema completo. Cada empresa entra con sus propios usuarios, que se invitan por email, y ve solo sus datos.",
+            "Hablamos seguido con quienes lo usan y cada mejora sale de lo que necesitan en su día a día."
+          ]
+        },
+        {
+          "title": "Cómo se usa.",
+          "body": [
+            "Cargás el evento una sola vez, con su cliente y sus fechas: visita técnica, montaje, prueba y desmontaje. Después armás el presupuesto, que sale en PDF con tu logo, y asignás al personal viendo quién está libre. Hay una [plantilla de presupuesto gratis](https://eventops.digital/plantilla-presupuesto-eventos) y una guía de [pago y asignación del personal](https://eventops.digital/gestion-de-personal).",
+            "Para cobrar, registrás la seña y las cuotas en pesos o dólares, junto con los gastos. El resumen mensual muestra lo que entró y lo que falta, y todo se exporta a CSV."
+          ]
+        },
+        {
+          "title": "Dónde está hoy.",
+          "body": ["EventOps está en producción y lo usan empresas de eventos."]
         }
-      ]
+      ],
+      "productTitle": "Ordená tu empresa de eventos.",
+      "productDescription": "Calendario, clientes, personal y finanzas en un solo sistema. Probalo con tu próximo evento.",
+      "productCta": "Probar EventOps"
     },
     "tuturnero": {
-      "doneTitle": "Qué hicimos.",
-      "done": [
-        "Diseño del producto y de la interfaz",
-        "Página pública de reservas con link y QR",
-        "Horarios, feriados y bloqueos",
-        "Pedidos con confirmación y sin doble reserva",
-        "Agenda por día, semana y mes"
-      ],
-      "whyTitle": "Por qué lo hicimos.",
-      "why": "Los turnos se piden por mensaje. Hay que mirar la agenda, responder y volver a escribir. Armamos Tuturnero para que el negocio publique sus horarios y el cliente reserve solo.",
-      "customersTitle": "Dónde está hoy.",
-      "customers": "Tuturnero está publicado y en beta. Crear la página es gratis mientras dure la beta. Las reservas no tienen comisión.",
       "category": "Turnos · Negocios con agenda",
       "heroAlt": "Captura de la página de inicio de Tuturnero",
       "title": "Tuturnero",
       "summary": "Tu agenda, tus horarios y tus clientes, en una sola página.",
-      "tags": ["Turnos", "Reservas"],
+      "tags": ["Reservas", "SaaS"],
       "metaTitle": "Tuturnero: página de reservas para turnos",
       "metaDescription": "Tuturnero arma una página con link y QR para que tus clientes reserven un turno sin cuenta y sin comisión. Producto propio de ShippersLab, en beta.",
-      "visitLabel": "Visitar Tuturnero",
-      "featuresTitle": "Qué incluye.",
-      "features": [
-        {
-          "title": "Página con link y QR",
-          "body": "La página queda en un link corto, con QR y un cartel para imprimir. La podés compartir en Instagram, por WhatsApp o en el mostrador. El cliente abre el link, elige un horario, deja su nombre y listo: no necesita una cuenta."
-        },
-        {
-          "title": "Horarios",
-          "body": "Prendés y apagás cada día de la semana y podés usar un horario distinto por día. Hay atajos para lunes a viernes, todos los días o solo mañanas. Si un feriado o unas vacaciones no abrís, cerrás esa fecha sin tocar el resto. La página muestra únicamente lo que está libre."
-        },
-        {
-          "title": "Pedidos",
-          "body": "Te llega un pedido y lo aceptás o lo rechazás con un toque. También podés cargar los turnos que te piden por teléfono. Tus clientes cancelan solos desde su link, y salen emails de confirmación y de cancelación."
-        },
-        {
-          "title": "Sin doble reserva",
-          "body": "Dos personas nunca se quedan con el mismo horario. Apenas alguien pide un turno, deja de estar disponible. Lo que confirmás se ocupa en la agenda y nadie más lo puede pedir."
-        },
-        {
-          "title": "Tu marca",
-          "body": "La página lleva tu banner, tu foto y una descripción. También podés sumar Instagram, WhatsApp y tu web."
-        },
-        {
-          "title": "Canchas y otros rubros",
-          "body": "Está hecho para negocios que trabajan con turnos: canchas de fútbol y pádel, consultorios, peluquerías, barberías, estética, clases y más. En las canchas, los turnos pueden ser de 60 o 90 minutos, podés cerrar una cancha por torneo y no hay cruces entre jugadores."
-        }
-      ],
+      "visitLabel": "Probar Tuturnero gratis",
       "galleryTitle": "Galería",
       "galleryAlts": [
         "Página de inicio de Tuturnero",
@@ -520,7 +462,7 @@
         "Funciones de la página de reservas en Tuturnero"
       ],
       "eyebrow": "Producto propio",
-      "lead": "Tu agenda, tus horarios y tus clientes, en una sola página. Creá tu página de reservas en minutos, compartí el link y dejá de responder mensajes para dar turnos.",
+      "lead": "Un turnero multi rubro. Creás tu cuenta, armás tu página de reservas y empezás a recibir turnos. Está pensado para canchas, consultorios, peluquerías y cualquier negocio que atienda con turnos. Es un producto propio y ya lo usan clientes reales.",
       "backLabel": "Todos los casos",
       "factsLabel": "Datos del proyecto",
       "facts": [
@@ -541,50 +483,55 @@
           "value": "Página de reservas"
         }
       ],
-      "overviewTitle": "El problema.",
-      "overview": "Una cancha, un consultorio o una peluquería atienden por turnos y la agenda suele estar en el teléfono de una persona. Los mensajes se pisan, dos personas piden el mismo horario y nadie ve qué está libre.",
-      "approachTitle": "Cómo lo resolvemos.",
-      "approach": "Tuturnero le arma al negocio una página pública. Marcás los días y los horarios, compartís el link o el QR y el cliente elige un turno sin crear una cuenta. Cada pedido lo aceptás o lo rechazás. Lo que confirmás se ocupa en la agenda y nadie más lo puede pedir.",
-      "flowTitle": "Un turno, de punta a punta.",
-      "flowDescription": "Sin instalar nada y sin capacitaciones. Si sabés usar WhatsApp, sabés usar Tuturnero.",
-      "flow": [
+      "sections": [
         {
-          "title": "Entrá con Google",
-          "body": "Tu cuenta queda lista en segundos. Una contraseña menos para recordar."
+          "title": "Por qué lo hicimos.",
+          "body": [
+            "Un negocio que atiende con turnos (una cancha, un consultorio, una peluquería) suele agendar por mensajes. Pensamos que reservar un turno no debería llevar una conversación.",
+            "Queríamos algo que sirva para cualquier rubro, que se arme en minutos y que no obligue a nadie a instalar ni aprender nada."
+          ]
         },
         {
-          "title": "Marcá cuándo atendés",
-          "body": "Elegís días y horarios. Si un feriado no abrís, lo cerrás con un toque."
+          "title": "El problema.",
+          "body": [
+            "Cada turno es un intercambio: el cliente pregunta qué hay libre, alguien revisa la agenda, responde, confirma y anota. Si dos personas piden el mismo horario, una se queda sin turno.",
+            "Para el negocio es tiempo perdido. Para el cliente, esperar una respuesta por algo que debería llevar un minuto."
+          ]
         },
         {
-          "title": "Compartí tu link",
-          "body": "Lo pegás en Instagram, lo mandás por WhatsApp o imprimís el QR."
-        }
-      ]
-    },
-    "estacionar": {
-      "ideaTitle": "La idea.",
-      "idea": "Estacionar nació en casa: se nos ocurrió a nosotros. Pensamos un marketplace, algo así como Airbnb para estacionar, que conecte a quienes tienen una cochera o un espacio sin usar con quienes necesitan dónde dejar el auto. Es una idea grande y la tomamos en serio: la marca, la aplicación y la landing las hicimos nosotros de punta a punta.",
-      "howTitle": "Cómo iba a funcionar.",
-      "howIntro": "Tres puntas en una misma plataforma.",
-      "how": [
-        {
-          "title": "Conductores",
-          "body": "Buscan estacionamiento por ciudad y reservan el lugar. También sirve para organizar el viaje: podés reservar un lugar mientras estás de vacaciones."
+          "title": "Qué construimos.",
+          "body": [
+            "Tuturnero le da a cada negocio una página de reservas con su marca, sus horarios y un link corto con QR. El cliente elige un horario libre, deja su nombre y reserva, sin crear una cuenta.",
+            "El negocio recibe cada pedido y lo acepta o lo rechaza con un toque. Lo que confirma se ocupa en la agenda, así que nadie más puede pedir ese horario."
+          ]
         },
         {
-          "title": "Dueños de cocheras",
-          "body": "Publican una cochera o un espacio que no usan y lo alquilan. Un espacio parado pasa a generar ingresos."
+          "title": "Cómo lo hicimos.",
+          "body": [
+            "Lo diseñamos y lo construimos nosotros, de la interfaz al código. Lo pensamos para usarlo sin explicaciones: entrás con Google, marcás cuándo atendés y ya tenés tu página.",
+            "Cada negocio configura sus horarios, sus feriados y sus vacaciones, y el sistema evita las dobles reservas solo. Lo que sumamos sale de lo que nos cuentan quienes ya lo usan."
+          ]
         },
         {
-          "title": "Estacionamientos",
-          "body": "Nuestro plan era hablar con estacionamientos de distintas ciudades para que cargaran su perfil y sus precios en la plataforma."
+          "title": "Cómo se usa.",
+          "body": [
+            "Creás tu cuenta, subís tu banner y tu foto, y marcás los días y horarios en que atendés. Después compartís el link en Instagram, por WhatsApp o con el QR en el mostrador.",
+            "¿Te piden turnos por teléfono? También podés cargarlos a mano."
+          ]
+        },
+        {
+          "title": "Dónde está hoy.",
+          "body": [
+            "Tuturnero está publicado y en beta. Ya tiene clientes que lo usan todos los días y trabajamos con ellos para mejorarlo.",
+            "Crear tu página es gratis mientras dure la beta y las reservas no tienen comisión."
+          ]
         }
       ],
-      "brandTitle": "La marca.",
-      "brand": "Pensamos los colores como el tránsito: señales, rutas y cocheras. Por eso elegimos amarillo y negro, una paleta que se ve de lejos. El logo es una P de parking combinada con un pin de mapa.",
-      "stageTitle": "Dónde está hoy.",
-      "stage": "Estacionar todavía no está publicado. La marca está definida, las redes armadas, y la aplicación web y la landing construidas. Seguimos pensándolo como producto propio.",
+      "productTitle": "Armá tu página de reservas.",
+      "productDescription": "Creá tu cuenta gratis, marcá tus horarios y compartí tu link. Lo dejás andando en minutos.",
+      "productCta": "Crear mi página gratis"
+    },
+    "estacionar": {
       "factsLabel": "Datos del proyecto",
       "facts": [
         {
@@ -604,13 +551,11 @@
           "value": "Marketplace"
         }
       ],
-      "whyTitle": "El problema.",
-      "why": "Hay cocheras vacías y gente que da vueltas sin encontrar dónde estacionar. Las dos puntas existen en la misma ciudad y casi nunca se encuentran. Estacionar las junta en un solo lugar.",
       "heroAlt": "Logo de Estacionar, un pin de mapa en espiral, sobre fondo amarillo",
       "title": "Estacionar",
       "category": "Branding · Marketplace de estacionamiento",
       "summary": "La identidad de un marketplace para alquilar y encontrar cocheras.",
-      "tags": ["Branding", "Identidad", "Aplicación web", "Landing"],
+      "tags": ["Marketplace", "Branding"],
       "metaTitle": "Estacionar: el marketplace de cocheras",
       "metaDescription": "Estacionar conecta a quienes tienen una cochera sin usar con quienes buscan dónde estacionar. Producto propio de ShippersLab. Aún sin publicar.",
       "eyebrow": "Producto propio",
@@ -628,12 +573,48 @@
           "alt": "Grilla de construcción del logo de Estacionar"
         }
       ],
-      "doneTitle": "Qué construimos.",
-      "done": ["Branding e identidad visual", "Redes sociales", "Aplicación web", "Landing page"]
+      "sections": [
+        {
+          "title": "Por qué lo hicimos.",
+          "body": [
+            "Hay cocheras vacías y gente que da vueltas sin encontrar dónde estacionar. Las dos puntas existen en la misma ciudad y casi nunca se encuentran.",
+            "Se nos ocurrió a nosotros: algo así como Airbnb para estacionar. Lo tomamos como producto propio y lo hicimos en serio."
+          ]
+        },
+        {
+          "title": "El problema.",
+          "body": [
+            "Quien tiene una cochera o un espacio sin usar no tiene un lugar simple donde alquilarlo. Quien maneja no sabe dónde hay lugar y pierde tiempo buscando.",
+            "Y si estás de vacaciones en otra ciudad, resolver dónde dejar el auto se vuelve un problema más."
+          ]
+        },
+        {
+          "title": "Qué construimos.",
+          "body": [
+            "Un marketplace con tres puntas en una misma plataforma. Los conductores buscan estacionamiento por ciudad y reservan el lugar. Los dueños de cocheras publican un espacio que no usan y lo alquilan.",
+            "Los estacionamientos comerciales también podían sumarse: nuestro plan era hablar con estacionamientos de distintas ciudades para que cargaran su perfil y sus precios."
+          ]
+        },
+        {
+          "title": "Cómo lo hicimos.",
+          "body": [
+            "Lo hicimos de punta a punta nosotros: la marca, las redes sociales, una aplicación web y una landing page.",
+            "Pensamos los colores como el tránsito: señales, rutas y cocheras. Por eso elegimos amarillo y negro, una paleta que se ve de lejos. El logo es una P de parking combinada con un pin de mapa."
+          ]
+        },
+        {
+          "title": "Dónde está hoy.",
+          "body": [
+            "Estacionar todavía no está publicado. La marca está definida, las redes armadas, y la aplicación web y la landing construidas.",
+            "Seguimos pensándolo como producto propio."
+          ]
+        }
+      ]
     },
-    "ctaTitle": "¿Querés ver si esto aplica a tu negocio?",
-    "ctaDescription": "Contanos qué te lleva tiempo o qué querés ordenar. Te respondemos con alcance y precio por escrito.",
-    "ctaButton": "Contanos tu problema"
+    "ctaTitle": "¿Construimos algo juntos?",
+    "ctaDescription": "Diseñamos y construimos productos como este de punta a punta. Contanos qué querés ordenar y te respondemos con alcance y precio por escrito.",
+    "ctaButton": "Contanos tu problema",
+    "ctaMore": "Ver más casos"
   },
   "servicePages": {
     "relatedTitle": "Otros servicios.",

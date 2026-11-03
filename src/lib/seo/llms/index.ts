@@ -72,15 +72,11 @@ export function buildLlmsTxt() {
     `Experiencia: ${EXPERIENCE}`,
     `Fundadores:\n\n${founders.join("\n")}`,
     `Preguntas frecuentes:\n\n${faq.join("\n")}`,
-    `## Caso: Tuturnero\n\n${TUTURNERO_CASE}\n\nQué incluye:\n\n${bullets(
-      es.casos.tuturnero.features.map((feature) => `${feature.title}: ${feature.body}`),
-    )}\n\n${[
+    `## Caso: Tuturnero\n\n${TUTURNERO_CASE}\n\n${[
       link("Caso Tuturnero", `${site.url}/casos/tuturnero`),
       link("Tuturnero", site.tuturneroUrl),
     ].join("\n")}`,
-    `## Caso: EventOps\n\n${EVENTOPS_CASE}\n\nMódulos:\n\n${bullets(
-      es.casos.eventops.features.map((feature) => `${feature.title}: ${feature.body}`),
-    )}\n\n${[
+    `## Caso: EventOps\n\n${EVENTOPS_CASE}\n\n${[
       link("Caso EventOps", `${site.url}/casos/eventops`),
       link("EventOps", site.eventopsUrl),
     ].join("\n")}`,

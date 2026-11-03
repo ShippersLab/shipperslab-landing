@@ -12,7 +12,7 @@ type GalleryMarqueeProps = {
 
 const ITEM_CLASS = "shrink-0 overflow-hidden rounded-lg";
 const IMAGE_CLASS = "block h-auto w-80 sm:w-xl lg:w-3xl";
-const IMAGE_SIZES = "(min-width: 1024px) 768px, (min-width: 640px) 576px, 320px";
+const IMAGE_SIZES = "(min-width: 1024px) 1536px, (min-width: 640px) 1152px, 640px";
 
 function removeFromTabOrder(element: HTMLElement | null) {
   element?.querySelectorAll("button").forEach((button) => button.setAttribute("tabindex", "-1"));
@@ -34,7 +34,7 @@ export function GalleryMarquee({ images, alts }: GalleryMarqueeProps) {
               src={image}
               alt={alts[index]}
               sizes={IMAGE_SIZES}
-              quality={90}
+              quality={100}
               zoomProps={zoomProps}
               className={IMAGE_CLASS}
             />
@@ -51,7 +51,7 @@ export function GalleryMarquee({ images, alts }: GalleryMarqueeProps) {
               src={image}
               alt=""
               sizes={IMAGE_SIZES}
-              quality={90}
+              quality={100}
               zoomProps={zoomProps}
               className={IMAGE_CLASS}
             />

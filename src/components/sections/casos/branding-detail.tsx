@@ -3,15 +3,13 @@
 import { CaseCta } from "@/components/sections/casos/case-cta";
 import { CaseHeader } from "@/components/sections/casos/case-header";
 import { CaseImage } from "@/components/sections/casos/case-image";
-import { CaseList } from "@/components/sections/casos/case-list";
+import { CaseProse } from "@/components/sections/casos/case-prose";
 import { CaseRow } from "@/components/sections/casos/case-row";
-import { BlurReveal } from "@/components/ui/animation/blur-reveal";
+import { FrameFade } from "@/components/ui/section/frame-fade";
 import { Container } from "@/components/ui/section/container";
 import { SkeletonImage } from "@/components/ui/skeleton/skeleton-image";
 import { useI18n } from "@/i18n/provider";
 import { estacionarImages } from "@/lib/projects/estacionar";
-
-const BODY = "text-base leading-relaxed text-muted";
 
 export function BrandingDetail() {
   const { messages } = useI18n();
@@ -19,18 +17,17 @@ export function BrandingDetail() {
   const [cover, ...details] = page.images;
 
   return (
-    <div className="mx-auto w-full max-w-content border-x border-border">
+    <div className="relative mx-auto w-full max-w-content border-x border-border">
+      <FrameFade />
       <Container className="w-full py-20 sm:py-28">
         <CaseHeader
           backLabel={page.backLabel}
           eyebrow={page.eyebrow}
           title={page.title}
           lead={page.lead}
-          facts={page.facts}
-          factsLabel={page.factsLabel}
         />
 
-        <CaseImage tags={page.tags} delay={0.4} className="mt-16 sm:mt-20">
+        <CaseImage delay={0.4} className="mt-16 sm:mt-20">
           <figure>
             <div className="relative aspect-video overflow-hidden rounded-lg border border-border">
               <SkeletonImage
@@ -68,45 +65,14 @@ export function BrandingDetail() {
           ))}
         </ul>
 
-        <CaseRow title={page.ideaTitle}>
-          <p className={BODY}>{page.idea}</p>
-        </CaseRow>
-
-        <CaseRow title={page.whyTitle}>
-          <p className={BODY}>{page.why}</p>
-        </CaseRow>
-
-        <CaseRow title={page.howTitle}>
-          <p className={BODY}>{page.howIntro}</p>
-          <ul className="mt-6 flex flex-col">
-            {page.how.map((item, index) => (
-              <BlurReveal
-                as="li"
-                key={item.title}
-                delay={index * 0.08}
-                className="border-t border-border py-5"
-              >
-                <h3 className="text-lg text-ink">{item.title}</h3>
-                <p className={`mt-2 ${BODY}`}>{item.body}</p>
-              </BlurReveal>
-            ))}
-          </ul>
-        </CaseRow>
-
-        <CaseRow title={page.doneTitle}>
-          <CaseList items={page.done} />
-        </CaseRow>
-
-        <CaseRow title={page.brandTitle}>
-          <p className={BODY}>{page.brand}</p>
-        </CaseRow>
-
-        <CaseRow title={page.stageTitle}>
-          <p className={BODY}>{page.stage}</p>
-        </CaseRow>
-
-        <CaseCta />
+        {page.sections.map((section) => (
+          <CaseRow key={section.title} title={section.title}>
+            <CaseProse paragraphs={section.body} />
+          </CaseRow>
+        ))}
       </Container>
+
+      <CaseCta />
     </div>
   );
 }
