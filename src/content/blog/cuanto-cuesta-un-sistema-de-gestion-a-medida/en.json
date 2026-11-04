@@ -1,12 +1,12 @@
 {
   "title": "What a custom management system costs",
   "metaTitle": "What a custom management system costs a small business",
-  "metaDescription": "What drives the price of building or implementing a custom management system, including inventory. Scope and price in writing.",
-  "excerpt": "What pushes the price of building, implementing or setting up inventory in a custom system, which costs sit outside the build and what to bring to the first conversation.",
+  "metaDescription": "What drives the price of a custom management system for a small business: building it, rolling it out, or starting with stock. Scope and price in writing.",
+  "excerpt": "What pushes the price of a custom management system, which costs sit outside the build and what to bring to the first conversation.",
   "answer": "The price of building or implementing a custom management system depends on the scope, the integrations, the users, moving the data across and maintenance. An inventory system follows the same logic: what has to be tracked and what the stock has to match. We do not publish a rate. We build the price from your operation and agree it in writing before we start.",
   "intro": [
     "If your business runs on Excel and you are asking for a quote, a figure on its own is not enough. First we need to know what goes into the system and what stays out, and the price comes from that.",
-    "This note covers what drives the price, what it means to build or implement one, what changes for an inventory system, which costs to look at apart from the build, how it compares with staying on a spreadsheet or buying off-the-shelf software, and what to bring to the first conversation."
+    "This note covers what drives the price, what it means to build one and put it to work, what changes for an inventory system, which costs to look at apart from the build, how it compares with staying on a spreadsheet or buying off-the-shelf software, and what to bring to the first conversation."
   ],
   "sections": [
     {
@@ -33,11 +33,11 @@
       "title": "What it costs to build a management system",
       "paragraphs": [
         "Building a management system means constructing it for your operation: the scope of what goes in, the screens and the rules. Implementing it means putting it to work with your people and your data.",
-        "Users and their permissions weigh in there, along with integrations to invoicing, payments or the tool you already use, moving the data out of Excel and, if you hire it, maintenance afterwards. That answers what it costs to implement a management system, and the price sits in the same document as the build."
+        "Implementation is where users and their permissions weigh in, along with integrations to invoicing, payments or the tool you already use, moving the data out of Excel and, if you hire it, maintenance afterwards. That price sits in the same document as the build."
       ],
       "closing": "Both go in writing: what is in, what stays out and the price, before we start.",
       "link": {
-        "label": "Ask for a quote",
+        "label": "Ask for the quote",
         "href": "/empecemos"
       }
     },
@@ -45,7 +45,8 @@
       "title": "What an inventory management system costs",
       "paragraphs": [
         "An inventory management system, or a stock system, can be the whole system or the first stage. The price follows the scope of the warehouse: one shop or several branches, today's available stock, or every receipt, issue and reservation.",
-        "Users, integrations and data migration move it too. The person who counts the goods, the person who sells and the person who only looks do not need the same screen. If stock has to drop when an order is confirmed, when you invoice or when you sell in the shop you already use, that connection is separate work. Moving the Excel file means unifying names and codes, and deciding whether the history comes across or only what is on hand today. Maintenance, for adjusting replenishment once it is running, is optional."
+        "Users, integrations and data migration move it too. The person who counts the goods, the person who sells and the person who only looks do not need the same screen.",
+        "If stock has to drop when an order is confirmed, when you invoice or when you sell in the shop you already use, that connection is separate work. Moving the Excel file means unifying names and codes, and deciding whether the history comes across or only what is on hand today. Maintenance, for adjusting replenishment once it is running, is optional."
       ],
       "closing": "If the full system is large, starting with inventory ties the price to that stage. What goes in now and what waits goes in writing.",
       "link": {
@@ -177,15 +178,15 @@
       },
       {
         "question": "What does it cost to build a management system?",
-        "answer": "Building it depends on the scope: modules and screens, users and permissions, integrations and moving the data out of Excel. Maintenance is optional. We do not publish a rate. Scope and price are agreed in writing before we start."
+        "answer": "We do not publish a rate for the build. The price follows that work: modules and screens, users and permissions, integrations and moving the data out of Excel. Maintenance is optional and sits apart from the build."
       },
       {
         "question": "What does it cost to implement a management system?",
-        "answer": "Implementing it means putting it to work with your team: users and permissions, integrations with what you already use, moving the data across and, if you hire it, maintenance. The price comes from that scope and sits in the same document as the build."
+        "answer": "Implementing it means putting it to work: who gets in and what they can do, which data comes from the spreadsheets and which tools it has to talk to. If you want adjustments later, maintenance is added on its own. That price sits in the same document as the build."
       },
       {
         "question": "What does an inventory management system cost?",
-        "answer": "An inventory or stock system can be the whole system or the first stage. What moves the price is the scope of the warehouse, who uses it, whether stock has to match orders or invoicing, and which data has to come from Excel. Maintenance is optional. The price of that stage goes in writing."
+        "answer": "It can be the whole system or the first stage. What moves it is the scope of the warehouse, who counts the goods and who only looks, whether stock has to match an order or an invoice, and which data you bring from Excel. Maintenance for that stage is optional."
       },
       {
         "question": "Are maintenance and training required?",

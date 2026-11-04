@@ -1,12 +1,12 @@
 {
   "title": "Cuánto cuesta un sistema de gestión a medida",
   "metaTitle": "Cuánto cuesta un sistema de gestión a medida para una pyme",
-  "metaDescription": "Qué define el precio de hacer o implementar un sistema de gestión a medida, incluido el de inventarios. Alcance y precio por escrito.",
-  "excerpt": "Qué empuja el precio de hacer, implementar o armar el inventario de un sistema a medida, qué costos van aparte del desarrollo y qué llevar a la primera charla.",
+  "metaDescription": "Qué define el precio de un sistema de gestión a medida para una pyme: construirlo, dejarlo andando o arrancar por el inventario. Alcance y precio por escrito.",
+  "excerpt": "Qué empuja el precio de un sistema de gestión a medida, qué costos van aparte del desarrollo y qué llevar a la primera charla.",
   "answer": "El precio de hacer o implementar un sistema de gestión a medida depende del alcance, las integraciones, los usuarios, la migración de datos y el mantenimiento. Un sistema de inventarios sigue esa lógica: qué hay que controlar y con qué tiene que coincidir el stock. No publicamos una tarifa. Armamos el precio con tu operación y lo acordamos por escrito antes de arrancar.",
   "intro": [
     "Si tu pyme se maneja con Excel y estás pidiendo un presupuesto, el precio solo no alcanza. Primero hay que saber qué entra en el sistema y qué queda afuera, y de eso sale el precio.",
-    "Esta nota recorre qué define el precio, qué implica hacerlo o implementarlo, qué cambia en un sistema de inventarios, qué costos mirar aparte del desarrollo, cómo se compara con seguir en la planilla o con un software enlatado y qué llevar a la primera charla."
+    "Esta nota recorre qué define el precio, qué implica construirlo y dejarlo andando, qué cambia en un sistema de inventarios, qué costos mirar aparte del desarrollo, cómo se compara con seguir en la planilla o con un software enlatado y qué llevar a la primera charla."
   ],
   "sections": [
     {
@@ -33,7 +33,7 @@
       "title": "Cuánto cuesta hacer un sistema de gestión",
       "paragraphs": [
         "Hacer un sistema de gestión es construirlo para tu operación: el alcance de lo que entra, las pantallas y las reglas. Implementarlo es dejarlo andando con tu gente y tus datos.",
-        "Ahí pesan los usuarios y sus permisos, las integraciones con facturación, pagos o la herramienta que ya usás, la migración de datos desde Excel y, si lo contratás, el mantenimiento de después. Con eso se responde cuánto cuesta implementar un sistema de gestión, y el precio va en el mismo documento que la construcción."
+        "En la implementación pesan los usuarios y sus permisos, las integraciones con facturación, pagos o la herramienta que ya usás, la migración de datos desde Excel y, si lo contratás, el mantenimiento de después. Ese precio va en el mismo documento que la construcción."
       ],
       "closing": "Las dos quedan por escrito: qué entra, qué queda afuera y el precio, antes de arrancar.",
       "link": {
@@ -45,7 +45,8 @@
       "title": "Cuánto cuesta un sistema de gestión de inventarios",
       "paragraphs": [
         "Un sistema de gestión de inventarios, o de stock, puede ser el sistema entero o la primera etapa. El precio acompaña el alcance del depósito: un local o varias sucursales, el disponible de hoy, o cada entrada, salida y reserva.",
-        "También lo mueven los usuarios, las integraciones y la migración de datos. Quien cuenta la mercadería, quien vende y quien solo mira no necesitan la misma pantalla. Si el stock tiene que bajar al confirmar un pedido, al facturar o al vender en la tienda que ya usás, esa conexión es trabajo aparte. Pasar el Excel implica unificar nombres y códigos, y decidir si traés el historial o solo lo que hay hoy. El mantenimiento, para ajustar la reposición cuando ya está en marcha, es opcional."
+        "También lo mueven los usuarios, las integraciones y la migración de datos. Quien cuenta la mercadería, quien vende y quien solo mira no necesitan la misma pantalla.",
+        "Si el stock tiene que bajar al confirmar un pedido, al facturar o al vender en la tienda que ya usás, esa conexión es trabajo aparte. Pasar el Excel implica unificar nombres y códigos, y decidir si traés el historial o solo lo que hay hoy. El mantenimiento, para ajustar la reposición cuando ya está en marcha, es opcional."
       ],
       "closing": "Si el sistema completo es grande, arrancar por el inventario deja el precio atado a esa etapa. Qué entra ahora y qué queda para después va por escrito.",
       "link": {
@@ -177,15 +178,15 @@
       },
       {
         "question": "¿Cuánto cuesta hacer un sistema de gestión?",
-        "answer": "Hacerlo depende del alcance: módulos y pantallas, usuarios y permisos, integraciones y la migración de datos desde Excel. El mantenimiento es opcional. No publicamos una tarifa. Alcance y precio se acuerdan por escrito antes de arrancar."
+        "answer": "No publicamos una tarifa para construirlo. El precio acompaña ese trabajo: módulos y pantallas, usuarios y permisos, integraciones y la migración de datos desde Excel. El mantenimiento es opcional y va aparte de la construcción."
       },
       {
         "question": "¿Cuánto cuesta implementar un sistema de gestión?",
-        "answer": "Implementarlo es dejarlo andando con tu equipo: usuarios y permisos, integraciones con lo que ya usás, migración de datos y, si lo contratás, mantenimiento. El precio sale de ese alcance y va en el mismo documento que la construcción."
+        "answer": "Implementarlo es dejarlo andando: quién entra y qué puede hacer, qué datos se traen de las planillas y con qué herramientas tiene que hablar. Si después querés ajustes, el mantenimiento se suma aparte. Ese precio va en el mismo documento que la construcción."
       },
       {
         "question": "¿Cuánto cuesta un sistema de gestión de inventarios?",
-        "answer": "Un sistema de inventario o de stock puede ser el sistema entero o la primera etapa. Lo mueven el alcance del depósito, quién lo usa, si el stock tiene que coincidir con pedidos o facturación, y qué datos hay que traer del Excel. El mantenimiento es opcional. El precio de esa etapa va por escrito."
+        "answer": "Puede ser el sistema entero o la primera etapa. Lo mueven el alcance del depósito, quién cuenta la mercadería y quién solo mira, si el stock tiene que coincidir con un pedido o una factura, y qué datos traés del Excel. El mantenimiento de esa etapa es opcional."
       },
       {
         "question": "¿El mantenimiento y la capacitación son obligatorios?",
