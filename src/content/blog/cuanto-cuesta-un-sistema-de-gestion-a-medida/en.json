@@ -35,7 +35,7 @@
         "Building a management system means constructing it for your operation: the scope of what goes in, the screens and the rules. Implementing it means putting it to work with your people and your data.",
         "Implementation is where users and their permissions weigh in, along with integrations to invoicing, payments or the tool you already use, moving the data out of Excel and, if you hire it, maintenance afterwards. That price sits in the same document as the build."
       ],
-      "closing": "Both go in writing: what is in, what stays out and the price, before we start.",
+      "closing": "Scope and price are put in writing before we start: what is in and what stays out.",
       "link": {
         "label": "Ask for the quote",
         "href": "/empecemos"
@@ -178,7 +178,7 @@
       },
       {
         "question": "What does it cost to build a management system?",
-        "answer": "We do not publish a rate for the build. The price follows that work: modules and screens, users and permissions, integrations and moving the data out of Excel. Maintenance is optional and sits apart from the build."
+        "answer": "Building it is the part that takes the most work, and the price comes from it, with no published rate: modules and screens, users and permissions, integrations and moving the data out of Excel. Maintenance is optional and sits apart from the build."
       },
       {
         "question": "What does it cost to implement a management system?",

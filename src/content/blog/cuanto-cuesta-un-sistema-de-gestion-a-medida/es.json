@@ -35,7 +35,7 @@
         "Hacer un sistema de gestión es construirlo para tu operación: el alcance de lo que entra, las pantallas y las reglas. Implementarlo es dejarlo andando con tu gente y tus datos.",
         "En la implementación pesan los usuarios y sus permisos, las integraciones con facturación, pagos o la herramienta que ya usás, la migración de datos desde Excel y, si lo contratás, el mantenimiento de después. Ese precio va en el mismo documento que la construcción."
       ],
-      "closing": "Las dos quedan por escrito: qué entra, qué queda afuera y el precio, antes de arrancar.",
+      "closing": "Alcance y precio quedan por escrito antes de arrancar: qué entra y qué queda afuera.",
       "link": {
         "label": "Pedir el presupuesto",
         "href": "/empecemos"
@@ -178,7 +178,7 @@
       },
       {
         "question": "¿Cuánto cuesta hacer un sistema de gestión?",
-        "answer": "No publicamos una tarifa para construirlo. El precio acompaña ese trabajo: módulos y pantallas, usuarios y permisos, integraciones y la migración de datos desde Excel. El mantenimiento es opcional y va aparte de la construcción."
+        "answer": "Construirlo es la parte que más trabajo lleva, y de ahí sale el precio, sin tarifa publicada: módulos y pantallas, usuarios y permisos, integraciones y la migración de datos desde Excel. El mantenimiento es opcional y va aparte de la construcción."
       },
       {
         "question": "¿Cuánto cuesta implementar un sistema de gestión?",
