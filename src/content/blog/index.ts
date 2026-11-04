@@ -3,9 +3,11 @@ import { meta as comoOrganizarUnaEmpresaDeEventos } from "@/content/blog/como-or
 import { meta as comoPagarleAlPersonalDeEventos } from "@/content/blog/como-pagarle-al-personal-de-eventos/meta";
 import { meta as comoSaberSiTuNegocioNecesitaPaginaWeb } from "@/content/blog/como-saber-si-tu-negocio-necesita-pagina-web/meta";
 import { meta as cuantoCuestaUnSistemaDeGestionAMedida } from "@/content/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida/meta";
+import { meta as excelOSistemaDeGestion } from "@/content/blog/excel-o-sistema-de-gestion/meta";
 import type { BlogPostEntry } from "@/content/blog/types";
 
 export const blogPosts = [
+  excelOSistemaDeGestion,
   comoMigrarDeWoocommerceATiendanube,
   comoPagarleAlPersonalDeEventos,
   cuantoCuestaUnSistemaDeGestionAMedida,
