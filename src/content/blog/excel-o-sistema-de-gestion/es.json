@@ -21,7 +21,7 @@
         "Pasá a un sistema. Errores de carga, stock que no coincide con el depósito, varias personas editando y reportes armados a mano.",
         "Podés hacer las dos cosas un tiempo. La planilla sigue para una parte y el sistema arranca por la que más duele, como los pedidos o el stock."
       ],
-      "closing": "Un sistema de gestión tiene sentido cuando esas reglas ya no entran en celdas. Si todavía entran, no hace falta cambiar de herramienta."
+      "closing": "Si tus reglas ya no entran en celdas, como un precio por cliente o un stock que se descuenta al confirmar, conviene pasar a un sistema. Si la planilla todavía te alcanza, seguí con ella."
     },
     {
       "title": "Señales de que tu negocio ya superó Excel",
@@ -155,7 +155,7 @@
     {
       "title": "Cuánto cuesta pasar de Excel a un sistema",
       "paragraphs": [
-        "No publicamos un monto. Cuánto cuesta hacer un sistema de gestión depende del alcance: módulos y pantallas, usuarios y permisos, integraciones, qué datos se pasan desde Excel y qué reportes hacen falta. Pedidos solos llevan menos trabajo que juntar stock, clientes, permisos y facturación.",
+        "No publicamos un monto. El precio depende del alcance: módulos y pantallas, usuarios y permisos, integraciones, qué datos se pasan desde Excel y qué reportes hacen falta. Pedidos solos llevan menos trabajo que juntar stock, clientes, permisos y facturación.",
         "El precio se arma con ese alcance y se acuerda por escrito antes de arrancar. Mantenimiento y capacitación son opcionales. Si el error es del sistema que construimos, lo corregimos nosotros igual.",
         "La nota de precios recorre qué mueve el número, qué costos van aparte del desarrollo y qué llevar a la primera charla, sin una tarifa publicada."
       ],
@@ -198,8 +198,8 @@
         "answer": "El enlatado alcanza si la operación entra en lo que el programa ya hace y podés dejar la planilla. El sistema a medida tiene sentido con reglas propias, permisos distintos o si el día a día volvió al Excel. En la charla te decimos qué conviene."
       },
       {
-        "question": "¿Cuánto cuesta hacer un sistema de gestión?",
-        "answer": "No publicamos una tarifa. Depende de módulos, usuarios, integraciones, la migración desde Excel y los reportes. Alcance y precio se acuerdan por escrito antes de arrancar. El detalle está en la nota sobre cuánto cuesta un sistema de gestión a medida."
+        "question": "¿Cuánto cuesta pasar de Excel a un sistema de gestión?",
+        "answer": "No publicamos una tarifa. Depende de los módulos, los usuarios, las integraciones y los reportes, y de cuánto hay que migrar desde Excel: qué planillas, cuántos productos y clientes, y si entra el historial. Alcance y precio se acuerdan por escrito antes de arrancar. El detalle está en la nota sobre cuánto cuesta un sistema de gestión a medida."
       }
     ]
   },

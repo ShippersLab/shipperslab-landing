@@ -21,7 +21,7 @@
         "Move to a system. Entry mistakes, stock that does not match the warehouse, several people editing, and reports built by hand.",
         "You can do both for a while. The spreadsheet stays for one part, and the system starts with what hurts most, such as orders or stock."
       ],
-      "closing": "A management system makes sense when those rules no longer fit in cells. If they still fit, there is no need to change tools."
+      "closing": "If your rules no longer fit in cells, such as a price per customer or stock that drops when an order is confirmed, a system is worth it. If the spreadsheet still does the job, keep using it."
     },
     {
       "title": "Signs your business has outgrown Excel",
@@ -155,7 +155,7 @@
     {
       "title": "What it costs to move from Excel to a system",
       "paragraphs": [
-        "We do not publish an amount. What it costs to build a management system depends on the scope: modules and screens, users and permissions, integrations, which data moves out of Excel, and which reports you need. Orders alone are less work than bringing stock, clients, permissions, and invoicing together.",
+        "We do not publish an amount. The price depends on the scope: modules and screens, users and permissions, integrations, which data moves out of Excel, and which reports you need. Orders alone are less work than bringing stock, clients, permissions, and invoicing together.",
         "The price is built from that scope and agreed in writing before we start. Maintenance and training are optional. If the mistake is in the system we built, we fix it either way.",
         "The pricing note covers what moves the number, which costs sit outside the build, and what to bring to the first conversation. There is no published rate there either."
       ],
@@ -198,8 +198,8 @@
         "answer": "Off-the-shelf software is enough if the operation fits what that program already does and you can leave the spreadsheet. A custom system makes sense with your own rules, different permissions, or if daily work went back to Excel. We tell you which fits in the conversation."
       },
       {
-        "question": "How much does it cost to build a management system?",
-        "answer": "We do not publish a rate. It depends on modules, users, integrations, the migration from Excel, and the reports. Scope and price are agreed in writing before we start. The detail is in the note on what a custom management system costs."
+        "question": "How much does it cost to move from Excel to a management system?",
+        "answer": "We do not publish a rate. It depends on the modules, users, integrations, and reports, and on how much has to move out of Excel: which spreadsheets, how many products and clients, and whether history comes along. Scope and price are agreed in writing before we start. The detail is in the note on what a custom management system costs."
       }
     ]
   },
