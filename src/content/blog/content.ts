@@ -10,12 +10,18 @@ import comoSaberSiTuNegocioNecesitaPaginaWebEn from "@/content/blog/como-saber-s
 import comoSaberSiTuNegocioNecesitaPaginaWebEs from "@/content/blog/como-saber-si-tu-negocio-necesita-pagina-web/es.json";
 import cuantoCuestaUnSistemaDeGestionAMedidaEn from "@/content/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida/en.json";
 import cuantoCuestaUnSistemaDeGestionAMedidaEs from "@/content/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida/es.json";
+import excelOSistemaDeGestionEn from "@/content/blog/excel-o-sistema-de-gestion/en.json";
+import excelOSistemaDeGestionEs from "@/content/blog/excel-o-sistema-de-gestion/es.json";
 import type { BlogSlug } from "@/content/blog";
 import type { BlogPostContent, BlogPostSummary } from "@/content/blog/types";
 import type { Locale } from "@/i18n/config";
 import { getReadingMinutes } from "@/lib/blog";
 
 const blogPostContent = {
+  "excel-o-sistema-de-gestion": {
+    es: excelOSistemaDeGestionEs,
+    en: excelOSistemaDeGestionEn,
+  },
   "como-migrar-de-woocommerce-a-tiendanube": {
     es: comoMigrarDeWoocommerceATiendanubeEs,
     en: comoMigrarDeWoocommerceATiendanubeEn,

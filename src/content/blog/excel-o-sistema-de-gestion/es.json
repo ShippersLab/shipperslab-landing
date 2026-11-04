@@ -1,0 +1,229 @@
+{
+  "title": "¿Excel o sistema de gestión? Cuándo conviene pasar y cómo migrar",
+  "metaTitle": "¿Excel o sistema de gestión? Cuándo conviene pasar y cómo migrar",
+  "metaDescription": "Cuándo conviene dejar Excel y pasar a un sistema de gestión: señales, comparación con un enlatado y cómo migrar pedidos y stock sin frenar la operación.",
+  "excerpt": "Cuándo una pyme puede seguir en Excel, qué señales muestran que la planilla ya no alcanza y cómo migrar sin frenar pedidos ni stock.",
+  "answer": "Excel alcanza cuando pocas personas cargan pocos movimientos, el stock no cambia seguido y la planilla no es el único lugar donde vive el dato. Conviene pasar a un sistema de gestión cuando los errores al cargar pedidos, el stock desactualizado o varias personas sobre el mismo archivo ya frenan la operación. La migración se hace por etapas, con las planillas que ya tenés, sin apagar el día a día el primer día.",
+  "intro": [
+    "Si tu pyme fabrica, distribuye, vende por mayor o presta un servicio, y hoy los pedidos, el stock o los clientes viven en Excel, esta nota ordena la decisión. Hay operaciones chicas que siguen bien en la planilla. Otras ya la usan como si fuera el sistema.",
+    "Abajo está cuándo Excel alcanza, las señales de que quedó chico, la comparación con un enlatado y con un sistema a medida, qué se gana al pasar y cómo migrar sin frenar la operación. El precio está en [cuánto cuesta un sistema de gestión a medida](/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida)."
+  ],
+  "sections": [
+    {
+      "title": "Cuándo Excel alcanza y cuándo no",
+      "paragraphs": [
+        "Excel alcanza cuando la planilla es una ayuda y la operación entra en la cabeza de quien la usa. Una fábrica chica, una distribuidora con pocos pedidos por día o un servicio con los clientes en una sola hoja pueden seguir así, si una o dos personas cargan y el número de la planilla es el del depósito o de la agenda.",
+        "Deja de alcanzar cuando el pedido se anota en el mensaje, otra vez en el archivo y otra vez para el depósito, y el reporte se arma copiando columnas. Si esa cadena se corta, se vende algo que no está o se cobra un precio viejo.",
+        "Cuando hace falta una persona para explicar dónde está cada dato, pedidos, stock y clientes ya no entran en un solo archivo."
+      ],
+      "items": [
+        "Seguí en Excel. Pocas personas, pocos movimientos, un solo archivo y un dato que no cambia todo el tiempo.",
+        "Pasá a un sistema. Errores de carga, stock que no coincide con el depósito, varias personas editando y reportes armados a mano.",
+        "Podés hacer las dos cosas un tiempo. La planilla sigue para una parte y el sistema arranca por la que más duele, como los pedidos o el stock."
+      ],
+      "closing": "Un sistema de gestión tiene sentido cuando esas reglas ya no entran en celdas. Si todavía entran, no hace falta cambiar de herramienta."
+    },
+    {
+      "title": "Señales de que tu negocio ya superó Excel",
+      "paragraphs": [
+        "Estas señales aparecen en fábricas, distribuidoras, mayoristas y servicios que crecieron con la planilla. No hace falta que estén todas. Con dos o tres ya conviene mirar un sistema para la parte que se traba."
+      ],
+      "items": [
+        "Errores al cargar pedidos. Un código mal cargado, un precio viejo o un cliente duplicado, y el pedido sale sin otra revisión.",
+        "Stock desactualizado. La planilla y el depósito no coinciden, y te enterás cuando ya prometiste mercadería que no está.",
+        "Varias personas en el mismo archivo. Alguien pisa el cambio de otro, o hay copias y nadie sabe cuál vale.",
+        "Reportes manuales. Cerrar la semana es copiar columnas y revisar que no falte una fila.",
+        "El dato vive en más de un lugar. WhatsApp, la planilla y a veces un cuaderno tienen cada uno su versión del pedido.",
+        "Dependés de quien armó la planilla. Si esa persona no está, el resto no puede seguir un pedido."
+      ],
+      "closing": "Si te reconocés en varias, el paso siguiente es elegir qué parte deja de vivir en el archivo, sin frenar los pedidos que salen hoy."
+    },
+    {
+      "title": "Excel, sistema enlatado o sistema a medida",
+      "paragraphs": [
+        "En la charla aparece la misma comparación: seguir en Excel, un software enlatado o un software de gestión a medida. Depende de qué tan propia sea la operación y de cuántas personas la tocan.",
+        "La tabla es cualitativa. No reemplaza un presupuesto y no trae montos. El precio sale del alcance, por escrito."
+      ],
+      "table": {
+        "caption": "Excel, software enlatado y sistema a medida: costo inicial, adaptación al proceso, multiusuario, integraciones, escalabilidad y dependencia",
+        "columns": ["Excel", "Enlatado", "A medida"],
+        "rows": [
+          {
+            "label": "Costo inicial",
+            "cells": [
+              "La planilla ya está. Cuesta el tiempo de mantenerla y de rehacerla.",
+              "Usás un producto que ya existe, hasta que la operación pide algo que el plan no trae.",
+              "Es el desarrollo acordado: módulos, permisos, integraciones y datos a pasar."
+            ]
+          },
+          {
+            "label": "Adaptación al proceso",
+            "cells": [
+              "Se acomoda a cómo trabajás, hasta que las fórmulas y las copias no dan más.",
+              "El equipo se adapta al programa. Lo que no entra queda en otra planilla.",
+              "Lo armamos con las reglas que tu equipo ya usa."
+            ]
+          },
+          {
+            "label": "Multiusuario",
+            "cells": [
+              "Varias personas lo abren y también se pisan. No queda claro quién cambió cada celda.",
+              "Suele traer usuarios, con los permisos que el producto ya deja configurar.",
+              "Cada rol ve lo suyo: dueño, administración, depósito o sucursal."
+            ]
+          },
+          {
+            "label": "Integraciones",
+            "cells": [
+              "Copiás a mano hacia facturación, pagos o el chat.",
+              "Trae las conexiones del producto. Si la tuya no está, el pase vuelve a ser manual.",
+              "Conectamos lo que ya usás, si deja entrar y salir datos."
+            ]
+          },
+          {
+            "label": "Escalabilidad",
+            "cells": [
+              "Aguanta mientras una persona lo entiende. Con más filas y más gente, se pone frágil.",
+              "Escala dentro del plan. Si la operación se sale, aparece otro programa.",
+              "Crece por módulos, empezando por pedidos o por stock."
+            ]
+          },
+          {
+            "label": "Dependencia",
+            "cells": [
+              "Depende de quien la armó. Si no está, cuesta saber dónde quedó cada dato.",
+              "Depende de quien hace el producto. Lo que el producto no trae queda afuera.",
+              "El alcance queda por escrito. Los errores nuestros los corregimos igual."
+            ]
+          }
+        ]
+      },
+      "closing": "Si el enlatado cubre el día a día y el equipo lo usa sin una planilla al lado, no hace falta reemplazarlo. Si igual volvés al Excel, conviene mirar un sistema a medida. Facturación, pagos, WhatsApp y lo que ya uses se conectan aparte: está en [integraciones](/integraciones)."
+    },
+    {
+      "title": "Qué se gana al pasar",
+      "paragraphs": [
+        "Al pasar, pedidos, stock, clientes y reportes salen del mismo dato, con un estado que el equipo entiende y una persona responsable. Una pyme puede ordenar primero la parte que hoy se traba, sin mudarlo todo junto."
+      ],
+      "items": [
+        "Pedidos. Cada pedido tiene estado, responsable e historial. Un sistema de gestión de pedidos no depende de buscar el mensaje para saber si se confirmó, se preparó o se entregó.",
+        "Stock. Al confirmar se puede descontar lo que corresponde, y depósito y venta miran el mismo número. Gestionar stock sin Excel sirve cuando la planilla y la estantería ya no coinciden.",
+        "Clientes. Cada cliente queda una vez, con su condición y su contacto. Se terminan las filas duplicadas entre hojas.",
+        "Reportes. Lo que falta cobrar, lo que hay que reponer o cómo cerró el período sale de esos datos, sin copiar columnas el último día."
+      ],
+      "closing": "El alcance de cada parte se escribe para tu operación. El encuadre está en [sistemas de gestión](/sistemas-de-gestion). En [casos](/casos) hay productos propios ya construidos, cada uno alrededor de una operación concreta.",
+      "link": {
+        "label": "Ver sistemas de gestión",
+        "href": "/sistemas-de-gestion"
+      }
+    },
+    {
+      "title": "Cómo migrar de Excel sin frenar la operación",
+      "paragraphs": [
+        "Migrar de Excel a un sistema de gestión deja los pedidos, el depósito y los cobros como están, y suma el sistema al lado hasta que el equipo confía en una parte. Primero se escucha cómo trabajan, se escribe el alcance y se muestra algo para probar."
+      ],
+      "items": [
+        "Seguí operando. El primer día la planilla sigue en uso. El sistema no la reemplaza de entrada.",
+        "Contá un caso real. Un pedido o un movimiento de stock, desde que entra hasta que se entrega o se cobra.",
+        "Escribí el alcance. Qué entra ahora, qué queda afuera y con qué hay que conectarlo. El precio va ahí, antes de arrancar.",
+        "Elegí por dónde empezar. Si es grande, se arranca por lo que más duele: pedidos o stock.",
+        "Pasá una tanda chica. Productos, clientes o el saldo, ya unificados. No hace falta mudarlo todo para probar.",
+        "Trabajá en paralelo. Casos reales en el sistema, planilla de referencia, hasta que esos números coinciden.",
+        "Cambiá la fuente de a una. Cuando esa parte ya se opera en el sistema, esa planilla deja de editarse."
+      ],
+      "closing": "Cada semana hay una parte para probar con tu equipo. Si algo no coincide con cómo trabajan, se ajusta mientras esa parte todavía es chica.",
+      "link": {
+        "label": "Ver cómo trabajamos",
+        "href": "/como-trabajamos"
+      }
+    },
+    {
+      "title": "Qué datos de tus planillas se pueden aprovechar",
+      "paragraphs": [
+        "La planilla desordenada igual sirve: nombres, códigos y las palabras que el equipo ya usa. El pase trae lo que se puede explicar, y deja afuera la nota que cada persona lee distinto."
+      ],
+      "items": [
+        "Productos y códigos. Nombre, código, unidad y precio, si esa columna quiere decir lo mismo en todas las filas.",
+        "Clientes. Razón social, contacto y condición, después de juntar los duplicados en un solo registro.",
+        "Stock. El saldo que hoy podés conciliar con el depósito. El historial de movimientos, solo si está completo y se puede leer.",
+        "Pedidos abiertos. Los que todavía no se entregaron o no se cobraron. El archivo viejo puede quedar como consulta.",
+        "Listas y descuentos. Las que ya están escritas. Una excepción en un comentario se mira en la charla.",
+        "Estados. Palabras que ya usan, como pendiente, preparado, enviado o cobrado. Esas palabras pasan a ser los estados."
+      ],
+      "closing": "En el alcance queda escrito qué planillas se migran y cuáles no. Tus datos son confidenciales: se usan para construir el sistema y, si contratás mantenimiento, para mantenerlo."
+    },
+    {
+      "title": "Cuánto cuesta pasar de Excel a un sistema",
+      "paragraphs": [
+        "No publicamos un monto. Cuánto cuesta hacer un sistema de gestión depende del alcance: módulos y pantallas, usuarios y permisos, integraciones, qué datos se pasan desde Excel y qué reportes hacen falta. Pedidos solos llevan menos trabajo que juntar stock, clientes, permisos y facturación.",
+        "El precio se arma con ese alcance y se acuerda por escrito antes de arrancar. Mantenimiento y capacitación son opcionales. Si el error es del sistema que construimos, lo corregimos nosotros igual.",
+        "La nota de precios recorre qué mueve el número, qué costos van aparte del desarrollo y qué llevar a la primera charla, sin una tarifa publicada."
+      ],
+      "link": {
+        "label": "Leer cuánto cuesta un sistema de gestión a medida",
+        "href": "/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida"
+      }
+    }
+  ],
+  "checklist": {
+    "title": "Checklist antes de dejar Excel",
+    "intro": "Antes de la primera charla, repasá esto:",
+    "items": [
+      "¿Puedo contar un pedido o un movimiento de stock de punta a punta?",
+      "¿Sé quién carga, quién aprueba y quién no debería ver cada dato?",
+      "¿Tengo las planillas a mano, aunque estén desordenadas?",
+      "¿Puedo decir qué parte duele hoy: pedidos, stock, clientes o reportes?",
+      "¿El enlatado que miré me deja trabajar como trabajo hoy, o vuelvo al Excel?",
+      "¿Sé qué dato hay que conectar con facturación, pagos o WhatsApp?"
+    ],
+    "closing": "Si podés responder las primeras, la charla alcanza para escribir alcance y precio."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "question": "¿Cuándo conviene dejar Excel?",
+        "answer": "Excel alcanza con pocas personas, pocos movimientos y un archivo en el que el equipo confía. Conviene dejarlo cuando los errores de carga, el stock desactualizado, varias personas en el mismo archivo o los reportes a mano ya frenan la operación."
+      },
+      {
+        "question": "¿Puedo migrar de Excel a un sistema de gestión sin frenar la operación?",
+        "answer": "Sí. La planilla sigue de referencia y el sistema se prueba al lado, de a una parte. Se empieza por pedidos o stock, y esa planilla deja de editarse cuando los números coinciden."
+      },
+      {
+        "question": "¿Qué datos de mis planillas se pueden aprovechar?",
+        "answer": "Productos y códigos, clientes unificados, el saldo de stock que se puede conciliar, los pedidos abiertos y los estados que el equipo ya usa. El historial entra solo si se entiende. Qué se migra queda escrito en el alcance."
+      },
+      {
+        "question": "¿Me conviene un software enlatado o un sistema a medida?",
+        "answer": "El enlatado alcanza si la operación entra en lo que el programa ya hace y podés dejar la planilla. El sistema a medida tiene sentido con reglas propias, permisos distintos o si el día a día volvió al Excel. En la charla te decimos qué conviene."
+      },
+      {
+        "question": "¿Cuánto cuesta hacer un sistema de gestión?",
+        "answer": "No publicamos una tarifa. Depende de módulos, usuarios, integraciones, la migración desde Excel y los reportes. Alcance y precio se acuerdan por escrito antes de arrancar. El detalle está en la nota sobre cuánto cuesta un sistema de gestión a medida."
+      }
+    ]
+  },
+  "related": {
+    "title": "Seguí leyendo",
+    "links": [
+      {
+        "label": "Sistemas de gestión",
+        "href": "/sistemas-de-gestion",
+        "description": "Pedidos, stock, clientes o reportes en un sistema armado para cómo trabaja tu pyme."
+      },
+      {
+        "label": "Cuánto cuesta un sistema de gestión a medida",
+        "href": "/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida",
+        "description": "Qué mueve el precio, qué costos van aparte del desarrollo y qué llevar a la primera charla."
+      },
+      {
+        "label": "Cómo trabajamos",
+        "href": "/como-trabajamos",
+        "description": "Charla, alcance por escrito y una parte para probar cada semana."
+      }
+    ]
+  },
+  "ctaTitle": "¿Tu operación ya no entra en la planilla?",
+  "ctaDescription": "Contanos cómo cargan hoy pedidos, stock y clientes. Te respondemos con alcance y precio por escrito, antes de arrancar.",
+  "ctaButton": "Contanos tu problema"
+}

@@ -1,0 +1,229 @@
+{
+  "title": "Excel or a management system? When to switch and how to migrate",
+  "metaTitle": "Excel or a management system? When to switch and how to migrate",
+  "metaDescription": "When to leave Excel for a management system: warning signs, a comparison with off-the-shelf software, and how to migrate orders and stock.",
+  "excerpt": "When a small business can stay on Excel, the signs the spreadsheet no longer holds, and how to migrate without stopping orders or stock.",
+  "answer": "Excel is enough when a few people enter a few movements, stock does not change often, and the spreadsheet is not the only place the data lives. It is time for a management system when order-entry mistakes, out-of-date stock, or several people on the same file are already slowing the operation down. You can migrate in stages, using the spreadsheets you already have, without stopping daily work on the first day.",
+  "intro": [
+    "If your business manufactures, distributes, sells wholesale, or delivers a service, and orders, stock, or clients live in Excel today, this note is here to sort the decision. Some small operations are still fine on a spreadsheet. Others are already using it as if it were the system.",
+    "Below is when Excel is enough, the signs it has fallen short, a comparison with off-the-shelf software and a custom system, what you gain by switching, and how to migrate without stopping the operation. The price is in [what a custom management system costs](/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida)."
+  ],
+  "sections": [
+    {
+      "title": "When Excel is enough, and when it is not",
+      "paragraphs": [
+        "Excel is enough when the spreadsheet is a help and the operation still fits in the head of the person using it. A small factory that notes the week's production, a distributor with a few orders a day, or a service business with clients on a single sheet can stay there, as long as one or two people do the entry and the number on the sheet is the number in the warehouse or on the schedule.",
+        "It stops being enough when the order is written in a message, again in the file, and again for the warehouse, and the report is built by copying columns. If that chain breaks, you sell something you do not have or you charge an old price.",
+        "When someone has to explain where each piece of data lives, orders, stock, and clients no longer fit in a single file."
+      ],
+      "items": [
+        "Stay on Excel. Few people, few movements, one file, and data that does not change all the time.",
+        "Move to a system. Entry mistakes, stock that does not match the warehouse, several people editing, and reports built by hand.",
+        "You can do both for a while. The spreadsheet stays for one part, and the system starts with what hurts most, such as orders or stock."
+      ],
+      "closing": "A management system makes sense when those rules no longer fit in cells. If they still fit, there is no need to change tools."
+    },
+    {
+      "title": "Signs your business has outgrown Excel",
+      "paragraphs": [
+        "These signs show up in factories, distributors, wholesalers, and service businesses that grew up on a spreadsheet. They do not all have to be present. Two or three are enough to look at a system for the part that gets stuck."
+      ],
+      "items": [
+        "Mistakes when entering orders. A code entered wrong, an old price, or a duplicate client, and the order goes out without another look.",
+        "Out-of-date stock. The spreadsheet and the warehouse do not match, and you find out after you have already promised goods you do not have.",
+        "Several people in the same file. Someone overwrites someone else's change, or there are copies and nobody knows which one counts.",
+        "Manual reports. Closing the week means copying columns and checking that a row is not missing.",
+        "The data lives in more than one place. WhatsApp, the spreadsheet, and sometimes a notebook each have their own version of the order.",
+        "You depend on the person who built the spreadsheet. If they are away, nobody else can follow an order."
+      ],
+      "closing": "If you recognize several of these, the next step is to choose which part stops living in the file, without stopping the orders that go out today."
+    },
+    {
+      "title": "Excel, off-the-shelf software, or a custom system",
+      "paragraphs": [
+        "The same comparison comes up in the first conversation: stay on Excel, buy off-the-shelf software, or commission custom management software. It depends on how specific the operation is and how many people touch it.",
+        "The table is qualitative. It does not replace a quote and it has no amounts. The price comes from the scope, in writing."
+      ],
+      "table": {
+        "caption": "Excel, off-the-shelf software, and a custom system: upfront cost, fit to the process, multiple users, integrations, room to grow, and dependence",
+        "columns": ["Excel", "Off the shelf", "Custom"],
+        "rows": [
+          {
+            "label": "Upfront cost",
+            "cells": [
+              "The spreadsheet is already there. It costs the time to maintain it and rebuild it.",
+              "You use a product that already exists, until the operation needs something that plan does not include.",
+              "It is the development you agree. It grows with modules, permissions, integrations, and the data to move."
+            ]
+          },
+          {
+            "label": "Fit to the process",
+            "cells": [
+              "It bends to how you work, until the formulas and the loose copies stop holding.",
+              "The team adapts to the program. What does not fit stays in another spreadsheet.",
+              "We build it around the rules your team already uses."
+            ]
+          },
+          {
+            "label": "Several users",
+            "cells": [
+              "Several people can open it, and overwrite each other. It is unclear who changed each cell.",
+              "It usually includes users, with the permissions the product already lets you set.",
+              "Each role sees their own work: owner, admin, warehouse, or branch."
+            ]
+          },
+          {
+            "label": "Integrations",
+            "cells": [
+              "You copy by hand into invoicing, payments, or chat.",
+              "It brings the connections the product includes. If yours is missing, the handoff goes back to manual.",
+              "We connect what you already use, if it lets data in and out."
+            ]
+          },
+          {
+            "label": "Room to grow",
+            "cells": [
+              "It holds while one person understands it. With more rows and more people, it gets fragile.",
+              "It scales inside the plan. If the operation outgrows that, another program appears.",
+              "It grows by modules, starting with orders or stock."
+            ]
+          },
+          {
+            "label": "Dependence",
+            "cells": [
+              "It depends on the person who built it. If they are away, it is hard to see where each figure went.",
+              "It depends on the company that makes the product. What the product does not include stays out.",
+              "The scope is in writing. We fix our own mistakes either way."
+            ]
+          }
+        ]
+      },
+      "closing": "If the off-the-shelf tool covers the day to day and the team uses it without a spreadsheet beside it, there is no need to replace it. If you still go back to Excel, a custom system is worth a look. Invoicing, payments, WhatsApp, and what you already use connect separately: see [integrations](/integraciones)."
+    },
+    {
+      "title": "What you gain by switching",
+      "paragraphs": [
+        "After the switch, orders, stock, clients, and reports come from the same data, with a status the team understands and a person responsible. A small business can tidy the part that gets stuck first, without moving everything at once."
+      ],
+      "items": [
+        "Orders. Each order has a status, an owner, and a history. An order management system does not depend on searching the message to know whether it was confirmed, prepared, or delivered.",
+        "Stock. Confirming an order can deduct what it should, and the warehouse and sales look at the same number. Managing stock without Excel helps once the spreadsheet and the shelves no longer match.",
+        "Clients. Each client exists once, with their terms and contact. The duplicate rows across sheets stop.",
+        "Reports. What is still unpaid, what to restock, or how the period closed comes from that data, without copying columns on the last day."
+      ],
+      "closing": "The scope of each part is written for your operation. The outline is on [management systems](/sistemas-de-gestion). [Case studies](/casos) shows products we have already built, each one around a specific operation.",
+      "link": {
+        "label": "See management systems",
+        "href": "/sistemas-de-gestion"
+      }
+    },
+    {
+      "title": "How to migrate off Excel without stopping the operation",
+      "paragraphs": [
+        "Migrating from Excel to a management system leaves orders, the warehouse, and collections as they are, and adds the system beside them until the team trusts one part. First we listen to how you work, write the scope, and show something you can try."
+      ],
+      "items": [
+        "Keep operating. On the first day the spreadsheet stays in use. The system does not replace it at the start.",
+        "Walk through a real case. One order or one stock movement, from the moment it comes in until it is delivered or paid.",
+        "Write the scope. What goes in now, what stays out, and what it has to connect to. The price goes there, before we start.",
+        "Choose where to start. If it is large, start with what hurts most: orders or stock.",
+        "Move a small batch. Products, clients, or the balance, once names and duplicates are unified. You do not have to move everything to try it.",
+        "Run them in parallel. Real cases in the system, the spreadsheet as the reference, until those numbers match.",
+        "Change the source one part at a time. When that part already runs in the system, that spreadsheet stops being edited."
+      ],
+      "closing": "Each week there is a part for your team to try. If something does not match how you work, it gets adjusted while that part is still small.",
+      "link": {
+        "label": "See how we work",
+        "href": "/como-trabajamos"
+      }
+    },
+    {
+      "title": "Which data from your spreadsheets you can reuse",
+      "paragraphs": [
+        "A messy spreadsheet is still useful: names, codes, and the words the team already uses. The move brings what can be explained, and leaves out the note that each person reads differently."
+      ],
+      "items": [
+        "Products and codes. Name, code, unit, and price, if that column means the same thing on every row.",
+        "Clients. Legal name, contact, and terms, after duplicates are merged into one record.",
+        "Stock. The balance you can reconcile with the warehouse. Movement history, only if it is complete and readable.",
+        "Open orders. The ones not yet delivered or not yet paid. The old file can stay as a reference.",
+        "Price lists and discounts. The ones already written down. An exception in a comment gets looked at in the conversation.",
+        "Statuses. Words you already use, such as pending, prepared, shipped, or paid. Those words become the system's statuses."
+      ],
+      "closing": "The scope says which spreadsheets are migrated and which are not. Your data is confidential: we use it to build the system and, if you hire maintenance, to maintain it."
+    },
+    {
+      "title": "What it costs to move from Excel to a system",
+      "paragraphs": [
+        "We do not publish an amount. What it costs to build a management system depends on the scope: modules and screens, users and permissions, integrations, which data moves out of Excel, and which reports you need. Orders alone are less work than bringing stock, clients, permissions, and invoicing together.",
+        "The price is built from that scope and agreed in writing before we start. Maintenance and training are optional. If the mistake is in the system we built, we fix it either way.",
+        "The pricing note covers what moves the number, which costs sit outside the build, and what to bring to the first conversation. There is no published rate there either."
+      ],
+      "link": {
+        "label": "Read what a custom management system costs",
+        "href": "/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida"
+      }
+    }
+  ],
+  "checklist": {
+    "title": "Checklist before leaving Excel",
+    "intro": "Before the first conversation, go through this:",
+    "items": [
+      "Can I walk through an order or a stock movement from start to finish?",
+      "Do I know who enters data, who approves, and who should not see each piece of data?",
+      "Do I have the spreadsheets at hand, even if they are messy?",
+      "Can I say what hurts today: orders, stock, clients, or reports?",
+      "Does the off-the-shelf tool I looked at let me work the way I work today, or do I go back to Excel?",
+      "Do I know which data has to connect to invoicing, payments, or WhatsApp?"
+    ],
+    "closing": "If you can answer the first ones, the conversation is enough to write scope and price."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "question": "When should I leave Excel?",
+        "answer": "Excel is enough with a few people, a few movements, and a file the team trusts. It is worth leaving when entry mistakes, out-of-date stock, several people in the same file, or hand-built reports are already slowing the operation down."
+      },
+      {
+        "question": "Can I migrate from Excel to a management system without stopping the operation?",
+        "answer": "Yes. The spreadsheet stays as the reference and the system is tried beside it, one part at a time. You start with orders or stock, and that spreadsheet stops being edited when the numbers match."
+      },
+      {
+        "question": "Which data from my spreadsheets can be reused?",
+        "answer": "Products and codes, merged clients, a stock balance you can reconcile, open orders, and the statuses the team already uses. History comes in only if it can be understood. What gets migrated is written in the scope."
+      },
+      {
+        "question": "Should I buy off-the-shelf software or a custom system?",
+        "answer": "Off-the-shelf software is enough if the operation fits what that program already does and you can leave the spreadsheet. A custom system makes sense with your own rules, different permissions, or if daily work went back to Excel. We tell you which fits in the conversation."
+      },
+      {
+        "question": "How much does it cost to build a management system?",
+        "answer": "We do not publish a rate. It depends on modules, users, integrations, the migration from Excel, and the reports. Scope and price are agreed in writing before we start. The detail is in the note on what a custom management system costs."
+      }
+    ]
+  },
+  "related": {
+    "title": "Keep reading",
+    "links": [
+      {
+        "label": "Management systems",
+        "href": "/sistemas-de-gestion",
+        "description": "Orders, stock, clients, or reports in a system built around how your business works."
+      },
+      {
+        "label": "What a custom management system costs",
+        "href": "/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida",
+        "description": "What drives the price, which costs sit outside the build, and what to bring to the first conversation."
+      },
+      {
+        "label": "How we work",
+        "href": "/como-trabajamos",
+        "description": "A conversation, scope in writing, and a part to try each week."
+      }
+    ]
+  },
+  "ctaTitle": "Does the operation no longer fit in the spreadsheet?",
+  "ctaDescription": "Tell us how orders, stock, and clients get entered today. We reply with scope and price in writing, before we start.",
+  "ctaButton": "Tell us your problem"
+}
