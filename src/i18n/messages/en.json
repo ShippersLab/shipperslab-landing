@@ -1360,7 +1360,7 @@
     "lead": "Each order is entered once, from WhatsApp, a salesperson or the web, and preparation, stock and the invoice come out of it. Built around how you sell today.",
     "covers": {
       "title": "What we solve.",
-      "body": "The order arrives on WhatsApp, by email or on paper. Someone types it into Excel. The warehouse does not know what to pick until they are told, and the invoice is issued somewhere else, with the same data again. Along the way a case goes missing, an old price gets charged or stock is promised that is not there. An order management system joins that chain. We build the order software around how you sell today, and we can start with the stretch that eats the most time.",
+      "body": "The order arrives on WhatsApp, by email or on paper. Someone types it into Excel. The warehouse does not know what to pick until they are told, and the invoice is issued somewhere else, with the same data again. Along the way a case goes missing, an old price gets charged or stock is promised that is not there. An order management system joins that chain. We build it around how you sell today, and we can start with the stretch that eats the most time.",
       "items": [
         {
           "id": "orders",
@@ -1386,12 +1386,12 @@
     },
     "tools": {
       "title": "What your order system can include.",
-      "intro": "You choose the modules. We start with the one that hurts most, usually order entry or stock, and the rest comes in once that stretch is in use. What follows can be included. It is not a closed package.",
+      "intro": "You choose the modules. We start with the one that hurts most, usually order entry or stock, and the rest comes in once that stretch is in use. What follows can be included, and each module is chosen separately.",
       "items": [
         {
           "id": "orders",
           "title": "Order entry from any channel",
-          "body": "An order can come in on WhatsApp, from a salesperson on the road, at the counter or through a web portal, and it stays the same order: customer, products and the price that customer gets. If taking orders on WhatsApp ends in a chat someone copies into a spreadsheet, that order can be left entered without the second pass. Order-taking software, and an order-taking app for the phone, can be included in the scope."
+          "body": "An order can come in on WhatsApp, from a salesperson on the road, at the counter or through a web portal, and it stays the same order: customer, products and the price that customer gets. If taking orders on WhatsApp ends in a chat someone copies into a spreadsheet, that order can be left entered without the second pass. Entry from the phone, for the salesperson on the road, can be defined in the scope."
         },
         {
           "id": "wholesale",
@@ -1401,12 +1401,12 @@
         {
           "id": "status",
           "title": "A status for every order",
-          "body": "Each order moves through a status: received, being prepared, ready and delivered. Sales sees what came in, the warehouse sees what to pick and admin sees what still needs an invoice or a payment. Order tracking shows where each one stands, and profiles are set by area."
+          "body": "Each order moves through a status: received, being prepared, ready and delivered. Sales sees what came in, the warehouse sees what to pick and admin sees what still needs an invoice or a payment. Tracking shows where each one stands, and profiles are set by area."
         },
         {
           "id": "stock",
           "title": "Stock reserved on confirmation",
-          "body": "On confirmation, that stock is reserved and stops being available for the next order. If you have more than one warehouse, stock can be kept separate and the order draws from the one that applies. Reorder alerts fire before the shortage reaches the customer. Orders and stock then live in one place."
+          "body": "On confirmation, that stock is reserved and stops being available for the next order. If you have more than one warehouse, stock can be kept separate and the order draws from the one that applies. Reorder alerts fire before the shortage reaches the customer. Orders and stock end up in one place."
         },
         {
           "id": "cash",
@@ -1416,19 +1416,19 @@
         {
           "id": "production",
           "title": "From the order to production",
-          "body": "In a factory that makes to order, confirming can open a production order with the promised date. A system for factories, on this piece, starts from that order rather than from a shelf of finished goods."
+          "body": "In a factory that makes to order, confirming can open a production order with the promised date. For a factory, this piece starts from that production order."
         }
       ],
-      "closing": "Presales on a phone with no signal, route sheets, a portal where the customer builds their own order, and importing price lists from Excel can also be included. It goes in the scope if we are going to build it."
+      "closing": "Presales on the phone, route sheets, a portal where the customer builds their own order, and importing price lists from Excel can also be looked at for the scope. What goes in is written in the scope."
     },
     "connections": {
       "title": "Connected to what you already use.",
-      "intro": "You do not have to replace what already works. It connects. Each piece, and the moment the data has to move, is in [integrations](/integraciones).",
+      "intro": "What already works stays, and the system connects to it. Each piece, and the moment the data has to move, is in [integrations](/integraciones).",
       "items": [
         {
           "id": "arca",
           "title": "ARCA electronic invoicing",
-          "body": "The invoice can be issued when the order is confirmed or when it is handed over, and it can be partial if the order leaves in more than one trip. Orders and invoicing use the customer, the items and the price already on the order. You set the moment and the receipt type."
+          "body": "The invoice can be issued when the order is confirmed or when it is handed over. Invoicing uses the customer, the items and the price already on the order. You set the moment and the receipt type."
         },
         {
           "id": "mercadopago",
@@ -1443,18 +1443,18 @@
         {
           "id": "portal",
           "title": "Online store or B2B portal",
-          "body": "Online sales can live on Tiendanube, on another platform or on a portal of your own. Tiendanube is one option when you already sell there or when its checkout is enough: building that store is in [Tiendanube development](/integraciones/tiendanube). If the price, the minimum or the assortment does not fit a packaged store, a portal of your own can be included as a [website or catalog](/webs-y-catalogos), tied to the same order. A B2B order system, in that case, is the portal plus the order the rest of the company already uses."
+          "body": "Online sales can live on Tiendanube, on another platform or on a portal of your own. Tiendanube is one option when you already sell there or when its checkout is enough: building that store is in [Tiendanube development](/integraciones/tiendanube). If the price, the minimum or the assortment does not fit a packaged store, a portal of your own can be included as a [website or catalog](/webs-y-catalogos), tied to the same order."
         }
       ]
     },
     "audience": {
       "title": "Who it's for.",
-      "intro": "It fits when the order is the center of the day and today it falls apart between the chat, the spreadsheet and the program where you invoice. An order system for a company is shaped by who sells and how the goods leave.",
+      "intro": "It fits when the order is the center of the day and today it falls apart between the chat, the spreadsheet and the program where you invoice. It is shaped by who sells and how the goods leave.",
       "items": [
         {
           "id": "distributor",
           "title": "Distributors with field sales and routes",
-          "body": "The salesperson writes the order down and at night someone types it in. The warehouse picks late and the truck leaves with whatever was ready. A presales flow and an order system for a distributor leave the order entered on the visit, with that customer's list. For a food or beverage distributor, with a route every day, the software can be built around that route."
+          "body": "The salesperson writes the order down and at night someone types it in. The warehouse picks late and the truck leaves with whatever was ready. An order system for a distributor can leave the order entered on the visit, with that customer's list. If you run a route every day, as a food or beverage distributor does, it can be built around that route."
         },
         {
           "id": "store",
@@ -1464,13 +1464,13 @@
         {
           "id": "factory",
           "title": "Factories that produce to order",
-          "body": "There is no full shelf waiting: there is a promised date and what has to be made to meet it. Confirming the order can open the production order. Tracking shows whether that date still holds."
+          "body": "There is a promised date and what has to be made to meet it. Confirming the order can open the production order. Tracking shows whether that date still holds."
         }
       ]
     },
     "flow": {
       "title": "What an order looks like from end to end.",
-      "intro": "This path is an example, so the pieces can be seen in order. It is not a client case and not a result we promise. The circuit we build is yours, and it is written in the scope.",
+      "intro": "This path is an example circuit, so the pieces can be seen in order. Yours is written in the scope, based on how you work today.",
       "steps": [
         {
           "title": "Entry",
@@ -1478,11 +1478,11 @@
         },
         {
           "title": "Picking",
-          "body": "The warehouse sees what to pick. On confirmation, stock for those items is reserved. If there is not enough, the order does not promise what is not there."
+          "body": "The warehouse sees what to pick. On confirmation, stock for those items is reserved. If there is not enough, the order shows it before promising a delivery date."
         },
         {
           "title": "Handover with an ARCA invoice",
-          "body": "When the goods leave, or on confirmation if you set it that way, the invoice is issued for the items that actually go. If the handover is partial, the invoice can be partial too."
+          "body": "When the goods leave, or on confirmation if you set it that way, the ARCA invoice is issued with the order data."
         },
         {
           "title": "Collection",
@@ -1495,7 +1495,7 @@
       "paragraphs": [
         "A packaged system for distributors is enough when your circuit fits what that program already does and the team can work that way, without a spreadsheet beside it. Custom is the better fit when the path is your own: several programs plus Excel, price, warehouse or route rules that cannot be configured, or when it has to connect to what you already have.",
         "On the first call we tell you which of the two looks like the better fit. We do not publish a price: it depends on the modules, the permissions and the connections. How that number is worked out is in [what a custom management system costs](/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida). If the order is one part of a larger operation, the wider frame is [management systems](/sistemas-de-gestion).",
-        "If you want to see a system that is built and in production, the [EventOps](/casos/eventops) case is our own product for event companies: each event is entered once, and the calendar, the quote and the payments come out of it. It is not an order system. It is proof that we build from the operation, not from a template."
+        "If you want to see a system that is built and in production, the [EventOps](/casos/eventops) case is our own product for event companies: each event is entered once, and the calendar, the quote and the payments come out of it. It shows how we build from each company's real operation."
       ]
     },
     "process": {
@@ -1550,11 +1550,11 @@
         },
         {
           "question": "Does the system invoice in ARCA when I confirm or hand over an order?",
-          "answer": "That can be included. The ARCA e-invoice is issued at the moment you set: on confirmation, when the goods leave, or in part if that handover is partial. It uses the data on the order, so the sale is not typed again. The receipt type is written in the scope."
+          "answer": "That can be included. The ARCA e-invoice is issued at the moment you set: on confirmation or when the goods leave. It uses the data on the order, so the sale is not typed again. The receipt type is written in the scope."
         },
         {
-          "question": "Can my salespeople enter orders from a phone, even with no signal?",
-          "answer": "That can be included in the scope. The app keeps the order on the phone and syncs it when the signal comes back, with that customer's list. If the route always has data, entering it on the spot is enough. We look at that on the call."
+          "question": "Can my salespeople enter orders from a phone?",
+          "answer": "Entering orders from a phone can go in the scope, with each customer's list. If your route has areas with no signal, we look at that on the call, based on your route."
         },
         {
           "question": "Is a custom system a better fit, or one already built for distributors?",

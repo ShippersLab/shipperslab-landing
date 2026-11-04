@@ -1357,10 +1357,10 @@
     "metaTitle": "Sistema de gestión de pedidos a medida",
     "metaDescription": "Pedidos de mayoristas, listas de precios por cliente y stock en un solo sistema para fábricas y distribuidoras. Alcance y precio por escrito.",
     "h1": "Sistema de gestión de pedidos para fábricas, distribuidoras y mayoristas",
-    "lead": "Cada pedido entra una vez —por WhatsApp, vendedor o web— y de ahí salen la preparación, el stock y la factura. Armado a cómo vendés hoy.",
+    "lead": "Cada pedido entra una vez, por WhatsApp, vendedor o web, y de ahí salen la preparación, el stock y la factura. Armado a cómo vendés hoy.",
     "covers": {
       "title": "Qué resolvemos.",
-      "body": "El pedido llega por WhatsApp, por mail o en un papel. Alguien lo carga en un Excel. El depósito no sabe qué preparar hasta que le avisan, y la factura se hace aparte, con los mismos datos otra vez. En el medio se pierde un bulto, se cobra un precio viejo o se promete mercadería que no está. Un sistema de gestión de pedidos junta esa cadena. El software de gestión de pedidos se arma a cómo vendés hoy, y se puede empezar por el tramo que más tiempo te come.",
+      "body": "El pedido llega por WhatsApp, por mail o en un papel. Alguien lo carga en un Excel. El depósito no sabe qué preparar hasta que le avisan, y la factura se hace aparte, con los mismos datos otra vez. En el medio se pierde un bulto, se cobra un precio viejo o se promete mercadería que no está. Un sistema de gestión de pedidos junta esa cadena. Se arma a cómo vendés hoy, y se puede empezar por el tramo que más tiempo te come.",
       "items": [
         {
           "id": "orders",
@@ -1386,12 +1386,12 @@
     },
     "tools": {
       "title": "Qué puede incluir tu sistema de pedidos.",
-      "intro": "Los módulos se eligen. Se arranca por el que más duele, casi siempre la carga o el stock, y el resto entra cuando ese tramo ya se usa. Lo que sigue se puede incluir: no es un paquete cerrado.",
+      "intro": "Los módulos se eligen. Se arranca por el que más duele, casi siempre la carga o el stock, y el resto entra cuando ese tramo ya se usa. Lo que sigue se puede incluir, y cada módulo se elige por separado.",
       "items": [
         {
           "id": "orders",
           "title": "Carga de pedidos desde cualquier canal",
-          "body": "El pedido puede entrar por WhatsApp, por un vendedor en la calle, en el mostrador o en un portal web, y queda el mismo: cliente, productos y el precio que le corresponde. Si la toma de pedidos por WhatsApp termina en un chat que alguien copia a la planilla, el sistema de pedidos por WhatsApp puede dejarlo cargado sin esa segunda pasada. El software de toma de pedidos y la app de toma de pedidos para el celular se pueden incluir en el alcance."
+          "body": "El pedido puede entrar por WhatsApp, por un vendedor en la calle, en el mostrador o en un portal web, y queda el mismo: cliente, productos y el precio que le corresponde. Si el pedido por WhatsApp termina en un chat que alguien copia a la planilla, el sistema puede dejarlo cargado sin esa segunda pasada. La carga desde el celular, para el vendedor en la calle, se puede definir en el alcance."
         },
         {
           "id": "wholesale",
@@ -1401,12 +1401,12 @@
         {
           "id": "status",
           "title": "Estado de cada pedido",
-          "body": "Cada pedido recorre un estado: nuevo, en preparación, preparado y entregado. Ventas ve lo que entró, el depósito lo que hay que armar y administración lo que falta facturar o cobrar. El software de seguimiento de pedidos muestra en qué está cada uno, y los perfiles se definen por área."
+          "body": "Cada pedido recorre un estado: nuevo, en preparación, preparado y entregado. Ventas ve lo que entró, el depósito lo que hay que armar y administración lo que falta facturar o cobrar. El seguimiento muestra en qué está cada uno, y los perfiles se definen por área."
         },
         {
           "id": "stock",
           "title": "Stock reservado al confirmar",
-          "body": "Al confirmar, esa mercadería queda reservada y deja de estar disponible para el pedido siguiente. Si hay más de un depósito, el stock se puede llevar separado y el pedido descuenta del que corresponde. Las alertas de reposición avisan antes del faltante. Así la gestión de pedidos y stock vive en un solo lugar."
+          "body": "Al confirmar, esa mercadería queda reservada y deja de estar disponible para el pedido siguiente. Si hay más de un depósito, el stock se puede llevar separado y el pedido descuenta del que corresponde. Las alertas de reposición avisan antes del faltante. Pedidos y stock quedan en un solo lugar."
         },
         {
           "id": "cash",
@@ -1416,19 +1416,19 @@
         {
           "id": "production",
           "title": "Del pedido a la producción",
-          "body": "En una fábrica que produce a pedido, confirmar puede abrir una orden de fabricación con la fecha comprometida. El sistema de gestión para fábricas, en esta parte, arranca por esa orden y no por una estantería."
+          "body": "En una fábrica que produce a pedido, confirmar puede abrir una orden de fabricación con la fecha comprometida. Para una fábrica, esta parte arranca desde esa orden de fabricación."
         }
       ],
-      "closing": "También se puede incluir la preventa en el celular aun sin señal, las hojas de ruta del reparto, un portal para que el cliente arme su pedido e importar listas de precios desde Excel. Se escribe en el alcance si lo vamos a armar."
+      "closing": "También se pueden evaluar para el alcance la preventa en el celular, las hojas de ruta del reparto, un portal para que el cliente arme su pedido e importar listas de precios desde Excel. Lo que entra se escribe en el alcance."
     },
     "connections": {
       "title": "Conectado con lo que ya usás.",
-      "intro": "No hace falta reemplazar lo que ya te sirve. Se conecta. Cada pieza, y el momento en que el dato tiene que pasar, está en [integraciones](/integraciones).",
+      "intro": "Lo que ya te sirve se queda, y el sistema se conecta con eso. Cada pieza, y el momento en que el dato tiene que pasar, está en [integraciones](/integraciones).",
       "items": [
         {
           "id": "arca",
           "title": "Facturación electrónica ARCA",
-          "body": "La factura puede salir al confirmar el pedido o al entregarlo, y también en forma parcial si sale en más de un viaje. El programa de pedidos y facturación usa el cliente, los ítems y el precio que ya están cargados. Vos definís el momento y el tipo de comprobante."
+          "body": "La factura puede salir al confirmar el pedido o al entregarlo. La facturación usa el cliente, los ítems y el precio que ya están cargados. Vos definís el momento y el tipo de comprobante."
         },
         {
           "id": "mercadopago",
@@ -1443,34 +1443,34 @@
         {
           "id": "portal",
           "title": "Tienda online o portal B2B",
-          "body": "La venta online puede estar en Tiendanube, en otra plataforma o en un portal propio. Tiendanube es una opción cuando ya vendés ahí o cuando su checkout te alcanza: armar esa tienda está en [desarrollo en Tiendanube](/integraciones/tiendanube). Si el precio, el mínimo o el surtido no entran en una tienda ya armada, un portal propio se puede incluir como [web o catálogo](/webs-y-catalogos), atado al mismo pedido. Un sistema de pedidos B2B, en ese caso, es el portal más el pedido que ya usa el resto de la empresa."
+          "body": "La venta online puede estar en Tiendanube, en otra plataforma o en un portal propio. Tiendanube es una opción cuando ya vendés ahí o cuando su checkout te alcanza: armar esa tienda está en [desarrollo en Tiendanube](/integraciones/tiendanube). Si el precio, el mínimo o el surtido no entran en una tienda ya armada, un portal propio se puede incluir como [web o catálogo](/webs-y-catalogos), atado al mismo pedido."
         }
       ]
     },
     "audience": {
       "title": "Para quién.",
-      "intro": "Sirve cuando el pedido es el centro del día y hoy se desarma entre el chat, la planilla y el programa donde facturás. Un sistema de pedidos para empresas se arma distinto según quién vende y cómo sale la mercadería.",
+      "intro": "Sirve cuando el pedido es el centro del día y hoy se desarma entre el chat, la planilla y el programa donde facturás. Se arma distinto según quién vende y cómo sale la mercadería.",
       "items": [
         {
           "id": "distributor",
           "title": "Distribuidoras con preventistas y reparto",
-          "body": "El preventista anota y a la noche alguien carga. El depósito arma tarde y el reparto sale con lo que alcanzó. Un sistema de preventa y un sistema de pedidos para distribuidora dejan el pedido cargado en la visita, con la lista de ese cliente. En una distribuidora de alimentos o de bebidas, con reparto todos los días, el software para distribuidoras y el de distribuidoras mayoristas se puede armar alrededor de esa recorrida."
+          "body": "El preventista anota y a la noche alguien carga. El depósito arma tarde y el reparto sale con lo que alcanzó. Un sistema de pedidos para distribuidoras puede dejar el pedido cargado en la visita, con la lista de ese cliente. Si tenés reparto todos los días, como en una distribuidora de alimentos o de bebidas, se arma alrededor de esa recorrida."
         },
         {
           "id": "store",
           "title": "Mayoristas con mostrador y venta online",
-          "body": "En el mostrador se vende a un precio y online a otro, y el stock se entera tarde. Un sistema de gestión para mayoristas une los dos canales, cada uno con su lista. El sistema de ventas para distribuidoras usa el mismo pedido para mostrador y reparto, y el sistema de facturación para mayoristas puede emitir al retirar o al despachar."
+          "body": "En el mostrador se vende a un precio y online a otro, y el stock se entera tarde. Un sistema de gestión para mayoristas une los dos canales, cada uno con su lista. Mostrador y reparto usan el mismo pedido, y la factura puede emitirse al retirar o al despachar."
         },
         {
           "id": "factory",
           "title": "Fábricas que producen a pedido",
-          "body": "No hay una estantería llena esperando: hay una fecha comprometida y lo que hay que fabricar para cumplirla. Confirmar el pedido puede abrir la orden. El seguimiento muestra si esa fecha sigue en pie."
+          "body": "Hay una fecha comprometida y lo que hay que fabricar para cumplirla. Confirmar el pedido puede abrir la orden. El seguimiento muestra si esa fecha sigue en pie."
         }
       ]
     },
     "flow": {
       "title": "Cómo se ve un pedido de punta a punta.",
-      "intro": "Este recorrido es un ejemplo, para ver las piezas en orden. No es el caso de un cliente ni un resultado que prometamos. El circuito que armamos es el de tu operación, y queda escrito en el alcance.",
+      "intro": "Este recorrido es un circuito de ejemplo, para ver las piezas en orden. El tuyo se escribe en el alcance, a partir de cómo trabajás hoy.",
       "steps": [
         {
           "title": "Carga",
@@ -1478,11 +1478,11 @@
         },
         {
           "title": "Preparación",
-          "body": "El depósito ve qué armar. Al confirmar, el stock de esos ítems queda reservado. Si no alcanza, el pedido no promete lo que no hay."
+          "body": "El depósito ve qué armar. Al confirmar, el stock de esos ítems queda reservado. Si no alcanza, el pedido lo muestra antes de prometer la entrega."
         },
         {
           "title": "Entrega con factura ARCA",
-          "body": "Al entregar, o al confirmar si así lo dejás definido, sale la factura con los ítems que de verdad se van. Si la entrega es parcial, la factura también puede serlo."
+          "body": "Al entregar, o al confirmar si así lo dejás definido, sale la factura ARCA con los datos del pedido."
         },
         {
           "title": "Cobranza",
@@ -1495,7 +1495,7 @@
       "paragraphs": [
         "Un sistema de gestión para distribuidoras ya armado alcanza cuando tu circuito entra en lo que ese programa hace y el equipo puede trabajar así, sin una planilla al lado. Conviene a medida cuando el recorrido es propio: varios programas más un Excel, reglas de precio, depósito o reparto que no se dejan configurar, o cuando hay que integrarlo con lo que ya tenés.",
         "En la primera charla te decimos cuál de las dos nos parece más conveniente. No publicamos un precio: depende de los módulos, de los permisos y de las conexiones. Cómo se arma ese número está en [cuánto cuesta un sistema de gestión a medida](/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida). Si el pedido es una parte de una operación más grande, el marco está en [sistemas de gestión](/sistemas-de-gestion).",
-        "Si querés ver un sistema construido y en producción, el caso de [EventOps](/casos/eventops) es un producto propio para empresas de eventos: cada evento se carga una vez y de ahí salen el calendario, el presupuesto y los cobros. No es un sistema de pedidos. Sirve como prueba de que lo armamos a partir de la operación, no de una plantilla."
+        "Si querés ver un sistema construido y en producción, el caso de [EventOps](/casos/eventops) es un producto propio para empresas de eventos: cada evento se carga una vez y de ahí salen el calendario, el presupuesto y los cobros. Muestra cómo armamos a partir de la operación real de cada empresa."
       ]
     },
     "process": {
@@ -1550,11 +1550,11 @@
         },
         {
           "question": "¿El sistema factura en ARCA cuando confirmo o entrego un pedido?",
-          "answer": "Se puede incluir. La factura electrónica de ARCA sale en el momento que definas: al confirmar, al entregar, o en parte si la entrega es parcial. Usa los datos del pedido, así no se vuelve a cargar la venta. El tipo de comprobante queda escrito en el alcance."
+          "answer": "Se puede incluir. La factura electrónica de ARCA sale en el momento que definas, al confirmar o al entregar. Usa los datos del pedido, así no se vuelve a cargar la venta. El tipo de comprobante queda escrito en el alcance."
         },
         {
-          "question": "¿Mis vendedores pueden cargar pedidos desde el celular, aunque no tengan señal?",
-          "answer": "Se puede incluir en el alcance. La app guarda el pedido en el celular y lo sincroniza cuando vuelve la señal, con la lista de ese cliente. Si el recorrido siempre tiene datos, alcanza con cargar en el momento. Lo vemos en la charla."
+          "question": "¿Mis vendedores pueden cargar pedidos desde el celular?",
+          "answer": "Cargar pedidos desde el celular puede entrar en el alcance, con la lista de cada cliente. Si tu recorrido tiene zonas sin señal, lo vemos en la charla según tu ruta."
         },
         {
           "question": "¿Conviene un sistema a medida o uno para distribuidoras ya armado?",
