@@ -254,6 +254,7 @@
     "exploreTitle": "Explore",
     "links": {
       "sistemas-de-gestion": "Management systems",
+      "pedidos": "Order management system",
       "webs-y-catalogos": "Websites and catalogs",
       "bots-con-ia": "AI bots",
       "integraciones": "Integrations",
@@ -635,7 +636,8 @@
           },
           {
             "id": "orders",
-            "label": "Orders"
+            "label": "Orders",
+            "href": "/sistemas-de-gestion/pedidos"
           },
           {
             "id": "cash",
@@ -664,7 +666,8 @@
           {
             "id": "distributor",
             "title": "Distributors and wholesalers",
-            "body": "Orders come in over WhatsApp and inventory lives in a spreadsheet."
+            "body": "Orders come in over WhatsApp and inventory lives in a spreadsheet.",
+            "href": "/sistemas-de-gestion/pedidos"
           },
           {
             "id": "appointments",
@@ -1083,7 +1086,7 @@
           {
             "id": "tiendanube",
             "title": "Tiendanube: stock and orders",
-            "body": "If you sell online and in a physical shop, there should be a single stock. We sync Tiendanube inventory with your spreadsheet or system and make each new order reach whoever prepares it, without checking the dashboard. To set up the store, migrate from WooCommerce or configure wholesale prices, the detail is in [Tiendanube development and integration](/integraciones/tiendanube)."
+            "body": "If you sell online and in a physical shop, there should be a single stock. We sync Tiendanube inventory with your spreadsheet or system and make each new order reach whoever prepares it, without checking the dashboard. To set up the store, migrate from WooCommerce or configure wholesale prices, the detail is in [Tiendanube development and integration](/integraciones/tiendanube). If the wholesaler or distributor order is the center and the store is one more channel, that circuit is the [order management system](/sistemas-de-gestion/pedidos)."
           },
           {
             "id": "arca",
@@ -1093,7 +1096,7 @@
           {
             "id": "whatsapp",
             "title": "AI WhatsApp bot",
-            "body": "A WhatsApp assistant that answers common questions, takes orders or bookings and records them where they belong. When a conversation needs a person, it hands it over. We build it with your answers and your rules, not generic scripts."
+            "body": "A WhatsApp assistant that answers common questions, takes orders or bookings and records them where they belong. When a conversation needs a person, it hands it over. We build it with your answers and your rules, not generic scripts. If that order has to reserve stock and reach the invoice, we record it in an [order management system](/sistemas-de-gestion/pedidos)."
           },
           {
             "id": "sheets",
@@ -1268,7 +1271,8 @@
         {
           "id": "distributor",
           "title": "Wholesalers and distributors",
-          "body": "They want to sell online at their price without building every order over WhatsApp."
+          "body": "They want to sell online at their price without building every order over WhatsApp.",
+          "href": "/sistemas-de-gestion/pedidos"
         },
         {
           "id": "sync",
@@ -1347,6 +1351,220 @@
     },
     "ctaTitle": "Selling on Tiendanube?",
     "ctaDescription": "Tell us if you are coming from WooCommerce, whether you sell wholesale and which system holds your stock. We reply with scope and price in writing.",
+    "ctaButton": "Tell us your problem"
+  },
+  "pedidos": {
+    "navLabel": "Orders",
+    "metaTitle": "Custom order management system",
+    "metaDescription": "Wholesale orders, per-customer price lists and stock in one system for factories and distributors. Scope and price in writing.",
+    "h1": "Order management system for factories, distributors and wholesalers",
+    "lead": "Each order is entered once, from WhatsApp, a salesperson or the web, and preparation, stock and the invoice come out of it. Built around how you sell today.",
+    "covers": {
+      "title": "What we solve.",
+      "body": "The order arrives on WhatsApp, by email or on paper. Someone types it into Excel. The warehouse does not know what to pick until they are told, and the invoice is issued somewhere else, with the same data again. Along the way a case goes missing, an old price gets charged or stock is promised that is not there. An order management system joins that chain. We build it around how you sell today, and we can start with the stretch that eats the most time.",
+      "items": [
+        {
+          "id": "orders",
+          "label": "Orders"
+        },
+        {
+          "id": "wholesale",
+          "label": "Price lists"
+        },
+        {
+          "id": "stock",
+          "label": "Stock"
+        },
+        {
+          "id": "arca",
+          "label": "ARCA invoicing"
+        },
+        {
+          "id": "cash",
+          "label": "Collections"
+        }
+      ]
+    },
+    "tools": {
+      "title": "What your order system can include.",
+      "intro": "You choose the modules. We start with the one that hurts most, usually order entry or stock, and the rest comes in once that stretch is in use. What follows can be included, and each module is chosen separately.",
+      "items": [
+        {
+          "id": "orders",
+          "title": "Order entry from any channel",
+          "body": "An order can come in on WhatsApp, from a salesperson on the road, at the counter or through a web portal, and it stays the same order: customer, products and the price that customer gets. If taking orders on WhatsApp ends in a chat someone copies into a spreadsheet, that order can be left entered without the second pass. Entry from the phone, for the salesperson on the road, can be defined in the scope."
+        },
+        {
+          "id": "wholesale",
+          "title": "A price list per customer",
+          "body": "Each customer can have their own list: wholesale, retail or a channel of their own, with a minimum order and a different price for a case or a single unit. When the order is entered, the price comes from that list. If the lists live in Excel, importing them can be included so nobody retypes them."
+        },
+        {
+          "id": "status",
+          "title": "A status for every order",
+          "body": "Each order moves through a status: received, being prepared, ready and delivered. Sales sees what came in, the warehouse sees what to pick and admin sees what still needs an invoice or a payment. Tracking shows where each one stands, and profiles are set by area."
+        },
+        {
+          "id": "stock",
+          "title": "Stock reserved on confirmation",
+          "body": "On confirmation, that stock is reserved and stops being available for the next order. If you have more than one warehouse, stock can be kept separate and the order draws from the one that applies. Reorder alerts fire before the shortage reaches the customer. Orders and stock end up in one place."
+        },
+        {
+          "id": "cash",
+          "title": "Customer balance and collections",
+          "body": "Each customer has a balance: what they ordered, what was invoiced and what they paid. A payment can be recorded on the road or when it comes in through Mercado Pago, and it is assigned to that customer."
+        },
+        {
+          "id": "production",
+          "title": "From the order to production",
+          "body": "In a factory that makes to order, confirming can open a production order with the promised date. For a factory, this piece starts from that production order."
+        }
+      ],
+      "closing": "Presales on the phone, route sheets, a portal where the customer builds their own order, and importing price lists from Excel can also be looked at for the scope. What goes in is written in the scope."
+    },
+    "connections": {
+      "title": "Connected to what you already use.",
+      "intro": "What already works stays, and the system connects to it. Each piece, and the moment the data has to move, is in [integrations](/integraciones).",
+      "items": [
+        {
+          "id": "arca",
+          "title": "ARCA electronic invoicing",
+          "body": "The invoice can be issued when the order is confirmed or when it is handed over. Invoicing uses the customer, the items and the price already on the order. You set the moment and the receipt type."
+        },
+        {
+          "id": "mercadopago",
+          "title": "Mercado Pago",
+          "body": "A payment that comes in through Mercado Pago can be assigned to the order and to the customer's account. Reconciliation stops being a match of a statement against a spreadsheet."
+        },
+        {
+          "id": "whatsapp",
+          "title": "WhatsApp",
+          "body": "A bot can take the order in the chat, on that customer's list, and leave it entered. If the conversation needs a person, it hands the chat over. The bot is built in [AI bots](/bots-con-ia). The order system receives the result."
+        },
+        {
+          "id": "portal",
+          "title": "Online store or B2B portal",
+          "body": "Online sales can live on Tiendanube, on another platform or on a portal of your own. Tiendanube is one option when you already sell there or when its checkout is enough: building that store is in [Tiendanube development](/integraciones/tiendanube). If the price, the minimum or the assortment does not fit a packaged store, a portal of your own can be included as a [website or catalog](/webs-y-catalogos), tied to the same order."
+        }
+      ]
+    },
+    "audience": {
+      "title": "Who it's for.",
+      "intro": "It fits when the order is the center of the day and today it falls apart between the chat, the spreadsheet and the program where you invoice. It is shaped by who sells and how the goods leave.",
+      "items": [
+        {
+          "id": "distributor",
+          "title": "Distributors with field sales and routes",
+          "body": "The salesperson writes the order down and at night someone types it in. The warehouse picks late and the truck leaves with whatever was ready. An order system for a distributor can leave the order entered on the visit, with that customer's list. If you run a route every day, as a food or beverage distributor does, it can be built around that route."
+        },
+        {
+          "id": "store",
+          "title": "Wholesalers with a counter and online sales",
+          "body": "The counter sells at one price and the web at another, and stock finds out late. A system for wholesalers joins both channels, each with its own list. Counter and route use the same order, and the invoice can be issued when the order is picked up or when it is dispatched."
+        },
+        {
+          "id": "factory",
+          "title": "Factories that produce to order",
+          "body": "There is a promised date and what has to be made to meet it. Confirming the order can open the production order. Tracking shows whether that date still holds."
+        }
+      ]
+    },
+    "flow": {
+      "title": "What an order looks like from end to end.",
+      "intro": "This path is an example circuit, so the pieces can be seen in order. Yours is written in the scope, based on how you work today.",
+      "steps": [
+        {
+          "title": "Entry",
+          "body": "The order comes in through the channel you use and lands with the customer, the products and the price from their list. If something is missing or the minimum is not met, that shows before it goes to be picked."
+        },
+        {
+          "title": "Picking",
+          "body": "The warehouse sees what to pick. On confirmation, stock for those items is reserved. If there is not enough, the order shows it before promising a delivery date."
+        },
+        {
+          "title": "Handover with an ARCA invoice",
+          "body": "When the goods leave, or on confirmation if you set it that way, the ARCA invoice is issued with the order data."
+        },
+        {
+          "title": "Collection",
+          "body": "The payment is recorded against that order and the customer's balance updates. What is still unpaid stays visible, without rebuilding it at month end."
+        }
+      ]
+    },
+    "comparison": {
+      "title": "Custom, or a packaged system for distributors?",
+      "paragraphs": [
+        "A packaged system for distributors is enough when your circuit fits what that program already does and the team can work that way, without a spreadsheet beside it. Custom is the better fit when the path is your own: several programs plus Excel, price, warehouse or route rules that cannot be configured, or when it has to connect to what you already have.",
+        "On the first call we tell you which of the two looks like the better fit. We do not publish a price: it depends on the modules, the permissions and the connections. How that number is worked out is in [what a custom management system costs](/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida). If the order is one part of a larger operation, the wider frame is [management systems](/sistemas-de-gestion).",
+        "If you want to see a system that is built and in production, the [EventOps](/casos/eventops) case is our own product for event companies: each event is entered once, and the calendar, the quote and the payments come out of it. It shows how we build from each company's real operation."
+      ]
+    },
+    "process": {
+      "title": "How we work and how we quote.",
+      "steps": [
+        {
+          "title": "A 30-minute call",
+          "body": "What gets entered, who enters it, where the order comes in and where it gets stuck. That tells us where to start."
+        },
+        {
+          "title": "A scope document",
+          "body": "Which modules are in, what stays out, what it connects to, what it costs and when it will be ready. All clear before we start."
+        },
+        {
+          "title": "Partial deliveries every week",
+          "body": "If the system is large, we split it and start with what hurts most, such as order entry or stock. Every week you see a working piece and try it with your team."
+        },
+        {
+          "title": "Rollout",
+          "body": "We roll it out with the people who enter orders, pick them and invoice them, and we adjust it from real use."
+        }
+      ],
+      "pricing": {
+        "label": "Price and timeline",
+        "body": "They depend on how many parts the system has and what it needs to connect to. If you already pay for hosting or other services, we use them. If not, we handle them and charge their cost plus a management fee."
+      }
+    },
+    "afterDelivery": [
+      {
+        "label": "Warranty",
+        "body": "If a bug turns up on our side, we fix it under warranty."
+      },
+      {
+        "label": "Maintenance",
+        "body": "Optional, for changes and improvements after launch. Without it, the project costs less."
+      },
+      {
+        "label": "Your data",
+        "body": "It's confidential and we only use it for your project."
+      }
+    ],
+    "faq": {
+      "title": "Questions about order systems.",
+      "items": [
+        {
+          "question": "Can orders come in on WhatsApp and be entered on their own?",
+          "answer": "That can be included. A bot takes the order in the chat, with that customer's list, and leaves it entered. If the conversation leaves what the bot knows, it hands the chat to a person. If typing it in from the message is enough today, it can stay that way and the bot can be added later. It is defined in the scope."
+        },
+        {
+          "question": "Can I have a different price list for each customer?",
+          "answer": "Yes. Each customer can have their own list, wholesale, retail or a channel of their own, with minimums and a price by case or by unit. When the order is entered, the price comes from that list. If the lists are in Excel today, importing them can be included."
+        },
+        {
+          "question": "Does the system invoice in ARCA when I confirm or hand over an order?",
+          "answer": "That can be included. The ARCA e-invoice is issued at the moment you set: on confirmation or when the goods leave. It uses the data on the order, so the sale is not typed again. The receipt type is written in the scope."
+        },
+        {
+          "question": "Can my salespeople enter orders from a phone?",
+          "answer": "Entering orders from a phone can go in the scope, with each customer's list. If your route has areas with no signal, we look at that on the call, based on your route."
+        },
+        {
+          "question": "Is a custom system a better fit, or one already built for distributors?",
+          "answer": "If a system already built for distributors covers your circuit and the team can leave the spreadsheet, it can be enough. Custom is the better fit when there are steps of your own, when you use several programs plus Excel, or when it has to connect to what you already have. On the first call we tell you what looks like the better fit. The price comes from the scope, in writing."
+        }
+      ]
+    },
+    "ctaTitle": "Are orders still arriving on WhatsApp and getting typed in by hand?",
+    "ctaDescription": "Tell us how an order comes in today and where it gets typed again. We reply with scope and price in writing.",
     "ctaButton": "Tell us your problem"
   },
   "comoTrabajamos": {

@@ -14,7 +14,7 @@
       "paragraphs": [
         "El precio depende del sistema. Ordenar el stock es un trabajo. Sumar pedidos, caja, permisos por rol y un cierre para el contador es otro bastante más grande.",
         "Por eso no publicamos una tarifa. Escribimos el alcance en la propuesta y el precio acompaña ese alcance. Miramos las partes juntas: un flujo corto sin integraciones lleva menos trabajo que uno con permisos, migración y reportes de cierre.",
-        "Una distribuidora que quiere descontar stock al confirmar un pedido necesita algo distinto de un negocio de turnos que quiere la agenda y lo cobrado en el día. Estas son las partes que más mueven el precio:"
+        "Una distribuidora que quiere descontar stock al confirmar un pedido necesita algo distinto de un negocio de turnos que quiere la agenda y lo cobrado en el día. Cómo se arma ese sistema de pedidos está en [sistema de gestión de pedidos](/sistemas-de-gestion/pedidos). Estas son las partes que más mueven el precio:"
       ],
       "items": [
         "Módulos y pantallas. Stock, pedidos, caja, turnos o clientes suman pantallas, estados y reglas. Un recorrido corto lleva menos trabajo que una operación con varias etapas.",
@@ -176,6 +176,11 @@
         "label": "Sistemas de gestión",
         "href": "/sistemas-de-gestion",
         "description": "Stock, pedidos, caja o turnos en un sistema armado para cómo trabaja tu pyme."
+      },
+      {
+        "label": "Sistema de gestión de pedidos",
+        "href": "/sistemas-de-gestion/pedidos",
+        "description": "Pedidos, listas de precios por cliente y stock para fábricas, distribuidoras y mayoristas."
       },
       {
         "label": "Caso EventOps",

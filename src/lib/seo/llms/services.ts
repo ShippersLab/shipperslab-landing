@@ -10,9 +10,25 @@ import {
   page,
   renderCopy,
 } from "@/lib/seo/llms/copy";
-import { serviceRoutes, TIENDANUBE_PATH, type ServiceSlug } from "@/lib/services";
+import { PEDIDOS_PATH, serviceRoutes, TIENDANUBE_PATH, type ServiceSlug } from "@/lib/services";
 
-type ServicePage = (typeof es.servicePages)[ServiceSlug] | typeof es.tiendanube;
+type ServicePage = (typeof es.servicePages)[ServiceSlug] | typeof es.tiendanube | typeof es.pedidos;
+
+type ToolGroup = {
+  title: string;
+  intro?: string;
+  closing?: string;
+  items: readonly { title: string; body: string }[];
+};
+
+function renderTools(group: ToolGroup) {
+  return joinBlocks([
+    heading(3, group.title),
+    group.intro ? renderCopy(group.intro) : undefined,
+    ...group.items.map((item) => joinBlocks([heading(4, item.title), renderCopy(item.body)])),
+    group.closing ? renderCopy(group.closing) : undefined,
+  ]);
+}
 
 const PROCESS_STEPS = ["call", "scope", "weekly", "pricing"] as const;
 
@@ -39,14 +55,8 @@ function buildServiceExtras(servicePage: ServicePage) {
           .map((section) => joinBlocks([heading(3, section.title), renderCopy(section.body)]))
           .join("\n\n")
       : undefined,
-    "tools" in servicePage
-      ? joinBlocks([
-          heading(3, servicePage.tools.title),
-          ...servicePage.tools.items.map((item) =>
-            joinBlocks([heading(4, item.title), renderCopy(item.body)]),
-          ),
-        ])
-      : undefined,
+    "tools" in servicePage ? renderTools(servicePage.tools) : undefined,
+    "connections" in servicePage ? renderTools(servicePage.connections) : undefined,
     "audience" in servicePage
       ? joinBlocks([
           heading(3, servicePage.audience.title),
@@ -63,6 +73,19 @@ function buildServiceExtras(servicePage: ServicePage) {
           ...servicePage.examples.items.map((item) =>
             joinBlocks([heading(4, item.title), item.body]),
           ),
+        ])
+      : undefined,
+    "flow" in servicePage
+      ? joinBlocks([
+          heading(3, servicePage.flow.title),
+          renderCopy(servicePage.flow.intro),
+          numbered(servicePage.flow.steps.map((step) => labeled(step.title, step.body))),
+        ])
+      : undefined,
+    "comparison" in servicePage
+      ? joinBlocks([
+          heading(3, servicePage.comparison.title),
+          ...servicePage.comparison.paragraphs.map((paragraph) => renderCopy(paragraph)),
         ])
       : undefined,
   ]);
@@ -101,6 +124,10 @@ export function buildServicePage(slug: ServiceSlug) {
 
 export function buildTiendanubePage() {
   return buildServicePageCopy(TIENDANUBE_PATH, es.tiendanube);
+}
+
+export function buildPedidosPage() {
+  return buildServicePageCopy(PEDIDOS_PATH, es.pedidos);
 }
 
 function buildProcessStep(id: (typeof PROCESS_STEPS)[number]) {

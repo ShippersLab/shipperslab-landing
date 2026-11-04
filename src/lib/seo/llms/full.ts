@@ -8,6 +8,7 @@ import { buildHome, buildIdentity } from "@/lib/seo/llms/home";
 import { buildEventos } from "@/lib/seo/llms/events";
 import {
   buildComoTrabajamos,
+  buildPedidosPage,
   buildServicePage,
   buildTiendanubePage,
 } from "@/lib/seo/llms/services";
@@ -40,7 +41,11 @@ export function buildLlmsFullTxt() {
     organizationSummary,
     `Versión en inglés: ${organizationIdentity.url}/en (mismas páginas bajo ${organizationIdentity.url}/en/...)`,
     buildHome(),
-    ...SERVICE_PAGE_ORDER.map((slug) => buildServicePage(slug)),
+    ...SERVICE_PAGE_ORDER.flatMap((slug) =>
+      slug === "sistemas-de-gestion"
+        ? [buildServicePage(slug), buildPedidosPage()]
+        : [buildServicePage(slug)],
+    ),
     buildTiendanubePage(),
     buildComoTrabajamos(),
     buildCasos(),
@@ -57,6 +62,7 @@ export function buildLlmsFullTxt() {
   assertSourceCopy(es.contact, document);
   assertSourceCopy(es.servicePages, document);
   assertSourceCopy(es.tiendanube, document);
+  assertSourceCopy(es.pedidos, document);
   assertSourceCopy(es.comoTrabajamos, document);
   assertSourceCopy(es.casos, document);
   assertSourceCopy(es.events, document);

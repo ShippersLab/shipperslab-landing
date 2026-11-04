@@ -7,20 +7,32 @@ import { ServiceLinks } from "@/components/sections/service-page/service-links";
 import { Container } from "@/components/ui/section/container";
 import { useI18n } from "@/i18n/provider";
 import type { Messages } from "@/i18n/get-messages";
-import { serviceRoutes, type ServicePageKey } from "@/lib/services";
+import { serviceRoutes, type ServicePageKey, type ServiceSlug } from "@/lib/services";
 
 type ServicePageProps = {
   slug: ServicePageKey;
 };
 
+const PEDIDOS_RELATED = [
+  "sistemas-de-gestion",
+  "integraciones",
+  "bots-con-ia",
+  "webs-y-catalogos",
+] as const satisfies readonly ServiceSlug[];
+
 function servicePageContent(messages: Messages, slug: ServicePageKey) {
-  return slug === "tiendanube" ? messages.tiendanube : messages.servicePages[slug];
+  if (slug === "tiendanube") return messages.tiendanube;
+  if (slug === "pedidos") return messages.pedidos;
+  return messages.servicePages[slug];
 }
 
 export function ServicePage({ slug }: ServicePageProps) {
   const { messages } = useI18n();
   const page = servicePageContent(messages, slug);
-  const related = serviceRoutes.filter((route) => route.slug !== slug).map((route) => route.slug);
+  const related =
+    slug === "pedidos"
+      ? PEDIDOS_RELATED
+      : serviceRoutes.filter((route) => route.slug !== slug).map((route) => route.slug);
 
   return (
     <div className="mx-auto w-full max-w-content border-x border-border">

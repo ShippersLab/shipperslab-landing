@@ -6,7 +6,7 @@ import { localizedUrl } from "@/i18n/paths";
 import { singleLine } from "@/lib/seo/shared/text";
 import { buildFaqPage } from "@/lib/seo/structured-data/pages";
 import { homeLabel, ORGANIZATION_ID } from "@/lib/seo/structured-data/shared";
-import { serviceRoutes, TIENDANUBE_PATH, type ServiceSlug } from "@/lib/services";
+import { PEDIDOS_PATH, serviceRoutes, TIENDANUBE_PATH, type ServiceSlug } from "@/lib/services";
 import { site } from "@/lib/site";
 
 type ServiceGraphInput = {
@@ -76,6 +76,26 @@ export function buildServiceStructuredData(slug: ServiceSlug, lang: Locale): Gra
     serviceType: page.navLabel,
     audienceType: item?.audience,
     trail: [{ name: page.navLabel, url }],
+    faq: page.faq.items,
+    lang,
+  });
+}
+
+export function buildPedidosStructuredData(lang: Locale): Graph {
+  const messages = getMessages(lang);
+  const page = messages.pedidos;
+  const parent = messages.servicePages["sistemas-de-gestion"];
+  const url = localizedUrl(PEDIDOS_PATH, lang);
+
+  return buildServiceGraph({
+    url,
+    name: page.metaTitle,
+    description: page.metaDescription,
+    serviceType: lang === "es" ? "Sistema de gestión de pedidos" : "Order management system",
+    trail: [
+      { name: parent.navLabel, url: localizedUrl("/sistemas-de-gestion", lang) },
+      { name: page.navLabel, url },
+    ],
     faq: page.faq.items,
     lang,
   });
