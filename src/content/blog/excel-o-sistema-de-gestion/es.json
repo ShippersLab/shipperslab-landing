@@ -106,12 +106,12 @@
         "Al pasar, pedidos, stock, clientes y reportes salen del mismo dato, con un estado que el equipo entiende y una persona responsable. Una pyme puede ordenar primero la parte que hoy se traba, sin mudarlo todo junto."
       ],
       "items": [
-        "Pedidos. Cada pedido tiene estado, responsable e historial. Un sistema de gestión de pedidos no depende de buscar el mensaje para saber si se confirmó, se preparó o se entregó.",
-        "Stock. Al confirmar se puede descontar lo que corresponde, y depósito y venta miran el mismo número. Gestionar stock sin Excel sirve cuando la planilla y la estantería ya no coinciden.",
+        "Pedidos. Cada pedido tiene estado, responsable e historial. No hace falta buscar el mensaje para saber si se confirmó, se preparó o se entregó.",
+        "Stock. Al confirmar se puede descontar lo que corresponde, y el depósito y la venta miran el mismo número. Sirve cuando la planilla y la estantería ya no coinciden.",
         "Clientes. Cada cliente queda una vez, con su condición y su contacto. Se terminan las filas duplicadas entre hojas.",
         "Reportes. Lo que falta cobrar, lo que hay que reponer o cómo cerró el período sale de esos datos, sin copiar columnas el último día."
       ],
-      "closing": "El alcance de cada parte se escribe para tu operación. El encuadre está en [sistemas de gestión](/sistemas-de-gestion). En [casos](/casos) hay productos propios ya construidos, cada uno alrededor de una operación concreta.",
+      "closing": "El alcance de cada parte se escribe para tu operación. En [casos](/casos) están los productos propios. [EventOps](/casos/eventops) es el sistema de gestión para empresas de eventos que coordinan fechas y cobros con planillas.",
       "link": {
         "label": "Ver sistemas de gestión",
         "href": "/sistemas-de-gestion"
@@ -209,7 +209,7 @@
       {
         "label": "Sistemas de gestión",
         "href": "/sistemas-de-gestion",
-        "description": "Pedidos, stock, clientes o reportes en un sistema armado para cómo trabaja tu pyme."
+        "description": "Stock, pedidos, caja o turnos en un sistema armado para cómo trabaja tu pyme."
       },
       {
         "label": "Cuánto cuesta un sistema de gestión a medida",

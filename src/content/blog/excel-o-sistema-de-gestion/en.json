@@ -106,12 +106,12 @@
         "After the switch, orders, stock, clients, and reports come from the same data, with a status the team understands and a person responsible. A small business can tidy the part that gets stuck first, without moving everything at once."
       ],
       "items": [
-        "Orders. Each order has a status, an owner, and a history. An order management system does not depend on searching the message to know whether it was confirmed, prepared, or delivered.",
-        "Stock. Confirming an order can deduct what it should, and the warehouse and sales look at the same number. Managing stock without Excel helps once the spreadsheet and the shelves no longer match.",
+        "Orders. Each order has a status, an owner, and a history. You do not have to search the message to know whether it was confirmed, prepared, or delivered.",
+        "Stock. Confirming an order can deduct what it should, and the warehouse and sales look at the same number. It helps once the spreadsheet and the shelves no longer match.",
         "Clients. Each client exists once, with their terms and contact. The duplicate rows across sheets stop.",
         "Reports. What is still unpaid, what to restock, or how the period closed comes from that data, without copying columns on the last day."
       ],
-      "closing": "The scope of each part is written for your operation. The outline is on [management systems](/sistemas-de-gestion). [Case studies](/casos) shows products we have already built, each one around a specific operation.",
+      "closing": "The scope of each part is written for your operation. [Latest projects](/casos) is where our own products live. [EventOps](/casos/eventops) is the management system for event companies that coordinate dates and payments in spreadsheets.",
       "link": {
         "label": "See management systems",
         "href": "/sistemas-de-gestion"
@@ -209,7 +209,7 @@
       {
         "label": "Management systems",
         "href": "/sistemas-de-gestion",
-        "description": "Orders, stock, clients, or reports in a system built around how your business works."
+        "description": "Inventory, orders, sales or bookings in a system built around how your business works."
       },
       {
         "label": "What a custom management system costs",
@@ -223,7 +223,7 @@
       }
     ]
   },
-  "ctaTitle": "Does the operation no longer fit in the spreadsheet?",
+  "ctaTitle": "Has the operation outgrown the spreadsheet?",
   "ctaDescription": "Tell us how orders, stock, and clients get entered today. We reply with scope and price in writing, before we start.",
   "ctaButton": "Tell us your problem"
 }
