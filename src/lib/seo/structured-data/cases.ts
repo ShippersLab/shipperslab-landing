@@ -11,6 +11,7 @@ import { getMessages } from "@/i18n/get-messages";
 import { localizedUrl } from "@/i18n/paths";
 import { estacionarImages } from "@/lib/projects/estacionar";
 import { eventopsImages } from "@/lib/projects/eventops";
+import { tuturneroImages } from "@/lib/projects/tuturnero";
 import {
   casosLabel,
   homeLabel,
@@ -25,6 +26,7 @@ function caseUrls(lang: Locale) {
     casos,
     eventops: `${casos}/eventops`,
     estacionar: `${casos}/estacionar`,
+    tuturnero: `${casos}/tuturnero`,
     home: localizedUrl("/", lang),
   };
 }
@@ -49,6 +51,12 @@ export function buildCasosStructuredData(lang: Locale): Graph {
         {
           "@type": "ListItem",
           position: 1,
+          name: page.tuturnero.title,
+          url: urls.tuturnero,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: page.eventops.title,
           url: urls.eventops,
         },
@@ -88,7 +96,6 @@ export function buildEventopsCaseStructuredData(lang: Locale): Graph {
       "@type": "BusinessAudience",
       audienceType: page.facts[2].value,
     },
-    featureList: page.features.map((feature) => feature.title),
     image: `${site.url}${eventopsImages.hero.src}`,
     creator: {
       "@type": "Organization",
@@ -106,6 +113,49 @@ export function buildEventopsCaseStructuredData(lang: Locale): Graph {
       { "@type": "ListItem", position: 1, name: homeLabel(lang), item: urls.home },
       { "@type": "ListItem", position: 2, name: casosLabel(lang), item: urls.casos },
       { "@type": "ListItem", position: 3, name: page.title, item: urls.eventops },
+    ],
+  };
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [app, breadcrumb],
+  };
+}
+
+export function buildTuturneroCaseStructuredData(lang: Locale): Graph {
+  const page = getMessages(lang).casos.tuturnero;
+  const urls = caseUrls(lang);
+
+  const app: SoftwareApplication = {
+    "@type": "SoftwareApplication",
+    "@id": `${urls.tuturnero}#software`,
+    name: page.title,
+    description: page.metaDescription,
+    url: site.tuturneroUrl,
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
+    inLanguage: languageTags[lang],
+    audience: {
+      "@type": "BusinessAudience",
+      audienceType: page.facts[2].value,
+    },
+    image: `${site.url}${tuturneroImages.hero.src}`,
+    creator: {
+      "@type": "Organization",
+      "@id": ORGANIZATION_ID,
+      name: site.name,
+      url: site.url,
+    },
+    publisher: { "@id": ORGANIZATION_ID },
+  };
+
+  const breadcrumb: BreadcrumbList = {
+    "@type": "BreadcrumbList",
+    "@id": `${urls.tuturnero}#breadcrumb`,
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: homeLabel(lang), item: urls.home },
+      { "@type": "ListItem", position: 2, name: casosLabel(lang), item: urls.casos },
+      { "@type": "ListItem", position: 3, name: page.title, item: urls.tuturnero },
     ],
   };
 

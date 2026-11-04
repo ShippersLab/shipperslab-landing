@@ -19,6 +19,11 @@ export function buildCasos() {
     copy.metaDescription,
     heading(3, copy.title),
     copy.description,
+    heading(3, copy.tuturnero.title),
+    copy.tuturnero.summary,
+    bullets(copy.tuturnero.tags),
+    `[${copy.tuturnero.title}](${canonical("/casos/tuturnero")})`,
+    labeled(copy.tuturnero.category, copy.tuturnero.summary),
     heading(3, copy.eventops.title),
     copy.eventops.summary,
     bullets(copy.eventops.tags),
@@ -37,6 +42,29 @@ export function buildCasos() {
   ]);
 }
 
+function buildTuturnero() {
+  const copy = es.casos.tuturnero;
+
+  return page("/casos/tuturnero", [
+    copy.metaTitle,
+    copy.metaDescription,
+    `[${copy.backLabel}](${canonical("/casos")})`,
+    copy.eyebrow,
+    heading(3, copy.title),
+    copy.lead,
+    `[${copy.visitLabel}](${site.tuturneroUrl})`,
+    copy.heroAlt,
+    copy.factsLabel,
+    ...copy.facts.map((fact) => labeled(fact.label, fact.value)),
+    ...copy.sections.map((section) => joinBlocks([heading(3, section.title), ...section.body])),
+    heading(3, copy.productTitle),
+    copy.productDescription,
+    `[${copy.productCta}](${site.tuturneroUrl})`,
+    heading(3, copy.galleryTitle),
+    bullets(copy.galleryAlts),
+  ]);
+}
+
 function buildEventops() {
   const copy = es.casos.eventops;
 
@@ -51,21 +79,12 @@ function buildEventops() {
     copy.heroAlt,
     copy.factsLabel,
     ...copy.facts.map((fact) => labeled(fact.label, fact.value)),
-    heading(3, copy.overviewTitle),
-    renderCopy(copy.overview),
-    heading(3, copy.approachTitle),
-    copy.approach,
-    heading(3, copy.flowTitle),
-    copy.flowDescription,
-    ...copy.flow.map((step) => joinBlocks([heading(4, step.title), step.body])),
-    heading(3, copy.featuresTitle),
-    ...copy.features.map((feature) => joinBlocks([heading(4, feature.title), feature.body])),
-    heading(3, copy.doneTitle),
-    bullets(copy.done),
-    heading(3, copy.whyTitle),
-    copy.why,
-    heading(3, copy.customersTitle),
-    copy.customers,
+    ...copy.sections.map((section) =>
+      joinBlocks([heading(3, section.title), ...section.body.map(renderCopy)]),
+    ),
+    heading(3, copy.productTitle),
+    copy.productDescription,
+    `[${copy.productCta}](${site.eventopsUrl})`,
     heading(3, copy.galleryTitle),
     bullets(copy.galleryAlts),
   ]);
@@ -84,21 +103,9 @@ function buildEstacionar() {
     bullets(copy.tags),
     copy.status,
     ...copy.images.map((image) => image.alt),
-    heading(3, copy.ideaTitle),
-    copy.idea,
-    heading(3, copy.whyTitle),
-    copy.why,
-    heading(3, copy.howTitle),
-    copy.howIntro,
-    ...copy.how.map((item) => joinBlocks([heading(4, item.title), item.body])),
+    ...copy.sections.map((section) => joinBlocks([heading(3, section.title), ...section.body])),
     copy.factsLabel,
     ...copy.facts.map((fact) => labeled(fact.label, fact.value)),
-    heading(3, copy.doneTitle),
-    bullets(copy.done),
-    heading(3, copy.brandTitle),
-    copy.brand,
-    heading(3, copy.stageTitle),
-    copy.stage,
   ]);
 }
 
@@ -108,6 +115,8 @@ export function buildProject(slug: ProjectSlug) {
       return buildEventops();
     case "estacionar":
       return buildEstacionar();
+    case "tuturnero":
+      return buildTuturnero();
     default: {
       const pending: never = slug;
       throw new Error(`llms-full is missing project page: ${pending}`);

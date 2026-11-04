@@ -18,8 +18,8 @@ type CaseHeaderProps = {
   eyebrow: string;
   title: string;
   lead: string;
-  facts: readonly Fact[];
-  factsLabel: string;
+  facts?: readonly Fact[];
+  factsLabel?: string;
   children?: ReactNode;
 };
 
@@ -64,18 +64,20 @@ export function CaseHeader({
         {children ? <motion.div variants={blurItem}>{children}</motion.div> : null}
       </div>
 
-      <motion.dl
-        variants={blurItem}
-        aria-label={factsLabel}
-        className="mt-12 grid grid-cols-2 gap-x-6 gap-y-6 border-t border-border pt-8 lg:grid-cols-4"
-      >
-        {facts.map((fact) => (
-          <div key={fact.label}>
-            <dt className="text-sm text-muted">{fact.label}</dt>
-            <dd className="mt-1.5 text-base text-ink">{fact.value}</dd>
-          </div>
-        ))}
-      </motion.dl>
+      {facts && facts.length > 0 ? (
+        <motion.dl
+          variants={blurItem}
+          aria-label={factsLabel}
+          className="mt-12 grid grid-cols-2 gap-x-6 gap-y-6 border-t border-border pt-8 lg:grid-cols-4"
+        >
+          {facts.map((fact) => (
+            <div key={fact.label}>
+              <dt className="text-sm text-muted">{fact.label}</dt>
+              <dd className="mt-1.5 text-base text-ink">{fact.value}</dd>
+            </div>
+          ))}
+        </motion.dl>
+      ) : null}
     </motion.header>
   );
 }
