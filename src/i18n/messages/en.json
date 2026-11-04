@@ -78,6 +78,7 @@
     "title": "What we do.",
     "description": "Systems, websites, bots and integrations so your business sells and answers without friction.",
     "eventopsPreviewAlt": "Screenshot of the EventOps homepage",
+    "tuturneroPreviewAlt": "Screenshot of the Tuturnero homepage",
     "items": [
       {
         "id": "systems",
@@ -89,7 +90,7 @@
       {
         "id": "presence",
         "title": "Websites, booking and catalogs",
-        "description": "Help customers find you, book and order without friction. We build your website, online booking or a catalog with WhatsApp ordering.",
+        "description": "Help customers find you, book and order without friction. We build your website, a catalog with WhatsApp ordering or online booking like {Tuturnero}.",
         "includes": ["Online booking", "Catalog with WhatsApp orders"],
         "audience": "Shops and small businesses"
       },

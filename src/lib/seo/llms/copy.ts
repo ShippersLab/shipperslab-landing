@@ -18,6 +18,7 @@ export function absoluteUrl(href: string) {
 export function renderCopy(text: string) {
   return omitUnpublishedBlogLinks(text)
     .replace(/\{EventOps\}/g, `[EventOps](${site.eventopsUrl})`)
+    .replace(/\{Tuturnero\}/g, `[Tuturnero](${site.tuturneroUrl})`)
     .replace(/\[([^\]]+)\]\((\/[^)\s]+)\)/g, (_, label: string, href: string) => {
       return `[${label}](${absoluteUrl(href)})`;
     });
@@ -48,7 +49,10 @@ export function page(path: string, blocks: ReadonlyArray<string | false | null |
 }
 
 function needles(text: string) {
-  const normalized = singleLine(omitUnpublishedBlogLinks(text)).replace(/\{EventOps\}/g, "\n");
+  const normalized = singleLine(omitUnpublishedBlogLinks(text)).replace(
+    /\{(?:EventOps|Tuturnero)\}/g,
+    "\n",
+  );
   if (normalized.includes("{")) return [];
 
   const labels = [...normalized.matchAll(/\[([^\]]+)\]\([^)]+\)/g)].map((match) => match[1]);

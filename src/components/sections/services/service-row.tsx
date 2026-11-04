@@ -113,7 +113,10 @@ export function ServiceRow({ index, service }: ServiceRowProps) {
           <DescriptionWithLink
             text={service.description}
             opensNewTab={messages.common.opensNewTab}
-            previewAlt={messages.services.eventopsPreviewAlt}
+            previewAlts={{
+              EventOps: messages.services.eventopsPreviewAlt,
+              Tuturnero: messages.services.tuturneroPreviewAlt,
+            }}
           />
         </motion.p>
         <motion.ul
