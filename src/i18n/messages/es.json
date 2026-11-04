@@ -78,6 +78,7 @@
     "title": "Qué hacemos.",
     "description": "Sistemas, webs, bots e integraciones para que tu negocio venda y atienda sin trabas.",
     "eventopsPreviewAlt": "Captura de la página de inicio de EventOps",
+    "tuturneroPreviewAlt": "Captura de la página de inicio de Tuturnero",
     "items": [
       {
         "id": "systems",
@@ -89,7 +90,7 @@
       {
         "id": "presence",
         "title": "Webs, turneros y catálogos",
-        "description": "Que tus clientes te encuentren, reserven y te pidan sin vueltas. Armamos tu web, tu turnero o tu catálogo con pedidos por WhatsApp.",
+        "description": "Que tus clientes te encuentren, reserven y te pidan sin vueltas. Armamos tu web, tu catálogo con pedidos por WhatsApp o tu turnero, como {Tuturnero}.",
         "includes": ["Turnos online", "Catálogo con pedidos por WhatsApp"],
         "audience": "Comercios y emprendedores"
       },

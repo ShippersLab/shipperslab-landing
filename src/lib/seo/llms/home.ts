@@ -38,7 +38,9 @@ function buildHomeServices() {
     const href = getServiceHref(service.id) ?? `/#${service.id}`;
     const preview = service.description.includes("{EventOps}")
       ? es.services.eventopsPreviewAlt
-      : undefined;
+      : service.description.includes("{Tuturnero}")
+        ? es.services.tuturneroPreviewAlt
+        : undefined;
 
     return joinBlocks([
       heading(4, `[${service.title}](${canonical(href)})`),
