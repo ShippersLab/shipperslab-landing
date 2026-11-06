@@ -353,7 +353,7 @@
   },
   "casos": {
     "metaTitle": "Software case studies: Tuturnero, EventOps and Estacionar",
-    "metaDescription": "ShippersLab case studies: Tuturnero, the booking page in beta for appointment-based businesses; EventOps, our management system in production for event companies; and Estacionar, the branding of a parking marketplace.",
+    "metaDescription": "ShippersLab case studies: Tuturnero, the booking page for appointment-based businesses; EventOps, our management system in production for event companies; and Estacionar, the branding of a parking marketplace.",
     "title": "Latest projects.",
     "description": "A selection of what we have built and have in production.",
     "soon": {
@@ -452,7 +452,7 @@
       "summary": "Your schedule, your hours and your clients on a single page.",
       "tags": ["Bookings", "SaaS"],
       "metaTitle": "Tuturnero: a booking page for appointments",
-      "metaDescription": "Tuturnero gives each business a page with a link and QR code so clients book without an account and without a commission. A ShippersLab own product, in beta.",
+      "metaDescription": "Tuturnero gives each business a page with a link and QR code so clients book without an account and without a commission. A ShippersLab own product.",
       "visitLabel": "Try Tuturnero for free",
       "galleryTitle": "Gallery",
       "galleryAlts": [
@@ -474,7 +474,7 @@
         },
         {
           "label": "Status",
-          "value": "In beta"
+          "value": "In production"
         },
         {
           "label": "Built for",
@@ -524,8 +524,8 @@
         {
           "title": "Where it stands.",
           "body": [
-            "Tuturnero is published and in beta. Customers already use it every day and we work with them to improve it.",
-            "Creating your page is free while the beta lasts and bookings have no commission."
+            "Tuturnero is in production. Customers already use it every day and we work with them to improve it.",
+            "Creating your page is free on the Inicial plan and bookings have no commission."
           ]
         }
       ],

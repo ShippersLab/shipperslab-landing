@@ -353,7 +353,7 @@
   },
   "casos": {
     "metaTitle": "Casos de software: Tuturnero, EventOps y Estacionar",
-    "metaDescription": "Casos de ShippersLab: Tuturnero, la página de reservas en beta para negocios con turnos; EventOps, el sistema de gestión en producción para empresas de eventos; y Estacionar, el branding de un marketplace de cocheras.",
+    "metaDescription": "Casos de ShippersLab: Tuturnero, la página de reservas para negocios con turnos; EventOps, el sistema de gestión en producción para empresas de eventos; y Estacionar, el branding de un marketplace de cocheras.",
     "title": "Últimos proyectos.",
     "description": "Una selección de lo que construimos y tenemos en producción.",
     "soon": {
@@ -452,7 +452,7 @@
       "summary": "Tu agenda, tus horarios y tus clientes, en una sola página.",
       "tags": ["Reservas", "SaaS"],
       "metaTitle": "Tuturnero: página de reservas para turnos",
-      "metaDescription": "Tuturnero arma una página con link y QR para que tus clientes reserven un turno sin cuenta y sin comisión. Producto propio de ShippersLab, en beta.",
+      "metaDescription": "Tuturnero arma una página con link y QR para que tus clientes reserven un turno sin cuenta y sin comisión. Producto propio de ShippersLab.",
       "visitLabel": "Probar Tuturnero gratis",
       "galleryTitle": "Galería",
       "galleryAlts": [
@@ -474,7 +474,7 @@
         },
         {
           "label": "Estado",
-          "value": "En beta"
+          "value": "En producción"
         },
         {
           "label": "Pensado para",
@@ -524,8 +524,8 @@
         {
           "title": "Dónde está hoy.",
           "body": [
-            "Tuturnero está publicado y en beta. Ya tiene clientes que lo usan todos los días y trabajamos con ellos para mejorarlo.",
-            "Crear tu página es gratis mientras dure la beta y las reservas no tienen comisión."
+            "Tuturnero está en producción. Ya tiene clientes que lo usan todos los días y trabajamos con ellos para mejorarlo.",
+            "Crear tu página es gratis con el plan Inicial y las reservas no tienen comisión."
           ]
         }
       ],

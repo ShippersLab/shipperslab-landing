@@ -23,7 +23,7 @@ const EVENTOPS_CASE =
   "EventOps es un producto propio de ShippersLab, en producción, pensado para empresas de sonido, iluminación y eventos. Reemplaza las planillas: cada evento se carga una vez y de ahí salen el calendario, el presupuesto, los pagos y los gastos.";
 
 const TUTURNERO_CASE =
-  "Tuturnero es un producto propio de ShippersLab, publicado y en beta. Cada negocio tiene una página con link y QR para que sus clientes reserven un turno sin cuenta y sin comisión.";
+  "Tuturnero es un producto propio de ShippersLab, en producción. Cada negocio tiene una página con link y QR para que sus clientes reserven un turno sin cuenta y sin comisión.";
 
 function bullets(lines: string[]) {
   return lines.map((line) => `- ${line}`).join("\n");
@@ -118,7 +118,7 @@ export function buildLlmsTxt() {
       link(
         "Tuturnero",
         site.tuturneroUrl,
-        "producto propio en beta, página de reservas para negocios con turnos",
+        "producto propio en producción, página de reservas para negocios con turnos",
       ),
       link(
         "EventOps",
@@ -128,7 +128,7 @@ export function buildLlmsTxt() {
       link(
         "Casos y experiencia",
         `${site.url}/casos`,
-        "proyectos propios: Tuturnero en beta, EventOps en producción y Estacionar, aún sin publicar",
+        "proyectos propios: Tuturnero en producción, EventOps en producción y Estacionar, aún sin publicar",
       ),
       link(
         "Eventos",
