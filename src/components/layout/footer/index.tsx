@@ -121,6 +121,16 @@ export function Footer() {
                 X
               </a>
             </li>
+            <li>
+              <a
+                href={site.social.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={LINK_CLASS}
+              >
+                LinkedIn
+              </a>
+            </li>
           </FooterColumn>
         </div>
 
