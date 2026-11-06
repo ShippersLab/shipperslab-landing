@@ -23,7 +23,7 @@ export const organizationIdentity = {
     "Agentes de IA",
     "Desarrollo web",
   ],
-  sameAs: [site.social.instagram, site.social.x, site.social.github],
+  sameAs: [site.social.instagram, site.social.x, site.social.linkedin, site.social.github],
 } as const;
 
 export const organizationSummary = [

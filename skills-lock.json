@@ -29,7 +29,7 @@
       "source": "jakubkrehel/skills",
       "sourceType": "github",
       "skillPath": "skills/better-interface/SKILL.md",
-      "computedHash": "406267c5782510d658a914899db2fc5eb3f5f7d51620cc4c86d7e26b217fdf24"
+      "computedHash": "c4f8a7862c00e63ae0df73fa29137f01a7fdd16354919e718dcf7e9f1a3f9445"
     },
     "better-layout": {
       "source": "jakubkrehel/skills",
@@ -168,6 +168,12 @@
       "sourceType": "github",
       "skillPath": "skills/seo-geo/SKILL.md",
       "computedHash": "56f90ba46b36563bb5461feb8462aed9283e74dfc4cdac2a98c42c4bc86a95be"
+    },
+    "variant": {
+      "source": "jakubkrehel/skills",
+      "sourceType": "github",
+      "skillPath": "skills/variant/SKILL.md",
+      "computedHash": "c783573ebf39b02ed2dc393cc7fe3de0a2fafc5d10a9a3c76a8461889beb7c2d"
     },
     "vercel-react-best-practices": {
       "source": "vercel-labs/agent-skills",

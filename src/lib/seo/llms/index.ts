@@ -137,6 +137,7 @@ export function buildLlmsTxt() {
       ),
       link("X", site.social.x),
       link("Instagram", site.social.instagram),
+      link("LinkedIn", site.social.linkedin),
     ].join("\n")}`,
   ].join("\n\n");
 }

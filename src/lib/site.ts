@@ -15,6 +15,7 @@ export const site = {
     x: "https://x.com/theshipperslab",
     xHandle: "@theshipperslab",
     github: "https://github.com/ShippersLab",
+    linkedin: "https://www.linkedin.com/company/shipperslab/",
   },
 } as const;
 

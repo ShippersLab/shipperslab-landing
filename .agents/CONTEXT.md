@@ -117,6 +117,7 @@ Approved lines that can be reused in copy. They are brand lines, not the framing
 - **Instagram**: https://www.instagram.com/shipperslab/ (@shipperslab), main channel for clients
 - **WhatsApp Business**: destination for client messages. Owners write on WhatsApp before email.
 - **X**: @theshipperslab, paused for community until there is an event
+- **LinkedIn**: https://www.linkedin.com/company/shipperslab/, company page
 - **Franco**: https://www.linkedin.com/in/francogalfre/ and https://x.com/francogalfredev
 - **Juani**: https://www.linkedin.com/in/juanidlsdev/ and https://x.com/JuanDls01
   - Used on the landing only if a team section with faces is added (not part of EOP-64).
