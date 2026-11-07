@@ -154,35 +154,11 @@
     "button": "Hablemos"
   },
   "contact": {
-    "title": "Contanos qué necesitás.",
-    "description": "La primera llamada de 30 minutos es gratis.",
     "links": {
-      "copy": "Copiar",
-      "copied": "Copiado",
-      "copyLabel": "Copiar email",
-      "whatsapp": "WhatsApp",
-      "instagram": "Instagram",
-      "call": "Reservar llamada"
+      "whatsapp": "WhatsApp"
     },
     "form": {
-      "name": "Nombre",
-      "namePlaceholder": "Tu nombre",
-      "company": "Negocio o empresa (opcional)",
-      "companyPlaceholder": "Nombre de tu negocio",
-      "contactMethod": "Email o WhatsApp",
-      "contactMethodPlaceholder": "vos@negocio.com o +54 9 ...",
-      "message": "¿Qué querés resolver?",
-      "messagePlaceholder": "Ej: controlar el stock y la caja, ordenar los turnos o armar un catálogo para vender por WhatsApp.",
-      "submit": "Enviar",
-      "sending": "Enviando...",
-      "sent": "¡Enviado!",
-      "retry": "Reintentar",
-      "success": "Listo. Te responde alguien del equipo para coordinar una charla.",
-      "error": "No se pudo enviar. Escribinos directo a hola@shipperslab.tech.",
-      "whatsappMessage": "Hola, quiero contarles un problema de mi negocio.",
-      "whatsappGreeting": "Hola, soy {name}.",
-      "whatsappGreetingWithCompany": "Hola, soy {name}, de {company}.",
-      "alternative": "O escribinos directo a"
+      "whatsappMessage": "Hola, quiero contarles un problema de mi negocio."
     }
   },
   "onboarding": {
@@ -224,10 +200,13 @@
     },
     "errors": {
       "nameRequired": "Contanos cómo te llamás.",
+      "nameInvalid": "Escribí tu nombre real, con al menos 2 letras.",
       "emailRequired": "Necesitamos un email para responderte.",
       "emailInvalid": "Revisá el email, parece incompleto. Ej: vos@empresa.com.",
       "whatsappInvalid": "Revisá el número. Incluí el código de área, ej: +54 9 342 555 1234.",
-      "messageRequired": "Contanos en una línea qué buscás."
+      "messageRequired": "Contanos en una línea qué buscás.",
+      "messageTooShort": "Contanos un poco más, con al menos 15 caracteres.",
+      "messageInvalid": "Contanos con tus palabras qué necesitás resolver."
     },
     "error": "No se pudo enviar. Probá de nuevo o escribinos a hola@shipperslab.tech.",
     "alternative": "¿Preferís un mail? Escribinos a",

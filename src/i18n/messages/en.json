@@ -154,35 +154,11 @@
     "button": "Let's talk"
   },
   "contact": {
-    "title": "Tell us what you need.",
-    "description": "The first 30-minute call is free.",
     "links": {
-      "copy": "Copy",
-      "copied": "Copied",
-      "copyLabel": "Copy email",
-      "whatsapp": "WhatsApp",
-      "instagram": "Instagram",
-      "call": "Book a call"
+      "whatsapp": "WhatsApp"
     },
     "form": {
-      "name": "Name",
-      "namePlaceholder": "Your name",
-      "company": "Business or company (optional)",
-      "companyPlaceholder": "Your business name",
-      "contactMethod": "Email or WhatsApp",
-      "contactMethodPlaceholder": "you@business.com or +1 ...",
-      "message": "What do you want to solve?",
-      "messagePlaceholder": "E.g. keep track of inventory and sales, organize bookings, or set up a catalog to sell on WhatsApp.",
-      "submit": "Send",
-      "sending": "Sending...",
-      "sent": "Sent!",
-      "retry": "Try again",
-      "success": "Done. Someone on the team will write back to set up a call.",
-      "error": "Couldn't send. Write to us directly at hola@shipperslab.tech.",
-      "whatsappMessage": "Hi, I'd like to tell you about a problem in my business.",
-      "whatsappGreeting": "Hi, I'm {name}.",
-      "whatsappGreetingWithCompany": "Hi, I'm {name}, from {company}.",
-      "alternative": "Or write to us directly at"
+      "whatsappMessage": "Hi, I'd like to tell you about a problem in my business."
     }
   },
   "onboarding": {
@@ -224,10 +200,13 @@
     },
     "errors": {
       "nameRequired": "Tell us your name.",
+      "nameInvalid": "Enter your real name, at least 2 letters.",
       "emailRequired": "We need an email to reply to you.",
       "emailInvalid": "Check the email, it looks incomplete. E.g. you@company.com.",
       "whatsappInvalid": "Check the number. Include the area code, e.g. +1 555 123 4567.",
-      "messageRequired": "Tell us in one line what you're after."
+      "messageRequired": "Tell us in one line what you're after.",
+      "messageTooShort": "Tell us a bit more, at least 15 characters.",
+      "messageInvalid": "Tell us in your own words what you need to solve."
     },
     "error": "Couldn't send it. Try again or email us at hola@shipperslab.tech.",
     "alternative": "Rather send an email? Write to",

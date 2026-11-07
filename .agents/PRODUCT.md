@@ -51,7 +51,7 @@ What a neighboring agency can't truthfully copy: few projects running at a time 
 - The pyme positioning is being validated in discovery talks during October to December 2026. The owner quotes and problem table in the internal positioning doc are hypotheses and must not be used as landing copy until they come up in real talks. The free 30-minute call is not confirmed; do not promise it in public copy.
 - Events are planned, not yet held. Talk about them as what the studio organizes, not as past successes with attendance numbers.
 - No formal company structure yet. Do not reference legal entities, offices or headcount beyond "a small team".
-- The contact form and the onboarding flow send email through Resend (`src/lib/email`, `src/app/api/contact`, `src/app/api/onboarding`). The contact form also offers a WhatsApp handoff.
+- The /empecemos onboarding flow sends email through Resend (`src/lib/email`, `src/app/api/onboarding`), behind a honeypot, a minimum fill time, minimum lengths and a server-side email domain check (`src/lib/onboarding/spam.ts`, `src/lib/onboarding/email-domain.ts`).
 
 ## Brand Commitments
 

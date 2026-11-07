@@ -4,12 +4,22 @@ export type OnboardingField = "name" | "email" | "whatsapp" | "message";
 
 export type OnboardingError =
   | "nameRequired"
+  | "nameInvalid"
   | "emailRequired"
   | "emailInvalid"
   | "whatsappInvalid"
-  | "messageRequired";
+  | "messageRequired"
+  | "messageTooShort"
+  | "messageInvalid";
 
 export type OnboardingErrors = Partial<Record<OnboardingField, OnboardingError>>;
+
+export const EMAIL_STEP = 2;
+
+const MIN_NAME_LENGTH = 2;
+const MIN_MESSAGE_LENGTH = 15;
+const MIN_MESSAGE_WORDS = 3;
+const MIN_MESSAGE_DISTINCT_CHARS = 5;
 
 const STEP_FIELDS: OnboardingField[][] = [["name"], ["email", "whatsapp"], ["message"]];
 
@@ -23,6 +33,26 @@ function isValidPhone(value: string) {
   return PHONE_PATTERN.test(value) && digits >= MIN_PHONE_DIGITS && digits <= MAX_PHONE_DIGITS;
 }
 
+function hasLetters(value: string) {
+  return /\p{L}/u.test(value);
+}
+
+function isSingleRepeatedChar(value: string) {
+  return new Set(value.replace(/\s/g, "").toLowerCase()).size <= 1;
+}
+
+function isMeaningfulText(value: string) {
+  return hasLetters(value) && !isSingleRepeatedChar(value);
+}
+
+function isMeaningfulMessage(value: string) {
+  const words = value.split(/\s+/).filter(Boolean).length;
+  const distinct = new Set(value.replace(/\s/g, "").toLowerCase()).size;
+  return (
+    isMeaningfulText(value) && words >= MIN_MESSAGE_WORDS && distinct >= MIN_MESSAGE_DISTINCT_CHARS
+  );
+}
+
 export function validateField(
   field: OnboardingField,
   data: OnboardingRequest,
@@ -31,7 +61,10 @@ export function validateField(
 
   switch (field) {
     case "name":
-      return value ? undefined : "nameRequired";
+      if (!value) {
+        return "nameRequired";
+      }
+      return value.length >= MIN_NAME_LENGTH && isMeaningfulText(value) ? undefined : "nameInvalid";
     case "email":
       if (!value) {
         return "emailRequired";
@@ -40,7 +73,13 @@ export function validateField(
     case "whatsapp":
       return !value || isValidPhone(value) ? undefined : "whatsappInvalid";
     case "message":
-      return value ? undefined : "messageRequired";
+      if (!value) {
+        return "messageRequired";
+      }
+      if (value.length < MIN_MESSAGE_LENGTH) {
+        return "messageTooShort";
+      }
+      return isMeaningfulMessage(value) ? undefined : "messageInvalid";
   }
 }
 
