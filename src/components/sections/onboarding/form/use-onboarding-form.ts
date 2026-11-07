@@ -1,5 +1,5 @@
 import { track } from "@vercel/analytics";
-import { useRef, useState, type FocusEvent, type SubmitEvent } from "react";
+import { useEffect, useRef, useState, type FocusEvent, type SubmitEvent } from "react";
 
 import { useI18n } from "@/i18n/provider";
 import {
@@ -8,6 +8,7 @@ import {
   type OnboardingRequest,
 } from "@/lib/onboarding/request";
 import {
+  EMAIL_STEP,
   findFirstInvalidStep,
   validateField,
   type OnboardingErrors,
@@ -43,6 +44,11 @@ export function useOnboardingForm(stepCount: number) {
   const [direction, setDirection] = useState(0);
   const [status, setStatus] = useState<OnboardingStatus>("idle");
   const pendingFocusField = useRef<string | null>(null);
+  const mountedAt = useRef(0);
+
+  useEffect(() => {
+    mountedAt.current = Date.now();
+  }, []);
 
   const isLastStep = step === stepCount;
 
@@ -110,15 +116,30 @@ export function useOnboardingForm(stepCount: number) {
     moveTo(target);
   }
 
-  async function submit() {
+  async function submit(form: HTMLFormElement) {
     setStatus("sending");
 
     try {
       const response = await fetch("/api/onboarding", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...data, locale }),
+        body: JSON.stringify({
+          ...data,
+          locale,
+          website: new FormData(form).get("website") ?? "",
+          elapsedMs: Date.now() - mountedAt.current,
+        }),
       });
+
+      if (response.status === 400) {
+        const body: { errors?: OnboardingErrors } | null = await response.json().catch(() => null);
+
+        if (body?.errors?.email) {
+          setStatus("idle");
+          showErrors({ step: EMAIL_STEP, errors: { email: body.errors.email } }, form);
+          return;
+        }
+      }
 
       if (!response.ok) {
         throw new Error(`Onboarding request failed with status ${response.status}`);
@@ -150,7 +171,7 @@ export function useOnboardingForm(stepCount: number) {
       return;
     }
 
-    void submit();
+    void submit(event.currentTarget);
   }
 
   return {

@@ -52,8 +52,17 @@ export function OnboardingForm() {
               noValidate
               onSubmit={handleSubmit}
               onFocus={redirectToInvalidField}
-              className="flex flex-col gap-8"
+              className="relative flex flex-col gap-8"
             >
+              <input
+                type="text"
+                name="website"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                className="absolute -left-96 size-px overflow-hidden opacity-0"
+              />
+
               <StepTransition step={step} direction={direction}>
                 <CurrentStep
                   data={data}

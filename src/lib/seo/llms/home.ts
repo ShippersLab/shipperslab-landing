@@ -84,29 +84,6 @@ function buildHomeTeam() {
   ]);
 }
 
-function buildHomeContact() {
-  const form = es.contact.form;
-
-  return joinBlocks([
-    heading(3, es.contact.title),
-    es.contact.description,
-    bullets([
-      `${form.name}: ${form.namePlaceholder}`,
-      `${form.company}: ${form.companyPlaceholder}`,
-      `${form.contactMethod}: ${form.contactMethodPlaceholder}`,
-      `${form.message}: ${form.messagePlaceholder}`,
-      form.submit,
-      form.sending,
-      form.sent,
-      form.retry,
-    ]),
-    form.success,
-    form.error,
-    form.whatsappMessage,
-    `${form.alternative} [${site.emails.contact}](mailto:${site.emails.contact})`,
-  ]);
-}
-
 export function buildHome() {
   return page("/", [
     heading(3, es.hero.title),
@@ -127,6 +104,5 @@ export function buildHome() {
     heading(3, es.cta.title),
     es.cta.description,
     `[${es.cta.button}](${canonical("/empecemos")})`,
-    buildHomeContact(),
   ]);
 }
