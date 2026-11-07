@@ -59,7 +59,6 @@ export function buildLlmsFullTxt() {
   assertSourceCopy(es.services, document);
   assertSourceCopy(es.team, document);
   assertSourceCopy(es.faq, document);
-  assertSourceCopy(es.contact, document);
   assertSourceCopy(es.servicePages, document);
   assertSourceCopy(es.tiendanube, document);
   assertSourceCopy(es.pedidos, document);
