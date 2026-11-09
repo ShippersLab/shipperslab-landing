@@ -56,6 +56,7 @@ function buildTuturnero() {
     copy.heroAlt,
     copy.factsLabel,
     ...copy.facts.map((fact) => labeled(fact.label, fact.value)),
+    bullets(copy.features),
     ...copy.sections.map((section) =>
       joinBlocks([heading(3, section.title), ...section.body.map(renderCopy)]),
     ),

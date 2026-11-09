@@ -332,7 +332,7 @@
   },
   "casos": {
     "metaTitle": "Software case studies: Tuturnero, EventOps and Estacionar",
-    "metaDescription": "ShippersLab case studies: Tuturnero, de ShippersLab, online booking for courts and independent professionals; EventOps, our management system in production for event companies; and Estacionar, the branding of a parking marketplace.",
+    "metaDescription": "ShippersLab case studies: Tuturnero, de ShippersLab, online booking for courts, clinics and salons; EventOps, our management system in production for event companies; and Estacionar, the branding of a parking marketplace.",
     "title": "Latest projects.",
     "description": "A selection of what we have built and have in production.",
     "soon": {
@@ -425,14 +425,22 @@
       "productCta": "Try EventOps"
     },
     "tuturnero": {
-      "category": "Online booking · Courts and professionals",
+      "category": "Online booking · Courts, clinics and salons",
       "heroAlt": "Screenshot of the Tuturnero home page",
       "title": "Tuturnero",
       "identity": "Tuturnero, de ShippersLab",
-      "summary": "Online booking for courts and professionals, from ShippersLab.",
-      "tags": ["Online booking", "Courts"],
+      "audience": "courts, clinics, independent professionals, and hair and beauty salons",
+      "summary": "Online booking for courts, clinics and salons, from ShippersLab.",
+      "tags": ["Online booking", "Courts and clinics"],
       "metaTitle": "Tuturnero, de ShippersLab: online booking",
-      "metaDescription": "Tuturnero, de ShippersLab is online booking for court complexes and independent professionals in Argentina. Clients book at tuturnero.app with no account.",
+      "metaDescription": "Tuturnero, de ShippersLab is online booking in Argentina for courts, clinics, independent professionals and salons. Clients book at tuturnero.app.",
+      "features": [
+        "Google Calendar sync",
+        "Google Meet link for remote appointments",
+        "A photo gallery on each business page",
+        "Short link with a QR code",
+        "Booking without an account"
+      ],
       "visitLabel": "Try Tuturnero",
       "galleryTitle": "Gallery",
       "galleryAlts": [
@@ -444,7 +452,7 @@
         "Booking page features in Tuturnero"
       ],
       "eyebrow": "Own product",
-      "lead": "Tuturnero, de ShippersLab, is an online booking system for sports complexes with courts and for independent professionals in Argentina. You set up the page, share the link, and clients book an open time without creating an account.",
+      "lead": "Tuturnero, de ShippersLab, is online booking in Argentina for courts, clinics, independent professionals, and hair and beauty salons. You set up the page, share the link, and clients book an open time without creating an account.",
       "backLabel": "All projects",
       "factsLabel": "Project details",
       "facts": [
@@ -458,7 +466,7 @@
         },
         {
           "label": "Built for",
-          "value": "Courts and professionals"
+          "value": "Courts, clinics and salons"
         },
         {
           "label": "Service",
@@ -469,14 +477,14 @@
         {
           "title": "Why we built it.",
           "body": [
-            "A sports complex and a professional who works by appointment usually book over messages. Booking a five-a-side or padel court, or a slot with a physical therapist, should not take a conversation.",
+            "A sports complex, a clinic or a salon usually books over messages. Booking five-a-side, seven-a-side or padel, or a slot at a clinic or a salon, should not take a conversation.",
             "We built it at ShippersLab so the business has a booking page without commissioning a one-off build. If you need a website or a booking flow made for your business, see [websites, booking and catalogs](/webs-y-catalogos)."
           ]
         },
         {
           "title": "The problem.",
           "body": [
-            "Every appointment is an exchange: the client asks what is free, someone checks the schedule, replies, confirms and writes it down. If two people ask for the same time, one of them loses the slot.",
+            "Every appointment is an exchange: the client asks what is open, someone checks the schedule, replies, confirms and writes it down. If two people ask for the same time, one of them loses the slot.",
             "At a complex with several courts the clash shows up faster. When the schedule lives in a chat, two bookings can land on the same court. The business loses time. The client waits on a reply."
           ]
         },
@@ -484,7 +492,8 @@
           "title": "What we built.",
           "body": [
             "Tuturnero gives each business a page with its brand, its hours and a short link with a QR code. The client picks an open time, leaves a name and books, without creating an account. As soon as they request it, that time is no longer available, and the business accepts or declines the request.",
-            "On a courts page, the same link can list five-a-side, seven-a-side and padel, with 60 or 90 minute slots. A court can be closed for a tournament, and the page shows only what is free. Google Calendar connects so bookings do not overlap. A remote appointment includes a Meet link once it is confirmed. The public page lives at [tuturnero.app](https://tuturnero.app)."
+            "On a courts page, the same link can list five-a-side, seven-a-side and padel, with 60 or 90 minute slots, and a court can be closed for a tournament. The page shows only open times. The same booking system is built for clinics, independent professionals, and hair and beauty salons.",
+            "It syncs with Google Calendar so bookings do not overlap, and a remote appointment brings its Google Meet link. Each page has a photo gallery of the business. The public page lives at [tuturnero.app](https://tuturnero.app)."
           ]
         },
         {
@@ -498,7 +507,7 @@
           "title": "How it works.",
           "body": [
             "You create the account, upload a banner and a photo, and set the days and hours you are open. Then you share the link on Instagram, over WhatsApp or with the QR code at the counter.",
-            "If someone books by phone, you can add that appointment by hand. On a court page, the client picks the court and the duration before the time."
+            "On a court page, the client picks the court and the duration before the time."
           ]
         },
         {
