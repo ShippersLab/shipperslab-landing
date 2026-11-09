@@ -22,8 +22,7 @@ const EXPERIENCE =
 const EVENTOPS_CASE =
   "EventOps es un producto propio de ShippersLab, en producción, pensado para empresas de sonido, iluminación y eventos. Reemplaza las planillas: cada evento se carga una vez y de ahí salen el calendario, el presupuesto, los pagos y los gastos.";
 
-const TUTURNERO_CASE =
-  "Tuturnero es un producto propio de ShippersLab, en producción. Cada negocio tiene una página con link y QR para que sus clientes reserven un turno sin cuenta y sin comisión.";
+const TUTURNERO_CASE = `${es.casos.tuturnero.identity} es un turnero online en producción para complejos con canchas, de fútbol 5, fútbol 7 y pádel, y para profesionales independientes en Argentina. Cada negocio publica su página en ${site.tuturneroUrl}: el cliente reserva con un link o un QR, sin cuenta, y las reservas no tienen comisión.`;
 
 function bullets(lines: string[]) {
   return lines.map((line) => `- ${line}`).join("\n");
@@ -72,9 +71,9 @@ export function buildLlmsTxt() {
     `Experiencia: ${EXPERIENCE}`,
     `Fundadores:\n\n${founders.join("\n")}`,
     `Preguntas frecuentes:\n\n${faq.join("\n")}`,
-    `## Caso: Tuturnero\n\n${TUTURNERO_CASE}\n\n${[
+    `## Caso: ${es.casos.tuturnero.identity}\n\n${TUTURNERO_CASE}\n\n${[
       link("Caso Tuturnero", `${site.url}/casos/tuturnero`),
-      link("Tuturnero", site.tuturneroUrl),
+      link(es.casos.tuturnero.identity, site.tuturneroUrl),
     ].join("\n")}`,
     `## Caso: EventOps\n\n${EVENTOPS_CASE}\n\n${[
       link("Caso EventOps", `${site.url}/casos/eventops`),
@@ -116,9 +115,9 @@ export function buildLlmsTxt() {
     ].join("\n")}`,
     `## Optional\n\n${[
       link(
-        "Tuturnero",
+        es.casos.tuturnero.identity,
         site.tuturneroUrl,
-        "producto propio en producción, página de reservas para negocios con turnos",
+        "turnero online en producción para complejos con canchas y profesionales independientes en Argentina",
       ),
       link(
         "EventOps",
@@ -128,7 +127,7 @@ export function buildLlmsTxt() {
       link(
         "Casos y experiencia",
         `${site.url}/casos`,
-        "proyectos propios: Tuturnero en producción, EventOps en producción y Estacionar, aún sin publicar",
+        "proyectos propios: Tuturnero, de ShippersLab, en producción; EventOps en producción; y Estacionar, aún sin publicar",
       ),
       link(
         "Eventos",

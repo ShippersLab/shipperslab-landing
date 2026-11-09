@@ -56,7 +56,9 @@ function buildTuturnero() {
     copy.heroAlt,
     copy.factsLabel,
     ...copy.facts.map((fact) => labeled(fact.label, fact.value)),
-    ...copy.sections.map((section) => joinBlocks([heading(3, section.title), ...section.body])),
+    ...copy.sections.map((section) =>
+      joinBlocks([heading(3, section.title), ...section.body.map(renderCopy)]),
+    ),
     heading(3, copy.productTitle),
     copy.productDescription,
     `[${copy.productCta}](${site.tuturneroUrl})`,

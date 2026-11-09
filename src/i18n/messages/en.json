@@ -90,7 +90,7 @@
       {
         "id": "presence",
         "title": "Websites, booking and catalogs",
-        "description": "Help customers find you, book and order without friction. We build your website, a catalog with WhatsApp ordering or online booking like {Tuturnero}.",
+        "description": "Help customers find you, book and order without friction. We build your website, a catalog with WhatsApp ordering or online booking like {Tuturnero}, de ShippersLab.",
         "includes": ["Online booking", "Catalog with WhatsApp orders"],
         "audience": "Shops and small businesses"
       },
@@ -332,7 +332,7 @@
   },
   "casos": {
     "metaTitle": "Software case studies: Tuturnero, EventOps and Estacionar",
-    "metaDescription": "ShippersLab case studies: Tuturnero, the booking page for appointment-based businesses; EventOps, our management system in production for event companies; and Estacionar, the branding of a parking marketplace.",
+    "metaDescription": "ShippersLab case studies: Tuturnero, de ShippersLab, online booking for courts and independent professionals; EventOps, our management system in production for event companies; and Estacionar, the branding of a parking marketplace.",
     "title": "Latest projects.",
     "description": "A selection of what we have built and have in production.",
     "soon": {
@@ -425,14 +425,15 @@
       "productCta": "Try EventOps"
     },
     "tuturnero": {
-      "category": "Bookings · Appointment-based businesses",
+      "category": "Online booking · Courts and professionals",
       "heroAlt": "Screenshot of the Tuturnero home page",
       "title": "Tuturnero",
-      "summary": "Your schedule, your hours and your clients on a single page.",
-      "tags": ["Bookings", "SaaS"],
-      "metaTitle": "Tuturnero: a booking page for appointments",
-      "metaDescription": "Tuturnero gives each business a page with a link and QR code so clients book without an account and without a commission. A ShippersLab own product.",
-      "visitLabel": "Try Tuturnero for free",
+      "identity": "Tuturnero, de ShippersLab",
+      "summary": "Online booking for courts and professionals, from ShippersLab.",
+      "tags": ["Online booking", "Courts"],
+      "metaTitle": "Tuturnero, de ShippersLab: online booking",
+      "metaDescription": "Tuturnero, de ShippersLab is online booking for court complexes and independent professionals in Argentina. Clients book at tuturnero.app with no account.",
+      "visitLabel": "Try Tuturnero",
       "galleryTitle": "Gallery",
       "galleryAlts": [
         "Tuturnero home page",
@@ -443,7 +444,7 @@
         "Booking page features in Tuturnero"
       ],
       "eyebrow": "Own product",
-      "lead": "A multi-industry booking tool. Create your account, set up your booking page and start receiving appointments. It is built for courts, clinics, salons and any business that works by appointment. It is an own product and real customers already use it.",
+      "lead": "Tuturnero, de ShippersLab, is an online booking system for sports complexes with courts and for independent professionals in Argentina. You set up the page, share the link, and clients book an open time without creating an account.",
       "backLabel": "All projects",
       "factsLabel": "Project details",
       "facts": [
@@ -457,60 +458,60 @@
         },
         {
           "label": "Built for",
-          "value": "Businesses with appointments"
+          "value": "Courts and professionals"
         },
         {
           "label": "Service",
-          "value": "Booking page"
+          "value": "Online booking"
         }
       ],
       "sections": [
         {
           "title": "Why we built it.",
           "body": [
-            "A business that works by appointment (a court, a clinic, a salon) usually books over messages. We thought booking an appointment should not take a conversation.",
-            "We wanted something that works for any industry, sets up in minutes and does not make anyone install or learn anything."
+            "A sports complex and a professional who works by appointment usually book over messages. Booking a five-a-side or padel court, or a slot with a physical therapist, should not take a conversation.",
+            "We built it at ShippersLab so the business has a booking page without commissioning a one-off build. If you need a website or a booking flow made for your business, see [websites, booking and catalogs](/webs-y-catalogos)."
           ]
         },
         {
           "title": "The problem.",
           "body": [
-            "Every appointment is an exchange: the client asks what is free, someone checks the schedule, replies, confirms and writes it down. If two people ask for the same time, one of them is left without a slot.",
-            "For the business it is lost time. For the client it is waiting on a reply for something that should take a minute."
+            "Every appointment is an exchange: the client asks what is free, someone checks the schedule, replies, confirms and writes it down. If two people ask for the same time, one of them loses the slot.",
+            "At a complex with several courts the clash shows up faster. When the schedule lives in a chat, two bookings can land on the same court. The business loses time. The client waits on a reply."
           ]
         },
         {
           "title": "What we built.",
           "body": [
-            "Tuturnero gives each business a booking page with its brand, its hours and a short link with a QR code. The client picks a free time, leaves a name and books, without creating an account.",
-            "The business receives each request and accepts or declines it with one tap. What it confirms is taken on the schedule, so nobody else can book that time."
+            "Tuturnero gives each business a page with its brand, its hours and a short link with a QR code. The client picks an open time, leaves a name and books, without creating an account. As soon as they request it, that time is no longer available, and the business accepts or declines the request.",
+            "On a courts page, the same link can list five-a-side, seven-a-side and padel, with 60 or 90 minute slots. A court can be closed for a tournament, and the page shows only what is free. Google Calendar connects so bookings do not overlap. A remote appointment includes a Meet link once it is confirmed. The public page lives at [tuturnero.app](https://tuturnero.app)."
           ]
         },
         {
           "title": "How we built it.",
           "body": [
-            "We designed and built it ourselves, from the interface to the code. We made it usable without explanations: you sign in with Google, set when you are open and your page is ready.",
-            "Each business sets its own hours, holidays and vacations, and the system prevents double bookings on its own. What we add comes from what the people already using it tell us."
+            "We designed and built it at ShippersLab, from the interface to the system. If you know how to use WhatsApp, you know how to use Tuturnero: you sign in with Google, set the days and hours, and the page is ready to share.",
+            "Each business sets its week, a different schedule per day, holidays and time off. The system blocks double bookings on its own. What we add comes from the people already using it."
           ]
         },
         {
           "title": "How it works.",
           "body": [
-            "You create your account, upload your banner and photo, and set the days and hours you are open. Then you share the link on Instagram, over WhatsApp or with the QR code at the counter.",
-            "Do people book by phone? You can add those by hand too."
+            "You create the account, upload a banner and a photo, and set the days and hours you are open. Then you share the link on Instagram, over WhatsApp or with the QR code at the counter.",
+            "If someone books by phone, you can add that appointment by hand. On a court page, the client picks the court and the duration before the time."
           ]
         },
         {
           "title": "Where it stands.",
           "body": [
-            "Tuturnero is in production. Customers already use it every day and we work with them to improve it.",
-            "Creating your page is free on the Inicial plan and bookings have no commission."
+            "Tuturnero is in production. Businesses already use it every day, and we keep improving it with them.",
+            "Bookings pay no commission."
           ]
         }
       ],
       "productTitle": "Set up your booking page.",
-      "productDescription": "Create a free account, set your hours and share your link. You are up and running in minutes.",
-      "productCta": "Create my page for free"
+      "productDescription": "Set your hours and share the link. Clients book without creating an account.",
+      "productCta": "Create my page"
     },
     "estacionar": {
       "factsLabel": "Project facts",
@@ -750,7 +751,7 @@
       "lead": "A clear website for your business, online booking or a catalog with WhatsApp ordering. Customers find you, see what you offer and get in touch.",
       "covers": {
         "title": "What we solve.",
-        "body": "Concrete digital presence: a landing that explains what you do, a booking flow so people schedule themselves, or a catalog with WhatsApp ordering. No platforms that take your margin, no templates that do not look like your business. If you are not sure you need a website yet, read [Does your business need a website?](/blog/como-saber-si-tu-negocio-necesita-pagina-web).",
+        "body": "Concrete digital presence: a landing that explains what you do, online booking so people schedule themselves, or a catalog with WhatsApp ordering. For bookings, we built one like [Tuturnero, de ShippersLab](/casos/tuturnero). No platforms that take your margin, no templates that do not look like your business. If you are not sure you need a website yet, read [Does your business need a website?](/blog/como-saber-si-tu-negocio-necesita-pagina-web).",
         "items": [
           {
             "id": "web",
