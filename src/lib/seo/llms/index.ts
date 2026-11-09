@@ -22,7 +22,7 @@ const EXPERIENCE =
 const EVENTOPS_CASE =
   "EventOps es un producto propio de ShippersLab, en producción, pensado para empresas de sonido, iluminación y eventos. Reemplaza las planillas: cada evento se carga una vez y de ahí salen el calendario, el presupuesto, los pagos y los gastos.";
 
-const TUTURNERO_CASE = `${es.casos.tuturnero.identity} es un turnero online en producción para complejos con canchas, de fútbol 5, fútbol 7 y pádel, y para profesionales independientes en Argentina. Cada negocio publica su página en ${site.tuturneroUrl}: el cliente reserva con un link o un QR, sin cuenta, y las reservas no tienen comisión.`;
+const TUTURNERO_CASE = `${es.casos.tuturnero.identity} es un turnero online en producción para negocios de Argentina que trabajan con turnos: canchas de fútbol 5, fútbol 7 y pádel, consultorios, profesionales independientes, y peluquerías y estética. Cada negocio publica su página en ${site.tuturneroUrl}. Se sincroniza con Google Calendar y un turno a distancia trae su link de Google Meet. Cada página tiene una galería de fotos del negocio. El cliente reserva sin cuenta y las reservas no tienen comisión.`;
 
 function bullets(lines: string[]) {
   return lines.map((line) => `- ${line}`).join("\n");
@@ -117,7 +117,7 @@ export function buildLlmsTxt() {
       link(
         es.casos.tuturnero.identity,
         site.tuturneroUrl,
-        "turnero online en producción para complejos con canchas y profesionales independientes en Argentina",
+        "turnero online en producción para canchas, consultorios, profesionales independientes, y peluquerías y estética en Argentina",
       ),
       link(
         "EventOps",

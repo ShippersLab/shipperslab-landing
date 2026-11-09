@@ -146,9 +146,10 @@ export function buildTuturneroCaseStructuredData(lang: Locale): Graph {
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     inLanguage: "es-AR",
+    featureList: [...page.features],
     audience: {
       "@type": "BusinessAudience",
-      audienceType: page.facts[2].value,
+      audienceType: page.audience,
     },
     image: `${site.url}${tuturneroImages.hero.src}`,
     creator: publisher,

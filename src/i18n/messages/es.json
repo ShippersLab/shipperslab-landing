@@ -332,7 +332,7 @@
   },
   "casos": {
     "metaTitle": "Casos de software: Tuturnero, EventOps y Estacionar",
-    "metaDescription": "Casos de ShippersLab: Tuturnero, de ShippersLab, turnero online para canchas y profesionales; EventOps, el sistema de gestión en producción para empresas de eventos; y Estacionar, el branding de un marketplace de cocheras.",
+    "metaDescription": "Casos de ShippersLab: Tuturnero, de ShippersLab, turnero para canchas, consultorios y peluquerías; EventOps, el sistema de gestión en producción para empresas de eventos; y Estacionar, el branding de un marketplace de cocheras.",
     "title": "Últimos proyectos.",
     "description": "Una selección de lo que construimos y tenemos en producción.",
     "soon": {
@@ -425,14 +425,22 @@
       "productCta": "Probar EventOps"
     },
     "tuturnero": {
-      "category": "Turnero online · Canchas y profesionales",
+      "category": "Turnero online · Canchas, consultorios y estética",
       "heroAlt": "Captura de la página de inicio de Tuturnero",
       "title": "Tuturnero",
       "identity": "Tuturnero, de ShippersLab",
-      "summary": "Turnero online para canchas y profesionales, de ShippersLab.",
-      "tags": ["Turnero online", "Canchas"],
+      "audience": "canchas, consultorios, profesionales independientes, peluquerías y estética",
+      "summary": "Turnero online para canchas, consultorios y peluquerías, de ShippersLab.",
+      "tags": ["Canchas", "Consultorios", "Estética"],
       "metaTitle": "Tuturnero, de ShippersLab: turnero online",
-      "metaDescription": "Tuturnero, de ShippersLab, es el turnero online para complejos con canchas y profesionales independientes en Argentina. El cliente reserva en tuturnero.app.",
+      "metaDescription": "Tuturnero, de ShippersLab: turnero online para canchas, consultorios, profesionales y peluquerías en Argentina. El cliente reserva en tuturnero.app.",
+      "features": [
+        "Canchas de fútbol 5, fútbol 7 y pádel",
+        "Consultorios, profesionales independientes, peluquerías y estética",
+        "Sincronización con Google Calendar",
+        "Link de Google Meet para turnos a distancia",
+        "Galería de fotos del negocio"
+      ],
       "visitLabel": "Probar Tuturnero",
       "galleryTitle": "Galería",
       "galleryAlts": [
@@ -444,7 +452,7 @@
         "Funciones de la página de reservas en Tuturnero"
       ],
       "eyebrow": "Producto propio",
-      "lead": "Tuturnero, de ShippersLab, es un turnero online para complejos con canchas y para profesionales independientes en Argentina. Armás la página, compartís el link y tus clientes reservan un horario libre sin crear una cuenta.",
+      "lead": "Tuturnero, de ShippersLab, es un turnero online en Argentina para canchas, consultorios, profesionales independientes, peluquerías y estética. Armás la página, compartís el link y tus clientes reservan un horario libre sin crear una cuenta.",
       "backLabel": "Todos los casos",
       "factsLabel": "Datos del proyecto",
       "facts": [
@@ -458,7 +466,7 @@
         },
         {
           "label": "Pensado para",
-          "value": "Canchas y profesionales"
+          "value": "Canchas, consultorios y estética"
         },
         {
           "label": "Servicio",
@@ -469,7 +477,7 @@
         {
           "title": "Por qué lo hicimos.",
           "body": [
-            "Un complejo con canchas y un profesional que atiende con turnos suelen agendar por mensajes. Reservar una cancha de fútbol 5 o pádel, o un turno con un kinesiólogo, no debería depender de esa conversación.",
+            "Canchas, consultorios, profesionales independientes, peluquerías y estética suelen agendar por mensajes. Reservar fútbol 5, fútbol 7 o pádel, o un turno en un consultorio o una peluquería, no debería depender de esa conversación.",
             "Lo armamos en ShippersLab para que el negocio tenga su página de turnos sin encargar un desarrollo desde cero. Si lo que necesitás es una web o un turnero hecho para tu negocio, está en [webs, turneros y catálogos](/webs-y-catalogos)."
           ]
         },
@@ -484,7 +492,8 @@
           "title": "Qué construimos.",
           "body": [
             "Tuturnero le da a cada negocio una página con su marca, sus horarios y un link corto con QR. El cliente elige un horario libre, deja su nombre y reserva, sin crear una cuenta. Apenas lo pide, ese horario deja de estar disponible, y el negocio acepta o rechaza el pedido.",
-            "En canchas, la misma página puede listar fútbol 5, fútbol 7 y pádel, con turnos de 60 o 90 minutos. Se puede cerrar una cancha por un torneo y la página muestra solo lo que está libre. Google Calendar se conecta para que los turnos no se pisen. Si el turno es a distancia, el confirmado incluye un link de Meet. La página pública está en [tuturnero.app](https://tuturnero.app)."
+            "En canchas, la página puede listar fútbol 5, fútbol 7 y pádel, con turnos de 60 o 90 minutos, y cerrar una cancha por un torneo. Muestra solo lo que está libre. El mismo turnero está pensado para consultorios, profesionales independientes, peluquerías y estética.",
+            "Se sincroniza con Google Calendar para que los turnos no se pisen, y un turno a distancia trae su link de Google Meet. Cada página tiene una galería de fotos del negocio. La página pública está en [tuturnero.app](https://tuturnero.app)."
           ]
         },
         {
@@ -498,7 +507,7 @@
           "title": "Cómo se usa.",
           "body": [
             "Creás la cuenta, subís el banner y la foto, y marcás los días y horarios de atención. Después compartís el link en Instagram, por WhatsApp o con el QR en el mostrador.",
-            "Si te piden un turno por teléfono, también lo podés cargar a mano. En una cancha, el cliente elige el espacio y la duración antes del horario."
+            "En una cancha, el cliente elige el espacio y la duración antes del horario."
           ]
         },
         {
