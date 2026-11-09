@@ -2,6 +2,7 @@ import type {
   BreadcrumbList,
   CollectionPage,
   Graph,
+  Organization,
   SoftwareApplication,
   WebPage,
 } from "schema-dts";
@@ -125,28 +126,47 @@ export function buildEventopsCaseStructuredData(lang: Locale): Graph {
 export function buildTuturneroCaseStructuredData(lang: Locale): Graph {
   const page = getMessages(lang).casos.tuturnero;
   const urls = caseUrls(lang);
+  const softwareId = `${site.tuturneroUrl}/#software`;
+  const webpageId = `${urls.tuturnero}#webpage`;
+
+  const publisher: Organization = {
+    "@type": "Organization",
+    "@id": ORGANIZATION_ID,
+    name: site.name,
+    url: site.url,
+  };
 
   const app: SoftwareApplication = {
     "@type": "SoftwareApplication",
-    "@id": `${urls.tuturnero}#software`,
+    "@id": softwareId,
     name: page.title,
+    alternateName: page.identity,
     description: page.metaDescription,
     url: site.tuturneroUrl,
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
-    inLanguage: languageTags[lang],
+    inLanguage: "es-AR",
     audience: {
       "@type": "BusinessAudience",
       audienceType: page.facts[2].value,
     },
     image: `${site.url}${tuturneroImages.hero.src}`,
-    creator: {
-      "@type": "Organization",
-      "@id": ORGANIZATION_ID,
-      name: site.name,
-      url: site.url,
-    },
+    creator: publisher,
+    publisher,
+    subjectOf: { "@id": webpageId },
+  };
+
+  const webpage: WebPage = {
+    "@type": "WebPage",
+    "@id": webpageId,
+    url: urls.tuturnero,
+    name: page.identity,
+    description: page.metaDescription,
+    inLanguage: languageTags[lang],
+    isPartOf: { "@id": websiteId(lang) },
+    mainEntity: { "@id": softwareId },
     publisher: { "@id": ORGANIZATION_ID },
+    breadcrumb: { "@id": `${urls.tuturnero}#breadcrumb` },
   };
 
   const breadcrumb: BreadcrumbList = {
@@ -161,7 +181,7 @@ export function buildTuturneroCaseStructuredData(lang: Locale): Graph {
 
   return {
     "@context": "https://schema.org",
-    "@graph": [app, breadcrumb],
+    "@graph": [webpage, app, publisher, breadcrumb],
   };
 }
 

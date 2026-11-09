@@ -28,6 +28,8 @@ export function TuturneroDetail() {
           eyebrow={page.eyebrow}
           title={page.title}
           lead={page.lead}
+          facts={page.facts}
+          factsLabel={page.factsLabel}
         >
           <TextureButton asChild variant="primary" size="square" className="w-full sm:w-fit">
             <a href={site.tuturneroUrl} target="_blank" rel="noopener noreferrer">

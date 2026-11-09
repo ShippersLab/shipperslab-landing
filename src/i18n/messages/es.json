@@ -90,7 +90,7 @@
       {
         "id": "presence",
         "title": "Webs, turneros y catálogos",
-        "description": "Que tus clientes te encuentren, reserven y te pidan sin vueltas. Armamos tu web, tu catálogo con pedidos por WhatsApp o tu turnero, como {Tuturnero}.",
+        "description": "Que tus clientes te encuentren, reserven y te pidan sin vueltas. Armamos tu web, tu catálogo con pedidos por WhatsApp o tu turnero, como {Tuturnero}, de ShippersLab.",
         "includes": ["Turnos online", "Catálogo con pedidos por WhatsApp"],
         "audience": "Comercios y emprendedores"
       },
@@ -332,7 +332,7 @@
   },
   "casos": {
     "metaTitle": "Casos de software: Tuturnero, EventOps y Estacionar",
-    "metaDescription": "Casos de ShippersLab: Tuturnero, la página de reservas para negocios con turnos; EventOps, el sistema de gestión en producción para empresas de eventos; y Estacionar, el branding de un marketplace de cocheras.",
+    "metaDescription": "Casos de ShippersLab: Tuturnero, de ShippersLab, turnero online para canchas y profesionales; EventOps, el sistema de gestión en producción para empresas de eventos; y Estacionar, el branding de un marketplace de cocheras.",
     "title": "Últimos proyectos.",
     "description": "Una selección de lo que construimos y tenemos en producción.",
     "soon": {
@@ -425,14 +425,15 @@
       "productCta": "Probar EventOps"
     },
     "tuturnero": {
-      "category": "Turnos · Negocios con agenda",
+      "category": "Turnero online · Canchas y profesionales",
       "heroAlt": "Captura de la página de inicio de Tuturnero",
       "title": "Tuturnero",
-      "summary": "Tu agenda, tus horarios y tus clientes, en una sola página.",
-      "tags": ["Reservas", "SaaS"],
-      "metaTitle": "Tuturnero: página de reservas para turnos",
-      "metaDescription": "Tuturnero arma una página con link y QR para que tus clientes reserven un turno sin cuenta y sin comisión. Producto propio de ShippersLab.",
-      "visitLabel": "Probar Tuturnero gratis",
+      "identity": "Tuturnero, de ShippersLab",
+      "summary": "Turnero online para canchas y profesionales, de ShippersLab.",
+      "tags": ["Turnero online", "Canchas"],
+      "metaTitle": "Tuturnero, de ShippersLab: turnero online",
+      "metaDescription": "Tuturnero, de ShippersLab, es el turnero online para complejos con canchas y profesionales independientes en Argentina. El cliente reserva en tuturnero.app.",
+      "visitLabel": "Probar Tuturnero",
       "galleryTitle": "Galería",
       "galleryAlts": [
         "Página de inicio de Tuturnero",
@@ -443,7 +444,7 @@
         "Funciones de la página de reservas en Tuturnero"
       ],
       "eyebrow": "Producto propio",
-      "lead": "Un turnero multi rubro. Creás tu cuenta, armás tu página de reservas y empezás a recibir turnos. Está pensado para canchas, consultorios, peluquerías y cualquier negocio que atienda con turnos. Es un producto propio y ya lo usan clientes reales.",
+      "lead": "Tuturnero, de ShippersLab, es un turnero online para complejos con canchas y para profesionales independientes en Argentina. Armás la página, compartís el link y tus clientes reservan un horario libre sin crear una cuenta.",
       "backLabel": "Todos los casos",
       "factsLabel": "Datos del proyecto",
       "facts": [
@@ -457,60 +458,60 @@
         },
         {
           "label": "Pensado para",
-          "value": "Negocios con turnos"
+          "value": "Canchas y profesionales"
         },
         {
           "label": "Servicio",
-          "value": "Página de reservas"
+          "value": "Turnero online"
         }
       ],
       "sections": [
         {
           "title": "Por qué lo hicimos.",
           "body": [
-            "Un negocio que atiende con turnos (una cancha, un consultorio, una peluquería) suele agendar por mensajes. Pensamos que reservar un turno no debería llevar una conversación.",
-            "Queríamos algo que sirva para cualquier rubro, que se arme en minutos y que no obligue a nadie a instalar ni aprender nada."
+            "Un complejo con canchas y un profesional que atiende con turnos suelen agendar por mensajes. Reservar una cancha de fútbol 5 o pádel, o un turno con un kinesiólogo, no debería depender de esa conversación.",
+            "Lo armamos en ShippersLab para que el negocio tenga su página de turnos sin encargar un desarrollo desde cero. Si lo que necesitás es una web o un turnero hecho para tu negocio, está en [webs, turneros y catálogos](/webs-y-catalogos)."
           ]
         },
         {
           "title": "El problema.",
           "body": [
             "Cada turno es un intercambio: el cliente pregunta qué hay libre, alguien revisa la agenda, responde, confirma y anota. Si dos personas piden el mismo horario, una se queda sin turno.",
-            "Para el negocio es tiempo perdido. Para el cliente, esperar una respuesta por algo que debería llevar un minuto."
+            "En un complejo con varias canchas el cruce se nota más. Si la agenda vive en un chat, dos reservas pueden caer en la misma cancha. Para el negocio es tiempo. Para el cliente es esperar una respuesta."
           ]
         },
         {
           "title": "Qué construimos.",
           "body": [
-            "Tuturnero le da a cada negocio una página de reservas con su marca, sus horarios y un link corto con QR. El cliente elige un horario libre, deja su nombre y reserva, sin crear una cuenta.",
-            "El negocio recibe cada pedido y lo acepta o lo rechaza con un toque. Lo que confirma se ocupa en la agenda, así que nadie más puede pedir ese horario."
+            "Tuturnero le da a cada negocio una página con su marca, sus horarios y un link corto con QR. El cliente elige un horario libre, deja su nombre y reserva, sin crear una cuenta. Apenas lo pide, ese horario deja de estar disponible, y el negocio acepta o rechaza el pedido.",
+            "En canchas, la misma página puede listar fútbol 5, fútbol 7 y pádel, con turnos de 60 o 90 minutos. Se puede cerrar una cancha por un torneo y la página muestra solo lo que está libre. Google Calendar se conecta para que los turnos no se pisen. Si el turno es a distancia, el confirmado incluye un link de Meet. La página pública está en [tuturnero.app](https://tuturnero.app)."
           ]
         },
         {
           "title": "Cómo lo hicimos.",
           "body": [
-            "Lo diseñamos y lo construimos nosotros, de la interfaz al código. Lo pensamos para usarlo sin explicaciones: entrás con Google, marcás cuándo atendés y ya tenés tu página.",
-            "Cada negocio configura sus horarios, sus feriados y sus vacaciones, y el sistema evita las dobles reservas solo. Lo que sumamos sale de lo que nos cuentan quienes ya lo usan."
+            "Lo diseñamos y lo construimos en ShippersLab, de la interfaz al sistema. Si sabés usar WhatsApp, sabés usar Tuturnero: entrás con Google, marcás los días y horarios, y la página ya se puede compartir.",
+            "Cada negocio define su semana, un horario distinto por día, feriados y vacaciones. El sistema evita la doble reserva solo. Lo que sumamos sale de lo que nos cuentan quienes ya lo usan."
           ]
         },
         {
           "title": "Cómo se usa.",
           "body": [
-            "Creás tu cuenta, subís tu banner y tu foto, y marcás los días y horarios en que atendés. Después compartís el link en Instagram, por WhatsApp o con el QR en el mostrador.",
-            "¿Te piden turnos por teléfono? También podés cargarlos a mano."
+            "Creás la cuenta, subís el banner y la foto, y marcás los días y horarios de atención. Después compartís el link en Instagram, por WhatsApp o con el QR en el mostrador.",
+            "Si te piden un turno por teléfono, también lo podés cargar a mano. En una cancha, el cliente elige el espacio y la duración antes del horario."
           ]
         },
         {
           "title": "Dónde está hoy.",
           "body": [
-            "Tuturnero está en producción. Ya tiene clientes que lo usan todos los días y trabajamos con ellos para mejorarlo.",
-            "Crear tu página es gratis con el plan Inicial y las reservas no tienen comisión."
+            "Tuturnero está en producción. Ya lo usan negocios todos los días y seguimos mejorándolo con ellos.",
+            "Las reservas no tienen comisión."
           ]
         }
       ],
-      "productTitle": "Armá tu página de reservas.",
-      "productDescription": "Creá tu cuenta gratis, marcá tus horarios y compartí tu link. Lo dejás andando en minutos.",
-      "productCta": "Crear mi página gratis"
+      "productTitle": "Armá tu página de turnos.",
+      "productDescription": "Marcá tus horarios y compartí el link. Tus clientes reservan sin crear una cuenta.",
+      "productCta": "Crear mi página"
     },
     "estacionar": {
       "factsLabel": "Datos del proyecto",
@@ -750,7 +751,7 @@
       "lead": "Una web clara para tu negocio, un turnero online o un catálogo con pedido por WhatsApp. Tus clientes te encuentran, ven lo que ofrecés y te escriben.",
       "covers": {
         "title": "Qué resolvemos.",
-        "body": "Presencia digital concreta: una landing que explica qué hacés, un turnero para que agenden solos, o un catálogo con pedido por WhatsApp. Sin plataformas que se quedan con el margen ni plantillas que no se parecen a tu negocio. Si todavía no sabés si necesitás una web, leé [¿Tu negocio necesita una página web?](/blog/como-saber-si-tu-negocio-necesita-pagina-web).",
+        "body": "Presencia digital concreta: una landing que explica qué hacés, un turnero para que agenden solos o un catálogo con pedido por WhatsApp. Para los turnos, armamos uno como [Tuturnero, de ShippersLab](/casos/tuturnero). Sin plataformas que se quedan con el margen ni plantillas que no se parecen a tu negocio. Si todavía no sabés si necesitás una web, leé [¿Tu negocio necesita una página web?](/blog/como-saber-si-tu-negocio-necesita-pagina-web).",
         "items": [
           {
             "id": "web",
