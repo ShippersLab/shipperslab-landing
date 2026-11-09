@@ -431,15 +431,15 @@
       "identity": "Tuturnero, de ShippersLab",
       "audience": "courts, clinics, independent professionals, and hair and beauty salons",
       "summary": "Online booking for courts, clinics and salons, from ShippersLab.",
-      "tags": ["Courts", "Clinics", "Salons"],
+      "tags": ["Online booking", "Courts and clinics"],
       "metaTitle": "Tuturnero, de ShippersLab: online booking",
       "metaDescription": "Tuturnero, de ShippersLab is online booking in Argentina for courts, clinics, independent professionals and salons. Clients book at tuturnero.app.",
       "features": [
-        "Five-a-side, seven-a-side and padel courts",
-        "Clinics, independent professionals, and hair and beauty salons",
         "Google Calendar sync",
         "Google Meet link for remote appointments",
-        "A photo gallery on each business page"
+        "A photo gallery on each business page",
+        "Short link with a QR code",
+        "Booking without an account"
       ],
       "visitLabel": "Try Tuturnero",
       "galleryTitle": "Gallery",
@@ -477,7 +477,7 @@
         {
           "title": "Why we built it.",
           "body": [
-            "Courts, clinics, independent professionals, and hair and beauty salons usually book over messages. Booking five-a-side, seven-a-side or padel, or a slot at a clinic or a salon, should not take a conversation.",
+            "A sports complex, a clinic or a salon usually books over messages. Booking five-a-side, seven-a-side or padel, or a slot at a clinic or a salon, should not take a conversation.",
             "We built it at ShippersLab so the business has a booking page without commissioning a one-off build. If you need a website or a booking flow made for your business, see [websites, booking and catalogs](/webs-y-catalogos)."
           ]
         },
@@ -492,7 +492,7 @@
           "title": "What we built.",
           "body": [
             "Tuturnero gives each business a page with its brand, its hours and a short link with a QR code. The client picks an open time, leaves a name and books, without creating an account. As soon as they request it, that time is no longer available, and the business accepts or declines the request.",
-            "On a courts page, the same link can list five-a-side, seven-a-side and padel, with 60 or 90 minute slots, and a court can be closed for a tournament. It shows only open times. The same booking system is built for clinics, independent professionals, and hair and beauty salons.",
+            "On a courts page, the same link can list five-a-side, seven-a-side and padel, with 60 or 90 minute slots, and a court can be closed for a tournament. The page shows only open times. The same booking system is built for clinics, independent professionals, and hair and beauty salons.",
             "It syncs with Google Calendar so bookings do not overlap, and a remote appointment brings its Google Meet link. Each page has a photo gallery of the business. The public page lives at [tuturnero.app](https://tuturnero.app)."
           ]
         },

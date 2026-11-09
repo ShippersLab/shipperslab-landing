@@ -425,21 +425,21 @@
       "productCta": "Probar EventOps"
     },
     "tuturnero": {
-      "category": "Turnero online · Canchas, consultorios y estética",
+      "category": "Turnero online · Canchas, consultorios y peluquerías",
       "heroAlt": "Captura de la página de inicio de Tuturnero",
       "title": "Tuturnero",
       "identity": "Tuturnero, de ShippersLab",
       "audience": "canchas, consultorios, profesionales independientes, peluquerías y estética",
       "summary": "Turnero online para canchas, consultorios y peluquerías, de ShippersLab.",
-      "tags": ["Canchas", "Consultorios", "Estética"],
+      "tags": ["Turnero online", "Canchas y consultorios"],
       "metaTitle": "Tuturnero, de ShippersLab: turnero online",
       "metaDescription": "Tuturnero, de ShippersLab: turnero online para canchas, consultorios, profesionales y peluquerías en Argentina. El cliente reserva en tuturnero.app.",
       "features": [
-        "Canchas de fútbol 5, fútbol 7 y pádel",
-        "Consultorios, profesionales independientes, peluquerías y estética",
         "Sincronización con Google Calendar",
         "Link de Google Meet para turnos a distancia",
-        "Galería de fotos del negocio"
+        "Galería de fotos del negocio",
+        "Link corto con QR",
+        "Reserva sin crear una cuenta"
       ],
       "visitLabel": "Probar Tuturnero",
       "galleryTitle": "Galería",
@@ -466,7 +466,7 @@
         },
         {
           "label": "Pensado para",
-          "value": "Canchas, consultorios y estética"
+          "value": "Canchas, consultorios y peluquerías"
         },
         {
           "label": "Servicio",
@@ -477,7 +477,7 @@
         {
           "title": "Por qué lo hicimos.",
           "body": [
-            "Canchas, consultorios, profesionales independientes, peluquerías y estética suelen agendar por mensajes. Reservar fútbol 5, fútbol 7 o pádel, o un turno en un consultorio o una peluquería, no debería depender de esa conversación.",
+            "Un complejo con canchas, un consultorio o una peluquería suelen agendar por mensajes. Reservar fútbol 5, fútbol 7 o pádel, o un turno en un consultorio o una peluquería, no debería depender de esa conversación.",
             "Lo armamos en ShippersLab para que el negocio tenga su página de turnos sin encargar un desarrollo desde cero. Si lo que necesitás es una web o un turnero hecho para tu negocio, está en [webs, turneros y catálogos](/webs-y-catalogos)."
           ]
         },
@@ -492,7 +492,7 @@
           "title": "Qué construimos.",
           "body": [
             "Tuturnero le da a cada negocio una página con su marca, sus horarios y un link corto con QR. El cliente elige un horario libre, deja su nombre y reserva, sin crear una cuenta. Apenas lo pide, ese horario deja de estar disponible, y el negocio acepta o rechaza el pedido.",
-            "En canchas, la página puede listar fútbol 5, fútbol 7 y pádel, con turnos de 60 o 90 minutos, y cerrar una cancha por un torneo. Muestra solo lo que está libre. El mismo turnero está pensado para consultorios, profesionales independientes, peluquerías y estética.",
+            "En canchas, la página puede listar fútbol 5, fútbol 7 y pádel, con turnos de 60 o 90 minutos, y cerrar una cancha por un torneo. La página muestra solo lo que está libre. El mismo turnero está pensado para consultorios, profesionales independientes, peluquerías y estética.",
             "Se sincroniza con Google Calendar para que los turnos no se pisen, y un turno a distancia trae su link de Google Meet. Cada página tiene una galería de fotos del negocio. La página pública está en [tuturnero.app](https://tuturnero.app)."
           ]
         },
