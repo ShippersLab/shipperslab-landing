@@ -9,7 +9,12 @@ import { Container } from "@/components/ui/section/container";
 import { buildWhatsAppUrl } from "@/lib/contact/message";
 import { LocalizedLink } from "@/i18n/link";
 import { useI18n } from "@/i18n/provider";
-import { PEDIDOS_PATH, serviceRoutes, TIENDANUBE_PATH } from "@/lib/services";
+import {
+  FACTURA_ELECTRONICA_ARCA_PATH,
+  PEDIDOS_PATH,
+  serviceRoutes,
+  TIENDANUBE_PATH,
+} from "@/lib/services";
 import { site } from "@/lib/site";
 
 const YEAR = new Date().getFullYear();
@@ -60,6 +65,13 @@ export function Footer() {
                   <li>
                     <LocalizedLink href={PEDIDOS_PATH} className={LINK_CLASS}>
                       {footer.links.pedidos}
+                    </LocalizedLink>
+                  </li>
+                ) : null}
+                {route.slug === "integraciones" ? (
+                  <li>
+                    <LocalizedLink href={FACTURA_ELECTRONICA_ARCA_PATH} className={LINK_CLASS}>
+                      {footer.links.facturaElectronicaArca}
                     </LocalizedLink>
                   </li>
                 ) : null}

@@ -4,7 +4,12 @@ import { locales } from "@/i18n/config";
 import { languageAlternates, localizedUrl } from "@/i18n/paths";
 import { getPublishedBlogPosts } from "@/lib/blog";
 import { projectRoutes } from "@/lib/projects";
-import { PEDIDOS_PATH, serviceRoutes, TIENDANUBE_PATH } from "@/lib/services";
+import {
+  FACTURA_ELECTRONICA_ARCA_PATH,
+  PEDIDOS_PATH,
+  serviceRoutes,
+  TIENDANUBE_PATH,
+} from "@/lib/services";
 
 const routes: { path: string; priority: number; lastModified?: string }[] = [
   { path: "", priority: 1 },
@@ -15,6 +20,7 @@ const routes: { path: string; priority: number; lastModified?: string }[] = [
   ...serviceRoutes.map((route) => ({ path: `/${route.slug}`, priority: 0.85 })),
   { path: PEDIDOS_PATH, priority: 0.85 },
   { path: TIENDANUBE_PATH, priority: 0.85 },
+  { path: FACTURA_ELECTRONICA_ARCA_PATH, priority: 0.85 },
   { path: "/eventos", priority: 0.8 },
   { path: "/blog", priority: 0.7 },
   ...getPublishedBlogPosts().map((post) => ({

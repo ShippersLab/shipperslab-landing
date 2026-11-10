@@ -10,9 +10,19 @@ import {
   page,
   renderCopy,
 } from "@/lib/seo/llms/copy";
-import { PEDIDOS_PATH, serviceRoutes, TIENDANUBE_PATH, type ServiceSlug } from "@/lib/services";
+import {
+  FACTURA_ELECTRONICA_ARCA_PATH,
+  PEDIDOS_PATH,
+  serviceRoutes,
+  TIENDANUBE_PATH,
+  type ServiceSlug,
+} from "@/lib/services";
 
-type ServicePage = (typeof es.servicePages)[ServiceSlug] | typeof es.tiendanube | typeof es.pedidos;
+type ServicePage =
+  | (typeof es.servicePages)[ServiceSlug]
+  | typeof es.tiendanube
+  | typeof es.pedidos
+  | typeof es.facturaElectronicaArca;
 
 type ToolGroup = {
   title: string;
@@ -124,6 +134,10 @@ export function buildServicePage(slug: ServiceSlug) {
 
 export function buildTiendanubePage() {
   return buildServicePageCopy(TIENDANUBE_PATH, es.tiendanube);
+}
+
+export function buildFacturaElectronicaArcaPage() {
+  return buildServicePageCopy(FACTURA_ELECTRONICA_ARCA_PATH, es.facturaElectronicaArca);
 }
 
 export function buildPedidosPage() {

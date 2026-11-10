@@ -1,0 +1,149 @@
+{
+  "title": "What changes in ARCA electronic invoicing on December 1, 2026, and how to review your system",
+  "metaTitle": "What changes in ARCA electronic invoicing on December 1, 2026",
+  "metaDescription": "From December 1, 2026, ARCA rejects a WSFEv1 CAE request that omits the receiver's VAT condition with error 10246. Until November 30, 2026, that case is observation 10245.",
+  "excerpt": "What happens on December 1, 2026 when a WSFEv1 CAE request omits the receiver's VAT condition, and what to review in your system.",
+  "answer": "From December 1, 2026, ARCA rejects with error 10246 a CAE request sent through the WSFEv1 web service that omits the receiver's VAT condition, the CondicionIVAReceptorId field. Until November 30, 2026, the same case comes back as observation 10245. The date is in the December 1, 2026 revision of the WSFEv1 developer manual, under General Resolution 5616.",
+  "intro": [
+    "If your store, ERP or management system requests a CAE through a web service, the change is one field about the receiver: their VAT condition. The field is called CondicionIVAReceptorId.",
+    "Below are the codes published in the manual, a list for reviewing your system, and the official ARCA source. If you want us to connect it, the scope is in [ARCA electronic invoicing](/integraciones/factura-electronica-arca)."
+  ],
+  "sections": [
+    {
+      "title": "What the manual says on December 1, 2026",
+      "paragraphs": [
+        "General Resolution 5616 requires the receiver's VAT condition on the electronic voucher. The WSFEv1 developer manual, in the revision dated December 1, 2026, says that field becomes mandatory and that code 10245 goes out of use.",
+        "Until November 30, 2026, a web service request without that field comes back with observation 10245. From December 1, 2026, ARCA rejects it with error 10246. The error text says the field is mandatory under RG 5616.",
+        "The date is in the [WSFEv1 developer manual, December 1, 2026 revision](https://www.arca.gob.ar/fe/ayuda/documentos/wsfev1-RG-4291.pdf). The codes and the CondicionIVAReceptorId field are also in the [WSFEv1 developer manual](https://www.arca.gob.ar/ws/documentacion/manuales/manual-desarrollador-ARCA-COMPG.pdf)."
+      ]
+    },
+    {
+      "title": "Codes to check on the request",
+      "paragraphs": [
+        "These codes come from the WSFEv1 manual. 10245 is an observation. 10246, 10242 and 10243 are in the error table. The manual's condition table includes more values: these four are the ones to have at hand when you review customers."
+      ],
+      "table": {
+        "caption": "WSFEv1 codes for the receiver's VAT condition",
+        "columns": ["What the manual says"],
+        "rows": [
+          {
+            "label": "10245",
+            "cells": [
+              "Observation. Until November 30, 2026, the web service request does not include the receiver's VAT condition. From December 1, 2026, this code goes out of use."
+            ]
+          },
+          {
+            "label": "10246",
+            "cells": [
+              "Rejection. From December 1, 2026, the field is mandatory under RG 5616. Without it, ARCA rejects the request."
+            ]
+          },
+          {
+            "label": "10242",
+            "cells": [
+              "Rejection. The CondicionIVAReceptorId value is not allowed. The manual points to the FEParamGetCondicionIvaReceptor method."
+            ]
+          },
+          {
+            "label": "10243",
+            "cells": [
+              "Rejection. The value is not valid for the voucher class sent, the letter A, B or C."
+            ]
+          },
+          {
+            "label": "1",
+            "cells": ["Registered VAT taxpayer (responsable inscripto)."]
+          },
+          {
+            "label": "4",
+            "cells": ["VAT-exempt taxpayer."]
+          },
+          {
+            "label": "5",
+            "cells": ["Final consumer."]
+          },
+          {
+            "label": "6",
+            "cells": ["Monotributo taxpayer."]
+          }
+        ]
+      },
+      "closing": "ARCA decides whether to grant the CAE. The system has to send the field and show the code that comes back."
+    },
+    {
+      "title": "Where to look in your system",
+      "paragraphs": [
+        "The value is not invented at invoice time. It comes from the customer record and travels in the request to WSFEv1. If the invoice is built in another program today, the change still applies: the web service is what rejects the request."
+      ],
+      "items": [
+        "Customer record. The VAT condition has to be stored as a code from the manual, not as free text.",
+        "WSFEv1 request. CondicionIVAReceptorId has to go out on invoices A, B and C, and on credit and debit notes.",
+        "Voucher letter. If the value does not match that class, the manual provides rejection 10243.",
+        "ARCA response. The system has to show observation 10245 while it is still in force, and rejection 10246 from December 1, 2026."
+      ],
+      "closing": "If the order already lives in a management system, that sales flow is in [management systems](/sistemas-de-gestion). The CAE connection is in [ARCA electronic invoicing](/integraciones/factura-electronica-arca).",
+      "link": {
+        "label": "See ARCA electronic invoicing",
+        "href": "/integraciones/factura-electronica-arca"
+      }
+    }
+  ],
+  "checklist": {
+    "title": "Checklist for reviewing your system",
+    "intro": "Before December 1, 2026, review this in the system that requests the CAE:",
+    "items": [
+      "Does every customer have a VAT condition stored?",
+      "Does the WSFEv1 request send CondicionIVAReceptorId?",
+      "Is the value one the manual publishes, such as 1, 4, 5 or 6 when that is the right case?",
+      "Is that value valid for the voucher letter?",
+      "Do invoices A, B and C, and credit and debit notes, use the same field?",
+      "If ARCA returns an observation or a rejection, does the code stay visible so it can be fixed?",
+      "Have you tried a request without the field, to see 10245 come back and, from December 1, 2026, to see 10246?"
+    ],
+    "closing": "If any answer is no, the request can come back as an observation until November 30, 2026, and as a rejection from December 1. The source is the WSFEv1 developer manual and RG 5616."
+  },
+  "faq": {
+    "title": "Common questions",
+    "items": [
+      {
+        "question": "What changes on December 1, 2026?",
+        "answer": "The receiver's VAT condition becomes mandatory on a web service request. Until November 30, 2026, if it is missing, WSFEv1 returns observation 10245. From December 1, 2026, ARCA rejects that request with error 10246. The developer manual revision of that date says so, under RG 5616."
+      },
+      {
+        "question": "What is CondicionIVAReceptorId?",
+        "answer": "It is the WSFEv1 field for the receiver's VAT condition. If the value is not allowed, the code is 10242. If it is not valid for the voucher class, the code is 10243."
+      },
+      {
+        "question": "Is it enough to review invoices A, B and C?",
+        "answer": "The field belongs on the CAE request. Credit and debit notes that go out through the same web service need the same review."
+      },
+      {
+        "question": "Where is the official source?",
+        "answer": "In ARCA's WSFEv1 developer manual. The December 1, 2026 revision makes the field mandatory and retires code 10245. The rule the manual cites is General Resolution 5616."
+      }
+    ]
+  },
+  "related": {
+    "title": "Keep reading",
+    "links": [
+      {
+        "label": "ARCA electronic invoicing",
+        "href": "/integraciones/factura-electronica-arca",
+        "description": "Connect your store, ERP or management system to WSFEv1 to request a CAE."
+      },
+      {
+        "label": "Integrations",
+        "href": "/integraciones",
+        "description": "Connect invoicing, payments, the store and spreadsheets so data is entered once."
+      },
+      {
+        "label": "Management systems",
+        "href": "/sistemas-de-gestion",
+        "description": "Inventory, orders, sales or bookings in a system built around your operation."
+      }
+    ]
+  },
+  "ctaTitle": "Does your system request a CAE without the VAT condition?",
+  "ctaDescription": "Tell us where the sale is recorded. We reply with scope and price in writing.",
+  "ctaButton": "Tell us your problem"
+}

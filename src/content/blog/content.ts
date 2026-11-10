@@ -12,6 +12,8 @@ import cuantoCuestaUnSistemaDeGestionAMedidaEn from "@/content/blog/cuanto-cuest
 import cuantoCuestaUnSistemaDeGestionAMedidaEs from "@/content/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida/es.json";
 import excelOSistemaDeGestionEn from "@/content/blog/excel-o-sistema-de-gestion/en.json";
 import excelOSistemaDeGestionEs from "@/content/blog/excel-o-sistema-de-gestion/es.json";
+import queCambiaEnLaFacturaElectronicaDeArcaEn from "@/content/blog/que-cambia-en-la-factura-electronica-de-arca/en.json";
+import queCambiaEnLaFacturaElectronicaDeArcaEs from "@/content/blog/que-cambia-en-la-factura-electronica-de-arca/es.json";
 import type { BlogSlug } from "@/content/blog";
 import type { BlogPostContent, BlogPostSummary } from "@/content/blog/types";
 import type { Locale } from "@/i18n/config";
@@ -41,6 +43,10 @@ const blogPostContent = {
   "como-saber-si-tu-negocio-necesita-pagina-web": {
     es: comoSaberSiTuNegocioNecesitaPaginaWebEs,
     en: comoSaberSiTuNegocioNecesitaPaginaWebEn,
+  },
+  "que-cambia-en-la-factura-electronica-de-arca": {
+    es: queCambiaEnLaFacturaElectronicaDeArcaEs,
+    en: queCambiaEnLaFacturaElectronicaDeArcaEn,
   },
 } satisfies Record<BlogSlug, Record<Locale, BlogPostContent>>;
 

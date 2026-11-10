@@ -23,6 +23,7 @@ const PEDIDOS_RELATED = [
 function servicePageContent(messages: Messages, slug: ServicePageKey) {
   if (slug === "tiendanube") return messages.tiendanube;
   if (slug === "pedidos") return messages.pedidos;
+  if (slug === "facturaElectronicaArca") return messages.facturaElectronicaArca;
   return messages.servicePages[slug];
 }
 
