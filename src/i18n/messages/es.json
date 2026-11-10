@@ -237,6 +237,7 @@
       "webs-y-catalogos": "Webs y catálogos",
       "bots-con-ia": "Bots con IA",
       "integraciones": "Integraciones",
+      "mercadoPago": "Mercado Pago",
       "tiendanube": "Desarrollo en Tiendanube",
       "casos": "Casos",
       "eventos": "Eventos",
@@ -608,7 +609,7 @@
       "lead": "Stock, pedidos, caja o turnos en un solo lugar, armado para cómo trabaja tu negocio. Dejá de pelearte con planillas que ya no dan abasto.",
       "covers": {
         "title": "Qué resolvemos.",
-        "body": "Un sistema pensado para tu operación: control de stock, pedidos, caja, turnos o lo que hoy se te escapa entre chats y planillas. Lo armamos alrededor de cómo trabaja tu equipo. Si estás pidiendo un presupuesto, leé [Cuánto cuesta un sistema de gestión a medida](/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida).",
+        "body": "Un sistema pensado para tu operación: control de stock, pedidos, caja, turnos o lo que hoy se te escapa entre chats y planillas. Lo armamos alrededor de cómo trabaja tu equipo. Si los cobros de Mercado Pago tienen que quedar en el mismo sistema, el detalle está en [integración con Mercado Pago](/integraciones/mercado-pago). Si estás pidiendo un presupuesto, leé [Cuánto cuesta un sistema de gestión a medida](/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida).",
         "items": [
           {
             "id": "stock",
@@ -1039,7 +1040,8 @@
           },
           {
             "id": "mercadopago",
-            "label": "Mercado Pago"
+            "label": "Mercado Pago",
+            "href": "/integraciones/mercado-pago"
           },
           {
             "id": "tiendanube",
@@ -1061,7 +1063,7 @@
           {
             "id": "mercadopago",
             "title": "Mercado Pago: cobros y conciliación",
-            "body": "Cada cobro que entra por Mercado Pago puede quedar registrado solo en tu planilla o sistema, con el pedido al que corresponde. Así la conciliación deja de ser revisar movimientos uno por uno a fin de mes, y ves enseguida qué está cobrado y qué falta."
+            "body": "Cada cobro que entra por Mercado Pago puede quedar registrado solo en tu planilla o sistema, con el pedido al que corresponde. Así la conciliación deja de ser revisar movimientos uno por uno a fin de mes, y ves enseguida qué está cobrado y qué falta. Links, checkout, QR y el estado de cada cobro están en [integración con Mercado Pago](/integraciones/mercado-pago)."
           },
           {
             "id": "tiendanube",
@@ -1333,6 +1335,180 @@
     "ctaDescription": "Contanos si venís de WooCommerce, si vendés a mayoristas y con qué sistema llevás el stock. Te respondemos con alcance y precio por escrito.",
     "ctaButton": "Contanos tu problema"
   },
+  "mercadoPago": {
+    "navLabel": "Mercado Pago",
+    "metaTitle": "Integración de Mercado Pago para tiendas y sistemas",
+    "metaDescription": "Conectamos Mercado Pago a tu tienda o sistema: link de pago, checkout, QR, avisos de cobro y el estado de cada venta. Alcance por escrito.",
+    "h1": "Integración de Mercado Pago en tu tienda o sistema.",
+    "lead": "El cobro sale de la venta: un link, el checkout o un QR. Cuando Mercado Pago avisa, esa venta muestra su estado en tu sistema.",
+    "covers": {
+      "title": "Qué resolvemos.",
+      "body": "Un cobro que entra a Mercado Pago y después alguien lo pasa a la planilla, o una venta que sigue impaga en el sistema porque el aviso no llegó. Conectamos la tienda o el sistema de gestión con Mercado Pago para que cada venta tenga su cobro y su estado. Alcance y precio por escrito antes de arrancar.",
+      "items": [
+        {
+          "id": "link",
+          "label": "Link de pago"
+        },
+        {
+          "id": "checkout",
+          "label": "Checkout"
+        },
+        {
+          "id": "qr",
+          "label": "Código QR"
+        },
+        {
+          "id": "webhook",
+          "label": "Avisos de cobro"
+        },
+        {
+          "id": "orders",
+          "label": "Conciliación"
+        },
+        {
+          "id": "refund",
+          "label": "Devoluciones"
+        },
+        {
+          "id": "status",
+          "label": "Estado del cobro"
+        }
+      ]
+    },
+    "tools": {
+      "title": "Qué conectamos.",
+      "items": [
+        {
+          "id": "link",
+          "title": "Link para cobrar una venta",
+          "body": "Si el cobro se manda por WhatsApp, mail o redes, el sistema arma un link de esa venta. En Checkout Pro, Mercado Pago devuelve una dirección para abrir su formulario de pago, y el identificador de ese cobro sirve para consultar el estado, cancelarlo o devolverlo. El paso está en [crear una order de Checkout Pro](https://www.mercadopago.com.ar/developers/es/docs/checkout-pro-orders/create-order). Mercado Pago también documenta el [Link de pago](https://www.mercadopago.com.ar/developers/es/docs/getting-started) para armar un link y compartirlo por chat, sin integrar un sitio. Cuando el cobro tiene que salir del pedido, usamos la order de Checkout Pro para que el link corresponda a esa venta."
+        },
+        {
+          "id": "checkout",
+          "title": "Checkout de la tienda",
+          "body": "Con [Checkout Pro](https://www.mercadopago.com.ar/developers/es/docs/checkout-pro/landing), el comprador termina el carrito en tu sitio, paga en el entorno de Mercado Pago y vuelve a tu sitio o al destino configurado. Cómo vuelve está en [redirigir al comprador al checkout](https://www.mercadopago.com.ar/developers/es/docs/checkout-pro-orders/web-integration/redirect-buyer-to-checkout). Si el pago tiene que completarse en tu propia pantalla, [Checkout API](https://www.mercadopago.com.ar/developers/es/docs/getting-started) es la opción documentada para armar el cobro en el sitio. Cuál de las dos entra queda en el alcance, según cómo vendés."
+        },
+        {
+          "id": "qr",
+          "title": "QR en el mostrador",
+          "body": "En el local, el sistema muestra un código QR y el cliente paga escaneándolo. En Argentina, [Código QR](https://www.mercadopago.com.ar/developers/es/docs/qr-code/landing) documenta tres modelos: estático, un QR fijo de la caja; dinámico, uno distinto por venta; e híbrido, los dos a la vez. Al escanear, el monto aparece en el celular del cliente y el sistema recibe el aviso del estado de ese cobro. El circuito está en [integrar el procesamiento de pagos con QR](https://www.mercadopago.com.ar/developers/es/docs/qr-code/payment-processing)."
+        },
+        {
+          "id": "webhook",
+          "title": "Avisos de cada cobro",
+          "body": "Mercado Pago envía un aviso por HTTP POST cuando ocurre un evento del cobro, en lugar de consultar el estado todo el tiempo. En Checkout Pro, el tópico de pagos avisa cuando un pago se crea o se actualiza. El sistema confirma que el aviso llegó y después consulta ese cobro para actualizar la venta. La configuración está en [Webhooks](https://www.mercadopago.com.ar/developers/es/docs/your-integrations/notifications/webhooks). En Código QR, los avisos cubren una order procesada, cancelada, reembolsada o expirada, según [notificaciones de Código QR](https://www.mercadopago.com.ar/developers/es/docs/qr-code/notifications)."
+        },
+        {
+          "id": "orders",
+          "title": "Cada cobro con su venta",
+          "body": "Cada cobro puede llevar una referencia externa: el dato que identifica esa venta en tu sistema. La cargamos con el identificador de la venta o del pedido, y el aviso actualiza esa venta. En Checkout Pro, la referencia sirve para identificar el origen, como explica [crear una order de Checkout Pro](https://www.mercadopago.com.ar/developers/es/docs/checkout-pro-orders/create-order). En Código QR, Mercado Pago la pide, tiene que ser única para cada order y no se usa para datos personales. El campo está en [procesamiento de pagos con QR](https://www.mercadopago.com.ar/developers/es/docs/qr-code/payment-processing)."
+        },
+        {
+          "id": "refund",
+          "title": "Devoluciones",
+          "body": "Desde el sistema se puede pedir la devolución total o parcial de un cobro aprobado. Si el pago todavía no fue aprobado, la order se puede cancelar, y la devolución a la tarjeta queda en el plazo del banco emisor. Mercado Pago documenta el reembolso dentro de los 180 días desde la aprobación, con saldo disponible en la cuenta. En tarjeta de crédito el monto vuelve a la factura de esa tarjeta. En otros medios, vuelve a la cuenta de quien pagó. Se pueden hacer varios reembolsos parciales si la suma no supera lo pagado. Las condiciones están en [reembolsos y cancelaciones](https://www.mercadopago.com.ar/developers/es/docs/checkout-pro-orders/refunds-cancellations). En Código QR, la devolución por la API también es total o parcial y llega hasta 180 días después del pago, según [procesamiento de pagos con QR](https://www.mercadopago.com.ar/developers/es/docs/qr-code/payment-processing)."
+        },
+        {
+          "id": "status",
+          "title": "Estado del cobro en el sistema",
+          "body": "La venta muestra el estado que informa Mercado Pago para ese cobro. En Checkout Pro, [estado de la order](https://www.mercadopago.com.ar/developers/es/docs/checkout-pro-orders/payment-management/status/order-status) describe creada, en proceso, acreditada, parcialmente reembolsada, autorizada y sin capturar, rechazada, cancelada o vencida, y reembolsada por completo. Un reembolso total deja la order reembolsada. Uno parcial la deja acreditada, con el detalle de reembolso parcial."
+        }
+      ]
+    },
+    "audience": {
+      "title": "Para quién.",
+      "intro": "Para comercios y pymes que cobran con Mercado Pago, o quieren cobrar ahí, y necesitan que ese cobro quede en la tienda o en el sistema.",
+      "items": [
+        {
+          "id": "store",
+          "title": "Tienda online",
+          "body": "El checkout o el link salen de la venta y el estado vuelve al pedido."
+        },
+        {
+          "id": "qr",
+          "title": "Mostrador",
+          "body": "El cliente escanea y paga, y la venta deja de figurar como impaga."
+        },
+        {
+          "id": "orders",
+          "title": "Sistema de gestión",
+          "body": "El cobro se asigna al pedido y a la cuenta del cliente.",
+          "href": "/sistemas-de-gestion/pedidos"
+        }
+      ]
+    },
+    "process": {
+      "title": "Cómo trabajamos y cómo se cotiza.",
+      "steps": [
+        {
+          "title": "Una charla de 30 minutos",
+          "body": "Vemos cómo cobrás hoy: con un link, en la tienda o en el mostrador, dónde tiene que verse el estado y quién administra la cuenta de Mercado Pago."
+        },
+        {
+          "title": "Un documento de alcance",
+          "body": "Qué entra (link, checkout o QR), qué estados se reflejan, qué devoluciones se piden desde el sistema y qué queda afuera. Precio y plazo por escrito antes de arrancar."
+        },
+        {
+          "title": "Entregas parciales cada semana",
+          "body": "Conectamos cada parte con la API oficial y la probás con cobros de prueba antes de pasar a tu cuenta real."
+        },
+        {
+          "title": "Puesta en marcha",
+          "body": "La dejamos funcionando con tu cuenta y con el aviso de cada cobro configurado. Hacemos un cobro de prueba para ver que la venta cambia de estado."
+        }
+      ],
+      "pricing": {
+        "label": "Precio y plazo",
+        "body": "Dependen de qué partes entren (link, checkout, QR) y de si el estado tiene que volver a una tienda, a una planilla o a un sistema de gestión. La cuenta de Mercado Pago es tuya."
+      }
+    },
+    "afterDelivery": [
+      {
+        "label": "Garantía",
+        "body": "Si un cobro no se registra por un error nuestro, lo arreglamos dentro de la garantía."
+      },
+      {
+        "label": "Mantenimiento",
+        "body": "Opcional, para cambios y para los ajustes cuando Mercado Pago cambia su forma de conectarse. Sin él, ese ajuste corre por tu cuenta."
+      },
+      {
+        "label": "Tus datos",
+        "body": "Son confidenciales y solo los usamos para tu proyecto."
+      }
+    ],
+    "faq": {
+      "title": "Preguntas sobre la integración con Mercado Pago.",
+      "items": [
+        {
+          "question": "¿Pueden armar un link de pago desde un pedido?",
+          "answer": "Sí. El sistema genera la dirección de pago de esa venta con Checkout Pro y la podés mandar por WhatsApp o por mail. Mercado Pago también documenta el Link de pago para compartir un cobro por chat, sin integrar un sitio. Si el cobro tiene que salir del pedido, el link queda atado a esa venta."
+        },
+        {
+          "question": "¿El cliente paga en mi sitio o en Mercado Pago?",
+          "answer": "Con Checkout Pro, elige pagar en tu sitio, paga en el entorno de Mercado Pago y vuelve a tu sitio. Con Checkout API, el cobro se arma en tu propia pantalla. Cuál usar queda en el alcance, según cómo vendés."
+        },
+        {
+          "question": "¿Puedo cobrar con QR en el local?",
+          "answer": "Sí, en Argentina. El sistema muestra un QR fijo de la caja, uno distinto por venta, o los dos. Cuando el cliente paga, el aviso actualiza esa venta."
+        },
+        {
+          "question": "¿Cómo se entera el sistema de que pagaron?",
+          "answer": "Mercado Pago manda un aviso cuando el cobro se crea o cambia. El sistema confirma que llegó y consulta ese cobro para actualizar la venta, sin copiar el movimiento a mano."
+        },
+        {
+          "question": "¿Se puede devolver un pago desde el sistema?",
+          "answer": "Se puede pedir la devolución total o parcial de un cobro aprobado, dentro de los 180 días desde la aprobación y si hay saldo en la cuenta de Mercado Pago. Si la devolución es total, la venta queda reembolsada. Si es parcial, queda acreditada con ese detalle. Una order que todavía no se aprobó se puede cancelar, y la devolución a la tarjeta queda en el plazo del banco emisor."
+        },
+        {
+          "question": "¿El cobro queda asociado a la venta?",
+          "answer": "Sí. Al crear el cobro cargamos una referencia con el identificador de la venta o del pedido. El aviso actualiza esa venta. En Código QR esa referencia tiene que ser única y no lleva datos personales."
+        }
+      ]
+    },
+    "ctaTitle": "¿Cobrás con Mercado Pago y lo anotás a mano?",
+    "ctaDescription": "Contanos si cobrás con un link, en la tienda o con QR, y dónde tiene que quedar ese cobro. Te respondemos con alcance y precio por escrito.",
+    "ctaButton": "Contanos tu problema"
+  },
   "pedidos": {
     "navLabel": "Pedidos",
     "metaTitle": "Sistema de gestión de pedidos a medida",
@@ -1414,7 +1590,7 @@
         {
           "id": "mercadopago",
           "title": "Mercado Pago",
-          "body": "El cobro que entra por Mercado Pago se puede asignar al pedido y a la cuenta del cliente. La conciliación deja de ser cruzar un extracto contra una planilla."
+          "body": "El cobro que entra por Mercado Pago se puede asignar al pedido y a la cuenta del cliente. La conciliación deja de ser cruzar un extracto contra una planilla. Links, checkout, QR y el estado de cada cobro están en [integración con Mercado Pago](/integraciones/mercado-pago)."
         },
         {
           "id": "whatsapp",

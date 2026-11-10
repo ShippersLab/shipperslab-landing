@@ -6,7 +6,13 @@ import { localizedUrl } from "@/i18n/paths";
 import { singleLine } from "@/lib/seo/shared/text";
 import { buildFaqPage } from "@/lib/seo/structured-data/pages";
 import { homeLabel, ORGANIZATION_ID } from "@/lib/seo/structured-data/shared";
-import { PEDIDOS_PATH, serviceRoutes, TIENDANUBE_PATH, type ServiceSlug } from "@/lib/services";
+import {
+  MERCADO_PAGO_PATH,
+  PEDIDOS_PATH,
+  serviceRoutes,
+  TIENDANUBE_PATH,
+  type ServiceSlug,
+} from "@/lib/services";
 import { site } from "@/lib/site";
 
 type ServiceGraphInput = {
@@ -94,6 +100,26 @@ export function buildPedidosStructuredData(lang: Locale): Graph {
     serviceType: lang === "es" ? "Sistema de gestión de pedidos" : "Order management system",
     trail: [
       { name: parent.navLabel, url: localizedUrl("/sistemas-de-gestion", lang) },
+      { name: page.navLabel, url },
+    ],
+    faq: page.faq.items,
+    lang,
+  });
+}
+
+export function buildMercadoPagoStructuredData(lang: Locale): Graph {
+  const messages = getMessages(lang);
+  const page = messages.mercadoPago;
+  const parent = messages.servicePages.integraciones;
+  const url = localizedUrl(MERCADO_PAGO_PATH, lang);
+
+  return buildServiceGraph({
+    url,
+    name: page.metaTitle,
+    description: page.metaDescription,
+    serviceType: page.navLabel,
+    trail: [
+      { name: parent.navLabel, url: localizedUrl("/integraciones", lang) },
       { name: page.navLabel, url },
     ],
     faq: page.faq.items,
