@@ -8,6 +8,7 @@ import { buildHome, buildIdentity } from "@/lib/seo/llms/home";
 import { buildEventos } from "@/lib/seo/llms/events";
 import {
   buildComoTrabajamos,
+  buildFacturaElectronicaArcaPage,
   buildPedidosPage,
   buildServicePage,
   buildTiendanubePage,
@@ -41,11 +42,13 @@ export function buildLlmsFullTxt() {
     organizationSummary,
     `Versión en inglés: ${organizationIdentity.url}/en (mismas páginas bajo ${organizationIdentity.url}/en/...)`,
     buildHome(),
-    ...SERVICE_PAGE_ORDER.flatMap((slug) =>
-      slug === "sistemas-de-gestion"
-        ? [buildServicePage(slug), buildPedidosPage()]
-        : [buildServicePage(slug)],
-    ),
+    ...SERVICE_PAGE_ORDER.flatMap((slug) => {
+      if (slug === "sistemas-de-gestion") return [buildServicePage(slug), buildPedidosPage()];
+      if (slug === "integraciones") {
+        return [buildServicePage(slug), buildFacturaElectronicaArcaPage()];
+      }
+      return [buildServicePage(slug)];
+    }),
     buildTiendanubePage(),
     buildComoTrabajamos(),
     buildCasos(),
@@ -61,6 +64,7 @@ export function buildLlmsFullTxt() {
   assertSourceCopy(es.faq, document);
   assertSourceCopy(es.servicePages, document);
   assertSourceCopy(es.tiendanube, document);
+  assertSourceCopy(es.facturaElectronicaArca, document);
   assertSourceCopy(es.pedidos, document);
   assertSourceCopy(es.comoTrabajamos, document);
   assertSourceCopy(es.casos, document);

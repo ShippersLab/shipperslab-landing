@@ -238,6 +238,7 @@
       "bots-con-ia": "Bots con IA",
       "integraciones": "Integraciones",
       "tiendanube": "Desarrollo en Tiendanube",
+      "facturaElectronicaArca": "Factura electrónica ARCA",
       "casos": "Casos",
       "eventos": "Eventos",
       "empecemos": "Empecemos",
@@ -608,7 +609,7 @@
       "lead": "Stock, pedidos, caja o turnos en un solo lugar, armado para cómo trabaja tu negocio. Dejá de pelearte con planillas que ya no dan abasto.",
       "covers": {
         "title": "Qué resolvemos.",
-        "body": "Un sistema pensado para tu operación: control de stock, pedidos, caja, turnos o lo que hoy se te escapa entre chats y planillas. Lo armamos alrededor de cómo trabaja tu equipo. Si estás pidiendo un presupuesto, leé [Cuánto cuesta un sistema de gestión a medida](/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida).",
+        "body": "Un sistema pensado para tu operación: control de stock, pedidos, caja, turnos o lo que hoy se te escapa entre chats y planillas. Lo armamos alrededor de cómo trabaja tu equipo. Si estás pidiendo un presupuesto, leé [Cuánto cuesta un sistema de gestión a medida](/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida). Si el comprobante tiene que salir de ese sistema, el pedido de CAE a ARCA está en [factura electrónica ARCA](/integraciones/factura-electronica-arca).",
         "items": [
           {
             "id": "stock",
@@ -1047,7 +1048,8 @@
           },
           {
             "id": "arca",
-            "label": "Facturación ARCA"
+            "label": "Facturación ARCA",
+            "href": "/integraciones/factura-electronica-arca"
           },
           {
             "id": "crm",
@@ -1071,7 +1073,7 @@
           {
             "id": "arca",
             "title": "Facturación electrónica de ARCA",
-            "body": "Conectamos tus ventas con los servicios de facturación electrónica de ARCA (ex AFIP) para que la factura salga sola cuando se confirma un cobro o un pedido. Vos definís las reglas: qué tipo de comprobante, a quién y en qué momento."
+            "body": "Conectamos tus ventas con el web service de facturación electrónica de ARCA (ex AFIP), WSFEv1, para pedir el CAE cuando se confirma un cobro o un pedido. Facturas A, B y C, notas de crédito y débito, y la condición de IVA del receptor están en [factura electrónica ARCA](/integraciones/factura-electronica-arca)."
           },
           {
             "id": "whatsapp",
@@ -1133,7 +1135,7 @@
           },
           {
             "question": "¿Pueden conectar la facturación electrónica de ARCA (ex AFIP)?",
-            "answer": "Sí. Conectamos tus ventas con ARCA para que cada factura salga sin cargarla a mano. En la charla vemos qué datos de tu cuenta hacen falta y te ayudamos a configurarlos."
+            "answer": "Sí. Conectamos tus ventas con el web service WSFEv1 para pedir el CAE sin cargarlo a mano. En la charla vemos qué datos de tu cuenta hacen falta. El detalle de comprobantes y de la condición de IVA del receptor está en la página de factura electrónica ARCA."
           },
           {
             "question": "¿Qué pasa si una integración falla?",
@@ -1333,6 +1335,161 @@
     "ctaDescription": "Contanos si venís de WooCommerce, si vendés a mayoristas y con qué sistema llevás el stock. Te respondemos con alcance y precio por escrito.",
     "ctaButton": "Contanos tu problema"
   },
+  "facturaElectronicaArca": {
+    "navLabel": "Factura electrónica ARCA",
+    "metaTitle": "Factura electrónica ARCA conectada a tu sistema",
+    "metaDescription": "Conectamos tu tienda, ERP o sistema de gestión al web service WSFEv1 de ARCA para pedir el CAE de facturas A, B y C y de notas de crédito y débito.",
+    "h1": "Factura electrónica de ARCA conectada a tu sistema.",
+    "lead": "Conectamos tu tienda, tu ERP o tu sistema de gestión al web service WSFEv1 para pedir el CAE, el código de autorización electrónico. Cubre facturas A, B y C, y notas de crédito y de débito.",
+    "covers": {
+      "title": "Qué construimos.",
+      "body": "La venta sigue en el sistema que ya usás. Desde ahí se pide el CAE a WSFEv1, y la respuesta vuelve con el CAE, con un error o con una observación. El pedido lleva la condición de IVA del receptor en el campo CondicionIVAReceptorId.",
+      "items": [
+        {
+          "id": "cae",
+          "label": "CAE"
+        },
+        {
+          "id": "comprobantes",
+          "label": "Facturas A, B y C"
+        },
+        {
+          "id": "notas",
+          "label": "Notas de crédito y débito"
+        },
+        {
+          "id": "observaciones",
+          "label": "Errores y observaciones"
+        },
+        {
+          "id": "condicion",
+          "label": "Condición de IVA"
+        }
+      ]
+    },
+    "tools": {
+      "title": "Qué queda conectado.",
+      "items": [
+        {
+          "id": "cae",
+          "title": "Pedido de CAE por WSFEv1",
+          "body": "Cuando se confirma la venta, el sistema pide el CAE a WSFEv1. ARCA responde con el CAE, con un error o con una observación. La autorización la decide el organismo."
+        },
+        {
+          "id": "comprobantes",
+          "title": "Facturas A, B y C, y notas",
+          "body": "El alcance cubre facturas A, B y C, y notas de crédito y de débito. Qué comprobante corresponde en cada caso queda escrito en el alcance, con las reglas de tu operación."
+        },
+        {
+          "id": "observaciones",
+          "title": "Errores y observaciones",
+          "body": "Si WSFEv1 rechaza el pedido o lo devuelve con una observación, el resultado queda visible para corregirlo y volver a pedir. Los códigos son los que publica ARCA en el manual del desarrollador."
+        },
+        {
+          "id": "condicion",
+          "title": "CondicionIVAReceptorId",
+          "body": "Cada pedido informa la condición de IVA del receptor. Si el valor no está permitido, ARCA rechaza con el código 10242. Si no es válido para la clase de comprobante, rechaza con el 10243. En el manual figuran, entre otros, 1 responsable inscripto, 4 exento, 5 consumidor final y 6 monotributo."
+        }
+      ]
+    },
+    "comparison": {
+      "title": "Qué cambia el 1 de diciembre de 2026.",
+      "paragraphs": [
+        "La Resolución General 5616 pide la condición frente al IVA del receptor en el pedido por web service. El manual del desarrollador de WSFEv1, en la revisión del 1 de diciembre de 2026, indica que ese campo pasa a ser obligatorio y que el código 10245 queda en desuso.",
+        "Hasta el 30 de noviembre de 2026, un pedido sin ese dato vuelve con la observación 10245. Desde el 1 de diciembre de 2026, ARCA lo rechaza con el error 10246.",
+        "La fecha está en el [manual del desarrollador WSFEv1, revisión del 1 de diciembre de 2026](https://www.arca.gob.ar/fe/ayuda/documentos/wsfev1-RG-4291.pdf). Los códigos y el campo CondicionIVAReceptorId están en el [manual del desarrollador WSFEv1](https://www.arca.gob.ar/ws/documentacion/manuales/manual-desarrollador-ARCA-COMPG.pdf) y en esa revisión."
+      ]
+    },
+    "audience": {
+      "title": "Para quién.",
+      "intro": "Para quien factura en ARCA y quiere que el CAE salga desde el sistema donde ya está la venta.",
+      "items": [
+        {
+          "id": "store",
+          "title": "Tienda",
+          "body": "La venta se confirma en la tienda y la factura se carga en otro lado."
+        },
+        {
+          "id": "erp",
+          "title": "ERP",
+          "body": "El ERP tiene el cliente y los ítems, y el comprobante se pide aparte."
+        },
+        {
+          "id": "gestion",
+          "title": "Sistema de gestión",
+          "body": "El pedido ya vive en un sistema de gestión y falta el pedido de CAE.",
+          "href": "/sistemas-de-gestion"
+        }
+      ]
+    },
+    "process": {
+      "title": "Cómo trabajamos y cómo se cotiza.",
+      "steps": [
+        {
+          "title": "Una charla de 30 minutos",
+          "body": "Vemos desde dónde sale la venta, qué comprobantes emitís y dónde está hoy la condición de IVA del receptor."
+        },
+        {
+          "title": "Un documento de alcance",
+          "body": "Qué sistema se conecta, qué comprobantes entran y cómo se muestran los errores y las observaciones. Precio y plazo por escrito antes de arrancar."
+        },
+        {
+          "title": "Entregas parciales cada semana",
+          "body": "Cada semana ves una parte andando: el pedido de CAE, la respuesta de ARCA o la condición de IVA del receptor."
+        },
+        {
+          "title": "Puesta en marcha",
+          "body": "Lo dejamos funcionando con tu equipo, sobre el sistema donde ya está la venta."
+        }
+      ],
+      "pricing": {
+        "label": "Precio y plazo",
+        "body": "Dependen del sistema a conectar, de los comprobantes que entran y de cómo hay que mostrar errores y observaciones. El alcance y el precio se acuerdan por escrito antes de arrancar."
+      }
+    },
+    "afterDelivery": [
+      {
+        "label": "Garantía",
+        "body": "Si aparece un error de nuestro lado, lo arreglamos dentro de la garantía."
+      },
+      {
+        "label": "Mantenimiento",
+        "body": "Opcional, para los ajustes cuando el web service de ARCA cambia la forma de conectarse. Sin él, ese ajuste corre por tu cuenta."
+      },
+      {
+        "label": "Tus datos",
+        "body": "Son confidenciales y solo los usamos para tu proyecto."
+      }
+    ],
+    "faq": {
+      "title": "Preguntas sobre factura electrónica ARCA.",
+      "items": [
+        {
+          "question": "¿Qué conectan con ARCA?",
+          "answer": "Conectamos tu tienda, tu ERP o tu sistema de gestión al web service WSFEv1 para pedir el CAE cuando se confirma la venta. ARCA responde con el CAE, con un error o con una observación."
+        },
+        {
+          "question": "¿Qué comprobantes entran?",
+          "answer": "Facturas A, B y C, y notas de crédito y de débito. Si hace falta otro comprobante, se escribe en el alcance."
+        },
+        {
+          "question": "¿Qué cambia el 1 de diciembre de 2026?",
+          "answer": "Hasta el 30 de noviembre de 2026, un pedido por web service sin la condición de IVA del receptor vuelve con la observación 10245. Desde el 1 de diciembre de 2026, ARCA lo rechaza con el error 10246. La fecha está en la revisión del manual del desarrollador de esa fecha, por la RG 5616."
+        },
+        {
+          "question": "¿Qué es CondicionIVAReceptorId?",
+          "answer": "Es el campo de WSFEv1 donde se informa la condición de IVA del receptor. Si el valor no está permitido, el código es 10242. Si no es válido para la clase de comprobante, el código es 10243. Entre los valores del manual están 1 responsable inscripto, 4 exento, 5 consumidor final y 6 monotributo."
+        },
+        {
+          "question": "¿El CAE lo otorga ARCA o el sistema?",
+          "answer": "Lo otorga ARCA. El sistema pide el CAE y muestra la respuesta: el código, un error o una observación."
+        }
+      ]
+    },
+    "ctaTitle": "¿La factura de ARCA se carga a mano?",
+    "ctaDescription": "Contanos desde qué sistema sale la venta. Te respondemos con alcance y precio por escrito.",
+    "ctaButton": "Contanos tu problema"
+  },
   "pedidos": {
     "navLabel": "Pedidos",
     "metaTitle": "Sistema de gestión de pedidos a medida",
@@ -1409,7 +1566,7 @@
         {
           "id": "arca",
           "title": "Facturación electrónica ARCA",
-          "body": "La factura puede salir al confirmar el pedido o al entregarlo. La facturación usa el cliente, los ítems y el precio que ya están cargados. Vos definís el momento y el tipo de comprobante."
+          "body": "La factura puede salir al confirmar el pedido o al entregarlo. La facturación usa el cliente, los ítems y el precio que ya están cargados. Vos definís el momento y el tipo de comprobante. El pedido de CAE por WSFEv1 está en [factura electrónica ARCA](/integraciones/factura-electronica-arca)."
         },
         {
           "id": "mercadopago",

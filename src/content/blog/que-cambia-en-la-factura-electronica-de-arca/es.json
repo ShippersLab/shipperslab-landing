@@ -1,0 +1,149 @@
+{
+  "title": "Qué cambia en la factura electrónica de ARCA el 1 de diciembre de 2026 y cómo revisar tu sistema",
+  "metaTitle": "Qué cambia en la factura electrónica de ARCA el 1 de diciembre de 2026",
+  "metaDescription": "Desde el 1 de diciembre de 2026, ARCA rechaza con el error 10246 el CAE pedido por WSFEv1 sin la condición de IVA del receptor. Hasta el 30 de noviembre es la observación 10245.",
+  "excerpt": "Qué pasa el 1 de diciembre de 2026 con el pedido de CAE por WSFEv1 si falta la condición de IVA del receptor, y qué revisar en el sistema.",
+  "answer": "Desde el 1 de diciembre de 2026, ARCA rechaza con el error 10246 el pedido de CAE por el web service WSFEv1 que no trae la condición de IVA del receptor, el campo CondicionIVAReceptorId. Hasta el 30 de noviembre de 2026 ese mismo caso vuelve como observación 10245. La fecha está en la revisión del manual del desarrollador de WSFEv1 del 1 de diciembre de 2026, por la Resolución General 5616.",
+  "intro": [
+    "Si tu tienda, tu ERP o tu sistema de gestión pide el CAE por web service, el cambio está en un dato del receptor: su condición frente al IVA. El campo se llama CondicionIVAReceptorId.",
+    "Abajo están los códigos que publica el manual, una lista para revisar el sistema y la fuente oficial de ARCA. Si querés que lo conectemos, el alcance está en [factura electrónica ARCA](/integraciones/factura-electronica-arca)."
+  ],
+  "sections": [
+    {
+      "title": "Qué dice el manual el 1 de diciembre de 2026",
+      "paragraphs": [
+        "La Resolución General 5616 pide la condición frente al IVA del receptor en el comprobante electrónico. El manual del desarrollador de WSFEv1, en la revisión del 1 de diciembre de 2026, dice que ese campo pasa a ser obligatorio y que el código 10245 queda en desuso.",
+        "Hasta el 30 de noviembre de 2026, un pedido por web service sin ese dato vuelve con la observación 10245. Desde el 1 de diciembre de 2026, ARCA lo rechaza con el error 10246. El texto del error dice que el campo es obligatorio conforme a la RG 5616.",
+        "La fecha está en el [manual del desarrollador WSFEv1, revisión del 1 de diciembre de 2026](https://www.arca.gob.ar/fe/ayuda/documentos/wsfev1-RG-4291.pdf). Los códigos y el campo CondicionIVAReceptorId también están en el [manual del desarrollador WSFEv1](https://www.arca.gob.ar/ws/documentacion/manuales/manual-desarrollador-ARCA-COMPG.pdf)."
+      ]
+    },
+    {
+      "title": "Códigos para revisar el pedido",
+      "paragraphs": [
+        "Estos códigos salen del manual de WSFEv1. 10245 es una observación. 10246, 10242 y 10243 están en la tabla de errores. La tabla de condiciones del manual incluye más valores: acá van los cuatro que conviene tener a mano al revisar clientes."
+      ],
+      "table": {
+        "caption": "Códigos de WSFEv1 para la condición de IVA del receptor",
+        "columns": ["Qué indica el manual"],
+        "rows": [
+          {
+            "label": "10245",
+            "cells": [
+              "Observación. Hasta el 30 de noviembre de 2026, el pedido por web service no trae la condición de IVA del receptor. Desde el 1 de diciembre de 2026 este código queda en desuso."
+            ]
+          },
+          {
+            "label": "10246",
+            "cells": [
+              "Rechazo. Desde el 1 de diciembre de 2026, el campo es obligatorio por la RG 5616. Sin ese dato, ARCA rechaza el pedido."
+            ]
+          },
+          {
+            "label": "10242",
+            "cells": [
+              "Rechazo. El valor de CondicionIVAReceptorId no está permitido. El manual remite al método FEParamGetCondicionIvaReceptor."
+            ]
+          },
+          {
+            "label": "10243",
+            "cells": [
+              "Rechazo. El valor no es válido para la clase de comprobante informada, la letra A, B o C."
+            ]
+          },
+          {
+            "label": "1",
+            "cells": ["IVA responsable inscripto."]
+          },
+          {
+            "label": "4",
+            "cells": ["IVA sujeto exento."]
+          },
+          {
+            "label": "5",
+            "cells": ["Consumidor final."]
+          },
+          {
+            "label": "6",
+            "cells": ["Responsable monotributo."]
+          }
+        ]
+      },
+      "closing": "ARCA decide si otorga el CAE. El sistema tiene que mandar el campo y mostrar el código que vuelve."
+    },
+    {
+      "title": "Dónde mirar en tu sistema",
+      "paragraphs": [
+        "El dato no se inventa en el momento de facturar. Sale de la ficha del cliente y viaja en el pedido a WSFEv1. Si hoy la factura se arma en otro programa, el cambio igual te toca: el web service es el que rechaza."
+      ],
+      "items": [
+        "Ficha del cliente. La condición de IVA tiene que estar guardada, con el código del manual y no con un texto suelto.",
+        "Pedido a WSFEv1. CondicionIVAReceptorId tiene que salir en facturas A, B y C, y en las notas de crédito y de débito.",
+        "Letra del comprobante. Si el valor no corresponde a esa clase, el manual prevé el rechazo 10243.",
+        "Respuesta de ARCA. El sistema tiene que mostrar la observación 10245 mientras siga vigente, y el rechazo 10246 desde el 1 de diciembre de 2026."
+      ],
+      "closing": "Si el pedido ya vive en un sistema de gestión, el circuito de la venta está en [sistemas de gestión](/sistemas-de-gestion). La conexión del CAE está en [factura electrónica ARCA](/integraciones/factura-electronica-arca).",
+      "link": {
+        "label": "Ver factura electrónica ARCA",
+        "href": "/integraciones/factura-electronica-arca"
+      }
+    }
+  ],
+  "checklist": {
+    "title": "Checklist para revisar tu sistema",
+    "intro": "Antes del 1 de diciembre de 2026, revisá esto en el sistema que pide el CAE:",
+    "items": [
+      "¿Cada cliente tiene guardada su condición frente al IVA?",
+      "¿El pedido a WSFEv1 manda CondicionIVAReceptorId?",
+      "¿El valor es uno de los que publica el manual, como 1, 4, 5 o 6 cuando corresponde?",
+      "¿Ese valor es válido para la letra del comprobante?",
+      "¿Facturas A, B y C, y las notas de crédito y de débito, recorren el mismo campo?",
+      "¿Si ARCA observa o rechaza, el código queda visible para corregirlo?",
+      "¿Probaste un pedido sin el campo para ver si vuelve 10245 y, desde el 1 de diciembre de 2026, si vuelve 10246?"
+    ],
+    "closing": "Si alguna respuesta es no, el pedido puede volver observado hasta el 30 de noviembre de 2026 y rechazado desde el 1 de diciembre. La fuente es el manual del desarrollador de WSFEv1 y la RG 5616."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "question": "¿Qué cambia el 1 de diciembre de 2026?",
+        "answer": "Pasa a ser obligatorio informar la condición de IVA del receptor en el pedido por web service. Hasta el 30 de noviembre de 2026, si falta, WSFEv1 devuelve la observación 10245. Desde el 1 de diciembre de 2026, ARCA rechaza ese pedido con el error 10246. Lo dice la revisión del manual del desarrollador de esa fecha, por la RG 5616."
+      },
+      {
+        "question": "¿Qué es CondicionIVAReceptorId?",
+        "answer": "Es el campo de WSFEv1 donde se informa la condición de IVA del receptor. Si el valor no está permitido, el código es 10242. Si no es válido para la clase de comprobante, el código es 10243."
+      },
+      {
+        "question": "¿Alcanza con revisar facturas A, B y C?",
+        "answer": "El campo va en el pedido de CAE. También corresponde mirar las notas de crédito y de débito que salgan por el mismo web service."
+      },
+      {
+        "question": "¿Dónde está la fuente oficial?",
+        "answer": "En el manual del desarrollador de WSFEv1 de ARCA. La revisión del 1 de diciembre de 2026 fija la obligatoriedad y deja en desuso el código 10245. La norma que cita el manual es la Resolución General 5616."
+      }
+    ]
+  },
+  "related": {
+    "title": "Seguí leyendo",
+    "links": [
+      {
+        "label": "Factura electrónica ARCA",
+        "href": "/integraciones/factura-electronica-arca",
+        "description": "Conexión de tu tienda, ERP o sistema de gestión a WSFEv1 para pedir el CAE."
+      },
+      {
+        "label": "Integraciones",
+        "href": "/integraciones",
+        "description": "Conectar facturación, cobros, tienda y planillas para cargar el dato una vez."
+      },
+      {
+        "label": "Sistemas de gestión",
+        "href": "/sistemas-de-gestion",
+        "description": "Stock, pedidos, caja o turnos en un sistema armado para tu operación."
+      }
+    ]
+  },
+  "ctaTitle": "¿Tu sistema pide el CAE sin la condición de IVA?",
+  "ctaDescription": "Contanos desde dónde sale la venta. Te respondemos con alcance y precio por escrito.",
+  "ctaButton": "Contanos tu problema"
+}

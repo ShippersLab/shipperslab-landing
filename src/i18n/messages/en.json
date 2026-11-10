@@ -238,6 +238,7 @@
       "bots-con-ia": "AI bots",
       "integraciones": "Integrations",
       "tiendanube": "Tiendanube development",
+      "facturaElectronicaArca": "ARCA e-invoicing",
       "casos": "Work",
       "eventos": "Events",
       "empecemos": "Get started",
@@ -608,7 +609,7 @@
       "lead": "Inventory, orders, sales or bookings in one place, built around how your business works. Stop fighting spreadsheets that can't keep up.",
       "covers": {
         "title": "What we solve.",
-        "body": "A system shaped around your operation: inventory control, orders, sales, bookings or whatever slips between chats and spreadsheets today. We build it around how your team already works. If you are asking for a quote, read [What a custom management system costs a small business](/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida).",
+        "body": "A system shaped around your operation: inventory control, orders, sales, bookings or whatever slips between chats and spreadsheets today. We build it around how your team already works. If you are asking for a quote, read [What a custom management system costs a small business](/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida). If the invoice has to be issued from that system, the CAE request to ARCA is in [ARCA electronic invoicing](/integraciones/factura-electronica-arca).",
         "items": [
           {
             "id": "stock",
@@ -1047,7 +1048,8 @@
           },
           {
             "id": "arca",
-            "label": "ARCA invoicing"
+            "label": "ARCA invoicing",
+            "href": "/integraciones/factura-electronica-arca"
           },
           {
             "id": "crm",
@@ -1071,7 +1073,7 @@
           {
             "id": "arca",
             "title": "ARCA electronic invoicing",
-            "body": "We connect your sales to ARCA (formerly AFIP) electronic invoicing services so the invoice is issued automatically when a payment or order is confirmed. You set the rules: which receipt type, for whom and when."
+            "body": "We connect your sales to ARCA (formerly AFIP) electronic invoicing through the WSFEv1 web service, so the CAE is requested when a payment or an order is confirmed. Invoices A, B and C, credit and debit notes, and the receiver's VAT condition are in [ARCA electronic invoicing](/integraciones/factura-electronica-arca)."
           },
           {
             "id": "whatsapp",
@@ -1133,7 +1135,7 @@
           },
           {
             "question": "Can you connect ARCA (formerly AFIP) electronic invoicing?",
-            "answer": "Yes. We connect your sales to ARCA so each invoice is issued without entering it by hand. In our first conversation we go over which account details are needed and help you set them up."
+            "answer": "Yes. We connect your sales to the WSFEv1 web service to request the CAE without entering it by hand. In the first conversation we look at which account details are needed. Vouchers and the receiver's VAT condition are covered on the ARCA electronic invoicing page."
           },
           {
             "question": "What happens if an integration breaks?",
@@ -1333,6 +1335,161 @@
     "ctaDescription": "Tell us if you are coming from WooCommerce, whether you sell wholesale and which system holds your stock. We reply with scope and price in writing.",
     "ctaButton": "Tell us your problem"
   },
+  "facturaElectronicaArca": {
+    "navLabel": "ARCA e-invoicing",
+    "metaTitle": "ARCA electronic invoicing connected to your system",
+    "metaDescription": "We connect your store, ERP or management system to ARCA's WSFEv1 web service to request a CAE for invoices A, B and C, and for credit and debit notes.",
+    "h1": "ARCA electronic invoicing, connected to your system.",
+    "lead": "We connect your store, your ERP or your management system to the WSFEv1 web service to request a CAE, the electronic authorization code. It covers invoices A, B and C, and credit and debit notes.",
+    "covers": {
+      "title": "What we build.",
+      "body": "The sale stays in the system you already use. From there the CAE is requested from WSFEv1, and the response comes back with the CAE, with an error or with an observation. The request carries the receiver's VAT condition in the CondicionIVAReceptorId field.",
+      "items": [
+        {
+          "id": "cae",
+          "label": "CAE"
+        },
+        {
+          "id": "comprobantes",
+          "label": "Invoices A, B and C"
+        },
+        {
+          "id": "notas",
+          "label": "Credit and debit notes"
+        },
+        {
+          "id": "observaciones",
+          "label": "Errors and observations"
+        },
+        {
+          "id": "condicion",
+          "label": "VAT condition"
+        }
+      ]
+    },
+    "tools": {
+      "title": "What gets connected.",
+      "items": [
+        {
+          "id": "cae",
+          "title": "CAE request through WSFEv1",
+          "body": "When the sale is confirmed, the system requests the CAE from WSFEv1. ARCA responds with the CAE, with an error or with an observation. The agency decides whether to authorize it."
+        },
+        {
+          "id": "comprobantes",
+          "title": "Invoices A, B and C, and notes",
+          "body": "The scope covers invoices A, B and C, and credit and debit notes. Which voucher applies in each case is written in the scope, with the rules of your operation."
+        },
+        {
+          "id": "observaciones",
+          "title": "Errors and observations",
+          "body": "If WSFEv1 rejects the request or returns it with an observation, the result stays visible so it can be corrected and sent again. The codes are the ones ARCA publishes in the developer manual."
+        },
+        {
+          "id": "condicion",
+          "title": "CondicionIVAReceptorId",
+          "body": "Each request reports the receiver's VAT condition. If the value is not allowed, ARCA rejects it with code 10242. If it is not valid for the voucher class, ARCA rejects it with 10243. The manual includes, among others, 1 for a registered VAT taxpayer, 4 for exempt, 5 for a final consumer and 6 for monotributo."
+        }
+      ]
+    },
+    "comparison": {
+      "title": "What changes on December 1, 2026.",
+      "paragraphs": [
+        "General Resolution 5616 requires the receiver's VAT condition on a web service request. The WSFEv1 developer manual, in the revision dated December 1, 2026, says that field becomes mandatory and that code 10245 goes out of use.",
+        "Until November 30, 2026, a request without that field comes back with observation 10245. From December 1, 2026, ARCA rejects it with error 10246.",
+        "The date is in the [WSFEv1 developer manual, December 1, 2026 revision](https://www.arca.gob.ar/fe/ayuda/documentos/wsfev1-RG-4291.pdf). The codes and the CondicionIVAReceptorId field are in the [WSFEv1 developer manual](https://www.arca.gob.ar/ws/documentacion/manuales/manual-desarrollador-ARCA-COMPG.pdf) and in that revision."
+      ]
+    },
+    "audience": {
+      "title": "Who it is for.",
+      "intro": "For anyone who invoices through ARCA and wants the CAE to come from the system where the sale already lives.",
+      "items": [
+        {
+          "id": "store",
+          "title": "Store",
+          "body": "The sale is confirmed in the store and the invoice is entered somewhere else."
+        },
+        {
+          "id": "erp",
+          "title": "ERP",
+          "body": "The ERP already has the customer and the items, and the voucher is requested separately."
+        },
+        {
+          "id": "gestion",
+          "title": "Management system",
+          "body": "The order already lives in a management system and the CAE request is still missing.",
+          "href": "/sistemas-de-gestion"
+        }
+      ]
+    },
+    "process": {
+      "title": "How we work and how we quote.",
+      "steps": [
+        {
+          "title": "A 30-minute call",
+          "body": "We look at where the sale is recorded, which vouchers you issue and where the receiver's VAT condition lives today."
+        },
+        {
+          "title": "A scope document",
+          "body": "Which system gets connected, which vouchers are in, and how errors and observations are shown. Price and timing in writing before we start."
+        },
+        {
+          "title": "A working piece every week",
+          "body": "Each week you see one part running: the CAE request, ARCA's response or the receiver's VAT condition."
+        },
+        {
+          "title": "Go-live",
+          "body": "We leave it running with your team, on the system where the sale already lives."
+        }
+      ],
+      "pricing": {
+        "label": "Price and timing",
+        "body": "They depend on the system to connect, on which vouchers are included and on how errors and observations need to be shown. Scope and price are agreed in writing before we start."
+      }
+    },
+    "afterDelivery": [
+      {
+        "label": "Warranty",
+        "body": "If a bug is on our side, we fix it under the warranty."
+      },
+      {
+        "label": "Maintenance",
+        "body": "Optional, for the adjustments when ARCA's web service changes how it connects. Without it, that adjustment is on you."
+      },
+      {
+        "label": "Your data",
+        "body": "It is confidential and we only use it for your project."
+      }
+    ],
+    "faq": {
+      "title": "Questions about ARCA electronic invoicing.",
+      "items": [
+        {
+          "question": "What do you connect to ARCA?",
+          "answer": "We connect your store, your ERP or your management system to the WSFEv1 web service to request a CAE when the sale is confirmed. ARCA responds with the CAE, with an error or with an observation."
+        },
+        {
+          "question": "Which vouchers are included?",
+          "answer": "Invoices A, B and C, and credit and debit notes. If another voucher is needed, it is written into the scope."
+        },
+        {
+          "question": "What changes on December 1, 2026?",
+          "answer": "Until November 30, 2026, a web service request without the receiver's VAT condition comes back with observation 10245. From December 1, 2026, ARCA rejects it with error 10246. The date is in the developer manual revision of that date, under RG 5616."
+        },
+        {
+          "question": "What is CondicionIVAReceptorId?",
+          "answer": "It is the WSFEv1 field for the receiver's VAT condition. If the value is not allowed, the code is 10242. If it is not valid for the voucher class, the code is 10243. Among the values in the manual are 1 for a registered VAT taxpayer, 4 for exempt, 5 for a final consumer and 6 for monotributo."
+        },
+        {
+          "question": "Does ARCA or the system grant the CAE?",
+          "answer": "ARCA grants it. The system requests the CAE and shows the response: the code, an error or an observation."
+        }
+      ]
+    },
+    "ctaTitle": "Is the ARCA invoice still entered by hand?",
+    "ctaDescription": "Tell us which system records the sale. We reply with scope and price in writing.",
+    "ctaButton": "Tell us your problem"
+  },
   "pedidos": {
     "navLabel": "Orders",
     "metaTitle": "Custom order management system",
@@ -1409,7 +1566,7 @@
         {
           "id": "arca",
           "title": "ARCA electronic invoicing",
-          "body": "The invoice can be issued when the order is confirmed or when it is handed over. Invoicing uses the customer, the items and the price already on the order. You set the moment and the receipt type."
+          "body": "The invoice can be issued when the order is confirmed or when it is handed over. Invoicing uses the customer, the items and the price already on the order. You set the moment and the receipt type. Requesting the CAE through WSFEv1 is in [ARCA electronic invoicing](/integraciones/factura-electronica-arca)."
         },
         {
           "id": "mercadopago",
