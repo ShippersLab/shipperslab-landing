@@ -8,6 +8,7 @@ import { buildHome, buildIdentity } from "@/lib/seo/llms/home";
 import { buildEventos } from "@/lib/seo/llms/events";
 import {
   buildComoTrabajamos,
+  buildMercadoPagoPage,
   buildPedidosPage,
   buildServicePage,
   buildTiendanubePage,
@@ -47,6 +48,7 @@ export function buildLlmsFullTxt() {
         : [buildServicePage(slug)],
     ),
     buildTiendanubePage(),
+    buildMercadoPagoPage(),
     buildComoTrabajamos(),
     buildCasos(),
     ...projectRoutes.map((route) => buildProject(route.slug)),
@@ -61,6 +63,7 @@ export function buildLlmsFullTxt() {
   assertSourceCopy(es.faq, document);
   assertSourceCopy(es.servicePages, document);
   assertSourceCopy(es.tiendanube, document);
+  assertSourceCopy(es.mercadoPago, document);
   assertSourceCopy(es.pedidos, document);
   assertSourceCopy(es.comoTrabajamos, document);
   assertSourceCopy(es.casos, document);

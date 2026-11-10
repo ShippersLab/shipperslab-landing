@@ -22,6 +22,7 @@ const PEDIDOS_RELATED = [
 
 function servicePageContent(messages: Messages, slug: ServicePageKey) {
   if (slug === "tiendanube") return messages.tiendanube;
+  if (slug === "mercadoPago") return messages.mercadoPago;
   if (slug === "pedidos") return messages.pedidos;
   return messages.servicePages[slug];
 }

@@ -9,7 +9,7 @@ import { Container } from "@/components/ui/section/container";
 import { buildWhatsAppUrl } from "@/lib/contact/message";
 import { LocalizedLink } from "@/i18n/link";
 import { useI18n } from "@/i18n/provider";
-import { PEDIDOS_PATH, serviceRoutes, TIENDANUBE_PATH } from "@/lib/services";
+import { MERCADO_PAGO_PATH, PEDIDOS_PATH, serviceRoutes, TIENDANUBE_PATH } from "@/lib/services";
 import { site } from "@/lib/site";
 
 const YEAR = new Date().getFullYear();
@@ -65,6 +65,11 @@ export function Footer() {
                 ) : null}
               </Fragment>
             ))}
+            <li>
+              <LocalizedLink href={MERCADO_PAGO_PATH} className={LINK_CLASS}>
+                {footer.links.mercadoPago}
+              </LocalizedLink>
+            </li>
             <li>
               <LocalizedLink href={TIENDANUBE_PATH} className={LINK_CLASS}>
                 {footer.links.tiendanube}

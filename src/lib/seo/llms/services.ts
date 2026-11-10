@@ -10,9 +10,19 @@ import {
   page,
   renderCopy,
 } from "@/lib/seo/llms/copy";
-import { PEDIDOS_PATH, serviceRoutes, TIENDANUBE_PATH, type ServiceSlug } from "@/lib/services";
+import {
+  MERCADO_PAGO_PATH,
+  PEDIDOS_PATH,
+  serviceRoutes,
+  TIENDANUBE_PATH,
+  type ServiceSlug,
+} from "@/lib/services";
 
-type ServicePage = (typeof es.servicePages)[ServiceSlug] | typeof es.tiendanube | typeof es.pedidos;
+type ServicePage =
+  | (typeof es.servicePages)[ServiceSlug]
+  | typeof es.tiendanube
+  | typeof es.mercadoPago
+  | typeof es.pedidos;
 
 type ToolGroup = {
   title: string;
@@ -124,6 +134,10 @@ export function buildServicePage(slug: ServiceSlug) {
 
 export function buildTiendanubePage() {
   return buildServicePageCopy(TIENDANUBE_PATH, es.tiendanube);
+}
+
+export function buildMercadoPagoPage() {
+  return buildServicePageCopy(MERCADO_PAGO_PATH, es.mercadoPago);
 }
 
 export function buildPedidosPage() {

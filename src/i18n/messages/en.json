@@ -237,6 +237,7 @@
       "webs-y-catalogos": "Websites and catalogs",
       "bots-con-ia": "AI bots",
       "integraciones": "Integrations",
+      "mercadoPago": "Mercado Pago",
       "tiendanube": "Tiendanube development",
       "casos": "Work",
       "eventos": "Events",
@@ -608,7 +609,7 @@
       "lead": "Inventory, orders, sales or bookings in one place, built around how your business works. Stop fighting spreadsheets that can't keep up.",
       "covers": {
         "title": "What we solve.",
-        "body": "A system shaped around your operation: inventory control, orders, sales, bookings or whatever slips between chats and spreadsheets today. We build it around how your team already works. If you are asking for a quote, read [What a custom management system costs a small business](/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida).",
+        "body": "A system shaped around your operation: inventory control, orders, sales, bookings or whatever slips between chats and spreadsheets today. We build it around how your team already works. If Mercado Pago payments have to land in the same system, the detail is in [Mercado Pago integration](/integraciones/mercado-pago). If you are asking for a quote, read [What a custom management system costs a small business](/blog/cuanto-cuesta-un-sistema-de-gestion-a-medida).",
         "items": [
           {
             "id": "stock",
@@ -1039,7 +1040,8 @@
           },
           {
             "id": "mercadopago",
-            "label": "Mercado Pago"
+            "label": "Mercado Pago",
+            "href": "/integraciones/mercado-pago"
           },
           {
             "id": "tiendanube",
@@ -1061,7 +1063,7 @@
           {
             "id": "mercadopago",
             "title": "Mercado Pago: payments and reconciliation",
-            "body": "Every payment that comes in through Mercado Pago can be recorded automatically in your spreadsheet or system, linked to its order. Reconciliation stops being a line-by-line review at the end of the month, and you see right away what is paid and what is pending."
+            "body": "Every payment that comes in through Mercado Pago can be recorded automatically in your spreadsheet or system, linked to its order. Reconciliation stops being a line-by-line review at the end of the month, and you see right away what is paid and what is pending. Payment links, checkout, QR and the status of each payment are in [Mercado Pago integration](/integraciones/mercado-pago)."
           },
           {
             "id": "tiendanube",
@@ -1333,6 +1335,180 @@
     "ctaDescription": "Tell us if you are coming from WooCommerce, whether you sell wholesale and which system holds your stock. We reply with scope and price in writing.",
     "ctaButton": "Tell us your problem"
   },
+  "mercadoPago": {
+    "navLabel": "Mercado Pago",
+    "metaTitle": "Mercado Pago integration for stores and systems",
+    "metaDescription": "We connect Mercado Pago to your store or system: payment links, checkout, QR, payment notices and the status of each sale. Scope in writing.",
+    "h1": "Mercado Pago integration for your store or system.",
+    "lead": "The payment starts from the sale: a link, checkout or a QR code. When Mercado Pago sends notice, that sale shows its status in your system.",
+    "covers": {
+      "title": "What we solve.",
+      "body": "A payment lands in Mercado Pago and someone types it into a spreadsheet, or a sale stays unpaid in the system because the notice never arrived. We connect the store or the management system to Mercado Pago so each sale has its payment and its status. Scope and price in writing before we start.",
+      "items": [
+        {
+          "id": "link",
+          "label": "Payment link"
+        },
+        {
+          "id": "checkout",
+          "label": "Checkout"
+        },
+        {
+          "id": "qr",
+          "label": "QR code"
+        },
+        {
+          "id": "webhook",
+          "label": "Payment notices"
+        },
+        {
+          "id": "orders",
+          "label": "Reconciliation"
+        },
+        {
+          "id": "refund",
+          "label": "Refunds"
+        },
+        {
+          "id": "status",
+          "label": "Payment status"
+        }
+      ]
+    },
+    "tools": {
+      "title": "What we connect.",
+      "items": [
+        {
+          "id": "link",
+          "title": "A link to collect a sale",
+          "body": "If the payment goes out by WhatsApp, email or social, the system builds a link for that sale. In Checkout Pro, Mercado Pago returns a URL that opens its payment form, and the order id is what the system uses to check the status, cancel it or refund it. The step is in [create a Checkout Pro order](https://www.mercadopago.com.ar/developers/en/docs/checkout-pro-orders/create-order). Mercado Pago also documents [Payment Link](https://www.mercadopago.com.ar/developers/en/docs/getting-started) for creating a link and sharing it in chat, without integrating a site. When the payment has to start from the order, we use the Checkout Pro order so the link belongs to that sale."
+        },
+        {
+          "id": "checkout",
+          "title": "Store checkout",
+          "body": "With [Checkout Pro](https://www.mercadopago.com.ar/developers/en/docs/checkout-pro/landing), the buyer finishes the cart on your site, pays in Mercado Pago's environment and returns to your site or to the destination you set. How they come back is in [redirect the buyer to checkout](https://www.mercadopago.com.ar/developers/en/docs/checkout-pro-orders/web-integration/redirect-buyer-to-checkout). If the payment has to be completed on your own screen, [Checkout API](https://www.mercadopago.com.ar/developers/en/docs/getting-started) is the documented option for building the payment on the site. Which one is in scope depends on how you sell."
+        },
+        {
+          "id": "qr",
+          "title": "QR at the counter",
+          "body": "In the shop, the system shows a QR code and the customer pays by scanning it. In Argentina, [QR Code](https://www.mercadopago.com.ar/developers/en/docs/qr-code/landing) documents three models: static, one fixed QR for the register; dynamic, a different one per sale; and hybrid, both at once. On scan, the amount shows up on the customer's phone and the system receives the status notice for that payment. The flow is in [integrate QR payment processing](https://www.mercadopago.com.ar/developers/en/docs/qr-code/payment-processing)."
+        },
+        {
+          "id": "webhook",
+          "title": "A notice for each payment",
+          "body": "Mercado Pago sends an HTTP POST when a payment event happens, instead of checking the status over and over. In Checkout Pro, the payments topic reports when a payment is created or updated. The system confirms the notice arrived and then fetches that payment to update the sale. Setup is in [Webhooks](https://www.mercadopago.com.ar/developers/en/docs/your-integrations/notifications/webhooks). For QR Code, notices cover a processed, canceled, refunded or expired order, as described in [QR Code notifications](https://www.mercadopago.com.ar/developers/en/docs/qr-code/notifications)."
+        },
+        {
+          "id": "orders",
+          "title": "Each payment with its sale",
+          "body": "Each payment can carry an external reference: the value that identifies that sale in your system. We set it to the sale or order id, and the notice updates that sale. In Checkout Pro, the reference identifies the origin, as explained in [create a Checkout Pro order](https://www.mercadopago.com.ar/developers/en/docs/checkout-pro-orders/create-order). For QR Code, Mercado Pago requires it, it has to be unique per order, and it is not for personal data. The field is in [QR payment processing](https://www.mercadopago.com.ar/developers/en/docs/qr-code/payment-processing)."
+        },
+        {
+          "id": "refund",
+          "title": "Refunds",
+          "body": "From the system you can request a full or partial refund of an approved payment. If the payment is not approved yet, the order can be canceled, and the return to the card follows the issuing bank's timeline. Mercado Pago documents refunds within 180 days of approval, with available balance in the account. On a credit card, the amount goes back on that card's statement. For other methods, it goes back to the payer's account. Several partial refunds are allowed if the sum does not exceed what was paid. The conditions are in [refunds and cancellations](https://www.mercadopago.com.ar/developers/en/docs/checkout-pro-orders/refunds-cancellations). For QR Code, an API refund is also full or partial, up to 180 days after the payment, according to [QR payment processing](https://www.mercadopago.com.ar/developers/en/docs/qr-code/payment-processing)."
+        },
+        {
+          "id": "status",
+          "title": "Payment status in the system",
+          "body": "The sale shows the status Mercado Pago reports for that payment. In Checkout Pro, [order status](https://www.mercadopago.com.ar/developers/en/docs/checkout-pro-orders/payment-management/status/order-status) describes created, in process, accredited, partially refunded, authorized and not yet captured, rejected, canceled or expired, and fully refunded. A full refund leaves the order refunded. A partial refund leaves it accredited, with the partial-refund detail."
+        }
+      ]
+    },
+    "audience": {
+      "title": "Who it is for.",
+      "intro": "For shops and small businesses that already collect with Mercado Pago, or want to, and need that payment to land in the store or in the system.",
+      "items": [
+        {
+          "id": "store",
+          "title": "Online store",
+          "body": "Checkout or the payment link starts from the sale, and the status comes back to the order."
+        },
+        {
+          "id": "qr",
+          "title": "Counter",
+          "body": "The customer scans and pays, and the sale stops sitting there as unpaid."
+        },
+        {
+          "id": "orders",
+          "title": "Management system",
+          "body": "The payment is assigned to the order and to the customer's account.",
+          "href": "/sistemas-de-gestion/pedidos"
+        }
+      ]
+    },
+    "process": {
+      "title": "How we work and how it is priced.",
+      "steps": [
+        {
+          "title": "A 30-minute call",
+          "body": "We look at how you collect today: with a link, in the store or at the counter, where the status has to show up, and who manages the Mercado Pago account."
+        },
+        {
+          "title": "A scope document",
+          "body": "What is in (link, checkout or QR), which statuses are reflected, which refunds can be requested from the system, and what stays out. Price and timeline in writing before we start."
+        },
+        {
+          "title": "A working slice every week",
+          "body": "We connect each part with the official API and you try it with test payments before it goes on your live account."
+        },
+        {
+          "title": "Go-live",
+          "body": "We leave it running on your account, with the notice for each payment configured. We run a test payment to see the sale change status."
+        }
+      ],
+      "pricing": {
+        "label": "Price and timeline",
+        "body": "They depend on which parts are in (link, checkout, QR) and on whether the status has to come back to a store, a spreadsheet or a management system. The Mercado Pago account is yours."
+      }
+    },
+    "afterDelivery": [
+      {
+        "label": "Warranty",
+        "body": "If a payment is not recorded because of an error on our side, we fix it within the warranty."
+      },
+      {
+        "label": "Maintenance",
+        "body": "Optional, for changes and for the adjustments when Mercado Pago changes how it connects. Without it, that adjustment is on you."
+      },
+      {
+        "label": "Your data",
+        "body": "It is confidential and we only use it for your project."
+      }
+    ],
+    "faq": {
+      "title": "Questions about the Mercado Pago integration.",
+      "items": [
+        {
+          "question": "Can you build a payment link from an order?",
+          "answer": "Yes. The system generates the payment URL for that sale with Checkout Pro, and you can send it by WhatsApp or email. Mercado Pago also documents Payment Link for sharing a charge in chat, without integrating a site. If the payment has to start from the order, the link stays tied to that sale."
+        },
+        {
+          "question": "Does the customer pay on my site or on Mercado Pago?",
+          "answer": "With Checkout Pro, they choose to pay on your site, pay in Mercado Pago's environment and return to your site. With Checkout API, the payment is built on your own screen. Which one we use is set in the scope, based on how you sell."
+        },
+        {
+          "question": "Can I collect with a QR code in the shop?",
+          "answer": "Yes, in Argentina. The system shows a fixed QR for the register, a different one per sale, or both. When the customer pays, the notice updates that sale."
+        },
+        {
+          "question": "How does the system learn that they paid?",
+          "answer": "Mercado Pago sends a notice when the payment is created or changes. The system confirms it arrived and fetches that payment to update the sale, without copying the movement by hand."
+        },
+        {
+          "question": "Can a payment be refunded from the system?",
+          "answer": "You can request a full or partial refund of an approved payment, within 180 days of approval and if the Mercado Pago account has available balance. A full refund leaves the sale refunded. A partial refund leaves it accredited with that detail. An order that is not approved yet can be canceled, and the return to the card follows the issuing bank's timeline."
+        },
+        {
+          "question": "Is the payment tied to the sale?",
+          "answer": "Yes. When the payment is created we set a reference to the sale or order id. The notice updates that sale. For QR Code that reference has to be unique and it does not carry personal data."
+        }
+      ]
+    },
+    "ctaTitle": "Collecting with Mercado Pago and typing it in by hand?",
+    "ctaDescription": "Tell us whether you collect with a link, in the store or with a QR code, and where that payment has to show up. We reply with scope and price in writing.",
+    "ctaButton": "Tell us your problem"
+  },
   "pedidos": {
     "navLabel": "Orders",
     "metaTitle": "Custom order management system",
@@ -1414,7 +1590,7 @@
         {
           "id": "mercadopago",
           "title": "Mercado Pago",
-          "body": "A payment that comes in through Mercado Pago can be assigned to the order and to the customer's account. Reconciliation stops being a match of a statement against a spreadsheet."
+          "body": "A payment that comes in through Mercado Pago can be assigned to the order and to the customer's account. Reconciliation stops being a match of a statement against a spreadsheet. Payment links, checkout, QR and the status of each payment are in [Mercado Pago integration](/integraciones/mercado-pago)."
         },
         {
           "id": "whatsapp",

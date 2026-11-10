@@ -14,6 +14,7 @@ export {
   buildPageBreadcrumbStructuredData,
 } from "@/lib/seo/structured-data/pages";
 export {
+  buildMercadoPagoStructuredData,
   buildPedidosStructuredData,
   buildServiceStructuredData,
   buildTiendanubeStructuredData,
